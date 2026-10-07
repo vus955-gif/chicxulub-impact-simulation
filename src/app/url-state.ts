@@ -2,6 +2,7 @@
 import { THERMAL_SCENARIOS, type ThermalScenario } from '../model/sim/intensities';
 import { FIRE_SCENARIOS, type FireScenario } from '../model/predictive/darkness';
 import { PLAY_MODES, type PlayMode } from '../time/playback';
+import { T_MAX } from '../time/axis';
 
 export const PHENOMENA = ['crater', 'thermal', 'ejecta', 'seismic', 'air', 'tsunami', 'fires', 'atmo', 'bio'] as const;
 export type PhenomenonKey = (typeof PHENOMENA)[number];
@@ -46,7 +47,7 @@ export function decodeState(hash: string): Partial<UrlState> {
   try {
     const q = new URLSearchParams(hash.replace(/^#/, ''));
     const out: Partial<UrlState> = {};
-    const t = finite(q.get('t'), -60, 86400); if (t !== undefined) out.t = t;
+    const t = finite(q.get('t'), -60, T_MAX); if (t !== undefined) out.t = t;
     const v = oneOf(q.get('v'), VIEWS); if (v) out.view = v;
     const l = q.get('l');
     if (l !== null) {

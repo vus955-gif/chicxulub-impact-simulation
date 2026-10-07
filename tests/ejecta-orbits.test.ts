@@ -5,8 +5,8 @@ import { RegistryIndex } from '../src/model/sim/registry-client';
 import { createSimContext } from '../src/model/sim/context';
 import { ejectaArrival } from '../src/model/sim/arrivals';
 import { ejectaArrivalTime } from '../src/model/eiep/ejecta';
-import { destination } from '../src/model/sim/geo';
-import { flashScreenAge, flightTimeTo, llToV3, makeParticle, orbitParams, particleAt, sampleEjecta, speedForRange, v3ToLl, reentryRangeKm } from '../src/model/sim/ejecta-orbits';
+import { destination, gcDistanceKm } from '../src/model/sim/geo';
+import { FLASH_LIFE_S, flashLevel, flashScreenAge, flightTimeTo, llToV3, makeParticle, orbitParams, particleAt, particleAtInto, sampleEjecta, speedForRange, v3ToLl, type EjectaParticle } from '../src/model/sim/ejecta-orbits';
 
 const ready = existsSync('research/parameters.json') && existsSync('data/derived/ak135-first-arrivals.json');
 describe.runIf(ready)('ejecta orbits (Kepler, rotating Earth, re-entry)', () => {
@@ -14,6 +14,7 @@ describe.runIf(ready)('ejecta orbits (Kepler, rotating Earth, re-entry)', () => 
   const ctx = ready ? createSimContext(reg, JSON.parse(readFileSync('data/derived/ak135-first-arrivals.json', 'utf8'))) : (null as never);
   const op = ready ? orbitParams(ctx) : (null as never);
   const crater = ready ? llToV3(ctx.crater.lat, ctx.crater.lon) : (null as never);
+  const reentryRangeKm = (p: EjectaParticle) => gcDistanceKm(ctx.crater, { lat: p.reLat, lon: p.reLon });
 
   it('non-rotating 45° flight time matches the EIEP ballistic time (to the surface) within the re-entry-layer offset', () => {
     for (const d of [1000, 3000, 6000]) {
@@ -28,7 +29,7 @@ describe.runIf(ready)('ejecta orbits (Kepler, rotating Earth, re-entry)', () => 
     const d = 4000, az = 30;
     const p = makeParticle(crater, az, 45, speedForRange(d, 45)!, 0, noRot, d)!;
     const target = destination(ctx.crater, az, d);
-    const re = reentryRangeKm(ctx, p);
+    const re = reentryRangeKm(p);
     expect(re).toBeLessThan(d);
     expect(re).toBeGreaterThan(d * 0.95);
     // ten sam azymut: punkt wejścia leży na wielkim kole do celu
@@ -62,7 +63,7 @@ describe.runIf(ready)('ejecta orbits (Kepler, rotating Earth, re-entry)', () => 
     expect(esc / ps.length).toBeGreaterThan(0.06);
     expect(esc / ps.length).toBeLessThan(0.18);
     for (const [lo, hi] of [[1500, 2500], [6000, 9000]] as const) {
-      const bin = bound.filter((p) => { const r = reentryRangeKm(ctx, p); return r >= lo && r < hi; });
+      const bin = bound.filter((p) => { const r = reentryRangeKm(p); return r >= lo && r < hi; });
       expect(bin.length).toBeGreaterThan(20);
       const first = Math.min(...bin.map((p) => p.tRe));
       const front = ejectaArrival(ctx, lo).t;
@@ -70,6 +71,19 @@ describe.runIf(ready)('ejecta orbits (Kepler, rotating Earth, re-entry)', () => 
       expect(first).toBeLessThan(ejectaArrival(ctx, hi).t * 1.25);
     }
     for (const p of bound) { expect(Number.isFinite(p.tRe)).toBe(true); expect(Number.isFinite(p.reLat)).toBe(true); }
+  });
+
+  it('the allocation-free particleAtInto agrees with the reference particleAt', () => {
+    const out = new Float32Array(3);
+    for (const p of sampleEjecta(ctx, 300, 5)) {
+      for (const f of [0.1, 0.5, 0.9]) {
+        const t = p.t0 + f * (Number.isFinite(p.tRe) ? p.tRe - p.t0 : 3600);
+        const ref = particleAt(p, t, op)!;
+        expect(particleAtInto(p, t, op, out, 0)).toBe(true);
+        expect(Math.hypot(out[0]! - ref[0], out[1]! - ref[1], out[2]! - ref[2])).toBeLessThan(0.01 * Math.hypot(...ref));
+      }
+      expect(particleAtInto(p, p.t0 - 1, op, out, 0)).toBe(false);
+    }
   });
 
   it('escaping particles climb away from Earth', () => {
@@ -84,6 +98,15 @@ describe.runIf(ready)('ejecta orbits (Kepler, rotating Earth, re-entry)', () => 
     expect(flashScreenAge(1000 * Math.sqrt(10), 1000, 'adaptive', 0.5)).toBeCloseTo(1, 6);
     expect(flashScreenAge(1002, 1000, 'realtime', 0.5)).toBe(2);
     expect(flashScreenAge(500, 1000, 'adaptive', 0.5)).toBeLessThan(0);
+  });
+
+  it('re-entry flash lights up fast, fades out and is dark outside its life', () => {
+    expect(flashLevel(-0.01)).toBe(0);
+    expect(flashLevel(0.06)).toBeCloseTo(1, 9);
+    expect(flashLevel(0.03)).toBeCloseTo(0.5, 9);
+    expect(flashLevel(0.2)).toBeLessThan(flashLevel(0.1));
+    expect(flashLevel(FLASH_LIFE_S)).toBe(0);
+    expect(flashLevel(FLASH_LIFE_S * 2)).toBe(0);
   });
 
   it('lat/lon conversion round-trips', () => {

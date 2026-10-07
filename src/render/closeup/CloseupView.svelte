@@ -4,12 +4,13 @@
   import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
   import { ui } from '../../app/state.svelte';
   import type { AppData } from '../../app/data';
-  import { craterAt, craterKeyframes } from '../../model/predictive/crater-kinematics';
+  import { craterAt, craterKeyframes, type CraterPhase } from '../../model/predictive/crater-kinematics';
   import { washOpacity } from '../../app/impact-flash';
   import { plumeTemperatureK } from '../color';
   import { formatNumber } from '../../model/registry/format';
   import { createHost, disposeScene, webglAvailable, type ThreeHost } from '../three-host';
-  import { CloseupScene } from './closeup-scene';
+  import { CloseupScene, PLUME_VISIBLE_S } from './closeup-scene';
+  import { prefersReducedMotion } from '../../app/dom';
   import Value from '../../app/components/Value.svelte';
   import { L, tx } from '../../app/i18n';
   import type { Txt } from '../../model/registry/types';
@@ -30,10 +31,10 @@
   let controls: OrbitControls | null = null;
   let applyingAuto = false;
 
-  const reducedMotion = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reducedMotion = prefersReducedMotion();
   const st = $derived(craterAt(k, ui.t));
   const plumeK = $derived(ui.t > 0 ? plumeTemperatureK(ui.t, reg.num('fireball.plume_initial_temperature'), reg.num('fireball.transparency_temperature'), reg.num('fireball.t_max_radiation_eiep')) : null);
-  const PHASE: Record<string, Txt> = {
+  const PHASE: Record<CraterPhase, Txt> = {
     pre: { pl: 'przelot przez atmosferę', en: 'atmospheric entry' }, excavation: { pl: 'kontakt, kompresja i wykop', en: 'contact, compression and excavation' },
     uplift: { pl: 'wypiętrzanie dna', en: 'floor uplift' }, collapse: { pl: 'zapadanie wypiętrzenia → pierścień szczytowy', en: 'uplift collapse → peak ring' },
     modification: { pl: 'modyfikacja krateru', en: 'crater modification' }, final: { pl: 'krater końcowy', en: 'final crater' },
@@ -61,7 +62,7 @@
   function frame(): void {
     if (!host || !cs) return;
     const t = ui.t;
-    cs.update(t, { crater: ui.layers.crater, ejecta: ui.layers.ejecta, thermal: ui.layers.thermal, tsunami: ui.layers.tsunami });
+    cs.update(t, { ejecta: ui.layers.ejecta, thermal: ui.layers.thermal });
     wash = reducedMotion ? 0 : washOpacity(t);
     if (auto && controls) {
       const p = cs.autoPose(t);
@@ -116,14 +117,14 @@
     {#if wash > 0}<div class="wash" style={`opacity:${wash}`}></div>{/if}
     <div class="hud small">
       <div><b>{L('Zbliżenie: miejsce uderzenia', 'Close-up: the impact site')}</b> · {L('skala rzeczywista (bez przewyższenia), okręgi co 50 km', 'true scale (no vertical exaggeration), circles every 50 km')}</div>
-      <div>{L('faza', 'phase')}: <b class="ph-crater">{tx(PHASE[st.phase]!)}</b>{#if st.cavityRadius > 0} · {L('promień krateru', 'crater radius')} {formatNumber(st.cavityRadius, 3)} km{/if}</div>
+      <div>{L('faza', 'phase')}: <b class="ph-crater">{tx(PHASE[st.phase])}</b>{#if st.cavityRadius > 0} · {L('promień krateru', 'crater radius')} {formatNumber(st.cavityRadius, 3)} km{/if}</div>
       <div class="muted">
         {L('impaktor', 'impactor')} <Value value={reg.num('impactor.diameter')} unit="km" paramId="impactor.diameter" certainty={reg.param('impactor.diameter').certainty} />,
         <Value value={reg.num('impactor.velocity')} unit="km/s" paramId="impactor.velocity" certainty={reg.param('impactor.velocity').certainty} />,
         {L('kąt', 'angle')} <Value value={reg.num('impactor.angle')} unit="°" paramId="impactor.angle" certainty={reg.param('impactor.angle').certainty} />,
         {L('z azymutu', 'from azimuth')} <Value value={reg.num('impactor.approach_azimuth')} unit="°" paramId="impactor.approach_azimuth" certainty={reg.param('impactor.approach_azimuth').certainty} />
       </div>
-      {#if plumeK !== null && ui.t < 4 * 3600}
+      {#if plumeK !== null && ui.t < PLUME_VISIBLE_S}
         <div class="muted">{L('pióropusz par: górna część', 'vapour plume: upper part')} <Value value={reg.num('fireball.plume_upper_velocity')} unit="km/s" paramId="fireball.plume_upper_velocity" certainty={reg.param('fireball.plume_upper_velocity').certainty} />,
           {L('barwa wg temperatury', 'colour by temperature')} ~{formatNumber(plumeK, 2)} K <span class="mk-predictive" title={L('krzywa między dwiema kotwicami z rejestru: temperatura początkowa i temperatura przezroczystości w chwili maksimum promieniowania', 'curve between two registry anchors: the initial temperature and the transparency temperature at the radiation maximum')}>△</span></div>
       {/if}

@@ -1,16 +1,16 @@
 <script lang="ts">
   import { ui } from '../state.svelte';
   import { tsunamiReachKm, type AppData } from '../data';
-  import { frontsAt, type FrontKind } from '../../model/sim/fronts';
+  import { frontsAt } from '../../model/sim/fronts';
   import { formatClock } from '../../time/axis';
   import { FRONT_STYLE } from '../legend';
+  import { LAYER_OF } from '../phenomena';
   import { L, tx, pLabel } from '../i18n';
   import Value from './Value.svelte';
 
   let { data }: { data: AppData } = $props();
   const r = $derived(data.reg);
   const fronts = $derived(frontsAt(data.ctx, ui.t));
-  const FRONT_LANE: Record<FrontKind, string> = { P: 'seismic', S: 'seismic', R: 'seismic', G: 'seismic', lamb: 'air', ejecta: 'ejecta', fireball: 'thermal' };
   const handoff = $derived(r.num('tsunami.range2022_handoff_time'));
   const craterSteps = [
     { id: 'crater.t_transient_max', label: { pl: 'krater przejściowy', en: 'transient crater' }, valueId: 'crater.transient_diameter' },
@@ -42,7 +42,7 @@
   {#if fronts.length === 0}<p class="small muted">{L('Przed kontaktem — fronty pojawią się od T = 0.', 'Before contact — fronts appear from T = 0.')}</p>{/if}
   {#each fronts as f (f.kind)}
     {@const name = tx(FRONT_STYLE[f.kind].title)}
-    <div class={`kv ph-${FRONT_LANE[f.kind]}`}>
+    <div class={`kv ph-${LAYER_OF[f.kind]}`}>
       <span><span class="dot"></span>{name}{f.order > 1 ? L(` (przejście ${f.order})`, ` (pass ${f.order})`) : ''}</span>
       <Value value={f.radiusKm} unit="km" certainty={f.certainty} sourceIds={f.sourceIds} title={`${name} — ${L('promień od krateru', 'radius from the crater')}`}
         method={L('model: czasy dotarcia z rejestru, odwrócone w chwili T', 'model: arrival times from the registry, inverted at time T')} />

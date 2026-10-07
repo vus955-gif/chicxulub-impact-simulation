@@ -30,7 +30,6 @@ export function orbitArrivals(dKm: number, speedKmS: number, tMax: number): Orbi
   return out;
 }
 
-export const surfaceWaveArrivals = (dKm: number, groupVelocityKmS: number, tMax: number) => orbitArrivals(dKm, groupVelocityKmS, tMax);
 export const lambArrivals = (dKm: number, speedMS: number, tMax: number) => orbitArrivals(dKm, speedMS / 1000, tMax);
 
 /**

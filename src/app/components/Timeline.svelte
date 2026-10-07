@@ -3,18 +3,18 @@
   import type { AppData } from '../data';
   import { LANES, laneOfGroup } from '../phenomena';
   import { L, certLabel } from '../i18n';
-  import { createAxis, formatClock } from '../../time/axis';
+  import { createAxis, formatClock, T_MAX, T_MIN } from '../../time/axis';
   import { nextEvent, prevEvent, type TimelineEvent } from '../../time/events';
 
   let { data }: { data: AppData } = $props();
 
   const tEntry = $derived(data.reg.num('impactor.entry_duration'));
-  const axis = $derived(createAxis({ tEntry, tMin: 0.01, tMax: 86400, prologShare: 0.05 }));
+  const axis = $derived(createAxis({ tEntry, tMin: T_MIN, tMax: T_MAX, prologShare: 0.05 }));
   let width = $state(900);
   const padL = 150, padR = 16, laneH = 17, top = 6;
   const H = top + LANES.length * laneH + 24;
   const x = (t: number) => padL + axis.tToU(t) * (width - padL - padR);
-  const events = $derived(data.events.filter((e) => e.t <= 86400 && e.t >= -tEntry));
+  const events = $derived(data.events.filter((e) => e.t <= T_MAX && e.t >= -tEntry));
   const laneIndex = (e: TimelineEvent) => LANES.findIndex((l) => l.key === laneOfGroup(e.group));
 
   let dragging = false;
@@ -30,7 +30,7 @@
   function move(ev: PointerEvent) { if (dragging) ui.t = tAtPointer(ev, ev.currentTarget as SVGSVGElement); }
   function up() { dragging = false; }
 
-  function jumpDecade(dir: 1 | -1) { ui.t = ui.t <= 0 ? (dir > 0 ? 0.01 : -tEntry) : Math.min(86400, Math.max(0.01, ui.t * 10 ** dir)); }
+  function jumpDecade(dir: 1 | -1) { ui.t = ui.t <= 0 ? (dir > 0 ? T_MIN : -tEntry) : Math.min(T_MAX, Math.max(T_MIN, ui.t * 10 ** dir)); }
   function onKey(e: KeyboardEvent) {
     if ((e.target as HTMLElement)?.tagName === 'SELECT' || (e.target as HTMLElement)?.tagName === 'INPUT') return;
     if (e.key === ' ') { e.preventDefault(); ui.playing = !ui.playing; }
@@ -85,7 +85,7 @@
         {#if li >= 0}
           {@const cy = top + li * laneH + laneH / 2}
           <g class={`ph-${LANES[li]!.key}`} opacity={ui.layers[LANES[li]!.key] ? 1 : 0.35}>
-            {#if e.range}<line x1={x(Math.max(e.range[0], -tEntry))} x2={x(Math.min(e.range[1], 86400))} y1={cy} y2={cy} stroke="currentColor" stroke-opacity="0.5" stroke-width="2" />{/if}
+            {#if e.range}<line x1={x(Math.max(e.range[0], -tEntry))} x2={x(Math.min(e.range[1], T_MAX))} y1={cy} y2={cy} stroke="currentColor" stroke-opacity="0.5" stroke-width="2" />{/if}
             <path d={shape(e.certainty, x(e.t), cy)} fill={e.certainty === 'fact' ? 'currentColor' : e.certainty === 'extrapolation' ? 'currentColor' : 'none'}
               fill-opacity={e.certainty === 'extrapolation' ? 0.45 : 1} stroke="currentColor" stroke-width="1.4" class="ev"
               role="button" tabindex="-1" aria-label={ui.lang === 'en' && e.labelEn ? e.labelEn : e.label}

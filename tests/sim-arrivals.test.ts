@@ -3,7 +3,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { loadRegistry } from '../src/model/registry/load';
 import { RegistryIndex } from '../src/model/sim/registry-client';
 import { createSimContext } from '../src/model/sim/context';
-import { bodyWave, surfaceWaveArrivals, lambArrivals, ejectaArrival } from '../src/model/sim/arrivals';
+import { bodyWave, orbitArrivals, lambArrivals, ejectaArrival } from '../src/model/sim/arrivals';
 import { ANTIPODE_KM, CIRCUMFERENCE_KM } from '../src/model/sim/geo';
 import * as eiep from '../src/model/eiep';
 
@@ -11,16 +11,16 @@ const ready = existsSync('research/parameters.json') && existsSync('data/derived
 
 describe('surface and Lamb wave orbits', () => {
   it('R1 and R2 coincide at the antipode', () => {
-    const a = surfaceWaveArrivals(ANTIPODE_KM, 3.65, 86400);
+    const a = orbitArrivals(ANTIPODE_KM, 3.65, 86400);
     expect(a[0]!.t).toBeCloseTo(a[1]!.t, 6);
   });
   it('15 Rayleigh passages in 24 h at 3000 km for U = 3.65 km/s', () => {
-    const a = surfaceWaveArrivals(3000, 3.65, 86400);
+    const a = orbitArrivals(3000, 3.65, 86400);
     expect(a.length).toBe(15);
     expect(a.map((x) => x.order)).toEqual([...Array(15).keys()].map((k) => k + 1));
   });
   it('orbit period equals circumference / U', () => {
-    const a = surfaceWaveArrivals(3000, 3.65, 86400);
+    const a = orbitArrivals(3000, 3.65, 86400);
     expect(a[2]!.t - a[0]!.t).toBeCloseTo(CIRCUMFERENCE_KM / 3.65, 6);
   });
   it('Lamb wave reaches the antipode after ~17.6 h at 315 m/s', () => {

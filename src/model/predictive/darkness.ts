@@ -6,6 +6,7 @@
  * Ułamek światła S = exp(−τ).
  */
 import type { SimContext } from '../sim/context';
+import { ANTIPODE_KM } from '../sim/geo';
 
 export const FIRE_SCENARIOS = ['regional', 'global'] as const;
 export type FireScenario = (typeof FIRE_SCENARIOS)[number];
@@ -29,6 +30,18 @@ export function reaccretedFraction(ctx: SimContext, t: number): number {
     if (t <= t1) return f0 + ((Math.log(t) - Math.log(t0)) / (Math.log(t1) - Math.log(t0))) * (f1 - f0);
   }
   return knots[knots.length - 1]![1];
+}
+
+export const LIGHT_PROFILE_N = 129;
+
+/**
+ * Ułamek światła w LIGHT_PROFILE_N punktach od krateru do antypodów (d = i/(N−1) · antypody) — tablica, którą widoki
+ * odczytują zamiast liczyć model w każdym pikselu.
+ */
+export function lightProfile(ctx: SimContext, t: number, fires: FireScenario): Float32Array {
+  const n = LIGHT_PROFILE_N, out = new Float32Array(n);
+  for (let i = 0; i < n; i++) out[i] = darknessAt(ctx, t, (i / (n - 1)) * ANTIPODE_KM, fires).lightFraction;
+  return out;
 }
 
 export interface Darkness { tauDust: number; tauSoot: number; lightFraction: number }

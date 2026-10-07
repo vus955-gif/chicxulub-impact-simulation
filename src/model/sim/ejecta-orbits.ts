@@ -17,6 +17,7 @@ import { G_EARTH, R_EARTH } from '../eiep/constants';
 import type { SimContext } from './context';
 import { ejectaArrival } from './arrivals';
 import { angleDiffDeg } from './geo';
+import { mulberry32 } from './rng';
 import type { PlayMode } from '../../time/playback';
 
 type V3 = [number, number, number];
@@ -95,7 +96,10 @@ function inertialAt(p: EjectaParticle, dt: number): V3 {
   return add(scale(p.P, x), scale(p.Q, y));
 }
 
-/** Położenie w układzie ziemskim [km] w chwili t; null, gdy cząstka nie leci (przed wyrzutem / po wejściu). */
+/**
+ * Położenie w układzie ziemskim [km] w chwili t; null, gdy cząstka nie leci (przed wyrzutem / po wejściu).
+ * Wersja wzorcowa (prosta, z alokacją) — testy sprawdzają nią szybką particleAtInto.
+ */
 export function particleAt(p: EjectaParticle, t: number, op: OrbitParams): V3 | null {
   if (t <= p.t0 || t >= p.tRe) return null;
   return rotY(inertialAt(p, t - p.t0), -op.omega * t);
@@ -177,10 +181,6 @@ export function flightTimeTo(rangeKm: number, phiDeg: number, rRe: number): numb
   return (Ere - el.e * Math.sin(Ere) - el.M0) / el.n;
 }
 
-function rng(seed: number) {
-  return () => { seed |= 0; seed = (seed + 0x6d2b79f5) | 0; let t = Math.imul(seed ^ (seed >>> 15), 1 | seed); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
-}
-
 /**
  * Geometria ponownego wejścia (kula nierotująca, analitycznie): dla ν = v²/(gR) i kąta φ — odległość po powierzchni
  * od krateru do punktu, w którym cząstka schodzi do promienia rRe, oraz czas lotu do tej chwili.
@@ -253,7 +253,7 @@ export function makeParticle(crater: V3, azDeg: number, phiDeg: number, v: numbe
 
 export function sampleEjecta(ctx: SimContext, count: number, seed = 66052): EjectaParticle[] {
   const r = ctx.reg, op = orbitParams(ctx);
-  const rand = rng(seed);
+  const rand = mulberry32(seed);
   const crater = llToV3(ctx.crater.lat, ctx.crater.lon);
   const escapeFrac = r.num('ejecta.escape_fraction') / 100;
   const phiMax = r.num('ejecta.launch_angle_max_pred');
@@ -305,9 +305,18 @@ export function flashScreenAge(t: number, tRe: number, mode: PlayMode, dps: numb
   return t <= 0 ? -1 : Math.log10(t / tRe) / Math.max(1e-6, dps);
 }
 
-/** Kontrola: odległość po wielkim kole [km] między kraterem a miejscem ponownego wejścia. */
-export function reentryRangeKm(ctx: SimContext, p: EjectaParticle): number {
-  const a = llToV3(ctx.crater.lat, ctx.crater.lon), b = llToV3(p.reLat, p.reLon);
-  return Math.acos(Math.max(-1, Math.min(1, dot(a, b)))) * R;
+/** Czas życia rozbłysku ponownego wejścia [s ekranu] — symbol, wspólny dla mapy i globu. */
+export const FLASH_LIFE_S = 0.4;
+
+/** Jasność rozbłysku 0…1 od jego wieku w sekundach ekranu: szybkie zapalenie, potem kwadratowe wygaszanie. */
+export function flashLevel(age: number): number {
+  if (age < 0 || age >= FLASH_LIFE_S) return 0;
+  return age < 0.06 ? age / 0.06 : (1 - (age - 0.06) / (FLASH_LIFE_S - 0.06)) ** 2;
+}
+
+/** Zakres [lo, hi) w `order` (sortByReentry): cząstki, których rozbłysk świeci w chwili t. */
+export function litFlashRange(ps: EjectaParticle[], order: Int32Array, t: number, mode: PlayMode, dps: number): [number, number] {
+  const [tFrom, tTo] = flashWindow(t, FLASH_LIFE_S, mode, dps);
+  return reentryWindow(ps, order, tFrom, tTo);
 }
 

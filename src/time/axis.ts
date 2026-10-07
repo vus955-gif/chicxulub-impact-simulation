@@ -1,6 +1,10 @@
 /** Oś czasu: prolog liniowy [−tEntry, 0] na [0, prologShare], potem skala logarytmiczna [tMin, tMax] na [prologShare, 1]. */
 import { formatNumber } from '../model/registry/format';
 
+/** Zakres osi czasu po kontakcie: od 0,01 s do 24 h. */
+export const T_MIN = 0.01;
+export const T_MAX = 86400;
+
 export interface AxisConfig { tEntry: number; tMin: number; tMax: number; prologShare: number }
 export interface Tick { t: number; u: number; label: string; labelEn?: string; major: boolean }
 

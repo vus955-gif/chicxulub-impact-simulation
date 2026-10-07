@@ -5,15 +5,18 @@
   import { ui } from '../../app/state.svelte';
   import type { AppData } from '../../app/data';
   import { frontsAt, irZoneAt, type FrontKind } from '../../model/sim/fronts';
-  import { activeItems, hasRing, placeLabels, FRONT_STYLE, type Box } from '../../app/legend';
-  import { tsunamiReachKm } from '../../app/data';
+  import { craterRadiusKm, firesRadiusKm, hasRing, placeLabels, FRONT_STYLE, type Box } from '../../app/legend';
+  import { viewItems } from '../../app/view-items';
+  import { tsunamiFrontBandS } from '../../app/data';
+  import { LAYER_OF } from '../../app/phenomena';
   import MapLegend from '../../app/components/MapLegend.svelte';
   import { L, tx, siteName } from '../../app/i18n';
+  import { cssColor, prefersReducedMotion } from '../../app/dom';
   import { bioZones, bioReachAt, type BioZoneKey } from '../../model/sim/biosphere';
-  import { flashScreenAge, flashWindow, orbitParams, particleAtInto, reentryWindow, sortByReentry, type OrbitParams } from '../../model/sim/ejecta-orbits';
-  import { darknessAt } from '../../model/predictive/darkness';
-  import { azimuthDeg, destination, ANTIPODE_KM, R_KM } from '../../model/sim/geo';
-  import { bolideProgress, flashIntensity, washOpacity } from '../../app/impact-flash';
+  import { flashLevel, flashScreenAge, litFlashRange, orbitParams, particleAtInto, sortByReentry, type OrbitParams } from '../../model/sim/ejecta-orbits';
+  import { lightProfile, LIGHT_PROFILE_N } from '../../model/predictive/darkness';
+  import { azimuthDeg, destination, R_KM } from '../../model/sim/geo';
+  import { bolideProgress, flashIntensity, flashTimes, washOpacity } from '../../app/impact-flash';
   import { createHost, disposeScene, glowTexture, latLonToVec3, rawColor, vec3ToLatLon, webglAvailable, type ThreeHost } from '../three-host';
   import { createAtmosphereMaterial, createGlobeMaterial, MAX_FRONTS } from './globe-material';
 
@@ -35,18 +38,15 @@
   let coast: THREE.LineSegments;
   let ej: { heads: THREE.Points; trails: THREE.LineSegments; flashes: THREE.Points; head: Float32Array; headCol: Float32Array; seg: Float32Array; segCol: Float32Array; flCol: Float32Array; op: OrbitParams; lit: number[] } | null = null;
 
-  const reducedMotion = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const cssVar = (v: string) => getComputedStyle(document.documentElement).getPropertyValue(v).trim() || '#ffffff';
+  const reducedMotion = prefersReducedMotion();
   /** liczba kresek na obwód wielkiego koła (shader nie odtwarza wzorów kreska-kropka — rozróżnia je podpis i kolor) */
   const FRONT_DASH: Record<FrontKind, number> = { P: 0, S: 160, R: 300, G: 420, lamb: 0, ejecta: 0, fireball: 0 };
   const BIO_DASH: Record<BioZoneKey, number> = { sterile: 0, thermal: 260, trees90: 120, trees30: 120, liquefaction: 420, slopes: 420 };
   const craterV = $derived(latLonToVec3(data.ctx.crater.lat, data.ctx.crater.lon));
   const zones = $derived(bioZones(data.ctx));
-  const FRONT_LAYER: Record<FrontKind, keyof typeof ui.layers> = { P: 'seismic', S: 'seismic', R: 'seismic', G: 'seismic', lamb: 'air', ejecta: 'ejecta', fireball: 'thermal' };
-  const FLASH_LIFE = 0.4; // s ekranu — rozbłysk przy ponownym wejściu (symbol)
   const ejOrder = $derived(sortByReentry(data.ejecta));
-  const flashesNow = $derived.by(() => { const [tf, tt] = flashWindow(ui.t, FLASH_LIFE, ui.mode, ui.dps); const [lo, hi] = reentryWindow(data.ejecta, ejOrder, tf, tt); return hi > lo; });
-  const items = $derived(activeItems(data.ctx, { t: ui.t, layers: ui.layers, thermal: ui.thermal, coast: ui.coast }, { tsunamiReached: ui.t > 0 && tsunamiReachKm(data, ui.t) > 0, flashesNow }));
+  const fx = $derived(flashTimes(data.reg));
+  const items = $derived(viewItems(data, ejOrder, ui));
   let legW = $state(0), legH = $state(0);
   const legendBox = $derived<Box | null>(legW > 0 ? { x: w - legW - 14, y: h - legH - 40, w: legW + 8, h: legH + 8 } : null);
 
@@ -79,16 +79,14 @@
     const show = ui.layers.ejecta && t > 0;
     ej.heads.visible = ej.trails.visible = ej.flashes.visible = show;
     if (!show) return;
-    const base = rawColor(cssVar('--c-ejecta'));
+    const base = rawColor(cssColor('--c-ejecta'));
     const { op } = ej, rRe = op.rRe, ps = data.ejecta, inv = 1 / R_KM;
     // rozbłyski: gaszenie poprzednich, zapalenie tylko tych z okna (wyszukiwanie binarne po chwilach wejścia)
     for (const i of ej.lit) ej.flCol[i * 3] = ej.flCol[i * 3 + 1] = ej.flCol[i * 3 + 2] = 0;
     ej.lit.length = 0;
-    const [tf, tt] = flashWindow(t, FLASH_LIFE, ui.mode, ui.dps);
-    const [lo, hi] = reentryWindow(ps, ejOrder, tf, tt);
+    const [lo, hi] = litFlashRange(ps, ejOrder, t, ui.mode, ui.dps);
     for (let k = lo; k < hi; k++) {
-      const i = ejOrder[k]!, age = flashScreenAge(t, ps[i]!.tRe, ui.mode, ui.dps);
-      const fI = age < 0.06 ? Math.max(0, age) / 0.06 : (1 - (age - 0.06) / (FLASH_LIFE - 0.06)) ** 2;
+      const i = ejOrder[k]!, fI = flashLevel(flashScreenAge(t, ps[i]!.tRe, ui.mode, ui.dps));
       ej.flCol[i * 3] = 0.75 * fI; ej.flCol[i * 3 + 1] = 0.64 * fI; ej.flCol[i * 3 + 2] = 0.42 * fI;
       ej.lit.push(i);
     }
@@ -121,13 +119,14 @@
     const u = mat.uniforms;
     u.uCrater!.value.copy(craterV);
     u.uTh!.value = t / 3600;
-    u.uBandH!.value = Math.max(300, 0.12 * t) / 3600;
+    u.uBandH!.value = tsunamiFrontBandS(t) / 3600;
     u.uShowTs!.value = ui.layers.tsunami && t > 0 ? 1 : 0;
     u.uEnvelope!.value = ui.envelope ? 1 : 0;
     const dark = ui.layers.atmo && t > 0;
     u.uShowDark!.value = dark ? 1 : 0;
     if (dark) {
-      for (let i = 0; i < darkArr.length; i++) darkArr[i] = THREE.DataUtils.toHalfFloat(darknessAt(data.ctx, t, (i / (darkArr.length - 1)) * ANTIPODE_KM, ui.fires).lightFraction);
+      const light = lightProfile(data.ctx, t, ui.fires);
+      for (let i = 0; i < darkArr.length; i++) darkArr[i] = THREE.DataUtils.toHalfFloat(light[i]!);
       darkTex.needsUpdate = true;
     }
     const fr = u.uFront!.value as number[], fc = u.uFrontColor!.value as THREE.Color[], fd = u.uFrontDash!.value as number[], fw = u.uFrontWidth!.value as number[], fa = u.uFrontAlpha!.value as number[];
@@ -137,14 +136,14 @@
     const widthOf = (key: string, wd: number) => (hov === key ? wd * 1.7 : wd);
     let j = 0, fireball = 0;
     for (const f of frontsAt(data.ctx, t)) {
-      if (!ui.layers[FRONT_LAYER[f.kind]] || f.radiusKm <= 0) continue;
+      if (!ui.layers[LAYER_OF[f.kind]] || f.radiusKm <= 0) continue;
       if (f.kind === 'fireball') { fireball = f.radiusKm / R_KM; continue; }
       if (j >= MAX_FRONTS) break;
       const st = FRONT_STYLE[f.kind], key = `front:${f.kind}`;
-      fr[j] = f.radiusKm / R_KM; fc[j]!.copy(rawColor(cssVar(st.color))); fd[j] = FRONT_DASH[f.kind]; fw[j] = widthOf(key, st.width); fa[j] = alphaOf(key); j++;
+      fr[j] = f.radiusKm / R_KM; fc[j]!.copy(rawColor(cssColor(st.color))); fd[j] = FRONT_DASH[f.kind]; fw[j] = widthOf(key, st.width); fa[j] = alphaOf(key); j++;
     }
     if (ui.layers.bio && t > 0) {
-      const bio = rawColor(cssVar('--c-bio'));
+      const bio = rawColor(cssColor('--c-bio'));
       for (const z of zones) {
         const r = bioReachAt(data.ctx, z, t);
         if (r.outerKm <= 0) continue;
@@ -161,17 +160,16 @@
       const z = irZoneAt(data.ctx, t, ui.thermal);
       u.uIrOuter!.value = z.outerKm / R_KM; u.uIrInner!.value = Math.max(1, z.innerKm) / R_KM;
     } else { u.uIrOuter!.value = 0; u.uIrInner!.value = 0; }
-    u.uFires!.value = ui.layers.fires && t > data.reg.num('fireball.t_max_radiation_eiep') ? data.reg.num('fires.ignition_radius_fireball') / R_KM : 0;
-    u.uCraterR!.value = ui.layers.crater ? (t >= data.reg.num('crater.t_final') ? data.reg.num('crater.final_diameter') / 2 : t > 0 ? data.reg.num('crater.transient_diameter') / 2 : 0) / R_KM : 0;
+    u.uFires!.value = ui.layers.fires ? firesRadiusKm(data.reg, t) / R_KM : 0;
+    u.uCraterR!.value = ui.layers.crater ? craterRadiusKm(data.reg, t) / R_KM : 0;
   }
 
   function updateImpactFx(t: number): void {
-    const times = { tEntry: data.reg.num('impactor.entry_duration'), tMaxRad: data.reg.num('fireball.t_max_radiation_eiep'), radDurS: data.reg.seconds('fireball.radiation_duration_eiep') };
-    const I = flashIntensity(t, times);
+    const I = flashIntensity(t, fx);
     flash.visible = I > 0;
     if (I > 0) { const s = 0.06 + 0.3 * I; flash.scale.set(s, s, 1); (flash.material as THREE.SpriteMaterial).opacity = Math.min(1, 0.4 + 0.6 * I); }
     wash = reducedMotion ? 0 : washOpacity(t);
-    const prog = bolideProgress(t, times.tEntry);
+    const prog = bolideProgress(t, fx.tEntry);
     bolide.visible = trail.visible = prog !== null;
     if (prog !== null) {
       // symbol: tor ~0,12 promienia Ziemi (w skali globu cały przelot to ~0,02), kierunek i kąt z rejestru
@@ -179,8 +177,8 @@
       const tan = latLonToVec3(from.lat, from.lon).sub(craterV.clone().multiplyScalar(latLonToVec3(from.lat, from.lon).dot(craterV))).normalize();
       const angle = (data.reg.num('impactor.angle') * Math.PI) / 180;
       const dir = tan.multiplyScalar(Math.cos(angle)).addScaledVector(craterV, Math.sin(angle)).normalize();
-      const L = 0.12 * (1 - prog);
-      const head = craterV.clone().multiplyScalar(1.002).addScaledVector(dir, L);
+      const len = 0.12 * (1 - prog);
+      const head = craterV.clone().multiplyScalar(1.002).addScaledVector(dir, len);
       bolide.position.copy(head);
       const s = 0.025 + 0.04 * prog; bolide.scale.set(s, s, 1);
       const p = trail.geometry.getAttribute('position') as THREE.BufferAttribute;
@@ -229,7 +227,7 @@
     const placed = placeLabels(cands, { x: 4, y: 4, w: w - 8, h: h - 28 }, taken);
     for (const it of ringItems) {
       const b = placed.get(it.key);
-      if (b) out.push({ id: `ring:${it.key}`, text: tx(it.tag), x: b.x, y: b.y, sel: false, color: cssVar(it.style.color.startsWith('--') ? it.style.color : '--ink'), ring: true, dim: ui.hover !== null && ui.hover !== it.key });
+      if (b) out.push({ id: `ring:${it.key}`, text: tx(it.tag), x: b.x, y: b.y, sel: false, color: cssColor(it.style.color), ring: true, dim: ui.hover !== null && ui.hover !== it.key });
     }
     labels = out;
   }
@@ -250,6 +248,79 @@
     render();
   }
 
+  /** Kula z paleogeografią i polami (tsunami, zaciemnienie, pierścienie liczone w shaderze) oraz poświata atmosfery. */
+  function buildGlobe(): void {
+    const tex = new THREE.Texture(data.texture);
+    tex.colorSpace = THREE.NoColorSpace; tex.anisotropy = host!.renderer.capabilities.getMaxAnisotropy(); tex.needsUpdate = true;
+    const mk = (arr: Uint16Array, wd: number, ht: number) => { const t = new THREE.DataTexture(arr, wd, ht, THREE.RedFormat, THREE.HalfFloatType); t.minFilter = t.magFilter = THREE.NearestFilter; t.needsUpdate = true; return t; };
+    const tt = mk(halfGrid(data.tsunamiTT.data as Float32Array, 1 / 3600), data.tsunamiTT.w, data.tsunamiTT.h);
+    const amp = mk(halfGrid(data.tsunamiAmp.data as Float32Array, 1), data.tsunamiAmp.w, data.tsunamiAmp.h);
+    darkArr = new Uint16Array(LIGHT_PROFILE_N).fill(THREE.DataUtils.toHalfFloat(1));
+    darkTex = new THREE.DataTexture(darkArr, LIGHT_PROFILE_N, 1, THREE.RedFormat, THREE.HalfFloatType);
+    darkTex.minFilter = darkTex.magFilter = THREE.LinearFilter; darkTex.needsUpdate = true;
+
+    mat = createGlobeMaterial(tex, tt, amp, darkTex);
+    mat.uniforms.cThermal!.value = rawColor(cssColor('--c-thermal'));
+    mat.uniforms.cFires!.value = rawColor(cssColor('--c-fires'));
+    mat.uniforms.cCrater!.value = rawColor(cssColor('--c-crater'));
+    mat.uniforms.cTsunami!.value = rawColor(cssColor('--c-tsunami'));
+    globe = new THREE.Mesh(new THREE.SphereGeometry(1, 192, 96), mat);
+    scene.add(globe);
+    scene.add(new THREE.Mesh(new THREE.SphereGeometry(1.025, 96, 48), createAtmosphereMaterial()));
+  }
+
+  /** Symbole chwili uderzenia: błysk nad kraterem, bolid i jego smuga. */
+  function buildImpactFx(): void {
+    const flashTex = glowTexture([[0, 'rgba(255,255,240,1)'], [0.15, 'rgba(255,232,170,0.9)'], [0.45, 'rgba(255,150,60,0.35)'], [1, 'rgba(255,90,30,0)']]);
+    flash = new THREE.Sprite(new THREE.SpriteMaterial({ map: flashTex, blending: THREE.AdditiveBlending, depthWrite: false, transparent: true }));
+    flash.position.copy(craterV.clone().multiplyScalar(1.01));
+    scene.add(flash);
+    bolide = new THREE.Sprite(new THREE.SpriteMaterial({ map: flashTex, blending: THREE.AdditiveBlending, depthWrite: false, transparent: true }));
+    scene.add(bolide);
+    const tg = new THREE.BufferGeometry(); tg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(6), 3));
+    trail = new THREE.Line(tg, new THREE.LineBasicMaterial({ color: 0xffd59a, transparent: true, opacity: 0.7 }));
+    trail.frustumCulled = false;
+    scene.add(trail);
+  }
+
+  /** Stanowiska, znacznik sondy i dzisiejsze linie brzegowe (orientacja, odcinki tuż nad powierzchnią). */
+  function buildMarkers(): void {
+    const sp = new Float32Array(data.sites.length * 3);
+    data.sites.forEach((s, i) => { const v = latLonToVec3(s.paleoLat, s.paleoLon, 1.002); sp.set([v.x, v.y, v.z], i * 3); });
+    const sg = new THREE.BufferGeometry(); sg.setAttribute('position', new THREE.BufferAttribute(sp, 3));
+    sitesPts = new THREE.Points(sg, new THREE.PointsMaterial({ size: 5, sizeAttenuation: false, color: 0xffffff, map: glowTexture([[0, 'rgba(255,255,255,1)'], [0.55, 'rgba(255,255,255,1)'], [0.7, 'rgba(255,255,255,0)'], [1, 'rgba(255,255,255,0)']], 32), transparent: true }));
+    scene.add(sitesPts);
+    probeMark = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTexture([[0, 'rgba(255,255,255,0)'], [0.55, 'rgba(255,255,255,0)'], [0.62, 'rgba(255,255,255,1)'], [0.78, 'rgba(255,255,255,1)'], [0.85, 'rgba(255,255,255,0)']], 64), transparent: true, depthWrite: false }));
+    probeMark.scale.set(0.035, 0.035, 1);
+    scene.add(probeMark);
+    const segs: number[] = [];
+    for (const l of data.coastlines) for (let i = 0; i + 3 < l.length; i += 2) {
+      const a = latLonToVec3(l[i + 1]!, l[i]!, 1.0015), b = latLonToVec3(l[i + 3]!, l[i + 2]!, 1.0015);
+      segs.push(a.x, a.y, a.z, b.x, b.y, b.z);
+    }
+    const cg = new THREE.BufferGeometry(); cg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(segs), 3));
+    coast = new THREE.LineSegments(cg, new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.38, depthWrite: false }));
+    scene.add(coast);
+  }
+
+  /** Klik bez przeciągania stawia sondę w trafionym punkcie globu; zwraca funkcję odpinającą zdarzenia. */
+  function attachPicking(canvas: HTMLCanvasElement): () => void {
+    let down: { x: number; y: number } | null = null;
+    const ray = new THREE.Raycaster();
+    const onDown = (e: PointerEvent) => { down = { x: e.clientX, y: e.clientY }; };
+    const onUp = (e: PointerEvent) => {
+      if (!down || Math.hypot(e.clientX - down.x, e.clientY - down.y) > 4) { down = null; return; }
+      down = null;
+      const r = canvas.getBoundingClientRect();
+      ray.setFromCamera(new THREE.Vector2(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1), camera);
+      const hit = ray.intersectObject(globe)[0];
+      if (hit) { ui.probe = vec3ToLatLon(hit.point); ui.site = null; }
+    };
+    canvas.addEventListener('pointerdown', onDown);
+    canvas.addEventListener('pointerup', onUp);
+    return () => { canvas.removeEventListener('pointerdown', onDown); canvas.removeEventListener('pointerup', onUp); };
+  }
+
   onMount(() => {
     if (!webglAvailable()) { failed = L('Ta przeglądarka nie udostępnia WebGL — glob 3D jest niedostępny. Mapa 2D i przekrój działają bez WebGL.', 'This browser does not provide WebGL — the 3D globe is unavailable. The 2D map and the cross-section work without WebGL.'); return; }
     try {
@@ -262,82 +333,21 @@
     camera = new THREE.PerspectiveCamera(32, 1, 0.01, 100);
     camera.position.copy(craterV.clone().multiplyScalar(3.4)).add(new THREE.Vector3(0, 0.6, 0));
     camera.lookAt(0, 0, 0);
-
-    const tex = new THREE.Texture(data.texture);
-    tex.colorSpace = THREE.NoColorSpace; tex.anisotropy = host.renderer.capabilities.getMaxAnisotropy(); tex.needsUpdate = true;
-    const mk = (arr: Uint16Array, wd: number, ht: number) => { const t = new THREE.DataTexture(arr, wd, ht, THREE.RedFormat, THREE.HalfFloatType); t.minFilter = t.magFilter = THREE.NearestFilter; t.needsUpdate = true; return t; };
-    const tt = mk(halfGrid(data.tsunamiTT.data as Float32Array, 1 / 3600), data.tsunamiTT.w, data.tsunamiTT.h);
-    const amp = mk(halfGrid(data.tsunamiAmp.data as Float32Array, 1), data.tsunamiAmp.w, data.tsunamiAmp.h);
-    darkArr = new Uint16Array(129).fill(THREE.DataUtils.toHalfFloat(1));
-    darkTex = new THREE.DataTexture(darkArr, 129, 1, THREE.RedFormat, THREE.HalfFloatType);
-    darkTex.minFilter = darkTex.magFilter = THREE.LinearFilter; darkTex.needsUpdate = true;
-
-    mat = createGlobeMaterial(tex, tt, amp, darkTex);
-    mat.uniforms.cThermal!.value = rawColor(cssVar('--c-thermal'));
-    mat.uniforms.cFires!.value = rawColor(cssVar('--c-fires'));
-    mat.uniforms.cCrater!.value = rawColor(cssVar('--c-crater'));
-    mat.uniforms.cTsunami!.value = rawColor(cssVar('--c-tsunami'));
-    globe = new THREE.Mesh(new THREE.SphereGeometry(1, 192, 96), mat);
-    scene.add(globe);
-    scene.add(new THREE.Mesh(new THREE.SphereGeometry(1.025, 96, 48), createAtmosphereMaterial()));
-
-    const flashTex = glowTexture([[0, 'rgba(255,255,240,1)'], [0.15, 'rgba(255,232,170,0.9)'], [0.45, 'rgba(255,150,60,0.35)'], [1, 'rgba(255,90,30,0)']]);
-    flash = new THREE.Sprite(new THREE.SpriteMaterial({ map: flashTex, blending: THREE.AdditiveBlending, depthWrite: false, transparent: true }));
-    flash.position.copy(craterV.clone().multiplyScalar(1.01));
-    scene.add(flash);
-    bolide = new THREE.Sprite(new THREE.SpriteMaterial({ map: flashTex, blending: THREE.AdditiveBlending, depthWrite: false, transparent: true }));
-    scene.add(bolide);
-    const tg = new THREE.BufferGeometry(); tg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(6), 3));
-    trail = new THREE.Line(tg, new THREE.LineBasicMaterial({ color: 0xffd59a, transparent: true, opacity: 0.7 }));
-    trail.frustumCulled = false;
-    scene.add(trail);
-
-    const sp = new Float32Array(data.sites.length * 3);
-    data.sites.forEach((s, i) => { const v = latLonToVec3(s.paleoLat, s.paleoLon, 1.002); sp.set([v.x, v.y, v.z], i * 3); });
-    const sg = new THREE.BufferGeometry(); sg.setAttribute('position', new THREE.BufferAttribute(sp, 3));
-    sitesPts = new THREE.Points(sg, new THREE.PointsMaterial({ size: 5, sizeAttenuation: false, color: 0xffffff, map: glowTexture([[0, 'rgba(255,255,255,1)'], [0.55, 'rgba(255,255,255,1)'], [0.7, 'rgba(255,255,255,0)'], [1, 'rgba(255,255,255,0)']], 32), transparent: true }));
-    scene.add(sitesPts);
-    probeMark = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTexture([[0, 'rgba(255,255,255,0)'], [0.55, 'rgba(255,255,255,0)'], [0.62, 'rgba(255,255,255,1)'], [0.78, 'rgba(255,255,255,1)'], [0.85, 'rgba(255,255,255,0)']], 64), transparent: true, depthWrite: false }));
-    probeMark.scale.set(0.035, 0.035, 1);
-    scene.add(probeMark);
+    buildGlobe();
+    buildImpactFx();
+    buildMarkers();
     buildEjecta();
-    // dzisiejsze linie brzegowe (orientacja): odcinki tuż nad powierzchnią
-    {
-      const segs: number[] = [];
-      for (const l of data.coastlines) for (let i = 0; i + 3 < l.length; i += 2) {
-        const a = latLonToVec3(l[i + 1]!, l[i]!, 1.0015), b = latLonToVec3(l[i + 3]!, l[i + 2]!, 1.0015);
-        segs.push(a.x, a.y, a.z, b.x, b.y, b.z);
-      }
-      const cg = new THREE.BufferGeometry(); cg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(segs), 3));
-      coast = new THREE.LineSegments(cg, new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.38, depthWrite: false }));
-      scene.add(coast);
-    }
 
     controls = new OrbitControls(camera, host.canvas);
     controls.enablePan = false; controls.enableDamping = false;
     controls.minDistance = 1.25; controls.maxDistance = 8; controls.rotateSpeed = 0.55; controls.zoomSpeed = 0.8;
     controls.addEventListener('change', render);
-
-    // klik (bez przeciągania) = sonda
-    let down: { x: number; y: number } | null = null;
-    const ray = new THREE.Raycaster();
-    const onDown = (e: PointerEvent) => { down = { x: e.clientX, y: e.clientY }; };
-    const onUp = (e: PointerEvent) => {
-      if (!down || Math.hypot(e.clientX - down.x, e.clientY - down.y) > 4) { down = null; return; }
-      down = null;
-      const r = host!.canvas.getBoundingClientRect();
-      ray.setFromCamera(new THREE.Vector2(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1), camera);
-      const hit = ray.intersectObject(globe)[0];
-      if (hit) { ui.probe = vec3ToLatLon(hit.point); ui.site = null; }
-    };
-    host.canvas.addEventListener('pointerdown', onDown);
-    host.canvas.addEventListener('pointerup', onUp);
+    const detachPicking = attachPicking(host.canvas);
 
     host.resize(w, h); camera.aspect = w / Math.max(1, h); camera.updateProjectionMatrix();
     frame();
     return () => {
-      host?.canvas.removeEventListener('pointerdown', onDown);
-      host?.canvas.removeEventListener('pointerup', onUp);
+      detachPicking();
       controls.dispose();
       disposeScene(scene);
       host?.dispose();

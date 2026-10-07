@@ -1,5 +1,12 @@
 import type { Txt } from '../model/registry/types';
+import type { FrontKind } from '../model/sim/fronts';
+import type { ProbeEvent } from '../model/sim/probe';
 import type { PhenomenonKey } from './url-state';
+
+/** Warstwa (i barwa .ph-*) dla rodzaju frontu lub zdarzenia sondy — jedna mapa dla mapy, globu, panelu parametrów i sondy. */
+export const LAYER_OF: Record<FrontKind | ProbeEvent['kind'], PhenomenonKey> = {
+  P: 'seismic', S: 'seismic', R: 'seismic', G: 'seismic', lamb: 'air', ejecta: 'ejecta', fireball: 'thermal', ir: 'thermal', tsunami: 'tsunami', dust: 'atmo',
+};
 
 /** Warstwy zjawisk: kolor (klasa .ph-*), grupy rejestru zasilające tor na osi czasu i to, czego warstwa NIE pokazuje. */
 export const LANES: Array<{ key: PhenomenonKey; label: Txt; groups: string[]; notShown: Txt }> = [

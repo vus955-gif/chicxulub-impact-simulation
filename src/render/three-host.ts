@@ -1,5 +1,6 @@
 /** Wspólny host WebGL dla widoków 3D: renderer, rozmiar, DPR, render na żądanie i sprzątanie zasobów. */
 import * as THREE from 'three';
+import { llToV3, v3ToLl } from '../model/sim/ejecta-orbits';
 
 export function webglAvailable(): boolean {
   try {
@@ -71,14 +72,10 @@ export function glowTexture(stops: Array<[number, string]>, size = 128): THREE.C
 
 /** lat/lon [°] → wektor jednostkowy w układzie sfery Three.js (zgodny z UV SphereGeometry i teksturą equirect). */
 export function latLonToVec3(lat: number, lon: number, r = 1): THREE.Vector3 {
-  const φ = (lat * Math.PI) / 180, λ = (lon * Math.PI) / 180;
-  return new THREE.Vector3(r * Math.cos(φ) * Math.cos(λ), r * Math.sin(φ), -r * Math.cos(φ) * Math.sin(λ));
+  return new THREE.Vector3(...llToV3(lat, lon)).multiplyScalar(r);
 }
 
-export function vec3ToLatLon(v: THREE.Vector3): { lat: number; lon: number } {
-  const n = v.clone().normalize();
-  return { lat: (Math.asin(Math.max(-1, Math.min(1, n.y))) * 180) / Math.PI, lon: (Math.atan2(-n.z, n.x) * 180) / Math.PI };
-}
+export const vec3ToLatLon = (v: THREE.Vector3): { lat: number; lon: number } => v3ToLl([v.x, v.y, v.z]);
 
 /** Kolor CSS (#rrggbb) → THREE.Color w wartościach surowych (bez konwersji przestrzeni barw). */
 export function rawColor(css: string): THREE.Color {

@@ -23,7 +23,7 @@ export interface CraterKeyframes {
   tF: number; Rf: number; Rin: number; Df: number;
   SU: number; MU: number; Hs: number; Hc: number;
   Rm: number; Tm: number;
-  tSea: number; tCrest: number; tSettle: number;
+  tSea: number; tSettle: number;
 }
 
 export function craterKeyframes(reg: RegistryIndex): CraterKeyframes {
@@ -39,7 +39,7 @@ export function craterKeyframes(reg: RegistryIndex): CraterKeyframes {
     SU: n('crust.central_structural_uplift'), MU: n('crust.moho_uplift'),
     Hs: n('target.sediment_thickness'), Hc: n('target.crust_thickness'),
     Rm: n('crater.melt_sheet_diameter') / 2, Tm: n('crater.melt_sheet_thickness'),
-    tSea: n('crater.t_first_seawater_peak_ring'), tCrest: n('crater.t_resurge_crest_peak_ring'), tSettle: n('crater.t_resurge_settling'),
+    tSea: n('crater.t_first_seawater_peak_ring'), tSettle: n('crater.t_resurge_settling'),
   };
 }
 
@@ -61,6 +61,9 @@ export interface CraterState {
   /** postęp wypiętrzenia strukturalnego 0…1 */
   structural: number;
 }
+
+/** Wykładnik wzrostu jamy w reżimie grawitacyjnym: R ∝ t^0,4 (także głębokość wykopu) — △. */
+export const GROWTH_EXP = 0.4;
 
 const clamp01 = (x: number) => Math.min(1, Math.max(0, x));
 const smooth = (x: number) => { const u = clamp01(x); return u * u * (3 - 2 * u); };
@@ -90,11 +93,11 @@ function finalProfile(k: CraterKeyframes, r: number): number {
 export function craterAt(k: CraterKeyframes, t: number): CraterState {
   const hrT = RIM_FRACTION * 2 * k.Rt;
   const wU = UPLIFT_WIDTH * k.Rt;
-  const radius = (tt: number) => k.Rt * Math.min(1, Math.max(0, tt) / k.tTr) ** 0.4;
+  const radius = (tt: number) => k.Rt * Math.min(1, Math.max(0, tt) / k.tTr) ** GROWTH_EXP;
 
   // parametry jamy i wypiętrzenia do chwili maksimum wypiętrzenia
   const sU = smooth((t - k.tCo) / (k.tU - k.tCo));
-  const D = t <= k.tD ? k.Dt * Math.min(1, Math.max(0, t) / k.tD) ** 0.4 : k.Dt * (1 - 0.5 * sU);
+  const D = t <= k.tD ? k.Dt * Math.min(1, Math.max(0, t) / k.tD) ** GROWTH_EXP : k.Dt * (1 - 0.5 * sU);
   const R = radius(t);
   const hr = RIM_FRACTION * 2 * R;
   const zc = t <= k.tCo ? -D : lerp(-k.Dt, k.Hu, sU); // wysokość środka

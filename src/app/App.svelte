@@ -16,6 +16,7 @@
   import Guide from './components/Guide.svelte';
   import { L, setLang, browserLang } from './i18n';
   import { decodeState } from './url-state';
+  import { T_MAX, T_MIN } from '../time/axis';
 
   // $state.raw: dane modelu są niezmienne — głęboki proxy $state opakowałby tablice ak135, zdarzenia i rejestr
   // w sygnały i każdy odczyt w pętli klatki rejestrowałby tysiące zależności
@@ -35,9 +36,9 @@
       const dt = Math.min(0.1, (now - last) / 1000);
       last = now;
       if (data && ui.playing) {
-        const cfg = { tEntry: data.reg.num('impactor.entry_duration'), tMin: 0.01, tMax: 86400, prologScreenS: 3 };
+        const cfg = { tEntry: data.reg.num('impactor.entry_duration'), tMin: T_MIN, tMax: T_MAX, prologScreenS: 3 };
         ui.t = advance(ui.t, dt, ui.mode, ui.dps, cfg);
-        if (ui.t >= 86400) ui.playing = false;
+        if (ui.t >= T_MAX) ui.playing = false;
       }
       if (data) writeUrl();
       raf = requestAnimationFrame(loop);

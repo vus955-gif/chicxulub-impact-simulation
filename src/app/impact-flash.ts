@@ -1,11 +1,17 @@
 /**
- * Wizualizacja chwili uderzenia na mapie 2D: przelot bolidu (T < 0) i błysk (T ≥ 0).
+ * Wizualizacja chwili uderzenia we wszystkich widokach: przelot bolidu (T < 0) i błysk (T ≥ 0).
  * To SYMBOL, nie model: rozmiar na ekranie jest umowny (cały przelot to ~1 px mapy świata).
  * Przebieg jasności w czasie zakotwiczony w rejestrze: maksimum promieniowania kuli ognia
  * (fireball.t_max_radiation_eiep) i czas trwania promieniowania (fireball.radiation_duration_eiep).
  */
 
+import type { RegistryIndex } from '../model/sim/registry-client';
+
 export interface FlashTimes { tEntry: number; tMaxRad: number; radDurS: number }
+
+export function flashTimes(reg: RegistryIndex): FlashTimes {
+  return { tEntry: reg.num('impactor.entry_duration'), tMaxRad: reg.num('fireball.t_max_radiation_eiep'), radDurS: reg.seconds('fireball.radiation_duration_eiep') };
+}
 
 /** Postęp przelotu: 0 na wysokości 100 km (T = −tEntry), 1 w chwili kontaktu (T = 0); poza przelotem null. */
 export function bolideProgress(t: number, tEntry: number): number | null {
@@ -27,7 +33,7 @@ export function flashIntensity(t: number, f: FlashTimes): number {
   return Math.min(1, Math.max(contact, fireball));
 }
 
-/** Krycie rozbłysku całej mapy (0…maxA): tylko przy kontakcie, gaśnie logarytmicznie do ~1 s. */
+/** Krycie rozbłysku całego widoku (0…maxA): tylko przy kontakcie, gaśnie logarytmicznie do ~1 s. */
 export function washOpacity(t: number, maxA = 0.32): number {
   if (t < 0 || t >= 1) return 0;
   if (t <= 0.01) return maxA;

@@ -83,6 +83,9 @@ export async function loadAppData(onProgress: (msg: string) => void): Promise<Ap
   };
 }
 
+/** Szerokość jaśniejszego pasa czoła tsunami [s czasu dotarcia]: komórki osiągnięte w ostatnich `band` sekundach. */
+export const tsunamiFrontBandS = (t: number): number => Math.max(300, 0.12 * t);
+
 /** Zasięg frontu tsunami [km] w chwili t (największa odległość osiągniętej komórki). */
 export function tsunamiReachKm(d: AppData, t: number): number {
   const a = d.tsunamiReach.t;

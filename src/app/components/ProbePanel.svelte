@@ -1,12 +1,13 @@
 <script lang="ts">
   import { ui } from '../state.svelte';
   import type { AppData } from '../data';
-  import { probe, type ProbeEvent } from '../../model/sim/probe';
+  import { probe } from '../../model/sim/probe';
   import { formatClock } from '../../time/axis';
   import { formatNumber, CERTAINTY_MARK } from '../../model/registry/format';
   import Value from './Value.svelte';
   import { bioZones, bioArrivalS } from '../../model/sim/biosphere';
   import { siteComparisons, ratio } from '../site-compare';
+  import { LAYER_OF } from '../phenomena';
   import { L, tx, certLabel, siteName, obsText } from '../i18n';
 
   let { data }: { data: AppData } = $props();
@@ -28,7 +29,6 @@
     const d = t - ui.t;
     return d <= 0 ? '✓' : `${L('za', 'in')} ${formatClock(d).replace('T+ ', '')}`;
   };
-  const lane = (k: ProbeEvent['kind']) => (k === 'ir' || k === 'fireball' ? 'thermal' : k === 'lamb' ? 'air' : k === 'dust' ? 'atmo' : k === 'P' || k === 'S' || k === 'R' ? 'seismic' : k);
   function pick(e: Event) {
     const v = (e.target as HTMLSelectElement).value;
     if (v === '__map') { ui.site = null; } else { ui.site = v; ui.probe = null; }
@@ -59,7 +59,7 @@
 
     <ol class="events">
       {#each report.events as e (e.kind)}
-        <li class:past={e.t <= ui.t} class={`ph-${lane(e.kind)}`}>
+        <li class:past={e.t <= ui.t} class={`ph-${LAYER_OF[e.kind]}`}>
           <div class="evh">
             <span class="dot"></span><span class="lbl">{tx(e.label)}</span>
             <button class="t" title={L('Przejdź do tej chwili', 'Jump to this moment')} onclick={() => { ui.t = e.t; ui.playing = false; }}>{formatClock(e.t)}</button>

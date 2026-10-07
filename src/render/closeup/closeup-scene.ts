@@ -8,13 +8,16 @@
  */
 import * as THREE from 'three';
 import type { AppData } from '../../app/data';
-import { craterAt, craterKeyframes, craterWaterAt, type CraterKeyframes } from '../../model/predictive/crater-kinematics';
+import { craterAt, craterKeyframes, craterWaterAt, GROWTH_EXP, type CraterKeyframes } from '../../model/predictive/crater-kinematics';
 import { waterDepthM, RAMP_MAX_KM } from '../../model/predictive/water-depth';
-import { bolideProgress, flashIntensity, type FlashTimes } from '../../app/impact-flash';
+import { G_EARTH } from '../../model/eiep/constants';
+import { mulberry32 } from '../../model/sim/rng';
+import { T_MAX, T_MIN } from '../../time/axis';
+import { bolideProgress, flashIntensity, flashTimes, washOpacity, type FlashTimes } from '../../app/impact-flash';
 import { kelvinToRgb, plumeTemperatureK } from '../color';
 import { glowTexture } from '../three-host';
 
-const G = 0.0098; // km/s²
+const G = G_EARTH / 1000; // km/s²
 const RMAX = 300; // km
 const NR = 170, NS = 192;
 
@@ -22,9 +25,8 @@ export interface CamPose { pos: THREE.Vector3; target: THREE.Vector3 }
 
 const dirFromAz = (azDeg: number) => { const a = (azDeg * Math.PI) / 180; return new THREE.Vector3(Math.sin(a), 0, -Math.cos(a)); };
 
-function rng(seed: number) {
-  return () => { seed |= 0; seed = (seed + 0x6d2b79f5) | 0; let t = Math.imul(seed ^ (seed >>> 15), 1 | seed); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
-}
+/** Pióropusz par widoczny do 4 h po uderzeniu (potem rozproszony w atmosferze) — symbol. */
+export const PLUME_VISIBLE_S = 4 * 3600;
 
 const ringRadius = (i: number) => RMAX * (i / NR) ** 1.35;
 
@@ -53,7 +55,7 @@ export class CloseupScene {
     this.data = data;
     const reg = data.reg;
     this.k = craterKeyframes(reg);
-    this.fx = { tEntry: reg.num('impactor.entry_duration'), tMaxRad: reg.num('fireball.t_max_radiation_eiep'), radDurS: reg.seconds('fireball.radiation_duration_eiep') };
+    this.fx = flashTimes(reg);
     this.L = reg.num('impactor.diameter'); this.v = reg.num('impactor.velocity');
     this.angle = (reg.num('impactor.angle') * Math.PI) / 180;
     this.approach = dirFromAz(reg.num('impactor.approach_azimuth'));
@@ -307,7 +309,7 @@ export class CloseupScene {
     }
     const I = flashIntensity(t, this.fx);
     // błysk kontaktowy (pierwsza sekunda) jest oślepiający; potem tylko przygaszona poświata — czytelność ponad dosłowność
-    const contact = t > 0 && t < 1 ? Math.max(0, 1 - Math.log10(Math.max(t, 0.01) / 0.01) / 2) : 0;
+    const contact = t > 0 ? washOpacity(t, 1) : 0;
     const fx = Math.max(contact, 0.22 * I);
     this.flash.visible = fx > 0.01;
     if (fx > 0.01) { const s = 18 + 110 * fx; this.flash.scale.set(s, s, 1); this.flash.position.set(0, 3, 0); (this.flash.material as THREE.SpriteMaterial).opacity = Math.min(1, 0.2 + 0.8 * fx); }
@@ -317,7 +319,7 @@ export class CloseupScene {
 
   // ── pióropusz par (GPU) ────────────────────────────────────────────────
   private buildPlume(): void {
-    const N = 3600, rand = rng(1302);
+    const N = 3600, rand = mulberry32(1302);
     const dir = new Float32Array(N * 3), spd = new Float32Array(N), pos = new Float32Array(N * 3);
     const down = this.approach.clone().multiplyScalar(-1); // z biegiem lotu (SW)
     for (let i = 0; i < N; i++) {
@@ -362,7 +364,7 @@ export class CloseupScene {
 
   private updatePlume(t: number, show: boolean): void {
     const reg = this.data.reg;
-    const vis = show && t > 0 && t < 4 * 3600;
+    const vis = show && t > 0 && t < PLUME_VISIBLE_S;
     this.plume.visible = vis;
     if (!vis) return;
     const T = plumeTemperatureK(t, reg.num('fireball.plume_initial_temperature'), reg.num('fireball.transparency_temperature'), this.fx.tMaxRad);
@@ -376,20 +378,20 @@ export class CloseupScene {
       m.blending = THREE.AdditiveBlending;
     } else { // po ostygnięciu poniżej przezroczystości: kondensat, pył i sferule — szarobrązowy obłok
       (u.uCol!.value as THREE.Color).setRGB(0.46, 0.4, 0.35);
-      u.uA!.value = 0.22 * Math.max(0, 1 - Math.log10(Math.max(t, 60) / 60) / Math.log10((4 * 3600) / 60));
+      u.uA!.value = 0.22 * Math.max(0, 1 - Math.log10(Math.max(t, 60) / 60) / Math.log10(PLUME_VISIBLE_S / 60));
       m.blending = THREE.NormalBlending;
     }
   }
 
   // ── kurtyna ejecta (GPU) ───────────────────────────────────────────────
   private buildCurtain(): void {
-    const N = 6000, rand = rng(4242), k = this.k;
+    const N = 6000, rand = mulberry32(4242), k = this.k;
     const r0 = new Float32Array(N), az = new Float32Array(N * 2), tl = new Float32Array(N), vv = new Float32Array(N), pos = new Float32Array(N * 3);
     for (let i = 0; i < N; i++) {
       const r = k.Rt * Math.sqrt(0.04 + 0.96 * rand());
       const a = rand() * Math.PI * 2;
       r0[i] = r; az[i * 2] = Math.sin(a); az[i * 2 + 1] = -Math.cos(a);
-      tl[i] = k.tTr * (r / k.Rt) ** 2.5; // chwila, gdy krawędź jamy mija promień r (odwrotność R ∝ t^0,4)
+      tl[i] = k.tTr * (r / k.Rt) ** (1 / GROWTH_EXP); // chwila, gdy krawędź jamy mija promień r (odwrotność R ∝ t^0,4)
       vv[i] = Math.min(4, 0.6 * Math.sqrt(G * k.Rt) * (r / k.Rt) ** -1.8) * (0.85 + 0.3 * rand());
     }
     const g = new THREE.BufferGeometry();
@@ -442,9 +444,9 @@ export class CloseupScene {
       [40, { pos: new THREE.Vector3(150, 110, 230), target: new THREE.Vector3(0, 10, 0) }],
       [200, { pos: new THREE.Vector3(260, 380, 820), target: new THREE.Vector3(0, 160, 0) }],
       [1200, { pos: new THREE.Vector3(170, 150, 260), target: new THREE.Vector3(0, -8, 0) }],
-      [86400, { pos: new THREE.Vector3(150, 120, 220), target: new THREE.Vector3(0, -5, 0) }],
+      [T_MAX, { pos: new THREE.Vector3(150, 120, 220), target: new THREE.Vector3(0, -5, 0) }],
     ];
-    const u = (x: number) => (x <= 0 ? x / this.fx.tEntry : Math.log10(Math.max(x, 0.01)) + 2.0001); // prolog liniowo, potem log
+    const u = (x: number) => (x <= 0 ? x / this.fx.tEntry : Math.log10(Math.max(x, T_MIN) / T_MIN)); // prolog liniowo, potem dekady od T_MIN
     let i = 0;
     while (i < poses.length - 2 && t > poses[i + 1]![0]) i++;
     const [ta, A] = poses[i]!, [tb, B] = poses[i + 1]!;
@@ -453,10 +455,10 @@ export class CloseupScene {
     return { pos: A.pos.clone().lerp(B.pos, s), target: A.target.clone().lerp(B.target, s) };
   }
 
-  update(t: number, layers: { crater: boolean; ejecta: boolean; thermal: boolean; tsunami: boolean }): void {
+  /** Teren i woda są zawsze widoczne (to scena), warstwy przełączają pióropusz i kurtynę ejecta. */
+  update(t: number, layers: { ejecta: boolean; thermal: boolean }): void {
     this.updateGround(t);
     this.updateWater(t);
-    this.water.visible = true;
     this.updateBolide(t);
     this.updatePlume(t, layers.thermal);
     this.updateCurtain(t, layers.ejecta);

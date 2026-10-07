@@ -4,9 +4,11 @@
  */
 import type { Certainty, Txt } from '../model/registry/types';
 import type { SimContext } from '../model/sim/context';
+import type { RegistryIndex } from '../model/sim/registry-client';
 import { frontsAt, irZoneAt, type FrontKind } from '../model/sim/fronts';
 import { bioReachAt, bioZones, type BioZoneKey } from '../model/sim/biosphere';
 import type { ThermalScenario } from '../model/sim/intensities';
+import { LAYER_OF } from './phenomena';
 import type { PhenomenonKey } from './url-state';
 
 export interface LineStyle { color: string; dash: number[]; width: number }
@@ -67,7 +69,16 @@ export const OTHER_STYLE = {
   coast: { color: '#ffffff', dash: [], width: 0.8 },
 } satisfies Record<string, LineStyle>;
 
-const FRONT_LAYER: Record<FrontKind, PhenomenonKey> = { P: 'seismic', S: 'seismic', R: 'seismic', G: 'seismic', lamb: 'air', ejecta: 'ejecta', fireball: 'thermal' };
+/** Promień krawędzi krateru [km] w chwili t: przejściowego, a od crater.t_final — końcowego. */
+export function craterRadiusKm(reg: RegistryIndex, t: number): number {
+  if (t <= 0) return 0;
+  return (t >= reg.num('crater.t_final') ? reg.num('crater.final_diameter') : reg.num('crater.transient_diameter')) / 2;
+}
+
+/** Zasięg zapłonu roślinności od kuli ognia [km] — widoczny od maksimum promieniowania (0 wcześniej). */
+export function firesRadiusKm(reg: RegistryIndex, t: number): number {
+  return t > reg.num('fireball.t_max_radiation_eiep') ? reg.num('fires.ignition_radius_fireball') : 0;
+}
 
 export interface LegendState {
   t: number; layers: Record<PhenomenonKey, boolean>; thermal: ThermalScenario; coast: boolean;
@@ -79,10 +90,10 @@ export function activeItems(ctx: SimContext, s: LegendState, opts: { tsunamiReac
   const out: LegendItem[] = [];
   if (t > 0) {
     for (const f of frontsAt(ctx, t)) {
-      if (!layers[FRONT_LAYER[f.kind]] || f.radiusKm <= 0) continue;
+      if (!layers[LAYER_OF[f.kind]] || f.radiusKm <= 0) continue;
       const st = FRONT_STYLE[f.kind];
       const lap = (pl: string, en: string) => (f.order > 1 ? { pl: `${pl} · okrążenie ${f.order}`, en: `${en} · circuit ${f.order}` } : { pl, en });
-      out.push({ key: `front:${f.kind}`, layer: FRONT_LAYER[f.kind], kind: f.kind === 'fireball' ? 'disc' : 'ring', tag: lap(st.tag.pl, st.tag.en), title: st.title, desc: st.desc,
+      out.push({ key: `front:${f.kind}`, layer: LAYER_OF[f.kind], kind: f.kind === 'fireball' ? 'disc' : 'ring', tag: lap(st.tag.pl, st.tag.en), title: st.title, desc: st.desc,
         style: { color: st.color, dash: st.dash, width: st.width }, certainty: f.certainty, radiusKm: f.radiusKm });
     }
     if (layers.thermal) {
@@ -90,8 +101,9 @@ export function activeItems(ctx: SimContext, s: LegendState, opts: { tsunamiReac
       if (z.outerKm > z.innerKm + 1) out.push({ key: 'ir', layer: 'thermal', kind: 'band', tag: { pl: 'impuls IR', en: 'IR pulse' }, title: { pl: 'Strefa trwającego impulsu podczerwieni', en: 'Zone of the ongoing infrared pulse' },
         desc: { pl: 'Tu właśnie wracające ejecta rozgrzewają niebo; natężenie zależy od spornego scenariusza.', en: 'Here re-entering ejecta are heating the sky right now; the intensity depends on a contested scenario.' }, style: OTHER_STYLE.ir, certainty: 'contested', radiusKm: z.outerKm, innerKm: z.innerKm });
     }
-    if (layers.fires && t > reg.num('fireball.t_max_radiation_eiep')) out.push({ key: 'fires', layer: 'fires', kind: 'ring', tag: { pl: 'zapłon (kula ognia)', en: 'ignition (fireball)' }, title: { pl: 'Zasięg zapłonu roślinności od kuli ognia', en: 'Vegetation-ignition range of the fireball' },
-      desc: { pl: 'Do tej odległości promieniowanie kuli ognia mogło zapalić roślinność.', en: 'Up to this distance fireball radiation could ignite vegetation.' }, style: OTHER_STYLE.fires, certainty: reg.param('fires.ignition_radius_fireball').certainty, radiusKm: reg.num('fires.ignition_radius_fireball') });
+    const firesKm = layers.fires ? firesRadiusKm(reg, t) : 0;
+    if (firesKm > 0) out.push({ key: 'fires', layer: 'fires', kind: 'ring', tag: { pl: 'zapłon (kula ognia)', en: 'ignition (fireball)' }, title: { pl: 'Zasięg zapłonu roślinności od kuli ognia', en: 'Vegetation-ignition range of the fireball' },
+      desc: { pl: 'Do tej odległości promieniowanie kuli ognia mogło zapalić roślinność.', en: 'Up to this distance fireball radiation could ignite vegetation.' }, style: OTHER_STYLE.fires, certainty: reg.param('fires.ignition_radius_fireball').certainty, radiusKm: firesKm });
     if (layers.ejecta && opts.flashesNow) out.push({ key: 'flash', layer: 'ejecta', kind: 'dots', tag: { pl: 'wejście ejecta', en: 'ejecta re-entry' }, title: { pl: 'Rozbłyski ponownego wejścia wyrzutów', en: 'Ejecta re-entry flashes' },
       desc: { pl: 'Miejsca, w których wyrzuty właśnie wracają w atmosferę (symbol; trajektorie △).', en: 'Places where ejecta are re-entering the atmosphere right now (symbol; trajectories △).' }, style: OTHER_STYLE.flash, certainty: 'predictive' });
     if (layers.bio) {
@@ -110,7 +122,7 @@ export function activeItems(ctx: SimContext, s: LegendState, opts: { tsunamiReac
       desc: { pl: 'Model predykcyjny projektu: pył i sadza przyciemniają światło.', en: 'Project predictive model: dust and soot dim the sunlight.' }, style: OTHER_STYLE.dark, certainty: 'predictive' });
   }
   if (layers.crater) {
-    const r = t >= reg.num('crater.t_final') ? reg.num('crater.final_diameter') / 2 : t > 0 ? reg.num('crater.transient_diameter') / 2 : 0;
+    const r = craterRadiusKm(reg, t);
     if (r > 0) out.push({ key: 'crater', layer: 'crater', kind: 'outline', tag: { pl: 'krater', en: 'crater' }, title: { pl: 'Krawędź krateru', en: 'Crater rim' },
       desc: { pl: 'Obrys krateru (przejściowego, a od 10. minuty końcowego).', en: 'Crater outline (transient, then final from the 10th minute).' }, style: OTHER_STYLE.crater, certainty: reg.param('crater.final_diameter').certainty, radiusKm: r });
   }

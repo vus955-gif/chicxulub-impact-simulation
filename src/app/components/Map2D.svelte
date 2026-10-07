@@ -2,22 +2,22 @@
   import { untrack } from 'svelte';
   import { geoEqualEarth, geoPath, geoCircle, geoGraticule10, type GeoProjection } from 'd3-geo';
   import { ui } from '../state.svelte';
-  import type { AppData } from '../data';
-  import { activeItems, hasRing, placeLabels, type Box, type LegendItem, type LineStyle } from '../legend';
-  import { tsunamiReachKm } from '../data';
+  import { tsunamiFrontBandS, type AppData } from '../data';
+  import { hasRing, placeLabels, type Box, type LegendItem, type LineStyle } from '../legend';
+  import { viewItems } from '../view-items';
   import MapLegend from './MapLegend.svelte';
   import { L, tx, siteName } from '../i18n';
+  import { cssColor, hexRgb, prefersReducedMotion } from '../dom';
   import { formatNumber, CERTAINTY_MARK } from '../../model/registry/format';
-  import { flashScreenAge, flashWindow, reentryWindow, sortByReentry } from '../../model/sim/ejecta-orbits';
-  import { darknessAt } from '../../model/predictive/darkness';
+  import { flashLevel, flashScreenAge, litFlashRange, sortByReentry } from '../../model/sim/ejecta-orbits';
+  import { lightProfile, LIGHT_PROFILE_N } from '../../model/predictive/darkness';
   import { gcDistanceKm, destination, ANTIPODE_KM, R_KM } from '../../model/sim/geo';
-  import { bolideProgress, flashIntensity, washOpacity, type FlashTimes } from '../impact-flash';
+  import { bolideProgress, flashIntensity, flashTimes, washOpacity } from '../impact-flash';
   import { formatClock } from '../../time/axis';
   import Value from './Value.svelte';
 
   let { data }: { data: AppData } = $props();
 
-  let wrap: HTMLDivElement;
   let baseCanvas: HTMLCanvasElement;
   let overCanvas: HTMLCanvasElement;
   let coastCanvas: HTMLCanvasElement;
@@ -43,7 +43,6 @@
   let overImg: ImageData | null = null;
   // rozbłyski ponownego wejścia wyrzutów: pozycje rzutowane raz (przy zmianie rozmiaru), duszek poświaty
   let flashXY = new Float32Array(0);
-  const FLASH_LIFE = 0.4;
   const flashOrder = $derived(sortByReentry(data.ejecta));
   const flashSprite = (() => {
     const c = document.createElement('canvas'); c.width = c.height = 32;
@@ -68,9 +67,9 @@
       if (!ll || !Number.isFinite(ll[0])) continue;
       const [px, py] = proj(ll)!;
       if (Math.abs(px - (x + 0.5) / dpr) > 0.75 || Math.abs(py - (y + 0.5) / dpr) > 0.75) continue; // poza elipsą
-      const tx = Math.min(tex.width - 1, Math.floor(((ll[0] + 180) / 360) * tex.width));
-      const ty = Math.min(tex.height - 1, Math.floor(((90 - ll[1]) / 180) * tex.height));
-      const si = (ty * tex.width + tx) * 4, di = (y * baseCanvas.width + x) * 4;
+      const tu = Math.min(tex.width - 1, Math.floor(((ll[0] + 180) / 360) * tex.width));
+      const tv = Math.min(tex.height - 1, Math.floor(((90 - ll[1]) / 180) * tex.height));
+      const si = (tv * tex.width + tu) * 4, di = (y * baseCanvas.width + x) * 4;
       img.data[di] = tex.data[si]!; img.data[di + 1] = tex.data[si + 1]!; img.data[di + 2] = tex.data[si + 2]!; img.data[di + 3] = 255;
     }
     bctx.putImageData(img, 0, 0);
@@ -102,20 +101,16 @@
 
   // ── przelot bolidu i błysk uderzenia: SYMBOL (rozmiar umowny), przebieg w czasie z rejestru ──
   let approachDir: [number, number] = [Math.SQRT1_2, -Math.SQRT1_2];
-  const reducedMotion = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const fxTimes = $derived<FlashTimes>({
-    tEntry: data.reg.num('impactor.entry_duration'),
-    tMaxRad: data.reg.num('fireball.t_max_radiation_eiep'),
-    radDurS: data.reg.seconds('fireball.radiation_duration_eiep'),
-  });
+  const reducedMotion = prefersReducedMotion();
+  const fxTimes = $derived(flashTimes(data.reg));
   const fxPhase = $derived(bolideProgress(ui.t, fxTimes.tEntry) !== null ? 'bolide' : flashIntensity(ui.t, fxTimes) > 0 ? 'flash' : null);
 
   function drawImpactFx(octx: CanvasRenderingContext2D, cx: number, cy: number, t: number) {
     const prog = bolideProgress(t, fxTimes.tEntry);
     if (prog !== null) {
-      const L = 110; // px — długość symbolicznego toru (w skali mapy cały przelot to ~1 px)
+      const len = 110; // px — długość symbolicznego toru (w skali mapy cały przelot to ~1 px)
       const [dx, dy] = approachDir;
-      const sx = cx + dx * L, sy = cy + dy * L, hx = cx + dx * L * (1 - prog), hy = cy + dy * L * (1 - prog);
+      const sx = cx + dx * len, sy = cy + dy * len, hx = cx + dx * len * (1 - prog), hy = cy + dy * len * (1 - prog);
       octx.save();
       octx.setLineDash([3, 4]); octx.strokeStyle = 'rgba(255,226,176,0.35)'; octx.lineWidth = 1;
       octx.beginPath(); octx.moveTo(hx, hy); octx.lineTo(cx, cy); octx.stroke(); octx.setLineDash([]);
@@ -153,25 +148,19 @@
     // promienie rozbłysku (słabe, cienkie)
     octx.strokeStyle = `rgba(255,236,190,${0.35 * I})`; octx.lineWidth = 1;
     for (let k = 0; k < 4; k++) {
-      const ang = (k * Math.PI) / 4 + Math.PI / 8, len = R * (k % 2 ? 1.1 : 1.6);
-      octx.beginPath(); octx.moveTo(cx - Math.cos(ang) * len, cy - Math.sin(ang) * len); octx.lineTo(cx + Math.cos(ang) * len, cy + Math.sin(ang) * len); octx.stroke();
+      const ang = (k * Math.PI) / 4 + Math.PI / 8, rl = R * (k % 2 ? 1.1 : 1.6);
+      octx.beginPath(); octx.moveTo(cx - Math.cos(ang) * rl, cy - Math.sin(ang) * rl); octx.lineTo(cx + Math.cos(ang) * rl, cy + Math.sin(ang) * rl); octx.stroke();
     }
     octx.restore();
   }
 
-  const css = (v: string) => getComputedStyle(document.documentElement).getPropertyValue(v).trim() || '#fff';
   const deg = (km: number) => (km / R_KM) * (180 / Math.PI);
   /** preferowany azymut podpisu (rozkłada podpisy wokół krateru); dalsze próby co 14° w obie strony */
   const LABEL_BEARING: Record<string, number> = {
     'front:P': 20, 'front:S': 40, 'front:R': 60, 'front:G': 80, 'front:lamb': 100, 'front:ejecta': 120, fires: 340, crater: 0,
     'bio:sterile': 200, 'bio:thermal': 215, 'bio:trees90': 230, 'bio:trees30': 245, 'bio:liquefaction': 170, 'bio:slopes': 185,
   };
-  const flashesNow = $derived.by(() => {
-    const [tf, tt] = flashWindow(ui.t, FLASH_LIFE, ui.mode, ui.dps);
-    const [lo, hi] = reentryWindow(data.ejecta, flashOrder, tf, tt);
-    return hi > lo;
-  });
-  const items = $derived(activeItems(data.ctx, { t: ui.t, layers: ui.layers, thermal: ui.thermal, coast: ui.coast }, { tsunamiReached: ui.t > 0 && tsunamiReachKm(data, ui.t) > 0, flashesNow }));
+  const items = $derived(viewItems(data, flashOrder, ui));
   let legW = $state(0), legH = $state(0);
   const legendBox = $derived<Box | null>(legW > 0 ? { x: w - legW - 14, y: h - legH - 34, w: legW + 8, h: legH + 8 } : null);
 
@@ -195,62 +184,56 @@
   }
   function onLeave() { ui.hover = null; tip = null; }
 
-  function drawOverlay() {
-    if (!projection || !small) return;
-    const t = ui.t, dpr = overCanvas.width / Math.max(1, Math.floor(w));
-    const octx = overCanvas.getContext('2d')!;
-    octx.setTransform(1, 0, 0, 1, 0, 0);
-    octx.clearRect(0, 0, overCanvas.width, overCanvas.height);
-    // pola rastrowe: tsunami i zaciemnienie
-    const sctx = small.getContext('2d')!;
+  /** Przygaszenie elementów innych niż wskazany w legendzie. */
+  const alphaOf = (key: string) => (ui.hover === null || ui.hover === key ? 1 : 0.25);
+
+  /** Pola rastrowe w połowie rozdzielczości: zaciemnienie nieba i tsunami (czoło fali albo obwiednia amplitud). */
+  function drawRasters(octx: CanvasRenderingContext2D, dpr: number) {
+    const t = ui.t;
+    const sctx = small!.getContext('2d')!;
     if (!overImg || overImg.width !== ow || overImg.height !== oh) overImg = sctx.createImageData(ow, oh);
     const img = overImg;
     img.data.fill(0);
     const TT = data.tsunamiTT.data, AMP = data.tsunamiAmp.data;
-    const showTs = ui.layers.tsunami && t > 0, showDark = ui.layers.atmo && t > 0;
-    const envelope = ui.envelope; // odczyt stanu poza pętlą pikseli (każdy odczyt $state to rejestracja zależności)
-    const band = Math.max(300, 0.12 * t);
-    const lut = new Float32Array(129);
-    if (showDark) for (let i = 0; i <= 128; i++) lut[i] = darknessAt(data.ctx, t, (i / 128) * ANTIPODE_KM, ui.fires).lightFraction;
+    // odczyty stanu poza pętlą pikseli (każdy odczyt $state to rejestracja zależności)
+    const showTs = ui.layers.tsunami && t > 0, showDark = ui.layers.atmo && t > 0, envelope = ui.envelope;
+    const band = tsunamiFrontBandS(t);
+    const light = showDark ? lightProfile(data.ctx, t, ui.fires) : null, last = LIGHT_PROFILE_N - 1;
+    const [tr, tg, tb] = hexRgb(cssColor('--c-tsunami', '#2bb3c9'));
     for (let i = 0; i < gridIdx.length; i++) {
       const gi = gridIdx[i]!;
       if (gi < 0) continue;
       let r = 0, g = 0, b = 0, a = 0;
-      if (showDark) {
-        const light = lut[Math.min(128, Math.round((distKm[i]! / ANTIPODE_KM) * 128))]!;
-        a = (1 - light) * 0.6; // krycie ograniczone, by paleogeografia pozostała czytelna
-      }
+      // krycie zaciemnienia ograniczone, by paleogeografia pozostała czytelna
+      if (light) a = (1 - light[Math.min(last, Math.round((distKm[i]! / ANTIPODE_KM) * last))]!) * 0.6;
       if (showTs) {
         const tt = TT[gi]!;
         if (Number.isFinite(tt) && tt <= t) {
           let ta: number;
           if (envelope) { const amp = AMP[gi]!; ta = Number.isFinite(amp) ? Math.min(0.9, Math.max(0.12, (Math.log10(Math.max(amp, 0.05)) + 1) / 3.2)) : 0.15; }
           else ta = t - tt < band ? 0.25 + 0.65 * (1 - (t - tt) / band) : 0.14;
-          r = 43 * ta + r * (1 - ta); g = 179 * ta + g * (1 - ta); b = 201 * ta + b * (1 - ta); a = ta + a * (1 - ta);
+          r = tr * ta + r * (1 - ta); g = tg * ta + g * (1 - ta); b = tb * ta + b * (1 - ta); a = ta + a * (1 - ta);
         }
       }
       if (a > 0) { const k = i * 4; img.data[k] = r / Math.max(a, 1e-6); img.data[k + 1] = g / Math.max(a, 1e-6); img.data[k + 2] = b / Math.max(a, 1e-6); img.data[k + 3] = Math.round(a * 255); }
     }
     sctx.putImageData(img, 0, 0);
     octx.imageSmoothingEnabled = true;
-    octx.drawImage(small, 0, 0, ow * S * dpr, oh * S * dpr);
+    octx.drawImage(small!, 0, 0, ow * S * dpr, oh * S * dpr);
+  }
 
-    // wektory: pola (wypełnienia), linie z ciemną obwódką, potem podpisy bez nachodzenia
-    octx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    const proj = projection;
+  /** Okręgi wokół krateru: najpierw wypełnienia pól, potem linie z ciemną obwódką (wskazany element pogrubiony). */
+  function drawRings(octx: CanvasRenderingContext2D, proj: GeoProjection) {
     const path = geoPath(proj, octx);
     const c0: [number, number] = [data.ctx.crater.lon, data.ctx.crater.lat];
     const circle = (km: number) => geoCircle().center(c0).radius(Math.max(0.01, deg(km))).precision(1)();
-    const hover = ui.hover;
-    const alphaOf = (key: string) => (hover === null || hover === key ? 1 : 0.25);
-    const color = (c: string) => (c.startsWith('--') ? css(c) : c);
     const ring = (km: number, st: LineStyle, key: string, widthScale = 1) => {
       if (km <= 0 || st.width <= 0) return;
-      const wdt = st.width * widthScale * (hover === key ? 1.7 : 1);
+      const wdt = st.width * widthScale * (ui.hover === key ? 1.7 : 1);
       octx.globalAlpha = alphaOf(key);
       octx.beginPath(); path(circle(km));
       octx.setLineDash([]); octx.strokeStyle = 'rgba(4,7,11,0.62)'; octx.lineWidth = wdt + 3; octx.stroke();
-      octx.setLineDash(st.dash); octx.strokeStyle = color(st.color); octx.lineWidth = wdt; octx.stroke();
+      octx.setLineDash(st.dash); octx.strokeStyle = cssColor(st.color); octx.lineWidth = wdt; octx.stroke();
       octx.setLineDash([]); octx.globalAlpha = 1;
     };
     const fillAnnulus = (outer: number, inner: number, fill: string, key: string) => {
@@ -258,48 +241,43 @@
       octx.beginPath(); path(circle(outer)); if (inner > 0) path(circle(inner));
       octx.fillStyle = fill; octx.fill('evenodd'); octx.globalAlpha = 1;
     };
-    // 1) wypełnienia
     for (const it of items) {
       if (it.radiusKm === undefined) continue;
-      if (it.key === 'ir') fillAnnulus(it.radiusKm, Math.max(1, it.innerKm ?? 0), color(it.style.color) + '30', it.key);
-      else if (it.key === 'front:fireball') fillAnnulus(it.radiusKm, 0, color(it.style.color) + '66', it.key);
+      if (it.key === 'ir') fillAnnulus(it.radiusKm, Math.max(1, it.innerKm ?? 0), cssColor(it.style.color) + '30', it.key);
+      else if (it.key === 'front:fireball') fillAnnulus(it.radiusKm, 0, cssColor(it.style.color) + '66', it.key);
       else if (it.key === 'bio:sterile') fillAnnulus(it.radiusKm, 0, 'rgba(0,0,0,0.38)', it.key);
-      else if (it.kind === 'band' && it.innerKm !== undefined && it.innerKm > 0) fillAnnulus(it.radiusKm, it.innerKm, color(it.style.color) + '16', it.key);
+      else if (it.kind === 'band' && it.innerKm !== undefined && it.innerKm > 0) fillAnnulus(it.radiusKm, it.innerKm, cssColor(it.style.color) + '16', it.key);
     }
-    // 2) linie
     for (const it of items) {
       if (it.radiusKm === undefined || it.key === 'ir' || it.key === 'coast' || it.key === 'front:fireball') continue;
       if (it.kind === 'band' && it.innerKm !== undefined && it.innerKm > 0) ring(it.innerKm, { ...it.style, dash: [] }, it.key, 0.6);
       ring(it.radiusKm, it.style, it.key);
     }
-    // 3) rozbłyski ponownego wejścia wyrzutów
-    if (ui.layers.ejecta && t > 0) {
-      octx.save(); octx.globalCompositeOperation = 'lighter';
-      const ps = data.ejecta;
-      const [tf, tt] = flashWindow(t, FLASH_LIFE, ui.mode, ui.dps);
-      const [lo, hi] = reentryWindow(ps, flashOrder, tf, tt);
-      const fa = alphaOf('flash');
-      for (let k = lo; k < hi; k++) {
-        const i = flashOrder[k]!;
-        const age = Math.max(0, flashScreenAge(t, ps[i]!.tRe, ui.mode, ui.dps));
-        const x = flashXY[i * 2]!, y = flashXY[i * 2 + 1]!;
-        if (!Number.isFinite(x)) continue;
-        const I = age < 0.06 ? age / 0.06 : (1 - (age - 0.06) / (FLASH_LIFE - 0.06)) ** 2;
-        const r = 3 + 6 * I;
-        octx.globalAlpha = 0.75 * I * fa; octx.drawImage(flashSprite, x - r, y - r, 2 * r, 2 * r);
-      }
-      octx.restore();
+  }
+
+  /** Rozbłyski ponownego wejścia wyrzutów (symbol): tylko cząstki z bieżącego okna chwil wejścia. */
+  function drawFlashes(octx: CanvasRenderingContext2D) {
+    const t = ui.t, ps = data.ejecta;
+    if (!ui.layers.ejecta || t <= 0) return;
+    const [lo, hi] = litFlashRange(ps, flashOrder, t, ui.mode, ui.dps);
+    const fa = alphaOf('flash');
+    octx.save(); octx.globalCompositeOperation = 'lighter';
+    for (let k = lo; k < hi; k++) {
+      const i = flashOrder[k]!, x = flashXY[i * 2]!, y = flashXY[i * 2 + 1]!;
+      if (!Number.isFinite(x)) continue;
+      const I = flashLevel(flashScreenAge(t, ps[i]!.tRe, ui.mode, ui.dps)), r = 3 + 6 * I;
+      octx.globalAlpha = 0.75 * I * fa; octx.drawImage(flashSprite, x - r, y - r, 2 * r, 2 * r);
     }
-    const pt = projection(c0);
-    if (pt) { octx.fillStyle = '#ffe2b0'; octx.beginPath(); octx.arc(pt[0], pt[1], 3, 0, Math.PI * 2); octx.fill(); }
-    if (pt) drawImpactFx(octx, pt[0], pt[1], t);
-    // 4) stanowiska (ich podpisy rezerwują miejsce przed podpisami linii)
+    octx.restore();
+  }
+
+  /** Stanowiska K-Pg; zwraca prostokąty zajęte przez legendę i podpisy stanowisk (rezerwowane przed podpisami linii). */
+  function drawSites(octx: CanvasRenderingContext2D, proj: GeoProjection): Box[] {
     octx.font = '10.5px Segoe UI, sans-serif';
-    const taken: Box[] = [];
-    if (legendBox) taken.push(legendBox);
+    const taken: Box[] = legendBox ? [legendBox] : [];
     const siteLabels: Array<{ text: string; x: number; y: number; sel: boolean }> = [];
     for (const s of data.sites) {
-      const p = projection([s.paleoLon, s.paleoLat]);
+      const p = proj([s.paleoLon, s.paleoLat]);
       if (!p) continue;
       const sel = ui.site === s.id;
       octx.beginPath(); octx.arc(p[0], p[1], sel ? 4.5 : 3, 0, Math.PI * 2);
@@ -314,7 +292,11 @@
       octx.lineWidth = 3; octx.strokeStyle = 'rgba(4,7,11,0.8)'; octx.strokeText(l.text, l.x, l.y);
       octx.fillStyle = l.sel ? '#ffffff' : 'rgba(255,255,255,0.85)'; octx.fillText(l.text, l.x, l.y);
     }
-    // 5) podpisy linii: kandydaci wzdłuż okręgu, pierwszy wolny
+    return taken;
+  }
+
+  /** Podpisy linii: kandydaci wzdłuż okręgu od preferowanego azymutu, pierwszy wolny. */
+  function drawLineLabels(octx: CanvasRenderingContext2D, proj: GeoProjection, taken: Box[]) {
     octx.font = '600 10.5px Segoe UI, sans-serif';
     const labelled = items.filter(hasRing);
     const cand = labelled.map((it, n) => {
@@ -331,17 +313,40 @@
     for (const it of labelled) {
       const b = placed.get(it.key);
       if (!b) continue;
+      const col = cssColor(it.style.color);
       octx.globalAlpha = alphaOf(it.key);
-      octx.fillStyle = 'rgba(8,12,18,0.86)'; octx.strokeStyle = color(it.style.color); octx.lineWidth = 1;
+      octx.fillStyle = 'rgba(8,12,18,0.86)'; octx.strokeStyle = col; octx.lineWidth = 1;
       octx.beginPath(); octx.roundRect(b.x, b.y, b.w, b.h, 4); octx.fill(); octx.stroke();
-      octx.fillStyle = color(it.style.color); octx.textBaseline = 'middle'; octx.fillText(tx(it.tag), b.x + 5, b.y + b.h / 2 + 0.5);
+      octx.fillStyle = col; octx.textBaseline = 'middle'; octx.fillText(tx(it.tag), b.x + 5, b.y + b.h / 2 + 0.5);
       octx.textBaseline = 'alphabetic'; octx.globalAlpha = 1;
     }
-    // sonda
-    if (ui.probe) {
-      const p = projection([ui.probe.lon, ui.probe.lat]);
-      if (p) { octx.strokeStyle = '#fff'; octx.lineWidth = 1.5; octx.beginPath(); octx.moveTo(p[0] - 7, p[1]); octx.lineTo(p[0] + 7, p[1]); octx.moveTo(p[0], p[1] - 7); octx.lineTo(p[0], p[1] + 7); octx.stroke(); }
+  }
+
+  function drawProbe(octx: CanvasRenderingContext2D, proj: GeoProjection) {
+    const p = ui.probe ? proj([ui.probe.lon, ui.probe.lat]) : null;
+    if (!p) return;
+    octx.strokeStyle = '#fff'; octx.lineWidth = 1.5;
+    octx.beginPath(); octx.moveTo(p[0] - 7, p[1]); octx.lineTo(p[0] + 7, p[1]); octx.moveTo(p[0], p[1] - 7); octx.lineTo(p[0], p[1] + 7); octx.stroke();
+  }
+
+  function drawOverlay() {
+    const proj = projection;
+    if (!proj || !small) return;
+    const dpr = overCanvas.width / Math.max(1, Math.floor(w));
+    const octx = overCanvas.getContext('2d')!;
+    octx.setTransform(1, 0, 0, 1, 0, 0);
+    octx.clearRect(0, 0, overCanvas.width, overCanvas.height);
+    drawRasters(octx, dpr);
+    octx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    drawRings(octx, proj);
+    drawFlashes(octx);
+    const pt = proj([data.ctx.crater.lon, data.ctx.crater.lat]);
+    if (pt) {
+      octx.fillStyle = '#ffe2b0'; octx.beginPath(); octx.arc(pt[0], pt[1], 3, 0, Math.PI * 2); octx.fill();
+      drawImpactFx(octx, pt[0], pt[1], ui.t);
     }
+    drawLineLabels(octx, proj, drawSites(octx, proj));
+    drawProbe(octx, proj);
   }
 
   function onClick(ev: MouseEvent) {
@@ -377,7 +382,7 @@
   });
 </script>
 
-<div class="map" bind:this={wrap} bind:clientWidth={w} bind:clientHeight={h}>
+<div class="map" bind:clientWidth={w} bind:clientHeight={h}>
   <canvas bind:this={baseCanvas}></canvas>
   <canvas bind:this={coastCanvas}></canvas>
   <canvas bind:this={overCanvas} class="over" onclick={onClick} onmousemove={onMove} onmouseleave={onLeave} aria-label={L('Mapa paleogeograficzna — kliknij, aby ustawić sondę', 'Palaeogeographic map — click to place the probe')}></canvas>

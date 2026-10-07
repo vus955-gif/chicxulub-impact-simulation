@@ -2,10 +2,10 @@
   import { scaleLinear } from 'd3-scale';
   import { ui } from '../../app/state.svelte';
   import type { AppData } from '../../app/data';
-  import { craterAt, craterKeyframes, craterWaterAt } from '../../model/predictive/crater-kinematics';
+  import { craterAt, craterKeyframes, craterWaterAt, type CraterPhase } from '../../model/predictive/crater-kinematics';
   import { waterDepthM } from '../../model/predictive/water-depth';
   import { frontsAt } from '../../model/sim/fronts';
-  import { flashIntensity } from '../../app/impact-flash';
+  import { flashIntensity, flashTimes } from '../../app/impact-flash';
   import { kelvinToRgb, plumeTemperatureK } from '../color';
   import { formatClock } from '../../time/axis';
   import { formatNumber } from '../../model/registry/format';
@@ -109,7 +109,7 @@
     const a = t < 60 ? 0.8 : 0.8 * Math.max(0, 1 - (t - 60) / 840);
     return { rad, color: `rgb(${r},${g},${b})`, a };
   });
-  const flash = $derived(flashIntensity(t, { tEntry: reg.num('impactor.entry_duration'), tMaxRad, radDurS: reg.seconds('fireball.radiation_duration_eiep') }));
+  const flash = $derived(flashIntensity(t, flashTimes(reg)));
 
   // kurtyna ejecta: stożek ~45° od krawędzi rosnącej jamy (symbol), wygasa po maksimum wypiętrzenia
   const curtain = $derived.by(() => {
@@ -121,7 +121,7 @@
     return { d: side(-1) + side(1), a };
   });
 
-  const PHASE: Record<string, Txt> = {
+  const PHASE: Record<CraterPhase, Txt> = {
     pre: { pl: 'przed kontaktem', en: 'before contact' }, excavation: { pl: 'wykop krateru przejściowego', en: 'excavation of the transient crater' },
     uplift: { pl: 'wypiętrzanie dna', en: 'floor uplift' }, collapse: { pl: 'zapadanie wypiętrzenia → pierścień szczytowy', en: 'uplift collapse → peak ring' },
     modification: { pl: 'modyfikacja: zapadanie ścian, tarasy', en: 'modification: wall collapse, terraces' }, final: { pl: 'krater końcowy', en: 'final crater' },
@@ -207,7 +207,7 @@
 
   <div class="hud small">
     <div><b>{L('Przekrój SW–NE przez środek krateru', 'SW–NE cross-section through the crater centre')}</b> · {L('płaszczyzna toru impaktora', 'plane of the impactor trajectory')}</div>
-    <div>{L('faza', 'phase')}: <b class="ph-crater">{tx(PHASE[st.phase]!)}</b>{#if st.cavityRadius > 0} · {L('promień jamy', 'cavity radius')} {formatNumber(st.cavityRadius, 3)} km{/if}</div>
+    <div>{L('faza', 'phase')}: <b class="ph-crater">{tx(PHASE[st.phase])}</b>{#if st.cavityRadius > 0} · {L('promień jamy', 'cavity radius')} {formatNumber(st.cavityRadius, 3)} km{/if}</div>
     <div class="muted">{L('przewyższenie pionowe', 'vertical exaggeration')} ×{formatNumber(ve, 2)} · {L('kształt między klatkami kluczowymi', 'shape between keyframes')}: <span class="mk-predictive">△ {L('model predykcyjny projektu', 'project predictive model')}</span>; {L('klatki kluczowe (hydrokod ◐) — w panelu „Krater”', 'keyframes (hydrocode ◐) — in the “Crater” panel')}</div>
   </div>
 

@@ -3,6 +3,7 @@ import { existsSync } from 'node:fs';
 import { loadRegistry } from '../src/model/registry/load';
 import { validateRegistry } from '../src/model/registry/validate';
 import { SCENARIO_INPUT_IDS } from '../src/model/registry/scenario-ids';
+import { RegistryIndex } from '../src/model/sim/registry-client';
 
 const ready = existsSync('research/parameters.json') && existsSync('research/sources.json');
 
@@ -11,6 +12,12 @@ describe.runIf(ready)('research registry (real data)', () => {
   const reg = ready ? loadRegistry('research') : { parameters: [], sources: [] };
   it('passes validation', () => {
     expect(validateRegistry(reg)).toEqual([]);
+  });
+  it('converts time parameters to seconds by their registry unit', () => {
+    const idx = new RegistryIndex(reg);
+    expect(idx.seconds('fireball.radiation_duration_eiep')).toBeCloseTo(idx.num('fireball.radiation_duration_eiep') * 60, 9);
+    expect(idx.seconds('atmosphere.soot_injection_start')).toBeCloseTo(idx.num('atmosphere.soot_injection_start') * 3600, 9);
+    expect(() => idx.seconds('impactor.diameter')).toThrow();
   });
   it('defines every scenario input as a number', () => {
     for (const id of SCENARIO_INPUT_IDS) {

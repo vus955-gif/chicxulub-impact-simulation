@@ -9,6 +9,7 @@ import { groundTemperatureAt } from '../predictive/ground-temperature';
 import { darknessAt, dustArrivalS, type FireScenario } from '../predictive/darkness';
 import { waterDepthM } from '../predictive/water-depth';
 import { formatNumber } from '../registry/format';
+import { T_MAX } from '../../time/axis';
 
 export interface ProbeValue { label: Txt; value: number | string | Txt; unit: string }
 export interface ProbeEvent {
@@ -27,7 +28,7 @@ export interface ProbeReport {
   events: ProbeEvent[];
 }
 
-export function probe(ctx: SimContext, grids: ProbeGrids, point: LatLon, scenario: Scenario, tMax = 86400): ProbeReport {
+export function probe(ctx: SimContext, grids: ProbeGrids, point: LatLon, scenario: Scenario, tMax = T_MAX): ProbeReport {
   const { reg } = ctx;
   const d = gcDistanceKm(ctx.crater, point);
   const az = azimuthDeg(ctx.crater, point);

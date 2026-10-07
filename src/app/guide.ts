@@ -4,6 +4,7 @@
  */
 import type { Txt } from '../model/registry/types';
 import type { PhenomenonKey, ViewKey } from './url-state';
+import { T_MAX } from '../time/axis';
 
 export interface GuideStep {
   title: Txt;
@@ -77,13 +78,13 @@ export const GUIDE: GuideStep[] = [
       en: 'After a few hours the tsunami leaves the Gulf, enters the Atlantic and, through the seaway between the Americas, the Pacific. In the open ocean the wave is long and low — dangerous only at the coasts.',
     },
     paramIds: ['tsunami.front_radius_4h_east', 'tsunami.t_pacific_entry', 'tsunami.open_ocean_height_north_atlantic'] },
-  { title: { pl: 'Koniec doby: zapada ciemność', en: 'End of the day: darkness falls' }, t: 86400, view: 'globe', layers: { atmo: true },
+  { title: { pl: 'Koniec doby: zapada ciemność', en: 'End of the day: darkness falls' }, t: T_MAX, view: 'globe', layers: { atmo: true },
     text: {
       pl: 'Pył, sadza i aerozole siarczanowe zaczynają przyciemniać niebo na całym globie. Przebieg zaciemnienia w pierwszej dobie to model predykcyjny projektu (△) — literatura opisuje głównie stan po tygodniach i miesiącach.',
       en: 'Dust, soot and sulfate aerosols begin to darken the sky over the whole globe. How the darkening unfolds during the first day is the project’s predictive model (△) — the literature mostly describes the state after weeks and months.',
     },
     paramIds: ['atmosphere.dust_tau_scale_pred', 'atmosphere.soot_mass', 'atmosphere.sulfur_mass'] },
-  { title: { pl: 'Epilog: poza osią czasu', en: 'Epilogue: beyond the timeline' }, t: 86400, view: 'globe', layers: { atmo: true },
+  { title: { pl: 'Epilog: poza osią czasu', en: 'Epilogue: beyond the timeline' }, t: T_MAX, view: 'globe', layers: { atmo: true },
     text: {
       pl: 'Potem przychodzą miesiące ciemności i chłodu: fotosynteza zamiera, łańcuchy pokarmowe się załamują, morza się ochładzają. Wymiera większość gatunków — to już poza zakresem tej symulacji.',
       en: 'Then come months of darkness and cold: photosynthesis stalls, food chains collapse, the seas cool. Most species die out — this lies beyond the scope of this simulation.',
