@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/vus955-gif/chicxulub-impact-simulation/actions/workflows/ci.yml/badge.svg)](https://github.com/vus955-gif/chicxulub-impact-simulation/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-**[Polski → README.pl.md](README.pl.md)**
+**▶ [Run it in your browser](https://vus955-gif.github.io/chicxulub-impact-simulation/)** — no installation; a desktop browser with WebGL is recommended. · **[Polski → README.pl.md](README.pl.md)**
 
 An interactive, source-referenced simulation of the first day after the Chicxulub asteroid impact, 66 million years ago — from the asteroid's flight through the atmosphere to T+24 h, on the palaeogeography of the end of the Cretaceous.
 
@@ -39,7 +39,7 @@ Purely visual elements (the size of the bolide and of the flash, the ejecta curt
 
 ## Quick start
 
-Requirements: **Node.js ≥ 20.19** with npm.
+To just try it, open the **[live demo](https://vus955-gif.github.io/chicxulub-impact-simulation/)**. To run it locally you need **Node.js ≥ 20.19** with npm.
 
 ```bash
 git clone https://github.com/vus955-gif/chicxulub-impact-simulation.git

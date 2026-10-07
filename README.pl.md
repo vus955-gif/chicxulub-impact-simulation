@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/vus955-gif/chicxulub-impact-simulation/actions/workflows/ci.yml/badge.svg)](https://github.com/vus955-gif/chicxulub-impact-simulation/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-**[English → README.md](README.md)**
+**▶ [Uruchom w przeglądarce](https://vus955-gif.github.io/chicxulub-impact-simulation/)** — bez instalacji; zalecana przeglądarka na komputerze z WebGL. · **[English → README.md](README.md)**
 
 Interaktywna symulacja pierwszej doby po uderzeniu planetoidy Chicxulub sprzed 66 mln lat — od lotu przez atmosferę do T+24 h, na paleogeografii schyłku kredy — w której każda liczba ma źródło.
 
@@ -41,7 +41,7 @@ Elementy czysto wizualne (wielkość bolidu i błysku, kurtyna ejekty) są oznac
 
 ## Szybki start
 
-Wymagania: **Node.js ≥ 20.19** z npm.
+Żeby po prostu wypróbować symulację, otwórz **[wersję w przeglądarce](https://vus955-gif.github.io/chicxulub-impact-simulation/)**. Do uruchomienia lokalnego potrzebny jest **Node.js ≥ 20.19** z npm.
 
 ```bash
 git clone https://github.com/vus955-gif/chicxulub-impact-simulation.git
