@@ -1,0 +1,1775 @@
+{
+  "generatedBy": "scripts/derive-parameters.ts",
+  "generatedAt": "2026-10-07T17:36:43.766Z",
+  "antipodeKm": 20011.945203366984,
+  "parameters": [
+    {
+      "id": "impactor.mass",
+      "group": "impactor",
+      "label": "Masa impaktora",
+      "value": 3025411321272286.5,
+      "unit": "kg",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:sphere(L,ρ)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "energy.kinetic",
+      "group": "energy",
+      "label": "Energia kinetyczna (scenariusz referencyjny)",
+      "value": 6.050822642544573e+23,
+      "unit": "J",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.kineticEnergy",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "energy.tnt",
+      "group": "energy",
+      "label": "Energia w ekwiwalencie TNT",
+      "value": 144618131.99198312,
+      "unit": "Mt TNT",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.kineticEnergy",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "1 Mt TNT = 4,184 × 10¹⁵ J.",
+      "time": null
+    },
+    {
+      "id": "impactor.entry_duration",
+      "group": "impactor",
+      "label": "Czas przelotu od 100 km wysokości do powierzchni",
+      "value": 5.773502691896257,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:geometry(100 km / (v sinθ))",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.velocity",
+        "impactor.angle"
+      ],
+      "notes": "Prostoliniowo, bez hamowania — dla ciała ~13 km utrata prędkości w atmosferze jest pomijalna (eq. 8 Collins i in. 2005 daje < 0,1 %). Brak publikowanej wartości dla Chicxulub.",
+      "time": {
+        "t": -5.773502691896257
+      }
+    },
+    {
+      "id": "crater.transient_diameter_eiep",
+      "group": "crater",
+      "label": "Średnica krateru przejściowego wg EIEP (kontrola)",
+      "value": 84.58013484660238,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.transientCraterDiameter",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "crater.final_diameter_eiep",
+      "group": "crater",
+      "label": "Średnica krateru końcowego wg EIEP (kontrola)",
+      "value": 151.47104662695133,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.finalCraterDiameter",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "crater.final_depth_eiep",
+      "group": "crater",
+      "label": "Głębokość krateru końcowego wg EIEP",
+      "value": 1.448629613899826,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.finalCraterDepth(errata 2013)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "crater.final_diameter"
+      ],
+      "time": null
+    },
+    {
+      "id": "crater.melt_volume_eiep",
+      "group": "crater",
+      "label": "Objętość stopu impaktowego wg EIEP",
+      "value": 4663.747848791542,
+      "unit": "km³",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.meltVolume",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "impactor.diameter_for_crater_eiep",
+      "group": "impactor",
+      "label": "Średnica impaktora, przy której EIEP odtwarza zmierzony krater",
+      "value": 17.819068659716926,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.impactorDiameterForCrater",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density",
+        "crater.final_diameter"
+      ],
+      "notes": "Kontrola krzyżowa: uproszczone prawo skalowania wymaga większego impaktora niż modele hydrokodowe 3D.",
+      "time": null
+    },
+    {
+      "id": "fireball.radius_eiep",
+      "group": "fireball",
+      "label": "Promień kuli ognia w maksimum promieniowania",
+      "value": 169.1614776534856,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.fireballRadius",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "fireball.t_max_radiation_eiep",
+      "group": "fireball",
+      "label": "Czas maksimum promieniowania kuli ognia",
+      "value": 8.458073882674281,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.timeOfMaxRadiation",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": {
+        "t": 8.458073882674281
+      }
+    },
+    {
+      "id": "fireball.radiation_duration_eiep",
+      "group": "fireball",
+      "label": "Czas trwania promieniowania kuli ognia",
+      "value": 36.63815041979858,
+      "unit": "min",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.radiationDuration",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Wprost proporcjonalny do sprawności świetlnej η, niepewnej o ~2 rzędy wielkości (fireball.luminous_efficiency).",
+      "time": null
+    },
+    {
+      "id": "seismic.magnitude_eiep",
+      "group": "seismic",
+      "label": "Magnituda sejsmiczna (EIEP, sprawność 10⁻⁴)",
+      "value": 10.063815663667778,
+      "unit": "",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.seismicMagnitude",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Zależy od sprawności sejsmicznej (seismic.efficiency, sporne: 10⁻⁵–10⁻³ ⇒ ±0,67 magnitudy).",
+      "time": null
+    },
+    {
+      "id": "seismic.t_p_antipode",
+      "group": "seismic",
+      "label": "Fala P (PKIKP) na antypodach",
+      "value": 1212.49,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(180°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "notes": "Pierwsze wejście fali typu P dla źródła na powierzchni (ObsPy TauP, model ak135).",
+      "time": {
+        "t": 1212.49
+      }
+    },
+    {
+      "id": "seismic.t_s_antipode",
+      "group": "seismic",
+      "label": "Fala typu S (SKIKS) na antypodach",
+      "value": 1636.58,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(180°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": {
+        "t": 1636.58
+      }
+    },
+    {
+      "id": "site.paleo_lat",
+      "group": "site",
+      "label": "Paleoszerokość krateru (PALEOMAP)",
+      "value": 25.115,
+      "unit": "°",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:pygplates(PALEOMAP)",
+      "sources": [
+        "scotese2016",
+        "pygplates2025"
+      ],
+      "derivedFrom": [
+        "site.lat",
+        "site.lon",
+        "paleo.paleodem_plate_model_age"
+      ],
+      "notes": "Model płyt PALEOMAP (płyta 205), rekonstrukcja na 65 mln lat — ten sam wiek co mapa PaleoDEM nr 16; zgodne z szerokością z paleomagnetyzmu (site.paleolatitude).",
+      "time": null
+    },
+    {
+      "id": "site.paleo_lon",
+      "group": "site",
+      "label": "Paleodługość krateru (PALEOMAP)",
+      "value": -71.582,
+      "unit": "°",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:pygplates(PALEOMAP)",
+      "sources": [
+        "scotese2016",
+        "pygplates2025"
+      ],
+      "derivedFrom": [
+        "site.lat",
+        "site.lon",
+        "paleo.paleodem_plate_model_age"
+      ],
+      "notes": "Model płyt PALEOMAP (płyta 205), rekonstrukcja na 65 mln lat — ten sam wiek co mapa PaleoDEM nr 16; zgodne z szerokością z paleomagnetyzmu (site.paleolatitude).",
+      "time": null
+    },
+    {
+      "id": "thermal.exposure_eiep_200km",
+      "group": "thermal",
+      "label": "Ekspozycja cieplna od kuli ognia, 200 km",
+      "value": 7051.97644726296,
+      "unit": "MJ/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.thermalExposure",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Zero = kula ognia pod horyzontem. Nie obejmuje impulsu podczerwieni od opadających ejecta (thermal.ir_*).",
+      "time": null
+    },
+    {
+      "id": "seismic.m_eff_eiep_200km",
+      "group": "seismic",
+      "label": "Efektywna magnituda wstrząsów, 200 km",
+      "value": 7.939415663667777,
+      "unit": "",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.effectiveMagnitude",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.p_arrival_200km",
+      "group": "seismic",
+      "label": "Dotarcie fali P, 200 km",
+      "value": 35.03,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(2°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.s_arrival_200km",
+      "group": "seismic",
+      "label": "Dotarcie fali S, 200 km",
+      "value": 60.75,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(2°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_arrival_200km",
+      "group": "seismic",
+      "label": "Dotarcie fali Rayleigha (R1), 200 km",
+      "value": 54.794520547945204,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:distance / U_R",
+      "sources": [],
+      "derivedFrom": [
+        "seismic.rayleigh_group_velocity"
+      ],
+      "time": null
+    },
+    {
+      "id": "ejecta.thickness_eiep_200km",
+      "group": "ejecta",
+      "label": "Grubość ejecta, 200 km",
+      "value": 111.60714285714286,
+      "unit": "m",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.ejectaThickness(D_tc z obserwacji)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "crater.transient_diameter"
+      ],
+      "time": null
+    },
+    {
+      "id": "ejecta.arrival_eiep_200km",
+      "group": "ejecta",
+      "label": "Dotarcie ejecta balistycznych, 200 km",
+      "value": 205.75302567060334,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.ejectaArrivalTime (Kepler, 45°)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "airblast.overpressure_eiep_200km",
+      "group": "airblast",
+      "label": "Nadciśnienie fali uderzeniowej, 200 km",
+      "value": 6132884.110195108,
+      "unit": "Pa",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.airblastOverpressure",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Collins i in. 2005: dla E > 10⁴ Mt model prawdopodobnie zawyża nadciśnienie 2–5× — rząd wielkości.",
+      "time": null
+    },
+    {
+      "id": "airblast.wind_eiep_200km",
+      "group": "airblast",
+      "label": "Maksymalny wiatr za frontem, 200 km",
+      "value": 1975.1480605253641,
+      "unit": "m/s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.peakWind",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "sound.spl_eiep_200km",
+      "group": "sound",
+      "label": "Poziom ciśnienia akustycznego, 200 km",
+      "value": 229.73269524944692,
+      "unit": "dB",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:SPL = 20 log10(p / 20 µPa)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "airblast.overpressure_eiep_200km"
+      ],
+      "notes": "Powyżej ~194 dB to fala uderzeniowa, nie dźwięk w sensie akustycznym.",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_arrival_200km",
+      "group": "airblast",
+      "label": "Dotarcie fali Lamba (ciśnienia), 200 km",
+      "value": 634.9206349206349,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:distance / c_Lamb",
+      "sources": [],
+      "derivedFrom": [
+        "airblast.lamb_speed"
+      ],
+      "time": null
+    },
+    {
+      "id": "thermal.exposure_eiep_500km",
+      "group": "thermal",
+      "label": "Ekspozycja cieplna od kuli ognia, 500 km",
+      "value": 985.4077387890223,
+      "unit": "MJ/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.thermalExposure",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Zero = kula ognia pod horyzontem. Nie obejmuje impulsu podczerwieni od opadających ejecta (thermal.ir_*).",
+      "time": null
+    },
+    {
+      "id": "seismic.m_eff_eiep_500km",
+      "group": "seismic",
+      "label": "Efektywna magnituda wstrząsów, 500 km",
+      "value": 6.499415663667778,
+      "unit": "",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.effectiveMagnitude",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.p_arrival_500km",
+      "group": "seismic",
+      "label": "Dotarcie fali P, 500 km",
+      "value": 62.53,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(4°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.s_arrival_500km",
+      "group": "seismic",
+      "label": "Dotarcie fali S, 500 km",
+      "value": 110.1,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(4°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_arrival_500km",
+      "group": "seismic",
+      "label": "Dotarcie fali Rayleigha (R1), 500 km",
+      "value": 136.986301369863,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:distance / U_R",
+      "sources": [],
+      "derivedFrom": [
+        "seismic.rayleigh_group_velocity"
+      ],
+      "time": null
+    },
+    {
+      "id": "ejecta.thickness_eiep_500km",
+      "group": "ejecta",
+      "label": "Grubość ejecta, 500 km",
+      "value": 7.142857142857143,
+      "unit": "m",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.ejectaThickness(D_tc z obserwacji)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "crater.transient_diameter"
+      ],
+      "time": null
+    },
+    {
+      "id": "ejecta.arrival_eiep_500km",
+      "group": "ejecta",
+      "label": "Dotarcie ejecta balistycznych, 500 km",
+      "value": 334.2902232250413,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.ejectaArrivalTime (Kepler, 45°)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "airblast.overpressure_eiep_500km",
+      "group": "airblast",
+      "label": "Nadciśnienie fali uderzeniowej, 500 km",
+      "value": 785160.1952532629,
+      "unit": "Pa",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.airblastOverpressure",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Collins i in. 2005: dla E > 10⁴ Mt model prawdopodobnie zawyża nadciśnienie 2–5× — rząd wielkości.",
+      "time": null
+    },
+    {
+      "id": "airblast.wind_eiep_500km",
+      "group": "airblast",
+      "label": "Maksymalny wiatr za frontem, 500 km",
+      "value": 665.665409281345,
+      "unit": "m/s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.peakWind",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "sound.spl_eiep_500km",
+      "group": "sound",
+      "label": "Poziom ciśnienia akustycznego, 500 km",
+      "value": 211.87856557364327,
+      "unit": "dB",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:SPL = 20 log10(p / 20 µPa)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "airblast.overpressure_eiep_500km"
+      ],
+      "notes": "Powyżej ~194 dB to fala uderzeniowa, nie dźwięk w sensie akustycznym.",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_arrival_500km",
+      "group": "airblast",
+      "label": "Dotarcie fali Lamba (ciśnienia), 500 km",
+      "value": 1587.3015873015872,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:distance / c_Lamb",
+      "sources": [],
+      "derivedFrom": [
+        "airblast.lamb_speed"
+      ],
+      "time": null
+    },
+    {
+      "id": "thermal.exposure_eiep_1000km",
+      "group": "thermal",
+      "label": "Ekspozycja cieplna od kuli ognia, 1000 km",
+      "value": 124.87076118330464,
+      "unit": "MJ/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.thermalExposure",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Zero = kula ognia pod horyzontem. Nie obejmuje impulsu podczerwieni od opadających ejecta (thermal.ir_*).",
+      "time": null
+    },
+    {
+      "id": "seismic.m_eff_eiep_1000km",
+      "group": "seismic",
+      "label": "Efektywna magnituda wstrząsów, 1000 km",
+      "value": 4.9996871213444605,
+      "unit": "",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.effectiveMagnitude",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.p_arrival_1000km",
+      "group": "seismic",
+      "label": "Dotarcie fali P, 1000 km",
+      "value": 131.19,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(9°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.s_arrival_1000km",
+      "group": "seismic",
+      "label": "Dotarcie fali S, 1000 km",
+      "value": 233.24,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(9°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_arrival_1000km",
+      "group": "seismic",
+      "label": "Dotarcie fali Rayleigha (R1), 1000 km",
+      "value": 273.972602739726,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:distance / U_R",
+      "sources": [],
+      "derivedFrom": [
+        "seismic.rayleigh_group_velocity"
+      ],
+      "time": null
+    },
+    {
+      "id": "ejecta.thickness_eiep_1000km",
+      "group": "ejecta",
+      "label": "Grubość ejecta, 1000 km",
+      "value": 0.8928571428571429,
+      "unit": "m",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.ejectaThickness(D_tc z obserwacji)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "crater.transient_diameter"
+      ],
+      "time": null
+    },
+    {
+      "id": "ejecta.arrival_eiep_1000km",
+      "group": "ejecta",
+      "label": "Dotarcie ejecta balistycznych, 1000 km",
+      "value": 494.44867295401923,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.ejectaArrivalTime (Kepler, 45°)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "airblast.overpressure_eiep_1000km",
+      "group": "airblast",
+      "label": "Nadciśnienie fali uderzeniowej, 1000 km",
+      "value": 176386.98384017774,
+      "unit": "Pa",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.airblastOverpressure",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Collins i in. 2005: dla E > 10⁴ Mt model prawdopodobnie zawyża nadciśnienie 2–5× — rząd wielkości.",
+      "time": null
+    },
+    {
+      "id": "airblast.wind_eiep_1000km",
+      "group": "airblast",
+      "label": "Maksymalny wiatr za frontem, 1000 km",
+      "value": 262.3326009553924,
+      "unit": "m/s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.peakWind",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "sound.spl_eiep_1000km",
+      "group": "sound",
+      "label": "Poziom ciśnienia akustycznego, 1000 km",
+      "value": 198.90873076670078,
+      "unit": "dB",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:SPL = 20 log10(p / 20 µPa)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "airblast.overpressure_eiep_1000km"
+      ],
+      "notes": "Powyżej ~194 dB to fala uderzeniowa, nie dźwięk w sensie akustycznym.",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_arrival_1000km",
+      "group": "airblast",
+      "label": "Dotarcie fali Lamba (ciśnienia), 1000 km",
+      "value": 3174.6031746031745,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:distance / c_Lamb",
+      "sources": [],
+      "derivedFrom": [
+        "airblast.lamb_speed"
+      ],
+      "time": null
+    },
+    {
+      "id": "thermal.exposure_eiep_2000km",
+      "group": "thermal",
+      "label": "Ekspozycja cieplna od kuli ognia, 2000 km",
+      "value": 0,
+      "unit": "MJ/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.thermalExposure",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Zero = kula ognia pod horyzontem. Nie obejmuje impulsu podczerwieni od opadających ejecta (thermal.ir_*).",
+      "time": null
+    },
+    {
+      "id": "seismic.m_eff_eiep_2000km",
+      "group": "seismic",
+      "label": "Efektywna magnituda wstrząsów, 2000 km",
+      "value": 4.4999773285422515,
+      "unit": "",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.effectiveMagnitude",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.p_arrival_2000km",
+      "group": "seismic",
+      "label": "Dotarcie fali P, 2000 km",
+      "value": 251.57,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(18°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.s_arrival_2000km",
+      "group": "seismic",
+      "label": "Dotarcie fali S, 2000 km",
+      "value": 452.92,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(18°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_arrival_2000km",
+      "group": "seismic",
+      "label": "Dotarcie fali Rayleigha (R1), 2000 km",
+      "value": 547.945205479452,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:distance / U_R",
+      "sources": [],
+      "derivedFrom": [
+        "seismic.rayleigh_group_velocity"
+      ],
+      "time": null
+    },
+    {
+      "id": "ejecta.thickness_eiep_2000km",
+      "group": "ejecta",
+      "label": "Grubość ejecta, 2000 km",
+      "value": 0.11160714285714286,
+      "unit": "m",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.ejectaThickness(D_tc z obserwacji)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "crater.transient_diameter"
+      ],
+      "time": null
+    },
+    {
+      "id": "ejecta.arrival_eiep_2000km",
+      "group": "ejecta",
+      "label": "Dotarcie ejecta balistycznych, 2000 km",
+      "value": 763.9715208841027,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.ejectaArrivalTime (Kepler, 45°)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "airblast.overpressure_eiep_2000km",
+      "group": "airblast",
+      "label": "Nadciśnienie fali uderzeniowej, 2000 km",
+      "value": 44292.64823289804,
+      "unit": "Pa",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.airblastOverpressure",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Collins i in. 2005: dla E > 10⁴ Mt model prawdopodobnie zawyża nadciśnienie 2–5× — rząd wielkości.",
+      "time": null
+    },
+    {
+      "id": "airblast.wind_eiep_2000km",
+      "group": "airblast",
+      "label": "Maksymalny wiatr za frontem, 2000 km",
+      "value": 88.88590301143067,
+      "unit": "m/s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.peakWind",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "sound.spl_eiep_2000km",
+      "group": "sound",
+      "label": "Poziom ciśnienia akustycznego, 2000 km",
+      "value": 186.90603303247036,
+      "unit": "dB",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:SPL = 20 log10(p / 20 µPa)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "airblast.overpressure_eiep_2000km"
+      ],
+      "notes": "Powyżej ~194 dB to fala uderzeniowa, nie dźwięk w sensie akustycznym.",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_arrival_2000km",
+      "group": "airblast",
+      "label": "Dotarcie fali Lamba (ciśnienia), 2000 km",
+      "value": 6349.206349206349,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:distance / c_Lamb",
+      "sources": [],
+      "derivedFrom": [
+        "airblast.lamb_speed"
+      ],
+      "time": null
+    },
+    {
+      "id": "thermal.exposure_eiep_3000km",
+      "group": "thermal",
+      "label": "Ekspozycja cieplna od kuli ognia, 3000 km",
+      "value": 0,
+      "unit": "MJ/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.thermalExposure",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Zero = kula ognia pod horyzontem. Nie obejmuje impulsu podczerwieni od opadających ejecta (thermal.ir_*).",
+      "time": null
+    },
+    {
+      "id": "seismic.m_eff_eiep_3000km",
+      "group": "seismic",
+      "label": "Efektywna magnituda wstrząsów, 3000 km",
+      "value": 4.207665838509821,
+      "unit": "",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.effectiveMagnitude",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.p_arrival_3000km",
+      "group": "seismic",
+      "label": "Dotarcie fali P, 3000 km",
+      "value": 343.53,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(27°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.s_arrival_3000km",
+      "group": "seismic",
+      "label": "Dotarcie fali S, 3000 km",
+      "value": 621.92,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(27°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_arrival_3000km",
+      "group": "seismic",
+      "label": "Dotarcie fali Rayleigha (R1), 3000 km",
+      "value": 821.9178082191781,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:distance / U_R",
+      "sources": [],
+      "derivedFrom": [
+        "seismic.rayleigh_group_velocity"
+      ],
+      "time": null
+    },
+    {
+      "id": "ejecta.thickness_eiep_3000km",
+      "group": "ejecta",
+      "label": "Grubość ejecta, 3000 km",
+      "value": 0.03306878306878307,
+      "unit": "m",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.ejectaThickness(D_tc z obserwacji)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "crater.transient_diameter"
+      ],
+      "time": null
+    },
+    {
+      "id": "ejecta.arrival_eiep_3000km",
+      "group": "ejecta",
+      "label": "Dotarcie ejecta balistycznych, 3000 km",
+      "value": 1021.4750745357039,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.ejectaArrivalTime (Kepler, 45°)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "airblast.overpressure_eiep_3000km",
+      "group": "airblast",
+      "label": "Nadciśnienie fali uderzeniowej, 3000 km",
+      "value": 21328.655043258084,
+      "unit": "Pa",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.airblastOverpressure",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Collins i in. 2005: dla E > 10⁴ Mt model prawdopodobnie zawyża nadciśnienie 2–5× — rząd wielkości.",
+      "time": null
+    },
+    {
+      "id": "airblast.wind_eiep_3000km",
+      "group": "airblast",
+      "label": "Maksymalny wiatr za frontem, 3000 km",
+      "value": 46.22645478449427,
+      "unit": "m/s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.peakWind",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "sound.spl_eiep_3000km",
+      "group": "sound",
+      "label": "Poziom ciśnienia akustycznego, 3000 km",
+      "value": 180.55866949227948,
+      "unit": "dB",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:SPL = 20 log10(p / 20 µPa)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "airblast.overpressure_eiep_3000km"
+      ],
+      "notes": "Powyżej ~194 dB to fala uderzeniowa, nie dźwięk w sensie akustycznym.",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_arrival_3000km",
+      "group": "airblast",
+      "label": "Dotarcie fali Lamba (ciśnienia), 3000 km",
+      "value": 9523.809523809523,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:distance / c_Lamb",
+      "sources": [],
+      "derivedFrom": [
+        "airblast.lamb_speed"
+      ],
+      "time": null
+    },
+    {
+      "id": "thermal.exposure_eiep_5000km",
+      "group": "thermal",
+      "label": "Ekspozycja cieplna od kuli ognia, 5000 km",
+      "value": 0,
+      "unit": "MJ/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.thermalExposure",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Zero = kula ognia pod horyzontem. Nie obejmuje impulsu podczerwieni od opadających ejecta (thermal.ir_*).",
+      "time": null
+    },
+    {
+      "id": "seismic.m_eff_eiep_5000km",
+      "group": "seismic",
+      "label": "Efektywna magnituda wstrząsów, 5000 km",
+      "value": 3.8393969141466693,
+      "unit": "",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.effectiveMagnitude",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.p_arrival_5000km",
+      "group": "seismic",
+      "label": "Dotarcie fali P, 5000 km",
+      "value": 497.09,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(45°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.s_arrival_5000km",
+      "group": "seismic",
+      "label": "Dotarcie fali S, 5000 km",
+      "value": 896.59,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(45°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_arrival_5000km",
+      "group": "seismic",
+      "label": "Dotarcie fali Rayleigha (R1), 5000 km",
+      "value": 1369.86301369863,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:distance / U_R",
+      "sources": [],
+      "derivedFrom": [
+        "seismic.rayleigh_group_velocity"
+      ],
+      "time": null
+    },
+    {
+      "id": "ejecta.thickness_eiep_5000km",
+      "group": "ejecta",
+      "label": "Grubość ejecta, 5000 km",
+      "value": 0.007142857142857143,
+      "unit": "m",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.ejectaThickness(D_tc z obserwacji)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "crater.transient_diameter"
+      ],
+      "time": null
+    },
+    {
+      "id": "ejecta.arrival_eiep_5000km",
+      "group": "ejecta",
+      "label": "Dotarcie ejecta balistycznych, 5000 km",
+      "value": 1573.9166827475308,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.ejectaArrivalTime (Kepler, 45°)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "airblast.overpressure_eiep_5000km",
+      "group": "airblast",
+      "label": "Nadciśnienie fali uderzeniowej, 5000 km",
+      "value": 9357.289069910174,
+      "unit": "Pa",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.airblastOverpressure",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Collins i in. 2005: dla E > 10⁴ Mt model prawdopodobnie zawyża nadciśnienie 2–5× — rząd wielkości.",
+      "time": null
+    },
+    {
+      "id": "airblast.wind_eiep_5000km",
+      "group": "airblast",
+      "label": "Maksymalny wiatr za frontem, 5000 km",
+      "value": 21.221828053187,
+      "unit": "m/s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.peakWind",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "sound.spl_eiep_5000km",
+      "group": "sound",
+      "label": "Poziom ciśnienia akustycznego, 5000 km",
+      "value": 173.4024010091147,
+      "unit": "dB",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:SPL = 20 log10(p / 20 µPa)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "airblast.overpressure_eiep_5000km"
+      ],
+      "notes": "Powyżej ~194 dB to fala uderzeniowa, nie dźwięk w sensie akustycznym.",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_arrival_5000km",
+      "group": "airblast",
+      "label": "Dotarcie fali Lamba (ciśnienia), 5000 km",
+      "value": 15873.015873015873,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:distance / c_Lamb",
+      "sources": [],
+      "derivedFrom": [
+        "airblast.lamb_speed"
+      ],
+      "time": null
+    },
+    {
+      "id": "thermal.exposure_eiep_10000km",
+      "group": "thermal",
+      "label": "Ekspozycja cieplna od kuli ognia, 10 000 km",
+      "value": 0,
+      "unit": "MJ/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.thermalExposure",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Zero = kula ognia pod horyzontem. Nie obejmuje impulsu podczerwieni od opadających ejecta (thermal.ir_*).",
+      "time": null
+    },
+    {
+      "id": "seismic.m_eff_eiep_10000km",
+      "group": "seismic",
+      "label": "Efektywna magnituda wstrząsów, 10 000 km",
+      "value": 3.3396871213444603,
+      "unit": "",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.effectiveMagnitude",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.p_arrival_10000km",
+      "group": "seismic",
+      "label": "Dotarcie fali P, 10 000 km",
+      "value": 781.39,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(90°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.s_arrival_10000km",
+      "group": "seismic",
+      "label": "Dotarcie fali S, 10 000 km",
+      "value": 1413.48,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:ak135(90°)",
+      "sources": [
+        "kennett1995"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_arrival_10000km",
+      "group": "seismic",
+      "label": "Dotarcie fali Rayleigha (R1), 10 000 km",
+      "value": 2739.72602739726,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:distance / U_R",
+      "sources": [],
+      "derivedFrom": [
+        "seismic.rayleigh_group_velocity"
+      ],
+      "time": null
+    },
+    {
+      "id": "ejecta.thickness_eiep_10000km",
+      "group": "ejecta",
+      "label": "Grubość ejecta, 10 000 km",
+      "value": 0.0008928571428571428,
+      "unit": "m",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.ejectaThickness(D_tc z obserwacji)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "crater.transient_diameter"
+      ],
+      "time": null
+    },
+    {
+      "id": "ejecta.arrival_eiep_10000km",
+      "group": "ejecta",
+      "label": "Dotarcie ejecta balistycznych, 10 000 km",
+      "value": 3669.358592282365,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.ejectaArrivalTime (Kepler, 45°)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "site.lat"
+      ],
+      "notes": "Granica stosowalności EIEP (r ≲ 10 000 km); dalej — modele ejecta dystalnych.",
+      "time": null
+    },
+    {
+      "id": "airblast.overpressure_eiep_10000km",
+      "group": "airblast",
+      "label": "Nadciśnienie fali uderzeniowej, 10 000 km",
+      "value": 3595.1122486760983,
+      "unit": "Pa",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.airblastOverpressure",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "notes": "Collins i in. 2005: dla E > 10⁴ Mt model prawdopodobnie zawyża nadciśnienie 2–5× — rząd wielkości.",
+      "time": null
+    },
+    {
+      "id": "airblast.wind_eiep_10000km",
+      "group": "airblast",
+      "label": "Maksymalny wiatr za frontem, 10 000 km",
+      "value": 8.34656811449253,
+      "unit": "m/s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:eiep.peakWind",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "impactor.diameter",
+        "impactor.density",
+        "impactor.velocity",
+        "impactor.angle",
+        "target.density"
+      ],
+      "time": null
+    },
+    {
+      "id": "sound.spl_eiep_10000km",
+      "group": "sound",
+      "label": "Poziom ciśnienia akustycznego, 10 000 km",
+      "value": 165.09364918120738,
+      "unit": "dB",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:SPL = 20 log10(p / 20 µPa)",
+      "sources": [
+        "collins2005"
+      ],
+      "derivedFrom": [
+        "airblast.overpressure_eiep_10000km"
+      ],
+      "notes": "Powyżej ~194 dB to fala uderzeniowa, nie dźwięk w sensie akustycznym.",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_arrival_10000km",
+      "group": "airblast",
+      "label": "Dotarcie fali Lamba (ciśnienia), 10 000 km",
+      "value": 31746.031746031746,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived:distance / c_Lamb",
+      "sources": [],
+      "derivedFrom": [
+        "airblast.lamb_speed"
+      ],
+      "time": null
+    }
+  ]
+}

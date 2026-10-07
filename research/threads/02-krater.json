@@ -1,0 +1,2403 @@
+{
+  "thread": "02-krater",
+  "sources": [
+    {
+      "id": "morgan2016",
+      "type": "article",
+      "authors": "Morgan, J.V.; Gulick, S.P.S.; Bralower, T.; Chenot, E.; Christeson, G.; Claeys, P.; Cockell, C.; Collins, G.S.; Coolen, M.J.L.; Ferrière, L.; Gebhardt, C.; Goto, K.; Jones, H.; Kring, D.A.; Le Ber, E.; Lofi, J.; Long, X.; Lowery, C.; Mellett, C.; Ocampo-Torres, R.; Osinski, G.R.; Perez-Cruz, L.; Pickersgill, A.; Poelchau, M.; Rae, A.; Rasmussen, C.; Rebolledo-Vieyra, M.; Riller, U.; Sato, H.; Schmitt, D.R.; Smit, J.; Tikoo, S.; Tomioka, N.; Urrutia-Fucugauchi, J.; Whalen, M.; Wittmann, A.; Yamaguchi, K.E.; Zylberman, W.",
+      "year": 2016,
+      "title": "The formation of peak rings in large impact craters",
+      "container": "Science",
+      "volume": "354(6314)",
+      "pages": "878-882",
+      "doi": "10.1126/science.aah6561",
+      "url": "https://eprints.gla.ac.uk/131793/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened: PubMed record PMID 27856906 (abstract, authors, volume/pages) and the author's accepted manuscript at Univ. Glasgow Enlighten (eprints.gla.ac.uk/131793, full text incl. Fig. 1 rendered and inspected). Publisher site (science.org) returned 403. Supplementary Materials (model parameter table) not accessible."
+    },
+    {
+      "id": "riller2018",
+      "type": "article",
+      "authors": "Riller, U.; Poelchau, M.H.; Rae, A.S.P.; Schulte, F.M.; Collins, G.S.; Melosh, H.J.; Grieve, R.A.F.; Morgan, J.V.; Gulick, S.P.S.; Lofi, J.; Diaw, A.; McCall, N.; Kring, D.A.; IODP-ICDP Expedition 364 Science Party",
+      "year": 2018,
+      "title": "Rock fluidization during peak-ring formation of large impact structures",
+      "container": "Nature",
+      "volume": "562(7728)",
+      "pages": "511-518",
+      "doi": "10.1038/s41586-018-0607-z",
+      "url": "https://eprints.gla.ac.uk/173925/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened: PubMed PMID 30356184 (abstract) and author's accepted manuscript (eprints.gla.ac.uk/173925) incl. Methods and rendered Fig. 2 (iSALE snapshots T=0, 20, 184, 340, 600 s). An Author Correction exists (doi 10.1038/s41586-018-0748-0, seen in search results only; its content not checked)."
+    },
+    {
+      "id": "gulick2019",
+      "type": "article",
+      "authors": "Gulick, S.P.S.; Bralower, T.J.; Ormö, J.; Hall, B.; Grice, K.; Schaefer, B.; Lyons, S.; Freeman, K.H.; Morgan, J.V.; Artemieva, N.; Kaskes, P.; de Graaff, S.J.; Whalen, M.T.; Collins, G.S.; Tikoo, S.M.; Verhagen, C.; Christeson, G.L.; Claeys, P.; Coolen, M.J.L.; Goderis, S.; Goto, K.; Grieve, R.A.F.; McCall, N.; Osinski, G.R.; Rae, A.S.P.; Riller, U.; Smit, J.; Vajda, V.; Wittmann, A.; Expedition 364 Scientists",
+      "year": 2019,
+      "title": "The first day of the Cenozoic",
+      "container": "Proceedings of the National Academy of Sciences of the USA",
+      "volume": "116(39)",
+      "pages": "19342-19351",
+      "doi": "10.1073/pnas.1909479116",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6765282/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened: full text on PubMed Central (PMC6765282), all depth statements extracted verbatim from the HTML text; PubMed PMID 31501350."
+    },
+    {
+      "id": "collins2020",
+      "type": "article",
+      "authors": "Collins, G.S.; Patel, N.; Davison, T.M.; Rae, A.S.P.; Morgan, J.V.; Gulick, S.P.S.; IODP-ICDP Expedition 364 Science Party; Third-Party Scientists",
+      "year": 2020,
+      "title": "A steeply-inclined trajectory for the Chicxulub impact",
+      "container": "Nature Communications",
+      "volume": "11",
+      "pages": "1480",
+      "doi": "10.1038/s41467-020-15269-x",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7251121/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened: full-text XML via Europe PMC (PMC7251121), Supplementary Information PDF (Supplementary Table 1, crater metrics) from static-content.springer.com, and Fig. 2 image (media.springernature.com) inspected. Open access CC BY."
+    },
+    {
+      "id": "kring2020",
+      "type": "article",
+      "authors": "Kring, D.A.; Tikoo, S.M.; Schmieder, M.; Riller, U.; Rebolledo-Vieyra, M.; Simpson, S.L.; Osinski, G.R.; Gattacceca, J.; Wittmann, A.; Verhagen, C.M.; Cockell, C.S.; Coolen, M.J.L.; Longstaffe, F.J.; Gulick, S.P.S.; Morgan, J.V.; et al. (IODP-ICDP Expedition 364 Science Party)",
+      "year": 2020,
+      "title": "Probing the hydrothermal system of the Chicxulub impact crater",
+      "container": "Science Advances",
+      "volume": "6(22)",
+      "pages": "eaaz3053",
+      "doi": "10.1126/sciadv.aaz3053",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7259942/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened: full-text XML via Europe PMC (PMC7259942); metadata cross-checked with Crossref."
+    },
+    {
+      "id": "kaskes2022",
+      "type": "article",
+      "authors": "Kaskes, P.; de Graaff, S.J.; Feignon, J.-G.; Déhais, T.; Goderis, S.; Ferrière, L.; Koeberl, C.; Smit, J.; Wittmann, A.; Gulick, S.P.S.; Debaille, V.; Mattielli, N.; Claeys, P.",
+      "year": 2022,
+      "title": "Formation of the crater suevite sequence from the Chicxulub peak ring: A petrographic, geochemical, and sedimentological characterization",
+      "container": "GSA Bulletin",
+      "volume": "134(3-4)",
+      "pages": "895-927",
+      "doi": "10.1130/B36020.1",
+      "url": "https://par.nsf.gov/biblio/10291849",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened: full-text PDF via NSF Public Access Repository (par.nsf.gov/servlets/purl/10291849); published online 2021, issue 2022. Metadata cross-checked with Crossref."
+    },
+    {
+      "id": "schulte2021",
+      "type": "article",
+      "authors": "Schulte, F.M.; Wittmann, A.; Jung, S.; Morgan, J.V.; Gulick, S.P.S.; Kring, D.A.; Grieve, R.A.F.; Osinski, G.R.; Riller, U.; IODP-ICDP Expedition 364 Science Party",
+      "year": 2021,
+      "title": "Ocean resurge-induced impact melt dynamics on the peak-ring of the Chicxulub impact structure, Mexico",
+      "container": "International Journal of Earth Sciences",
+      "volume": "110",
+      "pages": "2619-2636",
+      "doi": "10.1007/s00531-021-02008-w",
+      "url": "https://eprints.gla.ac.uk/280070/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened: published open-access PDF from Univ. Glasgow Enlighten (eprints.gla.ac.uk/280070). Melt volume/thickness values in this paper are secondary citations of Grieve & Cintala 1992 and Barton et al. 2010 (not opened)."
+    },
+    {
+      "id": "christeson2021",
+      "type": "article",
+      "authors": "Christeson, G.L.; Morgan, J.V.; Gulick, S.P.S.",
+      "year": 2021,
+      "title": "Mapping the Chicxulub Impact Stratigraphy and Peak Ring Using Drilling and Seismic Data",
+      "container": "Journal of Geophysical Research: Planets",
+      "volume": "126(8)",
+      "pages": "e2021JE006938",
+      "doi": "10.1029/2021JE006938",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021JE006938",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened ABSTRACT ONLY: publisher-deposited abstract and metadata via Crossref REST API; Wiley/AGU site blocked by a bot-check (403). Numbers used come only from the abstract."
+    },
+    {
+      "id": "gulick2013",
+      "type": "article",
+      "authors": "Gulick, S.P.S.; Christeson, G.L.; Barton, P.J.; Grieve, R.A.F.; Morgan, J.V.; Urrutia-Fucugauchi, J.",
+      "year": 2013,
+      "title": "Geophysical characterization of the Chicxulub impact crater",
+      "container": "Reviews of Geophysics",
+      "volume": "51(1)",
+      "pages": "31-52",
+      "doi": "10.1002/rog.20007",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1002/rog.20007",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened ABSTRACT ONLY: publisher-deposited abstract via Crossref REST API (Wiley site 403). The abstract gives ring radii, uplift, melt-sheet and transient-cavity statements used here; detailed figures/tables not seen."
+    },
+    {
+      "id": "kring1995",
+      "type": "article",
+      "authors": "Kring, D.A.",
+      "year": 1995,
+      "title": "The dimensions of the Chicxulub impact crater and impact melt sheet",
+      "container": "Journal of Geophysical Research: Planets",
+      "volume": "100(E8)",
+      "pages": "16979-16986",
+      "doi": "10.1029/95JE01768",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/95JE01768",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened ABSTRACT ONLY via Crossref REST API (publisher-deposited)."
+    },
+    {
+      "id": "morgan1997",
+      "type": "article",
+      "authors": "Morgan, J.; Warner, M.; Chicxulub Working Group; Brittan, J.; Buffler, R.; Camargo, A.; Christeson, G.; Denton, P.; Hildebrand, A.; Hobbs, R.; Macintyre, H.; Mackenzie, G.; Maguire, P.; Marin, L.; Nakamura, Y.; Pilkington, M.; Sharpton, V.; Snyder, D.; Suarez, G.; Trejo, A.",
+      "year": 1997,
+      "title": "Size and morphology of the Chicxulub impact crater",
+      "container": "Nature",
+      "volume": "390(6659)",
+      "pages": "472-476",
+      "doi": "10.1038/37291",
+      "url": "https://www.nature.com/articles/37291",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened ABSTRACT on nature.com landing page (citation meta tags + abstract). Full text paywalled."
+    },
+    {
+      "id": "hildebrand1995",
+      "type": "article",
+      "authors": "Hildebrand, A.R.; Pilkington, M.; Connors, M.; Ortiz-Aleman, C.; Chavez, R.E.",
+      "year": 1995,
+      "title": "Size and structure of the Chicxulub crater revealed by horizontal gravity gradients and cenotes",
+      "container": "Nature",
+      "volume": "376(6539)",
+      "pages": "415-417",
+      "doi": "10.1038/376415a0",
+      "url": "https://www.nature.com/articles/376415a0",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened ABSTRACT on nature.com landing page. Full text paywalled."
+    },
+    {
+      "id": "sharpton1993",
+      "type": "article",
+      "authors": "Sharpton, V.L.; Burke, K.; Camargo-Zanoguera, A.; Hall, S.A.; Lee, D.S.; Marín, L.E.; Suárez-Reynoso, G.; Quezada-Muñeton, J.M.; Spudis, P.D.; Urrutia-Fucugauchi, J.",
+      "year": 1993,
+      "title": "Chicxulub multiring impact basin: size and other characteristics derived from gravity analysis",
+      "container": "Science",
+      "volume": "261(5128)",
+      "pages": "1564-1567",
+      "doi": "10.1126/science.261.5128.1564",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17798115/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened ABSTRACT via PubMed (PMID 17798115, efetch)."
+    },
+    {
+      "id": "pope1996",
+      "type": "article",
+      "authors": "Pope, K.O.; Ocampo, A.C.; Kinsland, G.L.; Smith, R.",
+      "year": 1996,
+      "title": "Surface expression of the Chicxulub crater",
+      "container": "Geology",
+      "volume": "24(6)",
+      "pages": "527-530",
+      "doi": "10.1130/0091-7613(1996)024<0527:SEOTCC>2.3.CO;2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11539331/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened ABSTRACT via PubMed (PMID 11539331, efetch). Radii refer to present-day surface (karst/topographic) expression, not buried structure."
+    },
+    {
+      "id": "schmieder2020",
+      "type": "article",
+      "authors": "Schmieder, M.; Kring, D.A.",
+      "year": 2020,
+      "title": "Earth's Impact Events Through Geologic Time: A List of Recommended Ages for Terrestrial Impact Structures and Deposits",
+      "container": "Astrobiology",
+      "volume": "20(1)",
+      "pages": "91-141",
+      "doi": "10.1089/ast.2019.2085",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6987741/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened: full-text XML via Europe PMC (PMC6987741); Chicxulub entry in Table 1 (row 72)."
+    },
+    {
+      "id": "morgan2022",
+      "type": "article",
+      "authors": "Morgan, J.V.; Bralower, T.J.; Brugger, J.; Wünnemann, K.",
+      "year": 2022,
+      "title": "The Chicxulub impact and its environmental consequences",
+      "container": "Nature Reviews Earth & Environment",
+      "volume": "3(5)",
+      "pages": "338-354",
+      "doi": "10.1038/s43017-022-00283-y",
+      "url": "https://www.nature.com/articles/s43017-022-00283-y",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened ABSTRACT and 'Key points' on nature.com landing page; full review paywalled."
+    },
+    {
+      "id": "feignon2020",
+      "type": "article",
+      "authors": "Feignon, J.-G.; Ferrière, L.; Leroux, H.; Koeberl, C.",
+      "year": 2020,
+      "title": "Characterization of shocked quartz grains from Chicxulub peak ring granites and shock pressure estimates",
+      "container": "Meteoritics & Planetary Science",
+      "volume": "55(10)",
+      "pages": "2206-2223",
+      "doi": "10.1111/maps.13570",
+      "url": "https://hal.science/hal-03134693",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened ABSTRACT via HAL API record hal-03134693 (abstract_s, journal, volume, pages, DOI); DOI and journal cross-checked with Unpaywall and Crossref. Full text behind bot-check, not read."
+    },
+    {
+      "id": "degraaff2022",
+      "type": "article",
+      "authors": "de Graaff, S.J.; Kaskes, P.; Déhais, T.; Goderis, S.; Debaille, V.; Ross, C.H.; Gulick, S.P.S.; Feignon, J.-G.; Ferrière, L.; Koeberl, C.; Smit, J.; Mattielli, N.; Claeys, P.",
+      "year": 2022,
+      "title": "New insights into the formation and emplacement of impact melt rocks within the Chicxulub impact structure, following the 2016 IODP-ICDP Expedition 364",
+      "container": "GSA Bulletin",
+      "volume": "134(1-2)",
+      "pages": "293-315",
+      "doi": "10.1130/B35795.1",
+      "url": "https://research.vu.nl/en/publications/e92c261f-b2e7-45c7-a12a-340e59ac33f2",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened ABSTRACT on Vrije Universiteit Amsterdam repository page; PDF download blocked (403). Published online 2021."
+    },
+    {
+      "id": "goderis2021",
+      "type": "article",
+      "authors": "Goderis, S.; Sato, H.; Ferrière, L.; Schmitz, B.; Burney, D.; Kaskes, P.; Vellekoop, J.; Wittmann, A.; Schulz, T.; Chernonozhkin, S.M.; Claeys, P.; de Graaff, S.J.; et al. (IODP-ICDP Expedition 364 Scientists)",
+      "year": 2021,
+      "title": "Globally distributed iridium layer preserved within the Chicxulub impact structure",
+      "container": "Science Advances",
+      "volume": "7(9)",
+      "pages": "eabe3647",
+      "doi": "10.1126/sciadv.abe3647",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7904271/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened: full-text XML via Europe PMC (PMC7904271)."
+    },
+    {
+      "id": "lowery2018",
+      "type": "article",
+      "authors": "Lowery, C.M.; Bralower, T.J.; Owens, J.D.; Rodríguez-Tovar, F.J.; Jones, H.; Smit, J.; Whalen, M.T.; Claeys, P.; Farley, K.; Gulick, S.P.S.; Morgan, J.V.; et al.",
+      "year": 2018,
+      "title": "Rapid recovery of life at ground zero of the end-Cretaceous mass extinction",
+      "container": "Nature",
+      "volume": "558(7709)",
+      "pages": "288-291",
+      "doi": "10.1038/s41586-018-0163-6",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6058194/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened: full-text XML via Europe PMC (PMC6058194, author manuscript)."
+    },
+    {
+      "id": "gulick2008",
+      "type": "article",
+      "authors": "Gulick, S.P.S.; Barton, P.J.; Christeson, G.L.; Morgan, J.V.; McDonald, M.; Mendoza-Cervantes, K.; Pearson, Z.F.; Surendra, A.; Urrutia-Fucugauchi, J.; Vermeesch, P.M.; Warner, M.R.",
+      "year": 2008,
+      "title": "Importance of pre-impact crustal structure for the asymmetry of the Chicxulub impact crater",
+      "container": "Nature Geoscience",
+      "volume": "1(2)",
+      "pages": "131-135",
+      "doi": "10.1038/ngeo103",
+      "url": "https://www.nature.com/articles/ngeo103",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened ABSTRACT on nature.com landing page. Used only qualitatively (pre-impact shelf undulations control asymmetry)."
+    },
+    {
+      "id": "kring2016",
+      "type": "article",
+      "authors": "Kring, D.A.; Kramer, G.Y.; Collins, G.S.; Potter, R.W.K.; Chandnani, M.",
+      "year": 2016,
+      "title": "Peak-ring structure and kinematics from a multi-disciplinary study of the Schrödinger impact basin",
+      "container": "Nature Communications",
+      "volume": "7",
+      "pages": "13161",
+      "doi": "10.1038/ncomms13161",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5080443/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened ABSTRACT via PubMed (PMID 27762265). Used only for the peak-ring-model debate."
+    },
+    {
+      "id": "rae2019",
+      "type": "article",
+      "authors": "Rae, A.S.P.; Collins, G.S.; Poelchau, M.; Riller, U.; Davison, T.M.; Grieve, R.A.F.; Osinski, G.R.; Morgan, J.V.; IODP-ICDP Expedition 364 Scientists",
+      "year": 2019,
+      "title": "Stress-strain evolution during peak-ring formation: A case study of the Chicxulub impact structure",
+      "container": "Journal of Geophysical Research: Planets",
+      "volume": "124(2)",
+      "pages": "396-417",
+      "doi": "10.1029/2018JE005821",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2018JE005821",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Opened ABSTRACT ONLY via Crossref REST API (Wiley 403). No numbers taken from the paper itself; model setup taken from the authors' public input files (rae2019data)."
+    },
+    {
+      "id": "rae2019data",
+      "type": "dataset",
+      "authors": "Rae, A.S.P.; Collins, G.S.; et al.",
+      "year": 2019,
+      "title": "Chicxulub_StressStrain: Additional Supplementary Material (iSALE input files and stress-strain calculator) for Rae et al. 2019",
+      "container": "GitHub repository ImperialCollegeLondon/Chicxulub_StressStrain",
+      "volume": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://github.com/ImperialCollegeLondon/Chicxulub_StressStrain",
+      "peerReviewed": false,
+      "verified": false,
+      "notes": "Opened README and iSALE_inputs/Rae_18_prime/2s_res/asteroid.inp via GitHub API/raw: 100 m cells, CPPR 60 (impactor diameter 12 km), OBJVEL 15 km/s, 3 layers (dunite mantle, granite crust 30 km, calcite 3 km), TEND 600 s, save every 2 s. Not peer reviewed."
+    }
+  ],
+  "parameters": [
+    {
+      "id": "crater.final_diameter",
+      "group": "crater",
+      "label": "Średnica końcowa krateru (krawędź)",
+      "value": 200,
+      "unit": "km",
+      "range": [
+        180,
+        200
+      ],
+      "certainty": "contested",
+      "method": "measured (gravity gradients, cenote ring, seismic reflection) + interpretation of which ring is 'the rim'",
+      "sources": [
+        "morgan2016",
+        "gulick2019",
+        "riller2018",
+        "morgan2022",
+        "schulte2021",
+        "hildebrand1995",
+        "kring1995",
+        "schmieder2020",
+        "kring2020"
+      ],
+      "locator": "Morgan2016 main text ('~200-km diameter'); Gulick2019 Introduction ('~200-km-diameter'); Morgan2022 abstract ('approximately 200-kilometre-wide'); Hildebrand1995 abstract ('~180 km'); Kring1995 abstract ('~180 km'); Schmieder&Kring2020 Table 1 row 72 (180 km); Kring2020 abstract ('~180-km-diameter ... peak-ring crater')",
+      "notes": "Spread 180-200 km is largely definitional (which ring fault / gravity-gradient maximum is called the rim). 180 km = horizontal-gravity-gradient maxima + cenote ring (Hildebrand 1995). Expedition-364 literature uses ~200 km. Larger values (240-300 km) refer to outer rings of a multi-ring basin, see crater.outer_ring_diameter.",
+      "time": null
+    },
+    {
+      "id": "crater.outer_ring_diameter",
+      "group": "crater",
+      "label": "Średnica zewnętrznego pierścienia (basen wielopierścieniowy)",
+      "value": 240,
+      "unit": "km",
+      "range": [
+        240,
+        300
+      ],
+      "certainty": "contested",
+      "method": "measured (gravity rings; surface geomorphology) + interpretation",
+      "sources": [
+        "kring2020",
+        "pope1996",
+        "sharpton1993"
+      ],
+      "locator": "Kring2020 abstract ('~240-km multiring basin'); Pope1996 abstract ('eroded crater rim may extend to a diameter of approximately 260 km'); Sharpton1993 abstract (outer ring 'almost 300 kilometers in diameter')",
+      "notes": "Outer ring(s) of the multi-ring basin; not the excavation crater. Sharpton 1993's ~300 km outer ring was argued against by Hildebrand 1995 (~180 km).",
+      "time": null
+    },
+    {
+      "id": "crater.inner_rim_radius",
+      "group": "crater",
+      "label": "Promień wewnętrznej krawędzi (inner rim)",
+      "value": 77.5,
+      "unit": "km",
+      "range": [
+        70,
+        85
+      ],
+      "certainty": "fact",
+      "method": "measured (seismic reflection/refraction + gravity), interpretation-dependent",
+      "sources": [
+        "gulick2013"
+      ],
+      "locator": "Gulick2013 abstract ('inner rim at 70-85 km radius')",
+      "notes": "Value is the midpoint of the published 70-85 km range (azimuthal variation); terrace-zone slump blocks step down from this inner rim into the annular trough.",
+      "time": null
+    },
+    {
+      "id": "crater.ring_faults_outer_radius",
+      "group": "crater",
+      "label": "Zasięg zewnętrznych uskoków pierścieniowych (promień)",
+      "value": 130,
+      "unit": "km",
+      "range": [
+        70,
+        130
+      ],
+      "certainty": "fact",
+      "method": "measured (seismic), interpretation-dependent",
+      "sources": [
+        "gulick2013"
+      ],
+      "locator": "Gulick2013 abstract ('outer ring faults at 70-130 km radius')",
+      "notes": "Three sets of semicontinuous, arcuate ring faults (Gulick 2013). Value = outer limit.",
+      "time": null
+    },
+    {
+      "id": "crater.cenote_ring_radius",
+      "group": "crater",
+      "label": "Promień pierścienia cenotów (ekspresja powierzchniowa)",
+      "value": 83,
+      "unit": "km",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured (surface karst/topography)",
+      "sources": [
+        "pope1996",
+        "hildebrand1995"
+      ],
+      "locator": "Pope1996 abstract ('approximately 83-km-radius trough or moat containing sinkholes (the Cenote ring)'); Hildebrand1995 abstract (cenotes coincide with peripheral gravity-gradient maxima)",
+      "notes": "Present-day surface expression; Pope et al. interpret the moat as the outer edge of the crater floor (major ring fault). Pope 1996 also lists troughs at ~41 and ~62 km radius (peak ring = low ridge between them), an outer trough at ~103 km and a ridge crest at ~129 km radius.",
+      "time": null
+    },
+    {
+      "id": "crater.center_lat",
+      "group": "crater",
+      "label": "Szerokość geograficzna środka krateru",
+      "value": 21.29,
+      "unit": "°",
+      "range": [
+        21.29,
+        21.33
+      ],
+      "certainty": "fact",
+      "method": "measured (geometric centre of rim gravity-gradient high and cenote ring)",
+      "sources": [
+        "collins2020",
+        "morgan2016",
+        "schmieder2020"
+      ],
+      "locator": "Collins2020 Results (21.29°N, 89.53°W); Morgan2016 main text (nominal centre 21.30°N, 89.54°W); Schmieder&Kring2020 Table 1 (21°20'N)",
+      "notes": "Different authors use slightly different nominal centres; this shifts radial distances by a few km.",
+      "time": null
+    },
+    {
+      "id": "crater.center_lon",
+      "group": "crater",
+      "label": "Długość geograficzna środka krateru",
+      "value": -89.53,
+      "unit": "°",
+      "range": [
+        -89.54,
+        -89.5
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "collins2020",
+        "morgan2016",
+        "schmieder2020"
+      ],
+      "locator": "Collins2020 (89.53°W); Morgan2016 (89.54°W); Schmieder&Kring2020 Table 1 (89°30'W)",
+      "notes": "Negative = west.",
+      "time": null
+    },
+    {
+      "id": "crater.peak_ring_center_offset",
+      "group": "crater",
+      "label": "Przesunięcie środka pierścienia szczytowego względem środka krateru (na SW)",
+      "value": 7.6,
+      "unit": "km",
+      "range": [
+        5,
+        8
+      ],
+      "certainty": "fact",
+      "method": "measured (annular gravity low)",
+      "sources": [
+        "collins2020"
+      ],
+      "locator": "Collins2020 Supplementary Fig. 1 caption ('offset approximately 7.6 km SW'); main text: 'shifted several km to the west-southwest'",
+      "notes": "Centre of central gravity high: 21.24°N, 89.58°W. Collins et al. attribute the asymmetry to a ~60° impact from the NE; target heterogeneity also contributes (Gulick 2008).",
+      "time": null
+    },
+    {
+      "id": "crater.mantle_uplift_center_offset",
+      "group": "crater",
+      "label": "Przesunięcie centrum wypiętrzenia płaszcza (na NNE)",
+      "value": 9.3,
+      "unit": "km",
+      "range": [
+        9.3,
+        10
+      ],
+      "certainty": "fact",
+      "method": "measured (3D seismic velocity)",
+      "sources": [
+        "collins2020"
+      ],
+      "locator": "Collins2020 Results ('ca. 10 km to the north-northeast', 21.38°N, 89.52°W); Supplementary Fig. 1 caption ('offset 9.3 km NNE')",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "crater.peak_ring_diameter",
+      "group": "crater",
+      "label": "Średnica pierścienia szczytowego",
+      "value": 85,
+      "unit": "km",
+      "range": [
+        80,
+        92
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: 2 x radial distance of drill site M0077A (located on the peak ring) from crater centre (40-45.6 km), cross-checked with seismic width 10-15 km",
+      "sources": [
+        "morgan2016",
+        "kring2020",
+        "kaskes2022",
+        "christeson2021"
+      ],
+      "locator": "Morgan2016 main text (M0077A at ~45.6 km radial distance); Kring2020 Fig. 1 caption (~40 km from crater centre); Kaskes2022 Introduction (40 km NW of centre); Christeson2021 abstract (width ~10-15 km)",
+      "notes": "No opened peer-reviewed source states a single peak-ring diameter; value derived here. Seismic-image Fig. 1G of Morgan 2016 shows peak-ring rocks between ~40 and ~52 km radius on profile Chicx-R3. 3D model peak rings are smaller (67-71 km; Collins 2020 Suppl. Table 1) - see disagreements.",
+      "time": null
+    },
+    {
+      "id": "crater.peak_ring_width",
+      "group": "crater",
+      "label": "Szerokość pierścienia szczytowego",
+      "value": 10,
+      "unit": "km",
+      "range": [
+        10,
+        15
+      ],
+      "certainty": "fact",
+      "method": "measured (full-waveform velocity models + seismic reflection)",
+      "sources": [
+        "christeson2021"
+      ],
+      "locator": "Christeson2021 abstract ('narrower (~10 km width) where it is high relief ... wider (~15 km width) where it is lower relief')",
+      "notes": "~10 km where the peak ring is high (top 600-700 mbsf, as at M0077), ~15 km where low (top 1000-1200 mbsf).",
+      "time": null
+    },
+    {
+      "id": "crater.peak_ring_height",
+      "group": "crater",
+      "label": "Wysokość pierścienia szczytowego nad dnem krateru",
+      "value": 400,
+      "unit": "m",
+      "range": [
+        400,
+        500
+      ],
+      "certainty": "fact",
+      "method": "measured (seismic reflection, present-day burial geometry)",
+      "sources": [
+        "gulick2019",
+        "schulte2021"
+      ],
+      "locator": "Gulick2019 Results ('peak ring ... elevated ~400 m above the crater floor'); Gulick2019 Methods dam-break ('depth of the peak ring (500 m above the crater floor)'); Schulte2021 Discussion ('some 400 m above the impact-melt and suevite-covered crater floor')",
+      "notes": "Present-day relief after burial/compaction; original day-1 relief not independently constrained. Relief varies along strike (see crater.peak_ring_top_depth_present).",
+      "time": null
+    },
+    {
+      "id": "crater.peak_ring_top_depth_present",
+      "group": "crater",
+      "label": "Dzisiejsza głębokość szczytu pierścienia pod dnem morskim",
+      "value": 650,
+      "unit": "m",
+      "range": [
+        600,
+        1200
+      ],
+      "certainty": "fact",
+      "method": "measured (seismic + drilling)",
+      "sources": [
+        "christeson2021",
+        "gulick2019"
+      ],
+      "locator": "Christeson2021 abstract (600-700 mbsf high relief; 1000-1200 mbsf low relief); Gulick2019 (impactites start at 617.34 mbsf at M0077)",
+      "notes": "Present-day depth below seafloor (beneath ~600 m of Cenozoic cover at M0077). Useful only to vary peak-ring relief along strike (~400-600 m difference).",
+      "time": null
+    },
+    {
+      "id": "crater.floor_depth",
+      "group": "crater",
+      "label": "Głębokość dna krateru (rekonstrukcja, dzień 1)",
+      "value": 800,
+      "unit": "m",
+      "range": [
+        600,
+        1000
+      ],
+      "certainty": "extrapolation",
+      "method": "reconstruction from seismic + drilling",
+      "sources": [
+        "gulick2019"
+      ],
+      "locator": "Gulick2019 'Postimpact Resurge...' section ('The 600- to 1,000-m-deep Chicxulub crater floor')",
+      "notes": "Reference level not stated explicitly (interpreted as depth below the surrounding pre-impact sea floor/sea level); value is the midpoint of the stated range.",
+      "time": null
+    },
+    {
+      "id": "crater.rim_gap_water_depth",
+      "group": "crater",
+      "label": "Głębokość wody w luce krawędzi (NNE)",
+      "value": 2,
+      "unit": "km",
+      "range": [
+        1,
+        2
+      ],
+      "certainty": "extrapolation",
+      "method": "reconstruction (seismic, pre-impact basin geometry)",
+      "sources": [
+        "gulick2019",
+        "kaskes2022",
+        "gulick2008"
+      ],
+      "locator": "Gulick2019 ('gap in the rim, with water depths reaching ~2 km'); Methods dam-break: h0 = 0.5, 1 and 2 km tested; Kaskes2022 Discussion (Gulf of Mexico 'water depths of 2km', citing Gulick et al. 2008)",
+      "notes": "Resurge into the crater dominated by ingress through the NNE rim gap.",
+      "time": null
+    },
+    {
+      "id": "crater.transient_diameter",
+      "group": "crater",
+      "label": "Średnica krateru przejściowego",
+      "value": 100,
+      "unit": "km",
+      "range": [
+        72,
+        100
+      ],
+      "certainty": "extrapolation",
+      "method": "seismic interpretation (Morgan 1997; Gulick 2013) + model:collins2020 (iSALE-3D)",
+      "sources": [
+        "morgan1997",
+        "gulick2013",
+        "gulick2019",
+        "kring1995",
+        "collins2020"
+      ],
+      "locator": "Morgan1997 abstract ('about 100 km'); Gulick2013 abstract ('50 km radius transient cavity'); Gulick2019 Introduction ('~40- to 50-km-radius'), Fig. 2B caption ('100-km-wide transient crater'); Kring1995 abstract (~100 km central region = transient cavity limits); Collins2020 Suppl. Table 1 (72-91 km, 12 km/s and 20 km/s cases)",
+      "notes": "Not directly observable; geophysical estimates ~100 km, 3D iSALE values 72-91 km depending on impact angle and speed.",
+      "time": null
+    },
+    {
+      "id": "crater.transient_depth",
+      "group": "crater",
+      "label": "Maksymalna głębokość krateru przejściowego (poniżej powierzchni)",
+      "value": 28,
+      "unit": "km",
+      "range": [
+        25,
+        32
+      ],
+      "certainty": "extrapolation",
+      "method": "model:riller2018/morgan2016/collins2020 - read from published snapshot figures (not stated in text)",
+      "sources": [
+        "riller2018",
+        "collins2020",
+        "morgan2016"
+      ],
+      "locator": "Riller2018 Fig. 2b (T=20 s, cavity floor ~-28 km); Collins2020 Fig. 2b (T=20 s, floor ~-31 km, 60° case); Morgan2016 Fig. 1B (T=1 min, floor ~-25 km)",
+      "notes": "Digitized by eye from figures (uncertainty ~±2 km). Depth measured from pre-impact surface to the melt-lined cavity floor; transient cavity is deepest at ~20-30 s and the floor is already rebounding at 60 s.",
+      "time": {
+        "t": 20,
+        "range": [
+          20,
+          60
+        ]
+      }
+    },
+    {
+      "id": "crater.central_uplift_max_height",
+      "group": "crater",
+      "label": "Maks. wysokość wypiętrzenia centralnego ponad pierwotną powierzchnię",
+      "value": 15,
+      "unit": "km",
+      "range": [
+        10,
+        20
+      ],
+      "certainty": "extrapolation",
+      "method": "model:riller2018/morgan2016 (iSALE-2D, 200 m cells) and collins2020 (iSALE-3D, 500 m cells) - read from figures",
+      "sources": [
+        "riller2018",
+        "morgan2016",
+        "collins2020",
+        "gulick2013"
+      ],
+      "locator": "Riller2018 Fig. 2c (T=184 s, uplift crest at/above the +20 km frame edge near the axis); Morgan2016 Fig. 1C (T=3 min, uplift to ~+15-20 km); Collins2020 Fig. 2c (T=180 s, crest ~+10 km); Gulick2013 abstract ('rebounding crust rose kilometers above the surface')",
+      "notes": "Strongly model-dependent (resolution, acoustic-fluidization parameters, impact angle). The thin spikes at the axis in the 2D model are likely axis/numerical artefacts. Not a measured quantity.",
+      "time": {
+        "t": 180,
+        "range": [
+          100,
+          200
+        ]
+      }
+    },
+    {
+      "id": "crater.t_excavation_end",
+      "group": "crater",
+      "label": "Koniec wykopywania / wzrostu krateru przejściowego",
+      "value": 30,
+      "unit": "s",
+      "range": [
+        10,
+        60
+      ],
+      "certainty": "contested",
+      "method": "model:riller2018 (T<30 s); gulick2013 ('within 10 s'); collins2020 ('first minute'); kaskes2022 (<1 min)",
+      "sources": [
+        "riller2018",
+        "gulick2013",
+        "collins2020",
+        "kaskes2022",
+        "gulick2019"
+      ],
+      "locator": "Riller2018 'Deformation mechanisms and cratering stages' (transient cavity growth T<30 s); Gulick2013 abstract; Collins2020 Results ('In the first minute after impact'); Kaskes2022 Fig. 16A (T<1 min); Gulick2019 Introduction ('within tens of seconds')",
+      "notes": "Definitions differ (end of excavation flow vs. maximum depth vs. maximum diameter). Published snapshots show the cavity still widening at 20 s (radius ~25-30 km).",
+      "time": {
+        "t": 30,
+        "range": [
+          10,
+          60
+        ]
+      }
+    },
+    {
+      "id": "crater.t_transient_max",
+      "group": "crater",
+      "label": "Krater przejściowy w maksimum",
+      "value": 30,
+      "unit": "s",
+      "range": [
+        20,
+        60
+      ],
+      "certainty": "extrapolation",
+      "method": "model:riller2018, morgan2016, collins2020",
+      "sources": [
+        "riller2018",
+        "morgan2016",
+        "collins2020"
+      ],
+      "locator": "Riller2018 text (T<30 s) and Fig. 2b (20 s); Morgan2016 Fig. 1B (1 min); Collins2020 Fig. 2b (20 s)",
+      "notes": "Maximum depth ~20-30 s; maximum width possibly up to ~60 s while the floor already rebounds.",
+      "time": {
+        "t": 30,
+        "range": [
+          20,
+          60
+        ]
+      }
+    },
+    {
+      "id": "crater.t_collapse_onset",
+      "group": "crater",
+      "label": "Początek kolapsu (podnoszenie dna, osuwanie ścian)",
+      "value": 20,
+      "unit": "s",
+      "range": [
+        20,
+        60
+      ],
+      "certainty": "extrapolation",
+      "method": "model:riller2018",
+      "sources": [
+        "riller2018"
+      ],
+      "locator": "Riller2018 ('initial collapse ... (20 s < T < 150 s)'; 'build-up of the central uplift (20 s < T < 100 s)')",
+      "notes": "",
+      "time": {
+        "t": 20,
+        "range": [
+          20,
+          60
+        ]
+      }
+    },
+    {
+      "id": "crater.t_uplift_max",
+      "group": "crater",
+      "label": "Maksimum wypiętrzenia centralnego",
+      "value": 180,
+      "unit": "s",
+      "range": [
+        100,
+        200
+      ],
+      "certainty": "extrapolation",
+      "method": "model:riller2018, collins2020, morgan2016",
+      "sources": [
+        "riller2018",
+        "collins2020",
+        "morgan2016"
+      ],
+      "locator": "Riller2018 Fig. 2c (T=184 s) and text (build-up 20-100 s); Collins2020 Methods ('time of maximum uplift (T≈3 min)'), Suppl. Fig. 2 caption (200 s example); Morgan2016 Fig. 1C (3 min)",
+      "notes": "",
+      "time": {
+        "t": 180,
+        "range": [
+          100,
+          200
+        ]
+      }
+    },
+    {
+      "id": "crater.t_uplift_collapse",
+      "group": "crater",
+      "label": "Zapadanie się wypiętrzenia centralnego (początek fazy)",
+      "value": 160,
+      "unit": "s",
+      "range": [
+        160,
+        300
+      ],
+      "certainty": "extrapolation",
+      "method": "model:riller2018",
+      "sources": [
+        "riller2018"
+      ],
+      "locator": "Riller2018 ('downwards and radial-outward collapse (160 s < T < 300 s)'); Methods: elevated pressures in peak-ring rocks ~100-250 s",
+      "notes": "value = start of phase; phase lasts to ~300 s.",
+      "time": {
+        "t": 160,
+        "range": [
+          160,
+          300
+        ]
+      }
+    },
+    {
+      "id": "crater.t_peak_ring",
+      "group": "crater",
+      "label": "Uformowanie pierścienia szczytowego",
+      "value": 300,
+      "unit": "s",
+      "range": [
+        240,
+        340
+      ],
+      "certainty": "extrapolation",
+      "method": "model:morgan2016, collins2020, riller2018",
+      "sources": [
+        "morgan2016",
+        "collins2020",
+        "riller2018",
+        "kaskes2022"
+      ],
+      "locator": "Morgan2016 Fig. 1D-E (4-5 min); Collins2020 Fig. 2d (300 s); Riller2018 Fig. 2d (340 s) and text (160-300 s); Kaskes2022 Fig. 16B (T=5 min)",
+      "notes": "",
+      "time": {
+        "t": 300,
+        "range": [
+          240,
+          340
+        ]
+      }
+    },
+    {
+      "id": "crater.t_melt_emplacement_peak_ring",
+      "group": "crater",
+      "label": "Wtłaczanie/uwięzienie stopu w strefach nasunięć pierścienia",
+      "value": 250,
+      "unit": "s",
+      "range": [
+        250,
+        600
+      ],
+      "certainty": "extrapolation",
+      "method": "inference from core structures + model:riller2018",
+      "sources": [
+        "riller2018"
+      ],
+      "locator": "Riller2018 ('melt emplacement must occur at the end of peak-ring formation (250 s < T < 600 s)')",
+      "notes": "value = start of phase. Applies to melt bodies at 1220-1316 mbsf (thrust zone).",
+      "time": {
+        "t": 250,
+        "range": [
+          250,
+          600
+        ]
+      }
+    },
+    {
+      "id": "crater.t_final",
+      "group": "crater",
+      "label": "Krater końcowy (koniec modelu)",
+      "value": 600,
+      "unit": "s",
+      "range": [
+        300,
+        600
+      ],
+      "certainty": "extrapolation",
+      "method": "model:morgan2016 (10 min snapshot), riller2018 (600 s run end)",
+      "sources": [
+        "morgan2016",
+        "riller2018"
+      ],
+      "locator": "Morgan2016 Fig. 1F (T=10 min); Riller2018 Methods ('simulation duration was 600 seconds'), Fig. 2d inset (T=600 s)",
+      "notes": "Geometry is essentially final by ~5 min; slow gravitational settling/spreading of the peak ring continued afterwards (Riller 2018; Schulte 2021).",
+      "time": {
+        "t": 600,
+        "range": [
+          300,
+          600
+        ]
+      }
+    },
+    {
+      "id": "crater.t_melt_cap_peak_ring",
+      "group": "crater",
+      "label": "Przykrycie pierścienia stopem i brekcją stopu (Units 3+2C)",
+      "value": 900,
+      "unit": "s",
+      "range": [
+        300,
+        1800
+      ],
+      "certainty": "extrapolation",
+      "method": "interpretation of core (paleomagnetism, sedimentology) + model context",
+      "sources": [
+        "gulick2019",
+        "kaskes2022",
+        "schulte2021"
+      ],
+      "locator": "Gulick2019 abstract ('Within tens of minutes, the peak ring was covered in ~40 m of brecciated impact melt rock and coarse-grained suevite'); 'Crater Modification Stage' (>580 °C, emplaced quickly)",
+      "notes": "t = representative placement inside the published 'tens of minutes' window (after peak-ring formation ~300 s, before full resurge); not a published value.",
+      "time": {
+        "t": 900,
+        "range": [
+          300,
+          1800
+        ]
+      }
+    },
+    {
+      "id": "crater.t_first_seawater_peak_ring",
+      "group": "crater",
+      "label": "Pierwsze wtargnięcie wody morskiej na pierścień (interakcja stop-woda)",
+      "value": 1800,
+      "unit": "s",
+      "range": [
+        300,
+        1800
+      ],
+      "certainty": "extrapolation",
+      "method": "interpretation of core + 1D dam-break model (Gulick 2019)",
+      "sources": [
+        "kaskes2022",
+        "gulick2019"
+      ],
+      "locator": "Kaskes2022 abstract ('ocean water arrived at Site M0077 within 30 minutes after the impact'); Gulick2019 ('initial incursion of seawater in advance of the full resurge')",
+      "notes": "Upper bound only (<30 min). Produced the 5.6-m non-graded (hyaloclastite-like) suevite by quench fragmentation of hot melt.",
+      "time": {
+        "t": 1800,
+        "range": [
+          300,
+          1800
+        ]
+      }
+    },
+    {
+      "id": "crater.t_resurge_crest_peak_ring",
+      "group": "crater",
+      "label": "Resurge przelewa się przez pierścień szczytowy",
+      "value": 2700,
+      "unit": "s",
+      "range": [
+        1800,
+        3600
+      ],
+      "certainty": "extrapolation",
+      "method": "model: 1D dam-break (h0 = 0.5-2 km), Gulick 2019 Methods",
+      "sources": [
+        "gulick2019",
+        "schulte2021"
+      ],
+      "locator": "Gulick2019 'Postimpact Resurge...' and Methods ('timing of full resurge is 30 to 60 min postimpact for a water depth at the crater rim exceeding 1 km'); SI Fig. S9",
+      "notes": "Neglects drag and melt-water interaction, which could delay flooding; complete flooding of the crater 'likely took considerably longer'.",
+      "time": {
+        "t": 2700,
+        "range": [
+          1800,
+          3600
+        ]
+      }
+    },
+    {
+      "id": "crater.t_resurge_settling",
+      "group": "crater",
+      "label": "Osadzanie suewitu warstwowanego frakcjonalnie (resurge, sejsze)",
+      "value": 10800,
+      "unit": "s",
+      "range": [
+        3600,
+        86400
+      ],
+      "certainty": "speculation",
+      "method": "interpretation of core sedimentology",
+      "sources": [
+        "gulick2019",
+        "kaskes2022"
+      ],
+      "locator": "Gulick2019 abstract ('Within hours, the full resurge deposit formed through settling and seiches'); Kaskes2022 abstract ('In the following hours ... 89-m-thick graded suevite'), Fig. 16D (T = hours)",
+      "notes": "Only 'hours' is supported; t = 3 h is an illustrative placement, not a published number.",
+      "time": {
+        "t": 10800,
+        "range": [
+          3600,
+          86400
+        ]
+      }
+    },
+    {
+      "id": "crater.t_tsunami_return",
+      "group": "crater",
+      "label": "Powrót odbitej fali tsunami (rim-wave) do krateru",
+      "value": 43200,
+      "unit": "s",
+      "range": [
+        7200,
+        86400
+      ],
+      "certainty": "speculation",
+      "method": "interpretation (terrestrial biomarkers, cross-bedding) + tsunami travel-time modelling cited by Gulick 2019",
+      "sources": [
+        "gulick2019",
+        "kaskes2022"
+      ],
+      "locator": "Gulick2019 abstract ('Within a day, the reflected rim-wave tsunami reached the crater'); text: rim-wave arrival on far side of the Gulf 2-3 h after impact; Kaskes2022 Discussion ('within 24h')",
+      "notes": "Only 'within a day' is supported; lower bound ~2 h from cited Gulf-crossing time; t is an illustrative placement.",
+      "time": {
+        "t": 43200,
+        "range": [
+          7200,
+          86400
+        ]
+      }
+    },
+    {
+      "id": "crater.day1_infill_thickness",
+      "group": "crater",
+      "label": "Miąższość osadów dnia 1 na pierścieniu (M0077A)",
+      "value": 130,
+      "unit": "m",
+      "range": [
+        129.7,
+        130
+      ],
+      "certainty": "fact",
+      "method": "measured (drill core M0077A)",
+      "sources": [
+        "gulick2019",
+        "kring2020",
+        "riller2018",
+        "morgan2016"
+      ],
+      "locator": "Gulick2019 abstract (~130 m impact melt rock and suevite deposited the first day); Kring2020 ('130 m of impact melt rock and impact melt-bearing breccias'); Riller2018 ('130 m of impact melt rock and suevite'); Morgan2016 (~130 m)",
+      "notes": "617.33-747.02 mbsf = 129.69 m (top of Unit 2 to top of Unit 4). Deposition time is interpretive (minutes to <1 day).",
+      "time": {
+        "t": 86400,
+        "range": [
+          300,
+          86400
+        ]
+      }
+    },
+    {
+      "id": "crater.day1_melt_layer_thickness",
+      "group": "crater",
+      "label": "Miąższość stopu i brekcji stopu (Units 3+2C) na M0077A",
+      "value": 41,
+      "unit": "m",
+      "range": [
+        40,
+        46.4
+      ],
+      "certainty": "fact",
+      "method": "measured (core)",
+      "sources": [
+        "gulick2019",
+        "schulte2021"
+      ],
+      "locator": "Gulick2019 ('40+-m-thick impact melt rock, melt rock breccia, and suevite of Units 3 and 2C (706 to 747 mbsf)'); Schulte2021 abstract and Results (46.37 m: 3B 21.61 m, 3A 16.39 m, 2C-2 5.65 m, 2C-1 2.72 m)",
+      "notes": "Thickness depends on where the unit boundaries are drawn; Schulte's 46.37 m sum is not consistent with a 747.02 mbsf base unless 3B extends below it (unresolved).",
+      "time": {
+        "t": 900,
+        "range": [
+          300,
+          1800
+        ]
+      }
+    },
+    {
+      "id": "crater.day1_nongraded_suevite_thickness",
+      "group": "crater",
+      "label": "Suewit niewarstwowany (hialoklastytowy)",
+      "value": 5.6,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured (core)",
+      "sources": [
+        "kaskes2022"
+      ],
+      "locator": "Kaskes2022 abstract; 'Non-Graded Suevite Unit (715.60-710.01 mbsf)'",
+      "notes": "",
+      "time": {
+        "t": 1800,
+        "range": [
+          300,
+          1800
+        ]
+      }
+    },
+    {
+      "id": "crater.day1_resurge_crest_layer_thickness",
+      "group": "crater",
+      "label": "Warstwa przelania resurge przez pierścień (698-706 mbsf)",
+      "value": 10,
+      "unit": "m",
+      "range": [
+        8,
+        10
+      ],
+      "certainty": "fact",
+      "method": "measured (core; interpretation as resurge cresting the peak ring)",
+      "sources": [
+        "gulick2019"
+      ],
+      "locator": "Gulick2019 abstract ('Within an hour, resurge crested the peak ring, depositing a 10-m-thick layer'); Results (698.00-706.00 mbsf)",
+      "notes": "Interval is 8 m in the core depths quoted; abstract says ~10 m.",
+      "time": {
+        "t": 2700,
+        "range": [
+          1800,
+          3600
+        ]
+      }
+    },
+    {
+      "id": "crater.day1_graded_suevite_thickness",
+      "group": "crater",
+      "label": "Suewit z gradacją frakcjonalną (resurge)",
+      "value": 89,
+      "unit": "m",
+      "range": [
+        80,
+        90
+      ],
+      "certainty": "fact",
+      "method": "measured (core)",
+      "sources": [
+        "kaskes2022",
+        "gulick2019"
+      ],
+      "locator": "Kaskes2022 'Graded Suevite Unit (710.01-620.88 mbsf)'; Gulick2019 abstract ('80-m-thick fining-upward, sorted suevite'), Significance ('another 90 m of breccia')",
+      "notes": "",
+      "time": {
+        "t": 10800,
+        "range": [
+          3600,
+          86400
+        ]
+      }
+    },
+    {
+      "id": "crater.day1_bedded_suevite_thickness",
+      "group": "crater",
+      "label": "Suewit warstwowany (sejsze)",
+      "value": 3.5,
+      "unit": "m",
+      "range": [
+        3.5,
+        9.7
+      ],
+      "certainty": "fact",
+      "method": "measured (core)",
+      "sources": [
+        "kaskes2022",
+        "gulick2019"
+      ],
+      "locator": "Kaskes2022 'Bedded Suevite Unit (620.88-617.33 mbsf)'; Gulick2019 Results (627-617.34 mbsf: ~25 normally graded beds attributed to seiches)",
+      "notes": "Different schemes: Kaskes 3.5 m bedded unit vs Gulick ~9.7 m interval with ~25 graded beds.",
+      "time": {
+        "t": 43200,
+        "range": [
+          3600,
+          86400
+        ]
+      }
+    },
+    {
+      "id": "crater.day1_tsunami_layer_thickness",
+      "group": "crater",
+      "label": "Warstwa tsunami (przekątne warstwowanie, biomarkery lądowe)",
+      "value": 10,
+      "unit": "cm",
+      "range": [
+        0,
+        10
+      ],
+      "certainty": "fact",
+      "method": "measured (core; tsunami origin interpretive)",
+      "sources": [
+        "gulick2019"
+      ],
+      "locator": "Gulick2019 Results ('interval from 617.34 to 617.44 mbsf ... 10-cm-thick unidirectional cross-bedded deposit'); abstract",
+      "notes": "Overlain within ~4 cm by a charcoal-rich layer in basal Unit 1G.",
+      "time": {
+        "t": 43200,
+        "range": [
+          7200,
+          86400
+        ]
+      }
+    },
+    {
+      "id": "crater.day1_resurge_layer_thickness_mean",
+      "group": "crater",
+      "label": "Średnia miąższość warstwy resurge w całym kraterze (sejsmika)",
+      "value": 187,
+      "unit": "m",
+      "range": [
+        129,
+        245
+      ],
+      "certainty": "extrapolation",
+      "method": "seismic velocity mapping calibrated by M0077",
+      "sources": [
+        "christeson2021"
+      ],
+      "locator": "Christeson2021 abstract ('graded suevite layer has an average thickness of 187 ± 58 m with only local thickness differences within the annular trough, peak ring, and central basin')",
+      "notes": "Range = mean ± 1 sd as published. Implies the resurge carried debris across the whole peak ring.",
+      "time": {
+        "t": 10800,
+        "range": [
+          3600,
+          86400
+        ]
+      }
+    },
+    {
+      "id": "crater.melt_volume",
+      "group": "crater",
+      "label": "Objętość stopu impaktowego",
+      "value": 10000,
+      "unit": "km³",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "scaling (Grieve & Cintala 1992) + seismic imaging (Barton et al. 2010), as cited",
+      "sources": [
+        "schulte2021"
+      ],
+      "locator": "Schulte2021 'The Chicxulub impact structure' section ('estimated at ~1×10^4 km³ (Grieve and Cintala 1992; Barton et al. 2010)')",
+      "notes": "Order-of-magnitude only; primary sources not opened (see openQuestions).",
+      "time": null
+    },
+    {
+      "id": "crater.melt_sheet_thickness",
+      "group": "crater",
+      "label": "Miąższość koherentnej pokrywy stopu w basenie centralnym",
+      "value": 3,
+      "unit": "km",
+      "range": [
+        2.2,
+        4.4
+      ],
+      "certainty": "contested",
+      "method": "seismic imaging + mass balance",
+      "sources": [
+        "gulick2013",
+        "schulte2021",
+        "kring2020",
+        "christeson2021",
+        "kring1995"
+      ],
+      "locator": "Gulick2013 abstract ('coherent <3 km thick melt sheet within the central basin'); Schulte2021 (lens '2.2-4.4 km thick', citing Barton et al. 2010); Kring2020 Introduction ('~3-km-thick cooling impact melt sheet'); Christeson2021 abstract ('>500 m' in central basin); Kring1995 abstract ('~3 to 7 km thick melt sheet and breccia sequence')",
+      "notes": "Christeson's >500 m is a lower bound; Kring 1995's 3-7 km includes breccia.",
+      "time": null
+    },
+    {
+      "id": "crater.melt_sheet_diameter",
+      "group": "crater",
+      "label": "Średnica soczewki stopu w basenie centralnym",
+      "value": 65,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "seismic imaging (Barton et al. 2010) as cited",
+      "sources": [
+        "schulte2021"
+      ],
+      "locator": "Schulte2021 ('lens within the interior of the peak ring ... ~65 km in diameter')",
+      "notes": "Lies inside the peak ring.",
+      "time": null
+    },
+    {
+      "id": "crater.melt_fraction_central_basin",
+      "group": "crater",
+      "label": "Udział objętości stopu w basenie centralnym",
+      "value": 0.725,
+      "unit": "",
+      "range": [
+        0.7,
+        0.75
+      ],
+      "certainty": "extrapolation",
+      "method": "seismic mapping",
+      "sources": [
+        "christeson2021"
+      ],
+      "locator": "Christeson2021 abstract ('~70%-75% of the melt rock volume is in the central basin')",
+      "notes": "Remainder: thin intermittent melt on the peak ring and a ~500 m layer in the annular trough near the peak ring thinning toward the rim.",
+      "time": null
+    },
+    {
+      "id": "crater.annular_trough_melt_thickness",
+      "group": "crater",
+      "label": "Miąższość stopu w rowie pierścieniowym przy pierścieniu",
+      "value": 500,
+      "unit": "m",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "seismic mapping",
+      "sources": [
+        "christeson2021"
+      ],
+      "locator": "Christeson2021 abstract ('~500-m thick layer of melt rock in the annular trough near the peak ring that thins toward the crater rim')",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "crater.model_ref_impactor_diameter",
+      "group": "crater",
+      "label": "Średnica impaktora w modelu referencyjnym (Morgan 2016 / Riller 2018)",
+      "value": 14,
+      "unit": "km",
+      "range": [
+        12,
+        17
+      ],
+      "certainty": "extrapolation",
+      "method": "model input:riller2018 (iSALE-2D, vertical); alternatives collins2020, rae2019data",
+      "sources": [
+        "riller2018",
+        "collins2020",
+        "rae2019data",
+        "rae2019",
+        "gulick2019"
+      ],
+      "locator": "Riller2018 Methods (diameter 14 km, 12 km/s, 2650 kg/m³, 200 m cells, 600 s); Collins2020 Fig. 2-3 captions & Suppl. Table 1 (16-21 km at 12 km/s; 12-16 km at 20 km/s); rae2019data asteroid.inp (12 km at 15 km/s); Gulick2019 Fig. 2A ('12-km-sized impactor')",
+      "notes": "Needed to know which snapshot set the keyframes come from; impactor parameters belong to thread 01.",
+      "time": null
+    },
+    {
+      "id": "crater.model_ref_impact_velocity",
+      "group": "crater",
+      "label": "Prędkość impaktora w modelu referencyjnym",
+      "value": 12,
+      "unit": "km/s",
+      "range": [
+        12,
+        20
+      ],
+      "certainty": "extrapolation",
+      "method": "model input",
+      "sources": [
+        "riller2018",
+        "collins2020",
+        "rae2019data"
+      ],
+      "locator": "Riller2018 Methods; Collins2020 Methods (12 and 20 km/s); rae2019data (15 km/s)",
+      "notes": "12 km/s was chosen partly for computational expediency (Collins 2020).",
+      "time": null
+    },
+    {
+      "id": "crust.peak_ring_origin_depth",
+      "group": "crust",
+      "label": "Pierwotna głębokość skał pierścienia szczytowego",
+      "value": 10,
+      "unit": "km",
+      "range": [
+        8,
+        12
+      ],
+      "certainty": "extrapolation",
+      "method": "model tracers (iSALE) + core lithology (basement differs from shallow basement in nearby wells)",
+      "sources": [
+        "morgan2016",
+        "riller2018",
+        "collins2020"
+      ],
+      "locator": "Morgan2016 main text ('mid-crustal basement (8-10 km depth)'); Riller2018 'Peak-ring formation' (~10 km) and Methods (tracers at 10 km depth, 16 km radius); Collins2020 Results (mean depth of origin 10-12 km for 45-90°, ~8 km for 30°)",
+      "notes": "Observation-side constraint is only 'deeper than 3 km' (Morgan 2016).",
+      "time": null
+    },
+    {
+      "id": "crust.peak_ring_displacement",
+      "group": "crust",
+      "label": "Przemieszczenie skał pierścienia podczas kraterowania",
+      "value": 20,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:morgan2016",
+      "sources": [
+        "morgan2016"
+      ],
+      "locator": "Morgan2016 main text ('moved a large distance (> 20 km)')",
+      "notes": "Lower bound (>20 km).",
+      "time": null
+    },
+    {
+      "id": "crust.shock_pressure_peak_ring",
+      "group": "crust",
+      "label": "Ciśnienie uderzeniowe w granicie pierścienia",
+      "value": 17,
+      "unit": "GPa",
+      "range": [
+        10,
+        35
+      ],
+      "certainty": "fact",
+      "method": "measured (shock barometry: PDF orientations in quartz, shatter cones, mineral transformations)",
+      "sources": [
+        "feignon2020",
+        "kring2020",
+        "morgan2016"
+      ],
+      "locator": "Feignon2020 abstract (~16-18 GPa, 963 PDF sets in 352 grains, 11 samples, slight decrease with depth); Kring2020 ('~15 to 20 GPa for the granitoid rocks'); Morgan2016 (preliminary 10-35 GPa; model: majority 10-35 GPa)",
+      "notes": "Refined estimate 16-18 GPa supersedes the broader preliminary 10-35 GPa. Barometry depends on experimental calibration. Kring2020: implies post-shock heating ~170 °C.",
+      "time": null
+    },
+    {
+      "id": "crust.peak_ring_density",
+      "group": "crust",
+      "label": "Gęstość skał pierścienia (granitoid)",
+      "value": 2410,
+      "unit": "kg/m³",
+      "range": [
+        2100,
+        2550
+      ],
+      "certainty": "fact",
+      "method": "measured (core MSCL gamma density)",
+      "sources": [
+        "morgan2016",
+        "riller2018"
+      ],
+      "locator": "Morgan2016 (2.10-2.55 g/cm³, mean 2.41); Riller2018",
+      "notes": "Unusually low for felsic basement (>2.6 g/cm³).",
+      "time": null
+    },
+    {
+      "id": "crust.peak_ring_vp",
+      "group": "crust",
+      "label": "Prędkość fali P w skałach pierścienia",
+      "value": 4.1,
+      "unit": "km/s",
+      "range": [
+        3.5,
+        4.5
+      ],
+      "certainty": "fact",
+      "method": "measured (sonic log, VSP)",
+      "sources": [
+        "morgan2016",
+        "riller2018"
+      ],
+      "locator": "Morgan2016 (3.5-4.5 km/s, mean 4.1)",
+      "notes": "Typical felsic basement >5.5 km/s.",
+      "time": null
+    },
+    {
+      "id": "crust.preimpact_crust_thickness",
+      "group": "crust",
+      "label": "Miąższość skorupy przed impaktem (model)",
+      "value": 33,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model input based on well + geophysical data",
+      "sources": [
+        "morgan2016",
+        "collins2020",
+        "riller2018"
+      ],
+      "locator": "Morgan2016 ('33-km thick crust with ~3-km of sedimentary rocks'); Collins2020 Methods (crustal thickness 33 km); Riller2018 Methods (3 km cover + 30 km granite)",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "crust.preimpact_sediment_thickness",
+      "group": "crust",
+      "label": "Miąższość pokrywy osadowej przed impaktem",
+      "value": 3,
+      "unit": "km",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured (wells, seismic) - average",
+      "sources": [
+        "collins2020",
+        "morgan2016"
+      ],
+      "locator": "Collins2020 Fig. 2 caption ('upper 3 km ... corresponding to the average thickness of sedimentary rocks at Chicxulub'); Morgan2016",
+      "notes": "Average; thicker in the NE (Collins 2020 Introduction). Composition (carbonates/evaporites) belongs to another thread.",
+      "time": null
+    },
+    {
+      "id": "crust.central_structural_uplift",
+      "group": "crust",
+      "label": "Wypiętrzenie strukturalne w centrum (końcowe)",
+      "value": 10,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "geophysical interpretation",
+      "sources": [
+        "gulick2013"
+      ],
+      "locator": "Gulick2013 abstract ('The central structural uplift is >10 km')",
+      "notes": "Lower bound; final structural uplift, not the transient overshoot.",
+      "time": null
+    },
+    {
+      "id": "crust.moho_uplift",
+      "group": "crust",
+      "label": "Wypiętrzenie Moho pod kraterem",
+      "value": 1.5,
+      "unit": "km",
+      "range": [
+        1,
+        2
+      ],
+      "certainty": "fact",
+      "method": "measured (seismic)",
+      "sources": [
+        "gulick2013"
+      ],
+      "locator": "Gulick2013 abstract ('the Moho is displaced by 1-2 km')",
+      "notes": "2D model of Morgan 2016 Fig. 1F shows ~3 km.",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_lat",
+      "group": "crust",
+      "label": "Szerokość geogr. otworu M0077A",
+      "value": 21.45,
+      "unit": "°",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "morgan2016"
+      ],
+      "locator": "Morgan2016 main text (21.45°N, 89.95°W)",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_lon",
+      "group": "crust",
+      "label": "Długość geogr. otworu M0077A",
+      "value": -89.95,
+      "unit": "°",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "morgan2016"
+      ],
+      "locator": "Morgan2016 main text",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_radial_distance",
+      "group": "crust",
+      "label": "Odległość M0077A od środka krateru",
+      "value": 45.6,
+      "unit": "km",
+      "range": [
+        40,
+        45.6
+      ],
+      "certainty": "fact",
+      "method": "measured (depends on adopted centre)",
+      "sources": [
+        "morgan2016",
+        "kring2020",
+        "kaskes2022"
+      ],
+      "locator": "Morgan2016 (~45.6 km, centre 21.30°N 89.54°W); Kring2020 Fig. 1 (~40 km); Kaskes2022 (40 km NW)",
+      "notes": "Using Collins 2020 centre (21.29°N, 89.53°W) gives ~47 km (my calculation).",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_core_top",
+      "group": "crust",
+      "label": "M0077A: początek rdzeniowania",
+      "value": 505.7,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "gulick2019",
+        "morgan2016"
+      ],
+      "locator": "Gulick2019 ('recovered core from 505.70 to 1,334.73 m below seafloor')",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_total_depth",
+      "group": "crust",
+      "label": "M0077A: głębokość końcowa",
+      "value": 1334.73,
+      "unit": "m",
+      "range": [
+        1334.7,
+        1335
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "gulick2019",
+        "morgan2016",
+        "kring2020"
+      ],
+      "locator": "Gulick2019; Morgan2016 (1334.7); Kring2020 (1335)",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_postimpact_top",
+      "group": "crust",
+      "label": "M0077A: skały poimpaktowe (Unit 1) – strop",
+      "value": 505.7,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "gulick2019"
+      ],
+      "locator": "Gulick2019 (Unit 1 111.63 m thick from 505.70)",
+      "notes": "mbsf; Unit 1 includes transitional Subunit 1G",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_postimpact_bottom",
+      "group": "crust",
+      "label": "M0077A: skały poimpaktowe (Unit 1) – spąg",
+      "value": 617.33,
+      "unit": "m",
+      "range": [
+        617.33,
+        617.34
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "gulick2019",
+        "goderis2021",
+        "kaskes2022"
+      ],
+      "locator": "Gulick2019 (617.34); Goderis2021, Kaskes2022, Lowery2018 (617.33)",
+      "notes": "mbsf; 1-cm discrepancy between papers",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_transitional_top",
+      "group": "crust",
+      "label": "M0077A: jednostka przejściowa 1G – strop",
+      "value": 616.58,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "goderis2021",
+        "lowery2018",
+        "kaskes2022"
+      ],
+      "locator": "Goderis2021 (Unit 1G 617.33-616.58 mbsf); Lowery2018 Fig. 1 caption (616.58-617.33)",
+      "notes": "75-cm micrite-rich unit, deposited over weeks to years (after day 1)",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_transitional_bottom",
+      "group": "crust",
+      "label": "M0077A: jednostka przejściowa 1G – spąg",
+      "value": 617.33,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "goderis2021",
+        "lowery2018",
+        "kaskes2022"
+      ],
+      "locator": "as above",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_suevite_top",
+      "group": "crust",
+      "label": "M0077A: suewit (Unit 2) – strop",
+      "value": 617.33,
+      "unit": "m",
+      "range": [
+        617.33,
+        617.34
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "kaskes2022",
+        "gulick2019"
+      ],
+      "locator": "Kaskes2022 (617.33); Gulick2019 (617.34)",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_suevite_bottom",
+      "group": "crust",
+      "label": "M0077A: suewit (Unit 2) – spąg",
+      "value": 721.62,
+      "unit": "m",
+      "range": [
+        715.6,
+        721.62
+      ],
+      "certainty": "contested",
+      "method": "measured; classification-dependent",
+      "sources": [
+        "gulick2019",
+        "kaskes2022"
+      ],
+      "locator": "Gulick2019 (Unit 2 104.28 m from 617.34 → 721.62); Kaskes2022 (715.60-721.62 reclassified as impact melt rock; suevite base at 715.60)",
+      "notes": "mbsf; boundary depends on classification scheme",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_bedded_suevite_top",
+      "group": "crust",
+      "label": "M0077A: suewit warstwowany – strop",
+      "value": 617.33,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "kaskes2022"
+      ],
+      "locator": "Kaskes2022 'Bedded Suevite Unit (620.88-617.33 mbsf)'",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_bedded_suevite_bottom",
+      "group": "crust",
+      "label": "M0077A: suewit warstwowany – spąg",
+      "value": 620.88,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "kaskes2022"
+      ],
+      "locator": "Kaskes2022",
+      "notes": "mbsf (also given as 621)",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_graded_suevite_top",
+      "group": "crust",
+      "label": "M0077A: suewit z gradacją – strop",
+      "value": 620.88,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "kaskes2022"
+      ],
+      "locator": "Kaskes2022 'Graded Suevite Unit (710.01-620.88 mbsf)'",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_graded_suevite_bottom",
+      "group": "crust",
+      "label": "M0077A: suewit z gradacją – spąg",
+      "value": 710.01,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "kaskes2022"
+      ],
+      "locator": "Kaskes2022",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_nongraded_suevite_top",
+      "group": "crust",
+      "label": "M0077A: suewit bez gradacji – strop",
+      "value": 710.01,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "kaskes2022"
+      ],
+      "locator": "Kaskes2022 'Non-Graded Suevite Unit (715.60-710.01 mbsf)'",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_nongraded_suevite_bottom",
+      "group": "crust",
+      "label": "M0077A: suewit bez gradacji – spąg",
+      "value": 715.6,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "kaskes2022"
+      ],
+      "locator": "Kaskes2022",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_resurge_crest_top",
+      "group": "crust",
+      "label": "M0077A: interwał przelania resurge – strop",
+      "value": 698.0,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured (interpretation of process)",
+      "sources": [
+        "gulick2019"
+      ],
+      "locator": "Gulick2019 Results/Interpretation (698.00-706.00 mbsf)",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_resurge_crest_bottom",
+      "group": "crust",
+      "label": "M0077A: interwał przelania resurge – spąg",
+      "value": 706.0,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "gulick2019"
+      ],
+      "locator": "Gulick2019",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_tsunami_layer_top",
+      "group": "crust",
+      "label": "M0077A: warstwa tsunami – strop",
+      "value": 617.34,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "gulick2019"
+      ],
+      "locator": "Gulick2019 (617.34-617.44 mbsf)",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_tsunami_layer_bottom",
+      "group": "crust",
+      "label": "M0077A: warstwa tsunami – spąg",
+      "value": 617.44,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "gulick2019"
+      ],
+      "locator": "Gulick2019",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_unit2c_top",
+      "group": "crust",
+      "label": "M0077A: Subunit 2C (wg Ekspedycji) – strop",
+      "value": 712.83,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "kaskes2022"
+      ],
+      "locator": "Kaskes2022 Discussion ('Unit 3A-B and 2C (747.02-712.83 mbsf)', citing Gulick et al. 2017 Expedition report)",
+      "notes": "mbsf; secondary citation of the Expedition 364 report",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_impact_melt_top",
+      "group": "crust",
+      "label": "M0077A: skała stopu impaktowego (Unit 3) – strop",
+      "value": 721.62,
+      "unit": "m",
+      "range": [
+        715.6,
+        721.62
+      ],
+      "certainty": "contested",
+      "method": "measured; classification-dependent",
+      "sources": [
+        "gulick2019",
+        "kaskes2022"
+      ],
+      "locator": "Gulick2019 (Unit 3 25.41 m below Unit 2); Kaskes2022 (brecciated impact melt rock from 715.60)",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_unit3a_3b_boundary",
+      "group": "crust",
+      "label": "M0077A: granica Unit 3A/3B",
+      "value": 737.56,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "kaskes2022"
+      ],
+      "locator": "Kaskes2022 ('schlieren disappear at the boundary of Units 3A and 3B ... 737.56 mbsf')",
+      "notes": "mbsf; seawater-related brecciation did not penetrate deeper",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_impact_melt_bottom",
+      "group": "crust",
+      "label": "M0077A: skała stopu impaktowego (Unit 3) – spąg",
+      "value": 747.02,
+      "unit": "m",
+      "range": [
+        747.02,
+        748
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "kaskes2022",
+        "gulick2019",
+        "morgan2016"
+      ],
+      "locator": "Kaskes2022 (747.02); Gulick2019 (721.62+25.41 = 747.03; also '617.34 to 747.14'); Morgan2016 (basement from 748)",
+      "notes": "mbsf; small inconsistencies between papers",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_granitoid_top",
+      "group": "crust",
+      "label": "M0077A: granitoidowe podłoże pierścienia (Unit 4) – strop",
+      "value": 747.02,
+      "unit": "m",
+      "range": [
+        747.02,
+        748
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "kaskes2022",
+        "gulick2019",
+        "morgan2016"
+      ],
+      "locator": "as above",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_granitoid_bottom",
+      "group": "crust",
+      "label": "M0077A: Unit 4 – spąg (dno otworu)",
+      "value": 1334.73,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "gulick2019"
+      ],
+      "locator": "Gulick2019",
+      "notes": "mbsf; base not reached",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_lower_melt_zone_top",
+      "group": "crust",
+      "label": "M0077A: dolna strefa stopu i brekcji w granitoidzie – strop",
+      "value": 1220,
+      "unit": "m",
+      "range": [
+        1220,
+        1250
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "riller2018",
+        "morgan2016",
+        "degraaff2022"
+      ],
+      "locator": "Riller2018 (1220-1316 mbsf mingled melt rock/breccia, thrust zone); Morgan2016 (1250-1316 mbsf thick impact breccia & melt rock); de Graaff2022 abstract (lower impact melt rock-bearing unit injected into basement during compression/excavation, later comminuted during peak-ring formation)",
+      "notes": "mbsf",
+      "time": null
+    },
+    {
+      "id": "crust.m0077a_lower_melt_zone_bottom",
+      "group": "crust",
+      "label": "M0077A: dolna strefa stopu i brekcji – spąg",
+      "value": 1316,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "riller2018",
+        "morgan2016"
+      ],
+      "locator": "Riller2018; Morgan2016",
+      "notes": "mbsf",
+      "time": null
+    }
+  ],
+  "disagreements": [
+    {
+      "topic": "Final crater diameter",
+      "positions": [
+        {
+          "claim": "~180 km (horizontal gravity gradient maxima, cenote ring; ejecta/melt mass balance)",
+          "sources": [
+            "hildebrand1995",
+            "kring1995",
+            "schmieder2020",
+            "pope1996"
+          ]
+        },
+        {
+          "claim": "~200 km (seismic-era usage by Expedition 364 teams)",
+          "sources": [
+            "morgan2016",
+            "gulick2019",
+            "riller2018",
+            "morgan2022",
+            "schulte2021"
+          ]
+        },
+        {
+          "claim": "multi-ring basin with outer ring ~240-300 km",
+          "sources": [
+            "sharpton1993",
+            "kring2020",
+            "pope1996"
+          ]
+        }
+      ],
+      "assessment": "180 vs 200 km is mostly a matter of which ring is called the rim (Gulick 2013 places the inner rim at 70-85 km radius and ring faults out to 130 km). For the simulation use ~200 km for the rim of the crater and show outer ring faults as subdued features; 300 km as an excavation rim is not supported by later seismic work."
+    },
+    {
+      "topic": "Timing of transient-cavity formation / end of excavation",
+      "positions": [
+        {
+          "claim": "within 10 s",
+          "sources": [
+            "gulick2013"
+          ]
+        },
+        {
+          "claim": "T < 30 s (fracturing during shock, decompression and cavity growth)",
+          "sources": [
+            "riller2018"
+          ]
+        },
+        {
+          "claim": "within the first minute; cavity still shown open at T = 1 min",
+          "sources": [
+            "collins2020",
+            "morgan2016",
+            "kaskes2022"
+          ]
+        }
+      ],
+      "assessment": "Published iSALE snapshots show the cavity still widening at 20 s (radius ~25-30 km) and fully open at ~60 s, so ~20-60 s is better supported than 10 s. Part of the spread is definitional (maximum depth vs maximum diameter)."
+    },
+    {
+      "topic": "Transient crater diameter",
+      "positions": [
+        {
+          "claim": "~100 km (seismic interpretation; 50 km radius)",
+          "sources": [
+            "morgan1997",
+            "gulick2013",
+            "kring1995"
+          ]
+        },
+        {
+          "claim": "80-100 km (40-50 km radius)",
+          "sources": [
+            "gulick2019"
+          ]
+        },
+        {
+          "claim": "72-91 km in 3D iSALE simulations matching the final crater",
+          "sources": [
+            "collins2020"
+          ]
+        }
+      ],
+      "assessment": "Both are indirect. Geophysical ~100 km is the canonical number; the 3D models are lower-resolution (500 m) and lack a weak sedimentary layer. Use 90-100 km with an uncertainty band."
+    },
+    {
+      "topic": "Peak-ring diameter",
+      "positions": [
+        {
+          "claim": "Drill site on the peak ring at 40-45.6 km from centre, so diameter ~80-90 km",
+          "sources": [
+            "morgan2016",
+            "kring2020",
+            "kaskes2022"
+          ]
+        },
+        {
+          "claim": "Simulated peak ring 67-71 km in diameter (inner 45-57, outer 80-89 km)",
+          "sources": [
+            "collins2020"
+          ]
+        },
+        {
+          "claim": "Surface expression: low ridge between troughs at ~41 and ~62 km radius",
+          "sources": [
+            "pope1996"
+          ]
+        }
+      ],
+      "assessment": "Observations (drilling and seismic) favour ~80-90 km for the topographic peak ring. The model value depends on how the tracers are picked; the surface geomorphology is subdued and not directly over the crest. I could not open a peer-reviewed source that states one diameter."
+    },
+    {
+      "topic": "Maximum height of the central uplift (overshoot)",
+      "positions": [
+        {
+          "claim": "Uplift reaches ≥ ~15-20 km above the pre-impact surface at ~3 min (2D, 200 m cells)",
+          "sources": [
+            "riller2018",
+            "morgan2016"
+          ]
+        },
+        {
+          "claim": "Uplift crest ~10 km above the surface at 180 s (3D, 500 m cells, 60°)",
+          "sources": [
+            "collins2020"
+          ]
+        }
+      ],
+      "assessment": "This is model output only and depends on resolution, impact angle and how weakening is parameterised. Show it as 10-20 km with an explicit 'model' label. No observation constrains it."
+    },
+    {
+      "topic": "Peak-ring formation mechanism",
+      "positions": [
+        {
+          "claim": "Dynamic collapse of an over-heightened central uplift, thrust outward over slumped transient-rim sediments",
+          "sources": [
+            "morgan2016",
+            "riller2018",
+            "collins2020"
+          ]
+        },
+        {
+          "claim": "Nested melt-cavity hypothesis (peak ring from near-melted or shallow material); discussed and rejected for Chicxulub by Morgan 2016",
+          "sources": [
+            "morgan2016"
+          ]
+        },
+        {
+          "claim": "Displaced Structural Uplift model (compatible with dynamic collapse)",
+          "sources": [
+            "kring2016"
+          ]
+        }
+      ],
+      "assessment": "Drilling found shocked, uplifted mid-crustal granitoid lying above Mesozoic sediments, which strongly supports dynamic collapse at Chicxulub."
+    },
+    {
+      "topic": "Weakening mechanism allowing collapse",
+      "positions": [
+        {
+          "claim": "Acoustic fluidisation is the dominant mechanism; block model implies 100-500 m blocks at a few Hz",
+          "sources": [
+            "riller2018",
+            "collins2020"
+          ]
+        },
+        {
+          "claim": "Cataclasite spacing (~2.3-3.5 m) implies much smaller blocks and higher frequencies than the block model, i.e. the model implementation is incomplete",
+          "sources": [
+            "riller2018"
+          ]
+        }
+      ],
+      "assessment": "The mechanism is supported but the parameters are not. This affects the timing (± tens of seconds) and the overshoot height in the models."
+    },
+    {
+      "topic": "Shock pressure in peak-ring granite",
+      "positions": [
+        {
+          "claim": "10-35 GPa (preliminary, shipboard)",
+          "sources": [
+            "morgan2016"
+          ]
+        },
+        {
+          "claim": "~15-20 GPa",
+          "sources": [
+            "kring2020"
+          ]
+        },
+        {
+          "claim": "~16-18 GPa from 963 PDF sets, slight decrease with depth",
+          "sources": [
+            "feignon2020"
+          ]
+        }
+      ],
+      "assessment": "The later, systematic study (Feignon 2020) supersedes the preliminary range. Use 16-18 GPa for the granite and >60 GPa for melt."
+    },
+    {
+      "topic": "Thickness of the central melt sheet",
+      "positions": [
+        {
+          "claim": "<3 km coherent melt sheet",
+          "sources": [
+            "gulick2013"
+          ]
+        },
+        {
+          "claim": "2.2-4.4 km thick lens ~65 km wide",
+          "sources": [
+            "schulte2021"
+          ]
+        },
+        {
+          "claim": "~3 to 7 km melt plus breccia within the central ~100 km",
+          "sources": [
+            "kring1995"
+          ]
+        },
+        {
+          "claim": ">500 m in the central basin (seismic lower bound)",
+          "sources": [
+            "christeson2021"
+          ]
+        }
+      ],
+      "assessment": "Roughly 2-4 km of coherent melt is the common ground. Kring 1995 includes breccia, and Christeson 2021 is a lower bound. The central basin has never been drilled to the base of the melt."
+    },
+    {
+      "topic": "When seawater reached the peak ring",
+      "positions": [
+        {
+          "claim": "Full resurge to the level of the peak ring after 30-60 min (dam-break, rim water depth >1 km)",
+          "sources": [
+            "gulick2019",
+            "schulte2021"
+          ]
+        },
+        {
+          "claim": "First (debris-poor) seawater at M0077 within 30 min",
+          "sources": [
+            "kaskes2022"
+          ]
+        }
+      ],
+      "assessment": "Mostly compatible. Gulick 2019 also describes an initial incursion ahead of the full resurge. Kaskes cites the same dam-break model as '<30 min', so the difference is partly in how the model result is quoted. A simplified 1D model with no drag means the timing is uncertain by at least a factor of ~2."
+    },
+    {
+      "topic": "Unit boundaries in the M0077A upper peak ring",
+      "positions": [
+        {
+          "claim": "Expedition scheme: Unit 2 (suevite) 617.34-721.62 mbsf; Unit 3 (impact melt rock) 721.62-747.03; 2C top 712.83",
+          "sources": [
+            "gulick2019",
+            "kaskes2022"
+          ]
+        },
+        {
+          "claim": "715.60-721.62 mbsf is brecciated impact melt rock, not suevite; three suevite units (bedded, graded, non-graded)",
+          "sources": [
+            "kaskes2022"
+          ]
+        },
+        {
+          "claim": "Melt sequence is 46.37 m thick (3B, 3A, 2C-2, 2C-1)",
+          "sources": [
+            "schulte2021"
+          ]
+        }
+      ],
+      "assessment": "These are classification differences on the same core. Use the Kaskes 2022 scheme for the animated column (it is the most detailed published sedimentological scheme) and keep the Expedition scheme as a toggle. Schulte's 46.37 m does not match a 747.02 mbsf base; this needs checking against the Expedition report."
+    }
+  ],
+  "openQuestions": [
+    "unverified lead: Hildebrand, A.R. et al. 1991, Geology 19(9):867-871, doi 10.1130/0091-7613(1991)019<0867:CCAPCT>2.3.CO;2 - metadata seen in Crossref, but the publisher page (GeoScienceWorld) and NASA ADS were behind bot-checks, so content was not opened.",
+    "unverified lead: Morgan, J., Gulick, S., Mellett, C.L., Green, S.L. & Expedition 364 Scientists 2017, Proceedings of the IODP vol. 364 (doi 10.14379/iodp.proc.364.2017; Site M0077 chapters .103-.107) - primary source of unit depths. The site is behind a Cloudflare challenge; the depths used here come from peer-reviewed papers that cite it. Also not formally peer-reviewed.",
+    "unverified lead: Gulick, S.P.S., Kaskes, P., Lowery, C.M., Rae, A.S.P., Tikoo, S.M. et al. 2026, 'From impact to extinction to recovery: Discoveries of IODP-ICDP Expedition 364 to the Chicxulub impact structure', Marine Geology 491:107661, doi 10.1016/j.margeo.2025.107661 - exists in Crossref, but ScienceDirect returned 403. This is the most recent review and may supersede some values here.",
+    "unverified lead: Collins, G.S., Melosh, H.J., Morgan, J.V., Warner, M.R. 2002, Icarus 157:24-33 (doi 10.1006/icar.2002.6822) - first hydrocode peak-ring model of Chicxulub; the timescale for Gulick 2019 Fig. 2B. Not opened.",
+    "unverified lead: Collins, G.S. et al. 2008, EPSL 270:221-230 (doi 10.1016/j.epsl.2008.03.032) - terrace-zone asymmetry. Its figure 5 is the source of the rim-wave/tsunami geometry and the 2-km basin depth used by Gulick 2019. Not opened.",
+    "unverified lead: Morgan, J.V. et al. 2000, EPSL 183:347-354 (doi 10.1016/S0012-821X(00)00307-1) and Morgan & Warner 1999, Geology 27:407-410 - likely state peak-ring diameter and relief explicitly. Not opened (no abstract in Crossref; publisher blocked).",
+    "unverified lead: Barton, P.J. et al. 2010, GSA Special Paper 465:103-113 (doi 10.1130/2010.2465(07)) - melt sheet ~65 km wide, 2.2-4.4 km thick (known here only via Schulte 2021); Grieve & Cintala 1992 (melt volume ~1e4 km³) - not opened.",
+    "unverified lead: Kring, D.A. 2005, Chemie der Erde/Geochemistry 65:1-46 (doi 10.1016/j.chemer.2004.10.003) - ~3 km melt sheet. Metadata only.",
+    "unverified lead: Christeson, G.L. et al. 2018, EPSL 495:1-11 (peak-ring porosity and velocity) and Christeson et al. 2009, EPSL 284:249-257 (mantle deformation) - not opened.",
+    "unverified lead: Osinski et al. 2020 (explosive melt-seawater interaction, GSA Bulletin), Ormö et al. 2021 (resurge deposits in M0077A, EPSL), Whalen et al. 2020, Bralower et al. 2020 (AGU Advances, 'habitat of the nascent Chicxulub crater') - relevant to day-1 resurge and infill dynamics; not located or opened in this session.",
+    "unverified lead: Rae et al. 2019 full text (JGR Planets 124:396-417) - should give exact times of the stress-state changes in the 2D model; only the abstract and the input files were accessible. Morgan 2016 Supplementary Materials (model parameter table) - science.org returned 403.",
+    "Transient-cavity depth and the maximum height of the central uplift are read by eye from published figures (±~2 km). To animate precisely, obtain the original iSALE output (the Rae 2019 input files are public and could be rerun with iSALE-Dellen, which has restricted access) or ask the authors for the snapshot data.",
+    "No source gives one measured peak-ring diameter that I could open. The value of 85 km is derived from the drill-site radial distance; check against Morgan 2000, Gulick 2013 full text, or Gulick 2026.",
+    "The day-1 timeline (melt cap within tens of minutes, resurge 30-60 min, settling over hours, tsunami within 24 h) is interpretive. Only the resurge time comes from a model (1D dam-break, no drag), and the other times are bounds. Absolute times within 'hours' are unconstrained.",
+    "3D asymmetry: the NNE rim gap and deeper water to the NE mean that resurge, melt-water interaction and infill were not axisymmetric. Any 2D axisymmetric animation misrepresents the NE sector.",
+    "Riller 2018 Author Correction (doi 10.1038/s41586-018-0748-0): its content was not checked; it might affect author list or figure details.",
+    "Schulte 2021 gives 46.37 m for the melt sequence (21.61+16.39+5.65+2.72) starting at ~712.83 mbsf, which would put its base at ~759 mbsf, below the 747.02 mbsf Unit 3/4 contact. Resolve with the Expedition report or the Schulte 2021 Fig. 2."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "generatedBy": "scripts/tsunami_grids.py",
+  "grid": {
+    "w": 1440,
+    "h": 720,
+    "cellDeg": 0.25,
+    "minDepthM": 10.0,
+    "neighbours": 16
+  },
+  "source": {
+    "ringRadiusKm": 220,
+    "handoffS": 600,
+    "ringCells": 49
+  },
+  "checks": {
+    "front_radius_1h_km": {
+      "model": 637.7945095758843,
+      "literature": 750,
+      "ok": true
+    },
+    "front_reach_4h_east_km": {
+      "model": 2971.139785412795,
+      "literature": 2800,
+      "ok": true
+    },
+    "pacific_entry_h": {
+      "model": 4.511545776870351,
+      "literature": 4.0,
+      "region": "lon ≤ −85°, lat 0–20° (najwcześniejsze dotarcie)",
+      "ok": true,
+      "note": "Definicja poprawiona po analizie: wcześniejszy punkt kontrolny (5° N, 100° W) dawał 6,9 h, bo leżał ~1500 km za wylotem cieśniny."
+    },
+    "indian_ocean_entry_h": {
+      "model": 21.321050325317046,
+      "literature": 24.166666666666668,
+      "region": "lon 40–100° E, lat 50–5° S (paleo; najwcześniejsze dotarcie)",
+      "ok": true,
+      "note": "Model wcześniej niż literatura: prędkość √(g·h) bez dyspersji to górna granica; wynik zależy od granic ramki (±~2 h)."
+    }
+  },
+  "amplitude": {
+    "rangeImpactInModelFrame": [
+      25.04101378422309,
+      286.7839300666706
+    ],
+    "craterPaleo": [
+      25.115,
+      -71.582
+    ],
+    "frameNote": "Model Range i in. 2022 używa batymetrii Müller 2008 + PALEOMAP 70 Ma; przeniesienie obrotem nakładającym punkty uderzenia — dokładność przy brzegach ±kilka stopni; amplitudy to górna granica (model płytkiej wody bez dyspersji).",
+    "medianOceanM": 1.7279738064700072,
+    "p99M": 43.5778915343081
+  },
+  "travelTime": {
+    "medianH": 17.71527829745567,
+    "maxH": 46.933280700086755,
+    "reachedFraction": 0.9898254496768291
+  }
+}

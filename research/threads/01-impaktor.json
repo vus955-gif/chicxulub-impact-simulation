@@ -1,0 +1,1383 @@
+{
+  "thread": "01-impaktor",
+  "sources": [
+    {
+      "id": "renne2013",
+      "type": "article",
+      "authors": "Renne, P.R.; Deino, A.L.; Hilgen, F.J.; Kuiper, K.F.; Mark, D.F.; Mitchell, W.S.; Morgan, L.E.; Mundil, R.; Smit, J.",
+      "year": 2013,
+      "title": "Time scales of critical events around the Cretaceous-Paleogene boundary",
+      "container": "Science",
+      "volume": "339",
+      "pages": "684-687",
+      "doi": "10.1126/science.1230492",
+      "url": "https://doi.org/10.1126/science.1230492",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 23393261): K-Pg boundary and Chicxulub impact synchronous within 32 kyr. Full text NOT accessible (science.org 403); numerical ages not read in the primary text."
+    },
+    {
+      "id": "sprain2015",
+      "type": "article",
+      "authors": "Sprain, C.J.; Renne, P.R.; Wilson, G.P.; Clemens, W.A.",
+      "year": 2015,
+      "title": "High-resolution chronostratigraphy of the terrestrial Cretaceous-Paleogene transition and recovery interval in the Hell Creek region, Montana",
+      "container": "Geological Society of America Bulletin",
+      "volume": "127",
+      "pages": "393-409",
+      "doi": "10.1130/B31076.1",
+      "url": "https://doi.org/10.1130/B31076.1",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Published online 2014-09-16 (vol. 127, 2015). Abstract read via OpenAlex: KPB impact layer 66.043 +/- 0.010 Ma (+/- 0.043 Ma incl. systematic uncertainties)."
+    },
+    {
+      "id": "sprain2018",
+      "type": "article",
+      "authors": "Sprain, C.J.; Renne, P.R.; Clemens, W.A.; Wilson, G.P.",
+      "year": 2018,
+      "title": "Calibration of chron C29r: New high-precision geochronologic and paleomagnetic constraints from the Hell Creek region, Montana",
+      "container": "GSA Bulletin",
+      "volume": "130",
+      "pages": "1615-1644",
+      "doi": "10.1130/B31890.1",
+      "url": "https://doi.org/10.1130/B31890.1",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: K-Pg boundary 66.052 +/- 0.008/0.043 Ma ('most precise date yet'); C29r duration 587 +/- 53 ka."
+    },
+    {
+      "id": "renne2018",
+      "type": "article",
+      "authors": "Renne, P.R.; Arenillas, I.; Arz, J.A.; Vajda, V.; Gilabert, V.; Bermudez, H.D.",
+      "year": 2018,
+      "title": "Multi-proxy record of the Chicxulub impact at the Cretaceous-Paleogene boundary from Gorgonilla Island, Colombia",
+      "container": "Geology",
+      "volume": "46",
+      "pages": "547-550",
+      "doi": "10.1130/G40224.1",
+      "url": "https://doi.org/10.1130/G40224.1",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: weighted mean 40Ar/39Ar age 66.051 +/- 0.031 Ma for 25 fresh glassy Chicxulub spherules."
+    },
+    {
+      "id": "swisher1992",
+      "type": "article",
+      "authors": "Swisher, C.C.; Grajales-Nishimura, J.M.; Montanari, A.; Margolis, S.V.; Claeys, P.; Alvarez, W.; Renne, P.; Cedillo-Pardo, E.; Maurrasse, F.J-M.R.; Curtis, G.H.; Smit, J.; McWilliams, M.O.",
+      "year": 1992,
+      "title": "Coeval 40Ar/39Ar ages of 65.0 million years ago from Chicxulub crater melt rock and Cretaceous-Tertiary boundary tektites",
+      "container": "Science",
+      "volume": "257",
+      "pages": "954-958",
+      "doi": "10.1126/science.257.5072.954",
+      "url": "https://doi.org/10.1126/science.257.5072.954",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 17789640): melt rock 64.98 +/- 0.05 Ma; Beloc tektites 65.01 +/- 0.08 Ma (older standard calibration; superseded)."
+    },
+    {
+      "id": "kuiper2008",
+      "type": "article",
+      "authors": "Kuiper, K.F.; Deino, A.; Hilgen, F.J.; Krijgsman, W.; Renne, P.R.; Wijbrans, J.R.",
+      "year": 2008,
+      "title": "Synchronizing rock clocks of Earth history",
+      "container": "Science",
+      "volume": "320",
+      "pages": "500-504",
+      "doi": "10.1126/science.1154339",
+      "url": "https://doi.org/10.1126/science.1154339",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 18436783): Fish Canyon sanidine 28.201 +/- 0.046 Ma; K/T ~65.95 Ma."
+    },
+    {
+      "id": "during2022",
+      "type": "article",
+      "authors": "During, M.A.D.; Smit, J.; Voeten, D.F.A.E.; Berruyer, C.; Tafforeau, P.; Sanchez, S.; Stein, K.H.W.; Verdegaal-Warmerdam, S.J.A.; van der Lubbe, J.H.J.L.",
+      "year": 2022,
+      "title": "The Mesozoic terminated in boreal spring",
+      "container": "Nature",
+      "volume": "603",
+      "pages": "91-94",
+      "doi": "10.1038/s41586-022-04446-1",
+      "url": "https://doi.org/10.1038/s41586-022-04446-1",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Full text read via Europe PMC (PMC8891016): impact in boreal spring (osteohistology + stable isotopes of fishes killed at Tanis, ~50 deg N)."
+    },
+    {
+      "id": "depalma2021",
+      "type": "article",
+      "authors": "DePalma, R.A.; Oleinik, A.A.; Gurche, L.P.; Burnham, D.A.; Klingler, J.J.; McKinney, C.J.; Cichocki, F.P.; Larson, P.L.; Egerton, V.M.; Wogelius, R.A.; Edwards, N.P.; Bergmann, U.; Manning, P.L.",
+      "year": 2021,
+      "title": "Seasonal calibration of the end-cretaceous Chicxulub impact event",
+      "container": "Scientific Reports",
+      "volume": "11",
+      "pages": "23704",
+      "doi": "10.1038/s41598-021-03232-9",
+      "url": "https://doi.org/10.1038/s41598-021-03232-9",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex/Europe PMC (PMC8655067): boreal spring/summer. No comment/correction listed in Europe PMC commentCorrectionList (checked 2026-10-04)."
+    },
+    {
+      "id": "alvarez1980",
+      "type": "article",
+      "authors": "Alvarez, L.W.; Alvarez, W.; Asaro, F.; Michel, H.V.",
+      "year": 1980,
+      "title": "Extraterrestrial cause for the Cretaceous-Tertiary extinction",
+      "container": "Science",
+      "volume": "208",
+      "pages": "1095-1108",
+      "doi": "10.1126/science.208.4448.1095",
+      "url": "https://doi.org/10.1126/science.208.4448.1095",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 17783054): four independent estimates give asteroid diameter 10 +/- 4 km."
+    },
+    {
+      "id": "paquay2008",
+      "type": "article",
+      "authors": "Paquay, F.S.; Ravizza, G.E.; Dalai, T.K.; Peucker-Ehrenbrink, B.",
+      "year": 2008,
+      "title": "Determining chondritic impactor size from the marine osmium isotope record",
+      "container": "Science",
+      "volume": "320",
+      "pages": "214-218",
+      "doi": "10.1126/science.1152860",
+      "url": "https://doi.org/10.1126/science.1152860",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read (Crossref/Europe PMC): Os-based K/Pg projectile diameter within 50% of Ir-based estimates, assuming total vaporization and dissolution of Os. Numerical K/Pg diameter NOT read (full text inaccessible)."
+    },
+    {
+      "id": "artemieva2009",
+      "type": "article",
+      "authors": "Artemieva, N.; Morgan, J.",
+      "year": 2009,
+      "title": "Modeling the formation of the K-Pg boundary layer",
+      "container": "Icarus",
+      "volume": "201",
+      "pages": "768-780",
+      "doi": "10.1016/j.icarus.2009.01.021",
+      "url": "https://spiral.imperial.ac.uk/bitstreams/696ed47f-8774-4f5f-aecc-b8278f0c0f81/download",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Accepted manuscript (52 pp.) read from Imperial College Spiral repository (hdl 10044/1/4210). Sections 2-3 used: global Ir 2.0-2.8e8 kg; Ir-based projectile mass 0.8-2.5e15 kg (8-12 km); model 3 km sediments + 30 km basement; 18 km/s; D = 12 km (90 deg), 14.4 km (45 deg), 16 km (30 deg); density 2600 kg/m3; >2 km water in N/NE quadrant (citing Gulick 2008). Manuscript line numbers, not journal pages."
+    },
+    {
+      "id": "artemieva2017",
+      "type": "article",
+      "authors": "Artemieva, N.; Morgan, J.; Expedition 364 Science Party",
+      "year": 2017,
+      "title": "Quantifying the release of climate-active gases by large meteorite impacts with a case study of Chicxulub",
+      "container": "Geophysical Research Letters",
+      "volume": "44",
+      "pages": "10,180-10,188",
+      "doi": "10.1002/2017GL074879",
+      "url": "http://eprints.gla.ac.uk/153469/1/153469.pdf",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Published version (9 pp.) read from University of Glasgow eprints (153469). Section 4: 60 deg, 18 km/s, D = 12.2 km, mass 2,500 Gt, density 2.6 g/cm3; sediments 3.3-3.5 km (SW), 3.8 +/- 0.2 km (W); anhydrite fractions; water up to 1.5 km to the NE."
+    },
+    {
+      "id": "collins2020",
+      "type": "article",
+      "authors": "Collins, G.S.; Patel, N.; Davison, T.M.; Rae, A.S.P.; Morgan, J.V.; Gulick, S.P.S.; IODP-ICDP Expedition 364 Science Party; Third-Party Scientists",
+      "year": 2020,
+      "title": "A steeply-inclined trajectory for the Chicxulub impact",
+      "container": "Nature Communications",
+      "volume": "11",
+      "pages": "1480",
+      "doi": "10.1038/s41467-020-15269-x",
+      "url": "https://doi.org/10.1038/s41467-020-15269-x",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Open-access full text read via Europe PMC (PMC7251121) plus Supplementary Information PDF (static-content.springer.com, MOESM1). Internal inconsistency: impactor density 2630 kg/m3 (Fig. 2-3 captions, SI Table 1) vs 2650 kg/m3 (Methods, SI figure captions)."
+    },
+    {
+      "id": "christeson2009",
+      "type": "article",
+      "authors": "Christeson, G.L.; Collins, G.S.; Morgan, J.V.; Gulick, S.P.S.; Barton, P.J.; Warner, M.R.",
+      "year": 2009,
+      "title": "Mantle deformation beneath the Chicxulub impact crater",
+      "container": "Earth and Planetary Science Letters",
+      "volume": "284",
+      "pages": "249-257",
+      "doi": "10.1016/j.epsl.2009.04.033",
+      "url": "https://spiral.imperial.ac.uk/bitstreams/ae29f898-c951-4426-8004-bffea3850973/download",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Accepted manuscript read from Imperial College Spiral (hdl 10044/1/4214): Moho upwarp 1.5-2 km; 180-200 km structure; model 3 km sediment + 30 km crust; impactor 10/14/20 km at 12 km/s, 2680 kg/m3 (Table 1)."
+    },
+    {
+      "id": "gulick2008",
+      "type": "article",
+      "authors": "Gulick, S.P.S.; Barton, P.J.; Christeson, G.L.; Morgan, J.V.; McDonald, M.; Mendoza-Cervantes, K.; Pearson, Z.F.; Surendra, A.; Urrutia-Fucugauchi, J.; Vermeesch, P.M.; Warner, M.R.",
+      "year": 2008,
+      "title": "Importance of pre-impact crustal structure for the asymmetry of the Chicxulub impact crater",
+      "container": "Nature Geoscience",
+      "volume": "1",
+      "pages": "131-135",
+      "doi": "10.1038/ngeo103",
+      "url": "https://doi.org/10.1038/ngeo103",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on nature.com article page. Full text NOT accessible (repository copies behind bot challenges / server down). Its water-depth values are used here only as quoted by artemieva2009, artemieva2017, gulick2019 and kaskes2023."
+    },
+    {
+      "id": "gulick2013",
+      "type": "article",
+      "authors": "Gulick, S.P.S.; Christeson, G.L.; Barton, P.J.; Grieve, R.A.F.; Morgan, J.V.; Urrutia-Fucugauchi, J.",
+      "year": 2013,
+      "title": "Geophysical characterization of the Chicxulub impact crater",
+      "container": "Reviews of Geophysics",
+      "volume": "51",
+      "pages": "31-52",
+      "doi": "10.1002/rog.20007",
+      "url": "https://doi.org/10.1002/rog.20007",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: 50 km radius transient cavity within 10 s; inner rim 70-85 km radius; outer ring faults 70-130 km radius; central uplift >10 km; Moho displaced 1-2 km. Full text not accessed."
+    },
+    {
+      "id": "gulick2019",
+      "type": "article",
+      "authors": "Gulick, S.P.S.; Bralower, T.J.; Ormo, J.; Hall, B.; Grice, K.; Schaefer, B.; Lyons, S.; Freeman, K.H.; Morgan, J.V.; Artemieva, N.; Kaskes, P.; de Graaff, S.J.; Whalen, M.T.; Collins, G.S.; Tikoo, S.M.; Verhagen, C.; Christeson, G.L.; Claeys, P.; Coolen, M.J.L.; Goderis, S.; Goto, K.; Grieve, R.A.F.; McCall, N.; Osinski, G.R.; Rae, A.S.P.; Riller, U.; Smit, J.; Vajda, V.; Wittmann, A.; Expedition 364 Scientists",
+      "year": 2019,
+      "title": "The first day of the Cenozoic",
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "116",
+      "pages": "19342-19351",
+      "doi": "10.1073/pnas.1909479116",
+      "url": "https://doi.org/10.1073/pnas.1909479116",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Open-access full text read on pmc.ncbi.nlm.nih.gov (PMC6765282)."
+    },
+    {
+      "id": "desch2022",
+      "type": "article",
+      "authors": "Desch, S.J.; Jackson, A.P.; Noviello, J.L.; Anbar, A.D.",
+      "year": 2022,
+      "title": "The breakup of a long-period comet is not a likely match to the Chicxulub impactor",
+      "container": "Scientific Reports",
+      "volume": "12",
+      "pages": "10415",
+      "doi": "10.1038/s41598-022-12873-3",
+      "url": "https://doi.org/10.1038/s41598-022-12873-3",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Matters Arising; open-access full text read via Europe PMC (PMC9213478). Summarises Kyte 1998, Trinquier 2006 and Goderis 2013 constraints on chondrite subtype."
+    },
+    {
+      "id": "siraj2021",
+      "type": "article",
+      "authors": "Siraj, A.; Loeb, A.",
+      "year": 2021,
+      "title": "Breakup of a long-period comet as the origin of the dinosaur extinction",
+      "container": "Scientific Reports",
+      "volume": "11",
+      "pages": "3803",
+      "doi": "10.1038/s41598-021-82320-2",
+      "url": "https://doi.org/10.1038/s41598-021-82320-2",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Open-access full text read via Europe PMC (PMC7884440). Rebutted by desch2022; authors' reply (Sci. Rep. 12:10427, 2022, doi:10.1038/s41598-022-14445-x) abstract read."
+    },
+    {
+      "id": "fischergodde2024",
+      "type": "article",
+      "authors": "Fischer-Godde, M.; Tusch, J.; Goderis, S.; Bragagni, A.; Mohr-Westheide, T.; Messling, N.; Elfers, B.-M.; Schmitz, B.; Reimold, W.U.; Maier, W.D.; Claeys, P.; Koeberl, C.; Tissot, F.L.H.; Bizzarro, M.; Munker, C.",
+      "year": 2024,
+      "title": "Ruthenium isotopes show the Chicxulub impactor was a carbonaceous-type asteroid",
+      "container": "Science",
+      "volume": "385",
+      "pages": "752-756",
+      "doi": "10.1126/science.adk4868",
+      "url": "https://doi.org/10.1126/science.adk4868",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Crossref/Europe PMC (PMID 39146402). Full text not accessible (publisher 403; repository copy behind a Cloudflare challenge, not bypassed)."
+    },
+    {
+      "id": "kyte1998",
+      "type": "article",
+      "authors": "Kyte, F.T.",
+      "year": 1998,
+      "title": "A meteorite from the Cretaceous/Tertiary boundary",
+      "container": "Nature",
+      "volume": "396",
+      "pages": "237-239",
+      "doi": "10.1038/24322",
+      "url": "https://doi.org/10.1038/24322",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on nature.com article page: 2.5-mm fossil meteorite from K/T boundary sediments in the North Pacific; carbonaceous-chondrite-like; argues for an asteroidal (low-velocity) origin."
+    },
+    {
+      "id": "shukolyukov1998",
+      "type": "article",
+      "authors": "Shukolyukov, A.; Lugmair, G.W.",
+      "year": 1998,
+      "title": "Isotopic evidence for the Cretaceous-Tertiary impactor and its type",
+      "container": "Science",
+      "volume": "282",
+      "pages": "927-930",
+      "doi": "10.1126/science.282.5390.927",
+      "url": "https://doi.org/10.1126/science.282.5390.927",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Crossref/Europe PMC (PMID 9794759): Cr isotopes (Stevns Klint, Caravaca) consistent with a carbonaceous-chondrite-type impactor."
+    },
+    {
+      "id": "bottke2007",
+      "type": "article",
+      "authors": "Bottke, W.F.; Vokrouhlicky, D.; Nesvorny, D.",
+      "year": 2007,
+      "title": "An asteroid breakup 160 Myr ago as the probable source of the K/T impactor",
+      "container": "Nature",
+      "volume": "449",
+      "pages": "48-53",
+      "doi": "10.1038/nature06070",
+      "url": "https://doi.org/10.1038/nature06070",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 17805288): Baptistina family proposed as source (>90% probability)."
+    },
+    {
+      "id": "reddy2009",
+      "type": "article",
+      "authors": "Reddy, V.; Emery, J.P.; Gaffey, M.J.; Bottke, W.F.; Cramer, A.; Kelley, M.S.",
+      "year": 2009,
+      "title": "Composition of 298 Baptistina: Implications for the K/T impactor link",
+      "container": "Meteoritics & Planetary Science",
+      "volume": "44",
+      "pages": "1917-1927",
+      "doi": "10.1111/j.1945-5100.2009.tb02001.x",
+      "url": "https://doi.org/10.1111/j.1945-5100.2009.tb02001.x",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: 298 Baptistina S-type-like (olivine/pyroxene, albedo ~20%), weakening the CM2/K-T link."
+    },
+    {
+      "id": "goderis2021",
+      "type": "article",
+      "authors": "Goderis, S.; Sato, H.; Ferriere, L.; Schmitz, B.; Burney, D.; Kaskes, P.; Vellekoop, J.; Wittmann, A.; et al.; Gulick, S.P.S.; Kring, D.A.; Lowery, C.M.; Morgan, J.V.; Smit, J.; Whalen, M.T.; IODP-ICDP Expedition 364 Scientists",
+      "year": 2021,
+      "title": "Globally distributed iridium layer preserved within the Chicxulub impact structure",
+      "container": "Science Advances",
+      "volume": "7",
+      "pages": "eabe3647",
+      "doi": "10.1126/sciadv.abe3647",
+      "url": "https://doi.org/10.1126/sciadv.abe3647",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Open-access full text read via Europe PMC (PMC7904271): 'asteroid approximately 12 km in diameter' (citing collins2020); mean global Ir fluence 55 +/- 3 ng/cm2."
+    },
+    {
+      "id": "macke2011",
+      "type": "article",
+      "authors": "Macke, R.J.; Consolmagno, G.J.; Britt, D.T.",
+      "year": 2011,
+      "title": "Density, porosity, and magnetic susceptibility of carbonaceous chondrites",
+      "container": "Meteoritics & Planetary Science",
+      "volume": "46",
+      "pages": "1842-1862",
+      "doi": "10.1111/j.1945-5100.2011.01298.x",
+      "url": "https://doi.org/10.1111/j.1945-5100.2011.01298.x",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: type-2 (CM, CR) carbonaceous chondrites average ~23% porosity; grain densities 2.42-5.66 g/cm3 across classes. Per-group bulk densities not read (full text blocked)."
+    },
+    {
+      "id": "pope1997",
+      "type": "article",
+      "authors": "Pope, K.O.; Baines, K.H.; Ocampo, A.C.; Ivanov, B.A.",
+      "year": 1997,
+      "title": "Energy, volatile production, and climatic effects of the Chicxulub Cretaceous/Tertiary impact",
+      "container": "Journal of Geophysical Research: Planets",
+      "volume": "102",
+      "pages": "21645-21664",
+      "doi": "10.1029/97JE01743",
+      "url": "https://doi.org/10.1029/97JE01743",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read (Crossref/OpenAlex): impact released 0.7-3.4e31 erg (= 0.7-3.4e24 J); short-period comet or asteroid."
+    },
+    {
+      "id": "pierazzo1998",
+      "type": "article",
+      "authors": "Pierazzo, E.; Kring, D.A.; Melosh, H.J.",
+      "year": 1998,
+      "title": "Hydrocode simulation of the Chicxulub impact event and the production of climatically active gases",
+      "container": "Journal of Geophysical Research: Planets",
+      "volume": "103",
+      "pages": "28607-28625",
+      "doi": "10.1029/98JE02496",
+      "url": "https://doi.org/10.1029/98JE02496",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read (Crossref): projectiles 10-30 km, porosity 0-50%, asteroid 20 km/s, comet 50 km/s."
+    },
+    {
+      "id": "shuvalov2002",
+      "type": "chapter",
+      "authors": "Shuvalov, V.V.; Artemieva, N.A.",
+      "year": 2002,
+      "title": "Atmospheric erosion and radiation impulse induced by impacts",
+      "container": "Catastrophic Events and Mass Extinctions: Impacts and Beyond (Koeberl, C., MacLeod, K.G., eds.), Geological Society of America Special Paper 356",
+      "volume": "356",
+      "pages": "695-703",
+      "doi": "10.1130/0-8137-2356-6.695",
+      "url": "https://doi.org/10.1130/0-8137-2356-6.695",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract/first page read via OpenAlex: numerical modelling of all stages including the flight through the atmosphere; no entry-duration number in the part read."
+    },
+    {
+      "id": "schultz1996",
+      "type": "article",
+      "authors": "Schultz, P.H.; D'Hondt, S.",
+      "year": 1996,
+      "title": "Cretaceous-Tertiary (Chicxulub) impact angle and its consequences",
+      "container": "Geology",
+      "volume": "24",
+      "pages": "963-967",
+      "doi": "10.1130/0091-7613(1996)024<0963:CTCIAA>2.3.CO;2",
+      "url": "https://digitalcommons.uri.edu/gsofacpubs/1183",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on University of Rhode Island DigitalCommons record (gsofacpubs/1183): trajectory from SE to NW at 20-30 deg from horizontal."
+    },
+    {
+      "id": "morgan2006",
+      "type": "article",
+      "authors": "Morgan, J.; Lana, C.; Kearsley, A.; Coles, B.; Belcher, C.; Montanari, S.; Diaz-Martinez, E.; Barbosa, A.; Neumann, V.",
+      "year": 2006,
+      "title": "Analyses of shocked quartz at the global K-P boundary indicate an origin from a single, high-angle, oblique impact at Chicxulub",
+      "container": "Earth and Planetary Science Letters",
+      "volume": "251",
+      "pages": "264-279",
+      "doi": "10.1016/j.epsl.2006.09.009",
+      "url": "https://spiral.imperial.ac.uk/bitstreams/fb2c1063-ec0f-4d57-9569-cacb3b2af6c2/download",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Accepted manuscript (R2) read from Imperial College Spiral (hdl 10044/1/1208): near-symmetric shocked-quartz distribution; possible uprange SE +/- 45 deg; impact angle >45 deg."
+    },
+    {
+      "id": "hildebrand1991",
+      "type": "article",
+      "authors": "Hildebrand, A.R.; Penfield, G.T.; Kring, D.A.; Pilkington, M.; Camargo Z., A.; Jacobsen, S.B.; Boynton, W.V.",
+      "year": 1991,
+      "title": "Chicxulub Crater: A possible Cretaceous/Tertiary boundary impact crater on the Yucatan Peninsula, Mexico",
+      "container": "Geology",
+      "volume": "19",
+      "pages": "867-871",
+      "doi": "10.1130/0091-7613(1991)019<0867:CCAPCT>2.3.CO;2",
+      "url": "https://doi.org/10.1130/0091-7613(1991)019<0867:CCAPCT>2.3.CO;2",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex (GSW page text): buried 180-km-diameter circular structure within a thick carbonate sequence."
+    },
+    {
+      "id": "hildebrand1995",
+      "type": "article",
+      "authors": "Hildebrand, A.R.; Pilkington, M.; Connors, M.; Ortiz-Aleman, C.; Chavez, R.E.",
+      "year": 1995,
+      "title": "Size and structure of the Chicxulub crater revealed by horizontal gravity gradients and cenotes",
+      "container": "Nature",
+      "volume": "376",
+      "pages": "415-417",
+      "doi": "10.1038/376415a0",
+      "url": "https://doi.org/10.1038/376415a0",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on nature.com article page: crater diameter ~180 km from the horizontal gradient of the Bouguer gravity anomaly; cenote ring."
+    },
+    {
+      "id": "morgan1997",
+      "type": "article",
+      "authors": "Morgan, J.; Warner, M.; Chicxulub Working Group; Brittan, J.; Buffler, R.; Camargo, A.; Christeson, G.; Denton, P.; Hildebrand, A.; Hobbs, R.; Macintyre, H.; Mackenzie, G.; Maguire, P.; Marin, L.; Nakamura, Y.; Pilkington, M.; Sharpton, V.; Snyder, D.; Suarez, G.; Trejo, A.",
+      "year": 1997,
+      "title": "Size and morphology of the Chicxulub impact crater",
+      "container": "Nature",
+      "volume": "390",
+      "pages": "472-476",
+      "doi": "10.1038/37291",
+      "url": "https://doi.org/10.1038/37291",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on nature.com article page: transient cavity ~100 km; multi-ring basin morphology."
+    },
+    {
+      "id": "kring2004",
+      "type": "article",
+      "authors": "Kring, D.A.; Horz, F.; Zurcher, L.; Urrutia Fucugauchi, J.",
+      "year": 2004,
+      "title": "Impact lithologies and their emplacement in the Chicxulub impact crater: Initial results from the Chicxulub Scientific Drilling Project, Yaxcopoil, Mexico",
+      "container": "Meteoritics & Planetary Science",
+      "volume": "39",
+      "pages": "879-897",
+      "doi": "10.1111/j.1945-5100.2004.tb00936.x",
+      "url": "https://doi.org/10.1111/j.1945-5100.2004.tb00936.x",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: melt derived from silicate basement beneath a 3 km-thick carbonate platform."
+    },
+    {
+      "id": "kaskes2023",
+      "type": "article",
+      "authors": "Kaskes, P.; Marchegiano, M.; Peral, M.; Goderis, S.; Claeys, P.",
+      "year": 2023,
+      "title": "Hot carbonates deep within the Chicxulub impact structure",
+      "container": "PNAS Nexus",
+      "volume": "3",
+      "pages": "pgad414",
+      "doi": "10.1093/pnasnexus/pgad414",
+      "url": "https://doi.org/10.1093/pnasnexus/pgad414",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Published online 2023-12-21 (vol. 3, issue 1, 2024). Open-access full text read via Europe PMC (PMC10783646): at ~66 Ma Yucatan was a shallow shelf, water <50 m south of the impact site and 100-2,000 m within the impacted area (carbonate ramp), citing gulick2008 and Snedden & Galloway 2019."
+    },
+    {
+      "id": "range2022",
+      "type": "article",
+      "authors": "Range, M.M.; Arbic, B.K.; Johnson, B.C.; Moore, T.C.; Titov, V.; Adcroft, A.J.; Ansong, J.K.; Hollis, C.J.; Ritsema, J.; Scotese, C.R.; Wang, H.",
+      "year": 2022,
+      "title": "The Chicxulub impact produced a powerful global tsunami",
+      "container": "AGU Advances",
+      "volume": "3",
+      "pages": "e2021AV000627",
+      "doi": "10.1029/2021AV000627",
+      "url": "https://doi.org/10.1029/2021AV000627",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: 'This asteroid struck in shallow water'. Full text (model parameters) not accessed (bot challenges)."
+    },
+    {
+      "id": "ormo2021",
+      "type": "article",
+      "authors": "Ormo, J.; Gulick, S.P.S.; Whalen, M.T.; King, D.T.; Sturkell, E.; Morgan, J.",
+      "year": 2021,
+      "title": "Assessing event magnitude and target water depth for marine-target impacts: Ocean resurge deposits in the Chicxulub M0077A drill core compared",
+      "container": "Earth and Planetary Science Letters",
+      "volume": "564",
+      "pages": "116915",
+      "doi": "10.1016/j.epsl.2021.116915",
+      "url": "https://doi.org/10.1016/j.epsl.2021.116915",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: 200-km wide crater; relation between projectile diameter / target water depth (d/H) and resurge deposits. Chicxulub-specific H value NOT read (full text inaccessible)."
+    }
+  ],
+  "parameters": [
+    {
+      "id": "event.age",
+      "group": "event",
+      "label": "Wiek uderzenia / granicy K-Pg",
+      "value": 66.052,
+      "unit": "Ma",
+      "range": [
+        66.009,
+        66.095
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "sprain2018",
+        "sprain2015",
+        "renne2018",
+        "renne2013"
+      ],
+      "locator": "sprain2018: Abstract; sprain2015: Abstract; renne2018: Abstract; renne2013: Abstract",
+      "notes": "40Ar/39Ar on sanidine of the IrZ-coal tephra within ~1 cm of the impact claystone (Hell Creek, Montana): 66.052 +/- 0.008 Ma (analytical) / +/- 0.043 Ma (full); range = value +/- 0.043. Independent impact-ejecta age: Chicxulub spherules (Gorgonilla) 66.051 +/- 0.031 Ma (renne2018). Earlier pooled value 66.043 +/- 0.010/0.043 Ma (sprain2015), consistent with renne2013 (impact and boundary synchronous within 32 kyr). Older values 64.98 Ma (swisher1992) and ~65.95 Ma (kuiper2008) reflect older calibrations and are superseded. U-Pb (Clyde et al. 2016) not verified here.",
+      "time": null
+    },
+    {
+      "id": "event.age_ejecta",
+      "group": "event",
+      "label": "Wiek sferul wyrzutowych Chicxulub (Gorgonilla, Kolumbia)",
+      "value": 66.051,
+      "unit": "Ma",
+      "range": [
+        66.02,
+        66.082
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "renne2018"
+      ],
+      "locator": "Abstract",
+      "notes": "Weighted mean 40Ar/39Ar age of 25 fresh glassy spherules; +/- 0.031 Ma as stated in the abstract (uncertainty type not specified there).",
+      "time": null
+    },
+    {
+      "id": "event.season",
+      "group": "event",
+      "label": "Pora roku uderzenia",
+      "value": "wiosna na półkuli północnej (jesień na południowej)",
+      "unit": "",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "measured proxies: osteohistology + stable isotopes of fishes killed at Tanis (seasonal inference)",
+      "sources": [
+        "during2022",
+        "depalma2021"
+      ],
+      "locator": "during2022: Abstract and main text; depalma2021: Abstract",
+      "notes": "during2022: boreal spring; depalma2021: boreal spring/summer. Both from the Tanis seiche deposit (~50 deg N paleolatitude). Time of day is not constrained by any source.",
+      "time": null
+    },
+    {
+      "id": "impactor.diameter",
+      "group": "impactor",
+      "label": "Średnica impaktora (skalowanie krateru / modele hydrokodowe)",
+      "value": 13,
+      "unit": "km",
+      "range": [
+        12.2,
+        18
+      ],
+      "certainty": "extrapolation",
+      "method": "model:collins2020",
+      "sources": [
+        "collins2020",
+        "artemieva2017",
+        "artemieva2009",
+        "christeson2009",
+        "goderis2021"
+      ],
+      "locator": "collins2020: SI Table 1, Fig. 2-3 captions, Methods; artemieva2017: Sect. 4; artemieva2009: Sect. 3",
+      "notes": "Not measured: it is the size that reproduces the observed crater (transient cavity ~90-100 km, seismically constrained) for an assumed speed, angle and density. collins2020 (iSALE3D, 2630 kg/m3): at 20 km/s 12/13/14/16 km for 90/60/45/30 deg; at 12 km/s 16/17/18/21 km. Preferred 45-60 deg -> 13-18 km. artemieva2017: 12.2 km (60 deg, 18 km/s, 2600 kg/m3). artemieva2009: 12 km (90 deg), 14.4 km (45 deg), 16 km (30 deg) at 18 km/s. goderis2021 quotes ~12 km. Baseline 13 km = collins2020 60 deg / 20 km/s. Geochemical (Ir) estimates are smaller: see impactor.diameter_geochem.",
+      "time": null
+    },
+    {
+      "id": "impactor.diameter_geochem",
+      "group": "impactor",
+      "label": "Średnica impaktora z bilansu irydu (Ir)",
+      "value": 10,
+      "unit": "km",
+      "range": [
+        8,
+        12
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: global Ir inventory / chondritic Ir content / globally dispersed fraction",
+      "sources": [
+        "alvarez1980",
+        "artemieva2009",
+        "desch2022",
+        "paquay2008"
+      ],
+      "locator": "alvarez1980: Abstract; artemieva2009: Sect. 2; desch2022: Introduction; paquay2008: Abstract",
+      "notes": "alvarez1980: 10 +/- 4 km (four independent estimates). artemieva2009: global Ir 2.0-2.8e8 kg, Ir 500 ng/g, dispersed fraction 0.22-0.5 -> mass 0.8-2.5e15 kg -> 8-12 km at 2600 kg/m3, 'too small to produce the 180-200 km diameter crater'. desch2022: D ~ 10 km. paquay2008: Os-isotope estimate within 50% of Ir-based ones (value not read). Lower bound on impactor mass (assumes all Ir globally dispersed).",
+      "time": null
+    },
+    {
+      "id": "impactor.mass",
+      "group": "impactor",
+      "label": "Masa impaktora",
+      "value": 3000000000000000.0,
+      "unit": "kg",
+      "range": [
+        2400000000000000.0,
+        8000000000000000.0
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: m = (4/3)*pi*r^3*rho from published r and rho",
+      "sources": [
+        "collins2020",
+        "artemieva2017"
+      ],
+      "locator": "collins2020: SI Table 1 (radii, density); artemieva2017: Sect. 4 (2,500 Gt stated)",
+      "notes": "Computed here: collins2020 60 deg/20 km/s (r = 6.5 km, 2630 kg/m3) -> 3.0e15 kg; range from collins2020 90 deg/20 km/s (2.4e15) to 45 deg/12 km/s (8.0e15). artemieva2017 states 2,500 Gt (2.5e15 kg). Ir-based mass 0.8-2.5e15 kg (artemieva2009). collins2020: for a given impactor mass the results are insensitive to the assumed density.",
+      "time": null
+    },
+    {
+      "id": "impactor.type",
+      "group": "impactor",
+      "label": "Typ / skład impaktora",
+      "value": "asteroida typu węglistego (chondryt węglisty; najzgodniejszy z CM lub CR)",
+      "unit": "",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "measured: Ru and Cr isotopes, PGE ratios, fossil meteorite in K-Pg clay (interpretation of measurements)",
+      "sources": [
+        "fischergodde2024",
+        "shukolyukov1998",
+        "kyte1998",
+        "desch2022"
+      ],
+      "locator": "fischergodde2024: Abstract; shukolyukov1998: Abstract; kyte1998: Abstract; desch2022: 'Geochemical arguments'",
+      "notes": "Carbonaceous (CC-type) affinity from independent isotopic systems (Ru: carbonaceous-type asteroid formed beyond Jupiter's orbit; Cr: carbonaceous-chondrite type). Subtype debated: fossil meteorite allows CV/CO/CR/possibly CM, not CI; e54Cr argues CM-like (CR/CH/CB identical); PGE favour CM or CO, rule out CI (all as summarised by desch2022). Comet origin disfavoured (Ir budget, Ru isotopes).",
+      "time": null
+    },
+    {
+      "id": "impactor.density",
+      "group": "impactor",
+      "label": "Gęstość objętościowa impaktora",
+      "value": 2630,
+      "unit": "kg/m³",
+      "range": [
+        2385,
+        2680
+      ],
+      "certainty": "extrapolation",
+      "method": "model:collins2020",
+      "sources": [
+        "collins2020",
+        "artemieva2009",
+        "artemieva2017",
+        "christeson2009",
+        "macke2011"
+      ],
+      "locator": "collins2020: SI Table 1, Methods; artemieva2009: Sect. 3; christeson2009: Table 1; macke2011: Abstract",
+      "notes": "Real density unknown (collins2020 Methods: bulk porosity 'undetermined'). Model values: 2600 (artemieva2009/2017; 'typical for large asteroids with 20-30% porosity'), 2630/2650 (collins2020, internally inconsistent), 2680 (christeson2009). Lower bound 2385 computed from collins2020's statement that Murchison (CM2) bulk density is ~10% below 2650. macke2011: CM/CR meteorites average ~23% porosity. Asteroid-scale macroporosity (rubble pile) could lower bulk density further - speculation, no Chicxulub-specific constraint.",
+      "time": null
+    },
+    {
+      "id": "impactor.velocity",
+      "group": "impactor",
+      "label": "Prędkość uderzenia",
+      "value": 20,
+      "unit": "km/s",
+      "range": [
+        12,
+        20
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: statistical Earth-impact speed distribution (no Chicxulub-specific measurement)",
+      "sources": [
+        "collins2020",
+        "artemieva2017",
+        "artemieva2009",
+        "pierazzo1998"
+      ],
+      "locator": "collins2020: Results ('Numerical simulation results', paragraph after Fig. 5), Methods; artemieva2017: Sect. 4; pierazzo1998: Abstract",
+      "notes": "No observation constrains the Chicxulub impact speed. collins2020: 20 km/s is 'close to Earth's mean and median asteroid impact speed' (citing Le Feuvre & Wieczorek 2011); ~25% of impacts are <15 km/s; minimum = escape velocity 11.2 km/s; 12 km/s runs used for computational expediency. Models: 18 km/s (artemieva2009/2017), 20 km/s asteroid / 50 km/s comet (pierazzo1998). Comet-speed cases disfavoured by composition (see impactor.type).",
+      "time": null
+    },
+    {
+      "id": "impactor.angle",
+      "group": "impactor",
+      "label": "Kąt uderzenia (od poziomu)",
+      "value": 60,
+      "unit": "°",
+      "range": [
+        45,
+        60
+      ],
+      "certainty": "contested",
+      "method": "model:collins2020",
+      "sources": [
+        "collins2020",
+        "morgan2006",
+        "artemieva2017",
+        "artemieva2009",
+        "schultz1996"
+      ],
+      "locator": "collins2020: Abstract, Fig. 5, 'Comparison with observations'; morgan2006: Abstract; schultz1996: Abstract",
+      "notes": "collins2020: 45-60 deg (preferred ~60 deg) from 3D iSALE runs compared with offsets of the peak-ring centre and mantle-uplift centre; <30 deg ruled out. morgan2006: >45 deg (shocked quartz, continuous proximal ejecta). artemieva2009 used 45 deg as statistically most likely; artemieva2017 used 60 +/- 10 deg. Opposing: schultz1996 20-30 deg. Statistics: 1/4 of impacts steeper than 60 deg, 1/15 steeper than 75 deg (collins2020); 50% between 30 and 60 deg (artemieva2017).",
+      "time": null
+    },
+    {
+      "id": "impactor.approach_azimuth",
+      "group": "impactor",
+      "label": "Azymut nadejścia impaktora (skąd przyleciał; od N zgodnie z ruchem wskazówek zegara)",
+      "value": 45,
+      "unit": "°",
+      "range": [
+        0,
+        90
+      ],
+      "certainty": "contested",
+      "method": "model:collins2020",
+      "sources": [
+        "collins2020",
+        "artemieva2017",
+        "schultz1996",
+        "morgan2006",
+        "gulick2008"
+      ],
+      "locator": "collins2020: 'Comparison with observations', Fig. 1, SI Fig. 1; schultz1996: Abstract; morgan2006: Abstract",
+      "notes": "collins2020 states only 'northeast-to-southwest' (arrival from the NE). 45 deg is the cardinal NE value, not a fitted azimuth; range 0-90 = NE quadrant. Bearings computed here from collins2020 coordinates: mantle-uplift centre ~10 km at ~6 deg (uprange); peak-ring / gravity-high centre ~7.6 km at ~223 deg (downrange, i.e. uprange ~43 deg). artemieva2017 uses downrange SW. Opposing: schultz1996 from the SE (~135 deg, toward NW); morgan2006 possible uprange SE +/- 45 deg; Hildebrand et al. 1998 (LPSC abstract, not peer-reviewed; cited by collins2020) from the SW. gulick2008: pre-impact target heterogeneity strongly shapes the asymmetry, so azimuth inferred from structure is uncertain.",
+      "time": null
+    },
+    {
+      "id": "energy.kinetic_literature",
+      "group": "energy",
+      "label": "Energia kinetyczna uderzenia (szacunki z literatury)",
+      "value": 6e+23,
+      "unit": "J",
+      "range": [
+        4e+23,
+        3.4e+24
+      ],
+      "certainty": "contested",
+      "method": "scaling: E = 0.5*m*v^2 from published m (or r, rho) and v; plus explicit published range (pope1997)",
+      "sources": [
+        "collins2020",
+        "artemieva2017",
+        "artemieva2009",
+        "pope1997"
+      ],
+      "locator": "collins2020: SI Table 1; artemieva2017: Sect. 4; artemieva2009: Sect. 3; pope1997: Abstract",
+      "notes": "Computed here from published scenario parameters: collins2020 60 deg/20 km/s 6.05e23 J (baseline); 45 deg/20 km/s 7.6e23; 60 deg/12 km/s 4.9e23; 90 deg 4.1-4.8e23; 30 deg 0.9-1.1e24 J. artemieva2017 (2,500 Gt, 18 km/s) 4.05e23 J; artemieva2009 45 deg/18 km/s 6.6e23 J. Explicit older estimate: pope1997 0.7-3.4e31 erg = 0.7-3.4e24 J. Modern seismically/drilling-constrained scenarios at 45-60 deg cluster at ~5-8e23 J.",
+      "time": null
+    },
+    {
+      "id": "energy.kinetic_mt",
+      "group": "energy",
+      "label": "Energia kinetyczna w megatonach TNT",
+      "value": 145000000.0,
+      "unit": "Mt TNT",
+      "range": [
+        96000000.0,
+        810000000.0
+      ],
+      "certainty": "contested",
+      "method": "scaling: E[J] / 4.184e15 J per Mt TNT",
+      "sources": [
+        "collins2020",
+        "artemieva2017",
+        "pope1997"
+      ],
+      "locator": "derived from energy.kinetic_literature",
+      "notes": "Unit conversion of energy.kinetic_literature (1 Mt TNT = 4.184e15 J).",
+      "time": null
+    },
+    {
+      "id": "target.water_depth",
+      "group": "target",
+      "label": "Głębokość wody w rejonie uderzenia (wartość modelowa; rampa węglanowa)",
+      "value": 1500,
+      "unit": "m",
+      "range": [
+        100,
+        2000
+      ],
+      "certainty": "contested",
+      "method": "model:artemieva2017",
+      "sources": [
+        "artemieva2017",
+        "artemieva2009",
+        "kaskes2023",
+        "gulick2019",
+        "range2022",
+        "gulick2008"
+      ],
+      "locator": "artemieva2017: Sect. 4 (last paragraph); artemieva2009: Sect. 3; kaskes2023: Discussion (rim-wave tsunami paragraph); gulick2019: 'Postimpact Resurge, Settling, Seiches, and Tsunami'",
+      "notes": "Ground-zero depth is NOT fixed in any source read. Target was a carbonate ramp deepening to the NE (gulick2008, via others). kaskes2023: <50 m south of the impact site and 100-2,000 m within the impacted area. artemieva2017: 'fairly shallow sea' over northern Yucatan, 'up to 1.5 km deep to the northeast of the point of impact', modelled as a water layer = R/4 (~1.5 km) - the 1500 m value is this modelled upper case, NOT a measured ground-zero depth. artemieva2009: >2 km water in N/NE quadrant (one run with 3 km water). range2022: 'struck in shallow water'. A simulation should use a spatially varying ramp.",
+      "time": null
+    },
+    {
+      "id": "target.water_depth_south",
+      "group": "target",
+      "label": "Głębokość wody na szelfie na S od miejsca uderzenia",
+      "value": 50,
+      "unit": "m",
+      "range": [
+        0,
+        50
+      ],
+      "certainty": "extrapolation",
+      "method": "reconstruction (seismic + regional stratigraphy) as cited by kaskes2023",
+      "sources": [
+        "kaskes2023"
+      ],
+      "locator": "Discussion (rim-wave tsunami paragraph)",
+      "notes": "Upper bound '<50 m' south of the impact site (citing gulick2008 and Snedden & Galloway 2019).",
+      "time": null
+    },
+    {
+      "id": "target.water_depth_ne_max",
+      "group": "target",
+      "label": "Maksymalna głębokość wody w sektorze NE",
+      "value": 2000,
+      "unit": "m",
+      "range": [
+        1500,
+        2000
+      ],
+      "certainty": "contested",
+      "method": "reconstruction from seismic data (gulick2008) as cited",
+      "sources": [
+        "artemieva2009",
+        "artemieva2017",
+        "gulick2019",
+        "kaskes2023"
+      ],
+      "locator": "artemieva2009: Sect. 3; artemieva2017: Sect. 4; gulick2019: 'Postimpact Resurge...'; kaskes2023: Discussion",
+      "notes": "artemieva2009: '>2 km water' in N/NE quadrant; artemieva2017: 'up to 1.5 km'; gulick2019: depths 'reaching ~2 km' via the NNE rim gap (refs Sanford et al. 2016, gulick2008); kaskes2023: up to 2,000 m. All trace back to gulick2008, which was not read in full.",
+      "time": null
+    },
+    {
+      "id": "target.sediment_thickness",
+      "group": "target",
+      "label": "Miąższość pokrywy osadowej (węglany + ewaporaty)",
+      "value": 3,
+      "unit": "km",
+      "range": [
+        2.8,
+        4.0
+      ],
+      "certainty": "fact",
+      "method": "measured: seismic reflection/refraction + wells",
+      "sources": [
+        "collins2020",
+        "artemieva2017",
+        "kring2004",
+        "christeson2009",
+        "artemieva2009"
+      ],
+      "locator": "collins2020: Fig. 2 caption, Results; artemieva2017: Sect. 4; kring2004: Abstract",
+      "notes": "~3 km 'average thickness of sedimentary rocks at Chicxulub' (collins2020; '>3-km-thick' in text); '3 km-thick carbonate platform' (kring2004). Lateral variation: 3.8 +/- 0.2 km west of centre (Bell et al. 2004 via artemieva2017), >=2.8 km to the south (well Y-2), 3.3-3.5 km adopted for SW. Models use 3 km (christeson2009, artemieva2009).",
+      "time": null
+    },
+    {
+      "id": "target.evaporite_fraction",
+      "group": "target",
+      "label": "Udział ewaporatów (anhydryt/gips) w pokrywie osadowej",
+      "value": 0.425,
+      "unit": "",
+      "range": [
+        0.27,
+        0.5
+      ],
+      "certainty": "contested",
+      "method": "measured (drill cores, wells) + model:artemieva2017 two-layer assumption",
+      "sources": [
+        "gulick2019",
+        "artemieva2017"
+      ],
+      "locator": "gulick2019: Introduction and 'Excavation Stage'; artemieva2017: Sect. 4",
+      "notes": "gulick2019: target sediments contained 30-50% evaporites; Yaxcopoil-1 slump block 27% anhydrite and >70% carbonates; deeper target possibly 49-60% anhydrite. artemieva2017: upper half 25% anhydrite / 75% calcite, lower half 60% anhydrite / 40% calcite; 0.425 = mean of the two halves (computed here). Contested because the M0077 suevite contains <1% evaporite (gulick2019), read either as efficient degassing or preferential export of non-porous evaporite clasts.",
+      "time": null
+    },
+    {
+      "id": "target.carbonate_fraction",
+      "group": "target",
+      "label": "Udział węglanów (kalcyt/dolomit) w pokrywie osadowej",
+      "value": 0.575,
+      "unit": "",
+      "range": [
+        0.5,
+        0.73
+      ],
+      "certainty": "contested",
+      "method": "complement of target.evaporite_fraction (other lithologies neglected)",
+      "sources": [
+        "gulick2019",
+        "artemieva2017"
+      ],
+      "locator": "as target.evaporite_fraction",
+      "notes": "Computed as 1 - evaporite fraction; Yaxcopoil-1 >70% carbonates. Neglects minor siliciclastics/chert.",
+      "time": null
+    },
+    {
+      "id": "target.crust_thickness",
+      "group": "target",
+      "label": "Grubość skorupy (do Moho, łącznie z pokrywą osadową)",
+      "value": 33,
+      "unit": "km",
+      "range": [
+        30,
+        33
+      ],
+      "certainty": "extrapolation",
+      "method": "model inputs informed by seismic Moho mapping",
+      "sources": [
+        "collins2020",
+        "christeson2009",
+        "artemieva2009"
+      ],
+      "locator": "collins2020: Methods; christeson2009: Sect. 3.2 and modelling paragraph; artemieva2009: Sect. 3",
+      "notes": "collins2020: flat two-layer target with crustal thickness 33 km (sediments tracked with tracers, not a separate material). christeson2009 and artemieva2009: 3 km sediment + 30 km crystalline crust over mantle. Regional Moho dips W->E (christeson2009); the regional Moho depth number was not read in the text (their Fig. 4). Post-impact Moho upwarp 1.5-2 km at the centre.",
+      "time": null
+    },
+    {
+      "id": "target.density",
+      "group": "target",
+      "label": "Reprezentatywna gęstość celu do skalowania (skorupa granitowa)",
+      "value": 2630,
+      "unit": "kg/m³",
+      "range": [
+        2280,
+        2650
+      ],
+      "certainty": "extrapolation",
+      "method": "model:collins2020",
+      "sources": [
+        "collins2020",
+        "artemieva2017"
+      ],
+      "locator": "collins2020: SI Table 1 (crust reference density 2630; mantle 3310); artemieva2017: Sect. 2",
+      "notes": "Crust modelled as granite (ANEOS) 2630 kg/m3 in collins2020 SI Table 1 (2650 in Methods text). artemieva2017: non-porous calcite target 2600, water-saturated porous calcite 2280 kg/m3.",
+      "time": null
+    },
+    {
+      "id": "target.mantle_density",
+      "group": "target",
+      "label": "Gęstość płaszcza (model)",
+      "value": 3310,
+      "unit": "kg/m³",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:collins2020",
+      "sources": [
+        "collins2020"
+      ],
+      "locator": "SI Table 1",
+      "notes": "Dunite ANEOS reference density used in iSALE3D.",
+      "time": null
+    },
+    {
+      "id": "site.lat",
+      "group": "site",
+      "label": "Szerokość geograficzna nominalnego środka krateru (współczesna)",
+      "value": 21.29,
+      "unit": "°",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured: geometric centre of the rim from horizontal gravity gradient + cenote ring",
+      "sources": [
+        "collins2020",
+        "hildebrand1995"
+      ],
+      "locator": "collins2020: Introduction, Fig. 1",
+      "notes": "Nominal centre 21.29 N, 89.53 W. Other centres: central gravity high / annular low 21.24 N, 89.58 W (several km WSW); maximum mantle uplift 21.38 N, 89.52 W (~10 km NNE).",
+      "time": null
+    },
+    {
+      "id": "site.lon",
+      "group": "site",
+      "label": "Długość geograficzna nominalnego środka krateru (współczesna)",
+      "value": -89.53,
+      "unit": "°",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "collins2020",
+        "hildebrand1995"
+      ],
+      "locator": "collins2020: Introduction, Fig. 1",
+      "notes": "West longitude is negative.",
+      "time": null
+    },
+    {
+      "id": "site.crater_diameter",
+      "group": "site",
+      "label": "Średnica krateru końcowego",
+      "value": 180,
+      "unit": "km",
+      "range": [
+        180,
+        200
+      ],
+      "certainty": "fact",
+      "method": "measured: gravity gradients, cenotes, seismic",
+      "sources": [
+        "hildebrand1995",
+        "hildebrand1991",
+        "christeson2009",
+        "gulick2019",
+        "ormo2021",
+        "gulick2013"
+      ],
+      "locator": "hildebrand1995: Abstract; christeson2009: Sect. 2; gulick2019: Introduction; gulick2013: Abstract",
+      "notes": "~180 km (hildebrand1991, hildebrand1995 - same rim definition as the nominal centre); 180-200 km (christeson2009, artemieva2009); ~200 km (gulick2019, ormo2021). Value depends on which ring is called the rim (gulick2013: inner rim at 70-85 km radius, outer ring faults at 70-130 km radius).",
+      "time": null
+    },
+    {
+      "id": "site.transient_crater_diameter",
+      "group": "site",
+      "label": "Średnica krateru przejściowego",
+      "value": 100,
+      "unit": "km",
+      "range": [
+        72,
+        100
+      ],
+      "certainty": "extrapolation",
+      "method": "model + seismic interpretation",
+      "sources": [
+        "morgan1997",
+        "gulick2013",
+        "artemieva2009",
+        "collins2020",
+        "gulick2019"
+      ],
+      "locator": "morgan1997: Abstract; gulick2013: Abstract; artemieva2009: Sect. 3; collins2020: SI Table 1",
+      "notes": "~100 km (morgan1997; gulick2013: 50 km radius; gulick2019 Fig. 2B); 90-100 km target in artemieva2009; 72-91 km in coarse iSALE3D runs (collins2020). Forms 'within 10 s' (gulick2013), 'within tens of seconds' (gulick2019), 'in the first minute' (collins2020).",
+      "time": {
+        "t": 10,
+        "range": [
+          10,
+          60
+        ]
+      }
+    },
+    {
+      "id": "site.paleolatitude",
+      "group": "site",
+      "label": "Paleoszerokość miejsca uderzenia (66 Ma)",
+      "value": 27.4,
+      "unit": "°",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "scaling: geocentric axial dipole tan(I) = 2 tan(lat) applied to inclination ~-46 deg",
+      "sources": [
+        "gulick2019"
+      ],
+      "locator": "gulick2019: Observations (paleomagnetism paragraph)",
+      "notes": "gulick2019 gives the expected (and in Units 3/2C observed) inclination ~-46 deg during chron C29r. Paleolatitude computed here assuming a geocentric axial dipole; cross-check with the paleogeography thread (plate reconstruction).",
+      "time": null
+    }
+  ],
+  "disagreements": [
+    {
+      "topic": "Kąt i kierunek trajektorii",
+      "positions": [
+        {
+          "claim": "Steep impact 45-60 deg (preferred ~60 deg), arriving from the NE (downrange SW); 3D iSALE runs vs offsets of peak-ring and mantle-uplift centres; <30 deg ruled out",
+          "sources": [
+            "collins2020",
+            "artemieva2017"
+          ]
+        },
+        {
+          "claim": "Low-angle impact 20-30 deg from the SE toward the NW, from geophysical asymmetries and ejecta/biotic patterns",
+          "sources": [
+            "schultz1996"
+          ]
+        },
+        {
+          "claim": "High angle >45 deg; uprange possibly SE +/- 45 deg from shocked-quartz shock levels; overall near-symmetric distal ejecta",
+          "sources": [
+            "morgan2006"
+          ]
+        },
+        {
+          "claim": "Crater asymmetry correlates with pre-existing undulations of the end-Cretaceous shelf, so trajectory cannot be read from structure alone",
+          "sources": [
+            "gulick2008"
+          ]
+        }
+      ],
+      "assessment": "A steep angle (>=45 deg) is supported by several independent lines (seismically imaged structure + 3D models, continuous peak ring, near-symmetric shocked-quartz/ejecta distribution). The azimuth is much weaker: collins2020's NE origin relies on attributing centre offsets to the trajectory, whereas gulick2008 shows that target heterogeneity (water depth, sediment thickness) also produces asymmetry, and morgan2006 tentatively points SE. Azimuth stays contested; NE is the best-supported published option."
+    },
+    {
+      "topic": "Rozmiar impaktora: skalowanie krateru vs bilans irydu",
+      "positions": [
+        {
+          "claim": "Hydrocode/crater scaling: 12-18 km for 45-60 deg at 12-20 km/s (density ~2600-2630 kg/m3)",
+          "sources": [
+            "collins2020",
+            "artemieva2017",
+            "artemieva2009"
+          ]
+        },
+        {
+          "claim": "Ir mass balance: ~8-12 km (mass 0.8-2.5e15 kg); 10 +/- 4 km; Os isotopes within 50% of Ir-based values",
+          "sources": [
+            "artemieva2009",
+            "alvarez1980",
+            "paquay2008",
+            "desch2022"
+          ]
+        }
+      ],
+      "assessment": "The approaches differ by ~1.2-1.8x in diameter (~2-6x in mass). artemieva2009 notes the Ir inventory is too small for a 180-200 km crater; explanations include lower Ir in the impactor, Ir retained near the crater, or Ir lost. Crater-based estimates are tied to geometry and preferred for energy; Ir-based ones are a lower bound on globally dispersed impactor mass."
+    },
+    {
+      "topic": "Asteroida czy kometa",
+      "positions": [
+        {
+          "claim": "Fragment of a tidally disrupted long-period comet (D ~ 7 km) can explain the event rate and carbonaceous composition",
+          "sources": [
+            "siraj2021"
+          ]
+        },
+        {
+          "claim": "Asteroid strongly favoured: a comet would deliver ~4% of the observed Ir; CM/CR match; fragment numbers overestimated",
+          "sources": [
+            "desch2022"
+          ]
+        },
+        {
+          "claim": "Ru isotopes indicate a carbonaceous-type asteroid formed beyond Jupiter",
+          "sources": [
+            "fischergodde2024"
+          ]
+        },
+        {
+          "claim": "Survival of a fossil meteorite favours a low (asteroidal) velocity",
+          "sources": [
+            "kyte1998"
+          ]
+        }
+      ],
+      "assessment": "Asteroid origin is strongly favoured by geochemistry (Ir budget, Ru and Cr isotopes, fossil meteorite); the comet hypothesis was rebutted in a Matters Arising and is not supported by the 2024 Ru data."
+    },
+    {
+      "topic": "Podtyp chondrytu węglistego",
+      "positions": [
+        {
+          "claim": "Carbonaceous-chondrite-type Cr isotope signature",
+          "sources": [
+            "shukolyukov1998"
+          ]
+        },
+        {
+          "claim": "Fossil meteorite allows CV/CO/CR/possibly CM, not CI; e54Cr argues CM-like; PGE favour CM or CO, rule out CI -> CM or CR overall",
+          "sources": [
+            "desch2022",
+            "kyte1998"
+          ]
+        }
+      ],
+      "assessment": "CC affinity is robust; exact subtype (CM vs CR) unresolved. Primary e54Cr (Trinquier et al. 2006) and PGE (Goderis et al. 2013) papers were not opened; their content is taken from desch2022's summary."
+    },
+    {
+      "topic": "Pochodzenie dynamiczne (rodzina Baptistina)",
+      "positions": [
+        {
+          "claim": "Baptistina family breakup ~160 Myr ago is the probable (>90%) source",
+          "sources": [
+            "bottke2007"
+          ]
+        },
+        {
+          "claim": "298 Baptistina is S-type-like (olivine/pyroxene, albedo ~20%), weakening the CM2/K-T link",
+          "sources": [
+            "reddy2009"
+          ]
+        }
+      ],
+      "assessment": "The Baptistina link is disfavoured by spectroscopy; the source region remains open (Ru data say only 'formed beyond Jupiter')."
+    },
+    {
+      "topic": "Wiek wydarzenia",
+      "positions": [
+        {
+          "claim": "64.98 +/- 0.05 Ma (melt rock), 65.01 +/- 0.08 Ma (Beloc tektites)",
+          "sources": [
+            "swisher1992"
+          ]
+        },
+        {
+          "claim": "~65.95 Ma (astronomically calibrated FCs 28.201 Ma)",
+          "sources": [
+            "kuiper2008"
+          ]
+        },
+        {
+          "claim": "66.043 +/- 0.010/0.043 Ma; impact and boundary synchronous within 32 kyr",
+          "sources": [
+            "sprain2015",
+            "renne2013"
+          ]
+        },
+        {
+          "claim": "66.052 +/- 0.008/0.043 Ma (boundary tephra); 66.051 +/- 0.031 Ma (Chicxulub spherules)",
+          "sources": [
+            "sprain2018",
+            "renne2018"
+          ]
+        }
+      ],
+      "assessment": "Differences are dominated by standard/decay-constant calibration; current best ~66.05 Ma, full uncertainty ~+/-0.04 Ma. Irrelevant for the 24 h dynamics except as a label."
+    },
+    {
+      "topic": "Energia uderzenia",
+      "positions": [
+        {
+          "claim": "0.7-3.4e24 J",
+          "sources": [
+            "pope1997"
+          ]
+        },
+        {
+          "claim": "~4-8e23 J for 45-90 deg scenarios constrained by the seismic transient cavity and drilling (derived from published m, v)",
+          "sources": [
+            "collins2020",
+            "artemieva2017",
+            "artemieva2009"
+          ]
+        }
+      ],
+      "assessment": "Modern hydrocode scenarios tied to the seismically constrained transient cavity are preferred; pope1997 predates the 3D and drilling constraints. Shallow (30 deg) scenarios would need ~1e24 J but are disfavoured."
+    },
+    {
+      "topic": "Głębokość wody w miejscu uderzenia",
+      "positions": [
+        {
+          "claim": "Fairly shallow sea; up to 1.5 km deep to the NE of the point of impact",
+          "sources": [
+            "artemieva2017"
+          ]
+        },
+        {
+          "claim": ">2 km water in the N/NE quadrant",
+          "sources": [
+            "artemieva2009"
+          ]
+        },
+        {
+          "claim": "<50 m south of the impact site; 100-2,000 m within the impacted area (carbonate ramp)",
+          "sources": [
+            "kaskes2023"
+          ]
+        },
+        {
+          "claim": "The asteroid struck in shallow water",
+          "sources": [
+            "range2022"
+          ]
+        }
+      ],
+      "assessment": "All trace back to gulick2008's seismic reconstruction (not read in full). Consensus: a ramp deepening to the NE, shallow to the S/SW; the ground-zero value is not fixed in the sources read."
+    },
+    {
+      "topic": "Udział ewaporatów i ich los",
+      "positions": [
+        {
+          "claim": "Target sediments 30-50% evaporites; Yaxcopoil-1 block 27% anhydrite; deeper target possibly 49-60%",
+          "sources": [
+            "gulick2019",
+            "artemieva2017"
+          ]
+        },
+        {
+          "claim": "M0077 suevite contains <1% evaporite: either non-linear (more efficient) degassing or preferential export of non-porous evaporite clasts",
+          "sources": [
+            "gulick2019"
+          ]
+        }
+      ],
+      "assessment": "Evaporite fraction 0.3-0.5 is the working range; its fate matters for S release (gas thread), not for impactor kinematics."
+    }
+  ],
+  "openQuestions": [
+    "Ground-zero water depth: no single published value read; gulick2008 full text (seismic paleobathymetry) and ormo2021 (d/H relation applied to Chicxulub) should be read to pin it down.",
+    "unverified lead: Renne et al. 2013 primary numerical values (K-Pg tephra ~66.043 Ma; Haiti tektite age) - full text not accessible; the boundary value is confirmed only via the sprain2015 abstract.",
+    "unverified lead: Clyde, W.C. et al. 2016, Earth Planet. Sci. Lett. 452:272-280, doi:10.1016/j.epsl.2016.07.041 - U-Pb age of the end-Cretaceous extinction (metadata confirmed via Crossref; abstract/values not accessed).",
+    "unverified lead: Le Feuvre, M. & Wieczorek, M.A. 2011, Icarus 214:1-20, doi:10.1016/j.icarus.2011.03.010 - source of the ~20 km/s mean Earth impact speed; cited here only through collins2020.",
+    "unverified lead: Trinquier, A., Birck, J.-L., Allegre, C.J. 2006, Earth Planet. Sci. Lett. 241:780-788, doi:10.1016/j.epsl.2005.11.006 (e54Cr) and Goderis, S. et al. 2013, Geochim. Cosmochim. Acta 120:417-446, doi:10.1016/j.gca.2013.06.010 (PGE) - content used only via desch2022.",
+    "unverified lead: Morgan, J.V., Bralower, T.J., Brugger, J., Wunnemann, K. 2022, Nat. Rev. Earth Environ., doi:10.1038/s43017-022-00283-y - review likely to give consolidated impactor parameters; not accessed.",
+    "unverified lead: Nesvorny, D., Bottke, W.F., Marchi, S. 2021, Icarus 368:114621, doi:10.1016/j.icarus.2021.114621 - share of dark primitive asteroids among K/Pg-scale impactors; abstract not read.",
+    "unverified lead: model set-up of range2022 (impactor size/speed, water depth used in iSALE) - full text not accessible.",
+    "Atmospheric entry duration: no Chicxulub-specific published number found (shuvalov2002 modelled the flight through the atmosphere, number not read). Compute in the simulation: t ~ h0/(v sin(theta)) -> ~6 s for h0 = 100 km, 20 km/s, 60 deg; ~2.5-17 s for h0 = 50-100 km, 12-20 km/s, 30-90 deg.",
+    "Impact time of day: unconstrained by any source.",
+    "Exact approach azimuth within the NE quadrant: collins2020 gives only 'from the northeast'; no fitted azimuth with uncertainty is published in the sources read.",
+    "Impactor macroporosity, shape and rotation: unknown; collins2020 states bulk porosity is undetermined.",
+    "Regional pre-impact Moho depth (christeson2009 Fig. 4) not extracted as a number; 33 km is a model input.",
+    "collins2020 internal inconsistency in impactor density (2630 vs 2650 kg/m3) - negligible for kinematics, note for reproducibility.",
+    "Paleolatitude 27.4 deg is a dipole-formula estimate from gulick2019's inclination; verify with a plate reconstruction (paleogeography thread).",
+    "paquay2008 Os-based K/Pg diameter value not read (full text inaccessible)."
+  ]
+}

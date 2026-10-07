@@ -1,0 +1,2059 @@
+{
+  "thread": "05-sejsmika-cisnienie",
+  "sources": [
+    {
+      "id": "collins2005",
+      "type": "article",
+      "authors": "Collins, G. S.; Melosh, H. J.; Marcus, R. A.",
+      "year": 2005,
+      "title": "Earth Impact Effects Program: A Web-based computer program for calculating the regional environmental consequences of a meteoroid impact on Earth",
+      "container": "Meteoritics & Planetary Science",
+      "volume": "40(6)",
+      "pages": "817-840",
+      "doi": "10.1111/j.1945-5100.2005.tb00157.x",
+      "url": "https://spiral.imperial.ac.uk/bitstreams/8065368c-096c-4787-aab7-cbaf1a7d7277/download",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read (published PDF in Imperial College Spiral repository, hdl 10044/1/11554); Eqs. 40-42, 54-64, Tables 4 and 6 read directly from page images. Metadata matched via Crossref. Wiley landing page returns 403 to automated fetch."
+    },
+    {
+      "id": "schulte2010",
+      "type": "article",
+      "authors": "Schulte, P.; Alegret, L.; Arenillas, I.; Arz, J. A.; Barton, P. J.; Bown, P. R.; Bralower, T. J.; Christeson, G. L.; Claeys, P.; Cockell, C. S.; Collins, G. S.; Deutsch, A.; Goldin, T. J.; Goto, K.; Grajales-Nishimura, J. M.; Grieve, R. A. F.; Gulick, S. P. S.; Johnson, K. R.; Kiessling, W.; Koeberl, C.; Kring, D. A.; MacLeod, K. G.; Matsui, T.; Melosh, J.; Montanari, A.; Morgan, J. V.; Neal, C. R.; Nichols, D. J.; Norris, R. D.; Pierazzo, E.; Ravizza, G.; Rebolledo-Vieyra, M.; Reimold, W. U.; Robin, E.; Salge, T.; Speijer, R. P.; Sweet, A. R.; Urrutia-Fucugauchi, J.; Vajda, V.; Whalen, M. T.; Willumsen, P. S.",
+      "year": 2010,
+      "title": "The Chicxulub Asteroid Impact and Mass Extinction at the Cretaceous-Paleogene Boundary",
+      "container": "Science",
+      "volume": "327(5970)",
+      "pages": "1214-1218",
+      "doi": "10.1126/science.1177265",
+      "url": "https://www3.nd.edu/~cneal/CRN_Papers/Schulte10_Sci_Chicxulub.pdf",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read from co-author (C. R. Neal) hosted PDF; Crossref metadata matched. Statement 'earthquakes (magnitude > 11)' cites ref. 7 = Toon et al. 1997 (Rev. Geophys.), which I could not open."
+    },
+    {
+      "id": "meschede2011",
+      "type": "article",
+      "authors": "Meschede, M. A.; Myhrvold, C. L.; Tromp, J.",
+      "year": 2011,
+      "title": "Antipodal focusing of seismic waves due to large meteorite impacts on Earth",
+      "container": "Geophysical Journal International",
+      "volume": "187(1)",
+      "pages": "529-537",
+      "doi": "10.1111/j.1365-246X.2011.05170.x",
+      "url": "https://academic.oup.com/gji/article/187/1/529/616934",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Journal page (OUP) full text read via fetch; abstract cross-checked via OpenAlex; Crossref metadata matched. Some energy values in the text are rendered as equation graphics and could not be read (noted where relevant). The paper does not state a moment magnitude."
+    },
+    {
+      "id": "richards2015",
+      "type": "article",
+      "authors": "Richards, M. A.; Alvarez, W.; Self, S.; Karlstrom, L.; Renne, P. R.; Manga, M.; Sprain, C. J.; Smit, J.; Vanderkluysen, L.; Gibson, S. A.",
+      "year": 2015,
+      "title": "Triggering of the largest Deccan eruptions by the Chicxulub impact",
+      "container": "Geological Society of America Bulletin",
+      "volume": "127(11-12)",
+      "pages": "1507-1520",
+      "doi": "10.1130/B31167.1",
+      "url": "https://www.osti.gov/servlets/purl/1512141",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Accepted manuscript (DOE/OSTI 1512141) read in full; Crossref metadata matched. Section 'Scaling the Effects of the Chicxulub Impact' used."
+    },
+    {
+      "id": "day2005",
+      "type": "chapter",
+      "authors": "Day, S.; Maslin, M.",
+      "year": 2005,
+      "title": "Linking large impacts, gas hydrates, and carbon isotope excursions through widespread sediment liquefaction and continental slope failure: The example of the K-T boundary event",
+      "container": "Large Meteorite Impacts III (GSA Special Paper 384), eds. Kenkmann, T.; Hörz, F.; Deutsch, A.",
+      "volume": "384",
+      "pages": "239-258",
+      "doi": "10.1130/0-8137-2384-1.239",
+      "url": "https://doi.org/10.1130/0-8137-2384-1.239",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (book-chapter) matched; abstract read via OpenAlex (GSA page returns 403). Page range 239-258 taken from the reference list of depalma2019. Full text NOT read. The OpenAlex abstract renders the magnitude as 'moment magnitude <11'; leveque2024 cite the paper for 'Mw 11' and richards2015 for 'Mw > 10' - the exact symbol could not be checked against the original."
+    },
+    {
+      "id": "depalma2019",
+      "type": "article",
+      "authors": "DePalma, R. A.; Smit, J.; Burnham, D. A.; Kuiper, K.; Manning, P. L.; Oleinik, A.; Larson, P.; Maurrasse, F. J.; Vellekoop, J.; Richards, M. A.; Gurche, L.; Alvarez, W.",
+      "year": 2019,
+      "title": "A seismically induced onshore surge deposit at the KPg boundary, North Dakota",
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "116(17)",
+      "pages": "8190-8199",
+      "doi": "10.1073/pnas.1817407116",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6486721/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read (PMC6486721 via Europe PMC); PMID 30936306; Crossref metadata matched."
+    },
+    {
+      "id": "leveque2024",
+      "type": "article",
+      "authors": "LeVeque, R. J.; DePalma, R. A.; Garrison-Laney, C.; Maurya, S.; Smit, J.; Richards, M. A.",
+      "year": 2024,
+      "title": "Possible Mechanisms for Tsunami-Like Surge Deposits Due To the Chicxulub Impact at the K-Pg Boundary at the Tanis Site, North Dakota",
+      "container": "Journal of Geophysical Research: Solid Earth",
+      "volume": "129(5)",
+      "pages": "e2023JB027643",
+      "doi": "10.1029/2023JB027643",
+      "url": "https://repository.library.noaa.gov/view/noaa/68617",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read (open-access PDF in NOAA Institutional Repository, identical to AGU version incl. Wiley download stamp); Fig. 2 inspected as a rendered page image. Crossref metadata matched. Note: co-authored by DePalma, Smit and Richards (not an independent critique)."
+    },
+    {
+      "id": "during2022",
+      "type": "article",
+      "authors": "During, M. A. D.; Smit, J.; Voeten, D. F. A. E.; Berruyer, C.; Tafforeau, P.; Sanchez, S.; Stein, K. H. W.; Verdegaal-Warmerdam, S. J. A.; van der Lubbe, J. H. J. L.",
+      "year": 2022,
+      "title": "The Mesozoic terminated in boreal spring",
+      "container": "Nature",
+      "volume": "603(7899)",
+      "pages": "91-94",
+      "doi": "10.1038/s41586-022-04446-1",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8891016/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read (PMC8891016 via Europe PMC); Crossref metadata matched. Used only for its description of the Tanis deposit as an impact-induced seiche deposit (adopted from depalma2019, not independently tested)."
+    },
+    {
+      "id": "bondevik2013",
+      "type": "article",
+      "authors": "Bondevik, S.; Gjevik, B.; Sørensen, M. B.",
+      "year": 2013,
+      "title": "Norwegian seiches from the giant 2011 Tohoku earthquake",
+      "container": "Geophysical Research Letters",
+      "volume": "40(13)",
+      "pages": "3374-3378",
+      "doi": "10.1002/grl.50639",
+      "url": "https://doi.org/10.1002/grl.50639",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata matched; abstract read via OpenAlex (Wiley page blocks automated fetch); details also as summarised in leveque2024 Sect. 2. Full text not read."
+    },
+    {
+      "id": "bralower1998",
+      "type": "article",
+      "authors": "Bralower, T. J.; Paull, C. K.; Leckie, R. M.",
+      "year": 1998,
+      "title": "The Cretaceous-Tertiary boundary cocktail: Chicxulub impact triggers margin collapse and extensive sediment gravity flows",
+      "container": "Geology",
+      "volume": "26(4)",
+      "pages": "331-334",
+      "doi": "10.1130/0091-7613(1998)026<0331:TCTBCC>2.3.CO;2",
+      "url": "https://doi.org/10.1130/0091-7613(1998)026<0331:TCTBCC>2.3.CO;2",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata matched; abstract read (GeoScienceWorld abstract text as indexed by OpenAlex). Full text not read."
+    },
+    {
+      "id": "klaus2000",
+      "type": "article",
+      "authors": "Klaus, A.; Norris, R. D.; Kroon, D.; Smit, J.",
+      "year": 2000,
+      "title": "Impact-induced mass wasting at the K-T boundary: Blake Nose, western North Atlantic",
+      "container": "Geology",
+      "volume": "28(4)",
+      "pages": "319-322",
+      "doi": "10.1130/0091-7613(2000)28<319:IMWATK>2.0.CO;2",
+      "url": "https://doi.org/10.1130/0091-7613(2000)28<319:IMWATK>2.0.CO;2",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata matched; abstract read (GeoScienceWorld abstract text as indexed by OpenAlex). Full text not read."
+    },
+    {
+      "id": "sanford2016",
+      "type": "article",
+      "authors": "Sanford, J. C.; Snedden, J. W.; Gulick, S. P. S.",
+      "year": 2016,
+      "title": "The Cretaceous-Paleogene boundary deposit in the Gulf of Mexico: Large-scale oceanic basin response to the Chicxulub impact",
+      "container": "Journal of Geophysical Research: Solid Earth",
+      "volume": "121(3)",
+      "pages": "1240-1261",
+      "doi": "10.1002/2015JB012615",
+      "url": "https://doi.org/10.1002/2015JB012615",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata matched; abstract read via OpenAlex. Full text not read here (see also thread 04-tsunami)."
+    },
+    {
+      "id": "denne2013",
+      "type": "article",
+      "authors": "Denne, R. A.; Scott, E. D.; Eickhoff, D. P.; Kaiser, J. S.; Hill, R. J.; Spaw, J. M.",
+      "year": 2013,
+      "title": "Massive Cretaceous-Paleogene boundary deposit, deep-water Gulf of Mexico: New evidence for widespread Chicxulub-induced slope failure",
+      "container": "Geology",
+      "volume": "41(9)",
+      "pages": "983-986",
+      "doi": "10.1130/G34503.1",
+      "url": "https://doi.org/10.1130/G34503.1",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata matched; abstract read (GeoScienceWorld abstract text as indexed by OpenAlex). Full text not read."
+    },
+    {
+      "id": "byrnes2018",
+      "type": "article",
+      "authors": "Byrnes, J. S.; Karlstrom, L.",
+      "year": 2018,
+      "title": "Anomalous K-Pg-aged seafloor attributed to impact-induced mid-ocean ridge magmatism",
+      "container": "Science Advances",
+      "volume": "4(2)",
+      "pages": "eaao2994",
+      "doi": "10.1126/sciadv.aao2994",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5810608/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read (PMC5810608 via Europe PMC); Crossref metadata matched. Context only (effects beyond 24 h)."
+    },
+    {
+      "id": "khazins2018",
+      "type": "article",
+      "authors": "Khazins, V. M.; Shuvalov, V. V.; Svettsov, V. V.",
+      "year": 2018,
+      "title": "The Seismic Efficiency of Space Body Impacts",
+      "container": "Solar System Research",
+      "volume": "52(6)",
+      "pages": "547-556",
+      "doi": "10.1134/S0038094618060023",
+      "url": "https://doi.org/10.1134/S0038094618060023",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata matched; abstract read via OpenAlex (Springer page requires login). Full text not read."
+    },
+    {
+      "id": "wojcicka2020",
+      "type": "article",
+      "authors": "Wójcicka, N.; Collins, G. S.; Bastow, I. D.; Teanby, N. A.; Miljković, K.; Rajšić, A.; Daubar, I.; Lognonné, P.",
+      "year": 2020,
+      "title": "The Seismic Moment and Seismic Efficiency of Small Impacts on Mars",
+      "container": "Journal of Geophysical Research: Planets",
+      "volume": "125(10)",
+      "pages": "e2020JE006540",
+      "doi": "10.1029/2020JE006540",
+      "url": "https://doi.org/10.1029/2020JE006540",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata matched; abstract read via Semantic Scholar API (open access, CC-BY). Full text not read. Context for scale/target dependence of seismic efficiency only."
+    },
+    {
+      "id": "froment2024",
+      "type": "article",
+      "authors": "Froment, M.; Lognonné, P.; Larmat, C.; Lei, Z.; Rougier, E.; Kawamura, T.",
+      "year": 2024,
+      "title": "Numerical modelling of impact seismic sources using the stress glut theory",
+      "container": "Geophysical Journal International",
+      "volume": "238(1)",
+      "pages": "156-186",
+      "doi": "10.1093/gji/ggae144",
+      "url": "https://doi.org/10.1093/gji/ggae144",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata matched; summary/abstract read via OpenAlex. Full text not read. Context: impact sources are not purely isotropic."
+    },
+    {
+      "id": "dziewonski1981",
+      "type": "article",
+      "authors": "Dziewonski, A. M.; Anderson, D. L.",
+      "year": 1981,
+      "title": "Preliminary reference Earth model",
+      "container": "Physics of the Earth and Planetary Interiors",
+      "volume": "25(4)",
+      "pages": "297-356",
+      "doi": "10.1016/0031-9201(81)90046-7",
+      "url": "https://lweb.cfa.harvard.edu/~lzeng/papers/PREM.pdf",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full scanned PDF read (copy hosted on a Harvard CfA staff page); Table V (pp. 317-328: normal-mode periods, Q and group velocity) read from rendered page images; 'Note added in proof' (group velocities correct for 0S11 and higher) read. Crossref metadata matched."
+    },
+    {
+      "id": "kennett1995",
+      "type": "article",
+      "authors": "Kennett, B. L. N.; Engdahl, E. R.; Buland, R.",
+      "year": 1995,
+      "title": "Constraints on seismic velocities in the Earth from traveltimes",
+      "container": "Geophysical Journal International",
+      "volume": "122(1)",
+      "pages": "108-124",
+      "doi": "10.1111/j.1365-246X.1995.tb03540.x",
+      "url": "https://academic.oup.com/gji/article/122/1/108/577392",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Citation verified on the OUP journal page and Crossref: introduces the ak135 velocity model ('A preferred model, ak135, is proposed...'). Use as the body-wave travel-time model in ObsPy TauP."
+    },
+    {
+      "id": "crotwell1999",
+      "type": "article",
+      "authors": "Crotwell, H. P.; Owens, T. J.; Ritsema, J.",
+      "year": 1999,
+      "title": "The TauP Toolkit: Flexible Seismic Travel-time and Ray-path Utilities",
+      "container": "Seismological Research Letters",
+      "volume": "70(2)",
+      "pages": "154-160",
+      "doi": "10.1785/gssrl.70.2.154",
+      "url": "https://doi.org/10.1785/gssrl.70.2.154",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata and GeoScienceWorld landing data (via OpenAlex) matched. Method paper for the TauP algorithm implemented in obspy.taup."
+    },
+    {
+      "id": "beyreuther2010",
+      "type": "article",
+      "authors": "Beyreuther, M.; Barsch, R.; Krischer, L.; Megies, T.; Behr, Y.; Wassermann, J.",
+      "year": 2010,
+      "title": "ObsPy: A Python Toolbox for Seismology",
+      "container": "Seismological Research Letters",
+      "volume": "81(3)",
+      "pages": "530-533",
+      "doi": "10.1785/gssrl.81.3.530",
+      "url": "https://doi.org/10.1785/gssrl.81.3.530",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata and GeoScienceWorld landing data (via OpenAlex) matched. Software citation for ObsPy (obspy.taup used for the cross-check in the notes, version 1.5.1)."
+    },
+    {
+      "id": "ekstrom2011",
+      "type": "article",
+      "authors": "Ekström, G.",
+      "year": 2011,
+      "title": "A global model of Love and Rayleigh surface wave dispersion and anisotropy, 25-250 s",
+      "container": "Geophysical Journal International",
+      "volume": "187(3)",
+      "pages": "1668-1686",
+      "doi": "10.1111/j.1365-246X.2011.05225.x",
+      "url": "https://academic.oup.com/gji/article/187/3/1668/646770",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "OUP journal page read (via fetch) and abstract via OpenAlex; Crossref metadata matched. Provides the 3-D dispersion model GDM52 (phase and group velocity maps 25-250 s); no global-average group-velocity table, so not used for numbers."
+    },
+    {
+      "id": "matoza2022",
+      "type": "article",
+      "authors": "Matoza, R. S.; Fee, D.; Assink, J. D.; Iezzi, A. M.; Green, D. N.; Kim, K.; Toney, L.; Lecocq, T.; Krishnamoorthy, S.; Lalande, J.-M.; Nishida, K.; Gee, K. L.; Haney, M. M.; Ortiz, H. D.; Brissaud, Q.; Martire, L.; Rolland, L.; Vergados, P.; Nippress, A.; Park, J.; Shani-Kadmiel, S.; Witsil, A.; Arrowsmith, S.; Caudron, C.; Watada, S.; Perttu, A. B.; Taisne, B.; Mialle, P.; Le Pichon, A.; Vergoz, J.; Hupe, P.; Blom, P. S.; Waxler, R.; De Angelis, S.; Snively, J. B.; Ringler, A. T.; Anthony, R. E.; Jolly, A. D.; Kilgour, G.; Averbuch, G.; Ripepe, M.; Ichihara, M.; Arciniega-Ceballos, A.; Astafyeva, E.; Ceranna, L.; Cevuard, S.; Che, I.-Y.; De Negri, R.; Ebeling, C. W.; Evers, L. G.; Franco-Marin, L. E.; Gabrielson, T. B.; Hafner, K.; Harrison, R. G.; Komjathy, A.; Lacanna, G.; Lyons, J.; Macpherson, K. A.; Marchetti, E.; McKee, K. F.; Mellors, R. J.; Mendo-Pérez, G.; Mikesell, T. D.; Munaibari, E.; Oyola-Merced, M.; Park, I.; Pilger, C.; Ramos, C.; Ruiz, M. C.; Sabatini, R.; Schwaiger, H. F.; Tailpied, D.; Talmadge, C.; Vidot, J.; Webster, J.; Wilson, D. C.",
+      "year": 2022,
+      "title": "Atmospheric waves and global seismoacoustic observations of the January 2022 Hunga eruption, Tonga",
+      "container": "Science",
+      "volume": "377(6601)",
+      "pages": "95-100",
+      "doi": "10.1126/science.abo7063",
+      "url": "https://centaur.reading.ac.uk/105147/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Author manuscript (University of Reading CentAUR, 'accepted version', without figures) read in full; Crossref metadata matched. Numbers quoted from the manuscript text; figures not seen."
+    },
+    {
+      "id": "wright2022",
+      "type": "article",
+      "authors": "Wright, C. J.; Hindley, N. P.; Alexander, M. J.; Barlow, M.; Hoffmann, L.; Mitchell, C. N.; Prata, F.; Bouillon, M.; Carstens, J.; Clerbaux, C.; Osprey, S. M.; Powell, N.; Randall, C. E.; Yue, J.",
+      "year": 2022,
+      "title": "Surface-to-space atmospheric waves from Hunga Tonga-Hunga Ha'apai eruption",
+      "container": "Nature",
+      "volume": "609(7928)",
+      "pages": "741-746",
+      "doi": "10.1038/s41586-022-05012-5",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9492537/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read (PMC9492537, CC-BY, via Europe PMC); PMID 35772670; Crossref metadata matched."
+    },
+    {
+      "id": "kubota2022",
+      "type": "article",
+      "authors": "Kubota, T.; Saito, T.; Nishida, K.",
+      "year": 2022,
+      "title": "Global fast-traveling tsunamis driven by atmospheric Lamb waves on the 2022 Tonga eruption",
+      "container": "Science",
+      "volume": "377(6601)",
+      "pages": "91-94",
+      "doi": "10.1126/science.abo4364",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35549307/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "PubMed record (PMID 35549307) and abstract read; Crossref metadata matched. Full text not read (paywalled)."
+    },
+    {
+      "id": "vergoz2022",
+      "type": "article",
+      "authors": "Vergoz, J.; Hupe, P.; Listowski, C.; Le Pichon, A.; Garcés, M. A.; Marchetti, E.; Labazuy, P.; Ceranna, L.; Pilger, C.; Gaebler, P.; Näsholm, S. P.; Brissaud, Q.; Poli, P.; Shapiro, N.; De Negri, R.; Mialle, P.",
+      "year": 2022,
+      "title": "IMS observations of infrasound and acoustic-gravity waves produced by the January 2022 volcanic eruption of Hunga, Tonga: A global analysis",
+      "container": "Earth and Planetary Science Letters",
+      "volume": "591",
+      "pages": "117639",
+      "doi": "10.1016/j.epsl.2022.117639",
+      "url": "https://www.osti.gov/servlets/purl/1877608",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read (open-access PDF via OSTI 1877608, typeset EPSL version); Crossref/OpenAlex metadata matched."
+    },
+    {
+      "id": "amores2022",
+      "type": "article",
+      "authors": "Amores, A.; Monserrat, S.; Marcos, M.; Argüeso, D.; Villalonga, J.; Jordà, G.; Gomis, D.",
+      "year": 2022,
+      "title": "Numerical Simulation of Atmospheric Lamb Waves Generated by the 2022 Hunga-Tonga Volcanic Eruption",
+      "container": "Geophysical Research Letters",
+      "volume": "49(6)",
+      "pages": "e2022GL098240",
+      "doi": "10.1029/2022GL098240",
+      "url": "https://doi.org/10.1029/2022GL098240",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata matched; abstract read via OpenAlex. Full text not read. Cited only for the method idea (2DH long-wave model reproduces Lamb-wave arrival times)."
+    }
+  ],
+  "parameters": [
+    {
+      "id": "seismic.magnitude_literature",
+      "group": "seismic",
+      "label": "Magnituda sejsmiczna Chicxulub (zakres w literaturze)",
+      "value": 10.5,
+      "unit": "",
+      "range": [
+        9.0,
+        11.5
+      ],
+      "certainty": "contested",
+      "method": "scaling: energy-magnitude relations with an assumed seismic efficiency (literature compilation)",
+      "sources": [
+        "collins2005",
+        "richards2015",
+        "depalma2019",
+        "day2005",
+        "schulte2010",
+        "leveque2024"
+      ],
+      "locator": "collins2005 Eq. 40 & Table 6 (M=10.4 for 1.65e24 J); richards2015 sect. 'Scaling the Effects of the Chicxulub Impact' (Mw ~9-11 for k=1e-2..1e-5); depalma2019 Abstract & sect. 'Seismic waves' (Mw ~10-11.5); day2005 Abstract (Mw ~11, rendered '<11'); schulte2010 p. 1215 ('magnitude > 11', citing Toon et al. 1997); leveque2024 Sect. 1-2 (Mw 11 adopted)",
+      "notes": "No value is measured; all are scaling estimates. Magnitude TYPES differ (Gutenberg-Richter energy magnitude in collins2005 vs moment magnitude Mw elsewhere) and richards2015 note the extrapolation 'depends upon the seismic frequency'. depalma2019 cite meschede2011 for Mw 10-11.5, but meschede2011 state no magnitude. Value 10.5 = middle of the cited span, not a published best estimate.",
+      "time": null
+    },
+    {
+      "id": "seismic.magnitude_collins_eq40",
+      "group": "seismic",
+      "label": "Magnituda wg wzoru Collinsa (Eq. 40) dla energii referencyjnej 4,184e23 J",
+      "value": 9.96,
+      "unit": "",
+      "range": [
+        8.87,
+        11.03
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: M = 0.67*log10(E) - 5.87 (E = impactor kinetic energy in J, k=1e-4 built in); E_ref = 4.184e23 J (1e8 Mt TNT)",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Eq. 40; Table 6",
+      "notes": "Range = E from 1e23 to 1.65e24 J (9.54-10.36) widened by +/-0.67 for k = 1e-5..1e-3. Eq. 40 is Gutenberg-Richter log10(Es[J]) = 1.5M + 4.8 with Es = 1e-4 E. Recompute with the energy adopted by the impactor thread: 01-impaktor energy.kinetic_literature = 6e23 J -> M = 10.06; tsunami thread (Range 2022) 2.7e23 J -> M = 9.83.",
+      "time": null
+    },
+    {
+      "id": "seismic.efficiency",
+      "group": "seismic",
+      "label": "Sprawność sejsmiczna (ułamek energii kinetycznej -> fale sejsmiczne)",
+      "value": 0.0001,
+      "unit": "",
+      "range": [
+        1e-05,
+        0.001
+      ],
+      "certainty": "contested",
+      "method": "measured (lab/explosion analogues) + model:khazins2018, model:meschede2011",
+      "sources": [
+        "collins2005",
+        "meschede2011",
+        "khazins2018",
+        "richards2015",
+        "wojcicka2020"
+      ],
+      "locator": "collins2005 p. 827 'Seismic effects' (1e-4, range 1e-5-1e-3 after Schultz & Gault 1975); meschede2011 source section (k~1e-4 default; 1e-4..1e-5 per Shishkin 2007); khazins2018 Abstract (~1e-3 for impacts, ~1e-5 for airbursts); richards2015 'Scaling...' (1e-2..1e-5); wojcicka2020 Abstract (~1e-6, small Mars impacts)",
+      "notes": "Order-of-magnitude uncertainty that maps to +/-0.67 magnitude units. Values for small, low-velocity or porous-target impacts (wojcicka2020) are not directly transferable to Chicxulub. Primary sources Schultz & Gault (1975) and Shishkin (2007) were not opened by me (see openQuestions).",
+      "time": null
+    },
+    {
+      "id": "seismic.radiated_energy",
+      "group": "seismic",
+      "label": "Energia wypromieniowana jako fale sejsmiczne (model referencyjny)",
+      "value": 1e+19,
+      "unit": "J",
+      "range": [
+        1e+18,
+        1e+20
+      ],
+      "certainty": "extrapolation",
+      "method": "model:meschede2011 (source time function tau vs. efficiency)",
+      "sources": [
+        "meschede2011"
+      ],
+      "locator": "Source model section: tau = 58 s 'corresponds in a crustal environment to an energy of [~1e19] J and k ~1e-4'; tau 20-200 s -> 1e18-1e20 J",
+      "notes": "The default energy value is printed as an equation graphic I could not read; ~1e19 J is consistent with k = 1e-4 times the ~1e23 J kinetic energy stated in the paper. Model input momentum dp = 3e19 N s (after Boslough et al. 1996).",
+      "time": null
+    },
+    {
+      "id": "seismic.source_half_duration",
+      "group": "seismic",
+      "label": "Półokres trwania źródła sejsmicznego (funkcja czasowa źródła)",
+      "value": 58,
+      "unit": "s",
+      "range": [
+        19,
+        200
+      ],
+      "certainty": "extrapolation",
+      "method": "model:meschede2011; model:leveque2024 (half-duration 60 s)",
+      "sources": [
+        "meschede2011",
+        "leveque2024"
+      ],
+      "locator": "meschede2011 source section (tau=58 s default; 19 s for k~4e-3; 20-200 s range); leveque2024 Sect. 2 (half-duration 60 s, depth 10 km)",
+      "notes": "leveque2024 conclude that matching the Tanis surge would require an effective source process time of 'many minutes' (crater rebound), i.e. longer than this default - see disagreements.",
+      "time": null
+    },
+    {
+      "id": "seismic.crater_oscillation_period",
+      "group": "seismic",
+      "label": "Okres oscylacji krateru (centralne wypiętrzenie) jako źródło fal długookresowych",
+      "value": 300,
+      "unit": "s",
+      "range": [
+        200,
+        400
+      ],
+      "certainty": "extrapolation",
+      "method": "model: hydrocode crater collapse, as reported by leveque2024 (secondary citation of Collins et al. 2020 and Range et al. 2022)",
+      "sources": [
+        "leveque2024"
+      ],
+      "locator": "Sect. 2, paragraph before Fig. 2",
+      "notes": "Secondary citation - the underlying hydrocode papers were not opened in this thread. Value 300 s = middle of the quoted 200-400 s.",
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_group_velocity",
+      "group": "seismic",
+      "label": "Prędkość grupowa fali Rayleigha (mod podstawowy, 60-310 s)",
+      "value": 3.65,
+      "unit": "km/s",
+      "range": [
+        3.568,
+        3.837
+      ],
+      "certainty": "extrapolation",
+      "method": "model:dziewonski1981 (PREM anisotropic; group velocity of fundamental spheroidal modes 0S_l)",
+      "sources": [
+        "dziewonski1981"
+      ],
+      "locator": "Table V, pp. 317-318: 0S24 (306 s) 3.758; 0S32 (250 s) 3.578; 0S35-36 (235-230 s) 3.568; 0S60 (153 s) 3.660; 0S100 (98 s) 3.758; 0S165 (61 s) 3.837",
+      "notes": "Present-day 1-D reference Earth; values for 0S11 and higher are confirmed correct by the 'Note added in proof'. Lateral heterogeneity changes path averages by a few per cent (3-D model: ekstrom2011). 3.65 km/s is a representative value for 100-250 s; dispersion means long-period (~300 s) energy arrives first, the Airy phase (~230 s, 3.57 km/s) last. Applying to 66 Ma is an extrapolation.",
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_group_velocity_min",
+      "group": "seismic",
+      "label": "Minimalna prędkość grupowa fali Rayleigha (faza Airy'ego)",
+      "value": 3.568,
+      "unit": "km/s",
+      "range": [
+        3.568,
+        3.57
+      ],
+      "certainty": "extrapolation",
+      "method": "model:dziewonski1981",
+      "sources": [
+        "dziewonski1981"
+      ],
+      "locator": "Table V p. 317: 0S34-0S36 (240-230 s)",
+      "notes": "Marks the tail of the R wave train (energy piles up near the group-velocity minimum).",
+      "time": null
+    },
+    {
+      "id": "seismic.love_group_velocity",
+      "group": "seismic",
+      "label": "Prędkość grupowa fali Love'a (mod podstawowy, 140-360 s)",
+      "value": 4.385,
+      "unit": "km/s",
+      "range": [
+        4.381,
+        4.462
+      ],
+      "certainty": "extrapolation",
+      "method": "model:dziewonski1981 (fundamental toroidal modes 0T_l)",
+      "sources": [
+        "dziewonski1981"
+      ],
+      "locator": "Table V p. 328: 0T20 (360 s) 4.462; 0T30 (258 s) 4.388; 0T39 (205 s) 4.381 (minimum); 0T59 (142 s) 4.385",
+      "notes": "Love waves (G1, G2...) travel ~20% faster than Rayleigh waves and arrive first.",
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_circuit_time",
+      "group": "seismic",
+      "label": "Czas pełnego okrążenia Ziemi przez falę Rayleigha",
+      "value": 10967,
+      "unit": "s",
+      "range": [
+        10433,
+        11219
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: 2*pi*6371 km / U_R (U_R = 3.65 km/s; range 3.837-3.568 km/s)",
+      "sources": [
+        "dziewonski1981"
+      ],
+      "locator": "derived from Table V",
+      "notes": "~3.05 h (2.90-3.12 h). R(n+2) = R(n) + one circuit.",
+      "time": null
+    },
+    {
+      "id": "seismic.love_circuit_time",
+      "group": "seismic",
+      "label": "Czas pełnego okrążenia Ziemi przez falę Love'a",
+      "value": 9129,
+      "unit": "s",
+      "range": [
+        8971,
+        9137
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: 2*pi*6371 km / U_L (4.385; range 4.462-4.381 km/s)",
+      "sources": [
+        "dziewonski1981"
+      ],
+      "locator": "derived from Table V",
+      "notes": "~2.54 h.",
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_antipode_time",
+      "group": "seismic",
+      "label": "Czas dotarcia fali R1 do antypodów Chicxulub",
+      "value": 5484,
+      "unit": "s",
+      "range": [
+        5216,
+        5610
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: 20015 km / U_R",
+      "sources": [
+        "dziewonski1981"
+      ],
+      "locator": "derived from Table V",
+      "notes": "~1.52 h. Strong focusing at the antipode (see seismic.antipode_peak_displacement).",
+      "time": {
+        "t": 5484,
+        "range": [
+          5216,
+          5610
+        ]
+      }
+    },
+    {
+      "id": "seismic.love_antipode_time",
+      "group": "seismic",
+      "label": "Czas dotarcia fali G1 (Love) do antypodów",
+      "value": 4564,
+      "unit": "s",
+      "range": [
+        4486,
+        4569
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: 20015 km / U_L",
+      "sources": [
+        "dziewonski1981"
+      ],
+      "locator": "derived from Table V",
+      "notes": "~1.27 h.",
+      "time": {
+        "t": 4564,
+        "range": [
+          4486,
+          4569
+        ]
+      }
+    },
+    {
+      "id": "seismic.rayleigh_orbits_24h",
+      "group": "seismic",
+      "label": "Liczba okrążeń Ziemi przez fale Rayleigha w ciągu 24 h",
+      "value": 7.9,
+      "unit": "",
+      "range": [
+        7.7,
+        8.3
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: 86400 s / circuit time",
+      "sources": [
+        "dziewonski1981"
+      ],
+      "locator": "derived",
+      "notes": "A fixed station sees passages R1, R2, ... up to about R16 within 24 h (two passages per circuit: minor and major arc); detectability limited by attenuation (see amp_factor parameters).",
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_Q_250s",
+      "group": "seismic",
+      "label": "Dobroć Q fali Rayleigha przy okresie ~250 s",
+      "value": 176.4,
+      "unit": "",
+      "range": [
+        168.2,
+        180.0
+      ],
+      "certainty": "extrapolation",
+      "method": "model:dziewonski1981 (Q COM); observed Q 180+/-5 for 0S32",
+      "sources": [
+        "dziewonski1981"
+      ],
+      "locator": "Table V p. 317: 0S32 (250 s) Q obs 180.0, Q com 176.4; 0S35 Q com 168.2",
+      "notes": "Used for per-circuit amplitude decay.",
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_Q_100s",
+      "group": "seismic",
+      "label": "Dobroć Q fali Rayleigha przy okresie ~100 s",
+      "value": 118.0,
+      "unit": "",
+      "range": [
+        118.0,
+        128.0
+      ],
+      "certainty": "extrapolation",
+      "method": "model:dziewonski1981 (Q COM)",
+      "sources": [
+        "dziewonski1981"
+      ],
+      "locator": "Table V p. 318: 0S100 (98 s) 118.0; 0S90 (107 s) 119.1; 0S150 (67 s) 128.0",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_amp_factor_per_circuit_250s",
+      "group": "seismic",
+      "label": "Spadek amplitudy fali Rayleigha (250 s) na jedno okrążenie (tłumienie)",
+      "value": 0.45,
+      "unit": "",
+      "range": [
+        0.41,
+        0.45
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: exp(-pi*f*t_circuit/Q) with PREM Q and U (0S32-0S35)",
+      "sources": [
+        "dziewonski1981"
+      ],
+      "locator": "derived from Table V",
+      "notes": "Anelastic attenuation only; geometric spreading on a sphere ~1/sqrt(sin(Delta)) must be applied in addition (antipodal/epicentral focusing). After 24 h the 250-s amplitude is reduced to ~0.1-0.2% by attenuation.",
+      "time": null
+    },
+    {
+      "id": "seismic.rayleigh_amp_factor_per_circuit_100s",
+      "group": "seismic",
+      "label": "Spadek amplitudy fali Rayleigha (~100 s) na jedno okrążenie",
+      "value": 0.055,
+      "unit": "",
+      "range": [
+        0.021,
+        0.072
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: exp(-pi*f*t_circuit/Q) (0S90-0S150)",
+      "sources": [
+        "dziewonski1981"
+      ],
+      "locator": "derived from Table V",
+      "notes": "Shorter periods die out after 1-2 circuits; the late orbits (R5+) are dominated by periods >~200 s.",
+      "time": null
+    },
+    {
+      "id": "seismic.love_amp_factor_per_circuit_200s",
+      "group": "seismic",
+      "label": "Spadek amplitudy fali Love'a (~200 s) na jedno okrążenie",
+      "value": 0.34,
+      "unit": "",
+      "range": [
+        0.21,
+        0.42
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: exp(-pi*f*t_circuit/Q) (0T30, 0T40, 0T59)",
+      "sources": [
+        "dziewonski1981"
+      ],
+      "locator": "derived from Table V",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "seismic.tanis_distance",
+      "group": "seismic",
+      "label": "Paleo-odległość Chicxulub-Tanis (Dakota Północna)",
+      "value": 3050,
+      "unit": "km",
+      "range": [
+        3000,
+        3100
+      ],
+      "certainty": "extrapolation",
+      "method": "model: paleogeographic reconstruction (as stated by authors)",
+      "sources": [
+        "depalma2019",
+        "leveque2024"
+      ],
+      "locator": "depalma2019 sect. 'Emplacement Mechanism' (~3,050 km); leveque2024 Fig. 2 caption (3,100 km)",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "seismic.p_arrival_tanis",
+      "group": "seismic",
+      "label": "Czas nadejścia fali P do Tanis",
+      "value": 360,
+      "unit": "s",
+      "range": [
+        347,
+        360
+      ],
+      "certainty": "extrapolation",
+      "method": "model: travel times (depalma2019); cross-check ak135/TauP 5.79 min at 27.4 deg",
+      "sources": [
+        "depalma2019",
+        "kennett1995",
+        "crotwell1999"
+      ],
+      "locator": "depalma2019 sect. 'Emplacement Mechanism' (P, S, Rayleigh at 6, 10 and 13 min)",
+      "notes": "Cross-check computed in this thread with obspy.taup, model ak135, source depth 1 km.",
+      "time": {
+        "t": 360,
+        "range": [
+          347,
+          360
+        ]
+      }
+    },
+    {
+      "id": "seismic.s_arrival_tanis",
+      "group": "seismic",
+      "label": "Czas nadejścia fali S do Tanis",
+      "value": 600,
+      "unit": "s",
+      "range": [
+        600,
+        628
+      ],
+      "certainty": "extrapolation",
+      "method": "model: travel times (depalma2019); cross-check ak135/TauP 10.47 min",
+      "sources": [
+        "depalma2019",
+        "kennett1995",
+        "crotwell1999"
+      ],
+      "locator": "depalma2019 sect. 'Emplacement Mechanism'",
+      "notes": "",
+      "time": {
+        "t": 600,
+        "range": [
+          600,
+          628
+        ]
+      }
+    },
+    {
+      "id": "seismic.rayleigh_arrival_tanis",
+      "group": "seismic",
+      "label": "Czas nadejścia fali Rayleigha do Tanis",
+      "value": 780,
+      "unit": "s",
+      "range": [
+        780,
+        855
+      ],
+      "certainty": "extrapolation",
+      "method": "model: depalma2019 (13 min); scaling 3050 km / 3.837-3.568 km/s",
+      "sources": [
+        "depalma2019",
+        "dziewonski1981"
+      ],
+      "locator": "depalma2019 sect. 'Emplacement Mechanism'; leveque2024 Fig. 2 (largest radial motion ~750-900 s at 3,100 km)",
+      "notes": "",
+      "time": {
+        "t": 780,
+        "range": [
+          780,
+          900
+        ]
+      }
+    },
+    {
+      "id": "seismic.peak_displacement_3100km",
+      "group": "seismic",
+      "label": "Szczytowe przemieszczenie gruntu (składowa radialna/pionowa) w odl. 3100 km, Mw 11",
+      "value": 19,
+      "unit": "m",
+      "range": [
+        18,
+        19
+      ],
+      "certainty": "extrapolation",
+      "method": "model:leveque2024 (normal-mode summation, PREMQL6, radial point source Mw 11, half-duration 60 s, 40-500 s band)",
+      "sources": [
+        "leveque2024"
+      ],
+      "locator": "Fig. 2 (value read off the plotted curve, approx. +/-19 m at ~780 and ~890 s)",
+      "notes": "Read from a figure, accuracy ~+/-1 m. Long-period band only (no high-frequency shaking). Implies a slow 'heave' of tens of metres over minutes rather than violent shaking at teleseismic distance.",
+      "time": {
+        "t": 780,
+        "range": [
+          750,
+          900
+        ]
+      }
+    },
+    {
+      "id": "seismic.peak_velocity_3100km",
+      "group": "seismic",
+      "label": "Szczytowa prędkość gruntu w odl. 3100 km (pasmo 40-500 s), Mw 11",
+      "value": 1.2,
+      "unit": "m/s",
+      "range": [
+        1.0,
+        1.3
+      ],
+      "certainty": "extrapolation",
+      "method": "model:leveque2024",
+      "sources": [
+        "leveque2024"
+      ],
+      "locator": "Fig. 2 (read off plot)",
+      "notes": "",
+      "time": {
+        "t": 760,
+        "range": [
+          750,
+          900
+        ]
+      }
+    },
+    {
+      "id": "seismic.peak_acceleration_3100km",
+      "group": "seismic",
+      "label": "Szczytowe przyspieszenie gruntu w odl. 3100 km (pasmo 40-500 s), Mw 11",
+      "value": 0.1,
+      "unit": "m/s²",
+      "range": [
+        0.09,
+        0.1
+      ],
+      "certainty": "extrapolation",
+      "method": "model:leveque2024",
+      "sources": [
+        "leveque2024"
+      ],
+      "locator": "Fig. 2 (read off plot)",
+      "notes": "~0.01 g in the long-period band; high-frequency accelerations are not represented by this model.",
+      "time": {
+        "t": 780,
+        "range": [
+          750,
+          900
+        ]
+      }
+    },
+    {
+      "id": "seismic.antipode_peak_displacement",
+      "group": "seismic",
+      "label": "Szczytowe przemieszczenie gruntu w antypodach",
+      "value": 4,
+      "unit": "m",
+      "range": [
+        4,
+        15
+      ],
+      "certainty": "extrapolation",
+      "method": "model:meschede2011 (spectral-element; 3-D Earth ~4 m vs spherically symmetric point source 15 m)",
+      "sources": [
+        "meschede2011"
+      ],
+      "locator": "Abstract; Results",
+      "notes": "The 3-D heterogeneous, elliptical Earth with a distributed source reduces antipodal focusing by ~4x. Time of maximum not stated in the paper; surface-wave convergence expected at ~1.3-1.5 h (seismic.rayleigh_antipode_time).",
+      "time": {
+        "t": 5484,
+        "range": [
+          4486,
+          5610
+        ]
+      }
+    },
+    {
+      "id": "seismic.antipode_peak_stress",
+      "group": "seismic",
+      "label": "Szczytowe naprężenie dynamiczne w antypodach",
+      "value": 1500000.0,
+      "unit": "Pa",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:meschede2011",
+      "sources": [
+        "meschede2011"
+      ],
+      "locator": "Abstract ('in excess of 15 bar'; strain 2e-5; >50 bar in mantle 'chimneys')",
+      "notes": "Lower bound ('in excess of').",
+      "time": null
+    },
+    {
+      "id": "seismic.global_peak_stress",
+      "group": "seismic",
+      "label": "Szczytowe naprężenia dynamiczne w skorupie/płaszczu górnym (globalnie)",
+      "value": 300000.0,
+      "unit": "Pa",
+      "range": [
+        200000.0,
+        400000.0
+      ],
+      "certainty": "extrapolation",
+      "method": "model:meschede2011 as summarised by richards2015 (k = 1e-4)",
+      "sources": [
+        "richards2015",
+        "meschede2011"
+      ],
+      "locator": "richards2015 'Scaling the Effects...' ('2-4 bars')",
+      "notes": "richards2015 also print '0.1-0.2 strains', evidently a typo (meschede2011 give strains ~2e-5).",
+      "time": null
+    },
+    {
+      "id": "seismic.energy_density_upper_mantle",
+      "group": "seismic",
+      "label": "Gęstość energii sejsmicznej w górnych ~200 km płaszcza",
+      "value": 0.3,
+      "unit": "J/m³",
+      "range": [
+        0.1,
+        1.0
+      ],
+      "certainty": "extrapolation",
+      "method": "model:richards2015 (scaled from meschede2011)",
+      "sources": [
+        "richards2015"
+      ],
+      "locator": "Abstract; Fig. 4",
+      "notes": "Value = geometric middle of the stated order-of-magnitude range. Compared with historical thresholds for triggered eruptions (~0.1-1 J/m3).",
+      "time": null
+    },
+    {
+      "id": "seismic.liquefaction_max_distance_tectonic",
+      "group": "seismic",
+      "label": "Maks. odległość upłynnienia gruntu dla największych trzęsień tektonicznych (analog)",
+      "value": 500,
+      "unit": "km",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured (compilation of historical earthquakes, as stated by richards2015)",
+      "sources": [
+        "richards2015"
+      ],
+      "locator": "'Scaling the Effects...' paragraph on margin collapse",
+      "notes": "Secondary statement; used by richards2015 and day2005 to argue that K-Pg margin failures >1000 km away require an equivalent Mw > 10 source.",
+      "time": null
+    },
+    {
+      "id": "seismic.margin_failure_distance_blake_nose",
+      "group": "seismic",
+      "label": "Odległość od Chicxulub osuwisk podmorskich na Blake Nose (Atlantyk)",
+      "value": 1600,
+      "unit": "km",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured (ODP Sites 1049, 1050, 1052 + seismic reflection)",
+      "sources": [
+        "klaus2000"
+      ],
+      "locator": "Abstract ('>1600 km')",
+      "notes": "Lower bound. Mass wasting across ~55 km of the depth transect, water depths 1300-2600 m. Attribution to impact seismicity is the authors' interpretation (tsunami not excluded by the abstract).",
+      "time": null
+    },
+    {
+      "id": "seismic.gulf_kpg_deposit_volume",
+      "group": "seismic",
+      "label": "Objętość osadów przemieszczonych w Zatoce Meksykańskiej na granicy K-Pg",
+      "value": 198000.0,
+      "unit": "km³",
+      "range": [
+        105000.0,
+        198000.0
+      ],
+      "certainty": "fact",
+      "method": "measured (mapping on borehole and seismic data)",
+      "sources": [
+        "sanford2016"
+      ],
+      "locator": "Abstract (1.05e5 km3 northern Gulf; >1.98e5 km3 gulf-wide)",
+      "notes": "Mixed seismic + megatsunami origin according to the authors; deposition 'within days'. Lower bound for gulf-wide value ('over').",
+      "time": null
+    },
+    {
+      "id": "seismic.gulf_kpg_deposit_thickness_basin",
+      "group": "seismic",
+      "label": "Miąższość pokrywy K-Pg (dolny skłon i dno basenu Zatoki)",
+      "value": 145,
+      "unit": "m",
+      "range": [
+        90,
+        200
+      ],
+      "certainty": "fact",
+      "method": "measured (31 industry wells + seismic)",
+      "sources": [
+        "denne2013"
+      ],
+      "locator": "Abstract (10-20 m upper slope; 90-200 m lower slope and basin floor)",
+      "notes": "Value = middle of the range.",
+      "time": null
+    },
+    {
+      "id": "seismic.tanis_surge_height",
+      "group": "seismic",
+      "label": "Wysokość fal przyboju (surge) zapisanych w Tanis",
+      "value": 10,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured (deposit geometry; interpreted runup)",
+      "sources": [
+        "depalma2019",
+        "leveque2024"
+      ],
+      "locator": "depalma2019 'Emplacement mechanism' ('at least 10 m'); leveque2024 Abstract & PLS (two ~10 m surges)",
+      "notes": "Lower bound.",
+      "time": null
+    },
+    {
+      "id": "seismic.tanis_surge_timing",
+      "group": "seismic",
+      "label": "Czas fal przyboju w Tanis po uderzeniu",
+      "value": 3600,
+      "unit": "s",
+      "range": [
+        780,
+        7200
+      ],
+      "certainty": "contested",
+      "method": "measured (ejecta spherules embedded in deposit) + model (ballistic trajectories)",
+      "sources": [
+        "depalma2019",
+        "leveque2024"
+      ],
+      "locator": "depalma2019 'Chronology of the Deposit' (~13 min to 2 h; spherules from ~15 min; most within 1-2 h); leveque2024 Abstract (within ~1-2 h)",
+      "notes": "Timing is bounded by spherule arrival models, which are themselves debated (leveque2024 cite a contrasting view by Artemieva & Morgan 2020).",
+      "time": {
+        "t": 3600,
+        "range": [
+          780,
+          7200
+        ]
+      }
+    },
+    {
+      "id": "seismic.tanis_seiche_amplitude_inferred",
+      "group": "seismic",
+      "label": "Amplituda sejsz wywołanych sejsmicznie (wnioskowanie DePalma 2019)",
+      "value": 30,
+      "unit": "m",
+      "range": [
+        10,
+        100
+      ],
+      "certainty": "speculation",
+      "method": "scaling: extrapolation from Tohoku-2011 fjord seiches using magnitude (depalma2019)",
+      "sources": [
+        "depalma2019",
+        "leveque2024"
+      ],
+      "locator": "depalma2019 sect. 'Seismic waves' ('of the order 10 to 100 m'); leveque2024 Sect. 1 (resonant seiching 'cannot be scaled up directly from earthquakes to impacts')",
+      "notes": "Value = log-middle of 10-100 m. The scaling argument is disputed by later work of the same group; treat as speculative.",
+      "time": null
+    },
+    {
+      "id": "seismic.tohoku_norway_seiche_amplitude",
+      "group": "seismic",
+      "label": "Analogia: sejsze w fiordach Norwegii po Tohoku 2011 (8000 km)",
+      "value": 1.25,
+      "unit": "m",
+      "range": [
+        1.0,
+        1.5
+      ],
+      "certainty": "fact",
+      "method": "measured (eyewitness video, modelled with shallow-water model)",
+      "sources": [
+        "bondevik2013"
+      ],
+      "locator": "Abstract (trough-to-peak 1.0-1.5 m; periods 67-100 s; began ~30 min after origin, during S-wave passage)",
+      "notes": "Observational analogue for teleseismic seiches (Mw ~9 source; leveque2024 quote Mw 9, depalma2019 Mw ~9.2).",
+      "time": null
+    },
+    {
+      "id": "airblast.overpressure_200km",
+      "group": "airblast",
+      "label": "Szczytowe nadciśnienie fali uderzeniowej w powietrzu, 200 km",
+      "value": 4640000.0,
+      "unit": "Pa",
+      "range": [
+        317000.0,
+        13100000.0
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: Collins 2005 Eq. 54/57 (nuclear surface-burst yield scaling)",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Eqs. 54, 57; caveat p. 831",
+      "notes": "Collins 2005 Eq. 54+57 (1-kt surface-burst fit, px=75 kPa, rx=290 m, r1=r/E_kt^(1/3)) evaluated for E_ref = 4.184e23 J (1e8 Mt). Range: lower = E 1e23 J divided by 5 (authors: for >1e4 Mt the model 'probably overestimates the blast wave effects by a factor of 2-5'), upper = E 1.65e24 J. Uniform-density, flat-Earth assumptions fail at this scale (authors' caveat). Collins 2005 Table 6 values correspond to ~0.5*E in Eq. 54 (not explained in the paper; see thread 07). For the impactor-thread energy 6e23 J: p = 780/175/44/21 kPa and u = 663/261/88/46 m/s at 500/1000/2000/3000 km. At 200 km the site is inside the fireball radius (Collins Table 6: 236 km for 1.65e24 J) and within the ejecta-curtain/plume region, so a separate 'air blast' value has little physical meaning.",
+      "time": {
+        "t": 45,
+        "range": [
+          27,
+          606
+        ]
+      }
+    },
+    {
+      "id": "airblast.wind_200km",
+      "group": "airblast",
+      "label": "Maksymalna prędkość wiatru za frontem fali uderzeniowej, 200 km",
+      "value": 1713,
+      "unit": "m/s",
+      "range": [
+        388,
+        2904
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: Collins 2005 Eq. 59 (Rankine-Hugoniot, P0=1e5 Pa, c0=330 m/s) applied to airblast.overpressure",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Eq. 59",
+      "notes": "Inherits all caveats of the overpressure estimate. Thresholds quoted by Collins: >40 m/s ~30% of trees blown down; >62 m/s up to 90%.",
+      "time": {
+        "t": 45,
+        "range": [
+          27,
+          606
+        ]
+      }
+    },
+    {
+      "id": "airblast.overpressure_500km",
+      "group": "airblast",
+      "label": "Szczytowe nadciśnienie fali uderzeniowej w powietrzu, 500 km",
+      "value": 599000.0,
+      "unit": "Pa",
+      "range": [
+        42900.0,
+        1650000.0
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: Collins 2005 Eq. 54/57 (nuclear surface-burst yield scaling)",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Eqs. 54, 57; caveat p. 831",
+      "notes": "Collins 2005 Eq. 54+57 (1-kt surface-burst fit, px=75 kPa, rx=290 m, r1=r/E_kt^(1/3)) evaluated for E_ref = 4.184e23 J (1e8 Mt). Range: lower = E 1e23 J divided by 5 (authors: for >1e4 Mt the model 'probably overestimates the blast wave effects by a factor of 2-5'), upper = E 1.65e24 J. Uniform-density, flat-Earth assumptions fail at this scale (authors' caveat). Collins 2005 Table 6 values correspond to ~0.5*E in Eq. 54 (not explained in the paper; see thread 07). For the impactor-thread energy 6e23 J: p = 780/175/44/21 kPa and u = 663/261/88/46 m/s at 500/1000/2000/3000 km. ",
+      "time": {
+        "t": 302,
+        "range": [
+          186,
+          1515
+        ]
+      }
+    },
+    {
+      "id": "airblast.wind_500km",
+      "group": "airblast",
+      "label": "Maksymalna prędkość wiatru za frontem fali uderzeniowej, 500 km",
+      "value": 570,
+      "unit": "m/s",
+      "range": [
+        86,
+        1000
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: Collins 2005 Eq. 59 (Rankine-Hugoniot, P0=1e5 Pa, c0=330 m/s) applied to airblast.overpressure",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Eq. 59",
+      "notes": "Inherits all caveats of the overpressure estimate. Thresholds quoted by Collins: >40 m/s ~30% of trees blown down; >62 m/s up to 90%.",
+      "time": {
+        "t": 302,
+        "range": [
+          186,
+          1515
+        ]
+      }
+    },
+    {
+      "id": "airblast.overpressure_1000km",
+      "group": "airblast",
+      "label": "Szczytowe nadciśnienie fali uderzeniowej w powietrzu, 1000 km",
+      "value": 137000.0,
+      "unit": "Pa",
+      "range": [
+        10600.0,
+        359000.0
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: Collins 2005 Eq. 54/57 (nuclear surface-burst yield scaling)",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Eqs. 54, 57; caveat p. 831",
+      "notes": "Collins 2005 Eq. 54+57 (1-kt surface-burst fit, px=75 kPa, rx=290 m, r1=r/E_kt^(1/3)) evaluated for E_ref = 4.184e23 J (1e8 Mt). Range: lower = E 1e23 J divided by 5 (authors: for >1e4 Mt the model 'probably overestimates the blast wave effects by a factor of 2-5'), upper = E 1.65e24 J. Uniform-density, flat-Earth assumptions fail at this scale (authors' caveat). Collins 2005 Table 6 values correspond to ~0.5*E in Eq. 54 (not explained in the paper; see thread 07). For the impactor-thread energy 6e23 J: p = 780/175/44/21 kPa and u = 663/261/88/46 m/s at 500/1000/2000/3000 km. ",
+      "time": {
+        "t": 1146,
+        "range": [
+          764,
+          3030
+        ]
+      }
+    },
+    {
+      "id": "airblast.wind_1000km",
+      "group": "airblast",
+      "label": "Maksymalna prędkość wiatru za frontem fali uderzeniowej, 1000 km",
+      "value": 219,
+      "unit": "m/s",
+      "range": [
+        24,
+        419
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: Collins 2005 Eq. 59 (Rankine-Hugoniot, P0=1e5 Pa, c0=330 m/s) applied to airblast.overpressure",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Eq. 59",
+      "notes": "Inherits all caveats of the overpressure estimate. Thresholds quoted by Collins: >40 m/s ~30% of trees blown down; >62 m/s up to 90%.",
+      "time": {
+        "t": 1146,
+        "range": [
+          764,
+          3030
+        ]
+      }
+    },
+    {
+      "id": "airblast.overpressure_2000km",
+      "group": "airblast",
+      "label": "Szczytowe nadciśnienie fali uderzeniowej w powietrzu, 2000 km",
+      "value": 35200.0,
+      "unit": "Pa",
+      "range": [
+        3080.0,
+        84700.0
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: Collins 2005 Eq. 54/57 (nuclear surface-burst yield scaling)",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Eqs. 54, 57; caveat p. 831",
+      "notes": "Collins 2005 Eq. 54+57 (1-kt surface-burst fit, px=75 kPa, rx=290 m, r1=r/E_kt^(1/3)) evaluated for E_ref = 4.184e23 J (1e8 Mt). Range: lower = E 1e23 J divided by 5 (authors: for >1e4 Mt the model 'probably overestimates the blast wave effects by a factor of 2-5'), upper = E 1.65e24 J. Uniform-density, flat-Earth assumptions fail at this scale (authors' caveat). Collins 2005 Table 6 values correspond to ~0.5*E in Eq. 54 (not explained in the paper; see thread 07). For the impactor-thread energy 6e23 J: p = 780/175/44/21 kPa and u = 663/261/88/46 m/s at 500/1000/2000/3000 km. Beyond ~1000 km the energy is increasingly guided by the stratified atmosphere (Lamb + acoustic modes, ~r^-1/2 spreading per vergoz2022) whereas Eq. 54 decays ~1/r; the flat-Earth fit may under- or over-estimate here.",
+      "time": {
+        "t": 3570,
+        "range": [
+          2730,
+          6061
+        ]
+      }
+    },
+    {
+      "id": "airblast.wind_2000km",
+      "group": "airblast",
+      "label": "Maksymalna prędkość wiatru za frontem fali uderzeniowej, 2000 km",
+      "value": 73,
+      "unit": "m/s",
+      "range": [
+        7,
+        152
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: Collins 2005 Eq. 59 (Rankine-Hugoniot, P0=1e5 Pa, c0=330 m/s) applied to airblast.overpressure",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Eq. 59",
+      "notes": "Inherits all caveats of the overpressure estimate. Thresholds quoted by Collins: >40 m/s ~30% of trees blown down; >62 m/s up to 90%.",
+      "time": {
+        "t": 3570,
+        "range": [
+          2730,
+          6061
+        ]
+      }
+    },
+    {
+      "id": "airblast.overpressure_3000km",
+      "group": "airblast",
+      "label": "Szczytowe nadciśnienie fali uderzeniowej w powietrzu, 3000 km",
+      "value": 17300.0,
+      "unit": "Pa",
+      "range": [
+        1640.0,
+        38800.0
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: Collins 2005 Eq. 54/57 (nuclear surface-burst yield scaling)",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Eqs. 54, 57; caveat p. 831",
+      "notes": "Collins 2005 Eq. 54+57 (1-kt surface-burst fit, px=75 kPa, rx=290 m, r1=r/E_kt^(1/3)) evaluated for E_ref = 4.184e23 J (1e8 Mt). Range: lower = E 1e23 J divided by 5 (authors: for >1e4 Mt the model 'probably overestimates the blast wave effects by a factor of 2-5'), upper = E 1.65e24 J. Uniform-density, flat-Earth assumptions fail at this scale (authors' caveat). Collins 2005 Table 6 values correspond to ~0.5*E in Eq. 54 (not explained in the paper; see thread 07). For the impactor-thread energy 6e23 J: p = 780/175/44/21 kPa and u = 663/261/88/46 m/s at 500/1000/2000/3000 km. Approximately Tanis distance; leveque2024 consider atmospheric waves from the ejecta curtain only a possible 'smaller, secondary contribution' to the Tanis surges.",
+      "time": {
+        "t": 6326,
+        "range": [
+          5219,
+          9091
+        ]
+      }
+    },
+    {
+      "id": "airblast.wind_3000km",
+      "group": "airblast",
+      "label": "Maksymalna prędkość wiatru za frontem fali uderzeniowej, 3000 km",
+      "value": 38,
+      "unit": "m/s",
+      "range": [
+        4,
+        79
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: Collins 2005 Eq. 59 (Rankine-Hugoniot, P0=1e5 Pa, c0=330 m/s) applied to airblast.overpressure",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Eq. 59",
+      "notes": "Inherits all caveats of the overpressure estimate. Thresholds quoted by Collins: >40 m/s ~30% of trees blown down; >62 m/s up to 90%.",
+      "time": {
+        "t": 6326,
+        "range": [
+          5219,
+          9091
+        ]
+      }
+    },
+    {
+      "id": "airblast.collins2005_table6_overpressure_200km",
+      "group": "airblast",
+      "label": "Nadciśnienie w 200 km dla scenariusza 18 km / 20 km/s (Collins 2005, Tab. 6)",
+      "value": 7700000.0,
+      "unit": "Pa",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:collins2005 (worked example, E = 1.65e24 J)",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Table 6 ('77' bar)",
+      "notes": "Published worked example for 'a reasonable estimate of the scale of the Chicxulub impact event' (18-km stony body, 20 km/s, 45 deg). Back-calculation shows it equals Eq. 54 with ~0.5*E.",
+      "time": {
+        "t": 606,
+        "range": null
+      }
+    },
+    {
+      "id": "airblast.collins2005_table6_wind_200km",
+      "group": "airblast",
+      "label": "Prędkość wiatru w 200 km dla scenariusza 18 km / 20 km/s (Collins 2005, Tab. 6)",
+      "value": 2220,
+      "unit": "m/s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:collins2005 (worked example)",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Table 6",
+      "notes": "",
+      "time": {
+        "t": 606,
+        "range": null
+      }
+    },
+    {
+      "id": "airblast.scaling_validity_limit",
+      "group": "airblast",
+      "label": "Górna granica energii, do której skalowanie podmuchu Collinsa zgadza się z modelami numerycznymi",
+      "value": 10000.0,
+      "unit": "Mt TNT",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model comparison stated by collins2005 (Zahnle 1990; Toon et al. 1994)",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "p. 831 last paragraph of 'Air blast'",
+      "notes": "'in good agreement with our simple model in the 1-10000 Mt range; for impact energies greater than this, Equation 44 [sic, = Eq. 54] probably overestimates the blast wave effects by a factor of 2-5'. Chicxulub (~1e8 Mt) is ~4 orders of magnitude above this limit.",
+      "time": null
+    },
+    {
+      "id": "airblast.overestimate_factor_large",
+      "group": "airblast",
+      "label": "Współczynnik przeszacowania podmuchu przez skalowanie dla E > 1e4 Mt",
+      "value": 3.5,
+      "unit": "",
+      "range": [
+        2,
+        5
+      ],
+      "certainty": "extrapolation",
+      "method": "model comparison stated by collins2005",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "p. 831",
+      "notes": "Value = middle of 2-5.",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_speed",
+      "group": "airblast",
+      "label": "Prędkość fali Lamba (globalna fala ciśnienia przy powierzchni)",
+      "value": 315,
+      "unit": "m/s",
+      "range": [
+        303,
+        324
+      ],
+      "certainty": "fact",
+      "method": "measured (Hunga Tonga 2022: barometers, IMS infrasound, satellites)",
+      "sources": [
+        "matoza2022",
+        "wright2022",
+        "vergoz2022"
+      ],
+      "locator": "matoza2022 main text (group velocity ~315 m/s; ~310 m/s theoretical for 16 km scale height); wright2022 Abstract (318.2+/-6 m/s at surface; 308+/-5 to 319+/-4 m/s in stratosphere, phase speeds); vergoz2022 sect. 2 (nominal 310 m/s)",
+      "notes": "Measured for the present atmosphere; speed is set by the lower-atmosphere mean sound speed (temperature) and winds. Applying it to Chicxulub (warmer Maastrichtian atmosphere, extreme source) is an EXTRAPOLATION; a few-K warmer column would raise it by only ~1%.",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_antipode_time",
+      "group": "airblast",
+      "label": "Czas dotarcia czoła fali Lamba do antypodów Chicxulub",
+      "value": 63540,
+      "unit": "s",
+      "range": [
+        61737,
+        66056
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: 20015 km / airblast.lamb_speed",
+      "sources": [
+        "matoza2022",
+        "wright2022",
+        "vergoz2022"
+      ],
+      "locator": "derived",
+      "notes": "~17.6 h (17.1-18.3 h). Within the 24 h window the Lamb front converges at the antipode and the first antipodal (major-arc) passage begins; no full circuit is completed.",
+      "time": {
+        "t": 63540,
+        "range": [
+          61737,
+          66056
+        ]
+      }
+    },
+    {
+      "id": "airblast.lamb_circuit_time",
+      "group": "airblast",
+      "label": "Czas pełnego okrążenia Ziemi przez falę Lamba",
+      "value": 127080,
+      "unit": "s",
+      "range": [
+        123474,
+        132113
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: 40030 km / airblast.lamb_speed",
+      "sources": [
+        "matoza2022",
+        "wright2022",
+        "vergoz2022"
+      ],
+      "locator": "derived",
+      "notes": "~35.3 h - outside the 24 h window.",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_passages_hunga",
+      "group": "airblast",
+      "label": "Liczba zarejestrowanych przejść fali Lamba (Hunga Tonga, 6 dni)",
+      "value": 7,
+      "unit": "",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "matoza2022"
+      ],
+      "locator": "main text ('at least four minor-arc ... (A1,3,5,7) and three major-arc (A2,4,6) passages'; similar to Krakatau 1883)",
+      "notes": "Each antipodal passage introduces a 90 deg phase shift (polar phase shift).",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_amplitude_hunga_756km",
+      "group": "airblast",
+      "label": "Amplituda fali Lamba (peak-to-peak) w odl. 756 km od Hunga",
+      "value": 1473,
+      "unit": "Pa",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "matoza2022"
+      ],
+      "locator": "main text (Fig. 2F, S8 referenced)",
+      "notes": "Decreases 'logarithmically' with range; scatter >7,500 km from winds and focusing.",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_amplitude_decay_exponent",
+      "group": "airblast",
+      "label": "Wykładnik zaniku amplitudy fali Lamba z odległością (r^n)",
+      "value": -0.5,
+      "unit": "",
+      "range": [
+        -0.5,
+        0.0
+      ],
+      "certainty": "fact",
+      "method": "measured (IMS + barometers, Hunga) and consistent with cylindrical spreading",
+      "sources": [
+        "vergoz2022"
+      ],
+      "locator": "Sect. on Lamb wave amplitudes, Fig. 7a",
+      "notes": "~r^-1/2 at intermediate range; constant or slightly increasing beyond ~10,000 km due to focusing on the sphere.",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_period_hunga",
+      "group": "airblast",
+      "label": "Dominujący okres fali Lamba (Hunga Tonga)",
+      "value": 2100,
+      "unit": "s",
+      "range": [
+        1700,
+        2500
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "matoza2022",
+        "vergoz2022"
+      ],
+      "locator": "matoza2022 main text (1,700-2,500 s; full band 100-3,300 s); vergoz2022 Abstract (>2000 s)",
+      "notes": "About 4x longer than for the largest nuclear test (400-700 s); for Chicxulub the period is unknown (open question).",
+      "time": null
+    },
+    {
+      "id": "airblast.hunga_yield",
+      "group": "airblast",
+      "label": "Energia wybuchu Hunga Tonga (ekwiwalent TNT, z fal ciśnienia)",
+      "value": 150,
+      "unit": "Mt TNT",
+      "range": [
+        100,
+        200
+      ],
+      "certainty": "contested",
+      "method": "model: pressure-wave yield estimate",
+      "sources": [
+        "vergoz2022",
+        "wright2022",
+        "matoza2022"
+      ],
+      "locator": "vergoz2022 Abstract (100-200 Mt); wright2022 Main (10-28 EJ total energy, i.e. ~2,400-6,700 Mt); matoza2022 (nuclear-test yield relations give 'unphysically large' yields)",
+      "notes": "Different quantities/methods; illustrates why Lamb-wave amplitude cannot simply be scaled with source energy to Chicxulub (~1e5-1e6 times more energetic).",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_tsunami_forerunner_lead",
+      "group": "airblast",
+      "label": "Wyprzedzenie 'tsunami-zwiastuna' wymuszonego falą Lamba względem zwykłego tsunami (Hunga)",
+      "value": 7200,
+      "unit": "s",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured + model:kubota2022",
+      "sources": [
+        "kubota2022",
+        "matoza2022"
+      ],
+      "locator": "kubota2022 Abstract ('more than 2 hours earlier'); matoza2022 (tide-gauge onset coincident with ~2 hPa Lamb pulse; 5 hPa at deep-sea gauges)",
+      "notes": "Lower bound. Mechanism transferable to Chicxulub (extrapolation): a Lamb-wave-driven sea-level disturbance would run ahead of the impact tsunami at ~315 m/s.",
+      "time": null
+    },
+    {
+      "id": "airblast.lamb_pressure_pulse_tidegauge_hunga",
+      "group": "airblast",
+      "label": "Impuls ciśnienia fali Lamba na mareografach (Hunga)",
+      "value": 200,
+      "unit": "Pa",
+      "range": [
+        200,
+        500
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "matoza2022"
+      ],
+      "locator": "main text (2 hPa at coastal tide gauges; 5 hPa leading pulse at deep-sea tsunameters)",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "sound.spl_500km",
+      "group": "sound",
+      "label": "Poziom ciśnienia akustycznego (z nadciśnienia), 500 km",
+      "value": 209.5,
+      "unit": "dB",
+      "range": [
+        186.6,
+        218.3
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: SPL = 20*log10(p/20 uPa) applied to airblast.overpressure_500km",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "derived",
+      "notes": "No published loudness-vs-distance for Chicxulub was found. Values above ~194 dB (p >= 1 atm) describe a shock wave, not linear sound.",
+      "time": {
+        "t": 302,
+        "range": [
+          186,
+          1515
+        ]
+      }
+    },
+    {
+      "id": "sound.spl_1000km",
+      "group": "sound",
+      "label": "Poziom ciśnienia akustycznego (z nadciśnienia), 1000 km",
+      "value": 196.7,
+      "unit": "dB",
+      "range": [
+        174.5,
+        205.1
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: SPL from airblast.overpressure_1000km",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "derived",
+      "notes": "",
+      "time": {
+        "t": 1146,
+        "range": [
+          764,
+          3030
+        ]
+      }
+    },
+    {
+      "id": "sound.spl_3000km",
+      "group": "sound",
+      "label": "Poziom ciśnienia akustycznego (z nadciśnienia), 3000 km",
+      "value": 178.7,
+      "unit": "dB",
+      "range": [
+        158.3,
+        185.8
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling: SPL from airblast.overpressure_3000km",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "derived",
+      "notes": "",
+      "time": {
+        "t": 6326,
+        "range": [
+          5219,
+          9091
+        ]
+      }
+    },
+    {
+      "id": "sound.audible_range_hunga",
+      "group": "sound",
+      "label": "Zasięg słyszalności dźwięku (Hunga Tonga 2022)",
+      "value": 10000,
+      "unit": "km",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured (reports of audible sound)",
+      "sources": [
+        "matoza2022"
+      ],
+      "locator": "Abstract ('long-range (~10,000 km) audible sound')",
+      "notes": "Analogue only. For Chicxulub, audibility over most of the globe is plausible but unpublished (speculation).",
+      "time": null
+    },
+    {
+      "id": "sound.infrasound_celerity_stratospheric",
+      "group": "sound",
+      "label": "Prędkość pozorna infradźwięków w falowodzie stratosferycznym",
+      "value": 245,
+      "unit": "m/s",
+      "range": [
+        220,
+        290
+      ],
+      "certainty": "fact",
+      "method": "measured (IMS arrays, Hunga)",
+      "sources": [
+        "vergoz2022",
+        "matoza2022"
+      ],
+      "locator": "vergoz2022 sect. 2 (220-270 m/s stratospheric; 270-320 m/s thermospheric); matoza2022 (direct infrasound 250-290 m/s for ~2 h)",
+      "notes": "Infrasound arrives after the Lamb wave and lasts hours.",
+      "time": null
+    },
+    {
+      "id": "sound.infrasound_circumnavigations_hunga",
+      "group": "sound",
+      "label": "Liczba okrążeń Ziemi przez infradźwięki (<300 s) - Hunga",
+      "value": 8,
+      "unit": "",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "vergoz2022"
+      ],
+      "locator": "Abstract ('up to eight times')",
+      "notes": "",
+      "time": null
+    }
+  ],
+  "disagreements": [
+    {
+      "topic": "Seismic magnitude of the Chicxulub impact",
+      "positions": [
+        {
+          "claim": "M ~10.4 for a 1.65e24 J impact (Gutenberg-Richter energy magnitude with k = 1e-4); ~9.5-10 for 1e23-4e23 J",
+          "sources": [
+            "collins2005"
+          ]
+        },
+        {
+          "claim": "Mw ~9-11 depending on seismic efficiency 1e-2..1e-5 (E ~3e23 J), frequency-dependent",
+          "sources": [
+            "richards2015"
+          ]
+        },
+        {
+          "claim": "Mw ~10-11.5",
+          "sources": [
+            "depalma2019"
+          ]
+        },
+        {
+          "claim": "equivalent Mw ~11 (> 10) required to explain distant slope failure and liquefaction",
+          "sources": [
+            "day2005",
+            "richards2015"
+          ]
+        },
+        {
+          "claim": "magnitude > 11 (citing Toon et al. 1997)",
+          "sources": [
+            "schulte2010"
+          ]
+        },
+        {
+          "claim": "Mw 11 adopted as model input",
+          "sources": [
+            "leveque2024"
+          ]
+        }
+      ],
+      "assessment": "All values are scaling estimates; none is measured. The spread (~9-11.5) is dominated by the unknown seismic efficiency and by mixing magnitude types (energy vs moment magnitude). The geologic argument (margin failure >1600 km away) favours an equivalent Mw >~10, but that inference itself relies on extrapolating tectonic-earthquake liquefaction distances. Use Mw ~10-11 with explicit uncertainty; do not present a single number as fact."
+    },
+    {
+      "topic": "Seismic efficiency k of a Chicxulub-scale impact",
+      "positions": [
+        {
+          "claim": "k ~1e-4 (range 1e-5-1e-3), the 'most commonly accepted figure' from experiments",
+          "sources": [
+            "collins2005",
+            "meschede2011"
+          ]
+        },
+        {
+          "claim": "k ~1e-3 for impacts (explosion-equivalence calculation), ~1e-5 for airbursts",
+          "sources": [
+            "khazins2018"
+          ]
+        },
+        {
+          "claim": "k decreases with impactor size and velocity; 1e-4-1e-5 for Chicxulub (Shishkin 2007, as reported)",
+          "sources": [
+            "meschede2011"
+          ]
+        },
+        {
+          "claim": "k ~1e-6 for small impacts into Martian regolith",
+          "sources": [
+            "wojcicka2020"
+          ]
+        }
+      ],
+      "assessment": "No consensus; 1e-4 remains the default in hazard tools but has a 2-order-of-magnitude uncertainty. Small-impact Mars values are not transferable. Keep 1e-4 as reference, propagate 1e-5..1e-3."
+    },
+    {
+      "topic": "Origin of the Tanis surge deposit (North Dakota)",
+      "positions": [
+        {
+          "claim": "Seismically coupled seiche in the Western Interior Seaway triggered by S/surface waves arriving 6-13 min after impact; seiches of 10-100 m plausible",
+          "sources": [
+            "depalma2019",
+            "during2022"
+          ]
+        },
+        {
+          "claim": "Direct seismic excitation can reproduce ~10 m surges only if the effective source duration is 'many minutes'; resonant seiching cannot be scaled from earthquakes to impacts and needs tens of minutes to develop; alternatives (triggered faulting, slope failure into the WIS, atmospheric waves from the ejecta curtain) remain; mechanism 'incompletely resolved'",
+          "sources": [
+            "leveque2024"
+          ]
+        },
+        {
+          "claim": "A direct tsunami from Chicxulub is excluded by timing (>10 h travel vs 1-2 h window)",
+          "sources": [
+            "depalma2019",
+            "leveque2024"
+          ]
+        }
+      ],
+      "assessment": "The impact-related, sub-2-hour timing is better supported than the specific seiche mechanism. Both main papers share authors; I found no independent peer-reviewed rebuttal (criticism so far mostly in news media, which is not admissible here). Treat the 'seismic seiche' as a hypothesis (contested), the 10-100 m amplitude as speculation."
+    },
+    {
+      "topic": "Trigger of Gulf of Mexico / Atlantic margin collapse",
+      "positions": [
+        {
+          "claim": "Seismic shaking from the impact caused margin collapse and gravity flows (K-Pg 'cocktail')",
+          "sources": [
+            "bralower1998",
+            "klaus2000",
+            "denne2013",
+            "day2005"
+          ]
+        },
+        {
+          "claim": "Sediment redistribution (~2e5 km3) by combined seismic and megatsunami processes, deposited within days",
+          "sources": [
+            "sanford2016"
+          ]
+        }
+      ],
+      "assessment": "Seismic initiation of slope failure is widely accepted (minutes after S/surface-wave arrival); the relative share of tsunami reworking is not resolved. For the simulation: failures start with shaking, flows and tsunami reworking continue for hours-days."
+    },
+    {
+      "topic": "Air-blast scaling at Chicxulub energies",
+      "positions": [
+        {
+          "claim": "Peak overpressure from 1-kt nuclear surface-burst data scaled by E^(1/3) (Eq. 54/57); worked example gives 77 bar and 2220 m/s at 200 km for 1.65e24 J",
+          "sources": [
+            "collins2005"
+          ]
+        },
+        {
+          "claim": "Same authors: the scaling is reliable only for 1-10,000 Mt; above that it probably overestimates blast effects by 2-5x; flat-Earth and uniform-atmosphere assumptions fail",
+          "sources": [
+            "collins2005"
+          ]
+        }
+      ],
+      "assessment": "No Chicxulub-specific, peer-reviewed air-blast model was found that I could open. Treat all overpressure/wind values as order-of-magnitude extrapolations; near field (<~300 km) is dominated by the fireball/vapour plume and ejecta curtain rather than by a classical blast wave."
+    },
+    {
+      "topic": "Lamb-wave speed and energy scaling (Hunga Tonga analogue)",
+      "positions": [
+        {
+          "claim": "Lamb-wave group velocity ~315 m/s (theoretical ~310 m/s)",
+          "sources": [
+            "matoza2022",
+            "vergoz2022"
+          ]
+        },
+        {
+          "claim": "Lamb-wave phase speed 318.2 +/- 6 m/s at surface",
+          "sources": [
+            "wright2022"
+          ]
+        },
+        {
+          "claim": "Explosion yield 100-200 Mt TNT",
+          "sources": [
+            "vergoz2022"
+          ]
+        },
+        {
+          "claim": "Energy release 10-28 EJ; nuclear-test yield relations give unphysically large yields for Hunga",
+          "sources": [
+            "wright2022",
+            "matoza2022"
+          ]
+        }
+      ],
+      "assessment": "Speed is well constrained (303-324 m/s); energy-to-amplitude scaling is not. Use the speed with confidence; treat any Chicxulub Lamb-wave amplitude as speculation."
+    },
+    {
+      "topic": "Speed used for the 'main seismic shaking' arrival",
+      "positions": [
+        {
+          "claim": "Main shaking arrives at r / (5 km/s) (surface waves in upper crust)",
+          "sources": [
+            "collins2005"
+          ]
+        },
+        {
+          "claim": "Long-period Rayleigh group velocities 3.57-3.84 km/s and Love 4.38-4.46 km/s (PREM); Rayleigh at Tanis ~13 min (3.9 km/s)",
+          "sources": [
+            "dziewonski1981",
+            "depalma2019"
+          ]
+        }
+      ],
+      "assessment": "For global propagation use PREM group velocities; the 5 km/s in Collins Eq. 42 is a regional simplification and makes surface waves arrive ~25-30% too early at teleseismic distances."
+    }
+  ],
+  "openQuestions": [
+    "No peer-reviewed Chicxulub-specific model of the atmospheric Lamb wave or of far-field air blast was found; amplitude, period and nonlinearity of a Chicxulub Lamb wave are unknown (speculative). Interaction with ejecta re-entry heating of the upper atmosphere is unstudied as far as I could find.",
+    "unverified lead: Toon, O. B.; Zahnle, K.; Morrison, D.; Turco, R. P.; Covey, C. (1997) Environmental perturbations caused by the impacts of asteroids and comets, Reviews of Geophysics 35(1):41-78, doi 10.1029/96RG03038 - DOI/metadata confirmed via Crossref, full text not accessible (Wiley 403). It is the source of the 'magnitude > 11' quoted by schulte2010 and of MMI estimates in collins2005 Table 6; also discusses blast waves for large impacts.",
+    "unverified lead: Kring, D. A. (2007) The Chicxulub impact event and its environmental consequences at the Cretaceous-Tertiary boundary, Palaeogeogr. Palaeoclimatol. Palaeoecol. 255:4-21, doi 10.1016/j.palaeo.2007.02.037 - metadata confirmed (Crossref), content not opened; reportedly discusses air-blast winds >1000 km/h near the crater.",
+    "unverified lead (content): Schultz, P. H.; Gault, D. E. (1975) Seismic effects from major basin formations on the Moon and Mercury, The Moon 12:159-177, doi 10.1007/BF00577875 - metadata confirmed (Crossref); origin of k = 1e-4; numbers used here only as quoted by collins2005 and meschede2011.",
+    "unverified lead (content): Shishkin, N. I. (2007) Seismic efficiency of a contact explosion and a high-velocity impact, J. Appl. Mech. Tech. Phys. 48:145-152, doi 10.1007/s10808-007-0019-6 - metadata confirmed; content known only through meschede2011 and richards2015.",
+    "unverified lead (content): Güldemeister, N.; Wünnemann, K. (2017) Quantitative analysis of impact-induced seismic signals by numerical modeling, Icarus 296:15-27, doi 10.1016/j.icarus.2017.05.010 - metadata confirmed; seismic efficiency values vs. porosity not read.",
+    "unverified lead (content): Bermúdez, H. D. et al. (2026) The Chicxulub mega-earthquake: Stratigraphic evidence from the Cretaceous-Paleogene boundary of Colombian Pacific and northeastern Mexico, J. South Am. Earth Sci. 176:106058, doi 10.1016/j.jsames.2026.106058 - metadata confirmed via Crossref; abstract not accessible; may contain new seismite/liquefaction evidence and a magnitude estimate.",
+    "unverified lead: Morgan, J. V.; Bralower, T. J.; Brugger, J.; Wünnemann, K. (2022) The Chicxulub impact and its environmental consequences, Nat. Rev. Earth Environ., doi 10.1038/s43017-022-00283-y - paywalled; recent review that may update seismic/blast statements.",
+    "Exact wording of the magnitude in day2005 (OpenAlex renders 'moment magnitude <11'; leveque2024 cite 'Mw 11'; richards2015 cite 'Mw > 10') needs checking against the GSA original.",
+    "unverified lead: Lay et al. (2005) Science 308:1127 and Park et al. (2005) Science 308:1139 (Sumatra 2004) - metadata and abstracts confirmed, but the full texts with multi-orbit surface-wave (R1, R2, ...) observations were not accessible; a peer-reviewed observational statement on how many Rayleigh orbits are visible for Mw 9+ events is still missing here.",
+    "unverified lead: Brune, J. N.; Nafe, J. E.; Alsop, L. E. (1961) The polar phase shift of surface waves on a sphere, BSSA 51(2):247-257 (cited by matoza2022) - not opened; basis for the 90-degree phase shift at each antipodal passage (applies to both seismic surface waves and Lamb waves).",
+    "Radiation pattern of an oblique (~45-60 deg) Chicxulub impact: froment2024 show impact sources have significant deviatoric (non-isotropic) components, but no published azimuth-dependent amplitude model for Chicxulub was found.",
+    "High-frequency (>1 Hz) shaking and Modified Mercalli intensities at Gulf margins and at teleseismic distances are not constrained by any source opened here; collins2005 Eq. 41 uses California attenuation curves (and the unit of Delta in Eq. 41c is not defined in the passage read; continuity with Eq. 41b at 700 km suggests radians).",
+    "Western Interior Seaway geometry and depth at K-Pg time are unknown, so seiche periods/amplitudes at Tanis cannot be computed (depalma2019, leveque2024).",
+    "Collins 2005 Table 6 airblast values correspond to ~0.5x the impact energy in Eq. 54, which the paper text does not explain; check against the calculator source analysed in thread 07 (Collins et al. 2017 'airblast-energy rule').",
+    "Applicability of present-day PREM/ak135 to the Maastrichtian Earth is assumed (differences expected to be small for global travel times); lateral heterogeneity (e.g. ekstrom2011 GDM52) could add a few per cent to surface-wave path times."
+  ]
+}

@@ -1,0 +1,1083 @@
+{
+  "checkedAt": "2026-10-04T15:03:25.116Z",
+  "report": [
+    {
+      "id": "renne2013",
+      "doi": "10.1126/science.1230492",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "sprain2015",
+      "doi": "10.1130/B31076.1",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "sprain2018",
+      "doi": "10.1130/B31890.1",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "renne2018",
+      "doi": "10.1130/G40224.1",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "swisher1992",
+      "doi": "10.1126/science.257.5072.954",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kuiper2008",
+      "doi": "10.1126/science.1154339",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "during2022",
+      "doi": "10.1038/s41586-022-04446-1",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "depalma2021",
+      "doi": "10.1038/s41598-021-03232-9",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "alvarez1980",
+      "doi": "10.1126/science.208.4448.1095",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "paquay2008",
+      "doi": "10.1126/science.1152860",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "artemieva2009",
+      "doi": "10.1016/j.icarus.2009.01.021",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "artemieva2017",
+      "doi": "10.1002/2017GL074879",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "collins2020",
+      "doi": "10.1038/s41467-020-15269-x",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "christeson2009",
+      "doi": "10.1016/j.epsl.2009.04.033",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "gulick2008",
+      "doi": "10.1038/ngeo103",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "gulick2013",
+      "doi": "10.1002/rog.20007",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "gulick2019",
+      "doi": "10.1073/pnas.1909479116",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "desch2022",
+      "doi": "10.1038/s41598-022-12873-3",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "siraj2021",
+      "doi": "10.1038/s41598-021-82320-2",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "fischergodde2024",
+      "doi": "10.1126/science.adk4868",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kyte1998",
+      "doi": "10.1038/24322",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "shukolyukov1998",
+      "doi": "10.1126/science.282.5390.927",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "bottke2007",
+      "doi": "10.1038/nature06070",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "reddy2009",
+      "doi": "10.1111/j.1945-5100.2009.tb02001.x",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "goderis2021",
+      "doi": "10.1126/sciadv.abe3647",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "macke2011",
+      "doi": "10.1111/j.1945-5100.2011.01298.x",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "pope1997",
+      "doi": "10.1029/97JE01743",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "pierazzo1998",
+      "doi": "10.1029/98JE02496",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "shuvalov2002",
+      "doi": "10.1130/0-8137-2356-6.695",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "schultz1996",
+      "doi": "10.1130/0091-7613(1996)024<0963:CTCIAA>2.3.CO;2",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "morgan2006",
+      "doi": "10.1016/j.epsl.2006.09.009",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "hildebrand1991",
+      "doi": "10.1130/0091-7613(1991)019<0867:CCAPCT>2.3.CO;2",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "hildebrand1995",
+      "doi": "10.1038/376415a0",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "morgan1997",
+      "doi": "10.1038/37291",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kring2004",
+      "doi": "10.1111/j.1945-5100.2004.tb00936.x",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kaskes2023",
+      "doi": "10.1093/pnasnexus/pgad414",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "range2022",
+      "doi": "10.1029/2021AV000627",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "ormo2021",
+      "doi": "10.1016/j.epsl.2021.116915",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "morgan2016",
+      "doi": "10.1126/science.aah6561",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "riller2018",
+      "doi": "10.1038/s41586-018-0607-z",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kring2020",
+      "doi": "10.1126/sciadv.aaz3053",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kaskes2022",
+      "doi": "10.1130/B36020.1",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "schulte2021",
+      "doi": "10.1007/s00531-021-02008-w",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "christeson2021",
+      "doi": "10.1029/2021JE006938",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kring1995",
+      "doi": "10.1029/95JE01768",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "sharpton1993",
+      "doi": "10.1126/science.261.5128.1564",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "pope1996",
+      "doi": "10.1130/0091-7613(1996)024<0527:SEOTCC>2.3.CO;2",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "schmieder2020",
+      "doi": "10.1089/ast.2019.2085",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "morgan2022",
+      "doi": "10.1038/s43017-022-00283-y",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "feignon2020",
+      "doi": "10.1111/maps.13570",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "degraaff2022",
+      "doi": "10.1130/B35795.1",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "lowery2018",
+      "doi": "10.1038/s41586-018-0163-6",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kring2016",
+      "doi": "10.1038/ncomms13161",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "rae2019",
+      "doi": "10.1029/2018JE005821",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "bohor1984",
+      "doi": "10.1126/science.224.4651.867",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "wolbach1985",
+      "doi": "10.1126/science.230.4722.167",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "wolbach1988",
+      "doi": "10.1038/334665a0",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "melosh1990",
+      "doi": "10.1038/343251a0",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "hildebrand1990",
+      "doi": "10.1126/science.248.4957.843",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "alvarez1995",
+      "doi": "10.1126/science.269.5226.930",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "smit1999",
+      "doi": "10.1146/annurev.earth.27.1.75",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "pope1999",
+      "doi": "10.1016/s0012-821x(99)00123-5",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kring2002",
+      "doi": "10.1029/2001je001532",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "croskell2002",
+      "doi": "10.1029/2001gl014382",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "belcher2003",
+      "doi": "10.1130/g19989.1",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "durda2004",
+      "doi": "10.1029/2004je002279",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "robertson2004",
+      "doi": "10.1130/b25402.1",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "belcher2005",
+      "doi": "10.1144/0016-764904-104",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "collins2005",
+      "doi": "10.1111/j.1945-5100.2005.tb00157.x",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "harvey2008",
+      "doi": "10.1130/g24646a.1",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "goldin2009",
+      "doi": "10.1130/g30433a.1",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "belcher2009",
+      "doi": "10.1073/pnas.0813117106",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "schulte2010",
+      "doi": "10.1126/science.1177265",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "johnson2012",
+      "doi": "10.1016/j.icarus.2011.11.020",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "robertson2013",
+      "doi": "10.1002/jgrg.20018",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "morgan2013",
+      "doi": "10.1002/2013jg002428",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "belcher2015",
+      "doi": "10.1144/jgs2014-082",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kaiho2016",
+      "doi": "10.1038/srep28427",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "toon2016",
+      "doi": "10.5194/acp-16-13185-2016",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "bardeen2017",
+      "doi": "10.1073/pnas.1708980114",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "depalma2019",
+      "doi": "10.1073/pnas.1817407116",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "artemieva2020",
+      "doi": "10.1029/2019gl086562",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "lyons2020",
+      "doi": "10.1073/pnas.2004596117",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "santacatharina2022",
+      "doi": "10.1038/s41598-022-17292-y",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "senel2023",
+      "doi": "10.1038/s41561-023-01290-4",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "johnson2022",
+      "doi": "10.7910/DVN/GWOFIO",
+      "ok": true,
+      "registrar": "datacite",
+      "reasons": []
+    },
+    {
+      "id": "matsui2002",
+      "doi": "10.1130/0-8137-2356-6.69",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "sanford2016",
+      "doi": "10.1002/2015JB012615",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kinsland2021",
+      "doi": "10.1016/j.epsl.2021.117063",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kinsland2025",
+      "doi": "10.1016/j.margeo.2024.107466",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "bralower1998",
+      "doi": "10.1130/0091-7613(1998)026<0331:TCTBCC>2.3.CO;2",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "denne2013",
+      "doi": "10.1130/G34503.1",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "bourgeois1988",
+      "doi": "10.1126/science.241.4865.567",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "maurrasse1991",
+      "doi": "10.1126/science.252.5013.1690",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "smit1992",
+      "doi": "10.1130/0091-7613(1992)020<0099:TBDWCU>2.3.CO;2",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "schulte2006",
+      "doi": "10.1016/j.sedgeo.2005.09.021",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "keller2007",
+      "doi": "10.1016/j.epsl.2006.12.026",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "schulte2012",
+      "doi": "10.1111/j.1365-3091.2011.01274.x",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "takayama2000",
+      "doi": "10.1016/S0037-0738(00)00079-8",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "bahlburg2010",
+      "doi": "10.1016/j.epsl.2010.03.037",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "wunnemann2015",
+      "doi": "10.1098/rsta.2014.0381",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "muller2008",
+      "doi": "10.1126/science.1151540",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "scasso2005",
+      "doi": "10.1016/j.cretres.2004.12.003",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "leveque2024",
+      "doi": "10.1029/2023JB027643",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "goto2005",
+      "doi": "10.5575/geosoc.111.193",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "meschede2011",
+      "doi": "10.1111/j.1365-246X.2011.05170.x",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "richards2015",
+      "doi": "10.1130/B31167.1",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "day2005",
+      "doi": "10.1130/0-8137-2384-1.239",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "bondevik2013",
+      "doi": "10.1002/grl.50639",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "klaus2000",
+      "doi": "10.1130/0091-7613(2000)28<319:IMWATK>2.0.CO;2",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "byrnes2018",
+      "doi": "10.1126/sciadv.aao2994",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "khazins2018",
+      "doi": "10.1134/S0038094618060023",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "wojcicka2020",
+      "doi": "10.1029/2020JE006540",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "froment2024",
+      "doi": "10.1093/gji/ggae144",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "dziewonski1981",
+      "doi": "10.1016/0031-9201(81)90046-7",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kennett1995",
+      "doi": "10.1111/j.1365-246X.1995.tb03540.x",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "crotwell1999",
+      "doi": "10.1785/gssrl.70.2.154",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "beyreuther2010",
+      "doi": "10.1785/gssrl.81.3.530",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "ekstrom2011",
+      "doi": "10.1111/j.1365-246X.2011.05225.x",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "matoza2022",
+      "doi": "10.1126/science.abo7063",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "wright2022",
+      "doi": "10.1038/s41586-022-05012-5",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kubota2022",
+      "doi": "10.1126/science.abo4364",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "vergoz2022",
+      "doi": "10.1016/j.epsl.2022.117639",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "amores2022",
+      "doi": "10.1029/2022GL098240",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "pierazzo2003",
+      "doi": "10.1089/153110703321632453",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "ohno2014",
+      "doi": "10.1038/ngeo2095",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "tabor2020",
+      "doi": "10.1029/2019GL085572",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "toon1997",
+      "doi": "10.1029/96RG03038",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "brugger2017",
+      "doi": "10.1002/2016GL072241",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "rodiouchkina2025",
+      "doi": "10.1038/s41467-024-55145-6",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "junium2022",
+      "doi": "10.1073/pnas.2119194119",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "during2024",
+      "doi": "10.7717/peerj.18519",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "vajda2001",
+      "doi": "10.1126/science.1064706",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "vellekoop2014",
+      "doi": "10.1073/pnas.1319253111",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "alvarez1990",
+      "doi": "10.1126/science.11538083",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "brooks1984",
+      "doi": "10.1126/science.226.4674.539",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "sigurdsson1991",
+      "doi": "10.1038/349482a0",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "izett1991",
+      "doi": "10.1126/science.252.5012.1539",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "witts2021",
+      "doi": "10.1206/3964.1",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "keller2004",
+      "doi": "10.1073/pnas.0400396101",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "smit1980",
+      "doi": "10.1038/285198a0",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "sosamontesdeoca2013",
+      "doi": "10.1371/journal.pone.0082242",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "molina2006",
+      "doi": "10.18814/epiiugs/2006/v29i4/004",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "olsson1997",
+      "doi": "10.1130/0091-7613(1997)025<0759:ELATCT>2.3.CO;2",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "miller1998",
+      "doi": "10.2973/odp.proc.ir.174ax.101.1998",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "macleod2007",
+      "doi": "10.1130/B25955.1",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "shipboard2004",
+      "doi": "10.2973/odp.proc.ir.207.106.2004",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "smit1984",
+      "doi": "10.1126/science.223.4641.1177",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "scotese2018",
+      "doi": "10.5281/zenodo.5460860",
+      "ok": true,
+      "registrar": "datacite",
+      "reasons": []
+    },
+    {
+      "id": "stein1992",
+      "doi": "10.1038/359123a0",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "miller2005",
+      "doi": "10.1126/science.1116412",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "miller2020",
+      "doi": "10.1126/sciadv.aaz1346",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "boyd2011",
+      "doi": "10.2113/gsrocky.46.1.43",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "collins2017",
+      "doi": "10.1111/maps.12873",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    }
+  ]
+}

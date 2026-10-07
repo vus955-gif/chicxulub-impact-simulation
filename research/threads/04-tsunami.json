@@ -1,0 +1,2570 @@
+{
+ "thread": "04-tsunami",
+ "sources": [
+  {
+   "id": "range2022",
+   "type": "article",
+   "authors": "Range, M. M.; Arbic, B. K.; Johnson, B. C.; Moore, T. C.; Titov, V.; Adcroft, A. J.; Ansong, J. K.; Hollis, C. J.; Ritsema, J.; Scotese, C. R.; Wang, H.",
+   "year": 2022,
+   "title": "The Chicxulub Impact Produced a Powerful Global Tsunami",
+   "container": "AGU Advances",
+   "volume": "3(5)",
+   "pages": "e2021AV000627",
+   "doi": "10.1029/2021AV000627",
+   "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021AV000627",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "Full text read (CC-BY PDF hosted by co-author Adcroft: adcroft.github.io/assets/pdf/range_et_al_Advances_2022.pdf, identical to Wiley version incl. download stamp) and Supporting Information read (NOAA IR noaa/50553 DS2). Metadata cross-checked with Crossref. Primary reference model for this thread."
+  },
+  {
+   "id": "johnson2022",
+   "type": "dataset",
+   "authors": "Johnson, B. C.",
+   "year": 2022,
+   "title": "Replication Data for: The Chicxulub Impact Produced a Powerful Global Tsunami",
+   "container": "Harvard Dataverse",
+   "volume": "V1",
+   "pages": "",
+   "doi": "10.7910/DVN/GWOFIO",
+   "url": "https://doi.org/10.7910/DVN/GWOFIO",
+   "peerReviewed": false,
+   "verified": false,
+   "notes": "Dataset record and README_MOM6_RESULTS read via Dataverse API; iSALE input file asteroid.inp read. CC0. Contains pre-impact paleobathymetry 1/10 and 1/5 deg (tarball_pre_impact_bathymetry.tar, ~62 MB; includes Scotese 070Ma_PaleoDEM.txt), MOM6 initial conditions, MOST max-amplitude/velocity netCDF (~74 MB), SSH snapshots every 10 min (MOM6, ~7 GB). Not downloaded."
+  },
+  {
+   "id": "matsui2002",
+   "type": "chapter",
+   "authors": "Matsui, T.; Imamura, F.; Tajika, E.; Nakano, Y.; Fujisawa, Y.",
+   "year": 2002,
+   "title": "Generation and propagation of a tsunami from the Cretaceous-Tertiary impact event",
+   "container": "Catastrophic Events and Mass Extinctions: Impacts and Beyond (Koeberl, C.; MacLeod, K. G., eds.), Geological Society of America Special Paper 356",
+   "volume": "356",
+   "pages": "69-77",
+   "doi": "10.1130/0-8137-2356-6.69",
+   "url": "https://doi.org/10.1130/0-8137-2356-6.69",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "Full text read (PDF on co-author Tajika's University of Tokyo page park.itc.u-tokyo.ac.jp/tajika). Metadata confirmed by Crossref. Publisher page (GeoScienceWorld) blocked by bot check, not bypassed."
+  },
+  {
+   "id": "sanford2016",
+   "type": "article",
+   "authors": "Sanford, J. C.; Snedden, J. W.; Gulick, S. P. S.",
+   "year": 2016,
+   "title": "The Cretaceous-Paleogene boundary deposit in the Gulf of Mexico: Large-scale oceanic basin response to the Chicxulub impact",
+   "container": "Journal of Geophysical Research: Solid Earth",
+   "volume": "121(3)",
+   "pages": "1240-1261",
+   "doi": "10.1002/2015JB012615",
+   "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2015JB012615",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "Full text (free access) read on Wiley publisher page via browser (sections 1-4.3, Tables 1-3, figure captions)."
+  },
+  {
+   "id": "kinsland2021",
+   "type": "article",
+   "authors": "Kinsland, G. L.; Egedahl, K.; Strong, M. A.; Ivy, R.",
+   "year": 2021,
+   "title": "Chicxulub impact tsunami megaripples in the subsurface of Louisiana: Imaged in petroleum industry seismic data",
+   "container": "Earth and Planetary Science Letters",
+   "volume": "570",
+   "pages": "117063",
+   "doi": "10.1016/j.epsl.2021.117063",
+   "url": "https://www.sciencedirect.com/science/article/abs/pii/S0012821X21003186",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "ScienceDirect publisher page opened (abstract, highlights, introduction, section snippets incl. Conclusions). Full text paywalled."
+  },
+  {
+   "id": "kinsland2025",
+   "type": "article",
+   "authors": "Kinsland, G. L.; Zhang, R.; Burr, R.; Klug, S.",
+   "year": 2025,
+   "title": "Chicxulub impact tsunami megaripples, imaged in 3D seismic data: Distribution and characteristics on the northern Gulf of Mexico shelf and slope",
+   "container": "Marine Geology",
+   "volume": "481",
+   "pages": "107466",
+   "doi": "10.1016/j.margeo.2024.107466",
+   "url": "https://www.sciencedirect.com/science/article/abs/pii/S0025322724002500",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "ScienceDirect publisher page opened (abstract, highlights, introduction, section snippets). Full text paywalled; numbers taken only from visible text. Metadata confirmed by Crossref."
+  },
+  {
+   "id": "bralower1998",
+   "type": "article",
+   "authors": "Bralower, T. J.; Paull, C. K.; Leckie, R. M.",
+   "year": 1998,
+   "title": "The Cretaceous-Tertiary boundary cocktail: Chicxulub impact triggers margin collapse and extensive sediment gravity flows",
+   "container": "Geology",
+   "volume": "26(4)",
+   "pages": "331-334",
+   "doi": "10.1130/0091-7613(1998)026<0331:TCTBCC>2.3.CO;2",
+   "url": "https://doi.org/10.1130/0091-7613(1998)026<0331:TCTBCC>2.3.CO;2",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "Publisher page (GeoScienceWorld) blocked by bot check (not bypassed). Abstract read via OpenAlex record that mirrors the publisher landing page; bibliographic data confirmed by Crossref. Abstract contains no numbers; cited qualitatively only."
+  },
+  {
+   "id": "denne2013",
+   "type": "article",
+   "authors": "Denne, R. A.; Scott, E. D.; Eickhoff, D. P.; Kaiser, J. S.; Hill, R. J.; Spaw, J. M.",
+   "year": 2013,
+   "title": "Massive Cretaceous-Paleogene boundary deposit, deep-water Gulf of Mexico: New evidence for widespread Chicxulub-induced slope failure",
+   "container": "Geology",
+   "volume": "41(9)",
+   "pages": "983-986",
+   "doi": "10.1130/G34503.1",
+   "url": "https://doi.org/10.1130/G34503.1",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "Publisher page blocked by bot check (not bypassed). Abstract read via OpenAlex mirror of the GeoScienceWorld landing page; metadata confirmed by Crossref. Numbers from abstract only."
+  },
+  {
+   "id": "bourgeois1988",
+   "type": "article",
+   "authors": "Bourgeois, J.; Hansen, T. A.; Wiberg, P. L.; Kauffman, E. G.",
+   "year": 1988,
+   "title": "A tsunami deposit at the Cretaceous-Tertiary boundary in Texas",
+   "container": "Science",
+   "volume": "241(4865)",
+   "pages": "567-570",
+   "doi": "10.1126/science.241.4865.567",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/17774578/",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "PubMed record PMID 17774578 (abstract) opened; Crossref metadata confirmed."
+  },
+  {
+   "id": "maurrasse1991",
+   "type": "article",
+   "authors": "Maurrasse, F. J.-M. R.; Sen, G.",
+   "year": 1991,
+   "title": "Impacts, tsunamis, and the Haitian Cretaceous-Tertiary boundary layer",
+   "container": "Science",
+   "volume": "252(5013)",
+   "pages": "1690-1693",
+   "doi": "10.1126/science.252.5013.1690",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/17751972/",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "PubMed record PMID 17751972 (abstract) opened; Crossref metadata confirmed."
+  },
+  {
+   "id": "smit1992",
+   "type": "article",
+   "authors": "Smit, J.; Montanari, A.; Swinburne, N. H. M.; Alvarez, W.; Hildebrand, A. R.; Margolis, S. V.; Claeys, P.; Lowrie, W.; Asaro, F.",
+   "year": 1992,
+   "title": "Tektite-bearing, deep-water clastic unit at the Cretaceous-Tertiary boundary in northeastern Mexico",
+   "container": "Geology",
+   "volume": "20(2)",
+   "pages": "99-103",
+   "doi": "10.1130/0091-7613(1992)020<0099:TBDWCU>2.3.CO;2",
+   "url": "https://doi.org/10.1130/0091-7613(1992)020<0099:TBDWCU>2.3.CO;2",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "Publisher page blocked by bot check (not bypassed). Full abstract read via OpenAlex (mirrors publisher abstract); metadata confirmed by Crossref; page range as given in Range et al. 2022 reference list."
+  },
+  {
+   "id": "schulte2006",
+   "type": "article",
+   "authors": "Schulte, P.; Speijer, R.; Mai, H.; Kontny, A.",
+   "year": 2006,
+   "title": "The Cretaceous-Paleogene (K-P) boundary at Brazos, Texas: Sequence stratigraphy, depositional events and the Chicxulub impact",
+   "container": "Sedimentary Geology",
+   "volume": "184(1-2)",
+   "pages": "77-109",
+   "doi": "10.1016/j.sedgeo.2005.09.021",
+   "url": "https://www.sciencedirect.com/science/article/abs/pii/S0037073805003301",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "ScienceDirect publisher page opened (full abstract)."
+  },
+  {
+   "id": "keller2007",
+   "type": "article",
+   "authors": "Keller, G.; Adatte, T.; Berner, Z.; Harting, M.; Baum, G.; Prauss, M.; Tantawy, A.; Stueben, D.",
+   "year": 2007,
+   "title": "Chicxulub impact predates K-T boundary: New evidence from Brazos, Texas",
+   "container": "Earth and Planetary Science Letters",
+   "volume": "255(3-4)",
+   "pages": "339-356",
+   "doi": "10.1016/j.epsl.2006.12.026",
+   "url": "https://www.sciencedirect.com/science/article/abs/pii/S0012821X06009162",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "ScienceDirect publisher page opened (full abstract). Minority/contested position; included for the disagreement record."
+  },
+  {
+   "id": "schulte2012",
+   "type": "article",
+   "authors": "Schulte, P.; Smit, J.; Deutsch, A.; Salge, T.; Friese, A.; Beichel, K.",
+   "year": 2012,
+   "title": "Tsunami backwash deposits with Chicxulub impact ejecta and dinosaur remains from the Cretaceous-Palaeogene boundary in the La Popa Basin, Mexico",
+   "container": "Sedimentology",
+   "volume": "59(3)",
+   "pages": "737-765",
+   "doi": "10.1111/j.1365-3091.2011.01274.x",
+   "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1365-3091.2011.01274.x",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "Full abstract read via OpenAlex (open-access record, Wiley pdfdirect); metadata confirmed by Crossref (published online 2011, issue 2012)."
+  },
+  {
+   "id": "takayama2000",
+   "type": "article",
+   "authors": "Takayama, H.; Tada, R.; Matsui, T.; Iturralde-Vinent, M. A.; Oji, T.; Tajika, E.; Kiyokawa, S.; García, D.; Okada, H.; Hasegawa, T.; Toyoda, K.",
+   "year": 2000,
+   "title": "Origin of the Peñalver Formation in northwestern Cuba and its relation to K/T boundary impact event",
+   "container": "Sedimentary Geology",
+   "volume": "135(1-4)",
+   "pages": "295-320",
+   "doi": "10.1016/S0037-0738(00)00079-8",
+   "url": "https://www.sciencedirect.com/science/article/abs/pii/S0037073800000798",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "ScienceDirect publisher page opened (full abstract); metadata confirmed by Crossref."
+  },
+  {
+   "id": "gulick2019",
+   "type": "article",
+   "authors": "Gulick, S. P. S.; Bralower, T. J.; Ormö, J.; Hall, B.; Grice, K.; Schaefer, B.; Lyons, S.; Freeman, K. H.; Morgan, J. V.; Artemieva, N.; Kaskes, P.; de Graaff, S. J.; Whalen, M. T.; Collins, G. S.; Tikoo, S. M.; Verhagen, C.; Christeson, G. L.; Claeys, P.; Coolen, M. J. L.; Goderis, S.; Goto, K.; Grieve, R. A. F.; McCall, N.; Osinski, G. R.; Rae, A. S. P.; Riller, U.; Smit, J.; Vajda, V.; Wittmann, A.; Expedition 364 Scientists",
+   "year": 2019,
+   "title": "The first day of the Cenozoic",
+   "container": "Proceedings of the National Academy of Sciences of the United States of America",
+   "volume": "116(39)",
+   "pages": "19342-19351",
+   "doi": "10.1073/pnas.1909479116",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6765282/",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "PubMed PMID 31501350 + full text in PMC (PMC6765282) read (results, discussion, methods on dam-break model)."
+  },
+  {
+   "id": "bahlburg2010",
+   "type": "article",
+   "authors": "Bahlburg, H.; Weiss, R.; Wünnemann, K.",
+   "year": 2010,
+   "title": "Low energy deposition in the Chicxulub crater during the impact to post-impact transition",
+   "container": "Earth and Planetary Science Letters",
+   "volume": "295(1-2)",
+   "pages": "170-176",
+   "doi": "10.1016/j.epsl.2010.03.037",
+   "url": "https://doi.org/10.1016/j.epsl.2010.03.037",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "ScienceDirect publisher page opened via doi.org (abstract, introduction, section snippets)."
+  },
+  {
+   "id": "wunnemann2015",
+   "type": "article",
+   "authors": "Wünnemann, K.; Weiss, R.",
+   "year": 2015,
+   "title": "The meteorite impact-induced tsunami hazard",
+   "container": "Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences",
+   "volume": "373(2053)",
+   "pages": "20140381",
+   "doi": "10.1098/rsta.2014.0381",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/26392614/",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "PubMed record PMID 26392614 (abstract) opened. Publisher full text behind Cloudflare challenge (not bypassed). Its conclusion that the rim wave dominates energy is quoted second-hand from Range et al. 2022 Sec. 5.1."
+  },
+  {
+   "id": "collins2020",
+   "type": "article",
+   "authors": "Collins, G. S.; Patel, N.; Davison, T. M.; Rae, A. S. P.; Morgan, J. V.; Gulick, S. P. S.; IODP-ICDP Expedition 364 Science Party; Third-Party Scientists",
+   "year": 2020,
+   "title": "A steeply-inclined trajectory for the Chicxulub impact",
+   "container": "Nature Communications",
+   "volume": "11",
+   "pages": "1480",
+   "doi": "10.1038/s41467-020-15269-x",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32457325/",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "PubMed record PMID 32457325 (abstract) opened. Used only for impact-angle context of the vertical-impact assumption in Range et al. 2022."
+  },
+  {
+   "id": "gulick2008",
+   "type": "article",
+   "authors": "Gulick, S. P. S.; Barton, P. J.; Christeson, G. L.; Morgan, J. V.; McDonald, M.; Mendoza-Cervantes, K.; Pearson, Z. F.; Surendra, A.; Urrutia-Fucugauchi, J.; Vermeesch, P. M.; Warner, M. R.",
+   "year": 2008,
+   "title": "Importance of pre-impact crustal structure for the asymmetry of the Chicxulub impact crater",
+   "container": "Nature Geoscience",
+   "volume": "1(2)",
+   "pages": "131-135",
+   "doi": "10.1038/ngeo103",
+   "url": "https://www.nature.com/articles/ngeo103",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "Nature publisher page opened (abstract only; full text paywalled). Water-depth values attributed to this paper (100-200 m at impact point; up to ~2 km to N/NNE) are taken second-hand from range2022 (Sec. 2.2, Fig. S1), gulick2019 and kinsland2025."
+  },
+  {
+   "id": "muller2008",
+   "type": "article",
+   "authors": "Müller, R. D.; Sdrolias, M.; Gaina, C.; Steinberger, B.; Heine, C.",
+   "year": 2008,
+   "title": "Long-term sea-level fluctuations driven by ocean basin dynamics",
+   "container": "Science",
+   "volume": "319(5868)",
+   "pages": "1357-1362",
+   "doi": "10.1126/science.1151540",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/18323446/",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "PubMed record PMID 18323446 (abstract) opened. One of the two paleobathymetry sources of range2022 (age-depth grid age_depth_bath_65 on EarthByte server; URL responds HTTP 200)."
+  },
+  {
+   "id": "schulte2010",
+   "type": "article",
+   "authors": "Schulte, P.; Alegret, L.; Arenillas, I.; Arz, J. A.; Barton, P. J.; Bown, P. R.; Bralower, T. J.; Christeson, G. L.; Claeys, P.; Cockell, C. S.; Collins, G. S.; Deutsch, A.; Goldin, T. J.; Goto, K.; Grajales-Nishimura, J. M.; Grieve, R. A. F.; Gulick, S. P. S.; Johnson, K. R.; Kiessling, W.; Koeberl, C.; Kring, D. A.; MacLeod, K. G.; Matsui, T.; Melosh, J.; Montanari, A.; Morgan, J. V.; Neal, C. R.; Nichols, D. J.; Norris, R. D.; Pierazzo, E.; Ravizza, G.; Rebolledo-Vieyra, M.; Reimold, W. U.; Robin, E.; Salge, T.; Speijer, R. P.; Sweet, A. R.; Urrutia-Fucugauchi, J.; Vajda, V.; Whalen, M. T.; Willumsen, P. S.",
+   "year": 2010,
+   "title": "The Chicxulub asteroid impact and mass extinction at the Cretaceous-Paleogene boundary",
+   "container": "Science",
+   "volume": "327(5970)",
+   "pages": "1214-1218",
+   "doi": "10.1126/science.1177265",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/20203042/",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "PubMed record PMID 20203042 (abstract) opened. Used as consensus statement on single ejecta-rich K-Pg deposit."
+  },
+  {
+   "id": "scasso2005",
+   "type": "article",
+   "authors": "Scasso, R. A.; Concheyro, A.; Kiessling, W.; Aberhan, M.; Hecht, L.; Medina, F. A.; Tagle, R.",
+   "year": 2005,
+   "title": "A tsunami deposit at the Cretaceous/Paleogene boundary in the Neuquén Basin of Argentina",
+   "container": "Cretaceous Research",
+   "volume": "26(2)",
+   "pages": "283-297",
+   "doi": "10.1016/j.cretres.2004.12.003",
+   "url": "https://www.sciencedirect.com/science/article/abs/pii/S0195667105000224",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "ScienceDirect publisher page opened (abstract, author list); volume/pages from Crossref."
+  },
+  {
+   "id": "leveque2024",
+   "type": "article",
+   "authors": "LeVeque, R. J.; DePalma, R. A.; Garrison-Laney, C.; Maurya, S.; Smit, J.; Richards, M. A.",
+   "year": 2024,
+   "title": "Possible mechanisms for tsunami-like surge deposits due to the Chicxulub impact at the K-Pg boundary at the Tanis site, North Dakota",
+   "container": "Journal of Geophysical Research: Solid Earth",
+   "volume": "129(5)",
+   "pages": "e2023JB027643",
+   "doi": "10.1029/2023JB027643",
+   "url": "https://repository.library.noaa.gov/view/noaa/68617",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "Full text PDF read from NOAA Institutional Repository (noaa_68617_DS1.pdf); metadata confirmed by Crossref."
+  },
+  {
+   "id": "depalma2019",
+   "type": "article",
+   "authors": "DePalma, R. A.; Smit, J.; Burnham, D. A.; Kuiper, K.; Manning, P. L.; Oleinik, A.; Larson, P.; Maurrasse, F. J.; Vellekoop, J.; Richards, M. A.; Gurche, L.; Alvarez, W.",
+   "year": 2019,
+   "title": "A seismically induced onshore surge deposit at the KPg boundary, North Dakota",
+   "container": "Proceedings of the National Academy of Sciences of the United States of America",
+   "volume": "116(17)",
+   "pages": "8190-8199",
+   "doi": "10.1073/pnas.1817407116",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/30936306/",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "PubMed record PMID 30936306 (abstract) opened. Context only (seiche, not the Chicxulub tsunami)."
+  },
+  {
+   "id": "goto2005",
+   "type": "article",
+   "authors": "Goto, K.",
+   "year": 2005,
+   "title": "The Great Chicxulub Debate - Synchronicity of the Chicxulub impact and the Cretaceous/Tertiary boundary",
+   "container": "The Journal of the Geological Society of Japan",
+   "volume": "111(4)",
+   "pages": "193-205",
+   "doi": "10.5575/geosoc.111.193",
+   "url": "https://www.jstage.jst.go.jp/article/geosoc/111/4/111_4_193/_article/-char/en",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "J-STAGE publisher page opened (English abstract; paper in Japanese); Crossref metadata confirmed. Review of the tsunami-deposit/timing debate."
+  }
+ ],
+ "parameters": [
+  {
+   "id": "tsunami.range2022_impactor_diameter",
+   "group": "tsunami",
+   "label": "Średnica impaktora (założenie modelu Range 2022)",
+   "value": 14,
+   "unit": "km",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022 (input)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 2.1; asteroid.inp (OBJRESH=70 cells x 100 m radius)",
+   "notes": "Chosen to match crater-structure simulations (Collins et al. 2008; Morgan et al. 2016 as cited). Input, not a result.",
+   "time": null
+  },
+  {
+   "id": "tsunami.range2022_impactor_density",
+   "group": "tsunami",
+   "label": "Gęstość impaktora (założenie)",
+   "value": 2650,
+   "unit": "kg/m³",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022 (input)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 2.1",
+   "notes": "Granite-like projectile in iSALE (OBJMAT granite).",
+   "time": null
+  },
+  {
+   "id": "tsunami.range2022_impact_velocity",
+   "group": "tsunami",
+   "label": "Prędkość uderzenia (założenie)",
+   "value": 12,
+   "unit": "km/s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022 (input)",
+   "sources": [
+    "range2022",
+    "johnson2022"
+   ],
+   "locator": "Sec. 2.1; asteroid.inp OBJVEL=-1.2e4",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "tsunami.range2022_impact_angle",
+   "group": "tsunami",
+   "label": "Kąt uderzenia w modelu (pionowy)",
+   "value": 90,
+   "unit": "°",
+   "range": [
+    45,
+    90
+   ],
+   "certainty": "contested",
+   "method": "model:range2022 (input, axisymmetric constraint)",
+   "sources": [
+    "range2022",
+    "collins2020"
+   ],
+   "locator": "Sec. 2.1; Sec. 5.4",
+   "notes": "Vertical impact forced by 2-D axisymmetric iSALE. Collins et al. 2020 infer 45-60 deg from horizontal, from the NE. Range et al. expect a slightly larger rim wave downrange and smaller uprange (not quantified).",
+   "time": null
+  },
+  {
+   "id": "tsunami.range2022_water_depth_hydrocode",
+   "group": "tsunami",
+   "label": "Głębokość oceanu w modelu hydrokodu (fiducial)",
+   "value": 1000,
+   "unit": "m",
+   "range": [
+    1000,
+    3000
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (input)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 2.1-2.2; Fig. 2; Fig. S1",
+   "notes": "Constant depth (axisymmetry). 1, 2, 3 km tested; rim wave/crater 'do not depend strongly' on depth within 1-3 km; authors warn this need not hold for much shallower water.",
+   "time": null
+  },
+  {
+   "id": "tsunami.range2022_sediment_layer",
+   "group": "tsunami",
+   "label": "Grubość warstwy osadów nad granitem (model)",
+   "value": 4,
+   "unit": "km",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022 (input)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 2.1",
+   "notes": "Target: granitic crust + 4 km sediments (calcite in input file) + water.",
+   "time": null
+  },
+  {
+   "id": "tsunami.range2022_hydrocode_resolution",
+   "group": "tsunami",
+   "label": "Rozdzielczość siatki hydrokodu iSALE",
+   "value": 100,
+   "unit": "m",
+   "range": [
+    100,
+    200
+   ],
+   "certainty": "fact",
+   "method": "model:range2022 (setup)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 2.1; Table S1; Fig. S2",
+   "notes": "2500 x 600 high-resolution cells; high-res zone 250 km; mesh 0-344.3 km horizontal; 200 m test gives similar waveform.",
+   "time": null
+  },
+  {
+   "id": "tsunami.range2022_handoff_time",
+   "group": "tsunami",
+   "label": "Czas przekazania hydrokod -> model płytkowodny",
+   "value": 600,
+   "unit": "s",
+   "range": [
+    600,
+    850
+   ],
+   "certainty": "fact",
+   "method": "model:range2022 (setup)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 3.1; Text S1; Fig. S4",
+   "notes": "850 s hand-off tested: nearly identical global energies.",
+   "time": {
+    "t": 600,
+    "range": [
+     600,
+     850
+    ]
+   }
+  },
+  {
+   "id": "tsunami.range2022_sw_resolution",
+   "group": "tsunami",
+   "label": "Rozdzielczość globalnego modelu płytkowodnego (MOM6/MOST)",
+   "value": 0.1,
+   "unit": "°",
+   "range": [
+    0.1,
+    0.2
+   ],
+   "certainty": "fact",
+   "method": "model:range2022 (setup)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 3.1; Tables S2-S3; Fig. S3",
+   "notes": "1/5 deg test similar. MOM6 dt 10 s, MOST dt 6 s; domain 86.05S-82.05N. Arrival times stated accurate to ~1% at 1/10 deg (MOM6).",
+   "time": null
+  },
+  {
+   "id": "tsunami.range2022_simulated_duration",
+   "group": "tsunami",
+   "label": "Czas symulacji globalnej",
+   "value": 48,
+   "unit": "h",
+   "range": null,
+   "certainty": "fact",
+   "method": "model:range2022 (setup)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Fig. 3-4; Movies S3-S4",
+   "notes": "No runup/inundation modelled (1/10 deg too coarse).",
+   "time": null
+  },
+  {
+   "id": "tsunami.range2022_source_energy",
+   "group": "tsunami",
+   "label": "Energia kinetyczna impaktora w scenariuszu Range 2022",
+   "value": 2.7e+23,
+   "unit": "J",
+   "range": [
+    2.7e+23,
+    1.2e+24
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (input-derived)",
+   "sources": [
+    "range2022",
+    "sanford2016"
+   ],
+   "locator": "Table S4",
+   "notes": "Consistent with 0.5*m*v^2 for 14 km, 2650 kg/m3, 12 km/s. Sanford et al. 2016 (Sec. 1) cite 4.2-12e23 J from older literature; scenario-dependent.",
+   "time": null
+  },
+  {
+   "id": "tsunami.wave_height_150s",
+   "group": "tsunami",
+   "label": "Wysokość ściany wody pchanej kurtyną ejekty (t=2,5 min)",
+   "value": 4.5,
+   "unit": "km",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022 (iSALE)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 2.2; Fig. 1a",
+   "notes": "Ejecta-curtain-driven water wall at ~70-80 km radius (read from Fig. 1a); not yet a freely propagating tsunami.",
+   "time": {
+    "t": 150,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.initial_amplitude",
+   "group": "tsunami",
+   "label": "Amplituda fali brzeżnej (rim wave) w chwili przekazania (10 min)",
+   "value": 1.5,
+   "unit": "km",
+   "range": [
+    1.2,
+    1.5
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (iSALE)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 2.2; Fig. 1c; Fig. 2; Text S1",
+   "notes": "1.5 km in main text; SI gives 1.4 km at 600 s (fiducial) and 1.2 km when ejecta leaving a 50 km-high mesh are removed. Height above resting sea level; most wave breaking ends before 600 s.",
+   "time": {
+    "t": 600,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.rim_wave_radius_600s",
+   "group": "tsunami",
+   "label": "Odległość czoła fali brzeżnej od punktu uderzenia (10 min)",
+   "value": 220,
+   "unit": "km",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022 (iSALE)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 2.2; Fig. 1c; Fig. 2",
+   "notes": "Fig. 2: positive hump ~155-245 km, crest ~220-230 km; sea surface depressed (-0.3 to -0.7 km) between ~70 and 150 km (water returning to crater).",
+   "time": {
+    "t": 600,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.rim_wave_wavelength",
+   "group": "tsunami",
+   "label": "Długość fali brzeżnej",
+   "value": 75,
+   "unit": "km",
+   "range": [
+    50,
+    100
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 3.1",
+   "notes": "Stated as 'about 50-100 km'; 75 is the midpoint for convenience. Wavelength >> depth, so shallow-water approximation applies after hand-off.",
+   "time": null
+  },
+  {
+   "id": "tsunami.crater_only_energy_factor",
+   "group": "tsunami",
+   "label": "Ile razy mniej energii ma fala samego zapadania krateru (bez rim wave), po 4 h",
+   "value": 13,
+   "unit": "",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022 (MOM6 sensitivity run 'Crater Only')",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 5.1",
+   "notes": "Supports rim-wave dominance (agreeing with Wunnemann & Weiss 2015 as cited). Contrasts with matsui2002.",
+   "time": {
+    "t": 15000,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.half_crater_energy_deficit",
+   "group": "tsunami",
+   "label": "Deficyt energii wariantu 'Half Crater' vs 'Full Crater'",
+   "value": 0.05,
+   "unit": "",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 5.3",
+   "notes": "About 5% less energy when the crater portion over pre-impact land is kept as land (fiducial).",
+   "time": null
+  },
+  {
+   "id": "tsunami.front_speed_deep",
+   "group": "tsunami",
+   "label": "Prędkość czoła fali na głębokim oceanie",
+   "value": 200,
+   "unit": "m/s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022; scaling: c=sqrt(g*h)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 3.2",
+   "notes": "'in excess of 200 m/s in deep water, in accordance with the shallow-water celerity' (sqrt(9.81*4000 m) = 198 m/s).",
+   "time": null
+  },
+  {
+   "id": "tsunami.front_radius_1h",
+   "group": "tsunami",
+   "label": "Promień czoła fali po 1 h (Zatoka Meksykańska)",
+   "value": 750,
+   "unit": "km",
+   "range": [
+    700,
+    830
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (MOST/MOM6)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Fig. 3a (read from figure, approximate)",
+   "notes": "Leading ring at ~700-830 km from the impact point in paleo-coordinates; implies ~177 m/s mean between 600 s (220 km) and 1 h.",
+   "time": {
+    "t": 3600,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.front_radius_4h_east",
+   "group": "tsunami",
+   "label": "Zasięg czoła fali na wschód po 4 h",
+   "value": 2800,
+   "unit": "km",
+   "range": [
+    2500,
+    3000
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (MOST/MOM6)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Fig. 3b (read from figure, approximate)",
+   "notes": "Eastward front ~27 deg of longitude from impact at ~20N paleolatitude; southward only ~1600 km. Approximate figure reading.",
+   "time": {
+    "t": 14400,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.t_north_atlantic",
+   "group": "tsunami",
+   "label": "Wejście fali z Zatoki do Atlantyku",
+   "value": 3600,
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 3.2; Fig. 3a",
+   "notes": "'spread outside the Gulf into the Atlantic after about 1 hr from impact'. In the Range paleogeography the Gulf opens broadly to the east.",
+   "time": {
+    "t": 3600,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.t_pacific_entry",
+   "group": "tsunami",
+   "label": "Wejście fali do Pacyfiku przez cieśninę środkowoamerykańską",
+   "value": 14400,
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 3.2; Fig. 3b",
+   "notes": "'after 4 hr, through the Central American seaway, the waves enter into the Pacific'. Depends on assumed open, deep seaway in the paleobathymetry.",
+   "time": {
+    "t": 14400,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.t_atlantic_crossed",
+   "group": "tsunami",
+   "label": "Przejście fali przez większość Atlantyku (od zachodu)",
+   "value": 87000,
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 3.2; Fig. 3c",
+   "notes": "Upper bound: state at 24 h post-hand-off (=24 h + 600 s). Waves 'cross most of the Pacific from the east and Atlantic from the west'.",
+   "time": {
+    "t": 87000,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.t_indian_ocean_entry",
+   "group": "tsunami",
+   "label": "Wejście fali do Oceanu Indyjskiego (z obu stron)",
+   "value": 87000,
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 3.2; Fig. 3c",
+   "notes": "Upper bound (24 h post-hand-off snapshot).",
+   "time": {
+    "t": 87000,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.t_global_coastlines",
+   "group": "tsunami",
+   "label": "Znaczące amplitudy na większości wybrzeży świata",
+   "value": 173400,
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 3.2; Fig. 3d",
+   "notes": "48 h post-hand-off; complex pattern from reflection/refraction. Beyond the 24 h window (context).",
+   "time": {
+    "t": 173400,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.open_ocean_height_gulf",
+   "group": "tsunami",
+   "label": "Wysokość fali na otwartych wodach Zatoki Meksykańskiej",
+   "value": 100,
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 3.2; Fig. 3a-b; Fig. 4a",
+   "notes": "'generally higher than 100 m' (lower bound). Fig. 4a colour scale saturated (>=10 m) everywhere in the Gulf.",
+   "time": {
+    "t": 7200,
+    "range": [
+     3600,
+     14400
+    ]
+   }
+  },
+  {
+   "id": "tsunami.gulf_height_1h_northern",
+   "group": "tsunami",
+   "label": "Wysokość fali w północnej Zatoce po 1 h (przy krawędzi szelfu)",
+   "value": 450,
+   "unit": "m",
+   "range": [
+    400,
+    500
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (as summarized by kinsland2025)",
+   "sources": [
+    "kinsland2025",
+    "range2022"
+   ],
+   "locator": "kinsland2025 Sec. 'Computer models and tsunami characteristics'; range2022 Fig. 3a (scale +/-500 m)",
+   "notes": "'perhaps 400-500 m after one hour of propagation of the rim wave, when the wave would have been approaching the paleoshelf break'.",
+   "time": {
+    "t": 3600,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.northern_gulf_height_4h",
+   "group": "tsunami",
+   "label": "Wysokość fali w północnej Zatoce po 4 h (po przejściu szelfu)",
+   "value": 45,
+   "unit": "m",
+   "range": [
+    40,
+    50
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (as summarized by kinsland2025)",
+   "sources": [
+    "kinsland2025",
+    "range2022"
+   ],
+   "locator": "kinsland2025 same section; range2022 Fig. 3b (scale +/-50 m)",
+   "notes": "'40-50 m after 4 h when the tsunami would have already crossed the paleoshelf'.",
+   "time": {
+    "t": 14400,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.open_ocean_height_north_atlantic",
+   "group": "tsunami",
+   "label": "Maks. wysokość fali na otwartym Północnym Atlantyku",
+   "value": 10,
+   "unit": "m",
+   "range": [
+    2,
+    10
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (MOST, max over 48 h)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Fig. 4a (read from colour scale); Sec. 3.2; Plain Language Summary",
+   "notes": "Western/central N Atlantic saturated at >=10 m (scale caps at 1000 cm); eastern N Atlantic ~2-8 m. Text: 'over 10 m offshore amplitudes' along many N Atlantic coasts.",
+   "time": null
+  },
+  {
+   "id": "tsunami.open_ocean_height_south_pacific",
+   "group": "tsunami",
+   "label": "Maks. wysokość fali na Południowym Pacyfiku (wiązka przez CAS)",
+   "value": 6,
+   "unit": "m",
+   "range": [
+    4,
+    10
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (MOST, max over 48 h)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Fig. 4a (read from colour scale)",
+   "notes": "Directed beam from the Central American Seaway toward the SW Pacific: 600-800 cm contours, locally saturated near coasts.",
+   "time": null
+  },
+  {
+   "id": "tsunami.open_ocean_height_north_pacific",
+   "group": "tsunami",
+   "label": "Maks. wysokość fali na Północnym Pacyfiku",
+   "value": 1.5,
+   "unit": "m",
+   "range": [
+    1,
+    2
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (MOST, max over 48 h)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Fig. 4a (read from colour scale)",
+   "notes": "Mostly 1-2 m (200 cm contours).",
+   "time": null
+  },
+  {
+   "id": "tsunami.open_ocean_height_south_atlantic",
+   "group": "tsunami",
+   "label": "Maks. wysokość fali na Południowym Atlantyku",
+   "value": 1.5,
+   "unit": "m",
+   "range": [
+    1,
+    2
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (MOST, max over 48 h)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Fig. 4a (read from colour scale); Sec. 4.2",
+   "notes": "Largely shielded; equatorial S Atlantic higher (flow >20 cm/s there per abstract).",
+   "time": null
+  },
+  {
+   "id": "tsunami.open_ocean_height_indian",
+   "group": "tsunami",
+   "label": "Maks. wysokość fali na Oceanie Indyjskim",
+   "value": 0.5,
+   "unit": "m",
+   "range": [
+    0,
+    1
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (MOST, max over 48 h)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Fig. 4a (read from colour scale); Sec. 3.2",
+   "notes": "Lowest colour class (<~1 m); 'with the exception of some coasts along the Indian Ocean and Mediterranean' near-shore amplitudes exceed 1 m.",
+   "time": null
+  },
+  {
+   "id": "tsunami.open_ocean_height_tethys",
+   "group": "tsunami",
+   "label": "Maks. wysokość fali w Tetydzie / basenie śródziemnomorskim",
+   "value": 0.5,
+   "unit": "m",
+   "range": [
+    0,
+    1
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Fig. 4a; Sec. 4.2 ('largely shielded')",
+   "notes": "Approximate; consistent with complete K-Pg sections around Mediterranean.",
+   "time": null
+  },
+  {
+   "id": "tsunami.nearshore_height_global",
+   "group": "tsunami",
+   "label": "Amplituda przybrzeżna (offshore) na świecie - dolna granica",
+   "value": 1,
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 3.2; Sec. 5.3",
+   "notes": "'around the world near-shore amplitudes exceed 1 m', except some Indian Ocean and Mediterranean coasts. Runup not modelled; shoaling would amplify.",
+   "time": null
+  },
+  {
+   "id": "tsunami.coastal_offshore_height_natl_spac",
+   "group": "tsunami",
+   "label": "Amplituda przy wybrzeżach Płn. Atlantyku i Płd. Pacyfiku",
+   "value": 10,
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Plain Language Summary; Sec. 3.2",
+   "notes": "'over 10 m' offshore amplitude (lower bound) along many N Atlantic and some S American Pacific coasts.",
+   "time": null
+  },
+  {
+   "id": "tsunami.flow_speed_near_impact",
+   "group": "tsunami",
+   "label": "Prędkość przepływu wody w pobliżu krateru",
+   "value": 100,
+   "unit": "m/s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022 (MOST)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 3.2; Fig. 4b",
+   "notes": "'exceeds 100 m/s' (lower bound).",
+   "time": null
+  },
+  {
+   "id": "tsunami.flow_speed_offshore_coasts",
+   "group": "tsunami",
+   "label": "Prędkość przepływu przy wybrzeżach Płn. Atlantyku/Płd. Pacyfiku",
+   "value": 1,
+   "unit": "m/s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Plain Language Summary; Fig. 4b",
+   "notes": "'in excess of 1 m/s offshore' (lower bound).",
+   "time": null
+  },
+  {
+   "id": "tsunami.flow_speed_open_north_atlantic",
+   "group": "tsunami",
+   "label": "Maks. prędkość przepływu (uśredniona w słupie wody) - otwarty Płn. Atlantyk",
+   "value": 0.6,
+   "unit": "m/s",
+   "range": [
+    0.4,
+    0.8
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (depth-averaged, MOST)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Fig. 4b (read from colour scale)",
+   "notes": "Depth-averaged velocity (shallow-water model), not true near-bed velocity. ~40-80 cm/s in central N Atlantic.",
+   "time": null
+  },
+  {
+   "id": "tsunami.flow_speed_open_south_pacific",
+   "group": "tsunami",
+   "label": "Maks. prędkość przepływu - Płd. Pacyfik",
+   "value": 0.4,
+   "unit": "m/s",
+   "range": [
+    0.2,
+    0.6
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (depth-averaged, MOST)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Fig. 4b (read from colour scale)",
+   "notes": "~20-60 cm/s along the beam; >20 cm/s more than 12,000 km from impact.",
+   "time": null
+  },
+  {
+   "id": "tsunami.flow_speed_north_pacific_indian",
+   "group": "tsunami",
+   "label": "Maks. prędkość przepływu - Płn. Pacyfik i Ocean Indyjski",
+   "value": 0.1,
+   "unit": "m/s",
+   "range": [
+    0,
+    0.2
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (depth-averaged, MOST)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Fig. 4b (read from colour scale)",
+   "notes": "Below the 20 cm/s contour over most open-ocean areas.",
+   "time": null
+  },
+  {
+   "id": "tsunami.erosion_threshold_speed",
+   "group": "tsunami",
+   "label": "Próg prędkości erozji drobnych osadów pelagicznych",
+   "value": 0.2,
+   "unit": "m/s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical threshold cited by range2022 (Lonsdale & Southard 1974; McCave 1984)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 3.2; Sec. 4.2",
+   "notes": "Second-hand: the primary sediment-transport papers were not opened in this thread.",
+   "time": null
+  },
+  {
+   "id": "tsunami.erosion_reach_distance",
+   "group": "tsunami",
+   "label": "Zasięg obszarów z prędkością >20 cm/s (potencjalna erozja dna)",
+   "value": 12000,
+   "unit": "km",
+   "range": [
+    10000,
+    12000
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 + hiatus compilation",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Abstract (>10,000 km); Sec. 3.2 and 4.2 (>12,000 km, New Zealand)",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "tsunami.energy_initial",
+   "group": "tsunami",
+   "label": "Całkowita energia tsunami (kinetyczna+potencjalna) na starcie",
+   "value": 5.1e+20,
+   "unit": "J",
+   "range": [
+    5.1e+19,
+    5.1e+20
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Table S4 (Full Crater, with Rim Wave, 600 s, 'max'); Fig. S4",
+   "notes": "Fig. S4 caption states 5.1e19 J for the fiducial run, but Table S4 ratio (0.19% of 2.7e23 J), the '30,000x' claim (5.1e20/1.7e16) and the Fig. S4 ratio curve (~2.5e4 at 1 h) all imply ~5e20 J; the caption value is most likely a typo (flagged, not resolved).",
+   "time": {
+    "t": 600,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.energy_4h",
+   "group": "tsunami",
+   "label": "Energia tsunami 4 h po przekazaniu (Half Crater)",
+   "value": 3.9e+19,
+   "unit": "J",
+   "range": [
+    3.84e+19,
+    3.9e+19
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022 (MOM6 vs MOST)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 5.1",
+   "notes": "MOM6 3.90e19 J, MOST 3.84e19 J: model-independent. Decay ~13x from hand-off ('Van Dorn effect': faster dissipation of explosion/impact waves).",
+   "time": {
+    "t": 15000,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.energy_ratio_2004",
+   "group": "tsunami",
+   "label": "Stosunek energii tsunami Chicxulub do tsunami 2004 (maks.)",
+   "value": 30000,
+   "unit": "",
+   "range": [
+    3000,
+    30000
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Abstract; Sec. 5.3; Fig. S4",
+   "notes": "'up to 30,000 times'. Ratio falls with time (~2.5e4 at 1 h to ~3e3 at 7 h of ocean simulation, Fig. S4) because the impact tsunami dissipates faster.",
+   "time": null
+  },
+  {
+   "id": "tsunami.energy_2004_initial",
+   "group": "tsunami",
+   "label": "Energia tsunami 2004 (Ocean Indyjski) - porównanie",
+   "value": 1.7e+16,
+   "unit": "J",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model (Smith et al. 2005 HIM run; Tang et al. 2012) as cited by range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Table S4; Fig. S4 caption",
+   "notes": "9.1e15 J four hours later. Second-hand citation.",
+   "time": null
+  },
+  {
+   "id": "tsunami.energy_2011_initial",
+   "group": "tsunami",
+   "label": "Energia tsunami Tohoku 2011 - porównanie",
+   "value": 3000000000000000.0,
+   "unit": "J",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "DART-based estimate (Tang et al. 2012) as cited by range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Table S4; Fig. S4 caption",
+   "notes": "1.5e15 J four hours later. Second-hand citation.",
+   "time": null
+  },
+  {
+   "id": "tsunami.offshore_amplitude_2004",
+   "group": "tsunami",
+   "label": "Amplituda offshore tsunami 2004 po 2 h (dla porównania)",
+   "value": 0.6,
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "measured (satellite altimetry, Smith et al. 2005) as cited by range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 5.3",
+   "notes": "Second-hand citation; context for scale.",
+   "time": null
+  },
+  {
+   "id": "tsunami.generation_efficiency",
+   "group": "tsunami",
+   "label": "Sprawność zamiany energii uderzenia na energię tsunami",
+   "value": 0.0019,
+   "unit": "",
+   "range": [
+    0.0001,
+    0.0027
+   ],
+   "certainty": "extrapolation",
+   "method": "model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 5.1; Table S4",
+   "notes": "0.19%; earthquake tsunamis average ~0.1% (0.02-0.8%, Tang et al. 2012 as cited). Can be used to scale tsunami energy if the reference scenario's impact energy differs (assumes same efficiency - extrapolation).",
+   "time": null
+  },
+  {
+   "id": "tsunami.dispersion_amplitude_error",
+   "group": "tsunami",
+   "label": "Możliwe zawyżenie amplitud przez model płytkowodny (brak dyspersji)",
+   "value": 0.5,
+   "unit": "",
+   "range": [
+    0,
+    0.5
+   ],
+   "certainty": "extrapolation",
+   "method": "literature estimate cited by range2022 (Son et al. 2011; Zhou et al. 2012, 2014)",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 5.4",
+   "notes": "'up to 50% of amplitudes in certain cases'; shallow-water results treated as conservative (upper-bound) amplitudes. Far-field pattern expected to change little.",
+   "time": null
+  },
+  {
+   "id": "tsunami.sections_incomplete_fast_flow",
+   "group": "tsunami",
+   "label": "Odsetek niekompletnych profili K-Pg w strefach modelowanego przepływu >20 cm/s",
+   "value": 0.91,
+   "unit": "",
+   "range": null,
+   "certainty": "contested",
+   "method": "measured compilation (biostratigraphy/magnetostratigraphy) vs model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 4.2; Fig. 6; Tables S5-S6",
+   "notes": "Correlation, not proof: hiatuses on bathymetric highs can have other causes (bottom currents, slope failure, drilling strategy), discussed in Sec. 5.2.",
+   "time": null
+  },
+  {
+   "id": "tsunami.sections_complete_slow_flow",
+   "group": "tsunami",
+   "label": "Odsetek kompletnych profili K-Pg w strefach przepływu <20 cm/s (dolna granica)",
+   "value": 0.65,
+   "unit": "",
+   "range": null,
+   "certainty": "contested",
+   "method": "measured compilation vs model:range2022",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 4.2; Fig. 6",
+   "notes": "'At least 65%'. Same caveat as above.",
+   "time": null
+  },
+  {
+   "id": "tsunami.matsui2002_impactor_diameter",
+   "group": "tsunami",
+   "label": "Średnica impaktora (założenie Matsui 2002)",
+   "value": 10,
+   "unit": "km",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:matsui2002 (input, Ir-based estimate of Alvarez et al. 1980)",
+   "sources": [
+    "matsui2002"
+   ],
+   "locator": "p. 70 'Tsunami generation'",
+   "notes": "Energy assumed 1e8-1e9 Mt TNT; crater diameter 180 km; crater shape taken as present-day structure.",
+   "time": null
+  },
+  {
+   "id": "tsunami.matsui2002_platform_depth",
+   "group": "tsunami",
+   "label": "Głębokość wody na platformie Jukatanu (założenie Matsui 2002)",
+   "value": 200,
+   "unit": "m",
+   "range": [
+    100,
+    200
+   ],
+   "certainty": "contested",
+   "method": "model:matsui2002 (input; Sohl et al. 1991)",
+   "sources": [
+    "matsui2002"
+   ],
+   "locator": "p. 71 'Paleobathymetry'; Fig. 6; Conclusions",
+   "notes": "Controls the crater-generated wave: with 100 m depth max water level in crater falls to 40% and wave energy to ~17% of the 200 m case.",
+   "time": null
+  },
+  {
+   "id": "tsunami.matsui2002_grid",
+   "group": "tsunami",
+   "label": "Rozdzielczość siatki modelu Matsui 2002",
+   "value": 2.5,
+   "unit": "km",
+   "range": null,
+   "certainty": "fact",
+   "method": "model:matsui2002 (setup)",
+   "sources": [
+    "matsui2002"
+   ],
+   "locator": "p. 72 'Numerical scheme'",
+   "notes": "Nonlinear long-wave theory (leap-frog/upwind), 2-layer landslide model, domain Gulf of Mexico + Caribbean, paleogeography after Ross & Scotese 1988.",
+   "time": null
+  },
+  {
+   "id": "tsunami.matsui2002_rim_wave_platform_edge",
+   "group": "tsunami",
+   "label": "Amplituda fali brzeżnej na krawędzi platformy (Matsui 2002)",
+   "value": 10,
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "scaling: Gault & Sonett 1982 lab experiments + breaking criterion (amplitude ~ shelf depth), 1/r decay",
+   "sources": [
+    "matsui2002"
+   ],
+   "locator": "p. 73 'Behavior of the rim wave'; Fig. 3",
+   "notes": "'several meters' in deep water 500 km away; concluded the rim wave dispersed quickly ('No measurable wave was found ahead of the receding wave'). Order-of-magnitude estimate, not a hydrocode result.",
+   "time": null
+  },
+  {
+   "id": "tsunami.matsui2002_crater_wave_height",
+   "group": "tsunami",
+   "label": "Wysokość fali wychodzącej z krateru na jego krawędzi (Matsui 2002)",
+   "value": 50,
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:matsui2002",
+   "sources": [
+    "matsui2002"
+   ],
+   "locator": "Abstract; p. 73; Fig. 6",
+   "notes": "For a 200 m platform depth.",
+   "time": null
+  },
+  {
+   "id": "tsunami.matsui2002_crater_wave_period",
+   "group": "tsunami",
+   "label": "Okres fali generowanej przez krater (Matsui 2002)",
+   "value": 10,
+   "unit": "h",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:matsui2002",
+   "sources": [
+    "matsui2002"
+   ],
+   "locator": "Abstract; Fig. 6",
+   "notes": "Long period because inflow over a shallow platform is slow.",
+   "time": null
+  },
+  {
+   "id": "tsunami.matsui2002_crater_fill_time",
+   "group": "tsunami",
+   "label": "Czas wypełnienia krateru wodą (Matsui 2002)",
+   "value": 8,
+   "unit": "h",
+   "range": null,
+   "certainty": "contested",
+   "method": "model:matsui2002",
+   "sources": [
+    "matsui2002"
+   ],
+   "locator": "Fig. 5 caption",
+   "notes": "Contrasts with 30-60 min to flood up to the peak ring via a deep NNE gap in gulick2019, and with blocked/slow refill in bahlburg2010.",
+   "time": {
+    "t": 28800,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.matsui2002_t_receding_wave_gulf",
+   "group": "tsunami",
+   "label": "Czas przejścia fali cofającej się przez całą Zatokę (Matsui 2002)",
+   "value": 36000,
+   "unit": "s",
+   "range": null,
+   "certainty": "contested",
+   "method": "model:matsui2002",
+   "sources": [
+    "matsui2002"
+   ],
+   "locator": "Abstract; p. 73-74",
+   "notes": "'within 10 h'; Brazos and Mimbral exposed (drawdown) after ~10 h, followed by the rushing wave.",
+   "time": {
+    "t": 36000,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.matsui2002_rushing_wave_height",
+   "group": "tsunami",
+   "label": "Wysokość fali uderzającej w wybrzeże Ameryki Płn. (Matsui 2002)",
+   "value": 200,
+   "unit": "m",
+   "range": null,
+   "certainty": "contested",
+   "method": "model:matsui2002",
+   "sources": [
+    "matsui2002"
+   ],
+   "locator": "Abstract; p. 74; Fig. 7",
+   "notes": "'more than 200 m' (lower bound), followed by oscillations with 1-2 h periodicity.",
+   "time": null
+  },
+  {
+   "id": "tsunami.matsui2002_oscillation_period",
+   "group": "tsunami",
+   "label": "Okres oscylacji po odbiciu fal w Zatoce (Matsui 2002)",
+   "value": 1.5,
+   "unit": "h",
+   "range": [
+    1,
+    2
+   ],
+   "certainty": "extrapolation",
+   "method": "model:matsui2002",
+   "sources": [
+    "matsui2002"
+   ],
+   "locator": "p. 74",
+   "notes": "'periodicity of 1-2 h'.",
+   "time": null
+  },
+  {
+   "id": "tsunami.matsui2002_runup_mean",
+   "group": "tsunami",
+   "label": "Średni wbieg fali na ląd wokół Zatoki (Matsui 2002)",
+   "value": 150,
+   "unit": "m",
+   "range": null,
+   "certainty": "contested",
+   "method": "model:matsui2002",
+   "sources": [
+    "matsui2002"
+   ],
+   "locator": "Abstract; p. 74; Fig. 8",
+   "notes": "'in excess of 150 m' (lower bound). No global model (incl. range2022) computed runup.",
+   "time": null
+  },
+  {
+   "id": "tsunami.matsui2002_runup_max",
+   "group": "tsunami",
+   "label": "Maksymalny wbieg (zatoka Rio Grande) (Matsui 2002)",
+   "value": 300,
+   "unit": "m",
+   "range": null,
+   "certainty": "contested",
+   "method": "model:matsui2002",
+   "sources": [
+    "matsui2002"
+   ],
+   "locator": "Abstract; p. 74; Fig. 8",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "tsunami.matsui2002_inundation_distance",
+   "group": "tsunami",
+   "label": "Zasięg zalania lądu (dolina Missisipi) (Matsui 2002)",
+   "value": 300,
+   "unit": "km",
+   "range": null,
+   "certainty": "contested",
+   "method": "model:matsui2002",
+   "sources": [
+    "matsui2002"
+   ],
+   "locator": "Abstract; p. 74; Fig. 8",
+   "notes": "'more than 300 km' (lower bound).",
+   "time": null
+  },
+  {
+   "id": "tsunami.sanford2016_speed",
+   "group": "tsunami",
+   "label": "Przyjęta prędkość megatsunami (Sanford 2016)",
+   "value": 250,
+   "unit": "m/s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "scaling: maximum tsunami speed in 6 km water (Ward 2011 as cited)",
+   "sources": [
+    "sanford2016"
+   ],
+   "locator": "Table 2",
+   "notes": "sqrt(9.81*6000) = 243 m/s. Upper-bound speed: real Gulf depths (1-4 km, shelves <200 m) make arrivals later.",
+   "time": null
+  },
+  {
+   "id": "tsunami.t_campeche_escarpment",
+   "group": "tsunami",
+   "label": "Przybycie tsunami do skarpy Campeche (210 km)",
+   "value": 840,
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "scaling: distance/0.25 km/s",
+   "sources": [
+    "sanford2016"
+   ],
+   "locator": "Table 3",
+   "notes": "14 min.",
+   "time": {
+    "t": 840,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.t_dsdp536_540",
+   "group": "tsunami",
+   "label": "Przybycie tsunami do otworów DSDP 536/540 (510 km)",
+   "value": 2040,
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "scaling: distance/0.25 km/s",
+   "sources": [
+    "sanford2016"
+   ],
+   "locator": "Table 3",
+   "notes": "34 min.",
+   "time": {
+    "t": 2040,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.t_florida_platform_margin",
+   "group": "tsunami",
+   "label": "Przybycie tsunami do krawędzi platformy florydzkiej (800 km)",
+   "value": 3180,
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "scaling: distance/0.25 km/s",
+   "sources": [
+    "sanford2016"
+   ],
+   "locator": "Table 3",
+   "notes": "53 min.",
+   "time": {
+    "t": 3180,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.t_gulf_margin",
+   "group": "tsunami",
+   "label": "Przybycie tsunami do brzegów Zatoki (paleo-Floryda/Teksas, ~1120-1130 km)",
+   "value": 4500,
+   "unit": "s",
+   "range": [
+    3600,
+    10800
+   ],
+   "certainty": "contested",
+   "method": "scaling:sanford2016 (75-76 min); model:range2022 (~1 h to leave Gulf); gulick2019 (2-3 h far side)",
+   "sources": [
+    "sanford2016",
+    "range2022",
+    "gulick2019",
+    "kinsland2025"
+   ],
+   "locator": "sanford2016 Table 3; range2022 Sec. 3.2; gulick2019 Discussion; kinsland2025 Introduction",
+   "notes": "Spread reflects definitions (shelf break vs shoreline) and speed assumptions; shallow-shelf crossing (c~30-45 m/s at 100-200 m) adds hours. See disagreements.",
+   "time": {
+    "t": 4500,
+    "range": [
+     3600,
+     10800
+    ]
+   }
+  },
+  {
+   "id": "tsunami.lag_behind_rayleigh_northern_gulf",
+   "group": "tsunami",
+   "label": "Opóźnienie tsunami względem fal Rayleigha na szelfie płn. Zatoki",
+   "value": 3600,
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "interpretation of sequence (kinsland2025; sanford2016 Tables 2-3)",
+   "sources": [
+    "kinsland2025",
+    "sanford2016"
+   ],
+   "locator": "kinsland2025 Abstract/Introduction; sanford2016 Sec. 4.3",
+   "notes": "Rayleigh waves reach the northern shelf ~5 min after impact (~3 km/s over ~1000 km); tsunami ~1 h later. Fluidized mass-transport deposits not yet dewatered when tsunami arrived.",
+   "time": null
+  },
+  {
+   "id": "tsunami.t_resurge_peak_ring",
+   "group": "tsunami",
+   "label": "Czas zalania krateru do poziomu pierścienia szczytowego (resurge)",
+   "value": 2700,
+   "unit": "s",
+   "range": [
+    1800,
+    3600
+   ],
+   "certainty": "contested",
+   "method": "model:gulick2019 (1-D dam-break, h0=0.5-2 km) + core M0077 observations",
+   "sources": [
+    "gulick2019",
+    "bahlburg2010"
+   ],
+   "locator": "gulick2019 Results/Methods; SI Fig. S9",
+   "notes": "30-60 min for rim-gap water depth >1 km; neglects drag and melt-water interaction. bahlburg2010 argue a rim wall blocked forceful resurge (Yaxcopoil-1 sector).",
+   "time": {
+    "t": 2700,
+    "range": [
+     1800,
+     3600
+    ]
+   }
+  },
+  {
+   "id": "tsunami.resurge_deposit_thickness",
+   "group": "tsunami",
+   "label": "Miąższość osadu resurge na pierścieniu szczytowym (M0077)",
+   "value": 80,
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "measured (IODP-ICDP Exp. 364 core M0077)",
+   "sources": [
+    "gulick2019"
+   ],
+   "locator": "Abstract; Results",
+   "notes": "Fining-upward sorted suevite deposited 'within hours'; overlies ~40 m brecciated melt rock/suevite (tens of minutes) and a 10 m resurge layer (within an hour).",
+   "time": {
+    "t": 10800,
+    "range": [
+     3600,
+     86400
+    ]
+   }
+  },
+  {
+   "id": "tsunami.crater_tsunami_layer_thickness",
+   "group": "tsunami",
+   "label": "Miąższość warstwy odbitego tsunami w kraterze (M0077)",
+   "value": 10,
+   "unit": "cm",
+   "range": null,
+   "certainty": "contested",
+   "method": "measured thickness; tsunami origin interpreted",
+   "sources": [
+    "gulick2019"
+   ],
+   "locator": "Discussion ('uppermost 10-cm, cross-bedded suevite')",
+   "notes": "Cross-bedded sand-to-fine-gravel enriched in PAHs, overlain by charcoal; interpreted as reflected rim-wave tsunami returning within the first day.",
+   "time": null
+  },
+  {
+   "id": "tsunami.t_reflected_tsunami_crater",
+   "group": "tsunami",
+   "label": "Powrót odbitej fali tsunami do krateru (górna granica)",
+   "value": 86400,
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "interpretation of core + travel-time reasoning",
+   "sources": [
+    "gulick2019"
+   ],
+   "locator": "Abstract; Discussion",
+   "notes": "'Within a day'; could arrive 'within hours' via shallow waters S/SW (reflection from central Mexican highlands). Upper bound only.",
+   "time": {
+    "t": 86400,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.crater_floor_depth",
+   "group": "tsunami",
+   "label": "Głębokość dna krateru po uderzeniu (poniżej poziomu morza)",
+   "value": 800,
+   "unit": "m",
+   "range": [
+    600,
+    1000
+   ],
+   "certainty": "extrapolation",
+   "method": "reconstruction",
+   "sources": [
+    "gulick2019"
+   ],
+   "locator": "Discussion ('600- to 1,000-m-deep Chicxulub crater floor')",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "tsunami.depth_rim_gap_nne",
+   "group": "tsunami",
+   "label": "Głębokość wody w przerwie wału krateru (NNE)",
+   "value": 2000,
+   "unit": "m",
+   "range": [
+    1000,
+    2000
+   ],
+   "certainty": "extrapolation",
+   "method": "paleobathymetric reconstruction (seismic) as cited",
+   "sources": [
+    "gulick2019",
+    "kinsland2025",
+    "gulick2008"
+   ],
+   "locator": "gulick2019 Discussion & Methods ('~2 km'); kinsland2025 Introduction",
+   "notes": "Water depth increasing from ~100 m (S) to ~2 km (N) per Gulick et al. 2008 (second-hand: full text of gulick2008 not accessed).",
+   "time": null
+  },
+  {
+   "id": "tsunami.bahlburg2010_wall_height_above_sea",
+   "group": "tsunami",
+   "label": "Wysokość wału ejekty ponad poziom morza (Bahlburg 2010, ocean 1 km)",
+   "value": 200,
+   "unit": "m",
+   "range": null,
+   "certainty": "contested",
+   "method": "model:bahlburg2010 (iSALE, 1000 m water)",
+   "sources": [
+    "bahlburg2010"
+   ],
+   "locator": "Abstract",
+   "notes": "Wall ~1200 m above seafloor; would block direct resurge and the collapse wave. range2022 tested a sediment-rim case: tsunami energies comparable.",
+   "time": null
+  },
+  {
+   "id": "tsunami.bahlburg2010_return_flow_speed",
+   "group": "tsunami",
+   "label": "Prędkości prądów powrotnych do krateru (Bahlburg 2010)",
+   "value": 0.8,
+   "unit": "m/s",
+   "range": [
+    0.18,
+    1.5
+   ],
+   "certainty": "contested",
+   "method": "measured grain size/bedforms -> hydraulic inference",
+   "sources": [
+    "bahlburg2010"
+   ],
+   "locator": "Abstract",
+   "notes": "0.18-1.5 m/s low-energy currents entering by permeation/erosion of the wall (value = midpoint, for display only).",
+   "time": null
+  },
+  {
+   "id": "tsunami.depth_impact_point",
+   "group": "tsunami",
+   "label": "Głębokość wody w punkcie uderzenia",
+   "value": 150,
+   "unit": "m",
+   "range": [
+    100,
+    200
+   ],
+   "certainty": "contested",
+   "method": "paleobathymetric reconstruction",
+   "sources": [
+    "range2022",
+    "gulick2008",
+    "matsui2002",
+    "bahlburg2010"
+   ],
+   "locator": "range2022 Sec. 2.2 & Fig. S1; matsui2002 p. 71; bahlburg2010 Introduction",
+   "notes": "range2022: 100-200 m (citing Gulick 2008); matsui2002 assumes 200 m on the Yucatan platform; bahlburg2010: platform sediments at Yaxcopoil-1 (SW sector) formed in water 'only a few meters' deep.",
+   "time": null
+  },
+  {
+   "id": "tsunami.depth_50km_north",
+   "group": "tsunami",
+   "label": "Głębokość wody ~50 km od środka (strefa powstawania fali brzeżnej)",
+   "value": 1000,
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "paleobathymetric reconstruction",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 2.2; Fig. S1",
+   "notes": "Justifies the 1 km hydrocode ocean; the S/SW sectors were shallow platform.",
+   "time": null
+  },
+  {
+   "id": "tsunami.depth_150km",
+   "group": "tsunami",
+   "label": "Głębokość wody ~150 km od punktu uderzenia",
+   "value": 3000,
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "paleobathymetric reconstruction",
+   "sources": [
+    "range2022"
+   ],
+   "locator": "Sec. 2.2; Fig. S1",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "tsunami.depth_gulf_central",
+   "group": "tsunami",
+   "label": "Głębokość centralnego basenu paleo-Zatoki (siatka Range 2022)",
+   "value": 3500,
+   "unit": "m",
+   "range": [
+    3000,
+    4000
+   ],
+   "certainty": "extrapolation",
+   "method": "paleobathymetry grid (Muller 2008 + Scotese PALEOMAP, Blackman-filtered)",
+   "sources": [
+    "range2022",
+    "johnson2022",
+    "muller2008"
+   ],
+   "locator": "Fig. S1 (read from contours, approximate); Text S1",
+   "notes": "Deep basin north of the impact ~3-4 km; deeper (>4-5 km) toward the Atlantic and in the seaway to the Pacific in that grid.",
+   "time": null
+  },
+  {
+   "id": "tsunami.sea_level_late_cretaceous",
+   "group": "tsunami",
+   "label": "Poziom morza w późnej kredzie względem dzisiejszego",
+   "value": 170,
+   "unit": "m",
+   "range": [
+    85,
+    270
+   ],
+   "certainty": "contested",
+   "method": "model:muller2008 (ocean-basin reconstruction)",
+   "sources": [
+    "muller2008"
+   ],
+   "locator": "Abstract",
+   "notes": "170 (85-270) m; published estimates range ~40-250 m, the low end from New Jersey margin stratigraphy. Controls shelf flooding, coastline position and inland seaways.",
+   "time": null
+  },
+  {
+   "id": "tsunami.wis_depth_assumed",
+   "group": "tsunami",
+   "label": "Głębokość Zachodniego Morza Wewnętrznego (założenie, górna granica)",
+   "value": 200,
+   "unit": "m",
+   "range": null,
+   "certainty": "speculation",
+   "method": "assumption in leveque2024 analytical model",
+   "sources": [
+    "leveque2024"
+   ],
+   "locator": "Sec. on wave generation (H1 = 200 m 'gross upper bound')",
+   "notes": "'The actual dimensions of the WIS at that time are unknown'; continuity of the WIS with the Gulf at K-Pg time also uncertain.",
+   "time": null
+  },
+  {
+   "id": "tsunami.t_direct_tsunami_tanis",
+   "group": "tsunami",
+   "label": "Minimalny czas dotarcia bezpośredniego tsunami do Tanis (Dakota Płn.)",
+   "value": 36000,
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "travel-time estimate (DePalma et al. 2019, as restated)",
+   "sources": [
+    "leveque2024",
+    "depalma2019"
+   ],
+   "locator": "leveque2024 Abstract",
+   "notes": "'much more than 10 hr' (lower bound), hence the 1-2 h Tanis surges are attributed to seismic excitation, not the Chicxulub tsunami.",
+   "time": {
+    "t": 36000,
+    "range": null
+   }
+  },
+  {
+   "id": "tsunami.brazos_inferred_wave_height",
+   "group": "tsunami",
+   "label": "Wysokość tsunami wnioskowana z osadu Brazos (Teksas)",
+   "value": 75,
+   "unit": "m",
+   "range": [
+    50,
+    100
+   ],
+   "certainty": "contested",
+   "method": "hydraulic inference from deposit at mid-outer shelf depth",
+   "sources": [
+    "bourgeois1988"
+   ],
+   "locator": "Abstract",
+   "notes": "'about 50 to 100 meters high' (75 = midpoint). Tsunami origin disputed by keller2007 (storm beds); supported by schulte2006/schulte2010.",
+   "time": null
+  },
+  {
+   "id": "tsunami.brazos_event_bed_thickness",
+   "group": "tsunami",
+   "label": "Miąższość warstwy zdarzenia w Brazos",
+   "value": 1,
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "measured (outcrop), as compiled",
+   "sources": [
+    "sanford2016"
+   ],
+   "locator": "Sec. 1 (citing Yancey 1996; Yancey & Liu 2013)",
+   "notes": "Second-hand compilation value ('~1 m').",
+   "time": null
+  },
+  {
+   "id": "tsunami.mimbral_clastic_unit_thickness",
+   "group": "tsunami",
+   "label": "Miąższość jednostki klastycznej El Mimbral (NE Meksyk)",
+   "value": 3,
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "measured (outcrop)",
+   "sources": [
+    "smit1992"
+   ],
+   "locator": "Abstract",
+   "notes": "'up to 3 m'; spherule bed, laminated (backwash) beds, ripple beds (oscillating currents, perhaps seiche).",
+   "time": null
+  },
+  {
+   "id": "tsunami.mimbral_paleodepth",
+   "group": "tsunami",
+   "label": "Paleogłębokość wody w El Mimbral",
+   "value": 400,
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "proxy-based paleobathymetry (pelagic marl fauna)",
+   "sources": [
+    "smit1992"
+   ],
+   "locator": "Abstract",
+   "notes": "'more than 400 m' (lower bound).",
+   "time": null
+  },
+  {
+   "id": "tsunami.penalver_thickness",
+   "group": "tsunami",
+   "label": "Miąższość formacji Peñalver (Kuba, lokalizacja typowa)",
+   "value": 180,
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "measured (outcrop)",
+   "sources": [
+    "takayama2000"
+   ],
+   "locator": "Abstract",
+   "notes": "Basal grain flow + homogenite-like upward-fining calcarenite interpreted as deep-sea tsunami-induced suspension deposit.",
+   "time": null
+  },
+  {
+   "id": "tsunami.cuba_max_kpbd_thickness",
+   "group": "tsunami",
+   "label": "Maks. miąższość osadu granicznego K-Pg na Kubie (Cacarajícara)",
+   "value": 1000,
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "measured (outcrop), as compiled",
+   "sources": [
+    "sanford2016"
+   ],
+   "locator": "Sec. 1 ('nearly 1 km', citing Tada et al. 2003; Gulick et al. 2013)",
+   "notes": "Second-hand; primary Kiyokawa et al. 2002 not opened (see openQuestions). Gravity-flow dominated rather than tsunami-dominated.",
+   "time": null
+  },
+  {
+   "id": "tsunami.lapopa_unit1_thickness",
+   "group": "tsunami",
+   "label": "Miąższość jednostki 1 w basenie La Popa (NE Meksyk)",
+   "value": 8,
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "measured (outcrop)",
+   "sources": [
+    "schulte2012"
+   ],
+   "locator": "Abstract",
+   "notes": "'up to 8 m' chaotic bed; interpreted as shelf collapse + tsunami backflow; unit 2 = multiple backwash surges.",
+   "time": null
+  },
+  {
+   "id": "tsunami.neuquen_bed_thickness",
+   "group": "tsunami",
+   "label": "Miąższość warstwy piaskowca K/Pg w basenie Neuquén (Argentyna)",
+   "value": 20,
+   "unit": "cm",
+   "range": [
+    15,
+    25
+   ],
+   "certainty": "contested",
+   "method": "measured thickness; tsunami origin interpreted",
+   "sources": [
+    "scasso2005"
+   ],
+   "locator": "Abstract",
+   "notes": "15-25 cm, erosive base, hummocky cross-bedding; interpreted as distal Chicxulub tsunami deposit; amplification mechanism 'poorly understood' (funnel-shaped basin).",
+   "time": null
+  },
+  {
+   "id": "tsunami.megaripple_wavelength",
+   "group": "tsunami",
+   "label": "Długość fali megaripplemarków (Luizjana, przy krawędzi paleoszelfu)",
+   "value": 600,
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "measured (3D seismic)",
+   "sources": [
+    "kinsland2021",
+    "kinsland2025"
+   ],
+   "locator": "kinsland2021 Conclusions; kinsland2025 Introduction",
+   "notes": "Average; asymmetric, crests aligned toward Chicxulub. Tsunami origin is the authors' interpretation.",
+   "time": null
+  },
+  {
+   "id": "tsunami.megaripple_height",
+   "group": "tsunami",
+   "label": "Wysokość megaripplemarków (Luizjana, przy krawędzi paleoszelfu)",
+   "value": 16,
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "measured (3D seismic)",
+   "sources": [
+    "kinsland2021"
+   ],
+   "locator": "Conclusions",
+   "notes": "Average; 'largest ripples documented on Earth' (authors).",
+   "time": null
+  },
+  {
+   "id": "tsunami.megaripple_burial_depth",
+   "group": "tsunami",
+   "label": "Głębokość zalegania megaripplemarków",
+   "value": 1500,
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "measured (seismic + well logs)",
+   "sources": [
+    "kinsland2021"
+   ],
+   "locator": "Conclusions",
+   "notes": "Top of the K-Pg boundary deposit; formed below storm wave base.",
+   "time": null
+  },
+  {
+   "id": "tsunami.megaripple_upper_shelf_wavelength",
+   "group": "tsunami",
+   "label": "Długość fali megaripplemarków na górnym paleoszelfie",
+   "value": 365,
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "measured (3D seismic)",
+   "sources": [
+    "kinsland2025"
+   ],
+   "locator": "Section 'Comparison of the megaripples of the three regions'",
+   "notes": "Only subtly asymmetric; uniform over ~1500 km2.",
+   "time": null
+  },
+  {
+   "id": "tsunami.megaripple_upper_shelf_height",
+   "group": "tsunami",
+   "label": "Wysokość megaripplemarków na górnym paleoszelfie",
+   "value": 4.5,
+   "unit": "m",
+   "range": [
+    3,
+    6
+   ],
+   "certainty": "fact",
+   "method": "measured (3D seismic)",
+   "sources": [
+    "kinsland2025"
+   ],
+   "locator": "Same section ('3-6 m')",
+   "notes": "Midpoint for display.",
+   "time": null
+  },
+  {
+   "id": "tsunami.megaripple_slope_wavelength",
+   "group": "tsunami",
+   "label": "Długość fali ripplemarków na paleostoku",
+   "value": 485,
+   "unit": "m",
+   "range": [
+    450,
+    520
+   ],
+   "certainty": "fact",
+   "method": "measured (3D seismic)",
+   "sources": [
+    "kinsland2025"
+   ],
+   "locator": "Section 'Analysis of ripple features in Fairfield data'",
+   "notes": "Typical 450-520 m; most variable in amplitude and wavelength.",
+   "time": null
+  },
+  {
+   "id": "tsunami.megaripple_paleoslope_depth",
+   "group": "tsunami",
+   "label": "Paleogłębokość horyzontu tsunami na paleostoku",
+   "value": 130,
+   "unit": "m",
+   "range": [
+    95,
+    260
+   ],
+   "certainty": "extrapolation",
+   "method": "isochore-based paleobathymetry",
+   "sources": [
+    "kinsland2025"
+   ],
+   "locator": "Section 'Analysis of tsunami features on the paleoslope'",
+   "notes": "Text gives '95-170 m (300-850 ft)': internally inconsistent unit conversion (850 ft = 259 m). Range spans both readings; value is a display midpoint.",
+   "time": null
+  },
+  {
+   "id": "tsunami.kpbd_volume_northern_gulf",
+   "group": "tsunami",
+   "label": "Objętość osadu granicznego K-Pg w północnej Zatoce (zmapowana)",
+   "value": 105000.0,
+   "unit": "km³",
+   "range": null,
+   "certainty": "fact",
+   "method": "measured (210,000 km of 2-D seismic, 408 wells)",
+   "sources": [
+    "sanford2016"
+   ],
+   "locator": "Abstract; Sec. 4.4",
+   "notes": "Seismically/well mapped volume.",
+   "time": null
+  },
+  {
+   "id": "tsunami.kpbd_volume_gulf",
+   "group": "tsunami",
+   "label": "Objętość osadu granicznego K-Pg w całej Zatoce",
+   "value": 198000.0,
+   "unit": "km³",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "mapped north + extrapolated south",
+   "sources": [
+    "sanford2016"
+   ],
+   "locator": "Abstract; Sec. 2.5",
+   "notes": "'over 1.98e5 km3'; mostly debrites (seismic shaking) with turbidites (tsunami) on top.",
+   "time": null
+  },
+  {
+   "id": "tsunami.kpbd_thickness_deepwater",
+   "group": "tsunami",
+   "label": "Miąższość osadu granicznego K-Pg w głębokiej Zatoce (maks.)",
+   "value": 400,
+   "unit": "m",
+   "range": [
+    0,
+    400
+   ],
+   "certainty": "fact",
+   "method": "measured (seismic, wells)",
+   "sources": [
+    "sanford2016"
+   ],
+   "locator": "Sec. 3.1",
+   "notes": "From ~0 on shelves to 400 m or more; 300-375 m in salt-basin centres.",
+   "time": null
+  },
+  {
+   "id": "tsunami.kpbd_thickness_dsdp536_540",
+   "group": "tsunami",
+   "label": "Miąższość osadu granicznego w otworach DSDP 536/540",
+   "value": 50,
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "measured (cores)",
+   "sources": [
+    "sanford2016"
+   ],
+   "locator": "Sec. 4.2; Fig. 2b; Table 1",
+   "notes": "~40 m muddy debrite, ~10 m stacked turbidites (>=5 sequences), ~0.5 m Ir-enriched mudstone cap.",
+   "time": null
+  },
+  {
+   "id": "tsunami.denne2013_thickness_upper_slope",
+   "group": "tsunami",
+   "label": "Miąższość osadu masowego K-Pg na górnym stoku (średnia)",
+   "value": 15,
+   "unit": "m",
+   "range": [
+    10,
+    20
+   ],
+   "certainty": "fact",
+   "method": "measured (31 wells, seismic)",
+   "sources": [
+    "denne2013"
+   ],
+   "locator": "Abstract",
+   "notes": "'10-20 m' (midpoint).",
+   "time": null
+  },
+  {
+   "id": "tsunami.denne2013_thickness_lower_slope",
+   "group": "tsunami",
+   "label": "Miąższość osadu masowego K-Pg na dolnym stoku i dnie basenu (średnia)",
+   "value": 145,
+   "unit": "m",
+   "range": [
+    90,
+    200
+   ],
+   "certainty": "fact",
+   "method": "measured (31 wells, seismic)",
+   "sources": [
+    "denne2013"
+   ],
+   "locator": "Abstract",
+   "notes": "'90-200 m' (midpoint); on an unconformity representing 9-85 m.y.",
+   "time": null
+  },
+  {
+   "id": "tsunami.crater_kpbd_thickness",
+   "group": "tsunami",
+   "label": "Miąższość brekcji klastycznej (KPBD) w centralnym basenie krateru",
+   "value": 1000,
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "measured (seismic)",
+   "sources": [
+    "sanford2016"
+   ],
+   "locator": "Sec. 3.2; Fig. 10b",
+   "notes": "'approach 1 km'.",
+   "time": null
+  },
+  {
+   "id": "tsunami.tanis_surge_height",
+   "group": "tsunami",
+   "label": "Wysokość fal (surges) w Tanis - nie bezpośrednie tsunami",
+   "value": 10,
+   "unit": "m",
+   "range": null,
+   "certainty": "contested",
+   "method": "measured deposit, interpreted surge height",
+   "sources": [
+    "leveque2024",
+    "depalma2019"
+   ],
+   "locator": "leveque2024 Abstract/Key Points",
+   "notes": "Two ~10 m surges within 1-2 h of impact; attributed to seismically excited water waves (mechanism 'incompletely resolved').",
+   "time": {
+    "t": 5400,
+    "range": [
+     3600,
+     7200
+    ]
+   }
+  }
+ ],
+ "disagreements": [
+  {
+   "topic": "Dominant tsunami-generating mechanism (rim wave vs crater collapse / resurge 'rushing' wave)",
+   "positions": [
+    {
+     "claim": "The outward rim wave formed by the ejecta curtain carries most of the tsunami energy; a 'Crater Only' (collapse) run has ~13x less energy at 4 h.",
+     "sources": [
+      "range2022",
+      "wunnemann2015"
+     ]
+    },
+    {
+     "claim": "Water flow into and out of the crater cavity causes most of the tsunami; the rim wave (~10 m at platform edge) disperses quickly and is negligible at the coast.",
+     "sources": [
+      "matsui2002"
+     ]
+    }
+   ],
+   "assessment": "Range et al. 2022 has more support: it couples a resolved hydrocode (100 m cells, 1-3 km water) to two independent global shallow-water models and tests the collapse-only case directly. Matsui's rim-wave estimate came from lab scaling for a wave forming over a 200 m-deep platform. The real answer is direction-dependent: north of the crater (water >=1 km) the rim-wave case applies; over the shallow S/SW platform, rim-wave generation is weaker, which axisymmetric models cannot capture. Treat as resolved in favour of the rim wave for far-field propagation, but contested near the source."
+  },
+  {
+   "topic": "Did the ocean resurge rapidly into the crater (and form a collapse wave)?",
+   "positions": [
+    {
+     "claim": "Ocean resurge through a ~2 km-deep NNE gap flooded the crater up to the peak ring within 30-60 min, depositing ~80 m of sorted suevite within hours.",
+     "sources": [
+      "gulick2019"
+     ]
+    },
+    {
+     "claim": "An ejecta/rim wall up to 200 m above sea level blocked forceful resurge and a collapse wave; refill was slow (0.18-1.5 m/s currents) by permeation through the wall.",
+     "sources": [
+      "bahlburg2010"
+     ]
+    },
+    {
+     "claim": "Takes an 8 h crater-fill time over a 200 m-deep platform.",
+     "sources": [
+      "matsui2002"
+     ]
+    }
+   ],
+   "assessment": "Gulick et al. 2019 rest on direct peak-ring cores (M0077) and newer seismic bathymetry, so they have more support for fast resurge at least through the NNE gap. Bahlburg et al. analysed Yaxcopoil-1 in the SW sector, where a higher rim is plausible. Both can hold regionally (asymmetric target). For far-field tsunami energy the issue is minor: range2022 found similar energies with and without a sediment rim."
+  },
+  {
+   "topic": "Arrival time of the first tsunami at the Gulf of Mexico margins",
+   "positions": [
+    {
+     "claim": "~75-76 min to paleo-Florida/Texas coasts (distance at 0.25 km/s); megatsunami 'within 1-2 h'.",
+     "sources": [
+      "sanford2016"
+     ]
+    },
+    {
+     "claim": "The tsunami reached the northern shelf about an hour after the Rayleigh waves (~5 min); the modelled tsunami leaves the Gulf for the Atlantic after ~1 h.",
+     "sources": [
+      "kinsland2025",
+      "range2022"
+     ]
+    },
+    {
+     "claim": "Rim-wave tsunami trains reached the far side of the Gulf 2-3 h after impact (citing Sanford et al. 2016).",
+     "sources": [
+      "gulick2019"
+     ]
+    },
+    {
+     "claim": "The (crater-generated) receding wave crossed the Gulf within 10 h; the main rushing wave arrives after the drawdown.",
+     "sources": [
+      "matsui2002"
+     ]
+    }
+   ],
+   "assessment": "Mostly definitional. Deep-water arrival at the shelf break is ~1 h (deep-water speed ~200 m/s). Reaching the shoreline across broad shelves (c ~30-45 m/s at 100-200 m depth) can add 1-2 h, which reconciles 1 h with 2-3 h. Note that gulick2019's '2-3 h' is not what sanford2016 Table 3 gives. Matsui's 10 h applies only to his crater-dominated generation scenario, which newer work does not support. An eikonal solver on a paleobathymetry grid should settle this for the simulation; report shelf-break and shoreline arrivals separately."
+  },
+  {
+   "topic": "Origin and timing of the Brazos River (Texas) event bed",
+   "positions": [
+    {
+     "claim": "Single sandstone bed from a tsunami ~50-100 m high, directly below the Ir anomaly and the K-Pg boundary.",
+     "sources": [
+      "bourgeois1988"
+     ]
+    },
+    {
+     "claim": "High-energy debris flows and turbidites from multiple sources, probably multiple tsunami (or tempestites) plus reworking; ejecta at the base tie it to the K-Pg boundary.",
+     "sources": [
+      "schulte2006",
+      "schulte2010"
+     ]
+    },
+    {
+     "claim": "A series of separate storm events with burrowed surfaces between them; the Chicxulub ejecta predate the K-T boundary by ~300 kyr.",
+     "sources": [
+      "keller2007"
+     ]
+    }
+   ],
+   "assessment": "The impact-coincident event deposit (tsunami and/or gravity flows) has much stronger support: the 41-author synthesis in schulte2010 and later Gulf-wide mapping (sanford2016, kinsland2021) agree. The storm/pre-boundary interpretation is a minority position but has not been withdrawn; goto2005 reviews the debate. Treat Brazos as tsunami-influenced, with the inferred 50-100 m height as an order-of-magnitude hydraulic inference."
+  },
+  {
+   "topic": "Is the shallow-water (non-dispersive) description adequate for the far field?",
+   "positions": [
+    {
+     "claim": "Long wavelength (50-100 km) makes shallow-water theory valid. Dispersion may cut amplitudes by up to 50% locally (undular bores), but the far-field pattern and energy directivity should change little, so shallow-water results are an upper bound.",
+     "sources": [
+      "range2022"
+     ]
+    },
+    {
+     "claim": "The rim wave is strongly dispersive in deep water (Ursell number ~0.1) and decays quickly, leaving no measurable leading wave at the coast.",
+     "sources": [
+      "matsui2002"
+     ]
+    }
+   ],
+   "assessment": "Unresolved. Range et al. hand off at 600 s with a 50-100 km wavelength, for which dispersion is weak. Matsui assumed a much shorter-wavelength rim wave born in shallow water. Treat far-field amplitudes as upper bounds, with up to about 50% uncertainty. No published Boussinesq or 3-D global run for Chicxulub was found."
+  },
+  {
+   "topic": "Late Cretaceous sea level (controls shelf width, coastlines and seaways in the paleobathymetry)",
+   "positions": [
+    {
+     "claim": "About 170 (85-270) m above present, from ocean-basin reconstructions.",
+     "sources": [
+      "muller2008"
+     ]
+    },
+    {
+     "claim": "About 40 m above present, from New Jersey margin stratigraphy (as summarised in Muller et al. 2008, who attribute the gap to dynamic subsidence).",
+     "sources": [
+      "muller2008"
+     ]
+    }
+   ],
+   "assessment": "Muller et al. reconcile the two through mantle-driven subsidence of New Jersey, which favours the higher eustatic value used in the range2022 grid. Coastline positions remain uncertain by tens to hundreds of km on low-relief margins."
+  }
+ ],
+ "openQuestions": [
+  "unverified lead: Smit, J.; Roep, Th. B.; Alvarez, W.; Montanari, A.; Claeys, P.; Grajales-Nishimura, J. M.; Bermudez, J. (1996) 'Coarse-grained, clastic sandstone complex at the K/T boundary around the Gulf of Mexico: Deposition by tsunami waves induced by the Chicxulub impact?' GSA Special Paper 307, 151-182, DOI 10.1130/0-8137-2307-8.151. Crossref metadata confirmed; content not accessed (GeoScienceWorld bot check). Key source for the Gulf-margin sandstone complex and multi-wave sequence.",
+  "unverified lead: Stinnesbeck, W.; Keller, G. (1996) 'K/T boundary coarse-grained siliciclastic deposits in northeastern Mexico and northeastern Brazil: Evidence for mega-tsunami or sea-level changes?' GSA Special Paper 307, DOI 10.1130/0-8137-2307-8.197. Contrary interpretation (sea level / gravity flows). Crossref metadata only.",
+  "unverified lead: Kiyokawa, S. et al. (2002) 'Cretaceous-Tertiary boundary sequence in the Cacarajicara Formation, western Cuba: An impact-related, high-energy, gravity-flow deposit', GSA Special Paper 356, DOI 10.1130/0-8137-2356-6.125. A search snippet mentions '>700 m thick'; not opened, not used.",
+  "unverified lead: Klaus, A.; Norris, R. D.; Kroon, D.; Smit, J. (2000) 'Impact-induced mass wasting at the K-T boundary: Blake Nose, western North Atlantic', Geology 28(4), 319-322. Crossref metadata only; relevant to North Atlantic slope failure vs tsunami erosion.",
+  "unverified leads cited only second-hand via range2022: Albertao & Martins 1996 (Pernambuco, Brazil, graded ejecta-bearing bed); Campbell et al. 2008 (GSA SP 437, Missouri 'mega tsunami' deposit); Hollis 2003 and Laird et al. 2003 (New Zealand); Mateo et al. 2016 (North Atlantic hiatuses); Tang et al. 2012 (tsunami energies); Lonsdale & Southard 1974 and McCave 1984 (20 cm/s erosion threshold); Glimsdal et al. 2007 (dispersion, Mjolnir); Gisler et al. 2011 (water vaporization); Tada et al. 2003 (AAPG Memoir 79). Not opened.",
+  "Excluded (not peer-reviewed): Ward, S. (2012, 2021) Chicxulub tsunami animations on YouTube, cited by range2022 as earlier Gulf-scale simulations. No peer-reviewed regional successor was found in this search.",
+  "Range et al. 2022 SI internal inconsistency: the Fig. S4 caption gives the fiducial initial energy as 5.1e19 J, but Table S4, the 0.19% efficiency, the 30,000x ratio and the Fig. S4 curve all imply ~5.1e20 J. This thread uses 5.1e20 J and flags the caption as a likely typo. Also: main text '1.5-km-high' wave at 10 min vs SI '1.4 km' (1.2 km with truncated mesh).",
+  "Oblique impact effect on the tsunami: Collins et al. 2020 put the trajectory at 45-60 deg from the NE. Range et al. expect a larger rim wave downrange (i.e. toward the SW, onto the shallow platform/Mexico) and smaller uprange (toward the deep Gulf/Atlantic), but this is not quantified. No 3-D oblique impact tsunami simulation for Chicxulub was found (speculation).",
+  "Rim-wave generation over the shallow S/SW Yucatan platform (water tens to ~200 m) vs the >=1 km-deep N/NE sector is not resolved by axisymmetric models; the azimuthal amplitude pattern of the source is unknown.",
+  "Air-pressure (Lamb-wave) driven tsunami: Range et al. (Sec. 5.4) argue it could be significant in the far field and would arrive earlier than the gravity-wave tsunami (Lamb wave ~300 m/s, cf. leveque2024 'slightly subsonic speeds (300 m/s or less)'), by analogy with Hunga Tonga 2022. Not modelled for Chicxulub in any verified source.",
+  "Landslide/slope-failure tsunamis around the Gulf (margins collapsed within minutes per sanford2016/denne2013/bralower1998) are not in the global model. matsui2002 found a modest landslide wave for a 140 x 75 km, 100 m-thick slide, but a much larger one if 10x thicker. Size and timing are unconstrained.",
+  "Paleobathymetry uncertainties that directly control eikonal arrival times: the depth and width of the Central American Seaway at 66 Ma (the range2022 grid has a broad, deep opening giving Pacific entry at ~4 h); whether the Western Interior Seaway was connected to the Gulf (leveque2024: unknown); shelf widths around the Gulf (sea level 85-270 m above present per muller2008); the Atlantic width and the mid-ocean ridge position (range2022 used Muller 2008 65 Ma age-depth plus the Scotese 70 Ma PaleoDEM, smoothed with a Blackman filter).",
+  "No verified global model computes runup or inundation. The only Gulf-wide runup numbers (mean >150 m, max 300 m, >300 km inland; matsui2002) come from a 2002 scenario whose generation mechanism is now disputed.",
+  "Range et al. 2022 hiatus-model correlation (91% incomplete sections where modelled flow >20 cm/s) is supportive but non-unique. Alternative causes of hiatuses on bathymetric highs are acknowledged by the authors.",
+  "Gulick et al. 2019 attribute '2-3 h' Gulf crossing to Sanford et al. 2016, whose Table 3 actually gives 75-76 min to the coasts. The discrepancy is unexplained; probably a shelf-crossing vs deep-water distinction.",
+  "Kinsland et al. 2025 paleo-slope depth '95-170 m (300-850 ft)' is internally inconsistent (850 ft = 259 m); the full text was not available to resolve it.",
+  "Recommended calibration data (not downloaded; ask the user before fetching): Harvard Dataverse doi:10.7910/DVN/GWOFIO (CC0) has the range2022 pre-impact paleobathymetry at 1/10 deg (tarball ~62 MB) and MOST_max_output.nc (~74 MB, maximum amplitude/velocity). These would let the eikonal solver use the same grid and calibrate heights cell by cell."
+ ]
+}

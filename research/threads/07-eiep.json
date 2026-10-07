@@ -1,0 +1,2251 @@
+{
+ "thread": "07-eiep",
+ "sources": [
+  {
+   "id": "collins2005",
+   "type": "article",
+   "authors": "Collins, G. S.; Melosh, H. J.; Marcus, R. A.",
+   "year": 2005,
+   "title": "Earth Impact Effects Program: A Web-based computer program for calculating the regional environmental consequences of a meteoroid impact on Earth",
+   "container": "Meteoritics & Planetary Science",
+   "volume": "40",
+   "pages": "817-840",
+   "doi": "10.1111/j.1945-5100.2005.tb00157.x",
+   "url": "https://impact.ese.ic.ac.uk/static/effects.pdf",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "Issue 6. doi.org resolves to onlinelibrary.wiley.com (Wiley returned HTTP 403 to automated fetch). Metadata (title, 3 authors, vol 40, issue 6, pp. 817-840, June 2005) confirmed via Crossref REST API. Full text read from the author-hosted journal-formatted PDF linked from the official calculator page (impact.ese.ic.ac.uk/static/effects.pdf, PDF pp. 1-24 = journal pp. 817-840). Every equation transcribed from rendered page images, not only from text extraction (text layer garbles Greek letters and radicals)."
+  },
+  {
+   "id": "collins2017",
+   "type": "article",
+   "authors": "Collins, G. S.; Lynch, E.; McAdam, R.; Davison, T. M.",
+   "year": 2017,
+   "title": "A numerical assessment of simple airblast models of impact airbursts",
+   "container": "Meteoritics & Planetary Science",
+   "volume": "52",
+   "pages": "1542-1560",
+   "doi": "10.1111/maps.12873",
+   "url": "https://spiral.imperial.ac.uk/server/api/core/bitstreams/277e9ba5-8c0e-4b20-8040-6c4f87bef907/content",
+   "peerReviewed": true,
+   "verified": false,
+   "notes": "Issue 8; CC-BY 4.0. Metadata confirmed via Crossref REST API; full text (Early View pagination 1-19) read from Imperial College Spiral repository. The section 'The Earth Impact Effects Program' (EV p. 15 = journal p. 1556) documents three changes to the web calculator; Eq. 7 transcribed from rendered page image. Linked from the official calculator page as 'Recent improvements in the airblast calculation'."
+  },
+  {
+   "id": "collins2013errata",
+   "type": "software",
+   "authors": "Collins, G. S.; Melosh, H. J.",
+   "year": 2013,
+   "title": "Errata and Improvements in Earth Impact Effects Program (technical note dated May 13, 2013)",
+   "container": "Appended (PDF pp. 25-30) to effects.pdf distributed with the Impact: Earth! calculator",
+   "volume": "",
+   "pages": "1-6",
+   "doi": "",
+   "url": "https://impact.ese.ic.ac.uk/static/effects.pdf",
+   "peerReviewed": false,
+   "verified": false,
+   "notes": "NOT peer-reviewed: author note documenting software changes (Eq. 4 and Eq. 20 typo corrections, length-of-day, complex-crater depth d_fr = 0.294 D_fr^0.301, tsunami rim/collapse waves). Read in full from rendered page images. Cites Wunnemann, Collins & Weiss 2010 (Rev. Geophys. 48, RG4006, doi 10.1029/2009RG000308; bibliographic data confirmed via Crossref only, full text not opened, no values taken from it)."
+  },
+  {
+   "id": "purdueImpactEarth2026",
+   "type": "software",
+   "authors": "Marcus, R. A.; Melosh, H. J.; Collins, G. S.",
+   "year": 2026,
+   "title": "Impact: Earth! web calculator (Purdue University build; client-side bundle static/js/main.a4859e04.js)",
+   "container": "https://www.purdue.edu/impactearth/",
+   "volume": "",
+   "pages": "",
+   "doi": "",
+   "url": "https://www.purdue.edu/impactearth/",
+   "peerReviewed": false,
+   "verified": false,
+   "notes": "Year = access date (2026-10-04); build date unknown. The physics is computed in the browser; the bundle was downloaded and its calculation functions executed verbatim in Node.js; the live page was also driven in a browser for cases A, B, C and displayed identical (rounded) values. Used as the primary oracle."
+  },
+  {
+   "id": "imperialEIEP2026",
+   "type": "software",
+   "authors": "Collins, G. S.; Melosh, H. J.; Marcus, R. A.",
+   "year": 2026,
+   "title": "Impact: Earth! / Earth Impact Effects Program web calculator (Imperial College London server; gunicorn; results at /map)",
+   "container": "https://impact.ese.ic.ac.uk/ImpactEffects",
+   "volume": "",
+   "pages": "",
+   "doi": "",
+   "url": "https://impact.ese.ic.ac.uk/ImpactEffects",
+   "peerReviewed": false,
+   "verified": false,
+   "notes": "Year = access date (2026-10-04). Form posts by GET to https://impact.ese.ic.ac.uk/map (fields documented in 07-eiep.md sec. 7.1). In 'distance only' mode the page prints energy, entry, airblast and crater sections only (no thermal, seismic or ejecta text); thermal/seismic/ejecta enter only as map-circle radii (radians) in inline JavaScript. Old URLs (ImpactEarth/cgi-bin/*.cgi, lpl.arizona.edu/impacteffects) now 404 or redirect."
+  }
+ ],
+ "parameters": [
+  {
+   "id": "eiep.eq1",
+   "group": "eiep",
+   "label": "Energia kinetyczna impaktora",
+   "value": "E = 0.5 m_i v0^2 = (pi/12) rho_i L0^3 v0^2",
+   "unit": "J",
+   "range": null,
+   "certainty": "fact",
+   "method": "definition:kinetic energy of sphere",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 1*, p. 818",
+   "notes": "rho_i [kg m^-3] impactor density; L0 [m] diameter at top of atmosphere; v0 [m s^-1] velocity at top of atmosphere. Exact for a sphere (non-relativistic). Program actually uses relativistic KE (only matters near c). Calculators report this as 'Energy before atmospheric entry'.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq2",
+   "group": "eiep",
+   "label": "Rozkład liczebności NEA",
+   "value": "N(>L) ~ 1148 L_km^-2.354",
+   "unit": "count",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical fit:NEO SDT 2003",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 2, p. 819",
+   "notes": "L_km [km]. Not starred = not implemented. Source: NASA NEO Science Definition Team 2003 (report, not opened).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq3",
+   "group": "eiep",
+   "label": "Interwał powrotu (cała Ziemia)",
+   "value": "T_RE ~ 109 E_Mt^0.78",
+   "unit": "yr",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical fit:NEO flux",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 3*, p. 819",
+   "notes": "E_Mt = E/(4.18e15 J). Assumes collision probability ~1.6e-9 /yr per object. Both online calculators now use a different law (max(piecewise-in-mass, 110 E_Mt^0.77)) - see disagreements.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq4",
+   "group": "eiep",
+   "label": "Interwał powrotu w promieniu r",
+   "value": "T_RL = T_RE / (2 (1 - cos Delta))   [errata 2013 form; printed 2005 form: T_RL = (T_RE/2)(1 - cos Delta)]",
+   "unit": "yr",
+   "range": null,
+   "certainty": "contested",
+   "method": "geometry:area fraction",
+   "sources": [
+    "collins2005",
+    "collins2013errata"
+   ],
+   "locator": "Eq. 4*, p. 819; errata note Eq. (1), p. 1",
+   "notes": "Delta = r/R_E [rad]. Geometric area fraction of a spherical cap is (1 - cos Delta)/2, which gives T_RL = 2 T_RE/(1 - cos Delta); neither the printed nor the 'corrected' form equals this (errata form is 4x smaller). Not needed for the 24-h simulation.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq5",
+   "group": "eiep",
+   "label": "Atmosfera wykładnicza",
+   "value": "rho(z) = rho0 exp(-z/H)",
+   "unit": "kg m^-3",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:isothermal atmosphere",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 5, p. 820",
+   "notes": "rho0 = 1 kg m^-3 (surface), H = 8 km (scale height), z [m] altitude. Earth curvature and gravity ignored; straight trajectory.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq6",
+   "group": "eiep",
+   "label": "Równanie oporu",
+   "value": "dv/dt = -3 rho(z) C_D v^2 / (4 rho_i L0)",
+   "unit": "m s^-2",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:drag equation",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 6, p. 820",
+   "notes": "C_D = 2. Ablation and gravity ignored.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq7",
+   "group": "eiep",
+   "label": "Opór względem wysokości",
+   "value": "d(ln v)/dz = 3 rho(z) C_D / (4 rho_i L0 sin(theta))",
+   "unit": "m^-1",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:drag equation",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 7, p. 820",
+   "notes": "Uses dt = -dz/(v sin theta); theta = trajectory angle to horizontal.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq8",
+   "group": "eiep",
+   "label": "Prędkość przed fragmentacją",
+   "value": "v(z) = v0 exp(-3 rho(z) C_D H / (4 rho_i L0 sin(theta)))",
+   "unit": "m s^-1",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:drag integral",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 8*, p. 820",
+   "notes": "Used for intact impactors (I_f >= 1) and up to breakup altitude z*. If v at surface < terminal velocity, max of the two is used.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq9",
+   "group": "eiep",
+   "label": "Wytrzymałość a gęstość",
+   "value": "log10(Y_i) = 2.107 + 0.0624 sqrt(rho_i)",
+   "unit": "Pa",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical fit:strength-density (4 classes)",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 9*, p. 820",
+   "notes": "rho_i [kg m^-3]; Y_i yield strength [Pa]. Valid ~1000-8000 kg m^-3. Gives ~130 Pa at rho=0. (Text layer of the PDF drops the square root; image shows sqrt.)",
+   "time": null
+  },
+  {
+   "id": "eiep.eq10",
+   "group": "eiep",
+   "label": "Warunek fragmentacji",
+   "value": "Y_i = rho(z*) v(z*)^2",
+   "unit": "Pa",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:stagnation pressure = strength",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 10, p. 820",
+   "notes": "Transcendental; not solved directly in the program.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq11",
+   "group": "eiep",
+   "label": "Wysokość rozpadu",
+   "value": "z* ~ -H [ ln(Y_i/(rho0 v_i^2)) + 1.308 - 0.314 I_f - 1.303 sqrt(1 - I_f) ]",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "analytic approximation:breakup altitude",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 11*, p. 820",
+   "notes": "v_i here = entry velocity v0 [m s^-1]; H = 8000 m; rho0 = 1 kg m^-3. Valid only if I_f < 1.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq12",
+   "group": "eiep",
+   "label": "Czynnik nienaruszenia I_f",
+   "value": "I_f = 4.07 C_D H Y_i / (rho_i L0 v_i^2 sin(theta))",
+   "unit": "dimensionless",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "analytic approximation",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 12*, p. 820",
+   "notes": "I_f >= 1: impactor reaches surface intact. Purdue code uses an effective coefficient 2.7185*0.75 = 2.039 instead of 4.07 (see disagreements); irrelevant for km-size impactors (I_f ~1e-6).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq13",
+   "group": "eiep",
+   "label": "Rozpłaszczanie (model naleśnikowy) w czasie",
+   "value": "d^2L/dt^2 = C_D P_s/(rho_i L) = C_D rho(z) v(z)^2/(rho_i L)",
+   "unit": "m s^-2",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:pancake",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 13, p. 821",
+   "notes": "Initial condition L = L0 at z = z*.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq14",
+   "group": "eiep",
+   "label": "Rozpłaszczanie względem wysokości",
+   "value": "L d^2L/dz^2 = C_D rho(z) / (rho_i sin^2(theta))",
+   "unit": "m^-1",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:pancake",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 14, p. 821",
+   "notes": "Valid if L changes little over H (Chyba et al. 1993).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq15",
+   "group": "eiep",
+   "label": "Średnica roju fragmentów L(z)",
+   "value": "L(z) = L0 sqrt(1 + (2H/l)^2 (exp((z* - z)/(2H)) - 1)^2)",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "analytic approximation:pancake",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 15*, p. 821",
+   "notes": "Used at z = 0 for strewn-field size (calculators: 'ellipse' L(0)/sin(theta) by L(0)).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq16",
+   "group": "eiep",
+   "label": "Skala dyspersji l",
+   "value": "l = L0 sin(theta) sqrt(rho_i / (C_D rho(z*)))",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "analytic approximation:pancake",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 16*, p. 821",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.eq17",
+   "group": "eiep",
+   "label": "Prędkość po rozpadzie",
+   "value": "v(z) = v(z*) exp( -(3/4) (C_D rho(z*) / (rho_i L0^3 sin(theta))) * Integral_z^z* exp((z* - z')/H) L(z')^2 dz' )",
+   "unit": "m s^-1",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:pancake drag",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 17*, p. 821",
+   "notes": "Velocity drops as a double exponential after breakup. Integral closed forms: Eq. 19 (airburst) or Eq. 20 (to ground).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq18",
+   "group": "eiep",
+   "label": "Wysokość eksplozji powietrznej",
+   "value": "z_b = z* - 2H ln(1 + (l/(2H)) sqrt(f_p^2 - 1))",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:pancake factor",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 18*, p. 821",
+   "notes": "f_p = 7 (pancake factor; paper notes physically 2-4, Chyba et al. 5-10). z_b > 0: airburst; z_b <= 0: swarm hits ground (crater-forming). Negative z_b is unphysical; the Purdue code clamps it to 0, the Imperial server apparently does not (affects airblast; see disagreements).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq19",
+   "group": "eiep",
+   "label": "Całka dla eksplozji powietrznej",
+   "value": "Int_{z_b}^{z*} exp((z* - z)/H) L^2 dz = (l L0^2/24) alpha [8(3 + alpha^2) + 3 alpha (l/H)(2 + alpha^2)],  alpha = sqrt(f_p^2 - 1)",
+   "unit": "m^3",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "analytic integral",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 19*, p. 821",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.eq20",
+   "group": "eiep",
+   "label": "Całka do powierzchni (errata)",
+   "value": "Int_0^{z*} exp((z* - z)/H) L^2 dz = (H^3 L0^2/(3 l^2)) { 3[4 + (l/H)^2] exp(z*/H) + 6 exp(2 z*/H) - 16 exp(3 z*/(2H)) - 3 (l/H)^2 - 2 }",
+   "unit": "m^3",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "analytic integral",
+   "sources": [
+    "collins2005",
+    "collins2013errata"
+   ],
+   "locator": "Eq. 20, p. 821; corrected in errata note Eq. (2), p. 1",
+   "notes": "Printed 2005 form has a typo ('34 + (l/H)^2'); use the errata form. Purdue code implements the errata form.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq65",
+   "group": "eiep",
+   "label": "Hamowanie w warstwie wody",
+   "value": "v_seafloor = v_surface exp(-3 rho_w C_D d_w / (2 rho_i L sin(theta)))",
+   "unit": "m s^-1",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:drag in water",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 65*, p. 832",
+   "notes": "rho_w = 1000 kg m^-3; C_D = 0.877 (rigid sphere, supersonic, Landau & Lifshitz); d_w [m] water depth; L [m] diameter after atmosphere. Then: water-layer transient crater uses Eq. 21 with 1.365 and rho_t = 1000 and v_surface; seafloor crater uses v_seafloor and rho_t = 2700 (paper; Purdue code uses 2750). Airblast and thermal use E_surface; seismic and ejecta use E_seafloor. No tsunami in 2005 version.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq21",
+   "group": "eiep",
+   "label": "Średnica krateru przejściowego",
+   "value": "D_tc = 1.161 (rho_i/rho_t)^(1/3) L^0.78 v_i^0.44 g_E^-0.22 sin^(1/3)(theta)",
+   "unit": "m",
+   "range": [
+    0.8,
+    1.5
+   ],
+   "certainty": "extrapolation",
+   "method": "scaling:pi-group (Holsapple & Schmidt 1982; Schmidt & Housen 1987)",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 21*, p. 823",
+   "notes": "D_tc at pre-impact surface [m]; L [m] after atmospheric traverse; v_i [m s^-1] at surface; g_E [m s^-2]; theta to horizontal. Gravity regime, solid rock. Constant uncertain: best estimate within 0.8-1.5. Calculator code effectively uses 1.16132 (1.6 (pi/6)^(1/3) 1.61^-0.22).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq21w",
+   "group": "eiep",
+   "label": "Krater przejściowy w wodzie",
+   "value": "D_tc = 1.365 (rho_i/rho_w)^(1/3) L^0.78 v_i^0.44 g_E^-0.22 sin^(1/3)(theta)",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "scaling:pi-group water",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 823 (text after Eq. 21); p. 832",
+   "notes": "rho_w = 1000 kg m^-3; v_i = velocity at water surface.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq22",
+   "group": "eiep",
+   "label": "Krater prosty – średnica",
+   "value": "D_fr ~ 1.25 D_tc",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:simple crater collapse (Grieve & Garvin 1984)",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 22*, p. 824",
+   "notes": "Applied if D_tc <= 2.56 km.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq23",
+   "group": "eiep",
+   "label": "Objętość soczewki brekcji",
+   "value": "V_br ~ 0.032 D_fr^3",
+   "unit": "m^3",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical:Meteor & Brent craters",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 23*, p. 824",
+   "notes": "Unbulked breccia lens.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq24",
+   "group": "eiep",
+   "label": "Grubość soczewki brekcji",
+   "value": "t_br = 2.8 V_br (d_tc + h_fr) / (d_tc D_fr^2)",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:parabolic lens, 10% bulking",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 24*, p. 824",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.eq25",
+   "group": "eiep",
+   "label": "Głębokość krateru przejściowego",
+   "value": "d_tc = D_tc / (2 sqrt(2))",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical:Dence et al. 1977",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 25*, p. 824",
+   "notes": "Code uses D_tc/2.828.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq26",
+   "group": "eiep",
+   "label": "Głębokość krateru prostego",
+   "value": "d_fr = d_tc + h_fr - t_br",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "geometry",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 26*, p. 824",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.eq27",
+   "group": "eiep",
+   "label": "Krater złożony – średnica",
+   "value": "D_fr = 1.17 D_tc^1.13 / D_c^0.13",
+   "unit": "km",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "scaling:McKinnon & Schenk 1985",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 27*, p. 824",
+   "notes": "D_tc, D_fr, D_c in km (dimensionally homogeneous, so m works too); D_c = 3.2 km (simple-complex transition on Earth). Applied if D_tc > 2.56 km (i.e. 1.25 D_tc > D_c). Not quoted if D_tc > 1500 km (melt province).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq28",
+   "group": "eiep",
+   "label": "Głębokość krateru złożonego (2005, zastąpione)",
+   "value": "d_fr = 0.4 D_fr^0.3",
+   "unit": "km",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical:Venus craters (Herrick et al. 1997)",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 28*, p. 824",
+   "notes": "D_fr, d_fr in km. SUPERSEDED by errata note Eq. (9); neither online calculator uses it any more.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq28u",
+   "group": "eiep",
+   "label": "Głębokość krateru złożonego (2013)",
+   "value": "d_fr = 0.294 D_fr^0.301",
+   "unit": "km",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "scaling:lunar d/D 1.04 D^0.301 divided by 0.7 g_Earth/g_Moon (~3.5)",
+   "sources": [
+    "collins2013errata"
+   ],
+   "locator": "errata note Eq. (9), p. 2",
+   "notes": "D_fr, d_fr in km; in metres: d_fr = 36.76 D_fr^0.301 (code: 37 D^0.301). Implemented by both calculators. Non-peer-reviewed note.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq29",
+   "group": "eiep",
+   "label": "Objętość stopu (ogólna)",
+   "value": "V_m = 0.25 (v_i^2 / eps_m) V_i",
+   "unit": "m^3",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "fit:numerical models + observations",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 29, p. 824",
+   "notes": "eps_m = 5.2 MJ kg^-1 (granite); V_i impactor volume. Valid v_i > ~12 km/s, comparable densities, vertical impacts.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq30",
+   "group": "eiep",
+   "label": "Objętość stopu (program)",
+   "value": "V_m = 8.9e-12 E sin(theta)",
+   "unit": "m^3",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "scaling:melt ~ transient volume",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 30*, p. 825",
+   "notes": "E [J] impact energy at surface (seafloor for marine). Assumes rho_i = rho_t = 2700. ~10x larger for ice; underestimates for very large impacts (geotherm ignored); overestimates by ~2 for theta <= 15 deg.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq31",
+   "group": "eiep",
+   "label": "Grubość pokrywy stopu",
+   "value": "t_m = 4 V_m / (pi D_tc^2)",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "geometry",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 31*, p. 825",
+   "notes": "Crater floor ~ transient crater diameter (Croft 1985). Calculators print this value while saying 'roughly half the melt remains in the crater'.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq44",
+   "group": "eiep",
+   "label": "Objętość wyrzutów i wału",
+   "value": "V_e = (pi/2) [ h_tr D_tr^2 + d_tc ( (D_tr^4 - D_tc^4)/(4 D_tc^2) - (D_tr^2 - D_tc^2)/2 ) ]",
+   "unit": "m^3",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "volume conservation",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 44, p. 828",
+   "notes": "Paraboloid transient crater, depth/diameter 1/(2 sqrt 2).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq45",
+   "group": "eiep",
+   "label": "Średnica krateru przejściowego na grzbiecie wału",
+   "value": "D_tr = D_tc sqrt((d_tc + h_tr)/d_tc)",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "geometry",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 45, p. 828",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.eq46",
+   "group": "eiep",
+   "label": "Objętość krateru przejściowego",
+   "value": "V_tc = pi D_tc^3 / (16 sqrt(2))",
+   "unit": "m^3",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "geometry:paraboloid",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 46, p. 828",
+   "notes": "Equating V_e = V_tc gives h_tr = D_tc/14.1. Purdue code uses pi/24 D_tc^3 for the Vtc/V_Earth ratio.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq48",
+   "group": "eiep",
+   "label": "Wysokość wału krateru końcowego",
+   "value": "h_fr = 0.07 D_tc^4 / D_fr^3",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "Eq. 47 at r = D_fr/2",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 48*, p. 829",
+   "notes": "Text says 'Equation 31' - typo for Eq. 47.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq32",
+   "group": "eiep",
+   "label": "Promień kuli ognistej",
+   "value": "R_f* = 0.002 E^(1/3)",
+   "unit": "m",
+   "range": [
+    10,
+    15
+   ],
+   "certainty": "extrapolation",
+   "method": "yield scaling:R_f = 13 L0 at 20 km/s, 2700 kg/m3",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 32*, p. 825",
+   "notes": "E [J]. Radius at time of max radiation (transparency temperature reached). Simulations give 10-15 L0; 13 adopted. Only if v_i >= 15 km/s.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq33",
+   "group": "eiep",
+   "label": "Czas maksimum promieniowania",
+   "value": "T_t = R_f* / v_i",
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "assumption:expansion at impact speed",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 33*, p. 826",
+   "notes": "v_i [m s^-1].",
+   "time": null
+  },
+  {
+   "id": "eiep.eq34",
+   "group": "eiep",
+   "label": "Ekspozycja cieplna",
+   "value": "Phi = eta E / (2 pi r^2)",
+   "unit": "J m^-2",
+   "range": [
+    0.0001,
+    0.01
+   ],
+   "certainty": "extrapolation",
+   "method": "model:hemispherical spreading",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 34*, p. 826",
+   "notes": "eta = 3e-3 (luminous efficiency; literature range 1e-4 to 1e-2, Ortiz et al. 2000); r [m] distance along surface. Multiplied by f (Eq. 36). Neglects weather/atmospheric absorption ('upper estimate').",
+   "time": null
+  },
+  {
+   "id": "eiep.eq35",
+   "group": "eiep",
+   "label": "Czas napromieniowania",
+   "value": "tau_t = eta E / (2 pi R_f*^2 sigma T*^4)",
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:blackbody at transparency T",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 35*, p. 826",
+   "notes": "sigma = 5.67e-8 W m^-2 K^-4; T* = 3000 K (air transparency 2000-3000 K).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq36",
+   "group": "eiep",
+   "label": "Ułamek kuli ognistej nad horyzontem",
+   "value": "f = (2/pi) (delta - (h/R_f*) sin(delta)),  delta = arccos(h/R_f*)",
+   "unit": "dimensionless",
+   "range": null,
+   "certainty": "fact",
+   "method": "geometry:visible segment",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 36*, p. 826",
+   "notes": "If h >= R_f*: f = 0 (fireball below horizon, no direct radiation). Refraction/extinction near horizon ignored.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq37",
+   "group": "eiep",
+   "label": "Wysokość ukryta za horyzontem",
+   "value": "h = (1 - cos(Delta)) R_E",
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "geometry",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 37*, p. 826",
+   "notes": "Delta = r/R_E [rad]. R_E not given numerically in paper (code: 6370 km).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq38",
+   "group": "eiep",
+   "label": "Próg zapłonu (fizyka)",
+   "value": "Phi_ignition ~ T_ignition rho c_p sqrt(kappa tau_t)",
+   "unit": "J m^-2",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "model:thermal penetration depth",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 38, p. 826",
+   "notes": "Explains E^(1/6) scaling; not used directly.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq39",
+   "group": "eiep",
+   "label": "Skalowanie progu zapłonu",
+   "value": "Phi_ignition(E) = Phi_ignition(1 Mt) E_Mt^(1/6)",
+   "unit": "J m^-2",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical:nuclear test data (Glasstone & Dolan 1977 pp. 287-289)",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 39*, p. 826",
+   "notes": "Thresholds at 1 Mt in Table 1 (see thresholds).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq40",
+   "group": "eiep",
+   "label": "Magnituda sejsmiczna",
+   "value": "M = 0.67 log10(E) - 5.87",
+   "unit": "Richter magnitude",
+   "range": [
+    1e-05,
+    0.001
+   ],
+   "certainty": "extrapolation",
+   "method": "Gutenberg-Richter energy relation with seismic efficiency 1e-4",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 40*, p. 827",
+   "notes": "E [J] impact energy (seafloor energy for marine). Seismic efficiency 1e-4 (range 1e-5 to 1e-3, Schultz & Gault 1975) is built into the constant; a factor 10 in efficiency shifts M by 0.67.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq41a",
+   "group": "eiep",
+   "label": "Magnituda efektywna (r < 60 km)",
+   "value": "M_eff = M - 0.0238 r_km",
+   "unit": "magnitude",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical fit:Richter 1958 California ground motion",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 41a*, p. 827",
+   "notes": "r_km = distance in KILOMETRES; valid r_km < 60.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq41b",
+   "group": "eiep",
+   "label": "Magnituda efektywna (60–700 km)",
+   "value": "M_eff = M - 0.0048 r_km - 1.1644",
+   "unit": "magnitude",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical fit:Richter 1958",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 41b*, p. 827",
+   "notes": "r_km in KILOMETRES; valid 60 <= r_km < 700. Jump vs 41a at 60 km: -0.024.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq41c",
+   "group": "eiep",
+   "label": "Magnituda efektywna (r ≥ 700 km)",
+   "value": "M_eff = M - 1.66 log10(Delta) - 6.399,  Delta = r/R_E",
+   "unit": "magnitude",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical fit:Richter 1958 teleseismic",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 41c*, p. 827",
+   "notes": "Delta = epicentral angle in RADIANS (Delta = r/R_E, defined p. 819 and Fig. 1 caption; NOT degrees, NOT km). Confirmed by Purdue code (log10(r_km/6370)) and by the Imperial server's MMI-IV map radius (reproduces M to 1e-5 only with radians). Valid r_km >= 700. Discontinuity at 700 km: 41b gives M - 4.524, 41c gives M - 4.807 (jump -0.28). With degrees the jump would be ~3.2 magnitudes.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq42",
+   "group": "eiep",
+   "label": "Czas dotarcia wstrząsów",
+   "value": "T_s = r_km / 5",
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "assumption:surface waves 5 km/s",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 42*, p. 827",
+   "notes": "r_km in km; surface-wave speed ~5 km s^-1 (upper crust).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq43",
+   "group": "eiep",
+   "label": "Grubość wyrzutów (ogólna)",
+   "value": "t_e = (h_tr/8) (D_tr/r)^3",
+   "unit": "m",
+   "range": [
+    -3.5,
+    -2.5
+   ],
+   "certainty": "extrapolation",
+   "method": "empirical:explosion data (McGetchin et al. 1973)",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 43, p. 828",
+   "notes": "Exponent -3 (range -2.5 to -3.5); r [m] from crater centre. Printed symbol looks like d_tr; derivation implies D_tr.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq47",
+   "group": "eiep",
+   "label": "Grubość wyrzutów (program)",
+   "value": "t_e = D_tc^4 / (112 r^3)",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "volume conservation + 1/r^3",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 47*, p. 828",
+   "notes": "D_tc, r [m]. Lower bound (no bulking, no entrainment). Reported only outside final rim. For E < 200 Mt the deposit is limited to r < fireball radius ('blocked by atmosphere').",
+   "time": null
+  },
+  {
+   "id": "eiep.eq49",
+   "group": "eiep",
+   "label": "Czas dotarcia wyrzutów (balistyka)",
+   "value": "T_e = (2 a^1.5 / sqrt(g_E R_E^2)) [ 2 atan( sqrt((1 - e)/(1 + e)) tan(Delta/4) ) - e sqrt(1 - e^2) sin(Delta/2) / (1 + e cos(Delta/2)) ]",
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "ballistics:spherical non-rotating Earth (Ahrens & O'Keefe 1978)",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 49*, p. 829",
+   "notes": "All ejecta from one point at 45 deg; no atmosphere, no rotation. Valid v_e^2/(g_E R_E) <= 1 (r < ~10,000 km). If T_e > 1 h the program reports fallout dominated by condensed vapour.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq50",
+   "group": "eiep",
+   "label": "Mimośród trajektorii wyrzutu",
+   "value": "e^2 = 0.5 [ (v_e^2/(g_E R_E) - 1)^2 + 1 ]",
+   "unit": "dimensionless",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "ballistics",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 50*, p. 829",
+   "notes": "e is taken NEGATIVE when v_e^2/(g_E R_E) <= 1 (always within validity range).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq51",
+   "group": "eiep",
+   "label": "Półoś wielka trajektorii",
+   "value": "a = v_e^2 / (2 g_E (1 - e^2))",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "ballistics",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 51*, p. 829",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.eq52",
+   "group": "eiep",
+   "label": "Prędkość wyrzutu dla zasięgu",
+   "value": "v_e^2 = 2 g_E R_E tan(Delta/2) / (1 + tan(Delta/2))",
+   "unit": "m^2 s^-2",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "ballistics:45 deg launch",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 52*, p. 829",
+   "notes": "Delta = r/R_E [rad].",
+   "time": null
+  },
+  {
+   "id": "eiep.eq53",
+   "group": "eiep",
+   "label": "Średnia wielkość fragmentów",
+   "value": "d = d_c (D_fr / (2 r_km))^alpha,  alpha = 2.65,  d_c = 2400 (D_fr/2)^-1.62",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical:Venus parabolic ejecta (Schaller & Melosh 1998)",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 53*, p. 829",
+   "notes": "D_fr in KM, r_km in KM, d in m. Neglects terrestrial atmosphere/wind; not computed for r < 2 crater radii (paper) although Purdue code computes it everywhere.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq54",
+   "group": "eiep",
+   "label": "Nadciśnienie (wybuch przypowierzchniowy)",
+   "value": "p = (p_x r_x / (4 r1)) (1 + 3 (r_x/r1)^1.3)",
+   "unit": "Pa",
+   "range": null,
+   "certainty": "contested",
+   "method": "empirical fit:1 kt surface burst (Glasstone & Dolan 1977 Fig. 3.66) + yield scaling",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 54*, p. 830",
+   "notes": "r1 [m] scaled distance (Eq. 57); p_x = 75000 Pa, r_x = 290 m (crossover 1/r^2.3 -> 1/r). In Mach region of airbursts r_x = 289 + 0.65 z_b1 (text; code 290 + 0.65 z_b1). Uniform atmosphere, flat Earth. Paper p. 831: agrees with Zahnle 1990/Toon et al. 1994 in 1-10,000 Mt but 'probably overestimates the blast wave effects by a factor of 2-5' above 10^4 Mt (text says 'Equation 44', evidently Eq. 54). Chicxulub-scale energies (~1e8 Mt) are outside the calibrated range.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq55",
+   "group": "eiep",
+   "label": "Nadciśnienie, odbicie regularne (2005)",
+   "value": "p = p0 exp(-beta r1)",
+   "unit": "Pa",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical fit:airbursts 1 kt",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 55*, p. 830",
+   "notes": "Superseded for the web program by Collins et al. 2017 Eq. 7.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq56a",
+   "group": "eiep",
+   "label": "Parametr p0(z_b) (2005)",
+   "value": "p0 = 3.14e11 z_b^-2.6",
+   "unit": "Pa",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical fit",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 56a*, p. 830",
+   "notes": "z_b [m] (1-kt scaled burst altitude). Superseded 2017.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq56b",
+   "group": "eiep",
+   "label": "Parametr beta(z_b) (2005)",
+   "value": "beta = 34.87 z_b^-1.73",
+   "unit": "m^-1",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical fit",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 56b*, p. 830",
+   "notes": "Superseded 2017.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq56u2017",
+   "group": "eiep",
+   "label": "Nadciśnienie, odbicie regularne (2017)",
+   "value": "p(r) = 3.14e11 (r^2 + z_b^2)^(-2.6/2) + 1.8e7 (r^2 + z_b^2)^(-1.13/2)",
+   "unit": "Pa",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical fit:nuclear tests over wider altitude range",
+   "sources": [
+    "collins2017"
+   ],
+   "locator": "Eq. 7, journal p. 1556 (EV p. 15)",
+   "notes": "r, z_b [m] for a 1 kt explosion (i.e. r1, z_b1 after yield scaling). Replaces Eqs. 55-56. Implemented in Purdue code (regular-reflection branch, with an undocumented linear blend of half-width 0.00328 z_b1^2 m around r_m1).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq57",
+   "group": "eiep",
+   "label": "Odległość skalowana (1 kt)",
+   "value": "r1 = r / E_kt^(1/3);  z_b1 = z_b / E_kt^(1/3)",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "yield scaling",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 57*, p. 830",
+   "notes": "E_kt = E/4.18e12 J (paper Mt value; Purdue code uses 4.186e12). Since Collins et al. 2017 the airblast energy is max(impact energy at ground, kinetic energy lost in atmosphere).",
+   "time": null
+  },
+  {
+   "id": "eiep.eq58",
+   "group": "eiep",
+   "label": "Początek strefy Macha",
+   "value": "r_m1 = 550 z_b1 / (1.2 (550 - z_b1))",
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "empirical fit",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 58*, p. 830",
+   "notes": "Surface burst: r_m1 = 0 (Mach region everywhere). z_b1 > 550 m: no Mach region.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq59",
+   "group": "eiep",
+   "label": "Prędkość wiatru za frontem",
+   "value": "u = (5 p / (7 P0)) c0 / (1 + 6 p / (7 P0))^0.5",
+   "unit": "m s^-1",
+   "range": null,
+   "certainty": "fact",
+   "method": "Rankine-Hugoniot, perfect gas gamma = 1.4",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 59*, p. 831",
+   "notes": "P0 = 1e5 Pa (1 bar); c0 ~ 330 m s^-1; p [Pa]. Exact for a perfect diatomic gas; real-gas effects at very strong shocks ignored.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq62",
+   "group": "eiep",
+   "label": "Czas dotarcia fali (całka)",
+   "value": "T_b = Integral_0^r dr / U(r)",
+   "unit": "s",
+   "range": null,
+   "certainty": "fact",
+   "method": "kinematics",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 62, p. 831",
+   "notes": "Equation numbers 60-61 do not exist in the paper.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq63",
+   "group": "eiep",
+   "label": "Prędkość fali uderzeniowej",
+   "value": "U(r) = c0 (1 + 6 p(r) / (7 P0))^0.5",
+   "unit": "m s^-1",
+   "range": null,
+   "certainty": "fact",
+   "method": "Rankine-Hugoniot, gamma = 1.4",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 63, p. 831",
+   "notes": "Not used by the program.",
+   "time": null
+  },
+  {
+   "id": "eiep.eq64",
+   "group": "eiep",
+   "label": "Czas dotarcia fali (program)",
+   "value": "T_b = r / c0",
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "assumption:sound speed",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "Eq. 64*, p. 831",
+   "notes": "c0 = 330 m s^-1 (calculator code). Large error only near the crater. Purdue code: T_b = sqrt(r^2 + z_b^2)/c0 with z_b >= 0; Imperial server reproduced only with the unclamped (negative) z_b.",
+   "time": null
+  },
+  {
+   "id": "eiep.globalMomentum",
+   "group": "eiep",
+   "label": "Pęd i moment pędu impaktu",
+   "value": "M_i = m_i v_i;  Gamma_i = m_i v_i R_E cos(theta)",
+   "unit": "kg m s^-1; kg m^2 s^-1",
+   "range": null,
+   "certainty": "fact",
+   "method": "definition",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 832; Table 5 p. 833",
+   "notes": "Compared with M_E = m_E v_E (m_E = 5.83e24 kg as printed - modern value 5.97e24; v_E = 29.78 km/s) and Gamma_E = 5.86e33 kg m^2 s^-1 (printed unit 'kg m3 s-1' is a typo).",
+   "time": null
+  },
+  {
+   "id": "eiep.err2013.eq6",
+   "group": "eiep",
+   "label": "Zmiana długości doby",
+   "value": "Delta_T_E = (5 / (4 pi R_E)) (m_i / M_E) cos(theta) v_i T_E^2",
+   "unit": "s",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "angular momentum conservation, I_E = 0.4 M_E R_E^2",
+   "sources": [
+    "collins2013errata"
+   ],
+   "locator": "errata note Eq. (6), p. 1",
+   "notes": "Upper bound (equatorial impact in equatorial plane). Non-peer-reviewed note. Purdue page shows 'up to 1.50 ms' for case A.",
+   "time": null
+  },
+  {
+   "id": "eiep.err2013.eq11",
+   "group": "eiep",
+   "label": "Maks. amplituda fali brzeżnej tsunami",
+   "value": "A_rw_max = min(D_tc/14.1, H_w)  at  R_rw = 3 D_tc / 4",
+   "unit": "m",
+   "range": null,
+   "certainty": "speculation",
+   "method": "heuristic from simulations (Wunnemann et al. 2010)",
+   "sources": [
+    "collins2013errata"
+   ],
+   "locator": "errata note Eqs. (10)-(11), p. 3",
+   "notes": "D_tc = transient crater in the water layer; H_w = water depth (constant along path assumed). Rim wave always generated. Non-peer-reviewed.",
+   "time": null
+  },
+  {
+   "id": "eiep.err2013.eq12",
+   "group": "eiep",
+   "label": "Zanik fali brzeżnej",
+   "value": "A_rw = A_rw_max (R_rw / r)  for r > R_rw",
+   "unit": "m",
+   "range": null,
+   "certainty": "speculation",
+   "method": "heuristic 1/r decay",
+   "sources": [
+    "collins2013errata"
+   ],
+   "locator": "errata note Eq. (12), p. 4",
+   "notes": "Inside R_rw: 'within wave-generation zone'.",
+   "time": null
+  },
+  {
+   "id": "eiep.err2013.eq13",
+   "group": "eiep",
+   "label": "Maks. amplituda fali zapadania",
+   "value": "A_cw_max = 0.06 min(d_tc, H_w)  at  R_cw = 5 D_tc / 2;  d_tc = D_tc/2.828",
+   "unit": "m",
+   "range": null,
+   "certainty": "speculation",
+   "method": "heuristic from simulations",
+   "sources": [
+    "collins2013errata"
+   ],
+   "locator": "errata note Eq. (13), p. 4",
+   "notes": "Only if H_w > 2 L.",
+   "time": null
+  },
+  {
+   "id": "eiep.err2013.eq14",
+   "group": "eiep",
+   "label": "Zanik fali zapadania",
+   "value": "A_cw = A_cw_max (R_cw / r)^q,  q = 3 exp(-0.8 L/H_w)  (L/H_w < 0.5)",
+   "unit": "m",
+   "range": null,
+   "certainty": "speculation",
+   "method": "fit to simulations",
+   "sources": [
+    "collins2013errata"
+   ],
+   "locator": "errata note Eqs. (14)-(15), p. 4",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.err2013.eq21",
+   "group": "eiep",
+   "label": "Czas dotarcia tsunami (min.)",
+   "value": "T_w_min = r / min( sqrt(1.56 D_tc (1 + 39.5 (A/D_tc)^2)), sqrt(9.8 H_w) (1 + A/(2 H_w)) )",
+   "unit": "s",
+   "range": null,
+   "certainty": "speculation",
+   "method": "finite-amplitude gravity-wave speed limits, lambda = D_tc",
+   "sources": [
+    "collins2013errata"
+   ],
+   "locator": "errata note Eq. (21), p. 5",
+   "notes": "1.56 = g/(2 pi) with g = 9.8. Note: Eq. (20) of the note has 2 pi^2 A^2/lambda^2 (=19.7 (A/lambda)^2) but Eq. (21) uses 39.5 - internal factor-2 inconsistency.",
+   "time": null
+  },
+  {
+   "id": "eiep.err2013.eq22",
+   "group": "eiep",
+   "label": "Czas dotarcia tsunami (maks.)",
+   "value": "T_w_max = r / sqrt(1.56 D_tc tanh(6.28 H_w / D_tc))",
+   "unit": "s",
+   "range": null,
+   "certainty": "speculation",
+   "method": "linear gravity-wave dispersion, lambda = D_tc",
+   "sources": [
+    "collins2013errata"
+   ],
+   "locator": "errata note Eq. (22), p. 5",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.const.g",
+   "group": "eiep",
+   "label": "Przyspieszenie grawitacyjne",
+   "value": 9.8,
+   "unit": "m s^-2",
+   "range": null,
+   "certainty": "fact",
+   "method": "constant",
+   "sources": [
+    "purdueImpactEarth2026",
+    "collins2013errata"
+   ],
+   "locator": "not stated numerically in paper; Purdue code u=9.8",
+   "notes": "Paper uses symbol g_E only. Errata note tsunami eqs use 9.8.",
+   "time": null
+  },
+  {
+   "id": "eiep.const.RE",
+   "group": "eiep",
+   "label": "Promień Ziemi",
+   "value": 6370000,
+   "unit": "m",
+   "range": null,
+   "certainty": "fact",
+   "method": "constant",
+   "sources": [
+    "purdueImpactEarth2026"
+   ],
+   "locator": "not stated numerically in paper; Purdue code c=6370 km (also 637e4 m in ejecta)",
+   "notes": "Imperial server map radii are consistent with 6371 km (inferred).",
+   "time": null
+  },
+  {
+   "id": "eiep.const.P0",
+   "group": "eiep",
+   "label": "Ciśnienie atmosferyczne",
+   "value": 100000.0,
+   "unit": "Pa",
+   "range": null,
+   "certainty": "fact",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 830-831",
+   "notes": "1 bar.",
+   "time": null
+  },
+  {
+   "id": "eiep.const.c0",
+   "group": "eiep",
+   "label": "Prędkość dźwięku",
+   "value": 330,
+   "unit": "m s^-1",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 831 (~330); code 330",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.const.rho0",
+   "group": "eiep",
+   "label": "Gęstość powietrza przy powierzchni",
+   "value": 1.0,
+   "unit": "kg m^-3",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 820",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.const.H",
+   "group": "eiep",
+   "label": "Wysokość skali atmosfery",
+   "value": 8000,
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 820",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.const.CD",
+   "group": "eiep",
+   "label": "Współczynnik oporu (atmosfera)",
+   "value": 2.0,
+   "unit": "dimensionless",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 820",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.const.CDw",
+   "group": "eiep",
+   "label": "Współczynnik oporu (woda)",
+   "value": 0.877,
+   "unit": "dimensionless",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 832",
+   "notes": "Rigid sphere, supersonic (Landau & Lifshitz 1959).",
+   "time": null
+  },
+  {
+   "id": "eiep.const.fp",
+   "group": "eiep",
+   "label": "Czynnik naleśnikowy",
+   "value": 7,
+   "unit": "dimensionless",
+   "range": [
+    2,
+    10
+   ],
+   "certainty": "extrapolation",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 821",
+   "notes": "Physically 2-4 (Ivanov et al. 1997); 5-10 fit Tunguska (Chyba et al. 1993).",
+   "time": null
+  },
+  {
+   "id": "eiep.const.eta",
+   "group": "eiep",
+   "label": "Wydajność świetlna",
+   "value": 0.003,
+   "unit": "dimensionless",
+   "range": [
+    0.0001,
+    0.01
+   ],
+   "certainty": "extrapolation",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 826",
+   "notes": "Range 1e-4 to 1e-2 (Ortiz et al. 2000); velocity dependence ignored.",
+   "time": null
+  },
+  {
+   "id": "eiep.const.Tstar",
+   "group": "eiep",
+   "label": "Temperatura przezroczystości",
+   "value": 3000,
+   "unit": "K",
+   "range": [
+    2000,
+    3000
+   ],
+   "certainty": "extrapolation",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 826",
+   "notes": "Air 2000-3000 K (Nemtchinov et al. 1998); silicate vapour ~6000 K.",
+   "time": null
+  },
+  {
+   "id": "eiep.const.sigma",
+   "group": "eiep",
+   "label": "Stała Stefana–Boltzmanna",
+   "value": 5.67e-08,
+   "unit": "W m^-2 K^-4",
+   "range": null,
+   "certainty": "fact",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 826",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.const.seismicEff",
+   "group": "eiep",
+   "label": "Wydajność sejsmiczna",
+   "value": 0.0001,
+   "unit": "dimensionless",
+   "range": [
+    1e-05,
+    0.001
+   ],
+   "certainty": "extrapolation",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 827",
+   "notes": "Range 1e-5 to 1e-3 (Schultz & Gault 1975).",
+   "time": null
+  },
+  {
+   "id": "eiep.const.vRayleigh",
+   "group": "eiep",
+   "label": "Prędkość fal powierzchniowych",
+   "value": 5000,
+   "unit": "m s^-1",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 827",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.const.px",
+   "group": "eiep",
+   "label": "Ciśnienie w punkcie przegięcia (1 kt)",
+   "value": 75000,
+   "unit": "Pa",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 830",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.const.rx",
+   "group": "eiep",
+   "label": "Odległość punktu przegięcia (1 kt)",
+   "value": 290,
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 830",
+   "notes": "Mach region: 289 + 0.65 z_b (text) / 290 + 0.65 z_b1 (code).",
+   "time": null
+  },
+  {
+   "id": "eiep.const.Dc",
+   "group": "eiep",
+   "label": "Średnica przejścia prosty–złożony",
+   "value": 3200,
+   "unit": "m",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 823-824",
+   "notes": "Complex if D_tc > 2560 m.",
+   "time": null
+  },
+  {
+   "id": "eiep.const.epsm",
+   "group": "eiep",
+   "label": "Energia właściwa topnienia (granit)",
+   "value": 5200000.0,
+   "unit": "J kg^-1",
+   "range": null,
+   "certainty": "extrapolation",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 824",
+   "notes": "Pierazzo et al. 1997.",
+   "time": null
+  },
+  {
+   "id": "eiep.const.Mt",
+   "group": "eiep",
+   "label": "Megatona TNT",
+   "value": 4180000000000000.0,
+   "unit": "J",
+   "range": null,
+   "certainty": "fact",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 819 (Table 6 caption: 4.2e15)",
+   "notes": "Purdue code uses 4.186e15 J; Imperial server ~4.18e15 (inferred from 'energy lost' printout).",
+   "time": null
+  },
+  {
+   "id": "eiep.const.rhoSed",
+   "group": "eiep",
+   "label": "Gęstość celu: skały osadowe",
+   "value": 2500,
+   "unit": "kg m^-3",
+   "range": null,
+   "certainty": "fact",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 818",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.const.rhoCryst",
+   "group": "eiep",
+   "label": "Gęstość celu: skały krystaliczne",
+   "value": 2750,
+   "unit": "kg m^-3",
+   "range": null,
+   "certainty": "fact",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 818",
+   "notes": "Imperial server uses 2700 (observed 2026-10-04); Purdue code 2750.",
+   "time": null
+  },
+  {
+   "id": "eiep.const.rhoWater",
+   "group": "eiep",
+   "label": "Gęstość wody",
+   "value": 1000,
+   "unit": "kg m^-3",
+   "range": null,
+   "certainty": "fact",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 818",
+   "notes": "",
+   "time": null
+  },
+  {
+   "id": "eiep.const.rhoSeafloor",
+   "group": "eiep",
+   "label": "Gęstość dna morskiego",
+   "value": 2700,
+   "unit": "kg m^-3",
+   "range": null,
+   "certainty": "fact",
+   "method": "constant",
+   "sources": [
+    "collins2005"
+   ],
+   "locator": "p. 818, 832",
+   "notes": "Purdue code uses 2750 for the seafloor crater.",
+   "time": null
+  }
+ ],
+ "thresholds": [
+  {
+   "effect": "Clothing ignites",
+   "quantity": "thermal exposure f*Phi required at 1 Mt",
+   "value": 1000000.0,
+   "unit": "J m^-2",
+   "locator": "collins2005 Table 1, p. 827",
+   "notes": "Scale with impact energy: Phi_ignition(E) = value * E_Mt^(1/6) (Eq. 39). Data from Glasstone & Dolan 1977 pp. 287-289 (nuclear tests)."
+  },
+  {
+   "effect": "Plywood flames",
+   "quantity": "thermal exposure f*Phi required at 1 Mt",
+   "value": 670000.0,
+   "unit": "J m^-2",
+   "locator": "collins2005 Table 1, p. 827",
+   "notes": "Scale with impact energy: Phi_ignition(E) = value * E_Mt^(1/6) (Eq. 39). Data from Glasstone & Dolan 1977 pp. 287-289 (nuclear tests)."
+  },
+  {
+   "effect": "Grass ignites",
+   "quantity": "thermal exposure f*Phi required at 1 Mt",
+   "value": 380000.0,
+   "unit": "J m^-2",
+   "locator": "collins2005 Table 1, p. 827",
+   "notes": "Scale with impact energy: Phi_ignition(E) = value * E_Mt^(1/6) (Eq. 39). Data from Glasstone & Dolan 1977 pp. 287-289 (nuclear tests)."
+  },
+  {
+   "effect": "Newspaper ignites",
+   "quantity": "thermal exposure f*Phi required at 1 Mt",
+   "value": 330000.0,
+   "unit": "J m^-2",
+   "locator": "collins2005 Table 1, p. 827",
+   "notes": "Scale with impact energy: Phi_ignition(E) = value * E_Mt^(1/6) (Eq. 39). Data from Glasstone & Dolan 1977 pp. 287-289 (nuclear tests)."
+  },
+  {
+   "effect": "Deciduous trees ignite",
+   "quantity": "thermal exposure f*Phi required at 1 Mt",
+   "value": 250000.0,
+   "unit": "J m^-2",
+   "locator": "collins2005 Table 1, p. 827",
+   "notes": "Scale with impact energy: Phi_ignition(E) = value * E_Mt^(1/6) (Eq. 39). Data from Glasstone & Dolan 1977 pp. 287-289 (nuclear tests)."
+  },
+  {
+   "effect": "Third degree burns",
+   "quantity": "thermal exposure f*Phi required at 1 Mt",
+   "value": 420000.0,
+   "unit": "J m^-2",
+   "locator": "collins2005 Table 1, p. 827",
+   "notes": "Scale with impact energy: Phi_ignition(E) = value * E_Mt^(1/6) (Eq. 39). Data from Glasstone & Dolan 1977 pp. 287-289 (nuclear tests)."
+  },
+  {
+   "effect": "Second degree burns",
+   "quantity": "thermal exposure f*Phi required at 1 Mt",
+   "value": 250000.0,
+   "unit": "J m^-2",
+   "locator": "collins2005 Table 1, p. 827",
+   "notes": "Scale with impact energy: Phi_ignition(E) = value * E_Mt^(1/6) (Eq. 39). Data from Glasstone & Dolan 1977 pp. 287-289 (nuclear tests)."
+  },
+  {
+   "effect": "First degree burns",
+   "quantity": "thermal exposure f*Phi required at 1 Mt",
+   "value": 130000.0,
+   "unit": "J m^-2",
+   "locator": "collins2005 Table 1, p. 827",
+   "notes": "Scale with impact energy: Phi_ignition(E) = value * E_Mt^(1/6) (Eq. 39). Data from Glasstone & Dolan 1977 pp. 287-289 (nuclear tests)."
+  },
+  {
+   "effect": "Cars and trucks largely displaced and grossly distorted; require rebuilding",
+   "quantity": "peak overpressure",
+   "value": 426000,
+   "unit": "Pa",
+   "locator": "collins2005 Table 4, p. 831",
+   "notes": "Distance from a 1 kt explosion d1 = 126 m (scale by E_kt^(1/3)). Data from Glasstone & Dolan 1977. Purdue code mislabels the 22900 Pa threshold as 'steel-framed buildings ... incipient collapse'."
+  },
+  {
+   "effect": "Highway girder bridges collapse",
+   "quantity": "peak overpressure",
+   "value": 379000,
+   "unit": "Pa",
+   "locator": "collins2005 Table 4, p. 831",
+   "notes": "Distance from a 1 kt explosion d1 = 133 m (scale by E_kt^(1/3)). Data from Glasstone & Dolan 1977. Purdue code mislabels the 22900 Pa threshold as 'steel-framed buildings ... incipient collapse'."
+  },
+  {
+   "effect": "Cars and trucks overturned and displaced, major repairs",
+   "quantity": "peak overpressure",
+   "value": 297000,
+   "unit": "Pa",
+   "locator": "collins2005 Table 4, p. 831",
+   "notes": "Distance from a 1 kt explosion d1 = 149 m (scale by E_kt^(1/3)). Data from Glasstone & Dolan 1977. Purdue code mislabels the 22900 Pa threshold as 'steel-framed buildings ... incipient collapse'."
+  },
+  {
+   "effect": "Multistory steel-framed office buildings: extreme frame distortion, incipient collapse",
+   "quantity": "peak overpressure",
+   "value": 273000,
+   "unit": "Pa",
+   "locator": "collins2005 Table 4, p. 831",
+   "notes": "Distance from a 1 kt explosion d1 = 155 m (scale by E_kt^(1/3)). Data from Glasstone & Dolan 1977. Purdue code mislabels the 22900 Pa threshold as 'steel-framed buildings ... incipient collapse'."
+  },
+  {
+   "effect": "Highway truss bridges collapse",
+   "quantity": "peak overpressure",
+   "value": 121000,
+   "unit": "Pa",
+   "locator": "collins2005 Table 4, p. 831",
+   "notes": "Distance from a 1 kt explosion d1 = 229 m (scale by E_kt^(1/3)). Data from Glasstone & Dolan 1977. Purdue code mislabels the 22900 Pa threshold as 'steel-framed buildings ... incipient collapse'."
+  },
+  {
+   "effect": "Highway truss bridges: substantial distortion of bracing",
+   "quantity": "peak overpressure",
+   "value": 100000,
+   "unit": "Pa",
+   "locator": "collins2005 Table 4, p. 831",
+   "notes": "Distance from a 1 kt explosion d1 = 251 m (scale by E_kt^(1/3)). Data from Glasstone & Dolan 1977. Purdue code mislabels the 22900 Pa threshold as 'steel-framed buildings ... incipient collapse'."
+  },
+  {
+   "effect": "Multistory wall-bearing buildings collapse",
+   "quantity": "peak overpressure",
+   "value": 42600,
+   "unit": "Pa",
+   "locator": "collins2005 Table 4, p. 831",
+   "notes": "Distance from a 1 kt explosion d1 = 389 m (scale by E_kt^(1/3)). Data from Glasstone & Dolan 1977. Purdue code mislabels the 22900 Pa threshold as 'steel-framed buildings ... incipient collapse'."
+  },
+  {
+   "effect": "Multistory wall-bearing buildings: severe cracking, interior partitions blown down",
+   "quantity": "peak overpressure",
+   "value": 38500,
+   "unit": "Pa",
+   "locator": "collins2005 Table 4, p. 831",
+   "notes": "Distance from a 1 kt explosion d1 = 411 m (scale by E_kt^(1/3)). Data from Glasstone & Dolan 1977. Purdue code mislabels the 22900 Pa threshold as 'steel-framed buildings ... incipient collapse'."
+  },
+  {
+   "effect": "Wood frame buildings almost completely collapse",
+   "quantity": "peak overpressure",
+   "value": 26800,
+   "unit": "Pa",
+   "locator": "collins2005 Table 4, p. 831",
+   "notes": "Distance from a 1 kt explosion d1 = 502 m (scale by E_kt^(1/3)). Data from Glasstone & Dolan 1977. Purdue code mislabels the 22900 Pa threshold as 'steel-framed buildings ... incipient collapse'."
+  },
+  {
+   "effect": "Interior partitions of wood frame buildings blown down; roof severely damaged",
+   "quantity": "peak overpressure",
+   "value": 22900,
+   "unit": "Pa",
+   "locator": "collins2005 Table 4, p. 831",
+   "notes": "Distance from a 1 kt explosion d1 = 549 m (scale by E_kt^(1/3)). Data from Glasstone & Dolan 1977. Purdue code mislabels the 22900 Pa threshold as 'steel-framed buildings ... incipient collapse'."
+  },
+  {
+   "effect": "Glass windows shatter",
+   "quantity": "peak overpressure",
+   "value": 6900,
+   "unit": "Pa",
+   "locator": "collins2005 Table 4, p. 831",
+   "notes": "Distance from a 1 kt explosion d1 = 1160 m (scale by E_kt^(1/3)). Data from Glasstone & Dolan 1977. Purdue code mislabels the 22900 Pa threshold as 'steel-framed buildings ... incipient collapse'."
+  },
+  {
+   "effect": "About 30% of trees blown down; remainder lose some branches/leaves",
+   "quantity": "peak wind velocity",
+   "value": 40,
+   "unit": "m s^-1",
+   "locator": "collins2005 p. 831",
+   "notes": "Glasstone & Dolan 1977 p. 225."
+  },
+  {
+   "effect": "Up to 90% of trees blown down; remainder stripped of branches and leaves",
+   "quantity": "peak wind velocity",
+   "value": 62,
+   "unit": "m s^-1",
+   "locator": "collins2005 p. 831",
+   "notes": "Glasstone & Dolan 1977 p. 225."
+  },
+  {
+   "effect": "Modified Mercalli Intensity I",
+   "quantity": "effective (Richter) magnitude, lower bound of 1-unit bin",
+   "value": 1,
+   "unit": "magnitude",
+   "locator": "collins2005 Table 2, p. 827",
+   "notes": "Bin = [value, value+1); 0-1 -> no intensity; 9+ -> XII. After Richter 1958. Table 3 (p. 828) gives MMI descriptions."
+  },
+  {
+   "effect": "Modified Mercalli Intensity I-II",
+   "quantity": "effective (Richter) magnitude, lower bound of 1-unit bin",
+   "value": 2,
+   "unit": "magnitude",
+   "locator": "collins2005 Table 2, p. 827",
+   "notes": "Bin = [value, value+1); 0-1 -> no intensity; 9+ -> XII. After Richter 1958. Table 3 (p. 828) gives MMI descriptions."
+  },
+  {
+   "effect": "Modified Mercalli Intensity III-IV",
+   "quantity": "effective (Richter) magnitude, lower bound of 1-unit bin",
+   "value": 3,
+   "unit": "magnitude",
+   "locator": "collins2005 Table 2, p. 827",
+   "notes": "Bin = [value, value+1); 0-1 -> no intensity; 9+ -> XII. After Richter 1958. Table 3 (p. 828) gives MMI descriptions."
+  },
+  {
+   "effect": "Modified Mercalli Intensity IV-V",
+   "quantity": "effective (Richter) magnitude, lower bound of 1-unit bin",
+   "value": 4,
+   "unit": "magnitude",
+   "locator": "collins2005 Table 2, p. 827",
+   "notes": "Bin = [value, value+1); 0-1 -> no intensity; 9+ -> XII. After Richter 1958. Table 3 (p. 828) gives MMI descriptions."
+  },
+  {
+   "effect": "Modified Mercalli Intensity VI-VII",
+   "quantity": "effective (Richter) magnitude, lower bound of 1-unit bin",
+   "value": 5,
+   "unit": "magnitude",
+   "locator": "collins2005 Table 2, p. 827",
+   "notes": "Bin = [value, value+1); 0-1 -> no intensity; 9+ -> XII. After Richter 1958. Table 3 (p. 828) gives MMI descriptions."
+  },
+  {
+   "effect": "Modified Mercalli Intensity VII-VIII",
+   "quantity": "effective (Richter) magnitude, lower bound of 1-unit bin",
+   "value": 6,
+   "unit": "magnitude",
+   "locator": "collins2005 Table 2, p. 827",
+   "notes": "Bin = [value, value+1); 0-1 -> no intensity; 9+ -> XII. After Richter 1958. Table 3 (p. 828) gives MMI descriptions."
+  },
+  {
+   "effect": "Modified Mercalli Intensity IX-X",
+   "quantity": "effective (Richter) magnitude, lower bound of 1-unit bin",
+   "value": 7,
+   "unit": "magnitude",
+   "locator": "collins2005 Table 2, p. 827",
+   "notes": "Bin = [value, value+1); 0-1 -> no intensity; 9+ -> XII. After Richter 1958. Table 3 (p. 828) gives MMI descriptions."
+  },
+  {
+   "effect": "Modified Mercalli Intensity X-XI",
+   "quantity": "effective (Richter) magnitude, lower bound of 1-unit bin",
+   "value": 8,
+   "unit": "magnitude",
+   "locator": "collins2005 Table 2, p. 827",
+   "notes": "Bin = [value, value+1); 0-1 -> no intensity; 9+ -> XII. After Richter 1958. Table 3 (p. 828) gives MMI descriptions."
+  },
+  {
+   "effect": "Modified Mercalli Intensity XII",
+   "quantity": "effective (Richter) magnitude, lower bound of 1-unit bin",
+   "value": 9,
+   "unit": "magnitude",
+   "locator": "collins2005 Table 2, p. 827",
+   "notes": "Bin = [value, value+1); 0-1 -> no intensity; 9+ -> XII. After Richter 1958. Table 3 (p. 828) gives MMI descriptions."
+  },
+  {
+   "effect": "Fireball (and thermal radiation) produced",
+   "quantity": "impact velocity at surface",
+   "value": 15000,
+   "unit": "m s^-1",
+   "locator": "collins2005 p. 825",
+   "notes": "Below 15 km/s no fireball/thermal effects reported."
+  },
+  {
+   "effect": "Significant target melting (Eq. 29-30 validity)",
+   "quantity": "impact velocity",
+   "value": 12000,
+   "unit": "m s^-1",
+   "locator": "collins2005 p. 824",
+   "notes": "Purdue code compares v [m/s] with 12, so the check is effectively always passed."
+  },
+  {
+   "effect": "Fireball entirely below horizon (no direct radiation)",
+   "quantity": "h/R_f*",
+   "value": 1.0,
+   "unit": "dimensionless",
+   "locator": "collins2005 p. 826 (Eq. 37)",
+   "notes": "h = (1 - cos(r/R_E)) R_E. For R_f* = 129.6 km (case A) the cut-off is r ~ 1287 km."
+  },
+  {
+   "effect": "Impactor reaches surface intact",
+   "quantity": "intact factor I_f",
+   "value": 1.0,
+   "unit": "dimensionless",
+   "locator": "collins2005 p. 820 (Eq. 12)",
+   "notes": ""
+  },
+  {
+   "effect": "Pancake dispersion terminated (airburst definition)",
+   "quantity": "L(z)/L0 = f_p",
+   "value": 7,
+   "unit": "dimensionless",
+   "locator": "collins2005 p. 821",
+   "notes": ""
+  },
+  {
+   "effect": "Simple-to-complex crater transition",
+   "quantity": "final rim diameter D_c",
+   "value": 3200,
+   "unit": "m",
+   "locator": "collins2005 pp. 823-824",
+   "notes": "Equivalent to D_tc = 2560 m."
+  },
+  {
+   "effect": "No final crater quoted; melt province instead",
+   "quantity": "transient crater diameter",
+   "value": 1500000.0,
+   "unit": "m",
+   "locator": "collins2005 p. 825",
+   "notes": "Melt volume exceeds crater volume."
+  },
+  {
+   "effect": "Seismic regime boundary 41a/41b",
+   "quantity": "distance",
+   "value": 60,
+   "unit": "km",
+   "locator": "collins2005 p. 827",
+   "notes": ""
+  },
+  {
+   "effect": "Seismic regime boundary 41b/41c",
+   "quantity": "distance",
+   "value": 700,
+   "unit": "km",
+   "locator": "collins2005 p. 827",
+   "notes": ""
+  },
+  {
+   "effect": "Ejecta deposit limited to fireball range",
+   "quantity": "impact energy",
+   "value": 200,
+   "unit": "Mt",
+   "locator": "collins2005 p. 829",
+   "notes": "For E < 200 Mt and r > R_f: 'ejecta blocked by atmosphere'."
+  },
+  {
+   "effect": "Fallout dominated by condensed vapour (no rocky ejecta reported)",
+   "quantity": "ballistic ejecta arrival time",
+   "value": 3600,
+   "unit": "s",
+   "locator": "collins2005 p. 829",
+   "notes": ""
+  },
+  {
+   "effect": "Validity limit of Eq. 49 ballistic travel time",
+   "quantity": "distance",
+   "value": 10000000.0,
+   "unit": "m",
+   "locator": "collins2005 p. 829",
+   "notes": "v_e^2/(g R_E) <= 1, ~1/4 of Earth's circumference."
+  },
+  {
+   "effect": "Mean fragment size not reported",
+   "quantity": "distance",
+   "value": 2,
+   "unit": "final crater radii",
+   "locator": "collins2005 p. 830",
+   "notes": "Continuous ejecta blanket zone."
+  },
+  {
+   "effect": "No Mach reflection region",
+   "quantity": "scaled burst altitude z_b1",
+   "value": 550,
+   "unit": "m",
+   "locator": "collins2005 p. 831",
+   "notes": ""
+  },
+  {
+   "effect": "Airblast reliability: overestimate by 2-5x",
+   "quantity": "impact energy",
+   "value": 10000.0,
+   "unit": "Mt",
+   "locator": "collins2005 p. 831",
+   "notes": "Above 10^4 Mt (Chicxulub ~1e8 Mt)."
+  },
+  {
+   "effect": "Airblast: factor-of-two overpressure range reported",
+   "quantity": "ground range",
+   "value": 3,
+   "unit": "burst altitudes (r < 3 z_b)",
+   "locator": "collins2017 journal p. 1556",
+   "notes": "Airbursts only."
+  },
+  {
+   "effect": "Earth 'completely disrupted'",
+   "quantity": "V_tc/V_E",
+   "value": 0.5,
+   "unit": "dimensionless",
+   "locator": "collins2005 p. 833",
+   "notes": "0.1-0.5: strongly disturbed, little mass lost."
+  },
+  {
+   "effect": "Orbit: noticeable change",
+   "quantity": "M_i/M_E",
+   "value": 0.001,
+   "unit": "dimensionless",
+   "locator": "collins2005 Table 5, p. 833",
+   "notes": "0.01 substantial; 0.1 totally changes orbit."
+  },
+  {
+   "effect": "Rotation/tilt: noticeable change",
+   "quantity": "Gamma_i/Gamma_E",
+   "value": 0.01,
+   "unit": "dimensionless",
+   "locator": "collins2005 Table 5, p. 833",
+   "notes": "0.1 substantial; 1.0 totally changes rotation and tilt."
+  },
+  {
+   "effect": "Collapse (tsunami) wave generated",
+   "quantity": "water depth / impactor diameter",
+   "value": 2,
+   "unit": "dimensionless",
+   "locator": "collins2013errata p. 4",
+   "notes": "Non-peer-reviewed note."
+  },
+  {
+   "effect": "Imperial map layer: glass window damage",
+   "quantity": "peak overpressure",
+   "value": 1000,
+   "unit": "Pa",
+   "locator": "imperialEIEP2026 static/impact.js labels",
+   "notes": "Software label only; not in the paper."
+  },
+  {
+   "effect": "Imperial map layer: glass windows shatter",
+   "quantity": "peak overpressure",
+   "value": 5000,
+   "unit": "Pa",
+   "locator": "imperialEIEP2026 static/impact.js labels",
+   "notes": "Software label only (paper Table 4 uses 6900 Pa)."
+  },
+  {
+   "effect": "Imperial map layer: wood-frame buildings collapse",
+   "quantity": "peak overpressure",
+   "value": 20000,
+   "unit": "Pa",
+   "locator": "imperialEIEP2026 static/impact.js labels",
+   "notes": "Software label only (paper Table 4: 26800 Pa)."
+  },
+  {
+   "effect": "Purdue app: glass windows may shatter",
+   "quantity": "peak overpressure",
+   "value": 690,
+   "unit": "Pa",
+   "locator": "purdueImpactEarth2026 main.a4859e04.js",
+   "notes": "Software threshold only; not in the paper."
+  }
+ ],
+ "disagreements": [
+  {
+   "topic": "Airblast for crater-forming impacts: Imperial server vs Purdue app vs paper",
+   "sideA": "Paper (p. 830: burst altitude 'is either zero for impacts where a crater is formed') and Purdue code (clamps z_b<0 to 0): surface burst, Eq. 54 with r_x=290 m, T_b=r/c0. Case A @1000 km: 101,901 Pa, 175.5 m/s, 3030 s.",
+   "sideB": "Imperial server output (2026-10-04) for the same inputs: 93,467 Pa, 164.2 m/s, 3038 s; case C: 52,855 Pa vs 89,488 Pa. Reproduced to <1e-5 (8 probes) only if the UNCLAMPED negative airburst altitude z_b from Eq. 18 (A: -75.3 km; C: -39.6 km) is used both in r_x = 290 + 0.65 z_b1 and in the slant range sqrt(r^2+z_b^2) for arrival time.",
+   "sources": [
+    "collins2005",
+    "purdueImpactEarth2026",
+    "imperialEIEP2026"
+   ],
+   "notes": "Mechanism is INFERRED by reverse engineering (exact match at 8 input combinations), not documented. Physically a negative burst altitude has no meaning; treat Imperial airblast values for crater-forming impacts as an implementation artefact. Effect grows when |z_b1| is a large fraction of 290 m (smaller impacts)."
+  },
+  {
+   "topic": "Airblast validity at Chicxulub energies",
+   "sideA": "EIEP yield-scaled 1-kt surface-burst fit (Eq. 54).",
+   "sideB": "Same paper (p. 831): uniform atmosphere and flat Earth invalid for large impacts; 'probably overestimates the blast wave effects by a factor of 2-5' above 10^4 Mt (comparison with Zahnle 1990 / Toon et al. 1994; those papers not opened here). Table 6 of the paper itself gives 77 bar at 200 km for an 18-km impactor whereas Eq. 54 gives ~131 bar.",
+   "sources": [
+    "collins2005"
+   ],
+   "notes": "For ~1e8 Mt use EIEP airblast only as an order-of-magnitude upper bound."
+  },
+  {
+   "topic": "Intact-factor coefficient I_f",
+   "sideA": "Paper Eq. 12: I_f = 4.07 C_D H Y_i/(rho_i L0 v^2 sin theta).",
+   "sideB": "Purdue code: I_f = 2.7185 * [3 rho0 C_D H/(4 rho_i L0 sin theta)] * Y_i/v^2, i.e. effective coefficient 2.039 (half). Imperial server: for L=100 m, rho=8000, v=15 km/s, theta=90 it prints z* = 12,093 m vs 12,142 m (paper I_f) and 12,167 m (Purdue I_f) - matches neither.",
+   "sources": [
+    "collins2005",
+    "purdueImpactEarth2026",
+    "imperialEIEP2026"
+   ],
+   "notes": "Irrelevant for km-scale impactors (I_f ~1e-6, z* identical to 1 m) but matters for small strong bodies. One probe (50 m iron, 12 km/s, 90 deg) crashed the Imperial server (HTTP 500)."
+  },
+  {
+   "topic": "Transient-crater prefactor",
+   "sideA": "Paper Eq. 21: 1.161.",
+   "sideB": "Both calculators: 1.6 (m/rho_t)^(1/3) (1.61 g L/v^2)^-0.22 -> effective 1.16132 (+0.027%).",
+   "sources": [
+    "collins2005",
+    "purdueImpactEarth2026",
+    "imperialEIEP2026"
+   ],
+   "notes": "Negligible vs stated constant uncertainty 0.8-1.5."
+  },
+  {
+   "topic": "Recurrence interval law",
+   "sideA": "Paper Eq. 3: T_RE = 109 E_Mt^0.78 (case A: 1.35e8 yr).",
+   "sideB": "Both calculators print 1.1e8 yr for case A; Purdue code: max(piecewise power law in impactor mass, 110 E_Mt^0.77).",
+   "sources": [
+    "collins2005",
+    "purdueImpactEarth2026",
+    "imperialEIEP2026"
+   ],
+   "notes": "Source of the updated law not documented on the calculator pages (not pursued; irrelevant to the 24-h simulation)."
+  },
+  {
+   "topic": "Crystalline target density",
+   "sideA": "Paper p. 818: 2750 kg/m3; Purdue app: 2750.",
+   "sideB": "Imperial server: 2700 kg/m3 (prints 'Target Density 2700' for Crystalline Rock).",
+   "sources": [
+    "collins2005",
+    "purdueImpactEarth2026",
+    "imperialEIEP2026"
+   ],
+   "notes": "Changes D_tc by (2750/2700)^(1/3) = 0.6%."
+  },
+  {
+   "topic": "Complex-crater depth",
+   "sideA": "Paper Eq. 28: d_fr = 0.4 D_fr^0.3 km (Venus).",
+   "sideB": "2013 errata note: d_fr = 0.294 D_fr^0.301 km (lunar, gravity-scaled); ~74% of the old value; used by both calculators.",
+   "sources": [
+    "collins2005",
+    "collins2013errata"
+   ],
+   "notes": "Errata note is not peer-reviewed."
+  },
+  {
+   "topic": "Local recurrence interval Eq. 4",
+   "sideA": "Printed 2005: T_RL = (T_RE/2)(1 - cos Delta). Errata 2013: T_RL = T_RE/(2(1 - cos Delta)).",
+   "sideB": "Spherical-cap area fraction (1 - cos Delta)/2 implies T_RL = 2 T_RE/(1 - cos Delta).",
+   "sources": [
+    "collins2005",
+    "collins2013errata"
+   ],
+   "notes": "Elementary geometry (no external source needed); both printed forms appear wrong by factors of 4. Not used in the simulation."
+  },
+  {
+   "topic": "Paper Table 6 vs paper equations (18-km impactor at 200 km)",
+   "sideA": "Table 6 (2005 program output): ejecta thickness 137 m; peak overpressure 77 bar; wind 2220 m/s.",
+   "sideB": "Eqs. 47 and 54 as printed (independent implementation): 117 m; 131 bar; 2900 m/s. Other Table 6 entries (E, D_fr = 186 km, R_f = 236 km, M = 10.4, T_e = 206 s, 1.75-km and 40-m cases incl. 0.80 bar/145 m/s and 0.004 bar/0.96 m/s) are reproduced.",
+   "sources": [
+    "collins2005"
+   ],
+   "notes": "Unexplained; possibly a different implementation detail in the 2005 code. Current calculators follow the printed equations."
+  }
+ ],
+ "openQuestions": [
+  "Imperial server airblast: confirm with the authors (G. S. Collins) whether using the negative airburst altitude for crater-forming impacts is intended; until then prefer the paper/Purdue surface-burst values.",
+  "Imperial server entry model for small strong impactors (z* = 12,093 m for L=100 m iron, 15 km/s, vertical) matches neither Eq. 11/12 as printed nor the Purdue code; server source code is not public.",
+  "Imperial server (distance-only mode) prints no thermal, seismic or ejecta values; only map radii are available, so the oracle for those keys rests on the Purdue client code (verified against the live Purdue page).",
+  "Paper Table 6 values for the 18-km (Chicxulub-like) case (ejecta 137 m, 77 bar at 200 km) are not reproduced by the printed Eqs. 47/54 (117 m, 131 bar) - origin unknown.",
+  "EIEP validity for Chicxulub scale: entry model is stated for impactors < 1 km (p. 820); airblast overestimated 2-5x above 1e4 Mt; ejecta ignores atmosphere/rotation and condensed-vapour (spherule) fallout; thermal model ignores ejecta re-entry heating (global wildfire mechanism discussed qualitatively only). These need dedicated threads (re-entry radiation, spherule layer, global tsunami).",
+  "unverified lead: Wunnemann, K., Collins, G. S., Weiss, R. (2010) Rev. Geophys. 48, RG4006, doi:10.1029/2009RG000308 - basis of the 2013 tsunami additions; bibliographic data confirmed via Crossref only, full text not opened.",
+  "unverified lead: Glasstone & Dolan (1977) The Effects of Nuclear Weapons, 3rd ed. - original source of Table 1 and Table 4 thresholds; not opened (government report, not peer-reviewed journal).",
+  "unverified lead: Toon et al. (1997) Rev. Geophys. 35:41-78 - independent airblast/thermal ranges used by Collins et al. 2005 for comparison (Figs. 4, 7); not opened."
+ ]
+}

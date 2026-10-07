@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chicxulub — pierwsze 24 godziny: synteza stanu wiedzy</title>
+<style>
+:root{
+  --bg:#fbfaf7;--paper:#ffffff;--ink:#1d1d1f;--ink2:#4a4a50;--muted:#77777f;--rule:#dddad2;--rule2:#eeebe4;
+  --accent:#8a3b12;--link:#1f5f99;--mark-fact:#2e7d32;--mark-ex:#1565c0;--mark-sp:#7a7a7a;--mark-co:#c62828;
+  --x-water:#9cc7e8;--x-sed:#e8d8a8;--x-crust:#c9b6a8;--x-mantle:#8b8f6c;--x-melt:#d9472b;--x-imp:#2d2a26;
+  --c-crater:#8b6f47;--c-thermal:#d55e00;--c-ejecta:#e69f00;--c-seismic:#cc79a7;--c-air:#3a9ad9;--c-tsunami:#0072b2;--c-atmo:#6f6f6f;--c-bio:#009e73;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#141416;--paper:#1b1b1e;--ink:#ecebe7;--ink2:#c3c2bd;--muted:#93928d;--rule:#34343a;--rule2:#26262b;
+  --accent:#f0a36b;--link:#79b8ff;--mark-fact:#7fc97f;--mark-ex:#82b1ff;--mark-sp:#a8a8a8;--mark-co:#ff8a80;
+  --x-water:#2f5d7e;--x-sed:#8a7a4d;--x-crust:#6e5e55;--x-mantle:#4d5236;--x-melt:#e2583a;--x-imp:#d9d4c8;
+  --c-crater:#c4a479;--c-atmo:#a8a8a8;
+}}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;color:var(--ink);font:17px/1.68 Georgia,"Iowan Old Style","Palatino Linotype",serif;background:var(--bg)}
+main{max-width:920px;margin:0 auto;padding:48px 28px 96px;background:var(--paper);box-shadow:0 0 0 1px var(--rule2)}
+h1,h2,h3,h4,.banner,table,figcaption,.toc,.legend,.small,.fig{font-family:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif}
+h1{font-size:2.05rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h1 small{display:block;font-size:1.05rem;font-weight:400;color:var(--ink2);margin-top:.4em}
+h2{font-size:1.45rem;margin:2.4em 0 .6em;padding-top:.6em;border-top:2px solid var(--rule);color:var(--ink)}
+h3{font-size:1.12rem;margin:1.8em 0 .4em;color:var(--accent)}
+h4{font-size:.98rem;margin:1.3em 0 .3em}
+p{margin:.65em 0}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.banner{font-size:.86rem;color:var(--ink2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:.6em 0;margin:1em 0 1.4em;display:flex;flex-wrap:wrap;gap:.4em 1.4em}
+.banner b{color:var(--ink)}
+.legend{font-size:.86rem;background:var(--rule2);border-radius:6px;padding:.7em 1em;margin:1em 0}
+.legend span{margin-right:1.2em;white-space:nowrap}
+.toc{font-size:.92rem;columns:2;column-gap:2.4em;margin:1em 0 2em}
+.toc a{display:block;padding:.12em 0;color:var(--ink)}
+.toc a span{color:var(--muted);display:inline-block;width:2.2em}
+.key{background:var(--rule2);border-left:4px solid var(--accent);padding:.8em 1.2em;margin:1.2em 0;border-radius:0 6px 6px 0}
+.key ol{margin:.3em 0;padding-left:1.3em}.key li{margin:.35em 0}
+.warn{border-left:4px solid var(--mark-co);background:color-mix(in srgb,var(--mark-co) 8%,transparent);padding:.7em 1.1em;margin:1.1em 0;border-radius:0 6px 6px 0}
+.pv{white-space:nowrap;font-variant-numeric:tabular-nums}
+.pv .mark,.mark{font-size:.82em}
+.pv.fact .mark,.mark.fact{color:var(--mark-fact)}.pv.extrapolation .mark,.mark.extrapolation{color:var(--mark-ex)}
+.pv.speculation .mark,.mark.speculation{color:var(--mark-sp)}.pv.contested .mark,.mark.contested{color:var(--mark-co)}
+.pv.contested{text-decoration:underline dotted var(--mark-co);text-underline-offset:3px}
+sup.cite{font-size:.68em;line-height:0;margin-left:1px}sup.cite a{color:var(--muted)}
+table{border-collapse:collapse;width:100%;font-size:.84rem;line-height:1.45;margin:1em 0 .4em}
+th,td{border-bottom:1px solid var(--rule);padding:.35em .55em;vertical-align:top;text-align:left}
+th{background:var(--rule2);font-weight:600;position:sticky;top:0}
+tbody tr:nth-child(even){background:color-mix(in srgb,var(--rule2) 45%,transparent)}
+td.num{text-align:right;white-space:nowrap}
+table.reg{table-layout:fixed}table.reg td,table.reg th{overflow-wrap:anywhere}
+table.reg th:nth-child(1){width:27%}table.reg th:nth-child(2){width:15%}table.reg th:nth-child(3){width:12%}table.reg th:nth-child(4){width:9%}table.reg th:nth-child(5){width:19%}table.reg th:nth-child(6){width:18%}
+table.reg td.num{white-space:normal}table.chrono td:nth-child(2){overflow-wrap:anywhere}td.method,td.loc{color:var(--ink2);font-size:.92em}
+.nowrap{white-space:nowrap}.small{font-size:.84rem;color:var(--ink2)}
+.tablewrap{overflow-x:auto;margin:1em 0}
+.tcap{font-family:"Segoe UI",system-ui,sans-serif;font-size:.86rem;color:var(--ink2);margin:.2em 0 1.2em}
+.tcap b,figcaption b{color:var(--ink)}
+ul.obs{margin:0;padding-left:1.1em}ul.obs li{margin:.15em 0}
+figure{margin:1.6em 0;padding:0}
+figcaption{font-size:.86rem;color:var(--ink2);margin-top:.5em;line-height:1.5}
+svg.fig{width:100%;height:auto;display:block;font-family:"Segoe UI",system-ui,sans-serif;color:var(--ink)}
+.fig-small{font-size:11px;fill:var(--ink2)}.fig-label{font-size:12px;fill:var(--ink);font-weight:600}
+.grid{stroke:var(--rule);stroke-width:1}.lane{stroke:var(--rule2);stroke-width:8;stroke-linecap:round}.frame{stroke:var(--rule)}
+.ink{color:var(--ink)}
+.ph-crater{color:var(--c-crater)}.ph-thermal{color:var(--c-thermal)}.ph-ejecta{color:var(--c-ejecta)}.ph-seismic{color:var(--c-seismic)}
+.ph-air{color:var(--c-air)}.ph-tsunami{color:var(--c-tsunami)}.ph-atmo{color:var(--c-atmo)}.ph-bio{color:var(--c-bio)}
+.cert-fact{fill:var(--mark-fact)}.cert-extrapolation{fill:var(--mark-ex)}.cert-speculation{fill:var(--mark-sp)}.cert-contested{fill:var(--mark-co)}
+.x-water{fill:var(--x-water)}.x-sed{fill:var(--x-sed)}.x-crust{fill:var(--x-crust)}.x-mantle{fill:var(--x-mantle)}.x-melt{fill:var(--x-melt)}.x-imp{fill:var(--x-imp)}
+ol.bib{font-size:.86rem;line-height:1.5;padding-left:2.4em}ol.bib li{margin:.25em 0}
+mark.err{background:#ffcdd2;color:#b71c1c}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:1.4em}
+@media (max-width:760px){main{padding:28px 16px 64px}.toc{columns:1}.cols{grid-template-columns:1fr}body{font-size:16px}}
+@media print{body{background:#fff}main{box-shadow:none;max-width:none}h2{break-after:avoid}figure,table{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+
+<h1>Chicxulub — pierwsze 24 godziny<small>Synteza stanu wiedzy jako podstawa symulacji: od kontaktu impaktora z powierzchnią do T+24 h</small></h1>
+
+<div class="banner">
+  <span><b>Raport badawczy</b> · faza 1 projektu „Symulacja Chicxulub”</span>
+  <span>Wygenerowano: <b>{{meta:date}}</b></span>
+  <span><b>{{meta:sources}}</b> źródeł (DOI zweryfikowane: <b>{{meta:verified}}</b>)</span>
+  <span>Rejestr: <b>{{meta:lit}}</b> parametrów z literatury + <b>{{meta:derived}}</b> wielkości liczonych</span>
+</div>
+
+<div class="legend"><b>Skala pewności przy każdej liczbie:</b>
+  <span><span class="mark fact">●</span> fakt — pomiar lub obserwacja</span>
+  <span><span class="mark extrapolation">◐</span> ekstrapolacja — wynik modelu lub praw skalowania opartych na znanych mechanizmach</span>
+  <span><span class="mark speculation">○</span> spekulacja — hipoteza bez bezpośredniego wsparcia</span>
+  <span><span class="mark contested">⚑</span> sporne — konkurencyjne interpretacje w literaturze</span>
+  <br>Każda liczba w tekście, tabelach i na rysunkach pochodzi z jednego rejestru (<code>research/parameters.json</code> i <code>research/derived.json</code>); numery w nawiasach kwadratowych prowadzą do bibliografii.
+</div>
+
+<nav class="toc">
+  <a href="#s0"><span>—</span>Streszczenie</a>
+  <a href="#s1"><span>1.</span>Kontekst i pytania badawcze</a>
+  <a href="#s2"><span>2.</span>Metodologia</a>
+  <a href="#s3"><span>3.</span>Kiedy i gdzie: świat sprzed 66 mln lat</a>
+  <a href="#s4"><span>4.</span>Impaktor i przelot przez atmosferę</a>
+  <a href="#s5"><span>5.</span>Kontakt i kula ognia</a>
+  <a href="#s6"><span>6.</span>Krater i deformacja skorupy</a>
+  <a href="#s7"><span>7.</span>Ejecta</a>
+  <a href="#s8"><span>8.</span>Fale sejsmiczne</a>
+  <a href="#s9"><span>9.</span>Fala ciśnienia, fala Lamba, dźwięk</a>
+  <a href="#s10"><span>10.</span>Impuls termiczny, temperatura, pożary</a>
+  <a href="#s11"><span>11.</span>Tsunami</a>
+  <a href="#s12"><span>12.</span>Atmosfera</a>
+  <a href="#s13"><span>13.</span>Biosfera w pierwszej dobie</a>
+  <a href="#s14"><span>14.</span>Analiza przekrojowa: odległość i czas</a>
+  <a href="#s15"><span>15.</span>Chronologia pierwszej doby</a>
+  <a href="#s16"><span>16.</span>Stan wiedzy</a>
+  <a href="#s17"><span>17.</span>Implikacje dla symulacji</a>
+  <a href="#s18"><span>18.</span>Rekomendacje do dalszych badań</a>
+  <a href="#bib"><span>—</span>Bibliografia</a>
+  <a href="#zA"><span>A.</span>Stanowiska granicy K-Pg</a>
+  <a href="#zB"><span>B.</span>Pełny rejestr parametrów</a>
+  <a href="#zC"><span>C.</span>Decyzje syntezy i weryfikacja</a>
+</nav>
+
+<!-- ───────────────────────────── STRESZCZENIE ───────────────────────────── -->
+<h2 id="s0">Streszczenie</h2>
+<p><b>Pytanie badawcze.</b> Co — według recenzowanej literatury — działo się na Ziemi od chwili, gdy impaktor Chicxulub dotknął powierzchni morza nad Jukatanem, do upływu pierwszej doby; z jaką pewnością to wiemy; i jak przenieść tę wiedzę do interaktywnej symulacji bez dopisywania czegokolwiek, czego źródła nie wspierają.</p>
+
+<div class="key"><b>Kluczowe ustalenia</b>
+<ol>
+<li><b>Czas i warunki.</b> Uderzenie i granica kreda–paleogen są datowane na {{p:event.age}} — z dokładnością do dziesiątek tysięcy lat. Skamieniałe ryby z Tanis wskazują na porę roku: {{p:event.season}}. Pory dnia żadne źródło nie ogranicza; symulacja nie może jej więc sugerować.</li>
+<li><b>Impaktor.</b> {{p:impactor.type}} o średnicy {{p:impactor.diameter}} (zakres w literaturze {{r:impactor.diameter}}), uderzający z prędkością {{p:impactor.velocity}} pod kątem {{p:impactor.angle}} od strony północno-wschodniej. Kąt jest dobrze ograniczony modelami 3D, kierunek — słabo i pozostaje sporny. Energia scenariusza referencyjnego: {{p:energy.kinetic}}, czyli {{p:energy.tnt}}.</li>
+<li><b>Krater powstał w minutach, nie w godzinach.</b> Wnęka przejściowa o średnicy {{p:crater.transient_diameter}} otwiera się w {{p:crater.t_transient_max}}, dno odbija w górę ponad poziom terenu (maksimum {{p:crater.central_uplift_max_height}} po {{p:crater.t_uplift_max}}), pierścień szczytowy istnieje po {{p:crater.t_peak_ring}}, a krater końcowy ({{p:crater.final_diameter}}) — po {{p:crater.t_final}}. Rdzeń wiertniczy z pierścienia zapisał {{p:crater.day1_infill_thickness}} osadów jednej doby.</li>
+<li><b>Fale sejsmiczne obiegły glob wielokrotnie.</b> Fala P dociera na antypody po {{p:seismic.t_p_antipode}}, fale powierzchniowe okrążają Ziemię {{p:seismic.rayleigh_orbits_24h}} razy w ciągu doby. Magnituda jest wyłącznie szacunkiem zależnym od nieznanej sprawności sejsmicznej: {{p:seismic.magnitude_literature}}.</li>
+<li><b>Ejecta dotarły wszędzie w ciągu godzin.</b> Pierwsze odłamki wracają do atmosfery {{p:ejecta.t_arrival_2000km}} po uderzeniu w odległości około 2000 km; chmura pyłu otacza glob po {{p:ejecta.t_arrival_global}}. Zmierzona warstwa ejecta maleje od dziesiątek metrów blisko krateru do {{p:ejecta.distal_layer_thickness}} na całym świecie.</li>
+<li><b>Impuls cieplny jest najbardziej spornym elementem doby.</b> Modele bez samoekranowania dają {{p:thermal.ir_flux_global_melosh}} przez godziny, modele z samoekranowaniem — krótkie impulsy rzędu minut ({{r:thermal.ir_flux_peak}}, zależnie od modelu i miejsca), silne w kierunku lotu impaktora i znikome w przeciwnym. Pożary w promieniu ok. {{p:fires.ignition_radius_fireball}} są dobrze udokumentowane; pożary globalne w pierwszych godzinach — nie. Opublikowanej symulacji temperatury powietrza przy gruncie w pierwszych godzinach nie ma.</li>
+<li><b>Tsunami było globalne, ale znamy je z jednego modelu.</b> Fala obrzeżna o wysokości {{p:tsunami.initial_amplitude}} opuszcza Zatokę Meksykańską po {{p:tsunami.t_north_atlantic}}, wchodzi na Pacyfik po {{p:tsunami.t_pacific_entry}}, a energię miała do {{p:tsunami.energy_ratio_2004}} razy większą niż tsunami z 2004 roku. Ten obraz pochodzi z jednej symulacji globalnej, liczonej dla innego impaktora niż nasz scenariusz.</li>
+<li><b>Atmosfera: skutki rozpoczęte w pierwszej dobie, rozegrane w latach.</b> Masa uwolnionej siarki jest sporna: {{p:atmosphere.sulfur_mass}} według modelu, {{p:atmosphere.sulfur_mass_empirical}} według izotopów. Momentu zapadnięcia ciemności nie podaje żadna praca — zaciemnienie trzeba modelować jako rampę od godzin do dni.</li>
+</ol></div>
+
+<p><b>Luki krytyczne.</b> (1) Brak symulacji temperatury powietrza i promieniowania przy gruncie w pierwszych godzinach, sprzężonej z dynamiką atmosfery. (2) Brak trójwymiarowego, ukośnego modelu tsunami i kierunkowości fali. (3) Nieznana głębokość wody dokładnie w punkcie zero: od {{p:tsunami.depth_impact_point}} do {{p:target.water_depth}} zależnie od pracy. (4) Brak modelu fali ciśnienia i fali Lamba specyficznego dla Chicxulub — skalowanie z wybuchów jądrowych wykracza o cztery rzędy wielkości poza zakres kalibracji. (5) Pierwsza doba wewnątrz krateru opiera się na jednym otworze wiertniczym.</p>
+<p><b>Główna rekomendacja dla symulacji.</b> Zjawiska, których czas i zasięg wynikają z geometrii i dobrze poznanej fizyki (fale sejsmiczne, balistyka ejecta, fala Lamba, czasy dotarcia tsunami), liczyć wprost. Amplitudy z nieliniowych faz początkowych (tsunami, kula ognia, fala uderzeniowa) kalibrować do opublikowanych modeli i pokazywać z pasmem niepewności. Hipotezy sporne (globalny impuls cieplny, globalne pożary, masa siarki, kierunek uderzenia) udostępnić jako przełączane scenariusze, a nie jako jedną „prawdę”.</p>
+
+<!-- ───────────────────────────── 1. KONTEKST ───────────────────────────── -->
+<h2 id="s1">1. Kontekst i pytania badawcze</h2>
+<p>Uderzenie w Chicxulub jest najlepiej udokumentowaną katastrofą w historii Ziemi. Od odkrycia anomalii irydowej {{cite:alvarez1980}} i identyfikacji krateru {{cite:hildebrand1991}} literatura przeszła od pytania „czy” do pytań „jak dokładnie i w jakiej kolejności”. Wiercenie IODP-ICDP Expedition 364 w pierścieniu szczytowym {{cite:morgan2016}} dało pierwszy bezpośredni zapis pierwszej doby wewnątrz krateru {{cite:gulick2019}}, a trójwymiarowe symulacje uderzenia ukośnego {{cite:collins2020}} i globalny model tsunami {{cite:range2022}} pozwoliły powiązać obserwacje geologiczne z fizyką zjawiska.</p>
+<p>Ten raport jest fundamentem symulacji, a nie przeglądem dla przeglądu. Odpowiada na cztery pytania: (1) jakie są warunki początkowe — impaktor, cel, położenie, paleogeografia; (2) jaka jest sekwencja zjawisk od kontaktu do T+24 h i jaki ma przebieg w czasie i przestrzeni; (3) które wielkości są zmierzone, które wynikają z modeli, a które są hipotezami lub przedmiotem sporu; (4) co da się policzyć samodzielnie w sposób spójny, a co trzeba przejąć z opublikowanych symulacji.</p>
+<p><b>Zakres.</b> Okno czasowe zaczyna się w chwili pierwszego kontaktu impaktora z powierzchnią (T = 0) i kończy po 24 godzinach. Kilka sekund przelotu przez atmosferę traktowane jest jako prolog. Skutki późniejsze — zima impaktowa, zakwaszenie oceanów, wymieranie — pojawiają się wyłącznie jako kontekst, gdy wyjaśniają, co rozpoczęło się w pierwszej dobie.</p>
+
+<!-- ───────────────────────────── 2. METODOLOGIA ───────────────────────────── -->
+<h2 id="s2">2. Metodologia</h2>
+<h3>2.1 Źródła i ich weryfikacja</h3>
+<p>Research prowadzono w siedmiu równoległych wątkach tematycznych: impaktor i cel; krater i skorupa; ejecta, termika i pożary; tsunami; sejsmika, fala ciśnienia i dźwięk; atmosfera, biosfera i paleogeografia; równania praw skalowania. Obowiązywały te same reguły: wyłącznie prace recenzowane (zbiory danych i oprogramowanie oznaczone osobno), żadnego źródła nieotwartego przez badacza, każda liczba z lokalizatorem w pracy (rozdział, tabela, rysunek, równanie) i z poziomem pewności. Prace, których nie udało się otworzyć — w kilkunastu przypadkach z powodu zabezpieczeń antybotowych wydawców, których nie obchodzono — nie weszły do rejestru; zostały zapisane jako niezweryfikowane tropy (rozdział 18).</p>
+<p>Wszystkie identyfikatory DOI sprawdzono automatycznie w rejestrach Crossref i DataCite: tytuł, rok i pierwszy autor muszą zgadzać się z metadanymi wydawcy. Wynik: {{meta:verified}} z {{meta:dois}} DOI zgodnych, żadnego odrzuconego. Ten sam mechanizm wychwycił w teście celowo zmyślony identyfikator, więc działa także jako zabezpieczenie przed „halucynacją” źródeł.</p>
+
+<h3>2.2 Skala pewności</h3>
+<p>Każda wielkość ma jeden z czterech poziomów. <b>Fakt</b> oznacza pomiar lub obserwację (np. grubość warstwy w rdzeniu). <b>Ekstrapolacja</b> — wynik modelu numerycznego lub praw skalowania, opartych na znanych mechanizmach, ale nieobserwowany bezpośrednio (np. czas wypiętrzenia dna krateru z symulacji hydrokodowej). <b>Spekulacja</b> — hipoteza bez bezpośredniego wsparcia lub założenie modelu. <b>Sporne</b> — gdy recenzowane prace dochodzą do niezgodnych wniosków; wtedy podawany jest zakres między stanowiskami. Rysunek 1 pokazuje strukturę pewności całego rejestru: dominują ekstrapolacje, co jest nieuniknione dla zdarzenia sprzed 66 mln lat, ale kilkadziesiąt kluczowych wielkości to bezpośrednie pomiary.</p>
+<figure>{{fig:certainty}}<figcaption><b>Rysunek 1.</b> Struktura pewności rejestru: liczba parametrów z literatury w każdej grupie tematycznej, według poziomu pewności. Wielkości liczone w ramach tego projektu (rozdział 2.4) nie są tu uwzględnione — wszystkie mają status ekstrapolacji.</figcaption></figure>
+
+<h3>2.3 Scenariusz referencyjny i reguła syntezy</h3>
+<p>Literatura nie podaje jednego zestawu liczb dla Chicxulub. Przyjęto regułę: wartości wejściowe, co do których literatura jest najbardziej zgodna, a wszystkie pozostałe wielkości — liczone z tych samych wejść, tak aby skutki były ze sobą spójne. Przy wyborze stosowano kolejno: pomiar przed modelem, nowszą pracę jawnie zastępującą starszą, oraz wartość mieszczącą się w zakresach największej liczby niezależnych prac. Każda decyzja syntezy — usunięcie duplikatu, poprawka, wybór między wątkami — jest zapisana z uzasadnieniem w pliku <code>research/synthesis.json</code> (Załącznik C), więc rejestr można odtworzyć i zakwestionować krok po kroku.</p>
+<p>Jedna decyzja wymaga omówienia. Średnica impaktora nie jest mierzona — to rozmiar, który w modelu odtwarza obserwowany krater przy założonej prędkości, kącie i gęstości. Trójwymiarowe symulacje hydrokodowe dają {{p:impactor.diameter}} przy {{p:impactor.velocity}} i {{p:impactor.angle}} {{cite:collins2020}}, niezależny model — wartość bliską {{cite:artemieva2017}}. Proste prawa skalowania EIEP dają przy tych wejściach krater o średnicy zaledwie {{p:crater.final_diameter_eiep}}, a do odtworzenia zmierzonego krateru potrzebowałyby impaktora o średnicy {{p:impactor.diameter_for_crater_eiep}}. Uznano model hydrokodowy za wiarygodniejszy od uproszczonego prawa skalowania i nie podnoszono średnicy impaktora „pod wzór”. Konsekwencja dla symulacji: geometria krateru pochodzi z obserwacji i modeli hydrokodowych, a prawa skalowania liczą wyłącznie zjawiska dalekiego pola.</p>
+
+<h3>2.4 Obliczenia własne i ich kontrola</h3>
+<p>Wielkości liczone zostały wyznaczone trzema narzędziami. (a) <b>Prawa skalowania Earth Impact Effects Program</b> {{cite:collins2005}} zaimplementowano od nowa na podstawie równań przepisanych z pracy źródłowej (z erratą z 2013 r. {{cite:collins2013errata}}). Implementację sprawdzono testami przeciwko wynikom oficjalnego kalkulatora {{cite:purdueImpactEarth2026}} dla trzech niezależnych przypadków — czternaście wielkości zgadza się w granicach 3 %, magnitudy w granicach 0,05. (b) <b>Czasy przebiegu fal sejsmicznych</b> liczono w globalnym modelu prędkości ak135 {{cite:kennett1995}} programem TauP {{cite:crotwell1999}} w pakiecie ObsPy {{cite:beyreuther2010}}. (c) <b>Prędkości fal powierzchniowych i fali Lamba</b> przejęto z pomiarów (model PREM {{cite:dziewonski1981}}, erupcja Hunga Tonga–Hunga Haʻapai {{cite:matoza2022}}) i zastosowano jako ekstrapolację. Testy krzyżowe z niezależnymi obliczeniami w literaturze wypadły zgodnie: policzone czasy dotarcia fal P, S i Rayleigha do Tanis różnią się od wartości DePalmy i in. {{cite:depalma2019}} o mniej niż minutę.</p>
+
+<h3>2.5 Ograniczenia</h3>
+<p>Część prac dostępna była tylko w postaci abstraktu — wtedy wykorzystano wyłącznie liczby z abstraktu. Kilka wielkości geometrycznych krateru odczytano „na oko” z rysunków opublikowanych symulacji (dokładność około ±2 km) — są oznaczone jako ekstrapolacja, a nie jako liczby opublikowane. Kilka liczb znanych jest tylko z drugiej ręki, przez pracę, która je cytuje; zaznaczono to w uwagach do parametrów. Wreszcie: paleogeografia sprzed 66 mln lat jest rekonstrukcją, a jej niepewność (setki kilometrów linii brzegowej na płaskich szelfach) przenosi się na czasy dotarcia tsunami.</p>
+
+<!-- ───────────────────────────── 3. KIEDY I GDZIE ───────────────────────────── -->
+<h2 id="s3">3. Kiedy i gdzie: świat sprzed 66 mln lat</h2>
+<h3>3.1 Datowanie i pora roku</h3>
+<p>Najdokładniejszy wiek granicy K-Pg to {{p:event.age}}, uzyskany metodą Ar/Ar na sanidynie z tefry leżącej centymetr od warstwy impaktowej {{cite:sprain2018}}. Bezpośrednie datowanie szklanych sferul wyrzuconych z Chicxulub daje {{p:event.age_ejecta}} {{cite:renne2018}} — oba wieki są zgodne, a uderzenie i wymieranie są synchroniczne w granicach kilkudziesięciu tysięcy lat {{cite:renne2013}}. Starsze wartości rzędu 65 mln lat {{cite:swisher1992}} różnią się głównie kalibracją wzorca wieku i po przeliczeniu są zgodne z nowymi; nie są alternatywą.</p>
+<p>Porę roku wskazują ryby jesiotrokształtne zabite w Tanis: wzrost ich kości urwał się wcześnie w sezonie wegetacyjnym, co odpowiada wiośnie na półkuli północnej {{cite:during2022}}. Wcześniejsza praca o podobnym wniosku {{cite:depalma2021}} nie jest tu traktowana jako niezależne potwierdzenie, ponieważ rzetelność jej danych została zakwestionowana {{cite:during2024}}. Pory dnia żadne źródło nie ogranicza — w symulacji oświetlenie globu musi być neutralne.</p>
+
+<h3>3.2 Miejsce uderzenia i cel</h3>
+<p>Środek krateru leży dziś w punkcie o szerokości {{p:site.lat}} i długości {{p:site.lon}} (wartości ujemne oznaczają długość zachodnią), wyznaczonym jako geometryczny środek pierścienia gradientów grawitacji i pierścienia cenot {{cite:hildebrand1995}}. W chwili uderzenia, według modelu płyt PALEOMAP, ten punkt leżał na szerokości {{p:site.paleo_lat}} i długości {{p:site.paleo_lon}} — zgodnie z szerokością wynikającą z namagnesowania skał w kraterze, {{p:site.paleolatitude}} {{cite:gulick2019}}. Celem była płytka platforma węglanowa: około {{p:target.sediment_thickness}} osadów, w znacznej części ewaporatów (frakcja {{p:target.evaporite_fraction}}), na krystalicznym podłożu skorupy kontynentalnej grubości {{p:target.crust_thickness}}. Skład osadów ma ogromne znaczenie dla atmosfery: anhydryt to źródło siarki, węglany — dwutlenku węgla (rozdział 12).</p>
+<div class="warn"><b>Głębokość wody w punkcie zero nie jest ustalona.</b> Platforma była rampą pogłębiającą się ku północnemu wschodowi: od {{p:target.water_depth_south}} na południu do {{p:target.water_depth_ne_max}} w basenie na północny wschód {{cite:gulick2008,kaskes2023}}. Paleobatymetria globalnego modelu tsunami przyjmuje w punkcie zero {{p:tsunami.depth_impact_point}}, a model gazów — warstwę wody {{p:target.water_depth}} {{cite:artemieva2017}}. Ponieważ woda jest cienka w porównaniu z impaktorem, prawie nie wpływa na krater, ale decyduje o generacji tsunami. Symulacja powinna modelować rampę, a nie jedną głębokość.</div>
+
+<h3>3.3 Paleogeografia</h3>
+<p>Mapa świata w symulacji pochodzi z cyfrowego modelu terenu PaleoDEM {{cite:scotese2018}}. Mapa nr 16 przedstawia granicę K/T, czyli stratygraficznie {{p:paleo.paleodem_map_age}}; etykieta „65 Ma” w nazwie pliku to wiek rekonstrukcji w modelu płyt PALEOMAP {{p:paleo.paleodem_plate_model_age}}, a nie data uderzenia. Batymetrię oceanów uzyskano, obracając współczesne dno do dawnych położeń i „cofając” jego osiadanie zależnością głębokości od wieku skorupy {{cite:stein1992}}; szelfy i morza epikontynentalne naniesiono ręcznie z map litofacji co {{p:paleo.paleodem_vertical_step}}. Autorzy nazywają siatki „pierwszym szkicem” — szczególnie niepewne są linie brzegowe i wysokości gór.</p>
+<p>Świat sprzed 66 mln lat różnił się od dzisiejszego w sposób istotny dla symulacji. Atlantyk był mniej więcej o połowę węższy: około {{p:paleo.atlantic_width_equator}} na równiku i {{p:paleo.north_atlantic_width_40n}} na 40° N. Między Amerykami istniała {{p:paleo.central_american_seaway_open}} cieśnina środkowoamerykańska — droga dla tsunami na Pacyfik. Morze Wewnętrzne Ameryki Północnej: {{p:paleo.wis_continuous_in_paleodem}}; skamieniałości wskazują na resztkowe zatoki morskie w Dakocie {{cite:boyd2011}}. Poziom morza był wyższy niż dziś — o {{p:paleo.sea_level_above_present}} według rekonstrukcji izotopowej {{cite:miller2020}}, a według modelu dynamiki basenów oceanicznych nawet o {{p:tsunami.sea_level_late_cretaceous}} {{cite:muller2008}}; rozbieżność pozostaje nierozstrzygnięta. Tanis leżało na około {{p:paleo.tanis_paleolatitude}} szerokości północnej, w klimacie z latami o średniej {{p:paleo.hellcreek_temp_summer}} i zimami około {{p:paleo.hellcreek_temp_winter}}.</p>
+
+<!-- ───────────────────────────── 4. IMPAKTOR ───────────────────────────── -->
+<h2 id="s4">4. Impaktor i przelot przez atmosferę</h2>
+<h3>4.1 Czym było ciało</h3>
+<p>Trzy niezależne linie dowodów geochemicznych wskazują na planetoidę węglistą: izotopy rutenu w warstwie granicznej z trzech stanowisk {{cite:fischergodde2024}}, izotopy chromu ze Stevns Klint i Caravaki {{cite:shukolyukov1998}} oraz kilkumilimetrowy skamieniały meteoryt z osadów granicznych północnego Pacyfiku {{cite:kyte1998}}. Najlepiej pasują chondryty typu CM lub CR {{cite:desch2022}}. Hipoteza komety długookresowej {{cite:siraj2021}} została odparta: kometa dostarczyłaby ułamek obserwowanego irydu, a skład się nie zgadza {{cite:desch2022}}. Źródło planetoidy w pasie głównym pozostaje otwarte — rodzina Baptistiny, długo wskazywana {{cite:bottke2007}}, ma skład niepasujący do chondrytu węglistego {{cite:reddy2009}}.</p>
+<p>Gęstość nasypowa ciała jest nieznana; modele przyjmują {{p:impactor.density}}, analogi meteorytowe sugerują porowatość rzędu jednej czwartej {{cite:macke2011}}. Średnica w scenariuszu wynosi {{p:impactor.diameter}} i pochodzi z dopasowania modeli 3D do obserwowanego krateru {{cite:collins2020}}. Bilans irydu daje ciało mniejsze, {{p:impactor.diameter_geochem}} {{cite:alvarez1980,artemieva2009}} — za małe, by wykopać krater o średnicy {{p:crater.final_diameter}}, co sugeruje, że nie cały materiał impaktora trafił do globalnej warstwy.</p>
+
+<h3>4.2 Prędkość, kąt i kierunek</h3>
+<p>Prędkości żadna obserwacja nie ogranicza. Przyjęta wartość {{p:impactor.velocity}} odpowiada średniej i medianie prędkości zderzeń planetoid z Ziemią; około jednej czwartej zderzeń jest wolniejszych niż 15 km/s, a minimum wyznacza prędkość ucieczki {{cite:collins2020}}. Kąt i kierunek ustalono, porównując symulacje 3D z asymetriami krateru — przesunięciem centrum wypiętrzenia płaszcza i centrum pierścienia szczytowego. Najlepsze dopasowanie daje uderzenie stromo, {{p:impactor.angle}}, z północnego wschodu {{cite:collins2020}}. Starsza interpretacja zakłada uderzenie płaskie z południowego wschodu {{cite:schultz1996}}, a analiza kwarcu szokowego — uderzenie strome z możliwym kierunkiem z południowego wschodu {{cite:morgan2006}}. Przy tym asymetria krateru koreluje z wcześniejszym urzeźbieniem szelfu, więc kierunku nie da się odczytać z samej struktury {{cite:gulick2008}}. Wniosek: kąt stromy jest dobrze poparty, azymut {{p:impactor.approach_azimuth}} — słabo.</p>
+
+<table>
+<thead><tr><th>Wielkość scenariusza referencyjnego</th><th>Wartość</th><th>Zakres w literaturze</th></tr></thead>
+<tbody>
+<tr><td>Typ impaktora</td><td>{{p:impactor.type}}</td><td>—</td></tr>
+<tr><td>Średnica</td><td class="num">{{p:impactor.diameter}}</td><td class="num">{{r:impactor.diameter}}</td></tr>
+<tr><td>Gęstość</td><td class="num">{{p:impactor.density}}</td><td class="num">{{r:impactor.density}}</td></tr>
+<tr><td>Masa (liczona)</td><td class="num">{{p:impactor.mass}}</td><td>—</td></tr>
+<tr><td>Prędkość</td><td class="num">{{p:impactor.velocity}}</td><td class="num">{{r:impactor.velocity}}</td></tr>
+<tr><td>Kąt od poziomu</td><td class="num">{{p:impactor.angle}}</td><td class="num">{{r:impactor.angle}}</td></tr>
+<tr><td>Azymut nadlotu (skąd)</td><td class="num">{{p:impactor.approach_azimuth}}</td><td class="num">{{r:impactor.approach_azimuth}}</td></tr>
+<tr><td>Energia kinetyczna (liczona)</td><td class="num">{{p:energy.kinetic}}</td><td class="num">{{r:energy.kinetic_literature}}</td></tr>
+<tr><td>Ekwiwalent TNT (liczony)</td><td class="num">{{p:energy.tnt}}</td><td>—</td></tr>
+<tr><td>Gęstość celu (do skalowania)</td><td class="num">{{p:target.density}}</td><td class="num">{{r:target.density}}</td></tr>
+</tbody></table>
+<p class="tcap"><b>Tabela 1.</b> Scenariusz referencyjny. Masa i energia są liczone z wejść (rozdział 2.4); zakres energii obejmuje wartości wszystkich prac, także starszych, opartych na innych założeniach {{cite:pope1997}}.</p>
+
+<h3>4.3 Przelot przez atmosferę (prolog)</h3>
+<p>Żadna praca nie podaje czasu przelotu ciała Chicxulub przez atmosferę, więc wyliczono go z geometrii: od wysokości 100 km do powierzchni mija {{p:impactor.entry_duration}}. Słup powietrza ma masę nieporównanie mniejszą od impaktora, więc ciało nie hamuje i nie ulega ablacji w żadnym znaczącym stopniu — dociera do powierzchni z pełną prędkością. Ponieważ jego średnica przekracza wysokość skali atmosfery, w chwili kontaktu czołowej powierzchni z morzem tylna część ciała jest jeszcze kilkanaście kilometrów nad ziemią. Wizualnie to raczej góra przebijająca cienką warstwę powietrza niż „spadająca gwiazda”.</p>
+
+<!-- ───────────────────────────── 5. KONTAKT I KULA OGNIA ───────────────────────────── -->
+<h2 id="s5">5. Kontakt i kula ognia</h2>
+<p>W pierwszej sekundzie impaktor wnika w wodę i osady, a fala uderzeniowa odparowuje i topi zarówno jego, jak i otaczający cel. Rozprężający się obłok par ma początkowo temperaturę {{p:fireball.plume_initial_temperature}} i stygnie do kilkuset–tysiąca kelwinów w ciągu około minuty; jego słup ma szerokość rzędu {{p:fireball.plume_column_width}} {{cite:kring2002}}. W modelu 3D górna część obłoku (para impaktora i osadów) porusza się z prędkością {{p:fireball.plume_upper_velocity}}, część dolna — kilkakrotnie wolniej {{cite:artemieva2009}}. Najszybszy materiał osiąga wysokości do {{p:fireball.ejecta_apogee_max}}.</p>
+<p>Kula ognia jest nieprzezroczysta, dopóki nie ostygnie do {{p:fireball.transparency_temperature}}. Prawa skalowania dają dla scenariusza referencyjnego promień kuli ognia w maksimum promieniowania {{p:fireball.radius_eiep}}, osiągany po {{p:fireball.t_max_radiation_eiep}}, i czas promieniowania {{p:fireball.radiation_duration_eiep}}. To ekstrapolacja o około osiem rzędów wielkości poza kalibrację z prób jądrowych {{cite:morgan2013}}; czas promieniowania jest wprost proporcjonalny do sprawności świetlnej {{p:fireball.luminous_efficiency}}, niepewnej o dwa rzędy wielkości. Ekspozycja cieplna od samej kuli ognia (bez późniejszego impulsu od ejecta) wynosi {{p:thermal.exposure_eiep_500km}} w odległości 500 km i {{p:thermal.exposure_eiep_1000km}} w 1000 km; dalej kula ognia chowa się pod horyzontem. Opublikowane promienie zapłonu od kuli ognia sięgają {{r:fires.ignition_radius_fireball}} {{cite:morgan2013}}.</p>
+
+<!-- ───────────────────────────── 6. KRATER ───────────────────────────── -->
+<h2 id="s6">6. Krater i deformacja skorupy</h2>
+<h3>6.1 Mechanizm: zapadanie dynamiczne</h3>
+<p>Krater Chicxulub powstał w ciągu kilku minut przez tzw. zapadanie dynamiczne, potwierdzone wierceniem {{cite:morgan2016,riller2018}}. Wnęka przejściowa rośnie do maksimum w {{p:crater.t_transient_max}}; jej średnica wynosi około {{p:crater.transient_diameter}} według geofizyki, a głębokość — {{p:crater.transient_depth}}. Już od {{p:crater.t_collapse_onset}} dno zaczyna odbijać ku górze, a ściany osuwają się do środka. Skały ulegają przy tym czasowemu „upłynnieniu” — wibracje rozbitego górotworu pozwalają mu płynąć jak gęsta ciecz {{cite:riller2018}}. Wypiętrzenie środkowe przekracza poziom pierwotnej powierzchni i osiąga {{p:crater.central_uplift_max_height}} po {{p:crater.t_uplift_max}}, po czym od {{p:crater.t_uplift_collapse}} zapada się na zewnątrz. Materiał z głębokości {{p:crust.peak_ring_origin_depth}}, przemieszczony o {{p:crust.peak_ring_displacement}}, nasuwa się na osunięte osady brzegu wnęki i tworzy pierścień szczytowy po {{p:crater.t_peak_ring}}. Krater końcowy istnieje po {{p:crater.t_final}}; później zmienia się już tylko powoli.</p>
+<figure>{{fig:crater}}<figcaption><b>Rysunek 2.</b> Schematyczne przekroje krateru w klatkach kluczowych. Wymiary charakterystyczne (głębokość i średnica wnęki, wysokość wypiętrzenia, średnice pierścienia i krateru, głębokość dna) pochodzą z rejestru; kształty pośrednie odczytano z rysunków symulacji iSALE {{cite:riller2018,morgan2016}} z dokładnością około ±2 km i należy je traktować jako ilustrację modelu, a nie pomiar. Wszystkie panele poza ostatnim mają skalę 1:1. Ostatni panel ma przewyższenie ×10, bo krater końcowy jest bardzo płaski: około {{p:crater.final_diameter}} szerokości przy głębokości dna rzędu {{p:crater.floor_depth}}.</figcaption></figure>
+<p>Wysokość wypiętrzenia zależy od modelu: symulacje dwuwymiarowe dają wyższe, trójwymiarowe — niższe wartości, a parametry mechanizmu osłabienia skał implikowane przez rdzeń i przez modele się różnią {{cite:riller2018}}. Ukośne uderzenie przesuwa i pochyla wypiętrzenie w kierunku lotu, a kurtyna ejecta jest wyższa po stronie „z biegiem” {{cite:collins2020}}.</p>
+
+<h3>6.2 Krater końcowy</h3>
+<p>Średnica krateru wynosi {{p:crater.final_diameter}} (zakres {{r:crater.final_diameter}}) — różnica między 180 a 200 km wynika z definicji krawędzi, a nie ze sporu o pomiar {{cite:hildebrand1995,gulick2013}}. Wewnętrzna krawędź leży w promieniu {{p:crater.inner_rim_radius}}, uskoki pierścieniowe sięgają {{p:crater.ring_faults_outer_radius}}, a pierścień cenot na powierzchni — {{p:crater.cenote_ring_radius}} od środka {{cite:pope1996}}. Zewnętrzny pierścień basenu wielopierścieniowego ma średnicę rzędu {{p:crater.outer_ring_diameter}}, ale jego interpretacja jest sporna. Pierścień szczytowy ma średnicę około {{p:crater.peak_ring_diameter}}, szerokość {{p:crater.peak_ring_width}} i wznosi się {{p:crater.peak_ring_height}} nad dnem; jego środek jest przesunięty o {{p:crater.peak_ring_center_offset}} na południowy zachód, a środek wypiętrzenia płaszcza — o {{p:crater.mantle_uplift_center_offset}} na północ, co jest kluczowym argumentem za uderzeniem z północnego wschodu {{cite:collins2020}}. Moho wypiętrzone jest o {{p:crust.moho_uplift}} {{cite:christeson2009}}.</p>
+<p>Skały pierścienia to granitoidy z głębokości środkowej skorupy, przeszłe ciśnienie szokowe {{p:crust.shock_pressure_peak_ring}} {{cite:feignon2020}}; są silnie spękane, stąd anomalnie niska gęstość {{p:crust.peak_ring_density}} i prędkość fal {{p:crust.peak_ring_vp}} {{cite:morgan2016}}. W centrum spoczywa soczewka stopu impaktowego o średnicy około {{p:crater.melt_sheet_diameter}} i grubości {{p:crater.melt_sheet_thickness}}; łączna objętość stopu to rząd {{p:crater.melt_volume}}. Prawa skalowania dają {{p:crater.melt_volume_eiep}} — zgodność do rzędu wielkości.</p>
+
+<h3>6.3 Pierwsza doba wewnątrz krateru</h3>
+<p>Otwór M0077A na pierścieniu szczytowym zapisał pierwszą dobę z niezwykłą rozdzielczością {{cite:gulick2019,kaskes2022}}. Po około {{p:crater.t_melt_emplacement_peak_ring}} stop wtłaczany jest w strefy nasunięć; w ciągu {{p:crater.t_melt_cap_peak_ring}} pierścień pokrywa {{p:crater.day1_melt_layer_thickness}} stopu i brekcji, gorących na tyle, by zapisać jednolity kierunek pola magnetycznego. Pierwsza woda morska wdziera się po {{p:crater.t_first_seawater_peak_ring}} i rozsadza gorący stop. Główna fala powrotna wlewa się przez lukę w północno-wschodniej krawędzi, od strony basenu głębokiego na {{p:crater.rim_gap_water_depth}}, i przelewa przez pierścień po {{p:crater.t_resurge_crest_peak_ring}}, zostawiając {{p:crater.day1_resurge_crest_layer_thickness}} osadu. Przez kolejne godziny opada {{p:crater.day1_graded_suevite_thickness}} sortowanego suewitu, a wstrząsy wtórne i osuwiska rozkołysują wodę w seiche. Przed upływem doby wraca odbita fala tsunami i zostawia warstwę {{p:crater.day1_tsunami_layer_thickness}} z warstwowaniem przekątnym i lądowymi węglowodorami; tuż nad nią leży węgiel drzewny {{cite:gulick2019}}. Łącznie: {{p:crater.day1_infill_thickness}} w otworze i średnio {{p:crater.day1_resurge_layer_thickness_mean}} w całym kraterze {{cite:christeson2021}}. Interpretacja tempa napełniania jest sporna: w innym sektorze krateru osady wskazują na spokojne, niskoenergetyczne napełnianie za wałem ejecta {{cite:bahlburg2010}}.</p>
+
+<!-- ───────────────────────────── 7. EJECTA ───────────────────────────── -->
+<h2 id="s7">7. Ejecta</h2>
+<h3>7.1 Ile i jak daleko</h3>
+<p>Kurtyna ejecta wyrzucona z prędkością ponad 1 km/s ma masę rzędu {{p:ejecta.total_mass}} {{cite:artemieva2020}}; materiał wyrzucony szybciej niż 5 km/s, zdolny dolecieć balistycznie do odległych stanowisk, to {{p:ejecta.volume_gt5kms}} {{cite:artemieva2009}}. Masa najszybszego, „wysokoenergetycznego” materiału z obłoku par jest sporna o dwa rzędy wielkości ({{p:ejecta.plume_mass}}) — a od niej zależy wielkość impulsu cieplnego (rozdział 10). Około {{p:ejecta.escape_fraction}} materiału z obłoku ucieka z Ziemi {{cite:kring2002}}.</p>
+<p>Grubość warstwy ejecta jest najlepiej zmierzoną wielkością w całej historii Chicxulub. Bardzo blisko krateru, w odległości 300–400 km, osad zdarzenia ma {{p:ejecta.thickness_300_400km}} (na wyspie Albion w Belize: {{p:ejecta.thickness_albion_360km}}) {{cite:schulte2010,pope1999}}. W odległości 500–1000 km — {{p:ejecta.thickness_500_1000km}}, w zachodniej części Ameryki Północnej — {{p:ejecta.thickness_2000_4000km}}, a powyżej kilku tysięcy kilometrów warstwa ma prawie stałą grubość {{p:ejecta.distal_layer_thickness}} na całym świecie {{cite:artemieva2009}}. Prawo skalowania EIEP, przy średnicy krateru przejściowego z obserwacji, odtwarza ten spadek w granicach czynnika kilku blisko krateru, ale daje zbyt cienką warstwę daleko — co jest zgodne z tym, że dystalna warstwa nie powstała balistycznie (Rysunek 5, rozdział 7.3).</p>
+<p>Ziarna maleją z odległością: sferule mają {{p:ejecta.spherule_diameter_proximal}} blisko krateru, {{p:ejecta.spherule_diameter_3000km}} w odległości około 3000 km i {{p:ejecta.spherule_diameter_distal}} na stanowiskach dalekich; największe ziarna kwarcu szokowego mają {{p:ejecta.shocked_quartz_max_size}} na Haiti i są coraz mniejsze dalej {{cite:kring2002,morgan2006}}. Iryd jest wzbogacony {{p:ejecta.ir_enrichment}}-krotnie w Gubbio i do {{p:ejecta.ir_peak_concentration}} w Stevns Klint {{cite:alvarez1980,schulte2010}}.</p>
+
+<h3>7.2 Kiedy</h3>
+<p>Wszystkie loty balistyczne trwają krócej niż {{p:ejecta.t_ballistic_flight_max}} {{cite:artemieva2009}}. Pierwsze ejecta docierają do szczytu atmosfery w odległości 2000–2500 km po {{p:ejecta.t_arrival_2000km}} {{cite:morgan2013}}, nad Europę — po {{p:ejecta.t_arrival_europe}}, na antypody — po {{p:ejecta.t_arrival_antipode}} {{cite:kring2002}}. Policzony lot balistyczny na kuli (kąt wyrzutu 45°) daje {{p:ejecta.arrival_eiep_1000km}} w 1000 km, {{p:ejecta.arrival_eiep_3000km}} w 3000 km i {{p:ejecta.arrival_eiep_10000km}} w 10 000 km — zgodnie z modelami w granicach kilku minut. Ejecta wracają w atmosferę z prędkością {{p:ejecta.reentry_velocity}}, oddając jej łącznie około {{p:ejecta.reentry_energy_total}}. Ponowny opad nie jest jednorazowy: {{p:atmosphere.ejecta_reaccretion_2h}} materiału z obłoku wraca w ciągu 2 h, {{p:atmosphere.ejecta_reaccretion_8h}} w ciągu 8 h i {{p:atmosphere.ejecta_reaccretion_72h}} w ciągu 72 h, w pulsach skupionych przy kraterze i na antypodach {{cite:kring2002}}.</p>
+
+<h3>7.3 Spór o transport dystalny</h3>
+<p>Klasyczny obraz zakłada, że sferule kondensują w obłoku par i lecą balistycznie dookoła globu {{cite:kring2002,johnson2012}}. Nowsze prace pokazują, że balistyka nie wyjaśnia ani prawie stałej grubości warstwy dystalnej, ani obecności kwarcu szokowego z podłoża, wyrzucanego zbyt wolno, by dolecieć daleko. Proponowany mechanizm: oddziaływanie kurtyny z atmosferą tworzy chmurę pyłu poruszającą się z prędkością do {{p:ejecta.dust_cloud_speed}}, która rozprowadza drobny materiał po całym globie w ciągu kilku godzin {{cite:artemieva2020,morgan2022}}. Kurtyna rozpada się w pył po około {{p:ejecta.t_curtain_breakup}}. Ma to bezpośrednią konsekwencję: impuls cieplny powstaje tam, gdzie ejecta wchodzą w atmosferę, a nie tam, gdzie ostatecznie opadają {{cite:morgan2013}}.</p>
+
+<!-- ───────────────────────────── 8. SEJSMIKA ───────────────────────────── -->
+<h2 id="s8">8. Fale sejsmiczne</h2>
+<h3>8.1 Źródło i magnituda</h3>
+<p>Wszystkie opublikowane magnitudy są szacunkami, a żadna nie jest pomiarem: {{p:seismic.magnitude_literature}}. Rozrzut wynika z dwóch źródeł — nieznanej sprawności sejsmicznej, czyli ułamka energii zamienionego na fale ({{p:seismic.efficiency}}), oraz mieszania typów magnitudy {{cite:collins2005,richards2015}}. Prawa skalowania dają dla scenariusza {{p:seismic.magnitude_eiep}}; każda zmiana sprawności o rząd wielkości przesuwa wynik o 0,67. Modele źródła dają czas trwania pierwotnego impulsu rzędu {{p:seismic.source_half_duration}} {{cite:meschede2011}}; zapadanie się krateru może go przedłużać.</p>
+<h3>8.2 Rozchodzenie się fal</h3>
+<p>Fala P dociera na odległość 1000 km po {{p:seismic.p_arrival_1000km}}, na 3000 km po {{p:seismic.p_arrival_3000km}}, a na antypody — przez jądro Ziemi — po {{p:seismic.t_p_antipode}}. Fala S jest wolniejsza ({{p:seismic.s_arrival_3000km}} na 3000 km) i nie przechodzi przez płynne jądro zewnętrzne, więc powyżej około 100° odległości kątowej pojawia się „cień” — docierają tylko fale przechodzące przez jądro jako P. Fale powierzchniowe Rayleigha biegną z prędkością grupową {{p:seismic.rayleigh_group_velocity}}, Love'a — {{p:seismic.love_group_velocity}} {{cite:dziewonski1981}}. Rayleigh potrzebuje {{p:seismic.rayleigh_circuit_time}} na okrążenie Ziemi, ogniskuje się na antypodach po {{p:seismic.rayleigh_antipode_time}} i w ciągu doby okrąża glob {{p:seismic.rayleigh_orbits_24h}} razy, za każdym razem słabnąc (o czynnik {{p:seismic.rayleigh_amp_factor_per_circuit_250s}} na okrążenie dla okresu 250 s).</p>
+<p>Daleko od krateru ruch gruntu to nie gwałtowne wstrząsy, lecz powolne, minutowe falowanie: w odległości Tanis model daje przemieszczenie pionowe do {{p:seismic.peak_displacement_3100km}} przy prędkości {{p:seismic.peak_velocity_3100km}} i przyspieszeniu zaledwie {{p:seismic.peak_acceleration_3100km}} {{cite:leveque2024}}. Na antypodach ogniskowanie daje {{p:seismic.antipode_peak_displacement}} {{cite:meschede2011}}, a naprężenia w górnym płaszczu na całym globie sięgają {{p:seismic.global_peak_stress}} {{cite:richards2015}}. Drgań wysokoczęstotliwościowych żadne otwarte źródło nie modeluje.</p>
+<h3>8.3 Skutki wstrząsów w pierwszych godzinach</h3>
+<p>Zatoka Meksykańska zapisała największe znane osuwisko podmorskie: brzegi basenu zapadły się, a osad o objętości {{p:seismic.gulf_kpg_deposit_volume}} i grubości do {{p:seismic.gulf_kpg_deposit_thickness_basin}} rozlał się po dnie {{cite:bralower1998,denne2013,sanford2016}}. Osuwiska wystąpiły nawet {{p:seismic.margin_failure_distance_blake_nose}} od krateru {{cite:klaus2000}}. Ponieważ największe trzęsienia tektoniczne upłynniają grunt najwyżej do {{p:seismic.liquefaction_max_distance_tectonic}}, zniszczenia w odległościach ponad 1000 km wymagają wstrząsu o efektywnej magnitudzie powyżej 10 {{cite:richards2015}}. W Tanis, {{p:seismic.tanis_distance}} od krateru, dwie fale o wysokości około {{p:seismic.tanis_surge_height}} zalały dolinę rzeki w czasie {{p:seismic.tanis_surge_timing}} po uderzeniu, gdy spadały sferule {{cite:depalma2019}}. Czas jest dobrze ograniczony, mechanizm — nie: bezpośrednie tsunami potrzebowałoby ponad 10 godzin, a rezonansowe seiche nie skalują się prosto z trzęsień ziemi {{cite:leveque2024}}. Analogią jest seiche wysokości {{p:seismic.tohoku_norway_seiche_amplitude}} w norweskich fiordach po trzęsieniu Tōhoku, 8000 km od epicentrum {{cite:bondevik2013}}.</p>
+
+<!-- ───────────────────────────── 9. FALA CIŚNIENIA ───────────────────────────── -->
+<h2 id="s9">9. Fala ciśnienia, fala Lamba i dźwięk</h2>
+<p>Dla Chicxulub nie istnieje recenzowany model fali uderzeniowej w atmosferze. Jedynym narzędziem jest skalowanie z wybuchu jądrowego 1 kt {{cite:collins2005}}, które według autorów obowiązuje do {{p:airblast.scaling_validity_limit}}, a powyżej prawdopodobnie zawyża skutki {{r:airblast.overestimate_factor_large}}-krotnie. Chicxulub, z energią {{p:energy.tnt}}, leży cztery rzędy wielkości poza tym zakresem. Wyniki należy więc czytać jako rząd wielkości: nadciśnienie {{p:airblast.overpressure_eiep_1000km}} i wiatr {{p:airblast.wind_eiep_1000km}} w odległości 1000 km; {{p:airblast.overpressure_eiep_3000km}} i {{p:airblast.wind_eiep_3000km}} w 3000 km. Bliżej niż około 300 km pojęcie „fali powietrznej” traci sens — to obszar kuli ognia i kurtyny ejecta.</p>
+<p>Daleko od krateru energia biegnie inaczej: w postaci fali Lamba, prowadzonej przez całą warstwę atmosfery. Jej prędkość zmierzono podczas erupcji Hunga Tonga w 2022 r.: {{p:airblast.lamb_speed}} {{cite:matoza2022,wright2022}}. Fala ta okrążyła wtedy Ziemię wielokrotnie ({{p:airblast.lamb_passages_hunga}} przejść w ciągu 6 dni), z okresem {{p:airblast.lamb_period_hunga}} i amplitudą {{p:airblast.lamb_amplitude_hunga_756km}} w odległości 756 km. Zastosowana do Chicxulub (ekstrapolacja) dociera na antypody po {{p:airblast.lamb_antipode_time}} i nie zamyka okrążenia w ciągu doby ({{p:airblast.lamb_circuit_time}}). Fala Lamba z Hunga Tonga wzbudziła w oceanie „tsunami-zwiastuna” wyprzedzające zwykłe tsunami o {{p:airblast.lamb_tsunami_forerunner_lead}} {{cite:kubota2022}} — mechanizm z pewnością działał także w Chicxulub, ale jego amplitudy nikt nie policzył.</p>
+<p>Opublikowanej zależności głośności od odległości brak. Poziom ciśnienia akustycznego policzony z nadciśnienia wynosi {{p:sound.spl_eiep_1000km}} w 1000 km i {{p:sound.spl_eiep_5000km}} w 5000 km; powyżej około 194 dB zaburzenie jest falą uderzeniową, a nie dźwiękiem. Dla skali: huk erupcji Hunga Tonga słyszano z odległości {{p:sound.audible_range_hunga}}, a infradźwięki okrążyły Ziemię {{p:sound.infrasound_circumnavigations_hunga}} razy {{cite:vergoz2022}}. Słyszalny huk nad większą częścią globu po Chicxulub jest prawdopodobny, ale niepublikowany (spekulacja).</p>
+
+<!-- ───────────────────────────── 10. TERMIKA ───────────────────────────── -->
+<h2 id="s10">10. Impuls termiczny, temperatura i pożary</h2>
+<h3>10.1 Mechanizm (niesporny) i wielkość (sporna)</h3>
+<p>Ejecta wracające z prędkością kilku kilometrów na sekundę hamują na wysokości kilkudziesięciu kilometrów i rozgrzewają górną atmosferę do {{p:temperature.upper_atmosphere_reentry}}; rozgrzane cząstki i powietrze promieniują w podczerwieni, częściowo w dół {{cite:melosh1990,kring2002}}. Mechanizm nie jest przedmiotem sporu. Sporne są natężenie, czas trwania i zasięg promieniowania przy gruncie (Rysunek 3).</p>
+<figure>{{fig:thermal}}<figcaption><b>Rysunek 3.</b> Szczytowy strumień promieniowania podczerwonego przy gruncie w głównych modelach i górna granica wynikająca z zapisu węgla drzewnego w Ameryce Północnej; wąsy pokazują zakres podany w pracach, linie przerywane — progi zapłonu. Modele różnią się nie tylko szczytem, ale i czasem trwania: od godzin {{cite:melosh1990}} przez około pół godziny {{cite:goldin2009}} do minut {{cite:morgan2013}}.</figcaption></figure>
+<p>Model wcześniejszy, bez ekranowania, daje globalnie {{p:thermal.ir_flux_global_melosh}} przez jedną lub kilka godzin — dość, by podpalić lasy na całym świecie {{cite:melosh1990}}. Uwzględnienie tego, że wcześnie opadające sferule ekranują promieniowanie późniejszych, obniża szczyt do {{r:thermal.ir_flux_peak_goldin}} {{cite:goldin2009}} i skraca czas do {{p:thermal.ir_duration}}. Najpełniejszy model trójwymiarowy, z asymetrią uderzenia ukośnego, daje krótkie, silne impulsy w kierunku lotu: {{p:thermal.ir_flux_peak_proximal_downrange}} w 2000–2500 km i {{p:thermal.ir_flux_peak_distal_downrange}} w 7000–8000 km, przy znikomym strumieniu w kierunku przeciwnym ({{p:thermal.ir_flux_uprange_far}}) {{cite:morgan2013}}. Z zapisu węgla drzewnego wynika, że w Ameryce Północnej strumień przy gruncie nie przekroczył {{p:thermal.na_ground_flux_upper_bound}} {{cite:belcher2003,belcher2005}}. Kierunek „z biegiem” zależy od spornego azymutu uderzenia ({{p:thermal.downrange_azimuth}}).</p>
+<p>Progi zapłonu: ściółka i liście — {{p:thermal.ignition_litter}} przez minutę, samozapłon drewna — {{p:thermal.ignition_wood_spontaneous}} przez dwie minuty. Eksperymenty z odtworzonymi impulsami pokazują, że sucha ściółka się zapala, a żywe paliwo zwykle nie {{cite:belcher2015}}.</p>
+
+<h3>10.2 Temperatura — luka w wiedzy</h3>
+<div class="warn"><b>Nie istnieje opublikowana, rozdzielcza w czasie symulacja temperatury powietrza przy gruncie w pierwszych godzinach</b>, sprzęgająca kulę ognia, promieniowanie ejecta i dynamikę atmosfery — autorzy przeglądu wprost to stwierdzają {{cite:toon2016}}. Dostępne są tylko oszacowania pośrednie.</div>
+<p>Sama podczerwień, wobec przezroczystości atmosfery, podnosi temperaturę powietrza przy gruncie o zaledwie {{p:temperature.surface_air_ir_only}} {{cite:robertson2004}}. Powierzchnia gruntu w Ameryce Północnej, według zapisu węgla drzewnego, nie przekroczyła {{p:temperature.ground_max_na}} {{cite:belcher2005}}. Drewno zwęglone w Baja California osiągnęło {{p:temperature.charring_baja}} {{cite:santacatharina2022}}. Ogrzanie gleby o jeden stopień na głębokości 10 cm wymaga {{p:temperature.soil_heating_10cm}} — nory były schronieniem {{cite:robertson2004}}. Średnia temperatura globu wzrasta o {{p:temperature.global_surface_fires}} tylko w modelu, który <i>zakłada</i> globalne pożary {{cite:bardeen2017}}. Porównanie „piekarnika nastawionego na grill” opisuje strumień promieniowania, nie temperaturę powietrza, i nie może być tak pokazywane {{cite:goldin2009}}.</p>
+
+<h3>10.3 Pożary</h3>
+<p>Pożary w promieniu {{r:fires.ignition_radius_fireball}} są dobrze udokumentowane: zwęglone pnie w Baja California powstały w ciągu {{p:fires.t_charring_baja}}, zanim nadeszło tsunami {{cite:santacatharina2022}}, a węgiel drzewny w kraterze osadził się w ciągu {{p:fires.t_charcoal_crater}} {{cite:gulick2019}}. Globalne pożary w pierwszych godzinach pozostają sporne. Za nimi przemawia sadza w warstwie granicznej — wzbogacenie {{p:fires.soot_enrichment}} i strumień {{p:fires.soot_fluence}} {{cite:wolbach1985,wolbach1988}}. Przeciw — deficyt węgla drzewnego w Ameryce Północnej {{cite:belcher2003}} oraz sygnatury wskazujące na spalanie węglowodorów z samego celu, a nie biomasy {{cite:belcher2009,lyons2020,kaiho2016}}. Ponowna analiza tempa sedymentacji przesuwa obraz ku pozycji pośredniej: pożary rozległe, ale nie globalne {{cite:morgan2013}}.</p>
+
+<!-- ───────────────────────────── 11. TSUNAMI ───────────────────────────── -->
+<h2 id="s11">11. Tsunami</h2>
+<h3>11.1 Źródło fali</h3>
+<p>Istnieje jedna recenzowana globalna symulacja tsunami {{cite:range2022}}. Łączy model hydrokodowy pierwszych {{p:tsunami.range2022_handoff_time}} z modelami płytkiej wody na paleobatymetrii o rozdzielczości {{p:tsunami.range2022_sw_resolution}}. Ważne zastrzeżenie: liczono ją dla impaktora {{p:tsunami.range2022_impactor_diameter}} uderzającego pionowo ({{p:tsunami.range2022_impact_angle}}) z prędkością {{p:tsunami.range2022_impact_velocity}} w ocean o stałej głębokości {{p:tsunami.range2022_water_depth_hydrocode}}, z energią {{p:tsunami.range2022_source_energy}} — około połowy energii naszego scenariusza. Wysokości fal przeniesione do symulacji mają więc status ekstrapolacji.</p>
+<p>W modelu falę napędza kurtyna ejecta: po {{p:tsunami.wave_height_150s}} wysokości ściana wody, która po dziesięciu minutach jest falą obrzeżną o wysokości {{p:tsunami.initial_amplitude}} w odległości {{p:tsunami.rim_wave_radius_600s}} i długości {{p:tsunami.rim_wave_wavelength}}. Fala z samego zapadania krateru jest około {{p:tsunami.crater_only_energy_factor}}-krotnie słabsza. Starszy model regionalny przyjmował odwrotną hierarchię i dawał falę obrzeżną zaledwie {{p:tsunami.matsui2002_rim_wave_platform_edge}} {{cite:matsui2002}}; rozbieżność wynika głównie z tego, gdzie umieszczono generującą głębokość wody — na płytkiej platformie ({{p:tsunami.matsui2002_platform_depth}}) czy na stoku (rozdział 3.2). Energia tsunami na starcie to {{p:tsunami.energy_initial}}, czyli {{p:tsunami.generation_efficiency}} energii uderzenia — do {{p:tsunami.energy_ratio_2004}} razy więcej niż w 2004 roku.</p>
+
+<h3>11.2 Rozchodzenie się i wysokości</h3>
+<p>Front porusza się w głębokim oceanie z prędkością ponad {{p:tsunami.front_speed_deep}}. Po godzinie ma promień {{p:tsunami.front_radius_1h}} i wychodzi z Zatoki na Atlantyk ({{p:tsunami.t_north_atlantic}}); w północnej części Zatoki fala ma wtedy {{p:tsunami.gulf_height_1h_northern}}. Po czterech godzinach front sięga {{p:tsunami.front_radius_4h_east}} na wschód, wchodzi na Pacyfik przez cieśninę środkowoamerykańską ({{p:tsunami.t_pacific_entry}}), a jego energia spada do {{p:tsunami.energy_4h}}. W ciągu doby fala przemierza większą część Atlantyku i Pacyfiku i wchodzi na Ocean Indyjski z obu stron ({{p:tsunami.t_indian_ocean_entry}}) {{cite:range2022}}.</p>
+<table>
+<thead><tr><th>Basen (maksimum na otwartym oceanie, 48 h)</th><th>Wysokość</th></tr></thead>
+<tbody>
+<tr><td>Zatoka Meksykańska, Karaiby</td><td class="num">{{v:tsunami.open_ocean_height_gulf}}</td></tr>
+<tr><td>Północny Atlantyk</td><td class="num">{{v:tsunami.open_ocean_height_north_atlantic}}</td></tr>
+<tr><td>Południowy Pacyfik</td><td class="num">{{v:tsunami.open_ocean_height_south_pacific}}</td></tr>
+<tr><td>Północny Pacyfik</td><td class="num">{{v:tsunami.open_ocean_height_north_pacific}}</td></tr>
+<tr><td>Południowy Atlantyk</td><td class="num">{{v:tsunami.open_ocean_height_south_atlantic}}</td></tr>
+<tr><td>Ocean Indyjski</td><td class="num">{{v:tsunami.open_ocean_height_indian}}</td></tr>
+<tr><td>Tetyda</td><td class="num">{{v:tsunami.open_ocean_height_tethys}}</td></tr>
+</tbody></table>
+<p class="tcap"><b>Tabela 2.</b> Maksymalne wysokości fali na otwartym oceanie według globalnego modelu {{cite:range2022}}. Model płytkiej wody bez dyspersji to górna granica: rzeczywiste amplitudy mogły być mniejsze o {{p:tsunami.dispersion_amplitude_error}}. Na otwartym oceanie fala kilku metrów przy długości kilkudziesięciu kilometrów jest niewidoczna dla oka.</p>
+<p>Spór o czas dotarcia do brzegów Zatoki ({{p:tsunami.t_gulf_margin}}) wynika głównie z tego, czy mowa o krawędzi szelfu, czy o linii brzegu: szacunki z prędkości {{p:tsunami.sanford2016_speed}} dają {{p:tsunami.t_campeche_escarpment}} do skarpy Campeche i {{p:tsunami.t_florida_platform_margin}} do krawędzi platformy Florydy {{cite:sanford2016}}, a przejście szerokiego, płytkiego szelfu dodaje godzinę lub dwie. Na dnie oceanów przepływy szybsze niż {{p:tsunami.erosion_threshold_speed}} — próg erozji drobnego osadu — sięgały {{p:tsunami.erosion_reach_distance}} od krateru {{cite:range2022}}.</p>
+
+<h3>11.3 Ślady w skałach</h3>
+<p>W Zatoce i wokół niej zapis jest mocny: osad graniczny o objętości {{p:tsunami.kpbd_volume_gulf}} {{cite:sanford2016}}, megazmarszczki pod Luizjaną o długości fali {{p:tsunami.megaripple_wavelength}} i wysokości {{p:tsunami.megaripple_height}} {{cite:kinsland2021}}, ławica zdarzenia nad Brazos River świadcząca o fali rzędu {{p:tsunami.brazos_inferred_wave_height}} {{cite:bourgeois1988}} (interpretacja sporna {{cite:keller2007}}), jednostka klastyczna w El Mimbral ({{p:tsunami.mimbral_clastic_unit_thickness}}) {{cite:smit1992}} i formacja Peñalver na Kubie ({{p:tsunami.penalver_thickness}}) {{cite:takayama2000}}. Daleko od krateru dowody są pośrednie: wzory luk sedymentacyjnych korelują z modelowanymi przepływami {{cite:range2022}}.</p>
+
+<!-- ───────────────────────────── 12. ATMOSFERA ───────────────────────────── -->
+<h2 id="s12">12. Atmosfera</h2>
+<p>W ciągu pierwszych dziesiątek sekund uderzenie wtłacza w atmosferę gazy i cząstki, których skutki rozgrywają się przez lata. Siarka jest najbardziej sporną wielkością: model hydrokodowy daje {{p:atmosphere.sulfur_mass}} powyżej {{p:atmosphere.global_injection_altitude}} {{cite:artemieva2017}}, a inwersja izotopów siarki z pięciu stanowisk lądowych — {{p:atmosphere.sulfur_mass_empirical}}, około pięć razy mniej {{cite:rodiouchkina2025}}. Anomalie izotopowe w ejecta wskazują, że część siarki z pewnością dotarła do stratosfery {{cite:junium2022}}. Sporna jest też forma siarki: SO₃ dałby szybki kwaśny deszcz w ciągu dni {{cite:ohno2014}}, SO₂ — długotrwały aerozol z wymuszeniem {{p:atmosphere.sulfate_forcing_vs_pinatubo}}-krotnie większym niż Pinatubo {{cite:pierazzo2003}}.</p>
+<p>Dwutlenku węgla uwolniło się {{p:atmosphere.co2_mass}} {{cite:artemieva2017}}, pary wodnej co najmniej {{p:atmosphere.h2o_mass}} {{cite:pierazzo1998,pope1997}}. Sadza: w modelach klimatu {{p:atmosphere.soot_mass}}, przy inwentarzu węgla elementarnego w warstwie granicznej {{p:atmosphere.soot_elemental_carbon_inventory}} {{cite:bardeen2017}}; jej pochodzenie jest sporne — z samego celu mogło pochodzić {{p:atmosphere.black_carbon_target_rock}}, które obiegło glob w ciągu godzin {{cite:lyons2020}}. Drobny pył krzemianowy ma ziarna {{p:atmosphere.dust_fine_size_min}}–{{p:atmosphere.dust_fine_size_max}} i pozostaje w atmosferze około {{p:atmosphere.dust_lifetime}} {{cite:senel2023}}; jego łącznej masy nie udało się zweryfikować.</p>
+<div class="warn"><b>Moment zapadnięcia ciemności nie jest opublikowany.</b> Ograniczają go pośrednio: chmura pyłu obiegająca glob w ciągu kilku godzin, ponowny opad ejecta w ciągu 2–72 h oraz — tylko jeśli pożary były globalne — sadza, którą model wprowadza do atmosfery od {{p:atmosphere.soot_injection_start}} {{cite:bardeen2017}}. Pełna ciemność (światło poniżej poziomu blasku Księżyca przez {{p:atmosphere.light_below_moonlight_duration}}) to stan dni i tygodni, nie pierwszej doby; światło poniżej progu fotosyntezy ({{p:atmosphere.photosynthesis_light_threshold}} normalnego) utrzymuje się około {{p:atmosphere.light_below_1pct_duration}} {{cite:bardeen2017,senel2023}}.</div>
+
+<!-- ───────────────────────────── 13. BIOSFERA ───────────────────────────── -->
+<h2 id="s13">13. Biosfera w pierwszej dobie</h2>
+<p>Bezpośredni zapis pierwszej doby dla życia pochodzi z Tanis. Ryby żyły i oddychały, gdy spadały sferule: u {{p:biosphere.tanis_fish_with_spherules}} osobników sferule tkwią w wyrostkach skrzelowych, lecz nie w przewodzie pokarmowym {{cite:depalma2019,during2022}}. Pierwsze sferule docierały tam po {{p:biosphere.tanis_spherule_arrival}}, kwarc szokowy po {{p:biosphere.tanis_shocked_quartz_arrival}}, a opad trwał około {{p:biosphere.tanis_spherule_fall_end}} {{cite:depalma2019}}.</p>
+<p>Poza tym obraz biosfery w pierwszej dobie jest złożeniem pól fizycznych z progami zniszczeń. Blisko krateru — całkowite zniszczenie przez kulę ognia, falę uderzeniową, ejecta i wstrząsy. W promieniu {{r:fires.ignition_radius_fireball}} — pożary, potwierdzone zwęglonym drewnem {{cite:santacatharina2022}}. Wzdłuż wybrzeży Zatoki i Atlantyku — zniszczenie szelfów i strefy przybrzeżnej przez tsunami; przepływy przybrzeżne powyżej {{p:biosphere.coastal_flow_velocity}} na całym świecie {{cite:range2022}}. W większej odległości — impuls cieplny, którego zabójczość dla zwierząt na otwartej przestrzeni jest sporna: wzorce przeżycia (zwierzęta ryjące i wodne) są zgodne z hipotezą godzinnego impulsu {{cite:robertson2004}}, ale nie dowodzą jej. Wody przybrzeżne ochłodziły się w następnych miesiącach o {{p:biosphere.brazos_sst_drop_max}} {{cite:vellekoop2014}}. Ostatecznie wyginęło {{p:biosphere.extinction_species_fraction}} gatunków, a paprociowy „pik” w zapisie pyłkowym świadczy o globalnym zniszczeniu flory lądowej {{cite:vajda2001}} — to jednak skutki daleko wykraczające poza dobę.</p>
+
+<!-- ───────────────────────────── 14. ANALIZA PRZEKROJOWA ───────────────────────────── -->
+<h2 id="s14">14. Analiza przekrojowa: odległość i czas</h2>
+<p>Zjawiska z rozdziałów 5–13 nie działają osobno — tworzą sekwencję, której kolejność w danym miejscu zależy od odległości od krateru. Rysunek 4 zestawia czasy dotarcia: najpierw przychodzą fale sejsmiczne (minuty), potem ejecta (minuty do godziny), fala Lamba (godziny) i — tylko w basenach połączonych z Zatoką — tsunami. W Tanis ta kolejność jest zapisana w osadzie: fala P, S, fale powierzchniowe, a dopiero potem sferule, spadające w wodę już rozkołysaną przez wstrząsy {{cite:depalma2019}}.</p>
+<figure>{{fig:travel}}<figcaption><b>Rysunek 4.</b> Czasy dotarcia zjawisk w funkcji odległości od krateru (oś czasu logarytmiczna). Fale P i S — model ak135; fala Rayleigha i fala Lamba — prędkości z pomiarów {{cite:dziewonski1981,matoza2022}}; ejecta — balistyka na kuli (EIEP); front tsunami — punkty z globalnego modelu {{cite:range2022}}. Kwadraty: wartości dla Tanis z niezależnych obliczeń DePalmy i in. {{cite:depalma2019}}.</figcaption></figure>
+<p>Rysunek 5 i Tabela 3 pokazują, jak skutki maleją z odległością. Grubość ejecta liczona prawem skalowania zgadza się z pomiarami blisko krateru, ale daleko jest za mała — co potwierdza, że warstwa dystalna nie powstała balistycznie (rozdział 7.3). Nadciśnienie z prawa skalowania to górna granica; prawdopodobny zakres zaznaczono pasmem.</p>
+<figure>{{fig:distance}}<figcaption><b>Rysunek 5.</b> Lewo: grubość warstwy ejecta — prawo skalowania EIEP (linia) wobec grubości zmierzonych w klasach odległości (prostokąty) {{cite:schulte2010,artemieva2009}}. Prawo: nadciśnienie fali uderzeniowej według EIEP z pasmem możliwego zawyżenia 2–5× {{cite:collins2005}}; dla skali — zmierzona amplituda fali Lamba z Hunga Tonga 2022 {{cite:matoza2022}}.</figcaption></figure>
+<div class="tablewrap"><table>
+<thead><tr><th>Wielkość \ odległość od krateru</th><th>500 km</th><th>1000 km</th><th>2000 km</th><th>3000 km</th><th>5000 km</th><th>10 000 km</th></tr></thead>
+<tbody>
+<tr><td>Fala P (ak135)</td><td class="num">{{v:seismic.p_arrival_500km}}</td><td class="num">{{v:seismic.p_arrival_1000km}}</td><td class="num">{{v:seismic.p_arrival_2000km}}</td><td class="num">{{v:seismic.p_arrival_3000km}}</td><td class="num">{{v:seismic.p_arrival_5000km}}</td><td class="num">{{v:seismic.p_arrival_10000km}}</td></tr>
+<tr><td>Fala S (ak135)</td><td class="num">{{v:seismic.s_arrival_500km}}</td><td class="num">{{v:seismic.s_arrival_1000km}}</td><td class="num">{{v:seismic.s_arrival_2000km}}</td><td class="num">{{v:seismic.s_arrival_3000km}}</td><td class="num">{{v:seismic.s_arrival_5000km}}</td><td class="num">{{v:seismic.s_arrival_10000km}}</td></tr>
+<tr><td>Fala Rayleigha R1</td><td class="num">{{v:seismic.rayleigh_arrival_500km}}</td><td class="num">{{v:seismic.rayleigh_arrival_1000km}}</td><td class="num">{{v:seismic.rayleigh_arrival_2000km}}</td><td class="num">{{v:seismic.rayleigh_arrival_3000km}}</td><td class="num">{{v:seismic.rayleigh_arrival_5000km}}</td><td class="num">{{v:seismic.rayleigh_arrival_10000km}}</td></tr>
+<tr><td>Efektywna magnituda wstrząsów</td><td class="num">{{v:seismic.m_eff_eiep_500km}}</td><td class="num">{{v:seismic.m_eff_eiep_1000km}}</td><td class="num">{{v:seismic.m_eff_eiep_2000km}}</td><td class="num">{{v:seismic.m_eff_eiep_3000km}}</td><td class="num">{{v:seismic.m_eff_eiep_5000km}}</td><td class="num">{{v:seismic.m_eff_eiep_10000km}}</td></tr>
+<tr><td>Dotarcie ejecta (balistyka)</td><td class="num">{{v:ejecta.arrival_eiep_500km}}</td><td class="num">{{v:ejecta.arrival_eiep_1000km}}</td><td class="num">{{v:ejecta.arrival_eiep_2000km}}</td><td class="num">{{v:ejecta.arrival_eiep_3000km}}</td><td class="num">{{v:ejecta.arrival_eiep_5000km}}</td><td class="num">{{v:ejecta.arrival_eiep_10000km}}</td></tr>
+<tr><td>Grubość ejecta (EIEP)</td><td class="num">{{v:ejecta.thickness_eiep_500km}}</td><td class="num">{{v:ejecta.thickness_eiep_1000km}}</td><td class="num">{{v:ejecta.thickness_eiep_2000km}}</td><td class="num">{{v:ejecta.thickness_eiep_3000km}}</td><td class="num">{{v:ejecta.thickness_eiep_5000km}}</td><td class="num">{{v:ejecta.thickness_eiep_10000km}}</td></tr>
+<tr><td>Ekspozycja cieplna od kuli ognia</td><td class="num">{{v:thermal.exposure_eiep_500km}}</td><td class="num">{{v:thermal.exposure_eiep_1000km}}</td><td class="num">{{v:thermal.exposure_eiep_2000km}}</td><td class="num">{{v:thermal.exposure_eiep_3000km}}</td><td class="num">{{v:thermal.exposure_eiep_5000km}}</td><td class="num">{{v:thermal.exposure_eiep_10000km}}</td></tr>
+<tr><td>Nadciśnienie (górna granica)</td><td class="num">{{v:airblast.overpressure_eiep_500km}}</td><td class="num">{{v:airblast.overpressure_eiep_1000km}}</td><td class="num">{{v:airblast.overpressure_eiep_2000km}}</td><td class="num">{{v:airblast.overpressure_eiep_3000km}}</td><td class="num">{{v:airblast.overpressure_eiep_5000km}}</td><td class="num">{{v:airblast.overpressure_eiep_10000km}}</td></tr>
+<tr><td>Wiatr za frontem (górna granica)</td><td class="num">{{v:airblast.wind_eiep_500km}}</td><td class="num">{{v:airblast.wind_eiep_1000km}}</td><td class="num">{{v:airblast.wind_eiep_2000km}}</td><td class="num">{{v:airblast.wind_eiep_3000km}}</td><td class="num">{{v:airblast.wind_eiep_5000km}}</td><td class="num">{{v:airblast.wind_eiep_10000km}}</td></tr>
+<tr><td>Poziom ciśnienia akustycznego</td><td class="num">{{v:sound.spl_eiep_500km}}</td><td class="num">{{v:sound.spl_eiep_1000km}}</td><td class="num">{{v:sound.spl_eiep_2000km}}</td><td class="num">{{v:sound.spl_eiep_3000km}}</td><td class="num">{{v:sound.spl_eiep_5000km}}</td><td class="num">{{v:sound.spl_eiep_10000km}}</td></tr>
+<tr><td>Dotarcie fali Lamba</td><td class="num">{{v:airblast.lamb_arrival_500km}}</td><td class="num">{{v:airblast.lamb_arrival_1000km}}</td><td class="num">{{v:airblast.lamb_arrival_2000km}}</td><td class="num">{{v:airblast.lamb_arrival_3000km}}</td><td class="num">{{v:airblast.lamb_arrival_5000km}}</td><td class="num">{{v:airblast.lamb_arrival_10000km}}</td></tr>
+</tbody></table></div>
+<p class="tcap"><b>Tabela 3.</b> Skutki w funkcji odległości dla scenariusza referencyjnego, liczone w tym projekcie: prawa skalowania {{cite:collins2005}}, model ak135 {{cite:kennett1995}}, prędkości fal powierzchniowych {{cite:dziewonski1981}} i fali Lamba {{cite:matoza2022}}. Czasy w sekundach od kontaktu. Wartości dla 200 km — w Załączniku B (ta odległość leży w strefie kuli ognia i kurtyny ejecta).</p>
+<p>Z zestawienia wynikają trzy wnioski przekrojowe ważne dla symulacji. Po pierwsze, <b>wstrząsy wyprzedzają wszystko</b>: osuwiska na brzegach Zatoki zaczęły się, zanim nadeszło tsunami, więc tsunami przerabiało już naruszony osad {{cite:sanford2016,kinsland2025}}. Po drugie, <b>kierunek uderzenia porządkuje kilka zjawisk naraz</b> — impuls cieplny, rozkład ejecta i prawdopodobnie kierunkowość tsunami — więc spór o azymut nie jest szczegółem, lecz przełącznikiem całego obrazu. Po trzecie, <b>skale czasowe rozjeżdżają się o pięć rzędów wielkości</b> (od sekund do doby), co wymusza logarytmiczną oś czasu (Rysunek 6).</p>
+<figure>{{fig:timeline}}<figcaption><b>Rysunek 6.</b> Zdarzenia pierwszej doby na logarytmicznej osi czasu, w pasach zjawisk. Kształt znacznika oznacza poziom pewności; poziome kreski — podany w literaturze zakres czasu. Najechanie kursorem pokazuje nazwę zdarzenia. Prolog (przelot przez atmosferę) i zdarzenia późniejsze niż 24 h pominięto.</figcaption></figure>
+
+<!-- ───────────────────────────── 15. CHRONOLOGIA ───────────────────────────── -->
+<h2 id="s15">15. Chronologia pierwszej doby</h2>
+<p>Pełna lista zdarzeń z rejestru, posortowana według czasu. Kolumna „Wartość” zawiera samą wielkość (np. wysokość fali w danej chwili), a jej pewność i źródło — podobnie jak w całym raporcie.</p>
+{{chrono:86400}}
+<p class="tcap"><b>Tabela 4.</b> Chronologia od prologu do T+24 h, generowana automatycznie z rejestru.</p>
+
+<!-- ───────────────────────────── 16. STAN WIEDZY ───────────────────────────── -->
+<h2 id="s16">16. Stan wiedzy</h2>
+<h3>16.1 Co wiemy z dużą pewnością</h3>
+<p>Wiek zdarzenia; skład impaktora (planetoida węglista); rozmiary krateru i jego wewnętrzna budowa; to, że pierścień szczytowy powstał przez zapadanie dynamiczne w ciągu minut; sekwencja osadów pierwszej doby w kraterze; zmierzona grubość i skład warstwy ejecta na wszystkich kontynentach; globalny zasięg anomalii irydowej; ogromne osuwiska w Zatoce Meksykańskiej; ślady tsunami na jej brzegach; pożary w promieniu około dwóch tysięcy kilometrów; wiosna na półkuli północnej.</p>
+<h3>16.2 Aktywne hipotezy i spory</h3>
+<p>(1) Kąt i zwłaszcza kierunek uderzenia — przy czym strome uderzenie jest dobrze poparte. (2) Wielkość, czas trwania i geografia impulsu cieplnego. (3) Globalne pożary w pierwszych godzinach i pochodzenie sadzy. (4) Masa i forma uwolnionej siarki. (5) Mechanizm transportu ejecta dystalnych. (6) Mechanizm fal w Tanis. (7) Magnituda „trzęsienia” i sprawność sejsmiczna. (8) Hierarchia źródeł tsunami (fala obrzeżna kontra fala zapadania) blisko krateru. (9) Poziom morza w późnej kredzie. (10) Interpretacja części osadów zdarzenia, np. w Brazos River.</p>
+<h3>16.3 Znane niewiadome</h3>
+<p>Pora dnia uderzenia. Głębokość wody w punkcie zero. Temperatura powietrza przy gruncie w pierwszych godzinach. Amplituda i kształt fali Lamba oraz fali uderzeniowej daleko od krateru. Trójwymiarowa kierunkowość tsunami. Czas zapadnięcia ciemności. Łączna masa drobnego pyłu. Drgania wysokoczęstotliwościowe daleko od krateru. Geometria Morza Wewnętrznego i cieśnin w chwili uderzenia.</p>
+
+<!-- ───────────────────────────── 17. IMPLIKACJE ───────────────────────────── -->
+<h2 id="s17">17. Implikacje dla symulacji</h2>
+<h3>17.1 Co liczymy, co kalibrujemy, co przełączamy</h3>
+<table>
+<thead><tr><th>Zjawisko</th><th>Liczone wprost</th><th>Kalibrowane do modeli</th><th>Scenariusze przełączane (sporne)</th></tr></thead>
+<tbody>
+<tr><td>Przelot, kontakt</td><td>czas przelotu, geometria trajektorii</td><td>obłok par, kula ognia</td><td>azymut nadlotu</td></tr>
+<tr><td>Krater</td><td>—</td><td>klatki kluczowe z symulacji iSALE, wymiary z obserwacji</td><td>wysokość wypiętrzenia (model 2D / 3D)</td></tr>
+<tr><td>Ejecta</td><td>loty balistyczne, grubość blisko krateru</td><td>dotarcie dystalne, chmura pyłu</td><td>transport balistyczny / chmura pyłu</td></tr>
+<tr><td>Sejsmika</td><td>czasy P, S, fale powierzchniowe i ich okrążenia</td><td>amplitudy (model dla Tanis)</td><td>sprawność sejsmiczna (magnituda)</td></tr>
+<tr><td>Fala ciśnienia</td><td>czasy fali Lamba</td><td>nadciśnienie, wiatr (pasmo ×1/5)</td><td>—</td></tr>
+<tr><td>Termika</td><td>ekspozycja od kuli ognia</td><td>impuls od ejecta</td><td>„godziny” / „samoekranowanie” / „asymetria 3D”; pożary regionalne / globalne</td></tr>
+<tr><td>Tsunami</td><td>czasy dotarcia na paleobatymetrii (√(g·h))</td><td>wysokości do modelu globalnego</td><td>źródło: fala obrzeżna / zapadanie</td></tr>
+<tr><td>Atmosfera</td><td>—</td><td>masy gazów i cząstek</td><td>siarka: model / izotopy</td></tr>
+</tbody></table>
+<p class="tcap"><b>Tabela 5.</b> Podział odpowiedzialności w symulacji. „Liczone wprost” oznacza wyniki z geometrii i fizyki o wysokiej pewności; „kalibrowane” — wartości przejęte z opublikowanych modeli z pasmem niepewności.</p>
+<h3>17.2 Zasady prezentacji</h3>
+<p>Oświetlenie neutralne (pora dnia nieznana). Wysokości krateru w pierwszych minutach — w skali rzeczywistej, krater końcowy — z jawnie opisanym przewyższeniem. Tsunami na otwartym oceanie — jako przewyższona powierzchnia albo pole prędkości przepływu przy dnie, nie jako „ściana wody”; ściany wody tylko w Zatoce w pierwszych godzinach. Temperatura — nie jako globalny „piekarnik”, lecz osobno: górna atmosfera (setki stopni), strumień promieniowania przy gruncie (zależnie od scenariusza) i lokalne pożary. Zaciemnienie — jako rampa sterowana opadem ejecta i opcjonalnie sadzą, nie jako zdarzenie w określonej godzinie. Każda liczba na ekranie — ze znacznikiem pewności i źródłem.</p>
+<h3>17.3 Dane</h3>
+<p>Do mapy świata: PaleoDEM mapa 16 w rozdzielczości 0,1° {{cite:scotese2018}}. Do czasów dotarcia tsunami: paleobatymetria globalnego modelu tsunami w rozdzielczości 0,1° wraz z jego mapą maksymalnych amplitud {{cite:johnson2022}} — dzięki temu własne czasy dotarcia można porównać z opublikowanym modelem punkt po punkcie. Położenia stanowisk granicy K-Pg należy przeliczyć tym samym modelem płyt co mapa (PALEOMAP).</p>
+
+<!-- ───────────────────────────── 18. REKOMENDACJE ───────────────────────────── -->
+<h2 id="s18">18. Rekomendacje do dalszych badań</h2>
+<p>Prace, których nie udało się otworzyć, a które mogą zmienić konkretne liczby rejestru (zapisane jako niezweryfikowane tropy): pełny tekst pracy o batymetrii celu {{cite:gulick2008}} (głębokość w punkcie zero); przegląd Morgan i in. 2022 w pełnej wersji {{cite:morgan2022}}; pełny tekst pracy o pyle {{cite:senel2023}} (łączna masa pyłu); Toon i in. 1997 {{cite:toon1997}} (magnituda, fala uderzeniowa); prace Smita i in. 1996, Kiyokawy i in. 2002 oraz Klausa i in. 2000 o osadach tsunami i osuwisk; Prinn i Fegley 1987 o tlenkach azotu; Le Feuvre i Wieczorek 2011 o rozkładzie prędkości zderzeń. Kierunki modelowania, których brak najbardziej ogranicza obraz pierwszej doby: trójwymiarowa symulacja tsunami z uderzenia ukośnego na realistycznej rampie; sprzężony model radiacyjno-hydrodynamiczny pierwszych godzin w atmosferze; model fali Lamba i fali uderzeniowej dla energii rzędu 10⁸ Mt.</p>
+
+<!-- ───────────────────────────── BIBLIOGRAFIA ───────────────────────────── -->
+<h2 id="bib">Bibliografia</h2>
+<p class="small">Numeracja według kolejności pierwszego cytowania. Tytuły w języku oryginału. Wszystkie DOI sprawdzone w Crossref lub DataCite.</p>
+{{bib}}
+
+<!-- ───────────────────────────── ZAŁĄCZNIKI ───────────────────────────── -->
+<h2 id="zA">Załącznik A. Stanowiska granicy K-Pg</h2>
+<p>Stanowiska użyte w symulacji jako punkty sondy: współrzędne dzisiejsze ze źródła, odległość dzisiejsza od krateru (wielkie koło) oraz obserwacje w zapisie geologicznym. Dzisiejsza odległość różni się od odległości sprzed 66 mln lat, ponieważ płyty się przesunęły. Paleowspółrzędne policzono w modelu płyt PALEOMAP {{cite:scotese2016}} programem pyGPlates {{cite:pygplates2025}}, dla tego samego wieku rekonstrukcji co mapa PaleoDEM; niezależna kontrola — Tanis na około {{p:paleo.tanis_paleolatitude}} według rekonstrukcji cytowanej przez During i in. {{cite:during2022}}.</p>
+{{sites:all}}
+
+<h2 id="zB">Załącznik B. Pełny rejestr parametrów</h2>
+<p>Wszystkie parametry rejestru, w grupach. Kolumna „Metoda” podaje sposób uzyskania wartości: <code>measured</code> — pomiar, <code>model:…</code> — wynik modelu z danej pracy, <code>scaling:…</code> — prawo skalowania, <code>derived:…</code> — wielkość policzona w tym projekcie.</p>
+<h3>B.1 Zdarzenie, miejsce, cel, paleogeografia</h3>
+{{table:event}}
+{{table:site}}
+{{table:target}}
+{{table:paleo}}
+<h3>B.2 Impaktor i energia</h3>
+{{table:impactor}}
+{{table:energy}}
+<h3>B.3 Kula ognia</h3>
+{{table:fireball}}
+<h3>B.4 Krater i skorupa</h3>
+{{table:crater}}
+{{table:crust}}
+<h3>B.5 Ejecta</h3>
+{{table:ejecta}}
+<h3>B.6 Sejsmika</h3>
+{{table:seismic}}
+<h3>B.7 Fala ciśnienia i dźwięk</h3>
+{{table:airblast}}
+{{table:sound}}
+<h3>B.8 Termika, temperatura, pożary</h3>
+{{table:thermal}}
+{{table:temperature}}
+{{table:fires}}
+<h3>B.9 Tsunami</h3>
+{{table:tsunami}}
+<h3>B.10 Atmosfera</h3>
+{{table:atmosphere}}
+<h3>B.11 Biosfera</h3>
+{{table:biosphere}}
+
+<h2 id="zC">Załącznik C. Decyzje syntezy i weryfikacja</h2>
+<p>Rejestr jest składany automatycznie z wyników siedmiu wątków i pliku decyzji <code>research/synthesis.json</code>. W tej wersji synteza usunęła {{meta:drops}} wpisów (duplikaty między wątkami oraz wartości policzone przez wątki przy niespójnych energiach, zastąpione wielkościami liczonymi z jednego scenariusza) i poprawiła {{meta:patches}} wpisów; każda decyzja ma uzasadnienie w pliku. Weryfikacja: {{meta:verified}} z {{meta:dois}} DOI zgodnych z rejestrami Crossref i DataCite; implementacja praw skalowania zgodna z oficjalnym kalkulatorem w trzech przypadkach testowych; czasy fal ciała zgodne z niezależnymi obliczeniami dla Tanis. Kod, dane i testy: katalog projektu <code>chicxulub/</code>.</p>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,861 @@
+{
+  "meta": {
+    "scenario": "referencyjny",
+    "updated": "2026-10-04",
+    "rule": "Wartości wejściowe o największej zgodności w recenzowanej literaturze; impaktor i krater z modeli hydrokodowych i obserwacji; zjawiska dalekiego pola liczone prawami skalowania EIEP (Collins i in. 2005) z jednej energii scenariusza.",
+    "inputs": [
+      "impactor.diameter",
+      "impactor.density",
+      "impactor.velocity",
+      "impactor.angle",
+      "impactor.approach_azimuth",
+      "target.density",
+      "crater.transient_diameter",
+      "crater.final_diameter"
+    ]
+  },
+  "drop": [
+    {
+      "id": "crater.center_lat",
+      "reason": "Duplikat site.lat (ta sama definicja środka, Hildebrand 1995)."
+    },
+    {
+      "id": "crater.center_lon",
+      "reason": "Duplikat site.lon."
+    },
+    {
+      "id": "crust.preimpact_crust_thickness",
+      "reason": "Duplikat target.crust_thickness."
+    },
+    {
+      "id": "crust.preimpact_sediment_thickness",
+      "reason": "Duplikat target.sediment_thickness."
+    },
+    {
+      "id": "site.crater_diameter",
+      "reason": "Duplikat crater.final_diameter; zakres 180–200 km zachowany w crater.final_diameter."
+    },
+    {
+      "id": "site.transient_crater_diameter",
+      "reason": "Duplikat crater.transient_diameter; czas powstania opisany w crater.t_transient_max."
+    },
+    {
+      "id": "impactor.mass",
+      "reason": "Wielkość pochodna (masa z średnicy i gęstości) — liczona w derived.json z wejść scenariusza."
+    },
+    {
+      "id": "energy.kinetic_mt",
+      "reason": "Wielkość pochodna — liczona w derived.json (energy.tnt)."
+    },
+    {
+      "id": "fireball.impact_energy_ref",
+      "reason": "Energia z innego zestawu założeń; zakres literatury scalony w energy.kinetic_literature, energia scenariusza w derived.json."
+    },
+    {
+      "id": "fireball.radius_max_radiation",
+      "reason": "Policzone przez wątek eq. 32 przy innej energii — zastąpione fireball.radius_eiep."
+    },
+    {
+      "id": "fireball.t_max_radiation",
+      "reason": "Policzone przez wątek eq. 33 — zastąpione fireball.t_max_radiation_eiep."
+    },
+    {
+      "id": "fireball.radiation_duration",
+      "reason": "Policzone przez wątek eq. 35 — zastąpione fireball.radiation_duration_eiep."
+    },
+    {
+      "id": "seismic.magnitude_collins_eq40",
+      "reason": "Policzone przez wątek eq. 40 przy innej energii — zastąpione seismic.magnitude_eiep."
+    },
+    {
+      "id": "airblast.overpressure_200km",
+      "reason": "Policzone przez wątek przy E = 4,184e23 J — zastąpione airblast.overpressure_eiep_*."
+    },
+    {
+      "id": "airblast.overpressure_500km",
+      "reason": "j.w."
+    },
+    {
+      "id": "airblast.overpressure_1000km",
+      "reason": "j.w."
+    },
+    {
+      "id": "airblast.overpressure_2000km",
+      "reason": "j.w."
+    },
+    {
+      "id": "airblast.overpressure_3000km",
+      "reason": "j.w."
+    },
+    {
+      "id": "airblast.wind_200km",
+      "reason": "Policzone przez wątek przy E = 4,184e23 J — zastąpione airblast.wind_eiep_*."
+    },
+    {
+      "id": "airblast.wind_500km",
+      "reason": "j.w."
+    },
+    {
+      "id": "airblast.wind_1000km",
+      "reason": "j.w."
+    },
+    {
+      "id": "airblast.wind_2000km",
+      "reason": "j.w."
+    },
+    {
+      "id": "airblast.wind_3000km",
+      "reason": "j.w."
+    },
+    {
+      "id": "sound.spl_500km",
+      "reason": "Pochodna nadciśnienia policzonego przy innej energii — zastąpione sound.spl_eiep_*."
+    },
+    {
+      "id": "sound.spl_1000km",
+      "reason": "j.w."
+    },
+    {
+      "id": "sound.spl_3000km",
+      "reason": "j.w."
+    },
+    {
+      "id": "ejecta.t_arrival_1000km",
+      "reason": "Obliczenie wątku (balistyka na płaskiej Ziemi) — zastąpione balistyką na kuli (ejecta.arrival_eiep_*)."
+    },
+    {
+      "id": "ejecta.t_arrival_tanis_3000km",
+      "reason": "Obliczenie wątku — zastąpione ejecta.arrival_eiep_3000km."
+    },
+    {
+      "id": "atmosphere.ejecta_escape_fraction",
+      "reason": "Duplikat ejecta.escape_fraction (to samo źródło, ta sama wartość)."
+    },
+    {
+      "id": "ejecta.frac_reaccreted_2h",
+      "reason": "Duplikat atmosphere.ejecta_reaccretion_2h — trzy wartości (2/8/72 h) trzymane razem w grupie atmosphere."
+    },
+    {
+      "id": "ejecta.frac_reaccreted_8h",
+      "reason": "Duplikat atmosphere.ejecta_reaccretion_8h."
+    },
+    {
+      "id": "biosphere.tanis_seismic_arrival_p",
+      "reason": "Duplikat seismic.p_arrival_tanis (DePalma i in. 2019)."
+    },
+    {
+      "id": "biosphere.tanis_seismic_arrival_s",
+      "reason": "Duplikat seismic.s_arrival_tanis."
+    },
+    {
+      "id": "biosphere.tanis_seismic_arrival_rayleigh",
+      "reason": "Duplikat seismic.rayleigh_arrival_tanis."
+    },
+    {
+      "id": "biosphere.tanis_runup",
+      "reason": "Duplikat seismic.tanis_surge_height."
+    },
+    {
+      "id": "biosphere.thermal_pulse_peak_flux",
+      "reason": "Duplikat thermal.ir_flux_peak (model Goldin & Melosh 2009)."
+    },
+    {
+      "id": "biosphere.thermal_pulse_enhancement_factor",
+      "reason": "Duplikat thermal.ir_flux_global_melosh (Melosh i in. 1990)."
+    },
+    {
+      "id": "biosphere.thermal_pulse_duration_above_solar",
+      "reason": "Duplikat thermal.ir_duration."
+    },
+    {
+      "id": "fires.soot_mass_total",
+      "reason": "Duplikat atmosphere.soot_mass."
+    },
+    {
+      "id": "fires.target_carbon_soot",
+      "reason": "Duplikat atmosphere.black_carbon_target_rock."
+    },
+    {
+      "id": "biosphere.crater_charcoal_deposition",
+      "reason": "Duplikat fires.t_charcoal_crater."
+    },
+    {
+      "id": "biosphere.impact_season_boreal_spring",
+      "reason": "Duplikat event.season (wartość logiczna zapisana liczbą)."
+    },
+    {
+      "id": "tsunami.tanis_surge_height",
+      "reason": "Duplikat seismic.tanis_surge_height (fale w Tanis przypisane wzbudzeniu sejsmicznemu, nie tsunami)."
+    },
+    {
+      "id": "tsunami.t_resurge_peak_ring",
+      "reason": "Duplikat crater.t_resurge_crest_peak_ring."
+    },
+    {
+      "id": "tsunami.crater_floor_depth",
+      "reason": "Duplikat crater.floor_depth."
+    },
+    {
+      "id": "tsunami.resurge_deposit_thickness",
+      "reason": "Duplikat crater.day1_graded_suevite_thickness (ten sam interwał rdzenia M0077A)."
+    },
+    {
+      "id": "tsunami.crater_tsunami_layer_thickness",
+      "reason": "Duplikat crater.day1_tsunami_layer_thickness."
+    },
+    {
+      "id": "tsunami.t_reflected_tsunami_crater",
+      "reason": "Duplikat crater.t_tsunami_return."
+    },
+    {
+      "id": "biosphere.brazos_tsunami_height",
+      "reason": "Duplikat tsunami.brazos_inferred_wave_height (Bourgeois i in. 1988)."
+    }
+  ],
+  "choose": {},
+  "patch": {
+    "crater.final_diameter": {
+      "value": 200,
+      "range": [
+        180,
+        200
+      ],
+      "certainty": "fact",
+      "reason": "Pomiar nie jest sporny — różnica 180 vs 200 km wynika z definicji krawędzi (maksima gradientu grawitacji i pierścień cenotów vs uskoki pierścieniowe). Przyjęto ~200 km za literaturą Exp. 364 (Morgan 2016, Gulick 2019, Morgan 2022), z której pochodzi kinematyka krateru w symulacji; 180 km w starszych pracach i bazach danych."
+    },
+    "crater.peak_ring_diameter": {
+      "reason": "Wartość wyprowadzona przez zespół researchu z odległości otworu M0077A od środka (otwór na grzbiecie pierścienia) — żadne otwarte źródło nie podaje jej wprost; pewność ◐."
+    },
+    "energy.kinetic_literature": {
+      "range": [
+        1e+23,
+        3.4e+24
+      ],
+      "reason": "Zakres scalony z wątków 01 i 03 (najniższe szacunki ~1e23 J z kompilacji w wątku 03). Energia scenariusza referencyjnego: energy.kinetic (derived.json)."
+    },
+    "impactor.diameter": {
+      "reason": "13 km = rozmiar odtwarzający obserwowany krater w trójwymiarowych symulacjach iSALE dla 20 km/s i 60° (Collins i in. 2020); niezależnie 12,2 km (Artemieva i in. 2017). Prawa skalowania EIEP przy tych wejściach dają krater ~150 km — rozbieżność opisana jako kontrola krzyżowa (crater.final_diameter_eiep, impactor.diameter_for_crater_eiep); hydrokod uznany za wiarygodniejszy od uproszczonego prawa skalowania."
+    },
+    "paleo.notes": {
+      "value": "Mapa 16 PaleoDEM — granica K/T",
+      "reason": "Numer mapy zapisany w polu wartości — zastąpiony opisem; treść metodyczna pozostaje w notes."
+    },
+    "paleo.central_american_seaway_open": {
+      "value": "otwarta, głębokowodna",
+      "unit": "",
+      "reason": "Wartość logiczna 0/1 zastąpiona opisem.",
+      "label": "Cieśnina Środkowoamerykańska w PaleoDEM"
+    },
+    "paleo.wis_continuous_in_paleodem": {
+      "value": "brak ciągłego połączenia w siatce 1° (możliwe resztkowe zatoki)",
+      "unit": "",
+      "reason": "Wartość logiczna 0/1 zastąpiona opisem; pewność: sporne.",
+      "label": "Ciągłe Morze Wewnętrzne (WIS) w PaleoDEM"
+    },
+    "event.season": {
+      "sources": [
+        "during2022"
+      ],
+      "reason": "Usunięto odwołanie do DePalma i in. 2021 — rzetelność danych tej pracy zakwestionowana (During i in. 2024); pozostaje niezależne źródło During i in. 2022 (Nature)."
+    },
+    "tsunami.sea_level_late_cretaceous": {
+      "reason": "Alternatywne oszacowanie wobec paleo.sea_level_above_present (+60–70 m, Miller i in. 2020); obie wartości zachowane jako sporne."
+    }
+  },
+  "add": [
+    {
+      "id": "thermal.ir_flux_peak_goldin",
+      "group": "thermal",
+      "label": "Szczytowy strumień IR przy gruncie wg Goldina & Melosha (2009), z samoekranowaniem",
+      "value": null,
+      "unit": "kW/m²",
+      "range": [
+        5,
+        15
+      ],
+      "certainty": "extrapolation",
+      "method": "model:goldin2009",
+      "sources": [
+        "goldin2009"
+      ],
+      "locator": "Abstract",
+      "notes": "Stanowiska odległe; powyżej poziomu słonecznego tylko ~30 min, powyżej 5 kW/m² przez kilka minut. Praca podaje wyłącznie zakres — wartość środkowa nie jest publikowana.",
+      "time": null,
+      "reason": "Wydzielone z wartości zbiorczej thermal.ir_flux_peak (zakres 5–56 łączy kilka modeli), aby rysunek i tekst przypisywały Goldinowi & Meloshowi tylko ich wynik."
+    },
+    {
+      "id": "ejecta.t_arrival_7500km",
+      "group": "ejecta",
+      "label": "Pierwsze ejecta nad atmosferą w odległości 7000–8000 km",
+      "value": 1980,
+      "unit": "s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:morgan2013",
+      "sources": [
+        "morgan2013"
+      ],
+      "locator": "§4.2 [29]",
+      "notes": "Około 33 min (model SOVA 3D, uderzenie 45°).",
+      "time": {
+        "t": 1980
+      },
+      "reason": "Wartość z notatek wątku 03 (Morgan i in. 2013, §4.2) potrzebna do interpolacji początku impulsu cieplnego w odległościach dalekich."
+    },
+    {
+      "id": "thermal.ir_flux_peak_proximal_az45",
+      "group": "thermal",
+      "label": "Szczyt strumienia IR, 2000–2500 km, 30–60° od kierunku lotu",
+      "value": 47,
+      "unit": "kW/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:morgan2013",
+      "sources": [
+        "morgan2013"
+      ],
+      "locator": "Fig. 4a",
+      "notes": "Uderzenie 45°. Odczyt z rysunku przez zespół researchu (±10%).",
+      "time": null,
+      "reason": "Przeniesione z uwag wątku 03 (rys. 4 Morgan i in. 2013), aby model azymutalnej zależności impulsu cieplnego korzystał z rejestru."
+    },
+    {
+      "id": "thermal.ir_flux_peak_proximal_az75",
+      "group": "thermal",
+      "label": "Szczyt strumienia IR, 2000–2500 km, 60–90° od kierunku lotu",
+      "value": 44,
+      "unit": "kW/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:morgan2013",
+      "sources": [
+        "morgan2013"
+      ],
+      "locator": "Fig. 4a",
+      "notes": "Uderzenie 45°. Odczyt z rysunku przez zespół researchu (±10%).",
+      "time": null,
+      "reason": "Przeniesione z uwag wątku 03 (rys. 4 Morgan i in. 2013), aby model azymutalnej zależności impulsu cieplnego korzystał z rejestru."
+    },
+    {
+      "id": "thermal.ir_flux_peak_intermediate_az45",
+      "group": "thermal",
+      "label": "Szczyt strumienia IR, 4000–5000 km, 30–60° od kierunku lotu",
+      "value": 30,
+      "unit": "kW/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:morgan2013",
+      "sources": [
+        "morgan2013"
+      ],
+      "locator": "Fig. 4b",
+      "notes": "Uderzenie 45°. Odczyt z rysunku przez zespół researchu (±10%).",
+      "time": null,
+      "reason": "Przeniesione z uwag wątku 03 (rys. 4 Morgan i in. 2013), aby model azymutalnej zależności impulsu cieplnego korzystał z rejestru."
+    },
+    {
+      "id": "thermal.ir_flux_peak_intermediate_az75",
+      "group": "thermal",
+      "label": "Szczyt strumienia IR, 4000–5000 km, 60–90° od kierunku lotu",
+      "value": 23,
+      "unit": "kW/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:morgan2013",
+      "sources": [
+        "morgan2013"
+      ],
+      "locator": "Fig. 4b",
+      "notes": "Uderzenie 45°. Odczyt z rysunku przez zespół researchu (±10%).",
+      "time": null,
+      "reason": "Przeniesione z uwag wątku 03 (rys. 4 Morgan i in. 2013), aby model azymutalnej zależności impulsu cieplnego korzystał z rejestru."
+    },
+    {
+      "id": "thermal.ir_flux_peak_distal_az45",
+      "group": "thermal",
+      "label": "Szczyt strumienia IR, 7000–8000 km, 30–60° od kierunku lotu",
+      "value": 10,
+      "unit": "kW/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:morgan2013",
+      "sources": [
+        "morgan2013"
+      ],
+      "locator": "Fig. 4c",
+      "notes": "Uderzenie 45°. Odczyt z rysunku przez zespół researchu (±10%).",
+      "time": null,
+      "reason": "Przeniesione z uwag wątku 03 (rys. 4 Morgan i in. 2013), aby model azymutalnej zależności impulsu cieplnego korzystał z rejestru."
+    },
+    {
+      "id": "thermal.ir_flux_peak_distal_az75",
+      "group": "thermal",
+      "label": "Szczyt strumienia IR, 7000–8000 km, 60–90° od kierunku lotu",
+      "value": 7,
+      "unit": "kW/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:morgan2013",
+      "sources": [
+        "morgan2013"
+      ],
+      "locator": "Fig. 4c",
+      "notes": "Uderzenie 45°; ogon impulsu ~10 min. Odczyt z rysunku przez zespół researchu (±10%).",
+      "time": null,
+      "reason": "Przeniesione z uwag wątku 03 (rys. 4 Morgan i in. 2013), aby model azymutalnej zależności impulsu cieplnego korzystał z rejestru."
+    },
+    {
+      "id": "thermal.ir_pulse_duration_proximal",
+      "group": "thermal",
+      "label": "Czas trwania impulsu IR, 2000–2500 km (Morgan i in.)",
+      "value": 90,
+      "unit": "s",
+      "range": [
+        60,
+        120
+      ],
+      "certainty": "extrapolation",
+      "method": "model:morgan2013",
+      "sources": [
+        "morgan2013"
+      ],
+      "locator": "Fig. 4a",
+      "notes": "Impuls ~1–2 min. Odczyt z rysunku przez zespół researchu (±10%).",
+      "time": null,
+      "reason": "Przeniesione z uwag wątku 03 (rys. 4 Morgan i in. 2013), aby model azymutalnej zależności impulsu cieplnego korzystał z rejestru."
+    },
+    {
+      "id": "thermal.ir_pulse_duration_intermediate",
+      "group": "thermal",
+      "label": "Czas trwania impulsu IR, 4000–5000 km (Morgan i in.)",
+      "value": 150,
+      "unit": "s",
+      "range": [
+        120,
+        300
+      ],
+      "certainty": "extrapolation",
+      "method": "model:morgan2013",
+      "sources": [
+        "morgan2013"
+      ],
+      "locator": "Fig. 4b",
+      "notes": "~2–3 min z biegiem do ~5 min w bok. Odczyt z rysunku przez zespół researchu (±10%).",
+      "time": null,
+      "reason": "Przeniesione z uwag wątku 03 (rys. 4 Morgan i in. 2013), aby model azymutalnej zależności impulsu cieplnego korzystał z rejestru."
+    },
+    {
+      "id": "thermal.ir_pulse_duration_distal",
+      "group": "thermal",
+      "label": "Czas trwania impulsu IR, 7000–8000 km (Morgan i in.)",
+      "value": 300,
+      "unit": "s",
+      "range": [
+        300,
+        600
+      ],
+      "certainty": "extrapolation",
+      "method": "model:morgan2013",
+      "sources": [
+        "morgan2013"
+      ],
+      "locator": "Fig. 4c",
+      "notes": "~5 min z biegiem, ogon ~10 min w bok. Odczyt z rysunku przez zespół researchu (±10%).",
+      "time": null,
+      "reason": "Przeniesione z uwag wątku 03 (rys. 4 Morgan i in. 2013), aby model azymutalnej zależności impulsu cieplnego korzystał z rejestru."
+    },
+    {
+      "id": "thermal.ir_duration_melosh",
+      "group": "thermal",
+      "label": "Czas trwania globalnego impulsu IR wg Melosha i in. (1990)",
+      "value": 3600,
+      "unit": "s",
+      "range": null,
+      "certainty": "contested",
+      "method": "model:melosh1990",
+      "sources": [
+        "melosh1990",
+        "robertson2004"
+      ],
+      "locator": "melosh1990 Abstract; robertson2004 p. 762",
+      "notes": "„Od jednej do kilku godzin” — wartość = dolna granica; model bez samoekranowania.",
+      "time": null,
+      "reason": "Czas trwania scenariusza „Melosh” potrzebny modelowi impulsu; z uwag wątku 03."
+    },
+    {
+      "id": "temperature.soil_conductivity_pred",
+      "group": "temperature",
+      "label": "Przewodność cieplna gruntu (założenie)",
+      "value": 0.3,
+      "unit": "W/(m·K)",
+      "range": [
+        0.2,
+        0.5
+      ],
+      "certainty": "predictive",
+      "method": "predictive:ground-temperature",
+      "sources": [],
+      "notes": "Założenie: sucha gleba mineralna; typowy zakres podręcznikowy 0,2–0,5 W/(m·K). Model: półprzestrzeń jednorodna, impuls strumienia o kształcie ze scenariusza (górna granica nagrzania), bez parowania wody i spalania.",
+      "time": null,
+      "reason": "Założenie modelu predykcyjnego projektu (luka w literaturze; zgoda użytkownika 2026-10-04)."
+    },
+    {
+      "id": "temperature.soil_heat_capacity_pred",
+      "group": "temperature",
+      "label": "Pojemność cieplna objętościowa gruntu (założenie)",
+      "value": 1300000,
+      "unit": "J/(m³·K)",
+      "range": [
+        1000000,
+        1600000
+      ],
+      "certainty": "predictive",
+      "method": "predictive:ground-temperature",
+      "sources": [],
+      "notes": "Założenie: sucha gleba; typowy zakres podręcznikowy 1,0–1,6 MJ/(m³·K).",
+      "time": null,
+      "reason": "Założenie modelu predykcyjnego projektu (luka w literaturze; zgoda użytkownika 2026-10-04)."
+    },
+    {
+      "id": "temperature.surface_absorptivity_pred",
+      "group": "temperature",
+      "label": "Pochłanianie podczerwieni przez powierzchnię (założenie)",
+      "value": 0.9,
+      "unit": "",
+      "range": [
+        0.8,
+        0.95
+      ],
+      "certainty": "predictive",
+      "method": "predictive:ground-temperature",
+      "sources": [],
+      "notes": "Założenie: powierzchnie naturalne pochłaniają większość promieniowania podczerwonego.",
+      "time": null,
+      "reason": "Założenie modelu predykcyjnego projektu (luka w literaturze; zgoda użytkownika 2026-10-04)."
+    },
+    {
+      "id": "atmosphere.dust_tau_scale_pred",
+      "group": "atmosphere",
+      "label": "Skala grubości optycznej pyłu (założenie)",
+      "value": 5.417847277633049,
+      "unit": "",
+      "range": null,
+      "certainty": "predictive",
+      "method": "predictive:darkness",
+      "sources": [
+        "kring2002",
+        "bardeen2017"
+      ],
+      "notes": "Założenie: grubość optyczna pyłu rośnie proporcjonalnie do skumulowanego ułamka ejecta wracających do atmosfery (25/55/85 % po 2/8/72 h); skala dobrana tak, by przy 85 % światło spadło do progu fotosyntezy 1 % (τ = ln 100 / 0,85). Chmura pyłu dociera do miejsca z prędkością ejecta.dust_cloud_speed po rozpadzie kurtyny.",
+      "time": null,
+      "reason": "Założenie modelu predykcyjnego projektu (luka w literaturze; zgoda użytkownika 2026-10-04)."
+    },
+    {
+      "id": "temperature.initial_surface_pred",
+      "group": "temperature",
+      "label": "Początkowa temperatura powierzchni (założenie)",
+      "value": 290,
+      "unit": "K",
+      "range": [
+        278,
+        295
+      ],
+      "certainty": "predictive",
+      "method": "predictive:ground-temperature",
+      "sources": [
+        "during2022"
+      ],
+      "notes": "Założenie: wiosna na półkuli północnej; w rejonie Tanis średnia zimy ~5 °C, lata ~19 °C (paleo.hellcreek_temp_*). Emisyjność w podczerwieni = pochłanianie (prawo Kirchhoffa).",
+      "time": null,
+      "reason": "Temperatura startowa potrzebna do bilansu radiacyjnego powierzchni w modelu predykcyjnym."
+    },
+    {
+      "id": "biosphere.tree_blowdown_partial_wind",
+      "group": "biosphere",
+      "label": "Wiatr, przy którym powalonych zostaje ok. 30% drzew",
+      "value": 40,
+      "unit": "m/s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "threshold:eiep",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "p. 831 (progi wiatru dla drzew)",
+      "notes": "Próg empiryczny z prób jądrowych (las iglasty/liściasty); dla Chicxulub to ekstrapolacja daleko poza kalibrację. Wiatr z EIEP jest górną granicą — EIEP zawyża nadciśnienie dla E > 10⁴ Mt (airblast.overestimate_factor_large); dolna granica strefy liczona z nadciśnienia podzielonego przez ten czynnik.",
+      "time": null,
+      "reason": "Próg zniszczeń potrzebny do warstwy biosfery (strefy powalonych lasów); z wątku 07, tabela progów EIEP."
+    },
+    {
+      "id": "biosphere.tree_blowdown_total_wind",
+      "group": "biosphere",
+      "label": "Wiatr, przy którym powalonych zostaje do 90% drzew (reszta ogołocona)",
+      "value": 62,
+      "unit": "m/s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "threshold:eiep",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "p. 831 (progi wiatru dla drzew)",
+      "notes": "Próg empiryczny z prób jądrowych (las iglasty/liściasty); dla Chicxulub to ekstrapolacja daleko poza kalibrację. Wiatr z EIEP jest górną granicą — EIEP zawyża nadciśnienie dla E > 10⁴ Mt (airblast.overestimate_factor_large); dolna granica strefy liczona z nadciśnienia podzielonego przez ten czynnik.",
+      "time": null,
+      "reason": "Jak wyżej — strefa niemal całkowitego powalenia lasów."
+    },
+    {
+      "id": "biosphere.burn3_exposure_1mt",
+      "group": "biosphere",
+      "label": "Ekspozycja cieplna wywołująca oparzenia III stopnia (1 Mt)",
+      "value": 0.42,
+      "unit": "MJ/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "threshold:eiep",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Table 1, p. 827",
+      "notes": "Wartość dla wybuchu 1 Mt; skalowanie do energii uderzenia: × E_Mt^(1/6) (eq. 39). Dotyczy promieniowania kuli ognia w zasięgu horyzontu — nie impulsu IR od ejecta.",
+      "time": null,
+      "reason": "Strefa skutków impulsu cieplnego kuli ognia dla odsłoniętych zwierząt (warstwa biosfery)."
+    },
+    {
+      "id": "biosphere.grass_ignition_exposure_1mt",
+      "group": "biosphere",
+      "label": "Ekspozycja cieplna zapalająca trawę (1 Mt)",
+      "value": 0.38,
+      "unit": "MJ/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "threshold:eiep",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Table 1, p. 827",
+      "notes": "Wartość dla wybuchu 1 Mt; skalowanie do energii uderzenia: × E_Mt^(1/6) (eq. 39). Dotyczy promieniowania kuli ognia w zasięgu horyzontu — nie impulsu IR od ejecta. Promień wynikowy to kontrola krzyżowa dla fires.ignition_radius_fireball (inna metoda, inne źródła).",
+      "time": null,
+      "reason": "Strefa zapłonu roślinności od kuli ognia liczona z EIEP — porównanie z wartością z literatury."
+    },
+    {
+      "id": "biosphere.deciduous_ignition_exposure_1mt",
+      "group": "biosphere",
+      "label": "Ekspozycja cieplna zapalająca drzewa liściaste (1 Mt)",
+      "value": 0.25,
+      "unit": "MJ/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "threshold:eiep",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "Table 1, p. 827",
+      "notes": "Wartość dla wybuchu 1 Mt; skalowanie do energii uderzenia: × E_Mt^(1/6) (eq. 39). Dotyczy promieniowania kuli ognia w zasięgu horyzontu — nie impulsu IR od ejecta.",
+      "time": null,
+      "reason": "Uzupełnienie progów zapłonu (warstwa biosfery)."
+    },
+    {
+      "id": "paleo.days_per_year_campanian",
+      "group": "paleo",
+      "label": "Liczba dób słonecznych w roku (kampan, przyrosty dzienne muszli rudysty)",
+      "value": 372,
+      "unit": "",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured: liczenie lamin dziennych + analiza spektralna",
+      "sources": [
+        "dewinter2020"
+      ],
+      "locator": "Abstract",
+      "notes": "Okaz kampański (późna kreda), kilka mln lat przed K-Pg.",
+      "time": null,
+      "reason": "Podstawa długości doby w chwili uderzenia (ruch obrotowy Ziemi w trajektoriach ejecta)."
+    },
+    {
+      "id": "paleo.sidereal_day",
+      "group": "paleo",
+      "label": "Doba gwiazdowa w chwili uderzenia (okres obrotu Ziemi)",
+      "value": 84602,
+      "unit": "s",
+      "range": [
+        84500,
+        84700
+      ],
+      "certainty": "extrapolation",
+      "method": "calc: rok gwiazdowy / (liczba dób słonecznych w roku + 1)",
+      "sources": [
+        "dewinter2020"
+      ],
+      "locator": "Abstract (372 doby/rok)",
+      "notes": "Założenie: długość roku (okres orbitalny) bez zmian — 365,2422 × 86 400 s. Doba słoneczna ≈ 23,56 h, gwiazdowa ≈ 23,50 h. Wydłużenie doby od kampanu do K-Pg przez hamowanie pływowe jest pomijalne w tej skali (ułamki promila).",
+      "time": null,
+      "reason": "Prędkość kątowa Ziemi do trajektorii ejecta w układzie inercjalnym."
+    },
+    {
+      "id": "thermal.solar_constant",
+      "group": "thermal",
+      "label": "Całkowita irradiancja słoneczna (stała słoneczna, dziś)",
+      "value": 1.3608,
+      "unit": "kW/m²",
+      "range": [
+        1.3603,
+        1.3613
+      ],
+      "certainty": "fact",
+      "method": "measured: radiometria satelitarna (SORCE/TIM)",
+      "sources": [
+        "kopp2011"
+      ],
+      "locator": "Abstract (1360,8 ± 0,5 W/m²)",
+      "notes": "Wartość współczesna, na szczycie atmosfery; Słońce w kredzie było nieco słabsze (rzędu procenta) — tu tylko poziom odniesienia „ponad słoneczny”.",
+      "time": null,
+      "reason": "Poziom, do którego wygasa impuls IR w scenariuszu Goldina & Melosha (2009): „powyżej słonecznego przez ~30 min”."
+    },
+    {
+      "id": "thermal.ir_goldin_strong_phase_pred",
+      "group": "thermal",
+      "label": "Czas silnej fazy impulsu IR (> 5 kW/m²) wg Goldina & Melosha — założenie",
+      "value": 3,
+      "unit": "min",
+      "range": [
+        2,
+        5
+      ],
+      "certainty": "predictive",
+      "method": "predictive:goldin-pulse-shape",
+      "sources": [
+        "goldin2009"
+      ],
+      "locator": "goldin2009 Abstract („kilka minut” powyżej 5 kW/m²)",
+      "notes": "Praca podaje tylko „kilka minut” powyżej 5 kW/m² i ~30 min powyżej poziomu słonecznego. Model predykcyjny projektu: szczyt 5–15 kW/m² przez tę fazę, potem wykładniczy spadek do stałej słonecznej w chwili końca impulsu (thermal.ir_duration). Zastępuje wcześniejszy prostokątny impuls 30 min, który zawyżał nagrzanie gruntu.",
+      "time": null,
+      "reason": "Poprawka błędu: scenariusz Goldina był modelowany jako 30 min na poziomie szczytu."
+    },
+    {
+      "id": "ejecta.reentry_layer_altitude",
+      "group": "ejecta",
+      "label": "Wysokość warstwy nagrzewanej przez powracające wyrzuty",
+      "value": 70,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "literature: model radiacyjny",
+      "sources": [
+        "robertson2004"
+      ],
+      "locator": "p. 762 (800–1100 K at 70 km for several hours)",
+      "notes": "Tu: wysokość, na której cząstka „ponownie wchodzi” w atmosferę w symulacji trajektorii (rozbłysk). Hamowanie zaczyna się wyżej, główne nagrzewanie w tej warstwie.",
+      "time": null,
+      "reason": "Kotwica wysokości ponownego wejścia dla trajektorii ejecta na globie."
+    },
+    {
+      "id": "ejecta.launch_angle_max_pred",
+      "group": "ejecta",
+      "label": "Maksymalny kąt wyrzutu w losowaniu trajektorii — założenie",
+      "value": 60,
+      "unit": "°",
+      "range": [
+        45,
+        70
+      ],
+      "certainty": "predictive",
+      "method": "predictive:ejecta-orbits",
+      "sources": [
+        "collins2005",
+        "kring2002"
+      ],
+      "locator": "collins2005 eq. 49–52 (wyrzut pod 45°); kring2002 (rozrzut kątów)",
+      "notes": "Model predykcyjny projektu: kąty od tego, który odtwarza czas pierwszego dotarcia z literatury, do tej wartości; EIEP zakłada 45°.",
+      "time": null,
+      "reason": "Rozkład trajektorii ejecta na globie (wolniejsze cząstki po froncie)."
+    },
+    {
+      "id": "ejecta.uprange_far_weight_pred",
+      "group": "ejecta",
+      "label": "Względna obsada sektora „pod bieg” dalej niż 3000 km — założenie",
+      "value": 0.15,
+      "unit": "",
+      "range": [
+        0,
+        0.3
+      ],
+      "certainty": "predictive",
+      "method": "predictive:ejecta-orbits",
+      "sources": [
+        "morgan2013",
+        "artemieva2020"
+      ],
+      "locator": "morgan2013 §5.2 (impuls IR pomijalny pod bieg >3000 km); artemieva2020 (warstwa dystalna z chmury pyłu)",
+      "notes": "Model predykcyjny projektu: balistyczne wyrzuty daleko pod bieg impaktora są rzadkie; warstwa K-Pg dociera tam później z chmurą pyłu, której trajektorie nie pokazują.",
+      "time": null,
+      "reason": "Spójność trajektorii ejecta z asymetrią impulsu IR (Morgan i in. 2013)."
+    },
+    {
+      "id": "ejecta.launch_window_pred",
+      "group": "ejecta",
+      "label": "Okno czasowe wyrzutu wysokoenergetycznych wyrzutów — założenie",
+      "value": 10,
+      "unit": "s",
+      "range": [
+        5,
+        30
+      ],
+      "certainty": "predictive",
+      "method": "predictive:ejecta-orbits",
+      "sources": [
+        "kring2002"
+      ],
+      "locator": "kring2002 (wyrzut w fazie kompresji i wczesnego wykopu)",
+      "notes": "Model predykcyjny projektu: najszybsze wyrzuty opuszczają krater w pierwszych sekundach, przed maksimum krateru przejściowego.",
+      "time": null,
+      "reason": "Chwila wyrzutu cząstek w trajektoriach ejecta."
+    }
+  ],
+  "addSources": [
+    {
+      "id": "pygplates2025",
+      "type": "software",
+      "authors": "GPlates developers (University of Sydney; Geological Survey of Norway; California Institute of Technology)",
+      "year": 2025,
+      "title": "pyGPlates 1.0.0 — Python library for GPlates",
+      "container": "PyPI / gplates.org",
+      "url": "https://www.gplates.org/docs/pygplates/index.html",
+      "peerReviewed": false,
+      "verified": false,
+      "notes": "Wersja 1.0.0 (PyPI, 2025-03-26), licencja GPL v2. Użyta do rekonstrukcji paleowspółrzędnych w modelu PALEOMAP.",
+      "reason": "Oprogramowanie użyte w projekcie do rekonstrukcji punktów (GPlates Web Service niedostępny)."
+    },
+    {
+      "id": "dewinter2020",
+      "type": "article",
+      "authors": "de Winter, N. J.; Goderis, S.; Van Malderen, S. J. M.; Sinnesael, M.; Vansteenberge, S.; Snoeck, C.; Belza, J.; Vanhaecke, F.; Claeys, P.",
+      "year": 2020,
+      "title": "Subdaily-Scale Chemical Variability in a Torreites Sanchezi Rudist Shell: Implications for Rudist Paleobiology and the Cretaceous Day-Night Cycle",
+      "container": "Paleoceanography and Paleoclimatology",
+      "volume": "35",
+      "pages": "e2019PA003723",
+      "doi": "10.1029/2019PA003723",
+      "url": "https://doi.org/10.1029/2019PA003723",
+      "peerReviewed": true,
+      "verified": true,
+      "notes": "Metadane i abstrakt sprawdzone w Crossref (2026-10-04).",
+      "reason": "Długość doby w późnej kredzie — potrzebna do ruchu obrotowego Ziemi w trajektoriach ejecta."
+    },
+    {
+      "id": "kopp2011",
+      "type": "article",
+      "authors": "Kopp, G.; Lean, J. L.",
+      "year": 2011,
+      "title": "A new, lower value of total solar irradiance: Evidence and climate significance",
+      "container": "Geophysical Research Letters",
+      "volume": "38",
+      "pages": "L01706",
+      "doi": "10.1029/2010GL045777",
+      "url": "https://doi.org/10.1029/2010GL045777",
+      "peerReviewed": true,
+      "verified": true,
+      "notes": "Metadane sprawdzone w Crossref (2026-10-04); Crossref nie udostępnia abstraktu.",
+      "reason": "Poziom odniesienia „strumień słoneczny” dla kształtu impulsu IR wg Goldina & Melosha (2009)."
+    }
+  ]
+}

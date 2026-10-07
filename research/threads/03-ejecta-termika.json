@@ -1,0 +1,2448 @@
+{
+  "thread": "03-ejecta-termika",
+  "sources": [
+    {
+      "id": "alvarez1980",
+      "type": "article",
+      "authors": "Alvarez, L. W.; Alvarez, W.; Asaro, F.; Michel, H. V.",
+      "year": 1980,
+      "title": "Extraterrestrial Cause for the Cretaceous-Tertiary Extinction",
+      "container": "Science",
+      "volume": "208",
+      "pages": "1095-1108",
+      "doi": "10.1126/science.208.4448.1095",
+      "url": "https://doi.org/10.1126/science.208.4448.1095",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata + deposited abstract read (Ir enrichment ~30/160/20x; asteroid 10±4 km). Full text not opened."
+    },
+    {
+      "id": "bohor1984",
+      "type": "article",
+      "authors": "Bohor, B. F.; Foord, E. E.; Modreski, P. J.; Triplehorn, D. M.",
+      "year": 1984,
+      "title": "Mineralogic Evidence for an Impact Event at the Cretaceous-Tertiary Boundary",
+      "container": "Science",
+      "volume": "224",
+      "pages": "867-869",
+      "doi": "10.1126/science.224.4651.867",
+      "url": "https://doi.org/10.1126/science.224.4651.867",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata + abstract read (shocked quartz with planar features, Montana boundary claystone). Full text not opened."
+    },
+    {
+      "id": "wolbach1985",
+      "type": "article",
+      "authors": "Wolbach, W. S.; Lewis, R. S.; Anders, E.",
+      "year": 1985,
+      "title": "Cretaceous Extinctions: Evidence for Wildfires and Search for Meteoritic Material",
+      "container": "Science",
+      "volume": "230",
+      "pages": "167-170",
+      "doi": "10.1126/science.230.4722.167",
+      "url": "https://doi.org/10.1126/science.230.4722.167",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata + abstract read (0.36–0.58% graphitic C; 0.021±0.006 g/cm2). Full text not opened."
+    },
+    {
+      "id": "wolbach1988",
+      "type": "article",
+      "authors": "Wolbach, W. S.; Gilmour, I.; Anders, E.; Orth, C. J.; Brooks, R. R.",
+      "year": 1988,
+      "title": "Global fire at the Cretaceous– Tertiary boundary",
+      "container": "Nature",
+      "volume": "334",
+      "pages": "665-669",
+      "doi": "10.1038/334665a0",
+      "url": "https://doi.org/10.1038/334665a0",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Publisher page (nature.com) opened in browser; abstract read (10^2–10^4-fold elemental C enrichment, coincides with Ir layer). Global carbon (7±4)x10^16 g quoted via robertson2004 p. 763."
+    },
+    {
+      "id": "melosh1990",
+      "type": "article",
+      "authors": "Melosh, H. J.; Schneider, N. M.; Zahnle, K. J.; Latham, D.",
+      "year": 1990,
+      "title": "Ignition of global wildfires at the Cretaceous/Tertiary boundary",
+      "container": "Nature",
+      "volume": "343",
+      "pages": "251-254",
+      "doi": "10.1038/343251a0",
+      "url": "https://doi.org/10.1038/343251a0",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Publisher page (nature.com) opened; abstract read (50–150x solar input for 1 to several hours). Full text paywalled; further numbers (1.3–5x10^8 J/m2, ~10 kW/m2, 800–1100 K at 70 km, +10 K ground air) taken from verbatim quotes in robertson2004 pp. 762–763."
+    },
+    {
+      "id": "hildebrand1990",
+      "type": "article",
+      "authors": "Hildebrand, A. R.; Boynton, W. V.",
+      "year": 1990,
+      "title": "Proximal Cretaceous-Tertiary Boundary Impact Deposits in the Caribbean",
+      "container": "Science",
+      "volume": "248",
+      "pages": "843-847",
+      "doi": "10.1126/science.248.4957.843",
+      "url": "https://doi.org/10.1126/science.248.4957.843",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata + abstract read (Haiti ejecta layer ~50 cm, ~25x thicker than other sites). Full text not opened."
+    },
+    {
+      "id": "alvarez1995",
+      "type": "article",
+      "authors": "Alvarez, W.; Claeys, P.; Kieffer, S. W.",
+      "year": 1995,
+      "title": "Emplacement of Cretaceous-Tertiary Boundary Shocked Quartz from Chicxulub Crater",
+      "container": "Science",
+      "volume": "269",
+      "pages": "930-935",
+      "doi": "10.1126/science.269.5226.930",
+      "url": "https://doi.org/10.1126/science.269.5226.930",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata + abstract read (\"warm, accelerating fireball\" of CO2/H2O after hot silicate fireball). Full text not opened."
+    },
+    {
+      "id": "smit1999",
+      "type": "article",
+      "authors": "Smit, J.",
+      "year": 1999,
+      "title": "The global stratigraphy of the Cretaceous-Tertiary boundary impact ejecta",
+      "container": "Annual Review of Earth and Planetary Sciences",
+      "volume": "27",
+      "pages": "75-113",
+      "doi": "10.1146/annurev.earth.27.1.75",
+      "url": "https://doi.org/10.1146/annurev.earth.27.1.75",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata + deposited abstract read (regional ejecta classes: <300 km breccias, <2500 km up to 9 m, 2500–4000 km cm-thick, global mm-thin). Full text not opened; 2–3 mm and 850 km3 values taken via artemieva2009/artemieva2020/robertson2004."
+    },
+    {
+      "id": "pope1999",
+      "type": "article",
+      "authors": "Pope, K. O.; Ocampo, A. C.; Fischer, A. G.; Alvarez, W.; Fouke, B. W.; Webster, C. L.; Vega, F. J.; Smit, J.; Fritsche, A.; Claeys, P.",
+      "year": 1999,
+      "title": "Chicxulub impact ejecta from Albion Island, Belize",
+      "container": "Earth and Planetary Science Letters",
+      "volume": "170",
+      "pages": "351-364",
+      "doi": "10.1016/s0012-821x(99)00123-5",
+      "url": "https://doi.org/10.1016/s0012-821x(99)00123-5",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "ScienceDirect page opened in browser: abstract and section snippets read (Albion Island 360 km NW; spheroid bed ~1 m, 0.10–1.72 m; diamictite ~15 m, eroded top; blocks to ~8 m). Full text paywalled."
+    },
+    {
+      "id": "kring2002",
+      "type": "article",
+      "authors": "Kring, D. A.; Durda, D. D.",
+      "year": 2002,
+      "title": "Trajectories and distribution of material ejected from the Chicxulub impact crater: Implications for postimpact wildfires",
+      "container": "Journal of Geophysical Research: Planets",
+      "volume": "107",
+      "pages": "6-1–6-22",
+      "doi": "10.1029/2001je001532",
+      "url": "https://doi.org/10.1029/2001je001532",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read on AGU/Wiley (Free Access) via browser. Note: page range as shown on publisher site (pp. 6-1–6-22)."
+    },
+    {
+      "id": "croskell2002",
+      "type": "article",
+      "authors": "Croskell, M.; Warner, M.; Morgan, J.",
+      "year": 2002,
+      "title": "Annealing of shocked quartz during atmospheric re‐entry",
+      "container": "Geophysical Research Letters",
+      "volume": "29",
+      "pages": "1940",
+      "doi": "10.1029/2001gl014382",
+      "url": "https://doi.org/10.1029/2001gl014382",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata + abstract read (re-entry annealing of shocked quartz). Full text not opened."
+    },
+    {
+      "id": "belcher2003",
+      "type": "article",
+      "authors": "Belcher, C. M.; Collinson, M. E.; Sweet, A. R.; Hildebrand, A. R.; Scott, A. C.",
+      "year": 2003,
+      "title": "Fireball passes and nothing burns—The role of thermal radiation in the Cretaceous-Tertiary event: Evidence from the charcoal record of North America",
+      "container": "Geology",
+      "volume": "31",
+      "pages": "1061-1064",
+      "doi": "10.1130/g19989.1",
+      "url": "https://doi.org/10.1130/g19989.1",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "GeoScienceWorld abstract page opened (<19 kW/m2 at ground, <95 kW/m2 to atmosphere). Full text paywalled."
+    },
+    {
+      "id": "durda2004",
+      "type": "article",
+      "authors": "Durda, D. D.; Kring, D. A.",
+      "year": 2004,
+      "title": "Ignition threshold for impact‐generated fires",
+      "container": "Journal of Geophysical Research: Planets",
+      "volume": "109",
+      "pages": "E08004",
+      "doi": "10.1029/2004je002279",
+      "url": "https://doi.org/10.1029/2004je002279",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata + abstract read (ignition thresholds 51/20/28 kW/m2; plume-mass thresholds). Article number E08004 per later citing papers (gulick2019 ref list)."
+    },
+    {
+      "id": "robertson2004",
+      "type": "article",
+      "authors": "Robertson, D. S.; McKenna, M. C.; Toon, O. B.; Hope, S.; Lillegraven, J. A.",
+      "year": 2004,
+      "title": "Survival in the first hours of the Cenozoic",
+      "container": "Geological Society of America Bulletin",
+      "volume": "116",
+      "pages": "760-768",
+      "doi": "10.1130/b25402.1",
+      "url": "https://doi.org/10.1130/b25402.1",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read from AMNH-hosted PDF (research.amnh.org/users/debel/extinction/RobertsonEtal-GSAB04-andComment.pdf), which reproduces the published GSA Bulletin pages 760–768."
+    },
+    {
+      "id": "belcher2005",
+      "type": "article",
+      "authors": "Belcher, C. M.; Collinson, M. E.; Scott, A. C.",
+      "year": 2005,
+      "title": "Constraints on the thermal energy released from the Chicxulub impactor: new evidence from multi-method charcoal analysis",
+      "container": "Journal of the Geological Society",
+      "volume": "162",
+      "pages": "591-602",
+      "doi": "10.1144/0016-764904-104",
+      "url": "https://doi.org/10.1144/0016-764904-104",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata + full abstract read (charcoal 4–8x below background; ground T ≤545 °C, not >325 °C for long; <19 kW/m2; ≤6 kW/m2 for >few hours)."
+    },
+    {
+      "id": "collins2005",
+      "type": "article",
+      "authors": "Collins, G. S.; Melosh, H. J.; Marcus, R. A.",
+      "year": 2005,
+      "title": "Earth Impact Effects Program: A Web-based computer program for calculating the regional environmental consequences of a meteoroid impact on Earth",
+      "container": "Meteoritics & Planetary Science",
+      "volume": "40",
+      "pages": "817-840",
+      "doi": "10.1111/j.1945-5100.2005.tb00157.x",
+      "url": "https://doi.org/10.1111/j.1945-5100.2005.tb00157.x",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text PDF read from Imperial College Spiral repository (published MAPS version). Equations 32–39 (fireball radius, timing, duration, ignition scaling) used for scaling estimates."
+    },
+    {
+      "id": "morgan2006",
+      "type": "article",
+      "authors": "Morgan, J.; Lana, C.; Kearsley, A.; Coles, B.; Belcher, C.; Montanari, S.; Díaz-Martínez, E.; Barbosa, A.; Neumann, V.",
+      "year": 2006,
+      "title": "Analyses of shocked quartz at the global K-P boundary indicate an origin from a single, high-angle, oblique impact at Chicxulub",
+      "container": "Earth and Planetary Science Letters",
+      "volume": "251",
+      "pages": "264-279",
+      "doi": "10.1016/j.epsl.2006.09.009",
+      "url": "https://doi.org/10.1016/j.epsl.2006.09.009",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "ScienceDirect abstract and author list read in browser. Full text paywalled."
+    },
+    {
+      "id": "harvey2008",
+      "type": "article",
+      "authors": "Harvey, M. C.; Brassell, S. C.; Belcher, C. M.; Montanari, A.",
+      "year": 2008,
+      "title": "Combustion of fossil organic matter at the Cretaceous-Paleogene (K-P) boundary",
+      "container": "Geology",
+      "volume": "36",
+      "pages": "355-358",
+      "doi": "10.1130/g24646a.1",
+      "url": "https://doi.org/10.1130/g24646a.1",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "GeoScienceWorld abstract page read (carbon cenospheres; target fossil organic matter; Geology 36(5):355–358)."
+    },
+    {
+      "id": "artemieva2009",
+      "type": "article",
+      "authors": "Artemieva, N.; Morgan, J.",
+      "year": 2009,
+      "title": "Modeling the formation of the K–Pg boundary layer",
+      "container": "Icarus",
+      "volume": "201",
+      "pages": "768-780",
+      "doi": "10.1016/j.icarus.2009.01.021",
+      "url": "https://doi.org/10.1016/j.icarus.2009.01.021",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Author-accepted manuscript read in full from Imperial College Spiral (hdl.handle.net/10044/1/4210). Section/table numbering from the manuscript; published Icarus version may differ in minor wording."
+    },
+    {
+      "id": "goldin2009",
+      "type": "article",
+      "authors": "Goldin, T. J.; Melosh, H. J.",
+      "year": 2009,
+      "title": "Self-shielding of thermal radiation by Chicxulub impact ejecta: Firestorm or fizzle?",
+      "container": "Geology",
+      "volume": "37",
+      "pages": "1135-1138",
+      "doi": "10.1130/g30433a.1",
+      "url": "https://doi.org/10.1130/g30433a.1",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "GeoScienceWorld abstract page read (peak 5–15 kW/m2; > solar ~30 min; >5 kW/m2 few minutes). Full text paywalled — no figure-level values used."
+    },
+    {
+      "id": "belcher2009",
+      "type": "article",
+      "authors": "Belcher, C. M.; Finch, P.; Collinson, M. E.; Scott, A. C.; Grassineau, N. V.",
+      "year": 2009,
+      "title": "Geochemical evidence for combustion of hydrocarbons during the K-T impact event",
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "106",
+      "pages": "4112-4117",
+      "doi": "10.1073/pnas.0813117106",
+      "url": "https://doi.org/10.1073/pnas.0813117106",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "PMC (PMC2657452) page opened; abstract read (pPAH signature consistent with hydrocarbon combustion)."
+    },
+    {
+      "id": "schulte2010",
+      "type": "article",
+      "authors": "Schulte, P.; Alegret, L.; Arenillas, I.; Arz, J. A.; Barton, P. J.; Bown, P. R.; Bralower, T. J.; Christeson, G. L.; Claeys, P.; Cockell, C. S.; Collins, G. S.; Deutsch, A.; Goldin, T. J.; Goto, K.; Grajales-Nishimura, J. M.; Grieve, R. A. F.; Gulick, S. P. S.; Johnson, K. R.; Kiessling, W.; Koeberl, C.; Kring, D. A.; MacLeod, K. G.; Matsui, T.; Melosh, J.; Montanari, A.; Morgan, J. V.; Neal, C. R.; Nichols, D. J.; Norris, R. D.; Pierazzo, E.; Ravizza, G.; Rebolledo-Vieyra, M.; Reimold, W. U.; Robin, E.; Salge, T.; Speijer, R. P.; Sweet, A. R.; Urrutia-Fucugauchi, J.; Vajda, V.; Whalen, M. T.; Willumsen, P. S.",
+      "year": 2010,
+      "title": "The Chicxulub Asteroid Impact and Mass Extinction at the Cretaceous-Paleogene Boundary",
+      "container": "Science",
+      "volume": "327",
+      "pages": "1214-1218",
+      "doi": "10.1126/science.1177265",
+      "url": "https://doi.org/10.1126/science.1177265",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Main article metadata via Crossref; Supporting Online Material (SOM) PDF read in full from KU Leuven Lirias repository; Table S1 (event-deposit thickness classes, paleodistances, max Ir) used. Main text not read."
+    },
+    {
+      "id": "johnson2012",
+      "type": "article",
+      "authors": "Johnson, B. C.; Melosh, H. J.",
+      "year": 2012,
+      "title": "Formation of spherules in impact produced vapor plumes",
+      "container": "Icarus",
+      "volume": "217",
+      "pages": "416-430",
+      "doi": "10.1016/j.icarus.2011.11.020",
+      "url": "https://doi.org/10.1016/j.icarus.2011.11.020",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "ScienceDirect abstract read (10 km impactor at ~21 km/s yields ~250 µm spherules; smaller spherules in faster outer plume)."
+    },
+    {
+      "id": "robertson2013",
+      "type": "article",
+      "authors": "Robertson, D. S.; Lewis, W. M.; Sheehan, P. M.; Toon, O. B.",
+      "year": 2013,
+      "title": "K‐Pg extinction: Reevaluation of the heat‐fire hypothesis",
+      "container": "Journal of Geophysical Research: Biogeosciences",
+      "volume": "118",
+      "pages": "329-336",
+      "doi": "10.1002/jgrg.20018",
+      "url": "https://doi.org/10.1002/jgrg.20018",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read on AGU/Wiley (Open Access) via browser."
+    },
+    {
+      "id": "morgan2013",
+      "type": "article",
+      "authors": "Morgan, J.; Artemieva, N.; Goldin, T.",
+      "year": 2013,
+      "title": "Revisiting wildfires at the K‐Pg boundary",
+      "container": "Journal of Geophysical Research: Biogeosciences",
+      "volume": "118",
+      "pages": "1508-1520",
+      "doi": "10.1002/2013jg002428",
+      "url": "https://doi.org/10.1002/2013jg002428",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read on AGU/Wiley (Free Access) via browser, incl. figure captions; Fig. 4 image inspected and peak fluxes digitized by eye (±~10%)."
+    },
+    {
+      "id": "belcher2015",
+      "type": "article",
+      "authors": "Belcher, C. M.; Hadden, R. M.; Rein, G.; Morgan, J. V.; Artemieva, N.; Goldin, T.",
+      "year": 2015,
+      "title": "An experimental assessment of the ignition of forest fuels by the thermal pulse generated by the Cretaceous–Palaeogene impact at Chicxulub",
+      "container": "Journal of the Geological Society",
+      "volume": "172",
+      "pages": "175-185",
+      "doi": "10.1144/jgs2014-082",
+      "url": "https://doi.org/10.1144/jgs2014-082",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata + full abstract read (dry litter ignites, live fuels typically not). Full text not opened."
+    },
+    {
+      "id": "kaiho2016",
+      "type": "article",
+      "authors": "Kaiho, K.; Oshima, N.; Adachi, K.; Adachi, Y.; Mizukami, T.; Fujibayashi, M.; Saito, R.",
+      "year": 2016,
+      "title": "Global climate change driven by soot at the K-Pg boundary as the cause of the mass extinction",
+      "container": "Scientific Reports",
+      "volume": "6",
+      "pages": "28427",
+      "doi": "10.1038/srep28427",
+      "url": "https://doi.org/10.1038/srep28427",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text (Europe PMC, PMC4944614, open access) read."
+    },
+    {
+      "id": "toon2016",
+      "type": "article",
+      "authors": "Toon, O. B.; Bardeen, C.; Garcia, R.",
+      "year": 2016,
+      "title": "Designing global climate and atmospheric chemistry simulations for 1 and 10 km diameter asteroid impacts using the properties of ejecta from the K-Pg impact",
+      "container": "Atmospheric Chemistry and Physics",
+      "volume": "16",
+      "pages": "13185-13212",
+      "doi": "10.5194/acp-16-13185-2016",
+      "url": "https://doi.org/10.5194/acp-16-13185-2016",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text PDF read from publisher (ACP, open access)."
+    },
+    {
+      "id": "bardeen2017",
+      "type": "article",
+      "authors": "Bardeen, C. G.; Garcia, R. R.; Toon, O. B.; Conley, A. J.",
+      "year": 2017,
+      "title": "On transient climate change at the Cretaceous−Paleogene boundary due to atmospheric soot injections",
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "114",
+      "pages": "E7415-E7424",
+      "doi": "10.1073/pnas.1708980114",
+      "url": "https://doi.org/10.1073/pnas.1708980114",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text incl. SI read on PMC (PMC5594694) via browser; SI Fig. S8 used for first-week surface temperature."
+    },
+    {
+      "id": "depalma2019",
+      "type": "article",
+      "authors": "DePalma, R. A.; Smit, J.; Burnham, D. A.; Kuiper, K.; Manning, P. L.; Oleinik, A.; Larson, P.; Maurrasse, F. J.; Vellekoop, J.; Richards, M. A.; Gurche, L.; Alvarez, W.",
+      "year": 2019,
+      "title": "A seismically induced onshore surge deposit at the KPg boundary, North Dakota",
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "116",
+      "pages": "8190-8199",
+      "doi": "10.1073/pnas.1817407116",
+      "url": "https://doi.org/10.1073/pnas.1817407116",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text (Europe PMC, PMC6486721) read. Interpretation of Tanis timing rests on assumed launch angles (author recalculation)."
+    },
+    {
+      "id": "gulick2019",
+      "type": "article",
+      "authors": "Gulick, S. P. S.; Bralower, T. J.; Ormö, J.; Hall, B.; Grice, K.; Schaefer, B.; Lyons, S.; Freeman, K. H.; Morgan, J. V.; Artemieva, N.; Kaskes, P.; de Graaff, S. J.; Whalen, M. T.; Collins, G. S.; Tikoo, S. M.; Verhagen, C.; Christeson, G. L.; Claeys, P.; Coolen, M. J. L.; Goderis, S.; Goto, K.; Grieve, R. A. F.; McCall, N.; Osinski, G. R.; Rae, A. S. P.; Riller, U.; Smit, J.; Vajda, V.; Wittmann, A.; IODP-ICDP Expedition 364 Scientists",
+      "year": 2019,
+      "title": "The first day of the Cenozoic",
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "116",
+      "pages": "19342-19351",
+      "doi": "10.1073/pnas.1909479116",
+      "url": "https://doi.org/10.1073/pnas.1909479116",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read on PMC (PMC6765282) via browser. Author list: 29 named authors + IODP-ICDP Expedition 364 Scientists."
+    },
+    {
+      "id": "artemieva2020",
+      "type": "article",
+      "authors": "Artemieva, N.; Morgan, J.",
+      "year": 2020,
+      "title": "Global K‐Pg Layer Deposited From a Dust Cloud",
+      "container": "Geophysical Research Letters",
+      "volume": "47",
+      "pages": "e2019GL086562",
+      "doi": "10.1029/2019gl086562",
+      "url": "https://doi.org/10.1029/2019gl086562",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read on AGU/Wiley (Free Access) via browser, incl. Table 1."
+    },
+    {
+      "id": "collins2020",
+      "type": "article",
+      "authors": "Collins, G. S.; Patel, N.; Davison, T. M.; Rae, A. S. P.; Morgan, J. V.; Gulick, S. P. S.; Christeson, G. L.; Chenot, E.; Claeys, P.; Cockell, C. S.; Coolen, M. J. L.; Ferrière, L.; Gebhardt, C.; Goto, K.; Jones, H.; Kring, D. A.; Lofi, J.; Lowery, C. M.; Ocampo-Torres, R.; Perez-Cruz, L.; Pickersgill, A. E.; Poelchau, M. H.; Rasmussen, C.; Rebolledo-Vieyra, M.; Riller, U.; Sato, H.; Smit, J.; Tikoo, S. M.; Tomioka, N.; Urrutia-Fucugauchi, J.; Whalen, M. T.; Wittmann, A.; Xiao, L.; Yamaguchi, K. E.; Artemieva, N.; Bralower, T. J.",
+      "year": 2020,
+      "title": "A steeply-inclined trajectory for the Chicxulub impact",
+      "container": "Nature Communications",
+      "volume": "11",
+      "pages": "1480",
+      "doi": "10.1038/s41467-020-15269-x",
+      "url": "https://doi.org/10.1038/s41467-020-15269-x",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata + abstract read (45–60°, from the northeast; nearly symmetric ejecta). Full text available (PMC7251121) but not read in detail."
+    },
+    {
+      "id": "lyons2020",
+      "type": "article",
+      "authors": "Lyons, S. L.; Karp, A. T.; Bralower, T. J.; Grice, K.; Schaefer, B.; Gulick, S. P. S.; Morgan, J. V.; Freeman, K. H.",
+      "year": 2020,
+      "title": "Organic matter from the Chicxulub crater exacerbated the K–Pg impact winter",
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "117",
+      "pages": "25327-25334",
+      "doi": "10.1073/pnas.2004596117",
+      "url": "https://doi.org/10.1073/pnas.2004596117",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read on PMC (PMC7568312) via browser (abstract, introduction)."
+    },
+    {
+      "id": "morgan2022",
+      "type": "article",
+      "authors": "Morgan, J. V.; Bralower, T. J.; Brugger, J.; Wünnemann, K.",
+      "year": 2022,
+      "title": "The Chicxulub impact and its environmental consequences",
+      "container": "Nature Reviews Earth & Environment",
+      "volume": "3",
+      "pages": "338-354",
+      "doi": "10.1038/s43017-022-00283-y",
+      "url": "https://doi.org/10.1038/s43017-022-00283-y",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Publisher page (nature.com) opened; abstract and Key points read. Full text paywalled."
+    },
+    {
+      "id": "santacatharina2022",
+      "type": "article",
+      "authors": "Santa Catharina, A.; Kneller, B. C.; Marques, J. C.; McArthur, A. D.; Cevallos-Ferriz, S. R. S.; Theurer, T.; Kane, I. A.; Muirhead, D.",
+      "year": 2022,
+      "title": "Timing and causes of forest fire at the K–Pg boundary",
+      "container": "Scientific Reports",
+      "volume": "12",
+      "pages": "13006",
+      "doi": "10.1038/s41598-022-17292-y",
+      "url": "https://doi.org/10.1038/s41598-022-17292-y",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text (Europe PMC, PMC9338043, open access) read."
+    },
+    {
+      "id": "senel2023",
+      "type": "article",
+      "authors": "Senel, C. B.; Kaskes, P.; Temel, O.; Vellekoop, J.; Goderis, S.; DePalma, R.; Prins, M. A.; Claeys, P.; Karatekin, Ö.",
+      "year": 2023,
+      "title": "Chicxulub impact winter sustained by fine silicate dust",
+      "container": "Nature Geoscience",
+      "volume": "16",
+      "pages": "1033-1040",
+      "doi": "10.1038/s41561-023-01290-4",
+      "url": "https://doi.org/10.1038/s41561-023-01290-4",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Publisher page (nature.com) opened; abstract and Extended Data captions read. Full text paywalled. Beyond-24 h context only."
+    }
+  ],
+  "parameters": [
+    {
+      "id": "ejecta.total_mass",
+      "group": "ejecta",
+      "label": "Całkowita masa wyrzuconego materiału (kurtyna wyrzutowa, v>1 km/s)",
+      "value": 48000,
+      "unit": "Gt",
+      "range": [
+        25000,
+        48000
+      ],
+      "certainty": "extrapolation",
+      "method": "model:artemieva2020; scaling:kring2002 (transient-cavity scaling)",
+      "sources": [
+        "artemieva2020",
+        "kring2002"
+      ],
+      "locator": "artemieva2020 §4.1 & Table 1 (4.8e16 kg); kring2002 §2.1 [9] (>1e4 km3, >25 trillion t)",
+      "notes": "Not measured. 4.8e16 kg = ejecta-curtain mass in SOVA vertical-impact model; kring2002 gives >2.5e16 kg as a scaling lower bound. Only a few % of this reaches distal sites.",
+      "time": null
+    },
+    {
+      "id": "ejecta.transient_cavity_volume",
+      "group": "ejecta",
+      "label": "Objętość materiału przemieszczonego w kraterze przejściowym",
+      "value": 100000,
+      "unit": "km³",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "scaling:(3π/10)R_tc^3 for ~100 km transient cavity",
+      "sources": [
+        "kring2002"
+      ],
+      "locator": "kring2002 §2.1 [9]",
+      "notes": "Displaced, not all ejected; >1e4 km3 ejected.",
+      "time": null
+    },
+    {
+      "id": "ejecta.melt_volume_total",
+      "group": "ejecta",
+      "label": "Całkowita objętość stopu skał podłoża",
+      "value": 23000,
+      "unit": "km³",
+      "range": [
+        18000,
+        28000
+      ],
+      "certainty": "extrapolation",
+      "method": "model:artemieva2009",
+      "sources": [
+        "artemieva2009"
+      ],
+      "locator": "artemieva2009 §4.2",
+      "notes": "~80% remains in/near crater; ~3% ejected beyond rim at >1 km/s. Hydrocode values 2.9–4.9e4 km3 melt and 2.6–8.4e3 km3 vapor (Pierazzo et al. 1998) are quoted in kring2002 §2.1.",
+      "time": null
+    },
+    {
+      "id": "ejecta.volume_gt5kms",
+      "group": "ejecta",
+      "label": "Objętość wyrzutów o prędkości >5 km/s (mogących dotrzeć globalnie)",
+      "value": 770,
+      "unit": "km³",
+      "range": [
+        770,
+        1630
+      ],
+      "certainty": "extrapolation",
+      "method": "model:artemieva2009",
+      "sources": [
+        "artemieva2009",
+        "morgan2022"
+      ],
+      "locator": "artemieva2009 §4.1, Table 3; morgan2022 Abstract (\"several thousand gigatonnes … >5 km/s\")",
+      "notes": "770 km3 = standard 45° model (minimum estimate); max for 30° impact. Review states several thousand Gt at >5 km/s.",
+      "time": null
+    },
+    {
+      "id": "ejecta.plume_mass",
+      "group": "ejecta",
+      "label": "Masa materiału pióropusza parowego (wyrzuty wysokoenergetyczne)",
+      "value": 10000,
+      "unit": "Gt",
+      "range": [
+        100,
+        25000
+      ],
+      "certainty": "contested",
+      "method": "model:kring2002 (from Pierazzo et al. 1998 hydrocode); model:artemieva2020",
+      "sources": [
+        "kring2002",
+        "artemieva2020"
+      ],
+      "locator": "kring2002 §5.1 [40] (1–2.5e16 kg); artemieva2020 §4.1 (~1e14 kg vertical model; 1.6–6.9e14 kg to distal sites for 45–60° wet target)",
+      "notes": "Two orders of magnitude disagreement between plume masses used for thermal-pulse calculations; controls re-entry energy.",
+      "time": null
+    },
+    {
+      "id": "ejecta.distal_layer_thickness",
+      "group": "ejecta",
+      "label": "Grubość dystalnej warstwy K-Pg (>4000–6000 km)",
+      "value": 3,
+      "unit": "mm",
+      "range": [
+        2,
+        4
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "smit1999",
+        "artemieva2009",
+        "artemieva2020",
+        "gulick2019"
+      ],
+      "locator": "artemieva2009 §1 (\"no more than 2–4 mm\", >4000 km) & §2.1 (2–3 mm); artemieva2020 §1, §4.1 (~3 mm, >6000 km); gulick2019 Introduction (2–3 mm, >6000 km); smit1999 Abstract (mm-thin)",
+      "notes": "Near-constant thickness worldwide; not reproduced by purely ballistic models.",
+      "time": null
+    },
+    {
+      "id": "ejecta.distal_layer_mass",
+      "group": "ejecta",
+      "label": "Masa dystalnej warstwy K-Pg",
+      "value": 3000,
+      "unit": "Gt",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "scaling:thickness × area × density 2600 kg/m3",
+      "sources": [
+        "artemieva2020"
+      ],
+      "locator": "artemieva2020 §4.1",
+      "notes": "~3e15 kg; microkrystites ~66% → ~2e15 kg (2000 Gt).",
+      "time": null
+    },
+    {
+      "id": "ejecta.spherule_volume_global",
+      "group": "ejecta",
+      "label": "Globalna objętość sferul w warstwie K-Pg",
+      "value": 850,
+      "unit": "km³",
+      "range": [
+        770,
+        850
+      ],
+      "certainty": "extrapolation",
+      "method": "measured+extrapolated (Smit 1999) vs model:artemieva2009",
+      "sources": [
+        "artemieva2009",
+        "smit1999"
+      ],
+      "locator": "artemieva2009 §2.1 (850 km3 of spherules in total clay volume 1000–1500 km3, citing Smit 1999) and §4.1 (model ≥770 km3)",
+      "notes": "850 km3 is quoted from Smit 1999 via artemieva2009 (Smit full text not read).",
+      "time": null
+    },
+    {
+      "id": "ejecta.spherule_column_mass",
+      "group": "ejecta",
+      "label": "Masa sferul na jednostkę powierzchni (globalnie)",
+      "value": 4.4,
+      "unit": "kg/m²",
+      "range": [
+        4.4,
+        10
+      ],
+      "certainty": "extrapolation",
+      "method": "model input:toon2016; estimate:melosh1990 via robertson2013/morgan2013",
+      "sources": [
+        "toon2016",
+        "robertson2013",
+        "morgan2013"
+      ],
+      "locator": "toon2016 Table 1 (2.3e18 g; 0.44 g/cm2); robertson2013 [5] and morgan2013 §2.5 [14] (10 kg/m2 used by Melosh et al. 1990)",
+      "notes": "Column of re-entering spherules determines both energy deposited and self-shielding.",
+      "time": null
+    },
+    {
+      "id": "ejecta.thickness_300_400km",
+      "group": "ejecta",
+      "label": "Grubość osadu zdarzenia K-Pg w odległości ~300–400 km",
+      "value": 45,
+      "unit": "m",
+      "range": [
+        10,
+        80
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "schulte2010"
+      ],
+      "locator": "schulte2010 SOM Table S1 (\"Very proximal … 10 to >80 m\")",
+      "notes": "Event deposit (breccias, ejecta, flows), not pure ballistic fallout. Value 45 m is a mid-range placeholder; upper bound open-ended (>80 m).",
+      "time": null
+    },
+    {
+      "id": "ejecta.thickness_albion_360km",
+      "group": "ejecta",
+      "label": "Grubość wyrzutów na wyspie Albion (Belize, 360 km)",
+      "value": 16,
+      "unit": "m",
+      "range": [
+        1,
+        17
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "pope1999"
+      ],
+      "locator": "pope1999 Abstract & section \"Albion Formation spheroid bed/diamictite bed\"",
+      "notes": "Basal spheroid bed ~1 m (0.10–1.72 m, up to 4 flows) + diamictite ~15 m (top eroded, original thickness unknown); blocks up to ~8 m.",
+      "time": null
+    },
+    {
+      "id": "ejecta.thickness_500_1000km",
+      "group": "ejecta",
+      "label": "Grubość osadu zdarzenia K-Pg w odległości ~500–1000 km",
+      "value": 0.5,
+      "unit": "m",
+      "range": [
+        0.1,
+        10
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "schulte2010",
+        "hildebrand1990",
+        "kring2002",
+        "artemieva2009"
+      ],
+      "locator": "schulte2010 SOM Table S1 (\"dm to 10 m\"); hildebrand1990 Abstract (Haiti ~50 cm); kring2002 [13] (Haiti ~46 cm); artemieva2009 §2.2 (Beloc 20–30 cm + 20–40 cm)",
+      "notes": "Thicker values include tsunami/mass-flow components around the Gulf of Mexico (up to 9 m in smit1999). 0.5 m = Haiti ejecta layer.",
+      "time": null
+    },
+    {
+      "id": "ejecta.thickness_2000_4000km",
+      "group": "ejecta",
+      "label": "Grubość warstwy K-Pg w Ameryce Płn. (2000–4000 km)",
+      "value": 1.5,
+      "unit": "cm",
+      "range": [
+        0.5,
+        10
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "artemieva2009",
+        "kring2002",
+        "schulte2010",
+        "smit1999"
+      ],
+      "locator": "artemieva2009 §1 (0.5–2.0 cm, dual layer); kring2002 [13] (Raton Basin 1–2 cm); schulte2010 SOM Table S1 (\"Intermediate … 1 to 10 cm\"); smit1999 Abstract (cm-thick, 2500–4000 km)",
+      "notes": "Dual layer: lower spherule (ejecta-curtain) layer + upper Ir-rich \"fireball\" layer.",
+      "time": null
+    },
+    {
+      "id": "ejecta.spherule_diameter_proximal",
+      "group": "ejecta",
+      "label": "Średnica sferul szklistych ~1000 km (Haiti, Meksyk)",
+      "value": 3.5,
+      "unit": "mm",
+      "range": [
+        1,
+        6
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "artemieva2009",
+        "depalma2019",
+        "kring2002"
+      ],
+      "locator": "artemieva2009 §2.2 (Beloc 1–6 mm); depalma2019 \"Ejecta…\" (Beloc avg 3–4 mm up to ≥8 mm; Mimbral 3–5 mm, blebs to 15 mm); kring2002 [14] (Haiti spherical mean 1.25±0.49 mm, lengths to 10 mm)",
+      "notes": "Reported averages differ between studies (sample/method dependent).",
+      "time": null
+    },
+    {
+      "id": "ejecta.spherule_diameter_3000km",
+      "group": "ejecta",
+      "label": "Średnica sferul ~3000 km (Tanis, Gorgonilla)",
+      "value": 1.0,
+      "unit": "mm",
+      "range": [
+        0.3,
+        1.4
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "depalma2019",
+        "kring2002"
+      ],
+      "locator": "depalma2019 (Tanis 0.3–1.4 mm; Gorgonilla ~1 mm); kring2002 [14] (Wyoming 0.04–1.4 mm, mean 0.90±0.17 mm)",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "ejecta.spherule_diameter_distal",
+      "group": "ejecta",
+      "label": "Średnica mikrokrystytów w warstwie dystalnej",
+      "value": 250,
+      "unit": "µm",
+      "range": [
+        50,
+        500
+      ],
+      "certainty": "fact",
+      "method": "measured (Smit 1999 via kring2002); model:johnson2012",
+      "sources": [
+        "kring2002",
+        "johnson2012",
+        "artemieva2020"
+      ],
+      "locator": "kring2002 [18]–[19] (avg ~250 µm; spinel-bearing 30–500 µm); johnson2012 Abstract (model ~250 µm); artemieva2020 §4.2 (50–250 µm)",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "ejecta.shocked_quartz_max_size",
+      "group": "ejecta",
+      "label": "Maks. rozmiar ziaren kwarcu szokowego vs odległość (Haiti → N. Zelandia)",
+      "value": 1250,
+      "unit": "µm",
+      "range": [
+        110,
+        1250
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "kring2002",
+        "morgan2006",
+        "bohor1984"
+      ],
+      "locator": "kring2002 Table 1 (Haiti 1250 µm; W. Interior 480–640 µm; Europe 120–190 µm; NZ 110 µm; Pacific mean ≤50 µm); morgan2006 Abstract (gradual decrease with paleodistance)",
+      "notes": "Max grain size ~ D^-0.6 (Morgan et al. 2006, as cited in artemieva2009 §5.4).",
+      "time": null
+    },
+    {
+      "id": "ejecta.shocked_quartz_volume",
+      "group": "ejecta",
+      "label": "Globalna objętość kwarcu szokowego w warstwie K-Pg",
+      "value": 0.09,
+      "unit": "km³",
+      "range": [
+        0.044,
+        0.141
+      ],
+      "certainty": "extrapolation",
+      "method": "measured counts extrapolated globally",
+      "sources": [
+        "artemieva2009"
+      ],
+      "locator": "artemieva2009 §2.1, Table 1",
+      "notes": "Distal (>3000 km) part 0.017–0.053 km3.",
+      "time": null
+    },
+    {
+      "id": "ejecta.ir_enrichment",
+      "group": "ejecta",
+      "label": "Wzbogacenie w iryd względem tła (Gubbio / Stevns Klint / N. Zelandia)",
+      "value": 30,
+      "unit": "",
+      "range": [
+        20,
+        160
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "alvarez1980"
+      ],
+      "locator": "alvarez1980 Abstract",
+      "notes": "~30x Italy, ~160x Denmark, ~20x New Zealand.",
+      "time": null
+    },
+    {
+      "id": "ejecta.ir_fluence",
+      "group": "ejecta",
+      "label": "Średni strumień irydu w warstwie K-Pg",
+      "value": 47,
+      "unit": "ng/cm²",
+      "range": [
+        40,
+        55
+      ],
+      "certainty": "fact",
+      "method": "measured (compilation)",
+      "sources": [
+        "artemieva2009",
+        "kring2002"
+      ],
+      "locator": "artemieva2009 §2 (40–55e-9 g/cm2); kring2002 [4] (site range 3–340 ng/cm2)",
+      "notes": "Total Ir worldwide 2.0–2.8e8 kg (artemieva2009 §2).",
+      "time": null
+    },
+    {
+      "id": "ejecta.ir_peak_concentration",
+      "group": "ejecta",
+      "label": "Maks. koncentracja Ir (przykłady: Stevns Klint, Gubbio, Starkville, Tanis)",
+      "value": 48,
+      "unit": "ppb",
+      "range": [
+        3.8,
+        56
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "schulte2010",
+        "depalma2019"
+      ],
+      "locator": "schulte2010 SOM Table S1 (Stevns Klint 48, Gubbio 8, Starkville South 56 ppb); depalma2019 (Tanis 3.8 ppb)",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "ejecta.escape_fraction",
+      "group": "ejecta",
+      "label": "Udział wyrzutów wysokoenergetycznych uciekających z Ziemi",
+      "value": 12,
+      "unit": "%",
+      "range": [
+        5,
+        12
+      ],
+      "certainty": "extrapolation",
+      "method": "model:kring2002; model:artemieva2009",
+      "sources": [
+        "kring2002",
+        "artemieva2009"
+      ],
+      "locator": "kring2002 Abstract, [37] (~12% of plume material); artemieva2009 §4.1 (5% of projectile, standard model)",
+      "notes": "Different reference quantities (plume material vs projectile).",
+      "time": null
+    },
+    {
+      "id": "ejecta.reentry_velocity",
+      "group": "ejecta",
+      "label": "Prędkość wejścia wyrzutów w atmosferę",
+      "value": 6.5,
+      "unit": "km/s",
+      "range": [
+        3,
+        11
+      ],
+      "certainty": "extrapolation",
+      "method": "model:morgan2013; model:kring2002",
+      "sources": [
+        "morgan2013",
+        "kring2002"
+      ],
+      "locator": "morgan2013 §4.2 [29] & §5.1 [32] (early ejecta 4–4.5 km/s; mean 4.5/6.5/7.5 km/s proximal/intermediate/distal); kring2002 [40] (~3–11 km/s)",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "ejecta.reentry_energy_total",
+      "group": "ejecta",
+      "label": "Całkowita energia zdeponowana w atmosferze przez powracające wyrzuty",
+      "value": 7e+23,
+      "unit": "J",
+      "range": [
+        4e+23,
+        1e+24
+      ],
+      "certainty": "extrapolation",
+      "method": "model:kring2002",
+      "sources": [
+        "kring2002",
+        "robertson2004"
+      ],
+      "locator": "kring2002 §5 [38] (~1e13 t at hypervelocity, 4e23–1e24 J); robertson2004 p. 762 (Melosh 1990: 1.3–5e8 J/m2)",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "ejecta.dust_cloud_speed",
+      "group": "ejecta",
+      "label": "Prędkość chmury pyłowej (oddziaływanie kurtyny wyrzutowej z atmosferą)",
+      "value": 3,
+      "unit": "km/s",
+      "range": [
+        1,
+        3
+      ],
+      "certainty": "extrapolation",
+      "method": "model:artemieva2020",
+      "sources": [
+        "artemieva2020"
+      ],
+      "locator": "artemieva2020 §4.1, Fig. 1 caption",
+      "notes": "Up to 3 km/s at >5000 km; >1 km/s at 8000 km after 1 h; 10–30% of curtain mass stays aloft (b=1–1.2).",
+      "time": null
+    },
+    {
+      "id": "ejecta.t_curtain_breakup",
+      "group": "ejecta",
+      "label": "Rozpad kurtyny wyrzutowej w szybką chmurę pyłową",
+      "value": 600,
+      "unit": "s",
+      "range": [
+        300,
+        600
+      ],
+      "certainty": "extrapolation",
+      "method": "model:artemieva2020",
+      "sources": [
+        "artemieva2020"
+      ],
+      "locator": "artemieva2020 §3, Figs 1–2",
+      "notes": "Curtain visible at 300 s, transforming by 600 s; for fine-rich SFD (b=1.2) curtain gone by 300 s.",
+      "time": {
+        "t": 600,
+        "range": [
+          300,
+          600
+        ]
+      }
+    },
+    {
+      "id": "ejecta.t_arrival_1000km",
+      "group": "ejecta",
+      "label": "Czas dotarcia wyrzutów kurtyny na ~1000 km",
+      "value": 450,
+      "unit": "s",
+      "range": [
+        400,
+        600
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling:flat-Earth ballistic, 45° launch, no drag (computed in this thread)",
+      "sources": [
+        "artemieva2009"
+      ],
+      "locator": "Own calculation (v≈3.1 km/s → ~7.5 min); consistent with artemieva2009 §5.5 (ejecta arriving ~1000 km re-enter at ~2 km/s at 100 km altitude)",
+      "notes": "NOT a published value — simple ballistic estimate for animation pacing; cross-checks: same method gives ~11 min at 2250 km (morgan2013: ~10 min) and ~13 min at 3050 km (depalma2019: 13–25 min).",
+      "time": {
+        "t": 450,
+        "range": [
+          400,
+          600
+        ]
+      }
+    },
+    {
+      "id": "ejecta.t_arrival_2000km",
+      "group": "ejecta",
+      "label": "Czas dotarcia pierwszych wyrzutów do górnej atmosfery na 2000–2500 km",
+      "value": 600,
+      "unit": "s",
+      "range": [
+        120,
+        900
+      ],
+      "certainty": "contested",
+      "method": "model:morgan2013; model:kring2002",
+      "sources": [
+        "morgan2013",
+        "kring2002"
+      ],
+      "locator": "morgan2013 §4.2 [29] (~10 min, proximal 2000–2500 km); kring2002 §6 [59] (high-energy ejecta above Colorado 2–3 min; low-energy ejecta ~15 min)",
+      "notes": "Kring & Durda assume plume speeds up to 11.2 km/s (power-law), giving earlier arrival; 3D SOVA gives ~10 min.",
+      "time": {
+        "t": 600,
+        "range": [
+          120,
+          900
+        ]
+      }
+    },
+    {
+      "id": "ejecta.t_arrival_tanis_3000km",
+      "group": "ejecta",
+      "label": "Czas dotarcia sferul do Tanis (~3050 km)",
+      "value": 900,
+      "unit": "s",
+      "range": [
+        780,
+        1500
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling:ballistic recalculation (author)",
+      "sources": [
+        "depalma2019"
+      ],
+      "locator": "depalma2019 \"Ejecta, Connection with Chicxulub, and Chronology\" and seiche discussion",
+      "notes": "Curtain spherules 13–25 min (launch 30–60°), start ~15 min; bulk within 1–2 h; shocked quartz from \"warm fireball\" ~38 min–2 h. Single-site interpretation.",
+      "time": {
+        "t": 900,
+        "range": [
+          780,
+          7200
+        ]
+      }
+    },
+    {
+      "id": "ejecta.t_arrival_europe",
+      "group": "ejecta",
+      "label": "Czas dotarcia wyrzutów nad Europę / strefę dystalną (7000–8000 km)",
+      "value": 1500,
+      "unit": "s",
+      "range": [
+        1080,
+        1980
+      ],
+      "certainty": "extrapolation",
+      "method": "model:kring2002; model:morgan2013",
+      "sources": [
+        "kring2002",
+        "morgan2013"
+      ],
+      "locator": "kring2002 [59] (central Europe 18–20 min); morgan2013 §4.2 [29] (distal 7000–8000 km ~33 min)",
+      "notes": "",
+      "time": {
+        "t": 1500,
+        "range": [
+          1080,
+          1980
+        ]
+      }
+    },
+    {
+      "id": "ejecta.t_arrival_antipode",
+      "group": "ejecta",
+      "label": "Czas dotarcia wyrzutów nad antypody",
+      "value": 2760,
+      "unit": "s",
+      "range": [
+        2460,
+        2760
+      ],
+      "certainty": "extrapolation",
+      "method": "model:kring2002",
+      "sources": [
+        "kring2002"
+      ],
+      "locator": "kring2002 §6 [59] (India 41–42 min; antipode 46 min)",
+      "notes": "Antipodal concentration and ~3 daily pulses over 3 days (kring2002 [44]).",
+      "time": {
+        "t": 2760,
+        "range": [
+          2460,
+          2760
+        ]
+      }
+    },
+    {
+      "id": "ejecta.t_arrival_global",
+      "group": "ejecta",
+      "label": "Czas globalnego rozprzestrzenienia chmury wyrzutów",
+      "value": 4.5,
+      "unit": "h",
+      "range": [
+        2,
+        5
+      ],
+      "certainty": "extrapolation",
+      "method": "model:morgan2022 (review of SOVA results); model:lyons2020",
+      "sources": [
+        "morgan2022",
+        "lyons2020",
+        "artemieva2009"
+      ],
+      "locator": "morgan2022 Key points (\"within 4–5 hours\"); lyons2020 Abstract (\"within a few hours\"); artemieva2009 §5.5 (several hours, floating-debris mechanism)",
+      "notes": "",
+      "time": {
+        "t": 16200,
+        "range": [
+          7200,
+          18000
+        ]
+      }
+    },
+    {
+      "id": "ejecta.frac_reaccreted_2h",
+      "group": "ejecta",
+      "label": "Udział wyrzutów wysokoenergetycznych, które powróciły w ciągu 2 h",
+      "value": 25,
+      "unit": "%",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:kring2002",
+      "sources": [
+        "kring2002"
+      ],
+      "locator": "kring2002 Abstract, [35]",
+      "notes": "~55% within 8 h, ~85% within 72 h; most within 4 days (Fig. 7).",
+      "time": {
+        "t": 7200,
+        "range": null
+      }
+    },
+    {
+      "id": "ejecta.frac_reaccreted_8h",
+      "group": "ejecta",
+      "label": "Udział wyrzutów wysokoenergetycznych, które powróciły w ciągu 8 h",
+      "value": 55,
+      "unit": "%",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:kring2002",
+      "sources": [
+        "kring2002"
+      ],
+      "locator": "kring2002 Abstract, [35]",
+      "notes": "",
+      "time": {
+        "t": 28800,
+        "range": null
+      }
+    },
+    {
+      "id": "ejecta.t_ballistic_flight_max",
+      "group": "ejecta",
+      "label": "Maksymalny czas lotu balistycznego wyrzutów",
+      "value": 30,
+      "unit": "min",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:artemieva2009",
+      "sources": [
+        "artemieva2009"
+      ],
+      "locator": "artemieva2009 §5.6",
+      "notes": "Non-ballistic redistribution may take several hours; trajectories of some high-energy ejecta reach 50,000–100,000 km (kring2002 [34]).",
+      "time": null
+    },
+    {
+      "id": "ejecta.t_settling_1mm",
+      "group": "ejecta",
+      "label": "Czas opadania cząstek ~1 mm z 85 km",
+      "value": 1,
+      "unit": "h",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:Stokes settling (kring2002 Fig. 12)",
+      "sources": [
+        "kring2002"
+      ],
+      "locator": "kring2002 §5.1 [45], Fig. 12",
+      "notes": "1 µm particles >1 yr; quartz/spherules hours to a few days; ~250 µm spherules ~12 h through 800–1000 m of water (Caravaca), ~100 µm ~9 days through 5 km (GPC-3) [53].",
+      "time": null
+    },
+    {
+      "id": "ejecta.t_deposition_complete",
+      "group": "ejecta",
+      "label": "Czas depozycji całej warstwy K-Pg",
+      "value": 7,
+      "unit": "d",
+      "range": [
+        1,
+        14
+      ],
+      "certainty": "extrapolation",
+      "method": "model:artemieva2009; model:toon2016",
+      "sources": [
+        "artemieva2009",
+        "toon2016",
+        "kring2002"
+      ],
+      "locator": "artemieva2009 §5.6 & Conclusion 6; toon2016 §2.1.1 (spherules aloft only a few days)",
+      "notes": "Finest (1–10 µm) fraction stays aloft years (artemieva2020 §4.2).",
+      "time": null
+    },
+    {
+      "id": "thermal.ir_flux_peak",
+      "group": "thermal",
+      "label": "Szczytowy strumień podczerwieni przy powierzchni od powracających wyrzutów",
+      "value": 15,
+      "unit": "kW/m²",
+      "range": [
+        5,
+        56
+      ],
+      "certainty": "contested",
+      "method": "model:morgan2013; model:goldin2009; model:kring2002; estimate:melosh1990",
+      "sources": [
+        "morgan2013",
+        "goldin2009",
+        "kring2002",
+        "melosh1990",
+        "robertson2004",
+        "belcher2003"
+      ],
+      "locator": "goldin2009 Abstract (5–15 kW/m2 distal); morgan2013 Fig. 4 (≈56 proximal/≈55 intermediate/≈20 distal, downrange 45°); kring2002 [42] (≥12.5 kW/m2 >20 min where fires ignite); robertson2004 p. 762 (Melosh 1990: ~10 kW/m2); belcher2003 (<19 kW/m2 inferred upper bound, N. America)",
+      "notes": "Strongly site-, azimuth- and impact-angle-dependent. See disagreements. Value 15 = upper end of Goldin & Melosh distal range; use regional params below for maps.",
+      "time": {
+        "t": 2100,
+        "range": [
+          600,
+          2700
+        ]
+      }
+    },
+    {
+      "id": "thermal.ir_flux_peak_proximal_downrange",
+      "group": "thermal",
+      "label": "Szczytowy strumień IR, 2000–2500 km w kierunku downrange (model 45°)",
+      "value": 56,
+      "unit": "kW/m²",
+      "range": [
+        44,
+        57
+      ],
+      "certainty": "extrapolation",
+      "method": "model:morgan2013",
+      "sources": [
+        "morgan2013"
+      ],
+      "locator": "morgan2013 Fig. 4a (digitized: 0–30° ≈56, 30–60° ≈47, 60–90° ≈44)",
+      "notes": "Pulse ~1–2 min; self-shielding included; opaque black-body spherules 1 mm, 4.5 km/s.",
+      "time": {
+        "t": 640,
+        "range": [
+          600,
+          750
+        ]
+      }
+    },
+    {
+      "id": "thermal.ir_flux_peak_intermediate_downrange",
+      "group": "thermal",
+      "label": "Szczytowy strumień IR, 4000–5000 km downrange (model 45°)",
+      "value": 55,
+      "unit": "kW/m²",
+      "range": [
+        23,
+        56
+      ],
+      "certainty": "extrapolation",
+      "method": "model:morgan2013",
+      "sources": [
+        "morgan2013"
+      ],
+      "locator": "morgan2013 Fig. 4b (digitized: 0–30° ≈55, 30–60° ≈30, 60–90° ≈23)",
+      "notes": "Pulse ~2–3 min (0–30°) to ~5 min (60–90°). Absolute timing assumed = arrival (~10–33 min) + figure time; inference.",
+      "time": null
+    },
+    {
+      "id": "thermal.ir_flux_peak_distal_downrange",
+      "group": "thermal",
+      "label": "Szczytowy strumień IR, 7000–8000 km downrange (model 45°)",
+      "value": 20,
+      "unit": "kW/m²",
+      "range": [
+        7,
+        20
+      ],
+      "certainty": "extrapolation",
+      "method": "model:morgan2013",
+      "sources": [
+        "morgan2013"
+      ],
+      "locator": "morgan2013 Fig. 4c (digitized: 0–30° ≈20, 30–60° ≈10, 60–90° ≈7)",
+      "notes": "Up to ×2 with 100% reflective dust cap; +50–70% and ×2 duration with semi-transparent spherules (Fig. 7, §6.1).",
+      "time": {
+        "t": 2110,
+        "range": [
+          1980,
+          2700
+        ]
+      }
+    },
+    {
+      "id": "thermal.ir_flux_uprange_far",
+      "group": "thermal",
+      "label": "Strumień IR w kierunku uprange >3000 km",
+      "value": 0,
+      "unit": "kW/m²",
+      "range": [
+        0,
+        1
+      ],
+      "certainty": "extrapolation",
+      "method": "model:morgan2013",
+      "sources": [
+        "morgan2013"
+      ],
+      "locator": "morgan2013 §5.2 [36], §6.4 [48], Fig. 3",
+      "notes": "\"Negligible\" (azimuth 120–180°, >3000 km). Upper bound 1 kW/m2 is a placeholder for \"below solar\".",
+      "time": null
+    },
+    {
+      "id": "thermal.ir_flux_global_melosh",
+      "group": "thermal",
+      "label": "Globalny strumień IR wg Melosha i in. (1990), bez samoekranowania",
+      "value": 10,
+      "unit": "kW/m²",
+      "range": null,
+      "certainty": "contested",
+      "method": "estimate:melosh1990",
+      "sources": [
+        "melosh1990",
+        "robertson2004"
+      ],
+      "locator": "melosh1990 Abstract (50–150× solar input, 1 to several hours); robertson2004 p. 762 (quote: \"of the order of 10 kW m-2 over periods ranging from one to several hours\")",
+      "notes": "Superseded in magnitude/duration by self-shielded models (goldin2009, morgan2013) but still defended by robertson2013.",
+      "time": null
+    },
+    {
+      "id": "thermal.ir_duration",
+      "group": "thermal",
+      "label": "Czas trwania impulsu IR przy powierzchni",
+      "value": 30,
+      "unit": "min",
+      "range": [
+        2,
+        240
+      ],
+      "certainty": "contested",
+      "method": "model:goldin2009; model:morgan2013; estimate:melosh1990",
+      "sources": [
+        "goldin2009",
+        "morgan2013",
+        "melosh1990",
+        "robertson2013"
+      ],
+      "locator": "goldin2009 Abstract (> solar ~30 min; >5 kW/m2 few min); morgan2013 Fig. 4 (pulses ~1–10 min); melosh1990 Abstract (1 to several hours); robertson2013 [30] (ceased after a few hours)",
+      "notes": "Self-shielded models: minutes; Melosh 1990 / heat-fire view: hours. Kring & Durda: heating in pulses over ~3 days near antipode.",
+      "time": null
+    },
+    {
+      "id": "thermal.atm_power_peak",
+      "group": "thermal",
+      "label": "Szczytowa moc dostarczana do atmosfery przez powracające wyrzuty",
+      "value": 350,
+      "unit": "kW/m²",
+      "range": [
+        100,
+        350
+      ],
+      "certainty": "extrapolation",
+      "method": "model:kring2002",
+      "sources": [
+        "kring2002"
+      ],
+      "locator": "kring2002 Fig. 8 caption",
+      "notes": "Assumes ~1/3 reaches the ground (after Melosh et al. 1990); highest near impact site and antipode.",
+      "time": null
+    },
+    {
+      "id": "thermal.ground_fraction",
+      "group": "thermal",
+      "label": "Udział promieniowania docierającego do powierzchni",
+      "value": 0.33,
+      "unit": "",
+      "range": [
+        0.33,
+        0.6
+      ],
+      "certainty": "extrapolation",
+      "method": "assumption:kring2002 (after Melosh 1990); model:morgan2013",
+      "sources": [
+        "kring2002",
+        "morgan2013"
+      ],
+      "locator": "kring2002 [42] (~1/3); morgan2013 §5.2 [35] (lower atmosphere absorbs ~40%)",
+      "notes": "Different definitions (fraction of deposited power vs transmission below spherule layer).",
+      "time": null
+    },
+    {
+      "id": "thermal.ignition_wood_spontaneous",
+      "group": "thermal",
+      "label": "Próg samozapłonu drewna",
+      "value": 51,
+      "unit": "kW/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "compilation:fire-science thresholds",
+      "sources": [
+        "durda2004"
+      ],
+      "locator": "durda2004 Abstract",
+      "notes": "For ≥2 min. Piloted wood: 20 kW/m2 for ≥20 min; foliage/litter: 28 kW/m2 for ≥1 min. Kring & Durda 2002 criterion: 12.5 kW/m2 for >20 min.",
+      "time": null
+    },
+    {
+      "id": "thermal.ignition_litter",
+      "group": "thermal",
+      "label": "Próg zapłonu liści i ściółki",
+      "value": 28,
+      "unit": "kW/m²",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "compilation:fire-science thresholds",
+      "sources": [
+        "durda2004",
+        "belcher2015"
+      ],
+      "locator": "durda2004 Abstract; belcher2015 Abstract (experiments: dry litter ignites, live fuels typically not)",
+      "notes": "For ≥1 min.",
+      "time": null
+    },
+    {
+      "id": "thermal.na_ground_flux_upper_bound",
+      "group": "thermal",
+      "label": "Górna granica strumienia przy gruncie z zapisu węgli drzewnych (Ameryka Płn.)",
+      "value": 19,
+      "unit": "kW/m²",
+      "range": [
+        6,
+        19
+      ],
+      "certainty": "contested",
+      "method": "inference from charcoal record",
+      "sources": [
+        "belcher2003",
+        "belcher2005"
+      ],
+      "locator": "belcher2003 Abstract (<19 kW/m2 ground; <95 kW/m2 to atmosphere); belcher2005 Abstract (≤6 kW/m2 for more than a few hours)",
+      "notes": "Depends on interpretation of charcoal depletion, disputed by morgan2013 §3.1 and robertson2013 [10].",
+      "time": null
+    },
+    {
+      "id": "thermal.downrange_azimuth",
+      "group": "thermal",
+      "label": "Azymut kierunku downrange (kierunek najsilniejszego impulsu)",
+      "value": 225,
+      "unit": "°",
+      "range": [
+        225,
+        315
+      ],
+      "certainty": "contested",
+      "method": "inference from crater structure (collins2020) vs shocked-quartz distribution (morgan2006)",
+      "sources": [
+        "collins2020",
+        "morgan2006",
+        "morgan2013"
+      ],
+      "locator": "collins2020 Abstract (impact from the NE, 45–60° → downrange ≈SW); morgan2006 Abstract (uprange to SE ±45° → downrange ≈NW)",
+      "notes": "Azimuth in degrees clockwise from north. morgan2013 shows thermal pulse strongly depends on this direction; collins2020 notes a steep impact gives a nearly symmetric distribution of ejected rock.",
+      "time": null
+    },
+    {
+      "id": "fireball.impact_energy_ref",
+      "group": "fireball",
+      "label": "Energia uderzenia przyjęta w obliczeniach kuli ognistej",
+      "value": 2.8e+23,
+      "unit": "J",
+      "range": [
+        1e+23,
+        1.26e+24
+      ],
+      "certainty": "contested",
+      "method": "model estimates",
+      "sources": [
+        "toon2016",
+        "morgan2022",
+        "morgan2013"
+      ],
+      "locator": "toon2016 Table 1 (2.8e23 J = 6.8e7 Mt); morgan2022 Abstract (~1e23 J); morgan2013 §2.4 (1.2–3e8 Mt ≈ 5e23–1.3e24 J; 1.5e8 Mt used)",
+      "notes": "Depends on impactor size/velocity (other threads). Conversions: 1 Mt = 4.184e15 J.",
+      "time": null
+    },
+    {
+      "id": "fireball.radius_max_radiation",
+      "group": "fireball",
+      "label": "Promień kuli ognistej w chwili maksimum promieniowania",
+      "value": 131,
+      "unit": "km",
+      "range": [
+        93,
+        216
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling:Collins et al. 2005 Eq. 32 (R=0.002 E^1/3), computed in this thread",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "collins2005 Eq. 32 & text (\"10–15 times the impactor diameter\")",
+      "notes": "Computed for E=1e23–1.26e24 J (value for 2.8e23 J). Extrapolation ~8 orders of magnitude beyond nuclear calibration (morgan2013 §3.3).",
+      "time": {
+        "t": 7,
+        "range": [
+          5,
+          12
+        ]
+      }
+    },
+    {
+      "id": "fireball.t_max_radiation",
+      "group": "fireball",
+      "label": "Czas maksimum promieniowania kuli ognistej",
+      "value": 7,
+      "unit": "s",
+      "range": [
+        5,
+        12
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling:Collins et al. 2005 Eq. 33 (T=R/v_i), v_i 18–20 km/s, computed in this thread",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "collins2005 Eq. 33",
+      "notes": "",
+      "time": {
+        "t": 7,
+        "range": [
+          5,
+          12
+        ]
+      }
+    },
+    {
+      "id": "fireball.radiation_duration",
+      "group": "fireball",
+      "label": "Czas trwania promieniowania kuli ognistej",
+      "value": 28,
+      "unit": "min",
+      "range": [
+        1,
+        156
+      ],
+      "certainty": "extrapolation",
+      "method": "scaling:Collins et al. 2005 Eq. 35 (τ=ηE/(2πR²σT*⁴)), η=3e-3, T*=3000 K, computed in this thread",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "collins2005 Eqs. 34–35",
+      "notes": "Nominal 20–47 min for E range; τ ∝ η, and η is uncertain over 1e-4–1e-2 (Collins 2005), hence the 1–156 min range.",
+      "time": {
+        "t": 7,
+        "range": [
+          5,
+          9400
+        ]
+      }
+    },
+    {
+      "id": "fireball.luminous_efficiency",
+      "group": "fireball",
+      "label": "Sprawność świetlna (udział energii wypromieniowanej)",
+      "value": 0.003,
+      "unit": "",
+      "range": [
+        0.0001,
+        0.01
+      ],
+      "certainty": "extrapolation",
+      "method": "compilation:collins2005",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "collins2005 \"Thermal radiation\" section",
+      "notes": "Poorly constrained for hypervelocity impacts.",
+      "time": null
+    },
+    {
+      "id": "fireball.transparency_temperature",
+      "group": "fireball",
+      "label": "Temperatura przezroczystości (powietrze)",
+      "value": 3000,
+      "unit": "K",
+      "range": [
+        2000,
+        3000
+      ],
+      "certainty": "extrapolation",
+      "method": "compilation:collins2005",
+      "sources": [
+        "collins2005"
+      ],
+      "locator": "collins2005 \"Thermal radiation\" section",
+      "notes": "Silicate vapor ~6000 K; air limits; program uses 3000 K.",
+      "time": null
+    },
+    {
+      "id": "fireball.plume_initial_temperature",
+      "group": "fireball",
+      "label": "Początkowa temperatura rdzenia pióropusza parowego",
+      "value": 10000,
+      "unit": "K",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:Pierazzo et al. 1998 via kring2002; collins2005",
+      "sources": [
+        "kring2002",
+        "collins2005"
+      ],
+      "locator": "kring2002 §2.2 [22]; collins2005 \"Thermal radiation\"",
+      "notes": ">10,000 K initially; cools to a few hundred–~1000 K in about a minute; edges >1000 K in first minute; plume material generated within first ~20 s.",
+      "time": {
+        "t": 0,
+        "range": [
+          0,
+          60
+        ]
+      }
+    },
+    {
+      "id": "fireball.plume_upper_velocity",
+      "group": "fireball",
+      "label": "Prędkość górnej części pióropusza (35 s po uderzeniu)",
+      "value": 6,
+      "unit": "km/s",
+      "range": [
+        6,
+        11
+      ],
+      "certainty": "extrapolation",
+      "method": "model:artemieva2009",
+      "sources": [
+        "artemieva2009"
+      ],
+      "locator": "artemieva2009 §4.1, Fig. 2 caption",
+      "notes": "Upper plume (projectile + sediments) >6 km/s; lower plume (sediment + basement) ≤2 km/s; basement max 2.7 km/s at 10 s; all basement below 70 km at 35 s.",
+      "time": {
+        "t": 35,
+        "range": null
+      }
+    },
+    {
+      "id": "fireball.plume_column_width",
+      "group": "fireball",
+      "label": "Szerokość wznoszącej się kolumny pióropusza",
+      "value": 200,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:Pierazzo et al. 1998 via kring2002",
+      "sources": [
+        "kring2002"
+      ],
+      "locator": "kring2002 §3 [26] (\"≲2 times the diameter of the transient crater\")",
+      "notes": "Transient crater ~100 km.",
+      "time": null
+    },
+    {
+      "id": "fireball.ejecta_apogee_max",
+      "group": "fireball",
+      "label": "Maksymalna wysokość trajektorii wyrzutów wysokoenergetycznych",
+      "value": 100000,
+      "unit": "km",
+      "range": [
+        50000,
+        100000
+      ],
+      "certainty": "extrapolation",
+      "method": "model:kring2002",
+      "sources": [
+        "kring2002"
+      ],
+      "locator": "kring2002 §4.2 [34], Fig. 5",
+      "notes": "Most within 50,000 km; several percent reach ≥100,000 km (\"nearly halfway to the Moon\").",
+      "time": null
+    },
+    {
+      "id": "fireball.spherule_condensate_size",
+      "group": "fireball",
+      "label": "Rozmiar sferul kondensujących w pióropuszu (model)",
+      "value": 250,
+      "unit": "µm",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:johnson2012",
+      "sources": [
+        "johnson2012"
+      ],
+      "locator": "johnson2012 Abstract",
+      "notes": "10 km impactor at ~21 km/s; smaller spherules form earlier in faster outer plume.",
+      "time": null
+    },
+    {
+      "id": "fires.ignition_radius_fireball",
+      "group": "fires",
+      "label": "Promień zapłonu roślinności przez kulę ognistą",
+      "value": 1500,
+      "unit": "km",
+      "range": [
+        1000,
+        3000
+      ],
+      "certainty": "contested",
+      "method": "scaling/model compilations",
+      "sources": [
+        "morgan2013",
+        "gulick2019"
+      ],
+      "locator": "morgan2013 §2.4 [12] (Toon et al. 1997 ~1250 km; Collins et al. 2005 ~1500 km; Shuvalov & Artemieva 2002 up to 3000 km), §3.3 [23] (revised ~2400 km with E^1/6 scaling); gulick2019 \"Evidence for Fire\" (1000–1500 km)",
+      "notes": "Primary sources Toon 1997 / Shuvalov & Artemieva 2002 not read in full — values via morgan2013.",
+      "time": {
+        "t": 10,
+        "range": [
+          5,
+          3000
+        ]
+      }
+    },
+    {
+      "id": "fires.soot_fluence",
+      "group": "fires",
+      "label": "Gęstość powierzchniowa sadzy w warstwie K-Pg",
+      "value": 2.2,
+      "unit": "mg/cm²",
+      "range": [
+        1.5,
+        21
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "wolbach1985",
+        "morgan2013",
+        "robertson2013"
+      ],
+      "locator": "morgan2013 §2.1 [5] (Wolbach et al. 1990: soot 2.2±0.7, elemental C 11±3 mg/cm2, 11 sites); wolbach1985 Abstract (0.021±0.006 g/cm2 carbon, 3 sites); robertson2013 [31] (1.4e-2 g/cm2)",
+      "notes": "Different fractions (fine soot vs total elemental/graphitic C) and site sets.",
+      "time": null
+    },
+    {
+      "id": "fires.soot_enrichment",
+      "group": "fires",
+      "label": "Wzbogacenie w węgiel elementarny (sadza) w iłach granicznych",
+      "value": 1000,
+      "unit": "",
+      "range": [
+        100,
+        10000
+      ],
+      "certainty": "fact",
+      "method": "measured",
+      "sources": [
+        "wolbach1988"
+      ],
+      "locator": "wolbach1988 Abstract",
+      "notes": "10^2–10^4-fold, five sites in Europe and New Zealand; isotopically uniform; coincides with Ir layer.",
+      "time": null
+    },
+    {
+      "id": "fires.soot_mass_total",
+      "group": "fires",
+      "label": "Całkowita masa sadzy/węgla elementarnego w warstwie K-Pg",
+      "value": 15,
+      "unit": "Gt",
+      "range": [
+        0.5,
+        70
+      ],
+      "certainty": "contested",
+      "method": "measured+extrapolated (Wolbach) vs target-source estimates",
+      "sources": [
+        "bardeen2017",
+        "toon2016",
+        "robertson2004",
+        "kaiho2016",
+        "lyons2020"
+      ],
+      "locator": "bardeen2017 Introduction (56,000 Tg EC incl. 15,000 Tg fine soot; earlier 70,000 Tg); toon2016 Table 1 (1.5–5.6e16 g); robertson2004 p. 763 (Wolbach 1988: (7±4)e16 g); kaiho2016 (500–2600 Tg BC); lyons2020 Abstract (0.75–2.5e15 g target BC)",
+      "notes": "Global inventory (~15–70 Gt) vs proposed target-derived soot (~0.5–2.6 Gt); source attribution contested.",
+      "time": null
+    },
+    {
+      "id": "fires.target_carbon_soot",
+      "group": "fires",
+      "label": "Czarny węgiel uwolniony ze skał w miejscu uderzenia",
+      "value": 1.6,
+      "unit": "Gt",
+      "range": [
+        0.5,
+        2.6
+      ],
+      "certainty": "contested",
+      "method": "model:lyons2020; model:kaiho2016",
+      "sources": [
+        "lyons2020",
+        "kaiho2016",
+        "robertson2013",
+        "morgan2013"
+      ],
+      "locator": "lyons2020 Abstract (7.5e14–2.5e15 g); kaiho2016 (500/1500/2600 Tg BC scenarios); robertson2013 [19] (target reduced C ~6e16 g, soot yield 3–10%); morgan2013 §3.2 [21] (2–2.6e16 g organic C combusted, 3–4× less than global BC)",
+      "notes": "Circled globe within a few hours (lyons2020).",
+      "time": {
+        "t": 10800,
+        "range": [
+          3600,
+          18000
+        ]
+      }
+    },
+    {
+      "id": "fires.charcoal_depletion_na",
+      "group": "fires",
+      "label": "Niedobór węgla drzewnego w warstwie K-Pg (Ameryka Płn.) względem tła",
+      "value": 6,
+      "unit": "",
+      "range": [
+        4,
+        15
+      ],
+      "certainty": "contested",
+      "method": "measured; interpretation contested",
+      "sources": [
+        "belcher2005",
+        "belcher2003",
+        "morgan2013",
+        "robertson2013"
+      ],
+      "locator": "belcher2005 Abstract (4–8× less); morgan2013 §2.2 [8] (4–15× lower, citing Belcher 2003, 2005), §3.1 [18] (reanalysis: per unit time 3–7500× more); robertson2013 [7]–[10]",
+      "notes": "~99% of organic matter uncharred (Belcher 2005, via morgan2013 [8]).",
+      "time": null
+    },
+    {
+      "id": "fires.biomass_burned_fraction",
+      "group": "fires",
+      "label": "Udział spalonej biosfery lądowej (gdyby cała sadza pochodziła z pożarów)",
+      "value": 25,
+      "unit": "%",
+      "range": [
+        18,
+        100
+      ],
+      "certainty": "contested",
+      "method": "inference from soot inventory",
+      "sources": [
+        "lyons2020",
+        "morgan2013"
+      ],
+      "locator": "lyons2020 Introduction (18%–100% implied); morgan2013 §2.1 [6] (Ivany & Salawitch 1993: ≥25% from δ13C)",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "fires.t_charring_baja",
+      "group": "fires",
+      "label": "Czas zwęglenia drzew w Baja California (~2500 km)",
+      "value": 20,
+      "unit": "min",
+      "range": [
+        5,
+        60
+      ],
+      "certainty": "extrapolation",
+      "method": "inference from tsunami arrival timing",
+      "sources": [
+        "santacatharina2022"
+      ],
+      "locator": "santacatharina2022 Abstract & Discussion (\"tens of minutes at most\")",
+      "notes": "Before tsunami arrival; consistent with ignition by plume or ejecta re-entry.",
+      "time": {
+        "t": 1200,
+        "range": [
+          300,
+          3600
+        ]
+      }
+    },
+    {
+      "id": "fires.t_charcoal_crater",
+      "group": "fires",
+      "label": "Dostawa węgla drzewnego do krateru Chicxulub",
+      "value": 24,
+      "unit": "h",
+      "range": [
+        1,
+        24
+      ],
+      "certainty": "fact",
+      "method": "measured (charcoal in IODP-ICDP M0077 core) + interpretation of timing",
+      "sources": [
+        "gulick2019"
+      ],
+      "locator": "gulick2019 Abstract, \"Evidence for Fire\", Fig. 4",
+      "notes": "Lower charcoal layer delivered by reflected tsunami/airfall within the first day; upper layers years later.",
+      "time": {
+        "t": 43200,
+        "range": [
+          3600,
+          86400
+        ]
+      }
+    },
+    {
+      "id": "fires.duration",
+      "group": "fires",
+      "label": "Czas trwania pożarów po uderzeniu",
+      "value": 24,
+      "unit": "h",
+      "range": [
+        12,
+        720
+      ],
+      "certainty": "speculation",
+      "method": "hypothesis / prescribed model scenario",
+      "sources": [
+        "robertson2013",
+        "bardeen2017",
+        "lyons2020",
+        "morgan2013"
+      ],
+      "locator": "robertson2013 [30] (\"days to weeks\"); bardeen2017 SI Fig. S8 (fires prescribed hours 12–36); lyons2020 Abstract (\"more delayed and protracted\"); morgan2013 §7 (within a few months)",
+      "notes": "No direct constraint on duration; 720 h placeholder upper bound for \"weeks\".",
+      "time": null
+    },
+    {
+      "id": "temperature.upper_atmosphere_reentry",
+      "group": "temperature",
+      "label": "Temperatura warstwy wejścia wyrzutów (~70 km)",
+      "value": 1100,
+      "unit": "K",
+      "range": [
+        800,
+        2000
+      ],
+      "certainty": "extrapolation",
+      "method": "model:Melosh 1990 via robertson2004; estimate:toon2016",
+      "sources": [
+        "robertson2004",
+        "toon2016",
+        "melosh1990"
+      ],
+      "locator": "robertson2004 p. 762 (800–1100 K at 70 km for several hours); toon2016 §4 (1000–2000 K)",
+      "notes": "Local temperatures >2300 °C inferred from spinel chemistry (Kyte & Bohor 1995, via kring2002 [38]).",
+      "time": {
+        "t": 3600,
+        "range": [
+          600,
+          14400
+        ]
+      }
+    },
+    {
+      "id": "temperature.surface_air_ir_only",
+      "group": "temperature",
+      "label": "Wzrost temperatury powietrza przy gruncie od samego impulsu IR (z dala od paliwa)",
+      "value": 10,
+      "unit": "K",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:Melosh 1990 via robertson2004",
+      "sources": [
+        "robertson2004",
+        "melosh1990"
+      ],
+      "locator": "robertson2004 p. 763 (\"Air Temperature at Earth's Surface\")",
+      "notes": "Atmosphere largely transparent to the IR; organisms heated directly by radiation, not via air. Not re-examined by self-shielding models.",
+      "time": {
+        "t": 3600,
+        "range": [
+          600,
+          14400
+        ]
+      }
+    },
+    {
+      "id": "temperature.global_surface_fires",
+      "group": "temperature",
+      "label": "Wzrost globalnej średniej temperatury powierzchni podczas (założonych) globalnych pożarów",
+      "value": 10,
+      "unit": "°C",
+      "range": [
+        2,
+        10
+      ],
+      "certainty": "speculation",
+      "method": "model:bardeen2017 (sensitivity run, prescribed global fires)",
+      "sources": [
+        "bardeen2017"
+      ],
+      "locator": "bardeen2017 Results (heat from fires) & SI Fig. S8",
+      "notes": "+10 °C during fires (prescribed hours 12–36 of simulation, 4.6e22 J), ~+2 °C after one week. Conditional on contested global-fire assumption; smaller if fires last longer.",
+      "time": {
+        "t": 86400,
+        "range": [
+          43200,
+          604800
+        ]
+      }
+    },
+    {
+      "id": "temperature.ground_max_na",
+      "group": "temperature",
+      "label": "Maksymalna temperatura gruntu wywnioskowana z zapisu węgli drzewnych (Ameryka Płn.)",
+      "value": 545,
+      "unit": "°C",
+      "range": [
+        325,
+        545
+      ],
+      "certainty": "contested",
+      "method": "inference from charcoal record",
+      "sources": [
+        "belcher2005"
+      ],
+      "locator": "belcher2005 Abstract",
+      "notes": "≤545 °C at any point; not >325 °C for any significant period.",
+      "time": null
+    },
+    {
+      "id": "temperature.charring_baja",
+      "group": "temperature",
+      "label": "Temperatura zwęglenia drewna (Baja California)",
+      "value": 716,
+      "unit": "°C",
+      "range": [
+        395,
+        1022
+      ],
+      "certainty": "fact",
+      "method": "measured (Raman spectroscopy of charred wood)",
+      "sources": [
+        "santacatharina2022"
+      ],
+      "locator": "santacatharina2022 Results (Raman 395–1022 °C, median 716 °C)",
+      "notes": "Local fire/charring temperature, not air temperature.",
+      "time": {
+        "t": 1200,
+        "range": [
+          300,
+          3600
+        ]
+      }
+    },
+    {
+      "id": "temperature.soil_heating_10cm",
+      "group": "temperature",
+      "label": "Czas ogrzania gleby o 1 K na głębokości 10 cm",
+      "value": 11,
+      "unit": "h",
+      "range": [
+        2,
+        20
+      ],
+      "certainty": "extrapolation",
+      "method": "model:conduction estimate (robertson2004), surface at 1000 K",
+      "sources": [
+        "robertson2004"
+      ],
+      "locator": "robertson2004 p. 763 (\"Under Soil\")",
+      "notes": "Burrows >10 cm provided shelter from the IR pulse.",
+      "time": null
+    }
+  ],
+  "disagreements": [
+    {
+      "topic": "Magnitude and duration of the re-entry IR pulse at the ground",
+      "positions": [
+        {
+          "claim": "Global pulse of ~10 kW/m2 (50–150× solar) lasting 1 to several hours, sufficient for global ignition and lethal to unsheltered organisms.",
+          "sources": [
+            "melosh1990",
+            "robertson2004",
+            "robertson2013"
+          ]
+        },
+        {
+          "claim": "Pulse strong enough to ignite vegetation on several continents (≥12.5 kW/m2 for >20 min), but non-uniform: concentrated near the impact site and antipode, pattern dependent on trajectory.",
+          "sources": [
+            "kring2002",
+            "durda2004"
+          ]
+        },
+        {
+          "claim": "Self-shielding by settling spherules limits distal surface flux to peaks of 5–15 kW/m2, > solar only ~30 min and >5 kW/m2 for a few minutes.",
+          "sources": [
+            "goldin2009"
+          ]
+        },
+        {
+          "claim": "3D asymmetric ejection: short (minutes) pulses up to ~56 kW/m2 downrange at 2000–5000 km, ~20 kW/m2 distal downrange, negligible uprange beyond 3000 km.",
+          "sources": [
+            "morgan2013"
+          ]
+        },
+        {
+          "claim": "Charcoal record caps ground irradiance in North America at <19 kW/m2 (≤6 kW/m2 for more than a few hours).",
+          "sources": [
+            "belcher2003",
+            "belcher2005"
+          ]
+        }
+      ],
+      "assessment": "Models that include spherule opacity and asymmetric 3D ejection (goldin2009, morgan2013) are more physically complete than the 1990 estimate and agree on minute-scale pulses with strong geographic variability. The hour-long global pulse is best treated as an upper-end, unshielded scenario. Unmodelled factors (reflective submicron dust/vapor cap, translucent spherules) could raise fluxes ~2×, so the issue is not closed."
+    },
+    {
+      "topic": "Global vs regional wildfires in the first hours",
+      "positions": [
+        {
+          "claim": "Global firestorms ignited within hours; soot inventory implies burning of most of the terrestrial biomass.",
+          "sources": [
+            "wolbach1985",
+            "wolbach1988",
+            "robertson2004",
+            "robertson2013",
+            "bardeen2017"
+          ]
+        },
+        {
+          "claim": "No distinctive wildfire across North America; charcoal below background and organic matter mostly uncharred.",
+          "sources": [
+            "belcher2003",
+            "belcher2005",
+            "belcher2009"
+          ]
+        },
+        {
+          "claim": "Fires widespread but not global as a direct result of impact; additional post-impact fires over months.",
+          "sources": [
+            "morgan2013",
+            "lyons2020",
+            "belcher2015"
+          ]
+        },
+        {
+          "claim": "Proximal fires occurred within minutes to hours (charred trees in Baja California; charcoal in crater fill within the first day).",
+          "sources": [
+            "santacatharina2022",
+            "gulick2019"
+          ]
+        }
+      ],
+      "assessment": "Proximal fires (≲1000–2500 km, downrange land) are well supported by direct evidence. Instantaneous global ignition is not supported by the self-shielded models or by the North American charcoal record, but cannot be excluded given unmodelled factors; global fires are therefore a contested upper-end scenario for T≤24 h."
+    },
+    {
+      "topic": "Source of K-Pg soot and burn markers",
+      "positions": [
+        {
+          "claim": "Biomass burning in global wildfires; target-rock carbon is 1–2 orders of magnitude too small.",
+          "sources": [
+            "wolbach1988",
+            "robertson2013"
+          ]
+        },
+        {
+          "claim": "Combustion of hydrocarbons/fossil organic matter at the impact site (carbon cenospheres, pPAH signature, oil-rich target).",
+          "sources": [
+            "harvey2008",
+            "belcher2009",
+            "kaiho2016"
+          ]
+        },
+        {
+          "claim": "Mixed: target-derived black carbon (0.75–2.5 Gt) dispersed globally within hours, plus delayed, protracted wildfires.",
+          "sources": [
+            "lyons2020",
+            "morgan2013"
+          ]
+        }
+      ],
+      "assessment": "The mixed-source view (lyons2020, morgan2013) reconciles the molecular evidence for petrogenic carbon with the large global soot inventory. Target-only estimates (≤~2.6 Gt) fall short of Wolbach-based inventories (~15–70 Gt), so biomass burning remains necessary unless the inventory is overestimated (as morgan2013 §6.3 suggests is possible)."
+    },
+    {
+      "topic": "Interpretation of low charcoal abundance in North American K-Pg sections",
+      "positions": [
+        {
+          "claim": "Charcoal 4–8× below background indicates absence of significant wildfires.",
+          "sources": [
+            "belcher2003",
+            "belcher2005"
+          ]
+        },
+        {
+          "claim": "Depletion is an artefact of uncorrected sedimentation rate; per unit time charcoal flux was similar to or higher than background; intense firestorms consume charcoal.",
+          "sources": [
+            "morgan2013",
+            "robertson2013"
+          ]
+        }
+      ],
+      "assessment": "The sedimentation-rate argument is quantitatively strong (the K-Pg layer formed in months versus 15–10,000 yr/cm for surrounding sediments), so the charcoal record does not rule out fires; it also does not demonstrate them. Unresolved."
+    },
+    {
+      "topic": "Transport mechanism of distal ejecta (ballistic plume condensates vs atmospheric redistribution)",
+      "positions": [
+        {
+          "claim": "Spherules condensed in the vapor plume and travelled ballistically worldwide, concentrated near crater and antipode.",
+          "sources": [
+            "kring2002",
+            "johnson2012",
+            "melosh1990"
+          ]
+        },
+        {
+          "claim": "High-velocity plume mass is too small; ejecta-curtain/atmosphere interaction forms a fast dust cloud (≤3 km/s) and re-entry heating redistributes fines, explaining constant 2–3 mm thickness and distal shocked quartz.",
+          "sources": [
+            "artemieva2009",
+            "artemieva2020",
+            "morgan2022"
+          ]
+        }
+      ],
+      "assessment": "The newer hydrocode results explain more first-order observations (uniform thickness, basement-derived shocked quartz at distal sites), and are adopted in the 2022 review; but they are proof-of-concept (vertical impact, flat Earth, no radiation). Both mechanisms likely contribute."
+    },
+    {
+      "topic": "Mass of high-velocity (plume) ejecta driving re-entry heating",
+      "positions": [
+        {
+          "claim": "1–2.5×10^16 kg of vapor-plume material (from Pierazzo et al. 1998 hydrocode).",
+          "sources": [
+            "kring2002"
+          ]
+        },
+        {
+          "claim": "~10^14 kg (vertical) to 1.6–6.9×10^14 kg reaching distal sites (45–60°); 770–1630 km3 at >5 km/s.",
+          "sources": [
+            "artemieva2020",
+            "artemieva2009"
+          ]
+        },
+        {
+          "claim": "Several thousand Gt ejected at >5 km/s.",
+          "sources": [
+            "morgan2022"
+          ]
+        }
+      ],
+      "assessment": "Values differ by up to two orders of magnitude depending on code, EOS, impact angle and definition (vapor-plume vs all >5 km/s ejecta). The SOVA-based numbers are more recent and tied to observed Ir mass, but definitions must be harmonised before use."
+    },
+    {
+      "topic": "Impact direction (downrange azimuth) and angle",
+      "positions": [
+        {
+          "claim": "Steeply inclined (45–60°) impact from the northeast (downrange ≈ southwest).",
+          "sources": [
+            "collins2020"
+          ]
+        },
+        {
+          "claim": "High-angle (>45°) oblique impact with uprange to the southeast (downrange ≈ northwest), from shocked-quartz distribution.",
+          "sources": [
+            "morgan2006"
+          ]
+        }
+      ],
+      "assessment": "collins2020 is more recent and based on 3D simulations compared with seismic crater structure; morgan2006 is based on one anomalous South Atlantic site. Both agree on a steep (>45°) angle. Direction matters for the thermal-pulse map (morgan2013)."
+    },
+    {
+      "topic": "Arrival time of first re-entering ejecta at ~2000–2500 km",
+      "positions": [
+        {
+          "claim": "High-energy ejecta re-enter above Colorado within 2–3 min; low-energy ejecta arrive ~15 min.",
+          "sources": [
+            "kring2002"
+          ]
+        },
+        {
+          "claim": "First ejecta reach top of atmosphere ~10 min after impact at 2000–2500 km.",
+          "sources": [
+            "morgan2013"
+          ]
+        }
+      ],
+      "assessment": "Difference stems from the assumed plume velocity distribution (power law up to 11.2 km/s in kring2002 vs hydrocode-derived in morgan2013). The ~10 min value is consistent with simple ballistic estimates for 45° launch and is preferred for the main ejecta mass."
+    },
+    {
+      "topic": "Fireball thermal ignition radius",
+      "positions": [
+        {
+          "claim": "~1250 km (Toon et al. 1997 Tunguska-calibrated scaling) / ~1500 km (Collins et al. 2005).",
+          "sources": [
+            "morgan2013",
+            "collins2005",
+            "gulick2019"
+          ]
+        },
+        {
+          "claim": "Up to 3000 km on a clear day (Shuvalov & Artemieva 2002), reduced to ~2400 km with E^1/6 ignition-threshold scaling.",
+          "sources": [
+            "morgan2013"
+          ]
+        }
+      ],
+      "assessment": "All are extrapolations ~8 orders of magnitude beyond nuclear-test calibration; a 1000–2400 km band is defensible. Direct evidence (charred trees ~2500 km in Baja California) cannot separate fireball from ejecta re-entry ignition."
+    }
+  ],
+  "openQuestions": [
+    "No published time-resolved simulation of near-surface air temperature over the first hours coupling fireball radiation, ejecta re-entry and atmospheric dynamics; toon2016 §2.1.1 states the authors are not aware of any simulation of the first few hours. Temperature values in this thread are indirect.",
+    "Size-frequency distribution and mass flux of ejecta at the top of the atmosphere are unknown and control self-shielding (morgan2013 §6.1).",
+    "Existence and opacity of a submicron dust / rock-vapor / nanoparticle cap above the re-entry layer (could ~double surface flux): johnson2012, toon2016, morgan2013 §6.1.",
+    "Impact direction contested (collins2020 NE vs morgan2006 uprange SE); thermal-pulse map depends on it.",
+    "Fireball luminous efficiency uncertain over 1e-4–1e-2 (collins2005); fireball durations computed here therefore span ~1–150 min.",
+    "Paleodistance of Beloc (Haiti): 500 km in schulte2010 SOM vs 860–910 km in kring2002/artemieva2009 — choose and document one paleogeography.",
+    "Ejecta blanket thickness inside ~300 km (from boreholes) not compiled here; a scaling law (McGetchin et al. 1973, cited in kring2002) was not opened — unverified lead.",
+    "unverified lead: Toon et al. 1997 Rev. Geophys. 35:41–78 (doi:10.1029/96RG03038) — publisher abstract page opened, but full text (Fig. 16 fireball ignition area, ~1250 km for Chicxulub) not read; value used only via morgan2013.",
+    "unverified lead: Shuvalov & Artemieva 2002, GSA Spec. Pap. 356, doi:10.1130/0-8137-2356-6.695 — chapter page opened (no abstract/full text); \"ignition up to 3000 km\" used only via morgan2013.",
+    "unverified lead: Pierazzo, Kring & Melosh 1998 JGR 103:28607–28625 (doi:10.1029/98JE02496) — abstract read (gas yields only); plume temperatures and melt/vapor volumes used only via kring2002.",
+    "unverified lead: Wolbach, Gilmour & Anders 1990, GSA Spec. Pap. 247:391–400 (doi:10.1130/SPE247-p391) — not opened; soot/EC mean values used via morgan2013 and bardeen2017.",
+    "unverified lead: Claeys, Kiessling & Alvarez 2002, GSA Spec. Pap. 356 (doi:10.1130/0-8137-2356-6.55) — chapter page opened, no abstract; distribution compilation not read.",
+    "unverified lead: Belcher 2009, \"Reigniting the Cretaceous-Palaeogene firestorm debate\", Geology 37:1147–1148 — Crossref DOI registered with a trailing dot (10.1130/focus122009.1.), not resolvable as 10.1130/focus122009.1; not included.",
+    "unverified lead: Stettsov & Shuvalov 2005 (post-impact winds ~50 m/s at 2000 km ~2 h after impact) — cited in morgan2013 §6.2; not located or opened.",
+    "Non-peer-reviewed material not used: Goldin (2008) PhD thesis and LPSC/AGU abstracts on Chicxulub ejecta re-entry radiation.",
+    "Tanis (depalma2019) arrival times rest on author recalculation with assumed launch angles at a single site; independent critiques of the Tanis interpretation were not reviewed in this thread.",
+    "Total K-Pg soot inventory may be overestimated (few samples, possibly longer Tethyan sections; morgan2013 §6.3); refinement would shift the wildfire vs target-carbon balance."
+  ]
+}

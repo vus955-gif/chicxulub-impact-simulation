@@ -1,0 +1,2421 @@
+{
+  "thread": "06-atmosfera-biosfera-paleo",
+  "sources": [
+    {
+      "id": "artemieva2017",
+      "type": "article",
+      "authors": "Artemieva, N.; Morgan, J.",
+      "year": 2017,
+      "title": "Quantifying the Release of Climate-Active Gases by Large Meteorite Impacts With a Case Study of Chicxulub",
+      "container": "Geophysical Research Letters",
+      "volume": "44(20)",
+      "pages": "10180-10188",
+      "doi": "10.1002/2017GL074879",
+      "url": "https://doi.org/10.1002/2017GL074879",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. full abstract (325±130 Gt S, 425±160 Gt CO2, >25 km). Page range from Wiley listing (Crossref has none). Full text blocked (Wiley bot-protection); model assumptions taken from rodiouchkina2025 Table 1. Expedition 364 Science Party is a group co-author."
+    },
+    {
+      "id": "pierazzo1998",
+      "type": "article",
+      "authors": "Pierazzo, E.; Kring, D. A.; Melosh, H. J.",
+      "year": 1998,
+      "title": "Hydrocode simulation of the Chicxulub impact event and the production of climatically active gases",
+      "container": "Journal of Geophysical Research: Planets",
+      "volume": "103(E12)",
+      "pages": "28607-28625",
+      "doi": "10.1029/98JE02496",
+      "url": "https://doi.org/10.1029/98JE02496",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract (CO2 350-3500 Gt, S 40-560 Gt, H2O 200-1400 Gt). Full text not accessed."
+    },
+    {
+      "id": "pierazzo2003",
+      "type": "article",
+      "authors": "Pierazzo, E.; Hahmann, A. N.; Sloan, L. C.",
+      "year": 2003,
+      "title": "Chicxulub and Climate: Radiative Perturbations of Impact-Produced S-Bearing Gases",
+      "container": "Astrobiology",
+      "volume": "3(1)",
+      "pages": "99-118",
+      "doi": "10.1089/153110703321632453",
+      "url": "https://doi.org/10.1089/153110703321632453",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex (forcing ~100x Pinatubo >=2 yr; saturation 30-300 Gt S)."
+    },
+    {
+      "id": "pope1997",
+      "type": "article",
+      "authors": "Pope, K. O.; Baines, K. H.; Ocampo, A. C.; Ivanov, B. A.",
+      "year": 1997,
+      "title": "Energy, volatile production, and climatic effects of the Chicxulub Cretaceous/Tertiary impact",
+      "container": "Journal of Geophysical Research: Planets",
+      "volume": "102(E9)",
+      "pages": "21645-21664",
+      "doi": "10.1029/97JE01743",
+      "url": "https://doi.org/10.1029/97JE01743",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract. Full text blocked."
+    },
+    {
+      "id": "ohno2014",
+      "type": "article",
+      "authors": "Ohno, S.; Kadono, T.; Kurosawa, K.; Hamura, T.; Sakaiya, T.; Shigemori, K.; Hironaka, Y.; Sano, T.; Watari, T.; Otani, K.; Matsui, T.; Sugita, S.",
+      "year": 2014,
+      "title": "Production of sulphate-rich vapour during the Chicxulub impact and implications for ocean acidification",
+      "container": "Nature Geoscience",
+      "volume": "7(4)",
+      "pages": "279-282",
+      "doi": "10.1038/ngeo2095",
+      "url": "https://doi.org/10.1038/ngeo2095",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com article page (dc.description). Full text paywalled."
+    },
+    {
+      "id": "bardeen2017",
+      "type": "article",
+      "authors": "Bardeen, C. G.; Garcia, R. R.; Toon, O. B.; Conley, A. J.",
+      "year": 2017,
+      "title": "On transient climate change at the Cretaceous-Paleogene boundary due to atmospheric soot injections",
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "114(36)",
+      "pages": "E7415-E7424",
+      "doi": "10.1073/pnas.1708980114",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5594694/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text incl. SI read on PubMed Central (PMC5594694). Uses MODERN continental positions."
+    },
+    {
+      "id": "tabor2020",
+      "type": "article",
+      "authors": "Tabor, C. R.; Bardeen, C. G.; Otto-Bliesner, B. L.; Garcia, R. R.; Toon, O. B.",
+      "year": 2020,
+      "title": "Causes and Climatic Consequences of the Impact Winter at the Cretaceous-Paleogene Boundary",
+      "container": "Geophysical Research Letters",
+      "volume": "47(3)",
+      "pages": "e2019GL085572",
+      "doi": "10.1029/2019GL085572",
+      "url": "https://doi.org/10.1029/2019GL085572",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract (Crossref lists article-number 'e60121'; AGU eLocator e2019GL085572). Full text closed/blocked - emission inputs not verified."
+    },
+    {
+      "id": "senel2023",
+      "type": "article",
+      "authors": "Senel, C. B.; Kaskes, P.; Temel, O.; Vellekoop, J.; Goderis, S.; DePalma, R.; Prins, M. A.; Claeys, P.; Karatekin, O.",
+      "year": 2023,
+      "title": "Chicxulub impact winter sustained by fine silicate dust",
+      "container": "Nature Geoscience",
+      "volume": "16(11)",
+      "pages": "1033-1040",
+      "doi": "10.1038/s41561-023-01290-4",
+      "url": "https://doi.org/10.1038/s41561-023-01290-4",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com; Supplementary Information PDF (sample table) opened. Main text paywalled - total dust mass NOT verified."
+    },
+    {
+      "id": "toon1997",
+      "type": "article",
+      "authors": "Toon, O. B.; Zahnle, K.; Morrison, D.; Turco, R. P.; Covey, C.",
+      "year": 1997,
+      "title": "Environmental perturbations caused by the impacts of asteroids and comets",
+      "container": "Reviews of Geophysics",
+      "volume": "35(1)",
+      "pages": "41-78",
+      "doi": "10.1029/96RG03038",
+      "url": "https://doi.org/10.1029/96RG03038",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. full abstract. Full text blocked."
+    },
+    {
+      "id": "lyons2020",
+      "type": "article",
+      "authors": "Lyons, S. L.; Karp, A. T.; Bralower, T. J.; Grice, K.; Schaefer, B.; Gulick, S. P. S.; Morgan, J. V.; Freeman, K. H.",
+      "year": 2020,
+      "title": "Organic matter from the Chicxulub crater exacerbated the K-Pg impact winter",
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "117(41)",
+      "pages": "25327-25334",
+      "doi": "10.1073/pnas.2004596117",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7568312/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read on PubMed Central (PMC7568312)."
+    },
+    {
+      "id": "kaiho2016",
+      "type": "article",
+      "authors": "Kaiho, K.; Oshima, N.; Adachi, K.; Adachi, Y.; Mizukami, T.; Fujibayashi, M.; Saito, R.",
+      "year": 2016,
+      "title": "Global climate change driven by soot at the K-Pg boundary as the cause of the mass extinction",
+      "container": "Scientific Reports",
+      "volume": "6",
+      "pages": "28427",
+      "doi": "10.1038/srep28427",
+      "url": "https://doi.org/10.1038/srep28427",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read via Europe PMC (PMC4944614)."
+    },
+    {
+      "id": "wolbach1985",
+      "type": "article",
+      "authors": "Wolbach, W. S.; Lewis, R. S.; Anders, E.",
+      "year": 1985,
+      "title": "Cretaceous Extinctions: Evidence for Wildfires and Search for Meteoritic Material",
+      "container": "Science",
+      "volume": "230(4722)",
+      "pages": "167-170",
+      "doi": "10.1126/science.230.4722.167",
+      "url": "https://doi.org/10.1126/science.230.4722.167",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract (0.021±0.006 g/cm2 soot)."
+    },
+    {
+      "id": "wolbach1988",
+      "type": "article",
+      "authors": "Wolbach, W. S.; Gilmour, I.; Anders, E.; Orth, C. J.; Brooks, R. R.",
+      "year": 1988,
+      "title": "Global fire at the Cretaceous-Tertiary boundary",
+      "container": "Nature",
+      "volume": "334",
+      "pages": "665-669",
+      "doi": "10.1038/334665a0",
+      "url": "https://doi.org/10.1038/334665a0",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com page."
+    },
+    {
+      "id": "brugger2017",
+      "type": "article",
+      "authors": "Brugger, J.; Feulner, G.; Petri, S.",
+      "year": 2017,
+      "title": "Baby, it's cold outside: Climate model simulations of the effects of the asteroid impact at the end of the Cretaceous",
+      "container": "Geophysical Research Letters",
+      "volume": "44(1)",
+      "pages": "419-427",
+      "doi": "10.1002/2016GL072241",
+      "url": "https://doi.org/10.1002/2016GL072241",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+    },
+    {
+      "id": "rodiouchkina2025",
+      "type": "article",
+      "authors": "Rodiouchkina, K.; Goderis, S.; Senel, C. B.; Kaskes, P.; Karatekin, O.; Bottcher, M. E.; Rodushkin, I.; Vellekoop, J.; Claeys, P.; Vanhaecke, F.",
+      "year": 2025,
+      "title": "Reduced contribution of sulfur to the mass extinction associated with the Chicxulub impact event",
+      "container": "Nature Communications",
+      "volume": "16",
+      "pages": "620",
+      "doi": "10.1038/s41467-024-55145-6",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11739411/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read on PubMed Central (PMC11739411). Supersedes/challenges artemieva2017 sulfur mass. Author name Bottcher = Böttcher."
+    },
+    {
+      "id": "junium2022",
+      "type": "article",
+      "authors": "Junium, C. K.; Zerkle, A. L.; Witts, J. D.; Ivany, L. C.; Yancey, T. E.; Liu, C.; Claire, M. W.",
+      "year": 2022,
+      "title": "Massive perturbations to atmospheric sulfur in the aftermath of the Chicxulub impact",
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "119(14)",
+      "pages": "e2119194119",
+      "doi": "10.1073/pnas.2119194119",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9168947/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read on PubMed Central (PMC9168947)."
+    },
+    {
+      "id": "artemieva2020",
+      "type": "article",
+      "authors": "Artemieva, N.; Morgan, J.",
+      "year": 2020,
+      "title": "Global K-Pg Layer Deposited From a Dust Cloud",
+      "container": "Geophysical Research Letters",
+      "volume": "47(6)",
+      "pages": "e2019GL086562",
+      "doi": "10.1029/2019GL086562",
+      "url": "https://doi.org/10.1029/2019GL086562",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract. Full text closed. 'Circled the globe within a few hours' is lyons2020's summary of this work."
+    },
+    {
+      "id": "artemieva2009",
+      "type": "article",
+      "authors": "Artemieva, N.; Morgan, J.",
+      "year": 2009,
+      "title": "Modeling the formation of the K-Pg boundary layer",
+      "container": "Icarus",
+      "volume": "201(2)",
+      "pages": "768-780",
+      "doi": "10.1016/j.icarus.2009.01.021",
+      "url": "https://doi.org/10.1016/j.icarus.2009.01.021",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via Semantic Scholar API (publisher abstract)."
+    },
+    {
+      "id": "kringdurda2002",
+      "type": "article",
+      "authors": "Kring, D. A.; Durda, D. D.",
+      "year": 2002,
+      "title": "Trajectories and distribution of material ejected from the Chicxulub impact crater: Implications for postimpact wildfires",
+      "container": "Journal of Geophysical Research: Planets",
+      "volume": "107(E8)",
+      "pages": "",
+      "doi": "10.1029/2001JE001532",
+      "url": "https://doi.org/10.1029/2001JE001532",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract (re-accretion fractions). Article number not in Crossref record."
+    },
+    {
+      "id": "gulick2019",
+      "type": "article",
+      "authors": "Gulick, S. P. S.; Bralower, T. J.; Ormo, J.; Hall, B.; Grice, K.; Schaefer, B.; Lyons, S.; Freeman, K. H.; Morgan, J. V.; Artemieva, N.; Kaskes, P.; de Graaff, S. J.; Whalen, M. T.; Collins, G. S.; Tikoo, S. M.; Verhagen, C.; Christeson, G. L.; Claeys, P.; Coolen, M. J. L.; Goderis, S.; Goto, K.; Grieve, R. A. F.; McCall, N.; Osinski, G. R.; Rae, A. S. P.; Riller, U.; Smit, J.; Vajda, V.; Wittmann, A.",
+      "year": 2019,
+      "title": "The first day of the Cenozoic",
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "116(39)",
+      "pages": "19342-19351",
+      "doi": "10.1073/pnas.1909479116",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6765282/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read on PubMed Central (PMC6765282). Plus Expedition 364 Scientists."
+    },
+    {
+      "id": "melosh1990",
+      "type": "article",
+      "authors": "Melosh, H. J.; Schneider, N. M.; Zahnle, K. J.; Latham, D.",
+      "year": 1990,
+      "title": "Ignition of global wildfires at the Cretaceous/Tertiary boundary",
+      "container": "Nature",
+      "volume": "343",
+      "pages": "251-254",
+      "doi": "10.1038/343251a0",
+      "url": "https://doi.org/10.1038/343251a0",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com page."
+    },
+    {
+      "id": "goldin2009",
+      "type": "article",
+      "authors": "Goldin, T. J.; Melosh, H. J.",
+      "year": 2009,
+      "title": "Self-shielding of thermal radiation by Chicxulub impact ejecta: Firestorm or fizzle?",
+      "container": "Geology",
+      "volume": "37(12)",
+      "pages": "1135-1138",
+      "doi": "10.1130/G30433A.1",
+      "url": "https://doi.org/10.1130/G30433A.1",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex (GSW landing page text)."
+    },
+    {
+      "id": "morgan2013",
+      "type": "article",
+      "authors": "Morgan, J.; Artemieva, N.; Goldin, T.",
+      "year": 2013,
+      "title": "Revisiting wildfires at the K-Pg boundary",
+      "container": "Journal of Geophysical Research: Biogeosciences",
+      "volume": "118(4)",
+      "pages": "1508-1520",
+      "doi": "10.1002/2013JG002428",
+      "url": "https://doi.org/10.1002/2013JG002428",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+    },
+    {
+      "id": "robertson2004",
+      "type": "article",
+      "authors": "Robertson, D. S.; McKenna, M. C.; Toon, O. B.; Hope, S.; Lillegraven, J. A.",
+      "year": 2004,
+      "title": "Survival in the first hours of the Cenozoic",
+      "container": "Geological Society of America Bulletin",
+      "volume": "116(5-6)",
+      "pages": "760-768",
+      "doi": "10.1130/B25402.1",
+      "url": "https://doi.org/10.1130/B25402.1",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex (GSW landing page). Full text not accessed - heat-flux numbers inside the paper not used."
+    },
+    {
+      "id": "robertson2013",
+      "type": "article",
+      "authors": "Robertson, D. S.; Lewis, W. M.; Sheehan, P. M.; Toon, O. B.",
+      "year": 2013,
+      "title": "K-Pg extinction: Reevaluation of the heat-fire hypothesis",
+      "container": "Journal of Geophysical Research: Biogeosciences",
+      "volume": "118(1)",
+      "pages": "329-336",
+      "doi": "10.1002/jgrg.20018",
+      "url": "https://doi.org/10.1002/jgrg.20018",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+    },
+    {
+      "id": "belcher2003",
+      "type": "article",
+      "authors": "Belcher, C. M.; Collinson, M. E.; Sweet, A. R.; Hildebrand, A. R.; Scott, A. C.",
+      "year": 2003,
+      "title": "Fireball passes and nothing burns - The role of thermal radiation in the Cretaceous-Tertiary event: Evidence from the charcoal record of North America",
+      "container": "Geology",
+      "volume": "31(12)",
+      "pages": "1061-1064",
+      "doi": "10.1130/G19989.1",
+      "url": "https://doi.org/10.1130/G19989.1",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "DOI found via Crossref search (the guessed DOI 10.1130/G19796.1 is a different paper); abstract read via OpenAlex (GSW page)."
+    },
+    {
+      "id": "belcher2015",
+      "type": "article",
+      "authors": "Belcher, C. M.; Hadden, R. M.; Rein, G.; Morgan, J. V.; Artemieva, N.; Goldin, T.",
+      "year": 2015,
+      "title": "An experimental assessment of the ignition of forest fuels by the thermal pulse generated by the Cretaceous-Palaeogene impact at Chicxulub",
+      "container": "Journal of the Geological Society",
+      "volume": "172(2)",
+      "pages": "175-185",
+      "doi": "10.1144/jgs2014-082",
+      "url": "https://doi.org/10.1144/jgs2014-082",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+    },
+    {
+      "id": "depalma2019",
+      "type": "article",
+      "authors": "DePalma, R. A.; Smit, J.; Burnham, D. A.; Kuiper, K.; Manning, P. L.; Oleinik, A.; Larson, P.; Maurrasse, F. J.; Vellekoop, J.; Richards, M. A.; Gurche, L.; Alvarez, W.",
+      "year": 2019,
+      "title": "A seismically induced onshore surge deposit at the KPg boundary, North Dakota",
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "116(17)",
+      "pages": "8190-8199",
+      "doi": "10.1073/pnas.1817407116",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6486721/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read via Europe PMC (PMC6486721). No site coordinates published (only 'southwestern North Dakota')."
+    },
+    {
+      "id": "during2022",
+      "type": "article",
+      "authors": "During, M. A. D.; Smit, J.; Voeten, D. F. A. E.; Berruyer, C.; Tafforeau, P.; Sanchez, S.; Stein, K. H. W.; Verdegaal-Warmerdam, S. J. A.; van der Lubbe, J. H. J. L.",
+      "year": 2022,
+      "title": "The Mesozoic terminated in boreal spring",
+      "container": "Nature",
+      "volume": "603(7899)",
+      "pages": "91-94",
+      "doi": "10.1038/s41586-022-04446-1",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8891016/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read via Europe PMC (PMC8891016)."
+    },
+    {
+      "id": "depalma2021",
+      "type": "article",
+      "authors": "DePalma, R. A.; Oleinik, A. A.; Gurche, L. P.; Burnham, D. A.; Klingler, J. J.; McKinney, C. J.; Cichocki, F. P.; Larson, P. L.; Egerton, V. M.; Wogelius, R. A.; Edwards, N. P.; Bergmann, U.; Manning, P. L.",
+      "year": 2021,
+      "title": "Seasonal calibration of the end-cretaceous Chicxulub impact event",
+      "container": "Scientific Reports",
+      "volume": "11",
+      "pages": "23704",
+      "doi": "10.1038/s41598-021-03232-9",
+      "url": "https://doi.org/10.1038/s41598-021-03232-9",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract; Crossref record shows no 'updated-by' (correction/retraction) entry as of 2026-10-04. Data integrity disputed by during2024."
+    },
+    {
+      "id": "during2024",
+      "type": "article",
+      "authors": "During, M. A. D.; Voeten, D. F. A. E.; van der Lubbe, J. H. J. L.; Ahlberg, P. E.",
+      "year": 2024,
+      "title": "Calibrations without raw data - A response to 'Seasonal calibration of the end-cretaceous Chicxulub impact event'",
+      "container": "PeerJ",
+      "volume": "12",
+      "pages": "e18519",
+      "doi": "10.7717/peerj.18519",
+      "url": "https://doi.org/10.7717/peerj.18519",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+    },
+    {
+      "id": "vajda2001",
+      "type": "article",
+      "authors": "Vajda, V.; Raine, J. I.; Hollis, C. J.",
+      "year": 2001,
+      "title": "Indication of Global Deforestation at the Cretaceous-Tertiary Boundary by New Zealand Fern Spike",
+      "container": "Science",
+      "volume": "294(5547)",
+      "pages": "1700-1702",
+      "doi": "10.1126/science.1064706",
+      "url": "https://doi.org/10.1126/science.1064706",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+    },
+    {
+      "id": "vellekoop2014",
+      "type": "article",
+      "authors": "Vellekoop, J.; Sluijs, A.; Smit, J.; Schouten, S.; Weijers, J. W. H.; Sinninghe Damste, J. S.; Brinkhuis, H.",
+      "year": 2014,
+      "title": "Rapid short-term cooling following the Chicxulub impact at the Cretaceous-Paleogene boundary",
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "111(21)",
+      "pages": "7537-7541",
+      "doi": "10.1073/pnas.1319253111",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4040585/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read on PubMed Central (PMC4040585); gives Brazos-1 coordinates."
+    },
+    {
+      "id": "range2022",
+      "type": "article",
+      "authors": "Range, M. M.; Arbic, B. K.; Johnson, B. C.; Moore, T. C.; Titov, V.; Adcroft, A. J.; Ansong, J. K.; Hollis, C. J.; Ritsema, J.; Scotese, C. R.; Wang, H.",
+      "year": 2022,
+      "title": "The Chicxulub Impact Produced a Powerful Global Tsunami",
+      "container": "AGU Advances",
+      "volume": "3(5)",
+      "pages": "e2021AV000627",
+      "doi": "10.1029/2021AV000627",
+      "url": "https://doi.org/10.1029/2021AV000627",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract. Full text (Wiley/HAL/Deep Blue) blocked by bot-protection; bathymetry source not verified."
+    },
+    {
+      "id": "schulte2010",
+      "type": "article",
+      "authors": "Schulte, P.; Alegret, L.; Arenillas, I.; Arz, J. A.; Barton, P. J.; Bown, P. R.; Bralower, T. J.; Christeson, G. L.; Claeys, P.; Cockell, C. S.; Collins, G. S.; Deutsch, A.; Goldin, T. J.; Goto, K.; Grajales-Nishimura, J. M.; Grieve, R. A. F.; Gulick, S. P. S.; Johnson, K. R.; Kiessling, W.; Koeberl, C.; Kring, D. A.; MacLeod, K. G.; Matsui, T.; Melosh, J.; Montanari, A.; Morgan, J. V.; Neal, C. R.; Nichols, D. J.; Norris, R. D.; Pierazzo, E.; Ravizza, G.; Rebolledo-Vieyra, M.; Reimold, W. U.; Robin, E.; Salge, T.; Speijer, R. P.; Sweet, A. R.; Urrutia-Fucugauchi, J.; Vajda, V.; Whalen, M. T.; Willumsen, P. S.",
+      "year": 2010,
+      "title": "The Chicxulub Asteroid Impact and Mass Extinction at the Cretaceous-Paleogene Boundary",
+      "container": "Science",
+      "volume": "327(5970)",
+      "pages": "1214-1218",
+      "doi": "10.1126/science.1177265",
+      "url": "https://doi.org/10.1126/science.1177265",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. editor's summary only. Full text paywalled; used only for the consensus statement."
+    },
+    {
+      "id": "renne2013",
+      "type": "article",
+      "authors": "Renne, P. R.; Deino, A. L.; Hilgen, F. J.; Kuiper, K. F.; Mark, D. F.; Mitchell, W. S.; Morgan, L. E.; Mundil, R.; Smit, J.",
+      "year": 2013,
+      "title": "Time Scales of Critical Events Around the Cretaceous-Paleogene Boundary",
+      "container": "Science",
+      "volume": "339(6120)",
+      "pages": "684-687",
+      "doi": "10.1126/science.1230492",
+      "url": "https://doi.org/10.1126/science.1230492",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. editor's summary (impact within 33 kyr of extinction). Full text paywalled."
+    },
+    {
+      "id": "alvarez1980",
+      "type": "article",
+      "authors": "Alvarez, L. W.; Alvarez, W.; Asaro, F.; Michel, H. V.",
+      "year": 1980,
+      "title": "Extraterrestrial Cause for the Cretaceous-Tertiary Extinction",
+      "container": "Science",
+      "volume": "208(4448)",
+      "pages": "1095-1108",
+      "doi": "10.1126/science.208.4448.1095",
+      "url": "https://doi.org/10.1126/science.208.4448.1095",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract (Ir x30 Italy, x160 Denmark, x20 New Zealand)."
+    },
+    {
+      "id": "alvarez1990",
+      "type": "article",
+      "authors": "Alvarez, W.; Asaro, F.; Montanari, A.",
+      "year": 1990,
+      "title": "Iridium Profile for 10 Million Years Across the Cretaceous-Tertiary Boundary at Gubbio (Italy)",
+      "container": "Science",
+      "volume": "250(4988)",
+      "pages": "1700-1702",
+      "doi": "10.1126/science.11538083",
+      "url": "https://doi.org/10.1126/science.11538083",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract (1-cm clay, Ir 3000 ppt)."
+    },
+    {
+      "id": "brooks1984",
+      "type": "article",
+      "authors": "Brooks, R. R.; Reeves, R. D.; Yang, X.-H.; Ryan, D. E.; Holzbecher, J.; Collen, J. D.; Neall, V. E.; Lee, J.",
+      "year": 1984,
+      "title": "Elemental Anomalies at the Cretaceous-Tertiary Boundary, Woodside Creek, New Zealand",
+      "container": "Science",
+      "volume": "226(4674)",
+      "pages": "539-542",
+      "doi": "10.1126/science.226.4674.539",
+      "url": "https://doi.org/10.1126/science.226.4674.539",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+    },
+    {
+      "id": "smit1992",
+      "type": "article",
+      "authors": "Smit, J.; Montanari, A.; Swinburne, N. H. M.; Alvarez, W.; Hildebrand, A. R.; Margolis, S. V.; Claeys, P.; Lowrie, W.; Asaro, F.",
+      "year": 1992,
+      "title": "Tektite-bearing, deep-water clastic unit at the Cretaceous-Tertiary boundary in northeastern Mexico",
+      "container": "Geology",
+      "volume": "20(2)",
+      "pages": "99",
+      "doi": "10.1130/0091-7613(1992)020<0099:TBDWCU>2.3.CO;2",
+      "url": "https://doi.org/10.1130/0091-7613(1992)020<0099:TBDWCU>2.3.CO;2",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex. Last page not confirmed."
+    },
+    {
+      "id": "keller1994",
+      "type": "book",
+      "authors": "Keller, G.; Stinnesbeck, W.; Adatte, T.; MacLeod, N.; Lowe, D. R.",
+      "year": 1994,
+      "title": "Field Guide to Cretaceous-Tertiary Boundary Sections in Northeastern Mexico",
+      "container": "LPI Contribution No. 827, Lunar and Planetary Institute, Houston (NASA-CR-195719)",
+      "volume": "",
+      "pages": "110 pp.",
+      "doi": "",
+      "url": "https://ntrs.nasa.gov/api/citations/19940023913/downloads/19940023913.pdf",
+      "peerReviewed": false,
+      "verified": false,
+      "notes": "PDF opened (NASA NTRS). Field guide, not peer-reviewed; used for El Mimbral coordinates (23 deg 13'N, 98 deg 40'W, 'Arroyo El Mimbral' chapter) and to document the opposing (non-tsunami / pre-K-T) interpretation."
+    },
+    {
+      "id": "smit1999",
+      "type": "article",
+      "authors": "Smit, J.",
+      "year": 1999,
+      "title": "The global stratigraphy of the Cretaceous-Tertiary boundary impact ejecta",
+      "container": "Annual Review of Earth and Planetary Sciences",
+      "volume": "27",
+      "pages": "75-113",
+      "doi": "10.1146/annurev.earth.27.1.75",
+      "url": "https://doi.org/10.1146/annurev.earth.27.1.75",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract (regional ejecta thickness classes)."
+    },
+    {
+      "id": "sigurdsson1991",
+      "type": "article",
+      "authors": "Sigurdsson, H.; D'Hondt, S.; Arthur, M. A.; Bralower, T. J.; Zachos, J. C.; van Fossen, M.; Channell, J. E. T.",
+      "year": 1991,
+      "title": "Glass from the Cretaceous/Tertiary boundary in Haiti",
+      "container": "Nature",
+      "volume": "349",
+      "pages": "482-487",
+      "doi": "10.1038/349482a0",
+      "url": "https://doi.org/10.1038/349482a0",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com page."
+    },
+    {
+      "id": "maurrasse1991",
+      "type": "article",
+      "authors": "Maurrasse, F. J.-M. R.; Sen, G.",
+      "year": 1991,
+      "title": "Impacts, Tsunamis, and the Haitian Cretaceous-Tertiary Boundary Layer",
+      "container": "Science",
+      "volume": "252(5013)",
+      "pages": "1690-1693",
+      "doi": "10.1126/science.252.5013.1690",
+      "url": "https://doi.org/10.1126/science.252.5013.1690",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+    },
+    {
+      "id": "maurrasse1996",
+      "type": "chapter",
+      "authors": "Maurrasse, F. J.-M. R.; Sen, G.",
+      "year": 1996,
+      "title": "The Cretaceous-Tertiary Boundary in the Beloc Formation, Southern Peninsula of Haiti, West Indies",
+      "container": "Colorado Geological Survey Open-File Report 96-4, Field Trip No. 22",
+      "volume": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://coloradogeologicalsurvey.org/wp-content/uploads/woocommerce_uploads/OF-96-04-22.pdf",
+      "peerReviewed": false,
+      "verified": false,
+      "notes": "PDF opened. Field-trip guide, not peer-reviewed; used for marker-bed thickness (40-72.5 cm, up to 115 cm with imbrication) and outcrop description (no coordinates given)."
+    },
+    {
+      "id": "izett1991",
+      "type": "article",
+      "authors": "Izett, G. A.; Dalrymple, G. B.; Snee, L. W.",
+      "year": 1991,
+      "title": "40Ar/39Ar Age of Cretaceous-Tertiary Boundary Tektites from Haiti",
+      "container": "Science",
+      "volume": "252(5012)",
+      "pages": "1539-1542",
+      "doi": "10.1126/science.252.5012.1539",
+      "url": "https://doi.org/10.1126/science.252.5012.1539",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Metadata and abstract read via OpenAlex. Ages use 1991 calibrations (64.5 Ma) - superseded by renne2013 calibration."
+    },
+    {
+      "id": "bourgeois1988",
+      "type": "article",
+      "authors": "Bourgeois, J.; Hansen, T. A.; Wiberg, P. L.; Kauffman, E. G.",
+      "year": 1988,
+      "title": "A Tsunami Deposit at the Cretaceous-Tertiary Boundary in Texas",
+      "container": "Science",
+      "volume": "241(4865)",
+      "pages": "567-570",
+      "doi": "10.1126/science.241.4865.567",
+      "url": "https://doi.org/10.1126/science.241.4865.567",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+    },
+    {
+      "id": "schulte2006",
+      "type": "article",
+      "authors": "Schulte, P.; Speijer, R.; Mai, H.; Kontny, A.",
+      "year": 2006,
+      "title": "The Cretaceous-Paleogene (K-P) boundary at Brazos, Texas: Sequence stratigraphy, depositional events and the Chicxulub impact",
+      "container": "Sedimentary Geology",
+      "volume": "184(1-2)",
+      "pages": "77-109",
+      "doi": "10.1016/j.sedgeo.2005.09.021",
+      "url": "https://www.vliz.be/imisdocs/publications/279480.pdf",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; full-text PDF read (VLIZ repository copy; first page also on KU Leuven Lirias)."
+    },
+    {
+      "id": "witts2021",
+      "type": "article",
+      "authors": "Witts, J. D.; Landman, N. H.; Garb, M. P.; Irizarry, K. M.; Larina, E.; Thibault, N.; Razmjooei, M. J.; Yancey, T. E.; Myers, C. E.",
+      "year": 2021,
+      "title": "Cephalopods from the Cretaceous-Paleogene (K-Pg) Boundary Interval on the Brazos River, Texas, and Extinction of the Ammonites",
+      "container": "American Museum Novitates",
+      "volume": "3964",
+      "pages": "1-52",
+      "doi": "10.1206/3964.1",
+      "url": "https://digitallibrary.amnh.org/server/api/core/bitstreams/d4cbd0b4-bddc-47fc-9f97-cc1f2ad21aad/content",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full-text PDF read (AMNH Digital Library); DOI via Crossref search. Cross-check of Brazos locality coordinates (Cottonmouth Creek AMNH loc. 3621: 31 deg 06'56.58\"N, 96 deg 49'57.71\"W)."
+    },
+    {
+      "id": "keller2004",
+      "type": "article",
+      "authors": "Keller, G.; Adatte, T.; Stinnesbeck, W.; Rebolledo-Vieyra, M.; Urrutia Fucugauchi, J.; Kramar, U.; Stuben, D.",
+      "year": 2004,
+      "title": "Chicxulub impact predates the K-T boundary mass extinction",
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "101(11)",
+      "pages": "3753-3758",
+      "doi": "10.1073/pnas.0400396101",
+      "url": "https://doi.org/10.1073/pnas.0400396101",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract. Minority position (see disagreements)."
+    },
+    {
+      "id": "smit1980",
+      "type": "article",
+      "authors": "Smit, J.; Hertogen, J.",
+      "year": 1980,
+      "title": "An extraterrestrial event at the Cretaceous-Tertiary boundary",
+      "container": "Nature",
+      "volume": "285",
+      "pages": "198-200",
+      "doi": "10.1038/285198a0",
+      "url": "https://doi.org/10.1038/285198a0",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com page (Caravaca)."
+    },
+    {
+      "id": "sosamontesdeoca2013",
+      "type": "article",
+      "authors": "Sosa-Montes de Oca, C.; Martinez-Ruiz, F.; Rodriguez-Tovar, F. J.",
+      "year": 2013,
+      "title": "Bottom-Water Conditions in a Marine Basin after the Cretaceous-Paleogene Impact Event: Timing the Recovery of Oxygen Levels and Productivity",
+      "container": "PLoS ONE",
+      "volume": "8(12)",
+      "pages": "e82242",
+      "doi": "10.1371/journal.pone.0082242",
+      "url": "https://doi.org/10.1371/journal.pone.0082242",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read on journals.plos.org; Crossref metadata (api.crossref.org) checked. Gives Caravaca coordinates (Geologic Setting)."
+    },
+    {
+      "id": "molina2006",
+      "type": "article",
+      "authors": "Molina, E.; Alegret, L.; Arenillas, I.; Arz, J. A.; Gallala, N.; Hardenbol, J.; von Salis, K.; Steurbaut, E.; Vandenberghe, N.; Zaghbib-Turki, D.",
+      "year": 2006,
+      "title": "The Global Boundary Stratotype Section and Point for the base of the Danian Stage (Paleocene, Paleogene, 'Tertiary', Cenozoic) at El Kef, Tunisia - Original definition and revision",
+      "container": "Episodes",
+      "volume": "29(4)",
+      "pages": "263-273",
+      "doi": "10.18814/epiiugs/2006/v29i4/004",
+      "url": "https://doi.org/10.18814/epiiugs/2006/v29i4/004",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "DOI resolved to episodes.org; open-access PDF read (pdf.medrang.co.kr mirror linked from the journal page). GPS coordinates of the GSSP marker given in text."
+    },
+    {
+      "id": "olsson1997",
+      "type": "article",
+      "authors": "Olsson, R. K.; Miller, K. G.; Browning, J. V.; Habib, D.; Sugarman, P. J.",
+      "year": 1997,
+      "title": "Ejecta layer at the Cretaceous-Tertiary boundary, Bass River, New Jersey (Ocean Drilling Program Leg 174AX)",
+      "container": "Geology",
+      "volume": "25(8)",
+      "pages": "759-762",
+      "doi": "10.1130/0091-7613(1997)025<0759:ELATCT>2.3.CO;2",
+      "url": "https://doi.org/10.1130/0091-7613(1997)025<0759:ELATCT>2.3.CO;2",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex (GSW page)."
+    },
+    {
+      "id": "miller1998",
+      "type": "chapter",
+      "authors": "Miller, K. G.; Sugarman, P. J.; Browning, J. V.; Olsson, R. K.; Pekar, S. F.; Reilly, T. J.; Cramer, B. S.; Aubry, M.-P.; Lawrence, R. P.; Curran, J.; Stewart, M.; Metzger, J. M.; Uptegrove, J.; Bukry, D.; Burckle, L. H.; Wright, J. D.; Feigenson, M. D.; Brenner, G. J.; Dalton, R. F.",
+      "year": 1998,
+      "title": "Bass River Site",
+      "container": "Proceedings of the Ocean Drilling Program, Initial Reports, 174AX",
+      "volume": "174AX",
+      "pages": "",
+      "doi": "10.2973/odp.proc.ir.174ax.101.1998",
+      "url": "https://www-odp.tamu.edu/publications/174AX_IR/CHAP_01.PDF",
+      "peerReviewed": false,
+      "verified": false,
+      "notes": "Chapter PDF read (ODP/TAMU). Initial Reports are shipboard/site reports, not formally peer-reviewed. Gives site coordinates and ~6-cm spherule layer."
+    },
+    {
+      "id": "macleod2007",
+      "type": "article",
+      "authors": "MacLeod, K. G.; Whitney, D. L.; Huber, B. T.; Koeberl, C.",
+      "year": 2007,
+      "title": "Impact and extinction in remarkably complete Cretaceous-Tertiary boundary sections from Demerara Rise, tropical western North Atlantic",
+      "container": "Geological Society of America Bulletin",
+      "volume": "119(1-2)",
+      "pages": "101-115",
+      "doi": "10.1130/B25955.1",
+      "url": "https://doi.org/10.1130/B25955.1",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex (GSW page)."
+    },
+    {
+      "id": "shipboard2004",
+      "type": "chapter",
+      "authors": "Shipboard Scientific Party",
+      "year": 2004,
+      "title": "Site 1259",
+      "container": "Proceedings of the Ocean Drilling Program, Initial Reports, 207 (Erbacher, J., Mosher, D. C., Malone, M. J., et al.)",
+      "volume": "207",
+      "pages": "",
+      "doi": "10.2973/odp.proc.ir.207.106.2004",
+      "url": "https://www-odp.tamu.edu/publications/207_IR/VOLUME/CHAPTERS/IR207_06.PDF",
+      "peerReviewed": false,
+      "verified": false,
+      "notes": "DOI resolved to ODP/TAMU; chapter HTML and PDF read (hole coordinates in hole summary, K/T spherule layer in Lithostratigraphy/Biostratigraphy). Not formally peer-reviewed."
+    },
+    {
+      "id": "smit1984",
+      "type": "article",
+      "authors": "Smit, J.; van der Kaars, S.",
+      "year": 1984,
+      "title": "Terminal Cretaceous Extinctions in the Hell Creek Area, Montana: Compatible with Catastrophic Extinction",
+      "container": "Science",
+      "volume": "223(4641)",
+      "pages": "1177-1179",
+      "doi": "10.1126/science.223.4641.1177",
+      "url": "https://doi.org/10.1126/science.223.4641.1177",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+    },
+    {
+      "id": "scotese2018",
+      "type": "dataset",
+      "authors": "Scotese, C. R.; Wright, N.",
+      "year": 2018,
+      "title": "PALEOMAP Paleodigital Elevation Models (PaleoDEMS) for the Phanerozoic",
+      "container": "Zenodo (PALEOMAP Project)",
+      "volume": "",
+      "pages": "",
+      "doi": "10.5281/zenodo.5460860",
+      "url": "https://zenodo.org/records/5460860",
+      "peerReviewed": false,
+      "verified": false,
+      "notes": "Zenodo API record read (CC-BY-4.0, published 2018-08-01). Explanatory PDF (Scotese_Wright2018_PALEOMAP_PaleoDEMs.pdf) downloaded and read: Table 1 (p.14) Map16 'KT Boundary (latest Maastrichtian, 66 Ma)', Plate Tectonic Model Age 65; methods pp. 4-7. 1-deg netCDF zip and CSV zip downloaded; Map16_065Ma.csv analysed."
+    },
+    {
+      "id": "scotese2016",
+      "type": "software",
+      "authors": "Scotese, C. R.",
+      "year": 2016,
+      "title": "Tutorial: PALEOMAP PaleoAtlas for GPlates and the PaleoData Plotter Program (PALEOMAP Global Plate Model v2d3)",
+      "container": "PALEOMAP Project / EarthByte",
+      "volume": "",
+      "pages": "",
+      "doi": "",
+      "url": "http://www.earthbyte.org/paleomap-paleoatlas-for-gplates/",
+      "peerReviewed": false,
+      "verified": false,
+      "notes": "Cited by scotese2018 as 'Scotese 2016b' (plate model v2d3). EarthByte page opened: 91 paleogeographic maps loadable in GPlates with reconstruction files. Not peer-reviewed."
+    },
+    {
+      "id": "stein1992",
+      "type": "article",
+      "authors": "Stein, C. A.; Stein, S.",
+      "year": 1992,
+      "title": "A model for the global variation in oceanic depth and heat flow with lithospheric age",
+      "container": "Nature",
+      "volume": "359",
+      "pages": "123-129",
+      "doi": "10.1038/359123a0",
+      "url": "https://doi.org/10.1038/359123a0",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com. Depth-age relation used by scotese2018 to 'unsubside' ocean floor."
+    },
+    {
+      "id": "miller2005",
+      "type": "article",
+      "authors": "Miller, K. G.; Kominz, M. A.; Browning, J. V.; Wright, J. D.; Mountain, G. S.; Katz, M. E.; Sugarman, P. J.; Cramer, B. S.; Christie-Blick, N.; Pekar, S. F.",
+      "year": 2005,
+      "title": "The Phanerozoic Record of Global Sea-Level Change",
+      "container": "Science",
+      "volume": "310(5752)",
+      "pages": "1293-1298",
+      "doi": "10.1126/science.1116412",
+      "url": "https://doi.org/10.1126/science.1116412",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Abstract read via OpenAlex; DOI via Crossref."
+    },
+    {
+      "id": "miller2020",
+      "type": "article",
+      "authors": "Miller, K. G.; Browning, J. V.; Schmelz, W. J.; Kopp, R. E.; Mountain, G. S.; Wright, J. D.",
+      "year": 2020,
+      "title": "Cenozoic sea-level and cryospheric evolution from deep-sea geochemical and continental margin records",
+      "container": "Science Advances",
+      "volume": "6(20)",
+      "pages": "eaaz1346",
+      "doi": "10.1126/sciadv.aaz1346",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7228749/",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Full text read on PubMed Central (PMC7228749)."
+    },
+    {
+      "id": "boyd2011",
+      "type": "article",
+      "authors": "Boyd, D. W.; Lillegraven, J. A.",
+      "year": 2011,
+      "title": "Persistence of the Western Interior Seaway: Historical background and significance of ichnogenus Rhizocorallium in Paleocene strata, south-central Wyoming",
+      "container": "Rocky Mountain Geology",
+      "volume": "46(1)",
+      "pages": "43-69",
+      "doi": "10.2113/gsrocky.46.1.43",
+      "url": "https://doi.org/10.2113/gsrocky.46.1.43",
+      "peerReviewed": true,
+      "verified": false,
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex (GSW page)."
+    },
+    {
+      "id": "iugs_gubbio",
+      "type": "dataset",
+      "authors": "IUGS International Commission on Geoheritage",
+      "year": 2022,
+      "title": "Cretaceous to Paleogene stratigraphic section of Bottaccione Gorge, Gubbio (IUGS Geological Heritage Site entry)",
+      "container": "IUGS Geoheritage (The First 100 IUGS Geological Heritage Sites)",
+      "volume": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://iugs-geoheritage.org/geoheritage_sites/cretaceous-to-paleogene-stratigraphic-section-of-bottaccione-gorge-gubbio/",
+      "peerReviewed": false,
+      "verified": false,
+      "notes": "Web entry opened (coordinates 43 deg 21'55.0\"N, 12 deg 34'57.0\"E). Authoritative (IUGS), not peer-reviewed. Year = IUGS First-100 designation (2022) - not stated on the page itself."
+    },
+    {
+      "id": "unesco_stevns",
+      "type": "dataset",
+      "authors": "UNESCO World Heritage Centre",
+      "year": 2014,
+      "title": "Stevns Klint (World Heritage List, property 1416)",
+      "container": "UNESCO World Heritage List",
+      "volume": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://whc.unesco.org/en/list/1416/",
+      "peerReviewed": false,
+      "verified": false,
+      "notes": "Page fetched with curl: 'Date of Inscription: 2014 ... N55 16 2 E12 25 24'; 15-km-long coastal cliff. Authoritative, not peer-reviewed."
+    },
+    {
+      "id": "pbdb",
+      "type": "dataset",
+      "authors": "The Paleobiology Database",
+      "year": 2026,
+      "title": "Collection 95884 'P30/f363 Woodside Creek' (and Brownie Butte collections 14515, 57914, 173842)",
+      "container": "Paleobiology Database (paleobiodb.org), data service v1.2",
+      "volume": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://paleobiodb.org/data1.2/colls/single.json?id=95884&show=loc,ref",
+      "peerReviewed": false,
+      "verified": false,
+      "notes": "Queried 2026-10-04. Woodside Creek: 41 deg 55'S, 174 deg 04'E (latlng_basis 'based on nearby landmark', minutes precision; primary ref. Hollis et al. 2003, GNS Science Report). Brownie Butte collections 47.6, -107.0 (political-unit basis) and SMVP quarry 24 47.5362, -107.0189 (stated in text). Database, not peer-reviewed."
+    },
+    {
+      "id": "osm_nominatim",
+      "type": "dataset",
+      "authors": "OpenStreetMap contributors",
+      "year": 2026,
+      "title": "Nominatim geocoding results: Beloc (Haiti), Brownie Butte (Montana), Bowman County (North Dakota)",
+      "container": "OpenStreetMap / Nominatim (ODbL 1.0)",
+      "volume": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://nominatim.openstreetmap.org/",
+      "peerReviewed": false,
+      "verified": false,
+      "notes": "Queried 2026-10-04: Beloc village node 18.3777852, -72.5875491; Brownie Butte peak node 47.5305600, -107.0172974; Bowman County relation centroid 46.1010498, -103.5086625. Crowd-sourced gazetteer - used only where no peer-reviewed coordinates could be found; precision limited (see site notes)."
+    }
+  ],
+  "parameters": [
+    {
+      "id": "atmosphere.sulfur_mass",
+      "group": "atmosphere",
+      "label": "Masa siarki wyrzuconej do atmosfery (scenariusz referencyjny modeli klimatu)",
+      "value": 325,
+      "unit": "Gt",
+      "range": [
+        28,
+        560
+      ],
+      "certainty": "contested",
+      "method": "model:artemieva2017",
+      "sources": [
+        "artemieva2017",
+        "rodiouchkina2025",
+        "pierazzo1998",
+        "pope1997",
+        "gulick2019"
+      ],
+      "locator": "artemieva2017: Abstract; rodiouchkina2025: Abstract, Table 1, Results and discussion; pierazzo1998: Abstract",
+      "notes": "325 ± 130 Gt S (3D hydrocode, ~60° obliquity, gases >25 km; used by tabor2020 and senel2023). Empirical S-isotope estimate 67 ± 39 Gt (2SD) is ~5x lower (rodiouchkina2025). Pierazzo 1998: 40-560 Gt over 10-30 km impactors; 76-127 Gt with 50 % recombination (as tabulated in rodiouchkina2025 Table 1). gulick2019 quotes '325 ± 60 Gt' - inconsistent with the primary abstract (±130). Range = 2SD low of empirical (28) to Pierazzo max (560).",
+      "time": {
+        "t": 30,
+        "range": [
+          15,
+          30
+        ]
+      }
+    },
+    {
+      "id": "atmosphere.sulfur_mass_empirical",
+      "group": "atmosphere",
+      "label": "Masa siarki — estymacja empiryczna z izotopów S w warstwie K-Pg",
+      "value": 67,
+      "unit": "Gt",
+      "range": [
+        28,
+        106
+      ],
+      "certainty": "extrapolation",
+      "method": "measured S + δ34S at 5 terrestrial K-Pg sites, global isotope-dilution inversion (rodiouchkina2025)",
+      "sources": [
+        "rodiouchkina2025"
+      ],
+      "locator": "Abstract; Results and discussion (site values); Fig. 4",
+      "notes": "Average of Tanis 58±9, Dogie Creek 48±14, Brownie Butte 104±13, Knudsen's Coulee 71±11, Knudsen's Farm 57±5 Gt S (2SD); Brazos excluded (large uncertainty). Possible underestimate if microbial reduction removed sulfate; agrees with 1990s model ranges (Chen 90, Pope 35-210, Ivanov 6-106, Pierazzo 76-127 Gt).",
+      "time": null
+    },
+    {
+      "id": "atmosphere.co2_mass",
+      "group": "atmosphere",
+      "label": "Masa CO2 wyrzuconego do atmosfery",
+      "value": 425,
+      "unit": "Gt",
+      "range": [
+        265,
+        3500
+      ],
+      "certainty": "extrapolation",
+      "method": "model:artemieva2017",
+      "sources": [
+        "artemieva2017",
+        "pierazzo1998",
+        "pope1997"
+      ],
+      "locator": "artemieva2017: Abstract; pierazzo1998: Abstract; pope1997: Abstract",
+      "notes": "425 ± 160 Gt (Artemieva); 350-3500 Gt depending on impactor size/velocity, ≤40 % increase of end-Cretaceous atmospheric CO2 (Pierazzo 1998); >500 Gt to stratosphere and <1 K greenhouse warming (Pope 1997). Range spans Artemieva lower 1σ (265) to Pierazzo max (3500).",
+      "time": {
+        "t": 30,
+        "range": [
+          15,
+          30
+        ]
+      }
+    },
+    {
+      "id": "atmosphere.h2o_mass",
+      "group": "atmosphere",
+      "label": "Masa pary wodnej wprowadzonej do górnej atmosfery",
+      "value": 200,
+      "unit": "Gt",
+      "range": [
+        200,
+        1400
+      ],
+      "certainty": "extrapolation",
+      "method": "model:pierazzo1998; model:pope1997",
+      "sources": [
+        "pierazzo1998",
+        "pope1997"
+      ],
+      "locator": "Abstracts",
+      "notes": "Value = lower bound ('over 200 Gt' to stratosphere, Pope 1997); Pierazzo 1998 gives 200-1400 Gt for 10-30 km impactors (upper values for impactors larger than currently favoured).",
+      "time": null
+    },
+    {
+      "id": "atmosphere.global_injection_altitude",
+      "group": "atmosphere",
+      "label": "Wysokość, powyżej której gazy uznano za mające skutki globalne",
+      "value": 25,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:artemieva2017",
+      "sources": [
+        "artemieva2017"
+      ],
+      "locator": "Abstract",
+      "notes": "Criterion used in the hydrocode quantification of climate-active gases ('high enough altitudes (> 25 km) to have global consequences').",
+      "time": null
+    },
+    {
+      "id": "atmosphere.soot_mass",
+      "group": "atmosphere",
+      "label": "Masa drobnej sadzy w stratosferze (scenariusz referencyjny)",
+      "value": 15,
+      "unit": "Gt",
+      "range": [
+        0.5,
+        56
+      ],
+      "certainty": "contested",
+      "method": "model:bardeen2017 (inventory from Wolbach et al. 1990 as cited)",
+      "sources": [
+        "bardeen2017",
+        "wolbach1988",
+        "wolbach1985",
+        "lyons2020",
+        "kaiho2016",
+        "robertson2013",
+        "tabor2020"
+      ],
+      "locator": "bardeen2017: Introduction para 1, Materials and Methods, Results (Fig. 1-2); lyons2020: Abstract; kaiho2016: Results para 1",
+      "notes": "Bardeen: up to 56,000 Tg elemental C in the K-Pg layer, of which 15,000 Tg fine soot (citing Wolbach et al. 1990, GSA SP 247 - not opened by me); simulations 750-35,000 Tg. Kaiho 2016: 500/1500/2600 Tg BC from oil-rich target. Lyons 2020: 0.75-2.5 Gt BC from crater target. Source (global wildfires vs target hydrocarbons) and amount contested; Robertson 2013 argues target soot far too small.",
+      "time": null
+    },
+    {
+      "id": "atmosphere.soot_elemental_carbon_inventory",
+      "group": "atmosphere",
+      "label": "Całkowity węgiel elementarny (sadza) w globalnej warstwie K-Pg",
+      "value": 56,
+      "unit": "Gt",
+      "range": [
+        56,
+        138
+      ],
+      "certainty": "extrapolation",
+      "method": "measured boundary-clay concentrations extrapolated globally (bardeen2017 citing Wolbach 1990); scaling: wolbach1985 0.021±0.006 g/cm² × 5.1e18 cm²",
+      "sources": [
+        "bardeen2017",
+        "wolbach1985"
+      ],
+      "locator": "bardeen2017: Introduction para 1; wolbach1985: Abstract",
+      "notes": "56 Gt = 15 Gt fine + 41 Gt coarse soot (Bardeen citing Wolbach 1990). Upper part of range is my scaling of the 1985 global areal density (≈107 Gt, 76-138 Gt for ±0.006 g/cm²); Wolbach 1985 states ~10 % of present biomass.",
+      "time": null
+    },
+    {
+      "id": "atmosphere.black_carbon_target_rock",
+      "group": "atmosphere",
+      "label": "Czarny węgiel pochodzący ze skał w miejscu uderzenia",
+      "value": 1.6,
+      "unit": "Gt",
+      "range": [
+        0.75,
+        2.5
+      ],
+      "certainty": "extrapolation",
+      "method": "measured PAH/stratigraphy near crater + mass balance (lyons2020)",
+      "sources": [
+        "lyons2020"
+      ],
+      "locator": "Abstract; Results",
+      "notes": "Published as 7.5e14-2.5e15 g; value = midpoint of the range (not a published central value). Dispersed globally within a few hours according to the authors.",
+      "time": {
+        "t": 7200,
+        "range": [
+          0,
+          21600
+        ]
+      }
+    },
+    {
+      "id": "atmosphere.soot_injection_start",
+      "group": "atmosphere",
+      "label": "Początek wprowadzania sadzy z pożarów (założenie modelu)",
+      "value": 12,
+      "unit": "h",
+      "range": [
+        12,
+        36
+      ],
+      "certainty": "speculation",
+      "method": "model assumption: bardeen2017",
+      "sources": [
+        "bardeen2017"
+      ],
+      "locator": "SI Text 'Soot Emission and Removal' (Fig. S1A); Materials and Methods ('injected over 24 h')",
+      "notes": "Model assumption, not a measurement: fine soot placed near the tropopause, coarse soot at the surface, emitted hours 12-36; sharp rise in wet/dry deposition near hour 28.",
+      "time": {
+        "t": 43200,
+        "range": [
+          43200,
+          129600
+        ]
+      }
+    },
+    {
+      "id": "atmosphere.fire_heat_release",
+      "group": "atmosphere",
+      "label": "Ciepło uwolnione przez globalne pożary (założenie modelu)",
+      "value": 4.6e+22,
+      "unit": "J",
+      "range": null,
+      "certainty": "speculation",
+      "method": "model assumption: bardeen2017 (land biomass 2 g/cm² burned)",
+      "sources": [
+        "bardeen2017"
+      ],
+      "locator": "SI Fig. S8 caption",
+      "notes": "Assumes global combustion of land biomass of 2 g cm⁻² (air-dried wood energy).",
+      "time": {
+        "t": 86400,
+        "range": [
+          43200,
+          129600
+        ]
+      }
+    },
+    {
+      "id": "atmosphere.soot_optical_depth_initial",
+      "group": "atmosphere",
+      "label": "Początkowa głębokość optyczna sadzy (500 nm), scenariusz 35 000 Tg",
+      "value": 700,
+      "unit": "",
+      "range": [
+        10,
+        700
+      ],
+      "certainty": "extrapolation",
+      "method": "model:bardeen2017",
+      "sources": [
+        "bardeen2017"
+      ],
+      "locator": "Results 'Lifetime of Soot, Optical Depth, and Sunlight at the Surface', Fig. 1B",
+      "notes": "≈700 for 35,000 Tg soot-only; ≈500 with water injection; ≈10 maximum for 750 Tg. OD stays >10 for 2 yr in the 35,000 Tg case.",
+      "time": null
+    },
+    {
+      "id": "atmosphere.light_below_moonlight_duration",
+      "group": "atmosphere",
+      "label": "Czas, w którym światło przy powierzchni < 10⁻⁶ normy (≥15 000 Tg sadzy)",
+      "value": 15,
+      "unit": "d",
+      "range": [
+        15,
+        30
+      ],
+      "certainty": "extrapolation",
+      "method": "model:bardeen2017",
+      "sources": [
+        "bardeen2017"
+      ],
+      "locator": "Results, Fig. 2",
+      "notes": "'0.5 mo to 1 mo after impact, depending on the initial soot burden' (15,000-35,000 Tg). Value = lower end.",
+      "time": null
+    },
+    {
+      "id": "atmosphere.photosynthesis_light_threshold",
+      "group": "atmosphere",
+      "label": "Próg światła dla fotosyntezy (proxy)",
+      "value": 1,
+      "unit": "%",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "proxy definition used in bardeen2017 (euphotic-zone 1 % criterion)",
+      "sources": [
+        "bardeen2017"
+      ],
+      "locator": "Results (paragraph on euphotic zone)",
+      "notes": "Rough proxy; real thresholds vary by organism.",
+      "time": null
+    },
+    {
+      "id": "atmosphere.light_below_1pct_duration",
+      "group": "atmosphere",
+      "label": "Czas, w którym światło < 1 % normy (zatrzymanie fotosyntezy)",
+      "value": 2,
+      "unit": "yr",
+      "range": [
+        0.08,
+        2
+      ],
+      "certainty": "contested",
+      "method": "model:bardeen2017; model:senel2023; model:tabor2020; model:pope1997",
+      "sources": [
+        "bardeen2017",
+        "senel2023",
+        "tabor2020",
+        "pope1997"
+      ],
+      "locator": "bardeen2017: Results, Fig. 2; senel2023: Abstract; tabor2020: Abstract; pope1997: Abstract",
+      "notes": "~2 yr for ≥15,000 Tg soot (Bardeen) or fine dust (Senel); <1 month for 750 Tg soot; Tabor: only soot gives many months below threshold; Pope: ~6 months if the early sulfate pulse was global. Which agent dominates is contested; effect lies beyond the 24-h window.",
+      "time": null
+    },
+    {
+      "id": "atmosphere.dust_fine_size_min",
+      "group": "atmosphere",
+      "label": "Drobny pył krzemianowy — dolna granica rozmiaru",
+      "value": 0.8,
+      "unit": "µm",
+      "range": [
+        0.8,
+        8.0
+      ],
+      "certainty": "fact",
+      "method": "measured grain-size distribution, Tanis K-Pg layer (senel2023)",
+      "sources": [
+        "senel2023"
+      ],
+      "locator": "Abstract",
+      "notes": "Fine fraction ~0.8-8.0 µm 'larger contribution than previously appreciated'. Total dust mass not verified (main text inaccessible).",
+      "time": null
+    },
+    {
+      "id": "atmosphere.dust_fine_size_max",
+      "group": "atmosphere",
+      "label": "Drobny pył krzemianowy — górna granica rozmiaru",
+      "value": 8.0,
+      "unit": "µm",
+      "range": [
+        0.8,
+        8.0
+      ],
+      "certainty": "fact",
+      "method": "measured grain-size distribution, Tanis K-Pg layer (senel2023)",
+      "sources": [
+        "senel2023"
+      ],
+      "locator": "Abstract",
+      "notes": "See dust_fine_size_min.",
+      "time": null
+    },
+    {
+      "id": "atmosphere.dust_lifetime",
+      "group": "atmosphere",
+      "label": "Czas przebywania drobnego pyłu w atmosferze (model)",
+      "value": 15,
+      "unit": "yr",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:senel2023",
+      "sources": [
+        "senel2023"
+      ],
+      "locator": "Abstract",
+      "notes": "Contributes up to 15 °C global-mean cooling in their simulations.",
+      "time": null
+    },
+    {
+      "id": "atmosphere.ejecta_reaccretion_2h",
+      "group": "atmosphere",
+      "label": "Udział wysokoenergetycznych wyrzutów, które wróciły do atmosfery po 2 h",
+      "value": 25,
+      "unit": "%",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:kringdurda2002 (trajectory calculations)",
+      "sources": [
+        "kringdurda2002"
+      ],
+      "locator": "Abstract",
+      "notes": "Deposition concentrated near crater and antipode; atmospheric shock heating in pulses over a few days.",
+      "time": {
+        "t": 7200,
+        "range": null
+      }
+    },
+    {
+      "id": "atmosphere.ejecta_reaccretion_8h",
+      "group": "atmosphere",
+      "label": "Udział wysokoenergetycznych wyrzutów, które wróciły po 8 h",
+      "value": 55,
+      "unit": "%",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:kringdurda2002",
+      "sources": [
+        "kringdurda2002"
+      ],
+      "locator": "Abstract",
+      "notes": "",
+      "time": {
+        "t": 28800,
+        "range": null
+      }
+    },
+    {
+      "id": "atmosphere.ejecta_reaccretion_72h",
+      "group": "atmosphere",
+      "label": "Udział wysokoenergetycznych wyrzutów, które wróciły po 72 h",
+      "value": 85,
+      "unit": "%",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:kringdurda2002",
+      "sources": [
+        "kringdurda2002"
+      ],
+      "locator": "Abstract",
+      "notes": "Beyond the 24-h window; given for interpolation.",
+      "time": {
+        "t": 259200,
+        "range": null
+      }
+    },
+    {
+      "id": "atmosphere.ejecta_escape_fraction",
+      "group": "atmosphere",
+      "label": "Udział wyrzutów osiągających prędkość ucieczki",
+      "value": 12,
+      "unit": "%",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:kringdurda2002",
+      "sources": [
+        "kringdurda2002"
+      ],
+      "locator": "Abstract",
+      "notes": "",
+      "time": null
+    },
+    {
+      "id": "atmosphere.sulfate_forcing_vs_pinatubo",
+      "group": "atmosphere",
+      "label": "Wymuszenie radiacyjne aerozoli siarczanowych względem erupcji Pinatubo",
+      "value": 100,
+      "unit": "",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:pierazzo2003 (1D radiation model)",
+      "sources": [
+        "pierazzo2003"
+      ],
+      "locator": "Abstract",
+      "notes": "For at least 2 yr; forcing saturates between ~30 and ~300 Gt stratospheric S (higher loads lengthen duration). Assumes SO2 → sulfate in stratosphere; contested by ohno2014 (SO3, rapid rain-out within days).",
+      "time": null
+    },
+    {
+      "id": "biosphere.thermal_pulse_peak_flux",
+      "group": "biosphere",
+      "label": "Szczytowy strumień promieniowania cieplnego przy powierzchni (stanowiska dalekie)",
+      "value": 10,
+      "unit": "kW/m²",
+      "range": [
+        5,
+        15
+      ],
+      "certainty": "contested",
+      "method": "model:goldin2009 (two-phase flow + radiative transfer)",
+      "sources": [
+        "goldin2009",
+        "melosh1990",
+        "robertson2004",
+        "morgan2013"
+      ],
+      "locator": "goldin2009: Abstract; melosh1990: Abstract; robertson2004: Abstract; morgan2013: Abstract",
+      "notes": "Goldin & Melosh: peak 5-15 kW/m² with spherule self-shielding (value = midpoint, not published). Earlier models: >10 kW/m² sustained >20 min. Strongly azimuth-dependent (Morgan 2013: downrange can ignite flora thousands of km away, uprange cannot).",
+      "time": null
+    },
+    {
+      "id": "biosphere.thermal_pulse_duration_above_solar",
+      "group": "biosphere",
+      "label": "Czas trwania impulsu cieplnego powyżej strumienia słonecznego",
+      "value": 30,
+      "unit": "min",
+      "range": null,
+      "certainty": "contested",
+      "method": "model:goldin2009",
+      "sources": [
+        "goldin2009",
+        "melosh1990",
+        "robertson2004"
+      ],
+      "locator": "Abstracts",
+      "notes": "Goldin & Melosh: above solar for ~30 min, >5 kW/m² only a few minutes. Competing: 50-150x solar for 1 to several hours (Melosh 1990); 'several hours' global IR (Robertson 2004).",
+      "time": null
+    },
+    {
+      "id": "biosphere.thermal_pulse_enhancement_factor",
+      "group": "biosphere",
+      "label": "Wzmocnienie strumienia promieniowania względem słonecznego (model bez samoosłaniania)",
+      "value": 100,
+      "unit": "",
+      "range": [
+        50,
+        150
+      ],
+      "certainty": "contested",
+      "method": "model:melosh1990",
+      "sources": [
+        "melosh1990",
+        "goldin2009"
+      ],
+      "locator": "melosh1990: Abstract",
+      "notes": "Value = midpoint of 50-150 (not published). Duration 1 to several hours. Disputed by goldin2009 (self-shielding).",
+      "time": null
+    },
+    {
+      "id": "biosphere.tanis_spherule_arrival",
+      "group": "biosphere",
+      "label": "Początek opadu sferul w Tanis",
+      "value": 15,
+      "unit": "min",
+      "range": [
+        13,
+        25
+      ],
+      "certainty": "extrapolation",
+      "method": "ballistic trajectories (depalma2019, recalculated from Brownie Butte work)",
+      "sources": [
+        "depalma2019"
+      ],
+      "locator": "Results: 'Chronology of the Deposit'; Discussion",
+      "notes": "~15 min for 45-50° launch; 13-25 min for curtain spherules launched at 30-60° (top of atmosphere above Tanis).",
+      "time": {
+        "t": 900,
+        "range": [
+          780,
+          1500
+        ]
+      }
+    },
+    {
+      "id": "biosphere.tanis_spherule_fall_end",
+      "group": "biosphere",
+      "label": "Zakończenie głównego opadu sferul w Tanis",
+      "value": 2,
+      "unit": "h",
+      "range": [
+        1,
+        2
+      ],
+      "certainty": "extrapolation",
+      "method": "ballistic trajectories (depalma2019)",
+      "sources": [
+        "depalma2019"
+      ],
+      "locator": "Discussion",
+      "notes": "'The vast majority would have fallen at Tanis within 1 to 2 h of impact.'",
+      "time": {
+        "t": 7200,
+        "range": [
+          3600,
+          7200
+        ]
+      }
+    },
+    {
+      "id": "biosphere.tanis_shocked_quartz_arrival",
+      "group": "biosphere",
+      "label": "Początek docierania kwarcu szokowego nad Tanis",
+      "value": 38,
+      "unit": "min",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "ballistic trajectories (depalma2019)",
+      "sources": [
+        "depalma2019"
+      ],
+      "locator": "Results: 'Chronology of the Deposit'",
+      "notes": "Launch angles 70-79° from the warm fireball.",
+      "time": {
+        "t": 2280,
+        "range": null
+      }
+    },
+    {
+      "id": "biosphere.tanis_seismic_arrival_p",
+      "group": "biosphere",
+      "label": "Przybycie fal P do Tanis",
+      "value": 6,
+      "unit": "min",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "seismic travel-time calculation (depalma2019)",
+      "sources": [
+        "depalma2019"
+      ],
+      "locator": "Discussion",
+      "notes": "S at 10 min, Rayleigh at 13 min; seiche could follow with pulses lasting tens of minutes.",
+      "time": {
+        "t": 360,
+        "range": null
+      }
+    },
+    {
+      "id": "biosphere.tanis_seismic_arrival_s",
+      "group": "biosphere",
+      "label": "Przybycie fal S do Tanis",
+      "value": 10,
+      "unit": "min",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "seismic travel-time calculation (depalma2019)",
+      "sources": [
+        "depalma2019"
+      ],
+      "locator": "Discussion",
+      "notes": "",
+      "time": {
+        "t": 600,
+        "range": null
+      }
+    },
+    {
+      "id": "biosphere.tanis_seismic_arrival_rayleigh",
+      "group": "biosphere",
+      "label": "Przybycie fal Rayleigha do Tanis",
+      "value": 13,
+      "unit": "min",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "seismic travel-time calculation (depalma2019)",
+      "sources": [
+        "depalma2019"
+      ],
+      "locator": "Discussion",
+      "notes": "",
+      "time": {
+        "t": 780,
+        "range": null
+      }
+    },
+    {
+      "id": "biosphere.tanis_runup",
+      "group": "biosphere",
+      "label": "Wysokość wdarcia (run-up) osadu zdarzenia w Tanis",
+      "value": 10,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "measured from deposit geometry (depalma2019)",
+      "sources": [
+        "depalma2019"
+      ],
+      "locator": "Discussion",
+      "notes": "'At least 10 m' (minimum). Origin (seismic seiche vs tsunami) contested; scaling from Tohoku suggests seiches of order 10-100 m worldwide (rough).",
+      "time": {
+        "t": 1800,
+        "range": [
+          600,
+          3600
+        ]
+      }
+    },
+    {
+      "id": "biosphere.tanis_fish_with_spherules",
+      "group": "biosphere",
+      "label": "Odsetek ryb jesiotrokształtnych w Tanis ze sferulami w wyrostkach skrzelowych",
+      "value": 50,
+      "unit": "%",
+      "range": null,
+      "certainty": "fact",
+      "method": "field/lab observation (depalma2019); synchrotron confirmation for a specimen (during2022)",
+      "sources": [
+        "depalma2019",
+        "during2022"
+      ],
+      "locator": "depalma2019: Results (Ejecta); during2022: Results, Fig. 1",
+      "notes": "'more than 50 %' (lower bound). Spherules only in gill rakers → fish alive and feeding during spherule fall and seiche arrival (During 2022).",
+      "time": {
+        "t": 1800,
+        "range": [
+          780,
+          7200
+        ]
+      }
+    },
+    {
+      "id": "biosphere.impact_season_boreal_spring",
+      "group": "biosphere",
+      "label": "Pora roku uderzenia: wiosna na półkuli północnej (1 = tak)",
+      "value": 1,
+      "unit": "",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "osteohistology + δ13C of Tanis acipenseriform bones (during2022)",
+      "sources": [
+        "during2022",
+        "depalma2021",
+        "during2024"
+      ],
+      "locator": "during2022: Abstract, Results",
+      "notes": "During 2022: growth stopped early in the favourable season shortly after a LAG → boreal spring / austral autumn. DePalma 2021 (spring/summer) has disputed data integrity (During et al. 2024) and should not be used as independent support.",
+      "time": null
+    },
+    {
+      "id": "biosphere.coastal_flow_velocity",
+      "group": "biosphere",
+      "label": "Prędkość przepływów tsunami przy wybrzeżach na całym świecie (dolna granica)",
+      "value": 0.2,
+      "unit": "m/s",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "model:range2022 (hydrocode + global shallow-water model)",
+      "sources": [
+        "range2022"
+      ],
+      "locator": "Abstract",
+      "notes": "'Exceeded 20 cm/s along shorelines worldwide', also in the Central American Seaway; capable of scouring seafloor >10,000 km away. Tsunami up to 30,000x the energy of the 2004 Indian Ocean event.",
+      "time": null
+    },
+    {
+      "id": "biosphere.brazos_tsunami_height",
+      "group": "biosphere",
+      "label": "Wysokość fali tsunami interpretowana z osadu Brazos",
+      "value": 75,
+      "unit": "m",
+      "range": [
+        50,
+        100
+      ],
+      "certainty": "contested",
+      "method": "sedimentological inference (bourgeois1988)",
+      "sources": [
+        "bourgeois1988",
+        "schulte2006",
+        "keller1994"
+      ],
+      "locator": "bourgeois1988: Abstract; schulte2006: Abstract, §4.6",
+      "notes": "Published as '50 to 100 meters high'; value = midpoint. Schulte 2006: multiple tsunami or tempestites followed by reworking; non-tsunami interpretations exist (Keller et al. 1994).",
+      "time": null
+    },
+    {
+      "id": "biosphere.crater_charcoal_deposition",
+      "group": "biosphere",
+      "label": "Czas złożenia węgla drzewnego w kraterze (górna granica)",
+      "value": 24,
+      "unit": "h",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "core stratigraphy + event sequence (gulick2019)",
+      "sources": [
+        "gulick2019"
+      ],
+      "locator": "Abstract; Results/Discussion",
+      "notes": "Reflected rim-wave tsunami layer deposited 'within a day' is overlain by charcoal; charcoal possibly from burning of Gulf margins incl. central Mexican shoreline ~800 km away ignited by the impact plume (hypothesis).",
+      "time": {
+        "t": 86400,
+        "range": [
+          0,
+          86400
+        ]
+      }
+    },
+    {
+      "id": "biosphere.brazos_sst_drop_max",
+      "group": "biosphere",
+      "label": "Maksymalny spadek temperatury powierzchni morza w Brazos po uderzeniu",
+      "value": 7,
+      "unit": "°C",
+      "range": [
+        2,
+        7
+      ],
+      "certainty": "fact",
+      "method": "TEX86 paleothermometry (vellekoop2014)",
+      "sources": [
+        "vellekoop2014"
+      ],
+      "locator": "Results",
+      "notes": "Average SST up to 2 °C lower, two drops up to 7 °C below pre-impact; timescale months-decades (beyond 24 h).",
+      "time": null
+    },
+    {
+      "id": "biosphere.extinction_species_fraction",
+      "group": "biosphere",
+      "label": "Udział gatunków, które wymarły na granicy K-Pg",
+      "value": 76,
+      "unit": "%",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "fossil-record compilation (cited in during2022, lyons2020)",
+      "sources": [
+        "during2022",
+        "lyons2020"
+      ],
+      "locator": "Abstracts",
+      "notes": "Context only (outcome over millennia, not 24 h).",
+      "time": null
+    },
+    {
+      "id": "paleo.paleodem_map_age",
+      "group": "paleo",
+      "label": "Wiek stratygraficzny mapy PaleoDEM Map16 (granica K/T, najpóźniejszy mastrycht)",
+      "value": 66,
+      "unit": "Ma",
+      "range": null,
+      "certainty": "fact",
+      "method": "dataset documentation (scotese2018)",
+      "sources": [
+        "scotese2018"
+      ],
+      "locator": "Scotese_Wright2018_PALEOMAP_PaleoDEMs.pdf, Table 1 (p. 14), row 16",
+      "notes": "Row 16: 'KT Boundary (latest Maastrichtian, 66 Ma)'. Stratigraphic ages per Ogg, Ogg & Gradstein (2012) (Table 1 explanation; reference list gives Ogg et al. 2008 - inconsistency in PDF).",
+      "time": null
+    },
+    {
+      "id": "paleo.paleodem_plate_model_age",
+      "group": "paleo",
+      "label": "Wiek rekonstrukcji w modelu płyt PALEOMAP v2d3 dla Map16",
+      "value": 65,
+      "unit": "Ma",
+      "range": null,
+      "certainty": "fact",
+      "method": "dataset documentation (scotese2018); plate model (scotese2016)",
+      "sources": [
+        "scotese2018",
+        "scotese2016"
+      ],
+      "locator": "Table 1, column 'Plate Tectonic Model Age', footnote 3",
+      "notes": "Explains file names 'Map16_PALEOMAP_1deg_KT_Boundary_65Ma.nc' and 'Map16_065Ma.csv'. Use 65 Ma when building plate-tectonic base maps / rotating points in GPlates with PALEOMAP Global Plate Model v2d3.",
+      "time": null
+    },
+    {
+      "id": "paleo.notes",
+      "group": "paleo",
+      "label": "PaleoDEM Map16 — uwagi metodyczne (numer mapy w polu value)",
+      "value": 16,
+      "unit": "",
+      "range": null,
+      "certainty": "fact",
+      "method": "dataset documentation (scotese2018) + own analysis of Map16_065Ma.csv",
+      "sources": [
+        "scotese2018",
+        "stein1992",
+        "scotese2016"
+      ],
+      "locator": "PDF pp. 4-7 (methods), p. 7 (sea level), p. 7-8 (limitations)",
+      "notes": "Bathymetry: modern 6' topo/bathymetry (Smith & Sandwell 1997; BEDMAP; IBCAO) rotated with PALEOMAP plate model; ocean floor 'unsubsided' with Stein & Stein (1992) depth-age relation; shelves/epeiric seas/lowlands hand-edited from lithofacies (40 m grey-scale steps). 'First draft': subducted-plate bathymetry, shorelines and mountain heights uncertain. 1° grid in palaeo-coordinates (361x181 nodes, lon -180..180). Too coarse for the Yucatán shelf and narrow straits - adequate for basin-scale tsunami travel times only. Area-weighted: land 28.3 %, 0..-200 m 5.8 %, -200..-2000 m 7.8 %, < -2000 m 58.0 %; mean ocean depth 3754 m; extremes -5880/+3000 m.",
+      "time": null
+    },
+    {
+      "id": "paleo.paleodem_resolution",
+      "group": "paleo",
+      "label": "Rozdzielczość pozioma siatki PaleoDEM użytej do analizy",
+      "value": 1,
+      "unit": "°",
+      "range": [
+        0.1,
+        1
+      ],
+      "certainty": "fact",
+      "method": "dataset documentation (scotese2018)",
+      "sources": [
+        "scotese2018"
+      ],
+      "locator": "Abstract; p. 5; Zenodo record description",
+      "notes": "0.1° (6') netCDFs also available on Zenodo; master grids ~10 km horizontal, 40 m vertical.",
+      "time": null
+    },
+    {
+      "id": "paleo.paleodem_vertical_step",
+      "group": "paleo",
+      "label": "Krok pionowy (kwantyzacja) wysokości w PaleoDEM",
+      "value": 40,
+      "unit": "m",
+      "range": null,
+      "certainty": "fact",
+      "method": "dataset documentation + checked in CSV",
+      "sources": [
+        "scotese2018"
+      ],
+      "locator": "p. 5-6",
+      "notes": "Confirmed: Map16 CSV elevations change in 40 m steps.",
+      "time": null
+    },
+    {
+      "id": "paleo.paleodem_mean_ocean_depth",
+      "group": "paleo",
+      "label": "Średnia głębokość oceanu w Map16 (komórki < 0 m, ważone powierzchnią)",
+      "value": 3754,
+      "unit": "m",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived from dataset: scotese2018 Map16_065Ma.csv (my calculation)",
+      "sources": [
+        "scotese2018"
+      ],
+      "locator": "Map16_065Ma.csv",
+      "notes": "Cells deeper than 2000 m average 4398 m.",
+      "time": null
+    },
+    {
+      "id": "paleo.paleodem_land_fraction",
+      "group": "paleo",
+      "label": "Udział lądu (wys. > 0 m) w Map16, ważony powierzchnią",
+      "value": 0.283,
+      "unit": "",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived from dataset (my calculation)",
+      "sources": [
+        "scotese2018"
+      ],
+      "locator": "Map16_065Ma.csv",
+      "notes": "Shelf 0..-200 m: 0.058.",
+      "time": null
+    },
+    {
+      "id": "paleo.wis_continuous_in_paleodem",
+      "group": "paleo",
+      "label": "Ciągłe Morze Wewnętrzne (WIS) w Map16 (1 = tak, 0 = nie)",
+      "value": 0,
+      "unit": "",
+      "range": null,
+      "certainty": "contested",
+      "method": "derived from dataset (no cells < 0 m in palaeo-lon -95..-69°, palaeo-lat 42-64°; min +80 m)",
+      "sources": [
+        "scotese2018",
+        "depalma2019",
+        "boyd2011",
+        "schulte2006",
+        "vellekoop2014"
+      ],
+      "locator": "Map16_065Ma.csv; depalma2019: Geologic Setting/Discussion; boyd2011: Abstract",
+      "notes": "DEM shows the North American interior as lowland 0-200 m. Literature: marine tongues (Breien, Cantapeta) in upper Hell Creek Fm, WIS connectivity 'not presently known' (DePalma 2019); restricted WIS persisted through latest Cretaceous in western Great Plains, expanding as Paleocene Cannonball Sea (Boyd & Lillegraven 2011); Brazos described as 'at the entrance to the WIS' (Schulte 2006; Vellekoop 2014).",
+      "time": null
+    },
+    {
+      "id": "paleo.central_american_seaway_open",
+      "group": "paleo",
+      "label": "Otwarta Cieśnina Środkowoamerykańska (1 = tak)",
+      "value": 1,
+      "unit": "",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "plate reconstruction (scotese2018 Map16) + tsunami model geography (range2022)",
+      "sources": [
+        "scotese2018",
+        "range2022"
+      ],
+      "locator": "Map16_065Ma.csv; range2022: Abstract",
+      "notes": "Deep-water passage between the Americas in Map16; range2022 reports strong flows in the Central American Seaway.",
+      "time": null
+    },
+    {
+      "id": "paleo.atlantic_width_equator",
+      "group": "paleo",
+      "label": "Szerokość Atlantyku na paleorówniku (woda łącznie z szelfami)",
+      "value": 2115,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived from dataset: widest contiguous elev<0 run along palaeo-latitude 0° (my calculation)",
+      "sources": [
+        "scotese2018"
+      ],
+      "locator": "Map16_065Ma.csv",
+      "notes": "Deep part (< -2000 m) ≈1450 km. Roughly half of present-day width. Plate-model dependent.",
+      "time": null
+    },
+    {
+      "id": "paleo.south_atlantic_width_30s",
+      "group": "paleo",
+      "label": "Szerokość Atlantyku Południowego na 30° S (paleo)",
+      "value": 3471,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived from dataset (my calculation)",
+      "sources": [
+        "scotese2018"
+      ],
+      "locator": "Map16_065Ma.csv",
+      "notes": "Deep part ≈2310 km.",
+      "time": null
+    },
+    {
+      "id": "paleo.north_atlantic_width_40n",
+      "group": "paleo",
+      "label": "Szerokość Atlantyku Północnego na 40° N (paleo)",
+      "value": 4093,
+      "unit": "km",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "derived from dataset (my calculation)",
+      "sources": [
+        "scotese2018"
+      ],
+      "locator": "Map16_065Ma.csv",
+      "notes": "Deep part ≈2730 km; at 50° N only ≈1650 km (northern North Atlantic not yet widely open).",
+      "time": null
+    },
+    {
+      "id": "paleo.sea_level_above_present",
+      "group": "paleo",
+      "label": "Globalny poziom morza względem dzisiejszego (66-58 Ma)",
+      "value": 65,
+      "unit": "m",
+      "range": [
+        60,
+        70
+      ],
+      "certainty": "contested",
+      "method": "δ18O-Mg/Ca sea-level reconstruction (miller2020)",
+      "sources": [
+        "miller2020",
+        "miller2005",
+        "scotese2018"
+      ],
+      "locator": "miller2020: Materials and Methods; miller2005: Abstract; scotese2018: p. 7",
+      "notes": "Value = midpoint of '~60 to 70 m above present for 58-66 Ma'; authors flag pre-48 Ma values as suspect. Long-term Cretaceous peak 100 ± 50 m (Miller 2005). PaleoDEM authors: Haq curves too high, Miller 2005 too low. Haq 2014 not accessed.",
+      "time": null
+    },
+    {
+      "id": "paleo.tanis_paleolatitude",
+      "group": "paleo",
+      "label": "Paleoszerokość geograficzna Tanis",
+      "value": 50,
+      "unit": "°",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "palaeogeographic reconstruction cited in during2022",
+      "sources": [
+        "during2022"
+      ],
+      "locator": "Main text (seasonality paragraph)",
+      "notes": "'approximately 50° N during the latest Cretaceous'.",
+      "time": null
+    },
+    {
+      "id": "paleo.hellcreek_temp_summer",
+      "group": "paleo",
+      "label": "Średnia temperatura powietrza latem w regionie Tanis/Hell Creek (późna kreda)",
+      "value": 19,
+      "unit": "°C",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "proxy reconstructions cited in during2022",
+      "sources": [
+        "during2022"
+      ],
+      "locator": "Main text (seasonality paragraph)",
+      "notes": "Winter 4-6 °C.",
+      "time": null
+    },
+    {
+      "id": "paleo.hellcreek_temp_winter",
+      "group": "paleo",
+      "label": "Temperatura powietrza zimą w regionie Tanis/Hell Creek (późna kreda)",
+      "value": 5,
+      "unit": "°C",
+      "range": [
+        4,
+        6
+      ],
+      "certainty": "extrapolation",
+      "method": "proxy reconstructions cited in during2022",
+      "sources": [
+        "during2022"
+      ],
+      "locator": "Main text (seasonality paragraph)",
+      "notes": "Value = midpoint of 4-6 °C.",
+      "time": null
+    },
+    {
+      "id": "paleo.water_depth_stevns_klint",
+      "group": "paleo",
+      "label": "Głębokość wody w Stevns Klint w czasie K-Pg",
+      "value": 125,
+      "unit": "m",
+      "range": [
+        100,
+        150
+      ],
+      "certainty": "extrapolation",
+      "method": "palaeoenvironmental estimate cited in rodiouchkina2025",
+      "sources": [
+        "rodiouchkina2025"
+      ],
+      "locator": "Results ('neritic ... 100-150 m')",
+      "notes": "Value = midpoint.",
+      "time": null
+    },
+    {
+      "id": "paleo.water_depth_caravaca",
+      "group": "paleo",
+      "label": "Głębokość wody w Caravaca w czasie K-Pg",
+      "value": 750,
+      "unit": "m",
+      "range": [
+        500,
+        1000
+      ],
+      "certainty": "extrapolation",
+      "method": "palaeoenvironmental estimate cited in rodiouchkina2025",
+      "sources": [
+        "rodiouchkina2025"
+      ],
+      "locator": "Results ('bathyal ... 500-1000 m')",
+      "notes": "Value = midpoint.",
+      "time": null
+    },
+    {
+      "id": "paleo.water_depth_brazos",
+      "group": "paleo",
+      "label": "Głębokość wody w Brazos w czasie K-Pg",
+      "value": 100,
+      "unit": "m",
+      "range": [
+        75,
+        200
+      ],
+      "certainty": "extrapolation",
+      "method": "palaeoenvironmental estimates",
+      "sources": [
+        "rodiouchkina2025",
+        "vellekoop2014"
+      ],
+      "locator": "rodiouchkina2025: Results (75-100 m); vellekoop2014: Discussion (75-200 m)",
+      "notes": "Value chosen at overlap boundary (100 m).",
+      "time": null
+    },
+    {
+      "id": "paleo.water_depth_el_mimbral",
+      "group": "paleo",
+      "label": "Głębokość wody w El Mimbral (minimalna)",
+      "value": 400,
+      "unit": "m",
+      "range": null,
+      "certainty": "extrapolation",
+      "method": "biostratigraphic/sedimentological estimate (smit1992)",
+      "sources": [
+        "smit1992"
+      ],
+      "locator": "Abstract",
+      "notes": "'deposited at more than 400 m water depth' (lower bound).",
+      "time": null
+    }
+  ],
+  "disagreements": [
+    {
+      "topic": "Mass of sulfur released by the Chicxulub impact",
+      "positions": [
+        {
+          "claim": "~325 ± 130 Gt S (3D hydrocode, oblique impact; widely used in climate models).",
+          "sources": [
+            "artemieva2017",
+            "tabor2020",
+            "senel2023"
+          ]
+        },
+        {
+          "claim": "67 ± 39 Gt S (2SD) from S concentrations and δ34S in terrestrial K-Pg layers; ~5x lower, implying a milder impact winter.",
+          "sources": [
+            "rodiouchkina2025"
+          ]
+        },
+        {
+          "claim": "Older hydrocode estimates 40-560 Gt S; 76-127 Gt if 50 % recombination of vaporised S is assumed.",
+          "sources": [
+            "pierazzo1998",
+            "rodiouchkina2025"
+          ]
+        },
+        {
+          "claim": "Massive S transited the stratosphere (S-MIF in ejecta) and target evaporites are nearly absent from peak-ring impactites - consistent with large degassing (no mass given).",
+          "sources": [
+            "junium2022",
+            "gulick2019"
+          ]
+        }
+      ],
+      "assessment": "Unresolved. The model value depends on assumed degassing thresholds, no anhydrite EOS and no recombination (likely upper-biased); the empirical value depends on preservation of sulfate in a few terrestrial sections (possibly lower-biased). Note also a citation discrepancy: gulick2019 quotes ±60 Gt while the primary abstract gives ±130 Gt. For the simulation, run both a 325 Gt and a ~70 Gt scenario."
+    },
+    {
+      "topic": "Sulfur speciation and residence time (rapid acid rain vs. long-lived stratospheric sulfate)",
+      "positions": [
+        {
+          "claim": "SO3 dominates the vapour; H2SO4 aerosol is scavenged by coarse ejecta and reaches the surface within a few days, acidifying the surface ocean.",
+          "sources": [
+            "ohno2014"
+          ]
+        },
+        {
+          "claim": "SO2 converts to stratospheric sulfate aerosol over months, forcing ~100x Pinatubo for ≥2 yr and multi-year cooling.",
+          "sources": [
+            "pierazzo2003",
+            "brugger2017",
+            "pope1997"
+          ]
+        },
+        {
+          "claim": "S-MIF requires stratospheric photochemistry of S gases, so at least part of the S reached and resided in the stratosphere.",
+          "sources": [
+            "junium2022"
+          ]
+        }
+      ],
+      "assessment": "Both pathways probably operated (Pope 1997 already proposed an early acid pulse plus a long-lived reservoir). The partition is not quantified; Junium 2022 provides empirical support for a stratospheric fraction."
+    },
+    {
+      "topic": "Origin and amount of K-Pg soot",
+      "positions": [
+        {
+          "claim": "Global wildfires produced tens of Gt of soot coincident with the Ir layer.",
+          "sources": [
+            "wolbach1985",
+            "wolbach1988",
+            "robertson2013",
+            "bardeen2017"
+          ]
+        },
+        {
+          "claim": "A significant part of the black carbon came from target-rock hydrocarbons (0.75-2.5 Gt; or 0.5-2.6 Gt from an oil-rich target); wildfires were delayed and protracted.",
+          "sources": [
+            "lyons2020",
+            "kaiho2016"
+          ]
+        },
+        {
+          "claim": "No continent-wide wildfire in North America (no/below-background charcoal in six non-marine sequences).",
+          "sources": [
+            "belcher2003"
+          ]
+        },
+        {
+          "claim": "Ignition is regional and azimuth-dependent; dry litter ignites, live fuel generally not; soot explained by syn- and post-impact fires.",
+          "sources": [
+            "morgan2013",
+            "belcher2015"
+          ]
+        }
+      ],
+      "assessment": "The global soot layer is well documented; its source mix is not. Robertson 2013 argues target soot is far too small to explain the inventory, Lyons 2020 that molecular signatures demand a fossil source. Treat soot mass as a scenario parameter (0.75-15+ Gt)."
+    },
+    {
+      "topic": "Intensity and duration of the re-entry thermal pulse",
+      "positions": [
+        {
+          "claim": "50-150x solar for 1 to several hours; global IR pulse for several hours lethal to unsheltered animals; global fires.",
+          "sources": [
+            "melosh1990",
+            "robertson2004",
+            "robertson2013"
+          ]
+        },
+        {
+          "claim": "Self-shielding by settling spherules limits the surface pulse to ~30 min above solar (peak 5-15 kW/m², >5 kW/m² only minutes).",
+          "sources": [
+            "goldin2009"
+          ]
+        },
+        {
+          "claim": "Strongly asymmetric: downrange sites thousands of km away can ignite, uprange sites cannot.",
+          "sources": [
+            "morgan2013"
+          ]
+        }
+      ],
+      "assessment": "The more recent radiative-transfer models (Goldin & Melosh 2009; Morgan et al. 2013) argue against a uniform multi-hour global pulse, but Goldin & Melosh note an opaque high-altitude dust cap could override self-shielding. Simulation should treat it as spatially heterogeneous and offer both duration modes."
+    },
+    {
+      "topic": "Dominant agent of impact-winter darkness and cooling",
+      "positions": [
+        {
+          "claim": "Only soot from impact-driven firestorms reduces light below the photosynthetic threshold for many months.",
+          "sources": [
+            "tabor2020",
+            "bardeen2017"
+          ]
+        },
+        {
+          "claim": "Fine silicate dust (0.8-8 µm) sustains darkness and photosynthetic shutdown for ~2 yr; sulfur drives the main early cooling.",
+          "sources": [
+            "senel2023",
+            "rodiouchkina2025"
+          ]
+        },
+        {
+          "claim": "Sulfate aerosols dominate long-term cooling.",
+          "sources": [
+            "brugger2017",
+            "pope1997"
+          ]
+        }
+      ],
+      "assessment": "No consensus; depends on assumed emission masses (S contested, soot contested, dust mass unverified here). Within the first 24 h all three are being injected; which dominates later is beyond the simulation window."
+    },
+    {
+      "topic": "Interpretation and data of the Tanis site",
+      "positions": [
+        {
+          "claim": "Event Deposit is a seismically induced seiche/surge (<1 h post-impact) with spherule fall and mass death.",
+          "sources": [
+            "depalma2019"
+          ]
+        },
+        {
+          "claim": "Fish died during spherule fall in boreal spring (independent osteohistology + δ13C with documented data).",
+          "sources": [
+            "during2022"
+          ]
+        },
+        {
+          "claim": "Spring/summer season from isotope data whose primary data and laboratory are unreported; irregularities in isotope plots.",
+          "sources": [
+            "depalma2021",
+            "during2024"
+          ]
+        }
+      ],
+      "assessment": "The seiche mechanism is plausible but not uniquely demonstrated (a tsunami would be attenuated in a WIS of unknown connectivity). Season = boreal spring is supported by During 2022; DePalma 2021 should not be used as independent evidence. Other Tanis claims circulated only in popular media are not peer-reviewed and are excluded."
+    },
+    {
+      "topic": "Gulf of Mexico K-Pg event deposits (El Mimbral, Brazos, Beloc) and timing of the impact",
+      "positions": [
+        {
+          "claim": "Single Chicxulub impact at the K-Pg boundary; clastic units are impact ejecta reworked by tsunami/seiche/backwash within hours-days.",
+          "sources": [
+            "smit1992",
+            "bourgeois1988",
+            "maurrasse1991",
+            "schulte2006",
+            "schulte2010"
+          ]
+        },
+        {
+          "claim": "Units are turbidites/lowstand deposits and Chicxulub predates the K-T boundary by ~300 kyr.",
+          "sources": [
+            "keller1994",
+            "keller2004"
+          ]
+        }
+      ],
+      "assessment": "The single-impact, boundary-coincident interpretation is the broad consensus (Schulte et al. 2010; impact within 33 kyr of the extinction per Renne et al. 2013). Details (one vs several waves; tsunami vs gravity flows) remain debated site by site."
+    },
+    {
+      "topic": "Western Interior Seaway at the K-Pg boundary",
+      "positions": [
+        {
+          "claim": "PaleoDEM Map16 shows no continuous seaway; the North American interior is lowland (0-200 m).",
+          "sources": [
+            "scotese2018"
+          ]
+        },
+        {
+          "claim": "A restricted seaway persisted through the latest Cretaceous in the western Great Plains/Dakotas (marine tongues in the Hell Creek Fm), expanding as the Paleocene Cannonball Sea; southern connections unknown.",
+          "sources": [
+            "boyd2011",
+            "depalma2019"
+          ]
+        }
+      ],
+      "assessment": "A residual northern seaway is supported by marine fossils, but a continuous Gulf-to-Arctic corridor at 66 Ma is not demonstrated. At 1° the DEM cannot resolve narrow marine tongues; mark as uncertain on the map."
+    },
+    {
+      "topic": "Global sea level at the K-Pg boundary",
+      "positions": [
+        {
+          "claim": "~60-70 m above present for 58-66 Ma (δ18O-Mg/Ca; flagged as suspect before 48 Ma); long-term Cretaceous peak 100 ± 50 m.",
+          "sources": [
+            "miller2020",
+            "miller2005"
+          ]
+        },
+        {
+          "claim": "Haq-type eustatic curves are higher; PaleoDEM authors find Haq too high and Miller 2005 too low, best fit with Haq reduced by 30-40 %.",
+          "sources": [
+            "scotese2018"
+          ]
+        }
+      ],
+      "assessment": "Use ~+60-70 m as a working value with wide uncertainty; the PaleoDEM already embeds its own shoreline choices, so do not add a separate sea-level offset to the DEM."
+    }
+  ],
+  "openQuestions": [
+    "Total fine-dust mass injected (Senel et al. 2023 main text inaccessible; figures circulating in press coverage were NOT used) - needs verification from the paper.",
+    "No published explicit 'darkness onset' time: models assume soot injection 12-36 h (Bardeen 2017), re-entry 25/55/85 % at 2/8/72 h (Kring & Durda 2002). Hourly surface-PAR output for the first 72 h would be needed (Bardeen 2017 SI has 1-week hourly runs - check Fig. S1/S8 data on request).",
+    "unverified lead: Prinn, R. G. & Fegley, B. (1987) EPSL 83, 1-15, doi:10.1016/0012-821X(87)90046-X - existence/metadata confirmed in Crossref, but abstract/full text could not be opened; NOx yields and acid-rain pH not extracted.",
+    "unverified lead: Kring, D. A. (2007) Palaeogeogr. Palaeoclimatol. Palaeoecol. 255, 4-21, doi:10.1016/j.palaeo.2007.02.037 - review not opened (metadata only).",
+    "unverified lead: Morgan, J. V. et al. (2022) Nature Reviews Earth & Environment 3, 338-354, doi:10.1038/s43017-022-00283-y - review not opened (metadata only); likely contains a synthesis table of emissions.",
+    "unverified lead: Wolbach, W. S., Gilmour, I. & Anders, E. (1990) GSA Special Paper 247, 391-400 (doi:10.1130/SPE247-p391 per Crossref) - primary source of the 56,000 Tg / 15,000 Tg soot inventory cited by Bardeen et al. 2017; not opened.",
+    "unverified lead: Haq, B. U. (2014) Global and Planetary Change 113, 44-58, doi:10.1016/j.gloplacha.2013.12.007 - K-Pg eustatic value not extracted.",
+    "Tabor et al. 2020 emission inputs (soot, sulfur, dust masses and injection heights) not verified - full text inaccessible.",
+    "Robertson et al. 2004 heat-flux values in the body of the paper not verified (abstract only).",
+    "Exact Tanis coordinates are not published; the point used (Bowman County centroid) is a representative SW-North-Dakota location chosen by me - uncertainty of order ±100 km.",
+    "Beloc outcrop coordinates not found in accessible peer-reviewed sources; village coordinate used (outcrops ~1-3 km along the Beloc-Jacmel road).",
+    "unverified lead: Stinnesbeck, W. et al. (1999) Terra Nova 'Beloc, Haiti, revisited: multiple events across the KT boundary in the Caribbean' and Jéhanno et al. (1992) EPSL - opposing Beloc interpretations; not opened.",
+    "PaleoDEM: Chicxulub palaeo-position must be computed with PALEOMAP v2d3 rotations (65 Ma) before sampling depths; the 1° grid cannot represent the Yucatán ramp. Range et al. 2022 bathymetry source (Scotese is co-author) not verified.",
+    "Distances quoted by Rodiouchkina et al. 2025 (Stevns ~6400, Caravaca ~5500, Brazos ~900, Tanis ~3000 km) differ from present-day great-circle distances (≈8800, 8370, 1310, 3040 km); basis (palaeo-distance?) not stated.",
+    "Whether Map16 is a Phase-I original or Phase-II interpolated PaleoDEM (bold type in Table 1 not recoverable from text extraction).",
+    "unverified lead: Hart, M. B. et al. (2005) Palaeogeogr. Palaeoclimatol. Palaeoecol. 224, 6-26, doi:10.1016/j.palaeo.2005.03.029 (Stevns Klint foraminifers/isotopes) - metadata only; Stevns Klint Fish Clay thickness and Ir values should be added from an accessible primary source."
+  ]
+}
