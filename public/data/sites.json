@@ -1,0 +1,619 @@
+{
+  "model": "PALEOMAP Global Plate Model (Scotese 2016), PALEOMAP_PlateModel.rot + PALEOMAP_PlatePolygons.gpml",
+  "software": "pyGPlates 1.0.0",
+  "timeMa": 65,
+  "sites": [
+    {
+      "id": "chicxulub",
+      "name": "Chicxulub (środek krateru)",
+      "lat": 21.29,
+      "lon": -89.53,
+      "observations": [],
+      "plateId": 205,
+      "paleoLat": 25.115,
+      "paleoLon": -71.582,
+      "nameEn": "Chicxulub (crater centre)"
+    },
+    {
+      "id": "tanis",
+      "name": "Tanis (Dakota Północna)",
+      "lat": 46.10105,
+      "lon": -103.50866,
+      "coordSource": "osm_nominatim",
+      "observations": [
+        {
+          "text": "Współrzędne przybliżone: publikacje podają tylko „południowo-zachodnia Dakota Północna” (formacja Hell Creek); punkt = centroid hrabstwa Bowman wybrany jako reprezentatywny — niepewność rzędu ±100 km.",
+          "sources": [
+            "depalma2019",
+            "osm_nominatim"
+          ],
+          "certainty": "speculation",
+          "textEn": "Approximate coordinates: publications give only 'south-western North Dakota' (Hell Creek Formation); the point is the centroid of Bowman County chosen as representative — uncertainty of order ±100 km."
+        },
+        {
+          "text": "Osad zdarzenia (Event Deposit) złożony minuty–godziny po uderzeniu (< 1 h), przykryty dwuwarstwowym tonsteinem K-Pg grubości 1–2 cm; górna warstwa wzbogacona w iryd (3,8 ppb).",
+          "sources": [
+            "depalma2019"
+          ],
+          "certainty": "fact",
+          "textEn": "Event deposit laid down minutes to hours after the impact (< 1 h), capped by a two-layer K-Pg tonstein 1–2 cm thick; the upper layer is iridium-enriched (3.8 ppb)."
+        },
+        {
+          "text": "Run-up osadu co najmniej 10 m, dwukierunkowe struktury prądowe (w głąb lądu i z powrotem), mieszanina fauny morskiej i słodkowodnej.",
+          "sources": [
+            "depalma2019"
+          ],
+          "certainty": "fact",
+          "textEn": "Deposit run-up of at least 10 m, bidirectional current structures (inland and back), mixed marine and freshwater fauna."
+        },
+        {
+          "text": "Interpretacja: sejsza wzbudzona falami sejsmicznymi (P, S, Rayleigh po ok. 6, 10, 13 min), a nie tsunami — interpretacja dyskusyjna (łączność Morza Wewnętrznego nieznana).",
+          "sources": [
+            "depalma2019"
+          ],
+          "certainty": "contested",
+          "textEn": "Interpretation: a seiche excited by seismic waves (P, S, Rayleigh after ~6, 10, 13 min) rather than a tsunami — a debated interpretation (connectivity of the Interior Seaway unknown)."
+        },
+        {
+          "text": "Sferule (najczęściej 0,3–1,4 mm) zaczęły spadać ok. 13–25 min po uderzeniu; większość opadła w ciągu 1–2 h (obliczenia balistyczne).",
+          "sources": [
+            "depalma2019"
+          ],
+          "certainty": "extrapolation",
+          "textEn": "Spherules (mostly 0.3–1.4 mm) began falling ~13–25 min after the impact; most fell within 1–2 h (ballistic calculations)."
+        },
+        {
+          "text": "Sferule w wyrostkach skrzelowych ponad 50% ryb jesiotrokształtnych; synchrotron: sferule wyłącznie w skrzelach, nie w przewodzie pokarmowym — ryby żyły i żerowały w chwili opadu.",
+          "sources": [
+            "depalma2019",
+            "during2022"
+          ],
+          "certainty": "fact",
+          "textEn": "Spherules in the gill rakers of more than 50% of acipenseriform fish; synchrotron imaging: spherules only in the gills, not in the gut — the fish were alive and feeding during the fall."
+        },
+        {
+          "text": "Pora uderzenia: wiosna na półkuli północnej (osteohistologia i δ13C kości ryb); paleoszerokość ok. 50° N.",
+          "sources": [
+            "during2022"
+          ],
+          "certainty": "extrapolation",
+          "textEn": "Season of the impact: northern-hemisphere spring (osteohistology and δ13C of fish bones); palaeolatitude ~50° N."
+        },
+        {
+          "text": "Niezależna praca o sezonie (wiosna/lato) ma zakwestionowaną integralność danych izotopowych — nie traktować jako niezależnego potwierdzenia.",
+          "sources": [
+            "depalma2021",
+            "during2024"
+          ],
+          "certainty": "contested",
+          "textEn": "An independent paper on the season (spring/summer) has had the integrity of its isotope data questioned — not to be treated as independent confirmation."
+        },
+        {
+          "text": "Rozkład uziarnienia warstwy granicznej wskazuje duży udział drobnego pyłu krzemianowego (~0,8–8 µm).",
+          "sources": [
+            "senel2023"
+          ],
+          "certainty": "fact",
+          "textEn": "The grain-size distribution of the boundary layer indicates a large share of fine silicate dust (~0.8–8 µm)."
+        },
+        {
+          "text": "Empiryczna estymacja siarki z profilu Tanis: 58 ± 9 Gt S; odległość od Chicxulub ok. 3000 km.",
+          "sources": [
+            "rodiouchkina2025"
+          ],
+          "certainty": "extrapolation",
+          "textEn": "Empirical sulfur estimate from the Tanis section: 58 ± 9 Gt S; distance from Chicxulub ~3000 km."
+        }
+      ],
+      "plateId": 101,
+      "paleoLat": 51.697,
+      "paleoLon": -79.26,
+      "nameEn": "Tanis (North Dakota)"
+    },
+    {
+      "id": "hell_creek",
+      "name": "Rejon Hell Creek — Brownie Butte (Montana)",
+      "lat": 47.53056,
+      "lon": -107.0173,
+      "coordSource": "osm_nominatim",
+      "observations": [
+        {
+          "text": "Współrzędne szczytu Brownie Butte (OSM); zgodne z rekordami PBDB (47,6; −107,0 oraz 47,5362; −107,0189 dla kamieniołomu SMVP 24).",
+          "sources": [
+            "osm_nominatim",
+            "pbdb"
+          ],
+          "certainty": "fact",
+          "textEn": "Coordinates of the Brownie Butte summit (OSM); consistent with PBDB records (47.6; −107.0 and 47.5362; −107.0189 for quarry SMVP 24)."
+        },
+        {
+          "text": "Klasyczny lądowy profil K-Pg w rejonie Hell Creek; „przejściowe” fauny okazały się zalegać w paleoceńskich korytach wciętych w granicę — zapis zgodny z katastroficznym wymieraniem.",
+          "sources": [
+            "smit1984"
+          ],
+          "certainty": "fact",
+          "textEn": "Classic terrestrial K-Pg section of the Hell Creek area; 'transitional' faunas turned out to lie in Palaeocene channels cut into the boundary — the record is consistent with a catastrophic extinction."
+        },
+        {
+          "text": "Empiryczna estymacja siarki z profilu Brownie Butte: 104 ± 13 Gt S.",
+          "sources": [
+            "rodiouchkina2025"
+          ],
+          "certainty": "extrapolation",
+          "textEn": "Empirical sulfur estimate from the Brownie Butte section: 104 ± 13 Gt S."
+        },
+        {
+          "text": "Brak lub poniżej-tłowe ilości węgla drzewnego w sześciu lądowych profilach K-Pg (Kolorado–Saskatchewan) — brak dowodu na kontynentalny pożar; wynik kwestionowany jako artefakt tempa sedymentacji.",
+          "sources": [
+            "belcher2003",
+            "robertson2013"
+          ],
+          "certainty": "contested",
+          "textEn": "No or below-background charcoal in six terrestrial K-Pg sections (Colorado–Saskatchewan) — no evidence of a continental fire; the result is challenged as an artefact of sedimentation rate."
+        },
+        {
+          "text": "Wynik ogólny (nie tylko dla tego stanowiska): uderzenie nastąpiło w granicach 33 tys. lat od wymierania (datowania wysokiej precyzji osadów wokół granicy K-Pg).",
+          "sources": [
+            "renne2013"
+          ],
+          "certainty": "fact",
+          "textEn": "General result (not only for this site): the impact occurred within 33 thousand years of the extinction (high-precision dating of sediments around the K-Pg boundary)."
+        }
+      ],
+      "plateId": 101,
+      "paleoLat": 53.729,
+      "paleoLon": -82.427,
+      "nameEn": "Hell Creek area — Brownie Butte (Montana)"
+    },
+    {
+      "id": "beloc",
+      "name": "Beloc (Haiti)",
+      "lat": 18.37779,
+      "lon": -72.58755,
+      "coordSource": "osm_nominatim",
+      "observations": [
+        {
+          "text": "Współrzędne wioski Beloc (OSM); odsłonięcia warstwy granicznej ciągną się ok. 3 km wzdłuż drogi Beloc–Jacmel — precyzja ±2–3 km.",
+          "sources": [
+            "osm_nominatim",
+            "maurrasse1996"
+          ],
+          "certainty": "fact",
+          "textEn": "Coordinates of Beloc village (OSM); boundary-layer outcrops extend ~3 km along the Beloc–Jacmel road — precision ±2–3 km."
+        },
+        {
+          "text": "Szkliwa tektytowe na granicy K/T: szkło bogate w krzemionkę (stopiona skorupa kontynentalna) i szkło wapniowe (stopione margle) — uderzenie w szelf kontynentalny.",
+          "sources": [
+            "sigurdsson1991"
+          ],
+          "certainty": "fact",
+          "textEn": "Tektite glasses at the K/T boundary: silica-rich glass (melted continental crust) and calcium-rich glass (melted marls) — an impact into a continental shelf."
+        },
+        {
+          "text": "Warstwa markerowa: u podstawy grube mikrotektyty i nieliczne ziarna kwarcu szokowego; wyżej margle z soczewkami tektytów — przerobione przez późniejsze zdarzenie, być może tsunami.",
+          "sources": [
+            "maurrasse1991"
+          ],
+          "certainty": "contested",
+          "textEn": "Marker bed: coarse microtektites and rare shocked-quartz grains at the base; above, marls with tektite lenses — reworked by a later event, possibly a tsunami."
+        },
+        {
+          "text": "Grubość warstwy markerowej ok. 40–72,5 cm (do 115 cm przy nasunięciach) — dane z przewodnika terenowego (bez recenzji).",
+          "sources": [
+            "maurrasse1996"
+          ],
+          "certainty": "fact",
+          "textEn": "Marker-bed thickness ~40–72.5 cm (up to 115 cm at thrusts) — data from a field guide (not peer-reviewed)."
+        },
+        {
+          "text": "Datowanie 40Ar/39Ar tektytów zgodne z wiekiem granicy K-T (wartości liczbowe w starej kalibracji).",
+          "sources": [
+            "izett1991"
+          ],
+          "certainty": "fact",
+          "textEn": "40Ar/39Ar dating of the tektites consistent with the K-T boundary age (numerical values in an old calibration)."
+        }
+      ],
+      "plateId": 252,
+      "paleoLat": 17.929,
+      "paleoLon": -67.932,
+      "nameEn": "Beloc (Haiti)"
+    },
+    {
+      "id": "el_mimbral",
+      "name": "Arroyo El Mimbral (Tamaulipas, Meksyk)",
+      "lat": 23.216667,
+      "lon": -98.666667,
+      "coordSource": "keller1994",
+      "observations": [
+        {
+          "text": "Współrzędne 23°13′N, 98°40′W z przewodnika terenowego LPI (precyzja ok. 1′).",
+          "sources": [
+            "keller1994"
+          ],
+          "certainty": "fact",
+          "textEn": "Coordinates 23°13′N, 98°40′W from the LPI field guide (precision ~1′)."
+        },
+        {
+          "text": "Jednostka klastyczna do 3 m grubości w sekwencji pelagicznych margli osadzonych na głębokości > 400 m.",
+          "sources": [
+            "smit1992"
+          ],
+          "certainty": "fact",
+          "textEn": "Clastic unit up to 3 m thick within a sequence of pelagic marls deposited at depths > 400 m."
+        },
+        {
+          "text": "Trzy podjednostki: warstwa sferul z tektytami, mikrotektytami i kwarcem szokowym; laminowane piaskowce z detrytusem roślinnym (cofka megafali); cienkie warstwy riplemarkowe (prądy oscylacyjne, być może sejsza).",
+          "sources": [
+            "smit1992"
+          ],
+          "certainty": "contested",
+          "textEn": "Three subunits: a spherule bed with tektites, microtektites and shocked quartz; laminated sandstones with plant debris (megawave backwash); thin ripple beds (oscillating currents, possibly a seiche)."
+        },
+        {
+          "text": "Anomalia irydu 921 ± 23 pg/g na szczycie warstw riplemarkowych.",
+          "sources": [
+            "smit1992"
+          ],
+          "certainty": "fact",
+          "textEn": "Iridium anomaly of 921 ± 23 pg/g at the top of the ripple beds."
+        },
+        {
+          "text": "Alternatywna interpretacja: turbidyty / osady niskiego stanu morza, nie tsunami, i wiek przed granicą K-T — stanowisko mniejszościowe.",
+          "sources": [
+            "keller1994",
+            "keller2004"
+          ],
+          "certainty": "contested",
+          "textEn": "Alternative interpretation: turbidites / lowstand deposits, not a tsunami, and an age before the K-T boundary — a minority view."
+        }
+      ],
+      "plateId": 135,
+      "paleoLat": 28.529,
+      "paleoLon": -81.287,
+      "nameEn": "Arroyo El Mimbral (Tamaulipas, Mexico)"
+    },
+    {
+      "id": "brazos",
+      "name": "Brazos River (Teksas)",
+      "lat": 31.131553,
+      "lon": -96.823911,
+      "coordSource": "vellekoop2014",
+      "observations": [
+        {
+          "text": "Współrzędne profilu Brazos-1 (31°7′53,59″N, 96°49′26,08″W); w pobliżu stanowiska Cottonmouth Creek (31°06′56,58″N, 96°49′57,71″W).",
+          "sources": [
+            "vellekoop2014",
+            "witts2021"
+          ],
+          "certainty": "fact",
+          "textEn": "Coordinates of the Brazos-1 section (31°7′53.59″N, 96°49′26.08″W); near the Cottonmouth Creek site (31°06′56.58″N, 96°49′57.71″W)."
+        },
+        {
+          "text": "Jedyna warstwa piaskowca w sekwencji mułowców szelfu środkowego–zewnętrznego; interpretowana jako osad tsunami o wysokości 50–100 m.",
+          "sources": [
+            "bourgeois1988"
+          ],
+          "certainty": "contested",
+          "textEn": "The only sandstone bed in a sequence of middle–outer shelf mudstones; interpreted as a tsunami deposit 50–100 m high."
+        },
+        {
+          "text": "Osad zdarzenia z wyrzutami Chicxulub u podstawy (sferule smektytowo-chlorytowe, klasty wapieni); warstwa wyrzutów ok. 10 cm (5–10 cm w innych odsłonięciach); depozycja przez wielokrotne tsunami lub sztormy, potem przerabianie.",
+          "sources": [
+            "schulte2006"
+          ],
+          "certainty": "contested",
+          "textEn": "Event deposit with Chicxulub ejecta at its base (smectite-chlorite spherules, limestone clasts); ejecta layer ~10 cm (5–10 cm in other outcrops); deposition by repeated tsunamis or storms, then reworking."
+        },
+        {
+          "text": "Głębokość wody ok. 75–100 m (wg innej oceny 75–200 m).",
+          "sources": [
+            "rodiouchkina2025",
+            "vellekoop2014"
+          ],
+          "certainty": "extrapolation",
+          "textEn": "Water depth ~75–100 m (another estimate: 75–200 m)."
+        },
+        {
+          "text": "Po uderzeniu temperatura powierzchni morza (TEX86) średnio do 2 °C niższa, z dwoma spadkami do 7 °C (miesiące–dekady).",
+          "sources": [
+            "vellekoop2014"
+          ],
+          "certainty": "fact",
+          "textEn": "After the impact, sea-surface temperature (TEX86) was on average up to 2 °C lower, with two drops of up to 7 °C (months to decades)."
+        },
+        {
+          "text": "Anomalie izotopów siarki niezależne od masy (S-MIF) w wyrzutach — siarka przeszła przez stratosferę.",
+          "sources": [
+            "junium2022"
+          ],
+          "certainty": "fact",
+          "textEn": "Mass-independent sulfur isotope anomalies (S-MIF) in the ejecta — the sulfur passed through the stratosphere."
+        },
+        {
+          "text": "Bogata fauna amonitów (strefa Discoscaphites iris) bezpośrednio pod granicą K-Pg.",
+          "sources": [
+            "witts2021"
+          ],
+          "certainty": "fact",
+          "textEn": "Rich ammonite fauna (Discoscaphites iris zone) directly below the K-Pg boundary."
+        }
+      ],
+      "plateId": 101,
+      "paleoLat": 35.913,
+      "paleoLon": -77.395,
+      "nameEn": "Brazos River (Texas)"
+    },
+    {
+      "id": "gubbio",
+      "name": "Gubbio — wąwóz Bottaccione (Włochy)",
+      "lat": 43.365278,
+      "lon": 12.5825,
+      "coordSource": "iugs_gubbio",
+      "observations": [
+        {
+          "text": "Stanowisko odkrycia anomalii irydowej (Gubbio): wzrost Ir ok. 30× ponad tło w głębokomorskich wapieniach Włoch.",
+          "sources": [
+            "alvarez1980",
+            "alvarez1990"
+          ],
+          "certainty": "fact",
+          "textEn": "Discovery site of the iridium anomaly (Gubbio): Ir rises ~30× above background in Italian deep-sea limestones."
+        },
+        {
+          "text": "Anomalia Ir osiąga maksimum w 1-centymetrowej warstwie iłu (średnio 3000 ppt), z „ogonami” 20–80 ppt nad tłem 12–13 ppt; jedna anomalia w 57-metrowym profilu (10 mln lat).",
+          "sources": [
+            "alvarez1990"
+          ],
+          "certainty": "fact",
+          "textEn": "The Ir anomaly peaks in a 1 cm clay layer (mean 3000 ppt), with 'tails' of 20–80 ppt above a 12–13 ppt background; a single anomaly in a 57 m section (10 million years)."
+        }
+      ],
+      "plateId": 307,
+      "paleoLat": 32.511,
+      "paleoLon": 11.1,
+      "nameEn": "Gubbio — Bottaccione Gorge (Italy)"
+    },
+    {
+      "id": "stevns_klint",
+      "name": "Stevns Klint (Dania)",
+      "lat": 55.267222,
+      "lon": 12.423333,
+      "coordSource": "unesco_stevns",
+      "observations": [
+        {
+          "text": "Współrzędne obiektu UNESCO (klif długości 15 km); punkt reprezentuje cały obiekt, nie konkretne odsłonięcie.",
+          "sources": [
+            "unesco_stevns"
+          ],
+          "certainty": "fact",
+          "textEn": "Coordinates of the UNESCO site (a 15 km long cliff); the point represents the whole site, not a specific outcrop."
+        },
+        {
+          "text": "Alvarez i in. (1980) raportują ok. 160-krotny wzrost Ir ponad tło w głębokomorskich wapieniach Danii (klasyczne stanowisko duńskie).",
+          "sources": [
+            "alvarez1980"
+          ],
+          "certainty": "fact",
+          "textEn": "Alvarez et al. (1980) report a ~160-fold Ir increase above background in Danish deep-sea limestones (the classic Danish site)."
+        },
+        {
+          "text": "Środowisko nerytyczne, głębokość wody ok. 100–150 m; w profilu dodatnia anomalia stężenia siarki.",
+          "sources": [
+            "rodiouchkina2025"
+          ],
+          "certainty": "extrapolation",
+          "textEn": "Neritic setting, water depth ~100–150 m; a positive sulfur-concentration anomaly in the section."
+        }
+      ],
+      "plateId": 301,
+      "paleoLat": 48.246,
+      "paleoLon": 9.066,
+      "nameEn": "Stevns Klint (Denmark)"
+    },
+    {
+      "id": "el_kef",
+      "name": "El Kef (Tunezja) — GSSP bazy danu",
+      "lat": 36.153667,
+      "lon": 8.648556,
+      "coordSource": "molina2006",
+      "observations": [
+        {
+          "text": "GSSP granicy K/Pg: podstawa iłu granicznego; współrzędne GPS znacznika: N36°09′13,2″, E008°38′54,8″.",
+          "sources": [
+            "molina2006"
+          ],
+          "certainty": "fact",
+          "textEn": "GSSP of the K/Pg boundary: base of the boundary clay; GPS coordinates of the marker: N36°09′13.2″, E008°38′54.8″."
+        },
+        {
+          "text": "U podstawy 0,5 m czarnego iłu granicznego (ok. 5% CaCO3) rdzawa warstwa żelazista grubości 1–3 mm; maksimum Ir 16,25 ppb ograniczone do tej warstwy; spinele niklowe.",
+          "sources": [
+            "molina2006"
+          ],
+          "certainty": "fact",
+          "textEn": "At the base of 0.5 m of black boundary clay (~5% CaCO3), a rusty ferruginous layer 1–3 mm thick; the Ir maximum of 16.25 ppb is confined to this layer; nickel-rich spinels."
+        },
+        {
+          "text": "Katastrofalne wymieranie planktonicznych otwornic i nanoplanktonu na granicy; otwornice bentoniczne bez masowego wymierania, lecz z wyraźną wymianą zespołów; depozycja na głębokości zewnętrznego szelfu–górnego batiału.",
+          "sources": [
+            "molina2006"
+          ],
+          "certainty": "fact",
+          "textEn": "Catastrophic extinction of planktonic foraminifera and nannoplankton at the boundary; benthic foraminifera without mass extinction but with a clear assemblage turnover; deposition at outer-shelf to upper-bathyal depth."
+        }
+      ],
+      "plateId": 714,
+      "paleoLat": 25.917,
+      "paleoLon": 6.284,
+      "nameEn": "El Kef (Tunisia) — GSSP of the Danian base"
+    },
+    {
+      "id": "caravaca",
+      "name": "Caravaca — Barranco del Gredero (Hiszpania)",
+      "lat": 38.076775,
+      "lon": -1.878181,
+      "coordSource": "sosamontesdeoca2013",
+      "observations": [
+        {
+          "text": "Nad marglami mastrychtu 7–10 cm czarnoszarego iłu granicznego z rdzawobrązową warstwą wyrzutów grubości 2–3 mm u podstawy (sferule, anomalie PGE).",
+          "sources": [
+            "sosamontesdeoca2013"
+          ],
+          "certainty": "fact",
+          "textEn": "Above Maastrichtian marls, 7–10 cm of black-grey boundary clay with a 2–3 mm rusty-brown ejecta layer at the base (spherules, PGE anomalies)."
+        },
+        {
+          "text": "Nagłe wymieranie planktonicznych otwornic i nanoplanktonu sprzężone z anomalią irydu i osmu.",
+          "sources": [
+            "smit1980"
+          ],
+          "certainty": "fact",
+          "textEn": "Abrupt extinction of planktonic foraminifera and nannoplankton coupled with an iridium and osmium anomaly."
+        },
+        {
+          "text": "Środowisko batialne, głębokość wody ok. 500–1000 m.",
+          "sources": [
+            "rodiouchkina2025"
+          ],
+          "certainty": "extrapolation",
+          "textEn": "Bathyal setting, water depth ~500–1000 m."
+        }
+      ],
+      "plateId": 304,
+      "paleoLat": 30.782,
+      "paleoLon": -3.523,
+      "nameEn": "Caravaca — Barranco del Gredero (Spain)"
+    },
+    {
+      "id": "bass_river",
+      "name": "Bass River (New Jersey, ODP Leg 174AX)",
+      "lat": 39.611667,
+      "lon": -74.436667,
+      "coordSource": "miller1998",
+      "observations": [
+        {
+          "text": "Otwór wiertniczy na lądzie (Bass River State Forest); granica K/T na głębokości 384,12 m.",
+          "sources": [
+            "miller1998"
+          ],
+          "certainty": "fact",
+          "textEn": "Onshore borehole (Bass River State Forest); the K/T boundary at 384.12 m depth."
+        },
+        {
+          "text": "Warstwa sferul grubości ok. 6 cm bezpośrednio nad granicą; odciski sferul w stropie kredy — niemal natychmiastowa depozycja wyrzutów; ok. 2500 km od krateru.",
+          "sources": [
+            "olsson1997",
+            "miller1998"
+          ],
+          "certainty": "fact",
+          "textEn": "A ~6 cm spherule bed directly above the boundary; spherule impressions in the top of the Cretaceous — nearly instantaneous ejecta deposition; ~2500 km from the crater."
+        },
+        {
+          "text": "Klasty ilaste z mikroskamieniałościami kredowymi w 6 cm nad warstwą sferul — możliwe klasty zerwane przez tsunami lub megasztorm.",
+          "sources": [
+            "olsson1997"
+          ],
+          "certainty": "contested",
+          "textEn": "Clay clasts with Cretaceous microfossils 6 cm above the spherule bed — possibly clasts ripped up by a tsunami or megastorm."
+        },
+        {
+          "text": "Gwałtowne wymieranie planktonicznych otwornic kredowych i organizmów ryjących na granicy.",
+          "sources": [
+            "olsson1997"
+          ],
+          "certainty": "fact",
+          "textEn": "Abrupt extinction of Cretaceous planktonic foraminifera and burrowing organisms at the boundary."
+        }
+      ],
+      "plateId": 109,
+      "paleoLat": 39.626,
+      "paleoLon": -52.376,
+      "nameEn": "Bass River (New Jersey, ODP Leg 174AX)"
+    },
+    {
+      "id": "demerara_rise",
+      "name": "Demerara Rise (ODP Leg 207, Site 1259)",
+      "lat": 9.300808,
+      "lon": -54.19908,
+      "coordSource": "shipboard2004",
+      "observations": [
+        {
+          "text": "Współrzędne otworu 1259B (9°18,0485′N, 54°11,9448′W); dzisiejsza głębokość wody ok. 2354 m.",
+          "sources": [
+            "shipboard2004"
+          ],
+          "certainty": "fact",
+          "textEn": "Coordinates of hole 1259B (9°18.0485′N, 54°11.9448′W); present-day water depth ~2354 m."
+        },
+        {
+          "text": "Normalnie gradowana warstwa sferul grubości ok. 2 cm (opad powietrzny wyrzutów), sferule do 2,5 mm; brak innych warstw sferul.",
+          "sources": [
+            "macleod2007",
+            "shipboard2004"
+          ],
+          "certainty": "fact",
+          "textEn": "A normally graded spherule bed ~2 cm thick (ejecta airfall), spherules up to 2.5 mm; no other spherule beds."
+        },
+        {
+          "text": "Maksimum Ir ok. 1,5 ppb na stropie warstwy sferul; spadek liczebności otwornic od licznych do rzadkich.",
+          "sources": [
+            "macleod2007"
+          ],
+          "certainty": "fact",
+          "textEn": "Ir maximum ~1.5 ppb at the top of the spherule bed; foraminifera decline from abundant to rare."
+        },
+        {
+          "text": "Ok. 4500 km od krateru; dobrze zachowana prosta stratygrafia przypisywana osłonięciu od fal wywołanych uderzeniem.",
+          "sources": [
+            "macleod2007"
+          ],
+          "certainty": "extrapolation",
+          "textEn": "~4500 km from the crater; well-preserved simple stratigraphy attributed to shelter from impact-generated waves."
+        }
+      ],
+      "plateId": 201,
+      "paleoLat": 5.832,
+      "paleoLon": -40.142,
+      "nameEn": "Demerara Rise (ODP Leg 207, Site 1259)"
+    },
+    {
+      "id": "woodside_creek",
+      "name": "Woodside Creek (Nowa Zelandia)",
+      "lat": -41.916667,
+      "lon": 174.066667,
+      "coordSource": "pbdb",
+      "observations": [
+        {
+          "text": "Współrzędne z PBDB (41°55′S, 174°04′E, na podstawie pobliskiego punktu orientacyjnego; precyzja do minut).",
+          "sources": [
+            "pbdb"
+          ],
+          "certainty": "fact",
+          "textEn": "Coordinates from PBDB (41°55′S, 174°04′E, based on a nearby landmark; precision to minutes)."
+        },
+        {
+          "text": "Iryd 153 ng/g w dolnych 2 mm 8-milimetrowej wkładki łupku granicznego; zintegrowany Ir 187 ng/cm²; wzbogacenie w Au, Cu, Co, Cr, Ni, As, Mo, Fe; Ir/Au = 2,1.",
+          "sources": [
+            "brooks1984"
+          ],
+          "certainty": "fact",
+          "textEn": "Iridium 153 ng/g in the lower 2 mm of an 8 mm boundary-shale parting; integrated Ir 187 ng/cm²; enrichment in Au, Cu, Co, Cr, Ni, As, Mo, Fe; Ir/Au = 2.1."
+        },
+        {
+          "text": "Alvarez i in. (1980) raportują ok. 20-krotny wzrost Ir w Nowej Zelandii; Brooks i in. (1984) nazywają Woodside Creek „locus classicus” anomalii irydowych.",
+          "sources": [
+            "alvarez1980",
+            "brooks1984"
+          ],
+          "certainty": "fact",
+          "textEn": "Alvarez et al. (1980) report a ~20-fold Ir increase in New Zealand; Brooks et al. (1984) call Woodside Creek the 'locus classicus' of iridium anomalies."
+        }
+      ],
+      "plateId": 806,
+      "paleoLat": -58.127,
+      "paleoLon": -171.984,
+      "nameEn": "Woodside Creek (New Zealand)"
+    }
+  ]
+}

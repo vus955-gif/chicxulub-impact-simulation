@@ -1,0 +1,25 @@
+:root {
+  color-scheme: dark;
+  --bg: #090c12; --panel: #10151f; --panel2: #151c29; --line: #232c3c; --line2: #2f3a4e;
+  --ink: #e7e5df; --ink2: #b7bcc8; --muted: #7d8699; --accent: #ffcf8a;
+  --c-crater: #c4a479; --c-thermal: #ff7a3d; --c-ejecta: #f0a830; --c-seismic: #e48fd0; --c-seismic-surf: #b98cf0; --c-air: #a9bdff;
+  --c-tsunami: #2bb3c9; --c-fires: #ff4d3d; --c-atmo: #9a9a9a; --c-bio: #4cc38a;
+  --m-fact: #7fc97f; --m-extrapolation: #82b1ff; --m-speculation: #a8a8a8; --m-contested: #ff8a80; --m-predictive: #e6c84f;
+  --radius: 8px; --font: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --mono: "Cascadia Mono", "Consolas", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font: 13px/1.45 var(--font); overflow: hidden; }
+button, select { font: inherit; color: var(--ink); background: var(--panel2); border: 1px solid var(--line2); border-radius: 6px; padding: 3px 8px; cursor: pointer; }
+button:hover, select:hover { border-color: var(--muted); }
+button.on { background: #24324a; border-color: #4b6491; }
+button:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+h2 { font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.ph-crater { color: var(--c-crater); } .ph-thermal { color: var(--c-thermal); } .ph-ejecta { color: var(--c-ejecta); }
+.ph-seismic { color: var(--c-seismic); } .ph-air { color: var(--c-air); } .ph-tsunami { color: var(--c-tsunami); }
+.ph-fires { color: var(--c-fires); } .ph-atmo { color: var(--c-atmo); } .ph-bio { color: var(--c-bio); }
+.mk-fact { color: var(--m-fact); } .mk-extrapolation { color: var(--m-extrapolation); } .mk-speculation { color: var(--m-speculation); }
+.mk-contested { color: var(--m-contested); } .mk-predictive { color: var(--m-predictive); }
+.scroll { overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--line2) transparent; }
+.small { font-size: 11.5px; color: var(--ink2); }
+.muted { color: var(--muted); }
