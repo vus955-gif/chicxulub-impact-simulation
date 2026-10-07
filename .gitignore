@@ -1,0 +1,22 @@
+# dependencies and build output
+node_modules/
+dist/
+
+# raw downloaded datasets (large; see DATA-LICENSES.md for where to get them)
+data/raw/
+
+# research working material (full-text extracts of papers, scratch figures) — not redistributed
+research/_robocze_subagentow/
+research/_podglad_rysunkow/
+
+# local tooling and OS files
+.tmp/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
+
+# internal planning notes from the development sessions (not project documentation)
+docs/superpowers/

@@ -1,0 +1,62 @@
+{
+  "name": "chicxulub-impact-simulation",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Interactive, source-referenced simulation of the first 24 hours after the Chicxulub impact (66 Ma): 2D map, 3D globe, 3D close-up and crustal cross-section.",
+  "license": "MIT",
+  "author": "vus955-gif",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vus955-gif/chicxulub-impact-simulation.git"
+  },
+  "keywords": [
+    "chicxulub",
+    "asteroid-impact",
+    "k-pg",
+    "simulation",
+    "svelte",
+    "threejs",
+    "education"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "verify-dois": "tsx scripts/verify-dois.ts",
+    "reconstruct-sites": "python scripts/reconstruct_sites_local.py",
+    "derive": "tsx scripts/derive-parameters.ts",
+    "report": "tsx scripts/build-report.ts",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "export-registry": "tsx scripts/export-registry.ts",
+    "registry": "tsx scripts/assemble-registry.ts && tsx scripts/derive-parameters.ts && tsx scripts/export-registry.ts",
+    "validate-registry": "tsx scripts/check-registry.ts",
+    "report:figures": "tsx scripts/render-figures-png.ts"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "@types/d3-array": "^3.2.2",
+    "@types/d3-geo": "^3.1.1",
+    "@types/d3-scale": "^4.0.9",
+    "@types/node": "^26.6.4",
+    "@types/three": "^0.186.0",
+    "svelte": "^5.57.1",
+    "svelte-check": "^4.7.6",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3"
+  },
+  "dependencies": {
+    "d3-array": "^3.2.4",
+    "d3-geo": "^3.1.1",
+    "d3-scale": "^4.0.2",
+    "three": "^0.186.1"
+  }
+}
