@@ -45,7 +45,7 @@ for (const t of THREADS) {
     let id = s.id;
     for (let k = 1; usedIds.has(id); k++) id = `${s.id}_${k}`;
     usedIds.add(id);
-    const doi = s.doi?.trim();
+    const doi = s.doi;
     const src: Source = { ...s, id, doi, verified: doi ? prevVerified.get(doi.toLowerCase()) ?? false : s.verified };
     byKey.set(key, src);
     map.set(s.id, id);

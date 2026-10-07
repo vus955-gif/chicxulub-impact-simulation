@@ -15,7 +15,7 @@
       crater: t >= 0 && t <= data.reg.num('crater.t_final'),
       thermal: (t > 0 && t <= fireballEnd) || has('ejecta'),
       ejecta: has('ejecta'),
-      seismic: has('P') || has('S') || t > 0,
+      seismic: t > 0,
       air: t > 0,
       tsunami: t >= data.reg.num('tsunami.range2022_handoff_time') * 0.25,
       fires: t > data.reg.num('fireball.t_max_radiation_eiep'),

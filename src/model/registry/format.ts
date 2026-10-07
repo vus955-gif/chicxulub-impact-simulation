@@ -16,7 +16,7 @@ const SUPERSCRIPT: Record<string, string> = {
 let numberLocale = 'pl-PL';
 /** Język formatowania liczb (aplikacja przełącza PL/EN; raport i skrypty zostają przy pl-PL). */
 export const setNumberLocale = (locale: 'pl-PL' | 'en-US') => { numberLocale = locale; };
-const pl = (x: number, maxFrac: number) => x.toLocaleString(numberLocale, { maximumFractionDigits: maxFrac });
+const localeNumber = (x: number, maxFrac: number) => x.toLocaleString(numberLocale, { maximumFractionDigits: maxFrac });
 
 export function formatNumber(x: number, sig = 3): string {
   if (x === 0) return '0';
@@ -26,12 +26,19 @@ export function formatNumber(x: number, sig = 3): string {
     let mant = Number((x / 10 ** exp).toPrecision(sig));
     if (Math.abs(mant) >= 10) { mant /= 10; exp += 1; }
     const sup = [...String(exp)].map((c) => SUPERSCRIPT[c] ?? c).join('');
-    return `${pl(mant, sig)} × 10${sup}`;
+    return `${localeNumber(mant, sig)} × 10${sup}`;
   }
-  return pl(Number(x.toPrecision(sig)), 20);
+  return localeNumber(Number(x.toPrecision(sig)), 20);
 }
 
-const withUnit = (s: string, unit: string) => (unit === '' ? s : unit === '°' ? `${s}°` : `${s} ${unit}`);
+/** Czas trwania w jednostce dobranej do wielkości: s, min albo h. */
+export function formatDuration(s: number): string {
+  if (s < 60) return `${formatNumber(s, 2)} s`;
+  if (s < 3600) return `${formatNumber(s / 60, 2)} min`;
+  return `${formatNumber(s / 3600, 3)} h`;
+}
+
+export const withUnit = (s: string, unit: string) => (unit === '' ? s : unit === '°' ? `${s}°` : `${s} ${unit}`);
 
 export function formatParam(p: Parameter): string {
   if (p.value === null) return '—';

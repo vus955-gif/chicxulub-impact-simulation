@@ -38,8 +38,8 @@ describe.runIf(ready)('IR pulse shape (Goldin & Melosh 2009: strong for minutes,
 
   it('ignition uses the time spent at the peak, not the whole pulse', () => {
     const p = irPulse(ctx, 7500, 90, 'goldin');
-    expect(ignitionLevel(ctx, { ...p, peakHigh: 30 })).toBe('ściółka'); // 3 min ≥ 1 min na szczycie
-    expect(ignitionLevel(ctx, { ...p, peakHigh: 60 })).toBe('drewno'); // 3 min ≥ 2 min na szczycie
-    expect(ignitionLevel(ctx, { ...p, peakHigh: 60, shape: { strongS: 90 } })).toBe('ściółka');
+    expect(ignitionLevel(ctx, { ...p, peakHigh: 30 })).toBe('litter'); // 3 min ≥ 1 min na szczycie
+    expect(ignitionLevel(ctx, { ...p, peakHigh: 60 })).toBe('wood'); // 3 min ≥ 2 min na szczycie
+    expect(ignitionLevel(ctx, { ...p, peakHigh: 60, shape: { strongS: 90 } })).toBe('litter');
   });
 });

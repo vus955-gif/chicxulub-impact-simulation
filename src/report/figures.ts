@@ -4,19 +4,21 @@
  * Kolory zjawisk: klasy CSS .ph-* (definiowane w szablonie), SVG używa currentColor.
  */
 import type { Certainty, Parameter, Registry } from '../model/registry/types';
-import { CERTAINTY_LABEL, formatNumber, formatParam } from '../model/registry/format';
+import { CERTAINTY_LABEL, formatDuration, formatNumber, formatParam } from '../model/registry/format';
 import * as eiep from '../model/eiep';
+import { R_KM } from '../model/sim/geo';
+import { interpKnots } from '../model/sim/interp';
+import { esc } from './html';
 
 export interface FigureContext {
   reg: Registry;
   ak135?: { firstArrival_s: { P: Array<number | null>; S: Array<number | null> } };
 }
 
-const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const r1 = (x: number) => Math.round(x * 10) / 10;
-const R_KM = 6371;
 
-export const PHENOMENA: Array<{ key: string; label: string; groups: string[] }> = [
+/** Tory raportu (grupy rejestru) — pożary łączone z termiką, inaczej niż osobna warstwa w aplikacji. */
+const REPORT_LANES: Array<{ key: string; label: string; groups: string[] }> = [
   { key: 'crater', label: 'Krater i skorupa', groups: ['crater', 'crust'] },
   { key: 'thermal', label: 'Kula ognia, termika, pożary', groups: ['fireball', 'thermal', 'fires', 'temperature'] },
   { key: 'ejecta', label: 'Ejecta', groups: ['ejecta'] },
@@ -32,13 +34,7 @@ export const GROUP_LABEL: Record<string, string> = {
   paleo: 'paleogeografia', seismic: 'sejsmika', site: 'miejsce', sound: 'dźwięk', target: 'cel', temperature: 'temperatura',
   thermal: 'termika', tsunami: 'tsunami',
 };
-const phenomenonOf = (group: string) => PHENOMENA.find((p) => p.groups.includes(group))?.key ?? 'meta';
-
-export function fmtTime(s: number): string {
-  if (s < 60) return `${formatNumber(s, 2)} s`;
-  if (s < 3600) return `${formatNumber(s / 60, 2)} min`;
-  return `${formatNumber(s / 3600, 3)} h`;
-}
+const phenomenonOf = (group: string) => REPORT_LANES.find((p) => p.groups.includes(group))?.key ?? 'meta';
 
 const logScale = (v: number, d0: number, d1: number, p0: number, p1: number) =>
   p0 + ((Math.log10(v) - Math.log10(d0)) / (Math.log10(d1) - Math.log10(d0))) * (p1 - p0);
@@ -73,7 +69,7 @@ function certaintyLegend(x: number, y: number): string {
 export function timelineFigure(ctx: FigureContext): string {
   const W = 760, L = 170, R = 20, laneH = 30, top = 10;
   const t0 = 1, t1 = 86400;
-  const lanes = PHENOMENA;
+  const lanes = REPORT_LANES;
   const H = top + lanes.length * laneH + 60;
   const x = (t: number) => logScale(Math.min(Math.max(t, t0), t1), t0, t1, L, W - R);
   const ticks: Array<[number, string]> = [[1, '1 s'], [10, '10 s'], [60, '1 min'], [600, '10 min'], [3600, '1 h'], [21600, '6 h'], [86400, '24 h']];
@@ -98,7 +94,7 @@ export function timelineFigure(ctx: FigureContext): string {
         const [a, b] = p.time!.range;
         g.push(`<line x1="${r1(x(Math.max(a, t0)))}" x2="${r1(x(Math.min(b, t1)))}" y1="${r1(y)}" y2="${r1(y)}" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.55"/>`);
       }
-      g.push(marker(p.certainty, x(tt), y, `${p.label} — T+${fmtTime(tt)} (${CERTAINTY_LABEL[p.certainty]})`));
+      g.push(marker(p.certainty, x(tt), y, `${p.label} — T+${formatDuration(tt)} (${CERTAINTY_LABEL[p.certainty]})`));
       parts.push(`<g class="ph-${lane.key}">${g.join('')}</g>`);
     });
   });
@@ -143,7 +139,7 @@ export function travelTimeFigure(ctx: FigureContext): string {
   if (ts.length) curves.push({ cls: 'ph-tsunami', label: 'front tsunami (model Range i in. 2022)', pts: ts });
   for (const c of curves) {
     parts.push(`<path d="${path(c.pts)}" fill="none" stroke="currentColor" stroke-width="2" class="${c.cls}"${c.dash ? ` stroke-dasharray="${c.dash}"` : ''}><title>${esc(c.label)}</title></path>`);
-    if (c.cls === 'ph-tsunami') for (const [d, t] of c.pts) parts.push(`<g class="ph-tsunami">${marker('extrapolation', x(d), y(t), `${c.label}: ${formatNumber(d)} km po ${fmtTime(t)}`)}</g>`);
+    if (c.cls === 'ph-tsunami') for (const [d, t] of c.pts) parts.push(`<g class="ph-tsunami">${marker('extrapolation', x(d), y(t), `${c.label}: ${formatNumber(d)} km po ${formatDuration(t)}`)}</g>`);
   }
   // obserwacje / modele lokalne w Tanis (DePalma i in. 2019)
   const dT = num(ctx.reg, 'seismic.tanis_distance');
@@ -152,7 +148,7 @@ export function travelTimeFigure(ctx: FigureContext): string {
     for (const [id, cls] of obs) {
       const p = param(ctx.reg, id);
       const t = p?.time?.t;
-      if (p && t) parts.push(`<g class="${cls}"><rect x="${r1(x(dT) - 4)}" y="${r1(y(t) - 4)}" width="8" height="8" fill="none" stroke="currentColor" stroke-width="1.8"><title>${esc(`${p.label}: ${fmtTime(t)} (DePalma i in. 2019)`)}</title></rect></g>`);
+      if (p && t) parts.push(`<g class="${cls}"><rect x="${r1(x(dT) - 4)}" y="${r1(y(t) - 4)}" width="8" height="8" fill="none" stroke="currentColor" stroke-width="1.8"><title>${esc(`${p.label}: ${formatDuration(t)} (DePalma i in. 2019)`)}</title></rect></g>`);
     }
     parts.push(`<text x="${r1(x(dT) + 8)}" y="${r1(y(300))}" class="fig-small ink">□ Tanis (DePalma i in. 2019)</text>`);
   }
@@ -228,14 +224,7 @@ export function distanceEffectsFigure(ctx: FigureContext): string {
 }
 
 type Prof = Array<[number, number]>; // [r km, z km] dla r ≥ 0, symetrycznie
-const interp = (p: Prof, r: number) => {
-  const a = Math.abs(r);
-  for (let i = 1; i < p.length; i++) if (a <= p[i]![0]) {
-    const [r0, z0] = p[i - 1]!, [r1_, z1] = p[i]!;
-    return z0 + ((a - r0) / (r1_ - r0)) * (z1 - z0);
-  }
-  return p[p.length - 1]![1];
-};
+const interp = (p: Prof, r: number) => interpKnots(Math.abs(r), p);
 
 /** Rys.: schematyczne przekroje krateru w klatkach kluczowych (geometria odczytana z rysunków iSALE, ±2 km). */
 export function craterSectionsFigure(ctx: FigureContext): string {

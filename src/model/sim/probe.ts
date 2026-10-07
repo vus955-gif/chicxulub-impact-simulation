@@ -18,7 +18,7 @@ export interface ProbeEvent {
   certainty: Certainty; sourceIds: string[]; method: Txt | string; note?: Txt;
 }
 
-const IGNITION: Record<IgnitionLevel, Txt> = { brak: { pl: 'brak', en: 'none' }, 'ściółka': { pl: 'ściółka', en: 'litter' }, drewno: { pl: 'drewno', en: 'wood' } };
+const IGNITION: Record<IgnitionLevel, Txt> = { none: { pl: 'brak', en: 'none' }, litter: { pl: 'ściółka', en: 'litter' }, wood: { pl: 'drewno', en: 'wood' } };
 const SCENARIO: Record<ThermalScenario, string> = { morgan: 'Morgan 2013', goldin: 'Goldin & Melosh 2009', melosh: 'Melosh 1990' };
 export interface ProbeGrids { elev?: EquirectGrid; tsunamiTT?: EquirectGrid; tsunamiAmp?: EquirectGrid }
 export interface Scenario { thermal: ThermalScenario; fires: FireScenario }

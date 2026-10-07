@@ -6,10 +6,11 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import type { Certainty, Parameter, TimeSpec } from '../src/model/registry/types';
 import * as eiep from '../src/model/eiep';
+import { AK135_FIRST_ARRIVALS } from './paths';
 
 const lit = JSON.parse(readFileSync('research/parameters.json', 'utf8')) as { parameters: Parameter[] };
 const sources = JSON.parse(readFileSync('research/sources.json', 'utf8')) as { sources: Array<{ id: string; doi?: string }> };
-const ak135 = JSON.parse(readFileSync('data/derived/ak135-first-arrivals.json', 'utf8')) as { firstArrival_s: { P: number[]; S: number[] } };
+const ak135 = JSON.parse(readFileSync(AK135_FIRST_ARRIVALS, 'utf8')) as { firstArrival_s: { P: number[]; S: number[] } };
 
 const srcByDoi = (prefix: string): string => {
   const id = sources.sources.find((s) => s.doi?.toLowerCase().startsWith(prefix.toLowerCase()))?.id;

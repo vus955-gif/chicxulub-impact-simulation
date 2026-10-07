@@ -1,7 +1,8 @@
 /** Natężenia zjawisk w funkcji odległości d [km] (i azymutu względem kierunku lotu impaktora). */
 import * as eiep from '../eiep';
 import type { Certainty } from '../registry/types';
-import { ejectaArrival } from './arrivals';
+import { ejectaArrival, MORGAN_CLASS_KM } from './arrivals';
+import { interpKnots } from './interp';
 import type { SimContext } from './context';
 
 export interface Valued { value: number; unit: string; certainty: Certainty; sourceIds: string[]; method: string }
@@ -55,15 +56,6 @@ export function irFluxAt(p: IrPulse, peak: number, tau: number): number {
   return peak * (Math.min(p.shape.floorKW, peak) / peak) ** f;
 }
 
-const interpLogD = (d: number, knots: Array<[number, number]>) => {
-  if (d <= knots[0]![0]) return knots[0]![1];
-  for (let i = 1; i < knots.length; i++) {
-    const [d0, v0] = knots[i - 1]!, [d1, v1] = knots[i]!;
-    if (d <= d1) return v0 + ((Math.log(d) - Math.log(d0)) / (Math.log(d1) - Math.log(d0))) * (v1 - v0);
-  }
-  return knots[knots.length - 1]![1];
-};
-
 /** Impuls podczerwieni od ejecta wracających do atmosfery — trzy scenariusze z literatury (spór). */
 export function irPulse(ctx: SimContext, dKm: number, azRelDeg: number, scenario: ThermalScenario): IrPulse {
   const r = ctx.reg;
@@ -79,7 +71,7 @@ export function irPulse(ctx: SimContext, dKm: number, azRelDeg: number, scenario
       shape: { strongS: r.seconds('thermal.ir_goldin_strong_phase_pred'), floorKW: r.num('thermal.solar_constant') } };
   }
   // Morgan i in. 2013: klasy odległości 2000–2500 / 4000–5000 / 7000–8000 km × sektory azymutu 0–30 / 30–60 / 60–90°; ≥ 120° pomijalne.
-  const D = [2250, 4500, 7500];
+  const { proximal: D0, intermediate: D1, distal: D2 } = MORGAN_CLASS_KM;
   const val = (cls: string, az: number) => {
     const id = az <= 30 ? `thermal.ir_flux_peak_${cls}_downrange` : az <= 60 ? `thermal.ir_flux_peak_${cls}_az45` : `thermal.ir_flux_peak_${cls}_az75`;
     return r.num(id);
@@ -87,8 +79,8 @@ export function irPulse(ctx: SimContext, dKm: number, azRelDeg: number, scenario
   const a = Math.abs(azRelDeg);
   const upr = r.num('thermal.ir_flux_uprange_far');
   const atAz = (cls: string) => (a <= 90 ? val(cls, a) : a >= 120 ? upr : val(cls, 75) + ((a - 90) / 30) * (upr - val(cls, 75)));
-  const peak = interpLogD(dKm, [[D[0]!, atAz('proximal')], [D[1]!, atAz('intermediate')], [D[2]!, atAz('distal')]]);
-  const dur = interpLogD(dKm, [[D[0]!, r.num('thermal.ir_pulse_duration_proximal')], [D[1]!, r.num('thermal.ir_pulse_duration_intermediate')], [D[2]!, r.num('thermal.ir_pulse_duration_distal')]]);
+  const peak = interpKnots(dKm, [[D0, atAz('proximal')], [D1, atAz('intermediate')], [D2, atAz('distal')]], 'log');
+  const dur = interpKnots(dKm, [[D0, r.num('thermal.ir_pulse_duration_proximal')], [D1, r.num('thermal.ir_pulse_duration_intermediate')], [D2, r.num('thermal.ir_pulse_duration_distal')]], 'log');
   const uprange = a >= 120;
   return {
     peakLow: uprange ? r.param('thermal.ir_flux_uprange_far').range![0] : peak * 0.9,
@@ -97,11 +89,11 @@ export function irPulse(ctx: SimContext, dKm: number, azRelDeg: number, scenario
   };
 }
 
-export type IgnitionLevel = 'brak' | 'ściółka' | 'drewno';
+export type IgnitionLevel = 'none' | 'litter' | 'wood';
 /** Zapłon wg progów z rejestru: samozapłon drewna (≥ 2 min), ściółka i liście (≥ 1 min). Górna granica strumienia = „możliwy”. */
 export function ignitionLevel(ctx: SimContext, p: { peakLow: number; peakHigh: number; durationS: number; shape?: { strongS: number } }): IgnitionLevel {
   const atPeak = p.shape ? Math.min(p.shape.strongS, p.durationS) : p.durationS; // jak długo strumień utrzymuje się na szczycie
-  if (p.peakHigh >= ctx.reg.num('thermal.ignition_wood_spontaneous') && atPeak >= 120) return 'drewno';
-  if (p.peakHigh >= ctx.reg.num('thermal.ignition_litter') && atPeak >= 60) return 'ściółka';
-  return 'brak';
+  if (p.peakHigh >= ctx.reg.num('thermal.ignition_wood_spontaneous') && atPeak >= 120) return 'wood';
+  if (p.peakHigh >= ctx.reg.num('thermal.ignition_litter') && atPeak >= 60) return 'litter';
+  return 'none';
 }

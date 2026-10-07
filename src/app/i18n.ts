@@ -28,5 +28,5 @@ export function setLang(l: LangKey): void {
   ui.lang = l;
 }
 
-/** Język startowy: z adresu (#lang=…), inaczej z języka przeglądarki. */
+/** Język startowy, gdy adres nie podaje #lang=…: polski dla przeglądarki po polsku, inaczej angielski. */
 export const browserLang = (): LangKey => (typeof navigator !== 'undefined' && /^pl\b/i.test(navigator.language) ? 'pl' : 'en');

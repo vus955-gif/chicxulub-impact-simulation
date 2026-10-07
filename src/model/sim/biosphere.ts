@@ -4,6 +4,7 @@
  * Każda strefa rośnie razem z frontem zjawiska, które ją wywołuje (fala ciśnienia, fale powierzchniowe, promieniowanie).
  */
 import * as eiep from '../eiep';
+import { J_PER_MT } from '../eiep/constants';
 import type { Certainty, Txt } from '../registry/types';
 import type { SimContext } from './context';
 import { airblastAt, fireballExposureAt } from './intensities';
@@ -26,7 +27,8 @@ export interface BioZone {
   note?: Txt;
 }
 
-const MJ_PER_MT_SCALE = (ctx: SimContext) => (ctx.energyJ / 4.184e15) ** (1 / 6); // eq. 39: próg × E_Mt^(1/6)
+/** EIEP eq. 39: progi ekspozycji cieplnej rosną z energią jak E_Mt^(1/6). */
+const exposureScale = (ctx: SimContext) => (ctx.energyJ / J_PER_MT) ** (1 / 6);
 
 /** Największa odległość, w której f(d) ≥ thr (f malejąca z odległością); bisekcja na [1, dMax]. */
 function reach(f: (d: number) => number, thr: number, dMax = 20000): number {
@@ -43,7 +45,7 @@ export function bioZones(ctx: SimContext): BioZone[] {
   const windHigh = (d: number) => airblastAt(ctx, d).windMS;
   const windLow = (d: number) => eiep.peakWind(airblastAt(ctx, d).overpressurePa / over);
   const exposure = (d: number) => fireballExposureAt(ctx, d).value;
-  const s = MJ_PER_MT_SCALE(ctx);
+  const s = exposureScale(ctx);
   const burn = reach(exposure, r.num('biosphere.burn3_exposure_1mt') * s);
   const grass = reach(exposure, r.num('biosphere.grass_ignition_exposure_1mt') * s);
   const w90 = r.num('biosphere.tree_blowdown_total_wind'), w30 = r.num('biosphere.tree_blowdown_partial_wind');

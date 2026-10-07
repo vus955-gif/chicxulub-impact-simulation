@@ -7,9 +7,9 @@
  * Rozwiązanie analityczne bez strat radiacyjnych (surfaceTempRise) służy do kontroli schematu numerycznego.
  */
 import type { SimContext } from '../sim/context';
+import { SIGMA_SB } from '../eiep/constants';
 import { irFluxAt, type IrPulse } from '../sim/intensities';
 
-const SIGMA = 5.670374419e-8;
 
 /** Rozwiązanie analityczne (bez promieniowania): ΔT_s = 2q/√(πkρc)·(√t − √(t−τ)·[t>τ]). */
 export function surfaceTempRise(qAbsorbedWm2: number, tS: number, tauS: number, k: number, rhoC: number): number {
@@ -40,7 +40,7 @@ export function surfaceTemperatureProfile(q: (t: number) => number, tS: number, 
   while (t < tS - 1e-9) {
     const h = Math.min(dt, tS - t);
     const qa = p.a * q(t);
-    const loss = p.radiative === false ? 0 : p.a * SIGMA * (T[0]! ** 4 - p.T0 ** 4);
+    const loss = p.radiative === false ? 0 : p.a * SIGMA_SB * (T[0]! ** 4 - p.T0 ** 4);
     // komórka powierzchniowa (połówkowa objętość dz/2): strumień netto + przewodzenie do komórki 1
     Tn[0] = T[0]! + (h / (p.rhoC * dz / 2)) * (qa - loss - (p.k * (T[0]! - T[1]!)) / dz);
     for (let i = 1; i < n - 1; i++) Tn[i] = T[i]! + ((alpha * h) / (dz * dz)) * (T[i + 1]! - 2 * T[i]! + T[i - 1]!);

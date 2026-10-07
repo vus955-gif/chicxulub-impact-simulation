@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { Resvg } from '@resvg/resvg-js';
 import { loadRegistry } from '../src/model/registry/load';
 import { FIGURES } from '../src/report/figures';
+import { AK135_FIRST_ARRIVALS } from './paths';
 
 const LIGHT = `
 .fig-small{font-size:11px;fill:#4a4a50}.fig-label{font-size:12px;fill:#1d1d1f;font-weight:600}
@@ -15,7 +16,7 @@ const LIGHT = `
 text{font-family:Segoe UI, Arial, sans-serif}`;
 
 const reg = loadRegistry('research');
-const ak135 = JSON.parse(readFileSync('data/derived/ak135-first-arrivals.json', 'utf8'));
+const ak135 = JSON.parse(readFileSync(AK135_FIRST_ARRIVALS, 'utf8'));
 for (const [name, fn] of Object.entries(FIGURES)) {
   let svg = fn({ reg, ak135 });
   svg = svg.replace(/^<svg /, '<svg xmlns="http://www.w3.org/2000/svg" ').replace(/>/, `><style>${LIGHT}</style><rect width="100%" height="100%" fill="#ffffff"/>`);

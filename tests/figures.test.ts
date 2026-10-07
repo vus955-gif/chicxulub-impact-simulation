@@ -1,15 +1,16 @@
 import { describe, it, expect } from 'vitest';
 import { existsSync, readFileSync } from 'node:fs';
 import { loadRegistry } from '../src/model/registry/load';
-import { FIGURES, fmtTime } from '../src/report/figures';
+import { FIGURES } from '../src/report/figures';
+import { formatDuration } from '../src/model/registry/format';
 
 const ready = existsSync('research/parameters.json') && existsSync('research/sources.json') && existsSync('data/derived/ak135-first-arrivals.json');
 
-describe('fmtTime', () => {
+describe('formatDuration', () => {
   it('formats seconds, minutes and hours in Polish', () => {
-    expect(fmtTime(8.5)).toBe('8,5 s');
-    expect(fmtTime(780)).toBe('13 min');
-    expect(fmtTime(63540)).toBe('17,6 h'); // 17,65 h → binarnie 17,649…
+    expect(formatDuration(8.5)).toBe('8,5 s');
+    expect(formatDuration(780)).toBe('13 min');
+    expect(formatDuration(63540)).toBe('17,6 h'); // 17,65 h → binarnie 17,649…
   });
 });
 

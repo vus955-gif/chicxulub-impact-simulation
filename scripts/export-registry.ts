@@ -3,6 +3,7 @@ import { mkdirSync, readFileSync, writeFileSync, copyFileSync } from 'node:fs';
 import { loadRegistry } from '../src/model/registry/load';
 import { validateRegistry } from '../src/model/registry/validate';
 import { applyEnglish, applyEnglishSites, type I18nEn, type SiteJson } from './i18n-en';
+import { AK135_FIRST_ARRIVALS } from './paths';
 
 const reg = loadRegistry('research');
 const issues = validateRegistry(reg);
@@ -23,6 +24,6 @@ if (missing.length) {
 }
 mkdirSync('public/data', { recursive: true });
 writeFileSync('public/data/registry.json', JSON.stringify({ generatedAt: new Date().toISOString(), parameters: withEn.params, sources: withEn.sources }));
-copyFileSync('data/derived/ak135-first-arrivals.json', 'public/data/ak135.json');
+copyFileSync(AK135_FIRST_ARRIVALS, 'public/data/ak135.json');
 writeFileSync('public/data/sites.json', `${JSON.stringify({ ...sitesJson, sites: sitesEn.sites }, null, 2)}\n`);
 console.log(`public/data/registry.json: ${reg.parameters.length} parameters, ${reg.sources.length} sources; ak135.json, sites.json copied`);

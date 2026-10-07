@@ -7,6 +7,7 @@
  */
 import type { SimContext } from '../sim/context';
 import { ANTIPODE_KM } from '../sim/geo';
+import { interpKnots } from '../sim/interp';
 
 export const FIRE_SCENARIOS = ['regional', 'global'] as const;
 export type FireScenario = (typeof FIRE_SCENARIOS)[number];
@@ -24,12 +25,7 @@ export function reaccretedFraction(ctx: SimContext, t: number): number {
     [28800, r.num('atmosphere.ejecta_reaccretion_8h') / 100],
     [259200, r.num('atmosphere.ejecta_reaccretion_72h') / 100],
   ];
-  if (t <= knots[0]![0]) return 0;
-  for (let i = 1; i < knots.length; i++) {
-    const [t0, f0] = knots[i - 1]!, [t1, f1] = knots[i]!;
-    if (t <= t1) return f0 + ((Math.log(t) - Math.log(t0)) / (Math.log(t1) - Math.log(t0))) * (f1 - f0);
-  }
-  return knots[knots.length - 1]![1];
+  return interpKnots(t, knots, 'log');
 }
 
 export const LIGHT_PROFILE_N = 129;

@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/derive-parameters.ts",
-  "generatedAt": "2026-10-07T17:36:43.766Z",
+  "generatedAt": "2026-10-07T18:18:31.682Z",
   "antipodeKm": 20011.945203366984,
   "parameters": [
     {
@@ -235,7 +235,7 @@
       "id": "fireball.radiation_duration_eiep",
       "group": "fireball",
       "label": "Czas trwania promieniowania kuli ognia",
-      "value": 36.63815041979858,
+      "value": 36.63573117573666,
       "unit": "min",
       "range": null,
       "certainty": "extrapolation",

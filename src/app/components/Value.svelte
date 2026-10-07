@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Certainty } from '../../model/registry/types';
-  import { CERTAINTY_MARK, formatNumber } from '../../model/registry/format';
+  import { CERTAINTY_MARK, formatNumber, withUnit } from '../../model/registry/format';
   import { L, certLabel } from '../i18n';
   import { openDrawer } from '../state.svelte';
 
@@ -9,13 +9,12 @@
     title?: string; method?: string; note?: string;
   } = $props();
 
-  const text = $derived(typeof value === 'number' ? formatNumber(value) : value);
-  const withUnit = $derived(unit === '' ? text : unit === '°' ? `${text}°` : `${text} ${unit}`);
+  const shown = $derived(withUnit(typeof value === 'number' ? formatNumber(value) : value, unit));
 </script>
 
 <button class="pv" title={`${certLabel(certainty)} — ${L('kliknij, aby zobaczyć źródła', 'click to see the sources')}`}
-  onclick={() => openDrawer({ title: title ?? withUnit, paramId, sourceIds, method, note })}>
-  {withUnit}<span class={`mk mk-${certainty}`}>{CERTAINTY_MARK[certainty]}</span>
+  onclick={() => openDrawer({ title: title ?? shown, paramId, sourceIds, method, note })}>
+  {shown}<span class={`mk mk-${certainty}`}>{CERTAINTY_MARK[certainty]}</span>
 </button>
 
 <style>

@@ -1,25 +1,15 @@
 import type { Parameter, Registry } from '../model/registry/types';
-import { CERTAINTY_LABEL, CERTAINTY_MARK, formatNumber, formatParam, formatRange } from '../model/registry/format';
+import { CERTAINTY_LABEL, CERTAINTY_MARK, formatDuration, formatNumber, formatParam, formatRange } from '../model/registry/format';
+import { gcDistanceKm } from '../model/sim/geo';
+import { esc } from './html';
 import type { Certainty } from '../model/registry/types';
 
 export interface SiteObservation { text: string; sources: string[]; certainty: Certainty }
 export interface Site { id: string; name: string; lat: number; lon: number; coordSource?: string; observations: SiteObservation[]; paleoLat?: number; paleoLon?: number }
 
-const fmtT = (s: number): string => {
-  const a = Math.abs(s), sign = s < 0 ? '−' : '';
-  if (a < 60) return `T${s < 0 ? '−' : '+'}${formatNumber(a, 2)} s`;
-  if (a < 3600) return `T${sign || '+'}${formatNumber(a / 60, 2)} min`;
-  return `T${sign || '+'}${formatNumber(a / 3600, 3)} h`;
-};
-const haversineKm = (lat1: number, lon1: number, lat2: number, lon2: number) => {
-  const d = Math.PI / 180, a = Math.sin(((lat2 - lat1) * d) / 2) ** 2 + Math.cos(lat1 * d) * Math.cos(lat2 * d) * Math.sin(((lon2 - lon1) * d) / 2) ** 2;
-  return 2 * 6371 * Math.asin(Math.sqrt(a));
-};
+const fmtT = (s: number): string => `T${s < 0 ? '−' : '+'}${formatDuration(Math.abs(s))}`;
 
 export interface RenderResult { html: string; issues: string[] }
-
-const esc = (s: string) =>
-  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 export function renderReport(template: string, reg: Registry, figs: Record<string, () => string> = {}, sites: Site[] = []): RenderResult {
   const issues: string[] = [];
@@ -77,7 +67,7 @@ export function renderReport(template: string, reg: Registry, figs: Record<strin
     if (sites.length === 0) { issues.push('sites table requested but no sites given'); return ''; }
     const lat0 = params.get('site.lat')?.value, lon0 = params.get('site.lon')?.value;
     const tr = sites.map((st) => {
-      const dist = typeof lat0 === 'number' && typeof lon0 === 'number' ? `${formatNumber(haversineKm(lat0, lon0, st.lat, st.lon), 2)} km` : '—';
+      const dist = typeof lat0 === 'number' && typeof lon0 === 'number' ? `${formatNumber(gcDistanceKm({ lat: lat0, lon: lon0 }, st), 2)} km` : '—';
       const paleo = st.paleoLat !== undefined && st.paleoLon !== undefined ? `${formatNumber(st.paleoLat, 3)}°, ${formatNumber(st.paleoLon, 3)}°` : 'oczekuje na rekonstrukcję';
       const obs = st.observations.map((o) => `<li>${esc(o.text)} <span class="mark ${o.certainty}" title="${esc(CERTAINTY_LABEL[o.certainty] ?? '')}">${CERTAINTY_MARK[o.certainty] ?? ''}</span>${cite(o.sources)}</li>`).join('');
       return `<tr><td><b>${esc(st.name)}</b><br><span class="small">${formatNumber(st.lat, 4)}°, ${formatNumber(st.lon, 4)}°${st.coordSource ? cite([st.coordSource]) : ''}<br>dziś ${dist} od krateru<br>paleo: ${paleo}</span></td><td><ul class="obs">${obs}</ul></td></tr>`;

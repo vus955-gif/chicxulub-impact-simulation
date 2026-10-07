@@ -2,6 +2,10 @@
 import * as eiep from '../eiep';
 import { ANTIPODE_KM, CIRCUMFERENCE_KM, R_KM } from './geo';
 import type { SimContext } from './context';
+import { interpKnots } from './interp';
+
+/** Środki klas odległości Morgan i in. 2013 (2000–2500 / 4000–5000 / 7000–8000 km) — węzły interpolacji. */
+export const MORGAN_CLASS_KM = { proximal: 2250, intermediate: 4500, distal: 7500 } as const;
 
 export type ArrivalMethod = 'ak135' | 'orbit' | 'eiep' | 'literature-interp';
 export interface Arrival { t: number; method: ArrivalMethod }
@@ -40,21 +44,14 @@ export const lambArrivals = (dKm: number, speedMS: number, tMax: number) => orbi
 export function ejectaArrival(ctx: SimContext, dKm: number): Arrival {
   const NEAR = 1000;
   if (dKm <= NEAR) return { t: eiep.ejectaArrivalTime(dKm * 1e3), method: 'eiep' };
+  // interpolacja log–log: log t liniowo w log d
   const knots: Array<[number, number]> = [
-    [NEAR, eiep.ejectaArrivalTime(NEAR * 1e3)],
-    [2250, ctx.reg.num('ejecta.t_arrival_2000km')],
-    [7500, ctx.reg.num('ejecta.t_arrival_7500km')],
-    [ANTIPODE_KM, ctx.reg.num('ejecta.t_arrival_antipode')],
+    [NEAR, Math.log(eiep.ejectaArrivalTime(NEAR * 1e3))],
+    [MORGAN_CLASS_KM.proximal, Math.log(ctx.reg.num('ejecta.t_arrival_2000km'))],
+    [MORGAN_CLASS_KM.distal, Math.log(ctx.reg.num('ejecta.t_arrival_7500km'))],
+    [ANTIPODE_KM, Math.log(ctx.reg.num('ejecta.t_arrival_antipode'))],
   ];
-  const d = Math.min(dKm, ANTIPODE_KM);
-  for (let i = 1; i < knots.length; i++) {
-    const [d0, t0] = knots[i - 1]!, [d1, t1] = knots[i]!;
-    if (d <= d1) {
-      const f = (Math.log(d) - Math.log(d0)) / (Math.log(d1) - Math.log(d0));
-      return { t: Math.exp(Math.log(t0) + f * (Math.log(t1) - Math.log(t0))), method: 'literature-interp' };
-    }
-  }
-  return { t: knots[knots.length - 1]![1], method: 'literature-interp' };
+  return { t: Math.exp(interpKnots(Math.min(dKm, ANTIPODE_KM), knots, 'log')), method: 'literature-interp' };
 }
 
 /** Fala P i S (pierwsze wejścia ak135). */

@@ -8,7 +8,7 @@ import { T_MAX } from '../time/axis';
 
 export interface GuideStep {
   title: Txt;
-  /** czas w s; wartość ujemna — prolog */
+  /** czas w s; 'entry' — chwila w trakcie przelotu przez atmosferę (prolog przed kontaktem) */
   t: number | 'entry';
   view: ViewKey;
   layers?: Partial<Record<PhenomenonKey, boolean>>;

@@ -1,5 +1,5 @@
 /** Oś czasu: prolog liniowy [−tEntry, 0] na [0, prologShare], potem skala logarytmiczna [tMin, tMax] na [prologShare, 1]. */
-import { formatNumber } from '../model/registry/format';
+import { formatDuration } from '../model/registry/format';
 
 /** Zakres osi czasu po kontakcie: od 0,01 s do 24 h. */
 export const T_MIN = 0.01;
@@ -24,15 +24,13 @@ export function createAxis(cfg: AxisConfig) {
     if (u >= 1) return tMax;
     return 10 ** (l0 + ((u - P) / (1 - P)) * (l1 - l0));
   };
-  const label = (t: number) => (t < 60 ? `${formatNumber(t, 2)} s` : t < 3600 ? `${formatNumber(t / 60, 2)} min` : `${formatNumber(t / 3600, 2)} h`);
   const ticks = (): Tick[] => [
     { t: -tEntry, u: 0, label: 'przelot', labelEn: 'entry', major: false },
     { t: 0, u: P, label: '0', major: true },
-    ...[0.01, 0.1, 1, 10, 60, 600, 3600, 21600, 86400].filter((t) => t >= tMin && t <= tMax).map((t) => ({ t, u: tToU(t), label: label(t), major: true })),
+    ...[0.01, 0.1, 1, 10, 60, 600, 3600, 21600, 86400].filter((t) => t >= tMin && t <= tMax).map((t) => ({ t, u: tToU(t), label: formatDuration(t), major: true })),
   ];
-  return { tToU, uToT, ticks, cfg };
+  return { tToU, uToT, ticks };
 }
-export type Axis = ReturnType<typeof createAxis>;
 
 /** Zegar „T+ hh:mm:ss.s” / „T− s.s”. */
 export function formatClock(t: number): string {

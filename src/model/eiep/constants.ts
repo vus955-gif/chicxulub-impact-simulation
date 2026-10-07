@@ -6,3 +6,4 @@ export const D_C_EARTH = 3200;      // m — średnica przejścia krater prosty/
 export const J_PER_KT = 4.184e12;   // J na kilotonę TNT (definicja; EIEP zaokrągla do 4.18e12 — różnica 0,1 %)
 export const J_PER_MT = 4.184e15;   // J na megatonę TNT
 export const DEG = Math.PI / 180;
+export const SIGMA_SB = 5.670374419e-8; // W/(m²·K⁴) — stała Stefana–Boltzmanna (CODATA 2018)

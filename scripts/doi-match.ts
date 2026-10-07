@@ -1,7 +1,7 @@
 export interface DoiMeta { title: string; year: number | null; firstAuthorFamily: string | null }
 export interface MatchResult { ok: boolean; reasons: string[] }
 
-const ascii = (s: string) => s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase();
+const ascii = (s: string) => s.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
 export function normalizeTitle(t: string): string[] {
   return ascii(t.replace(/<[^>]+>/g, ' '))

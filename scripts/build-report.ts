@@ -3,6 +3,7 @@ import { loadRegistry } from '../src/model/registry/load';
 import { validateRegistry } from '../src/model/registry/validate';
 import { renderReport } from '../src/report/render';
 import { FIGURES } from '../src/report/figures';
+import { AK135_FIRST_ARRIVALS } from './paths';
 
 const reg = loadRegistry('research');
 const regIssues = validateRegistry(reg);
@@ -22,7 +23,7 @@ const template = readFileSync('research/report.template.html', 'utf8').replace(/
   if (!(k in meta)) throw new Error(`unknown meta token ${k}`);
   return meta[k]!;
 });
-const ak135 = JSON.parse(readFileSync('data/derived/ak135-first-arrivals.json', 'utf8'));
+const ak135 = JSON.parse(readFileSync(AK135_FIRST_ARRIVALS, 'utf8'));
 const figs = Object.fromEntries(Object.entries(FIGURES).map(([k, f]) => [k, () => f({ reg, ak135 })]));
 const sitesFile = existsSync('research/sites.json') ? 'research/sites.json' : 'research/sites.input.json';
 const sites = JSON.parse(readFileSync(sitesFile, 'utf8')).sites.filter((x: { id: string }) => x.id !== 'chicxulub');

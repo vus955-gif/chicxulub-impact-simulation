@@ -1,4 +1,4 @@
-import { R_EARTH } from './constants';
+import { R_EARTH, SIGMA_SB } from './constants';
 
 const ETA = 3e-3; // sprawność świetlna η (s. 826; niepewna o ~2 rzędy wielkości)
 
@@ -10,7 +10,7 @@ export const timeOfMaxRadiation = (E: number, v: number): number => fireballRadi
 
 /** Czas trwania promieniowania: τ = η E / (2π R_f² σ T*⁴), T* = 3000 K  [s]  (eq. 35) */
 export const radiationDuration = (E: number): number =>
-  (ETA * E) / (2 * Math.PI * fireballRadius(E) ** 2 * 5.67e-8 * 3000 ** 4);
+  (ETA * E) / (2 * Math.PI * fireballRadius(E) ** 2 * SIGMA_SB * 3000 ** 4);
 
 /** Ekspozycja cieplna Φ = f η E / (2π r²) [J/m²] (eq. 34, 36, 37); 0, gdy kula ognia pod horyzontem lub v < 15 km/s. */
 export function thermalExposure(E: number, r: number, v: number): number {

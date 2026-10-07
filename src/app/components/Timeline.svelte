@@ -86,7 +86,7 @@
           {@const cy = top + li * laneH + laneH / 2}
           <g class={`ph-${LANES[li]!.key}`} opacity={ui.layers[LANES[li]!.key] ? 1 : 0.35}>
             {#if e.range}<line x1={x(Math.max(e.range[0], -tEntry))} x2={x(Math.min(e.range[1], T_MAX))} y1={cy} y2={cy} stroke="currentColor" stroke-opacity="0.5" stroke-width="2" />{/if}
-            <path d={shape(e.certainty, x(e.t), cy)} fill={e.certainty === 'fact' ? 'currentColor' : e.certainty === 'extrapolation' ? 'currentColor' : 'none'}
+            <path d={shape(e.certainty, x(e.t), cy)} fill={e.certainty === 'fact' || e.certainty === 'extrapolation' ? 'currentColor' : 'none'}
               fill-opacity={e.certainty === 'extrapolation' ? 0.45 : 1} stroke="currentColor" stroke-width="1.4" class="ev"
               role="button" tabindex="-1" aria-label={ui.lang === 'en' && e.labelEn ? e.labelEn : e.label}
               onpointerdown={(ev) => { ev.stopPropagation(); ui.playing = false; ui.t = e.t; }}>

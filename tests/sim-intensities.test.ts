@@ -37,8 +37,8 @@ describe.runIf(ready)('intensities', () => {
     expect([p.peakLow, p.peakHigh]).toEqual(reg.param('thermal.ir_flux_peak_goldin').range);
   });
   it('ignition levels follow the registry thresholds', () => {
-    expect(ignitionLevel(ctx, { peakLow: 50, peakHigh: 56, durationS: 150 })).toBe('drewno');
-    expect(ignitionLevel(ctx, { peakLow: 20, peakHigh: 30, durationS: 90 })).toBe('ściółka');
-    expect(ignitionLevel(ctx, { peakLow: 5, peakHigh: 15, durationS: 1800 })).toBe('brak');
+    expect(ignitionLevel(ctx, { peakLow: 50, peakHigh: 56, durationS: 150 })).toBe('wood');
+    expect(ignitionLevel(ctx, { peakLow: 20, peakHigh: 30, durationS: 90 })).toBe('litter');
+    expect(ignitionLevel(ctx, { peakLow: 5, peakHigh: 15, durationS: 1800 })).toBe('none');
   });
 });
