@@ -23,24 +23,48 @@
   let data = $state.raw<AppData | null>(null);
   let error = $state<string | null>(null);
   let progress = $state('…');
+  let warming = $state(true);
+
+  /**
+   * Rozgrzewka pod ekranem ładowania. Pierwsze pokazanie bolidu, błysku, frontów i legendy jest droższe niż kolejne:
+   * kompilacja JIT, tworzenie elementów i — po stronie GPU — pierwsze użycie gradientów, mieszania i linii przerywanych
+   * w canvasie. Bez rozgrzewki dawało to krótką ścinkę na początku odtwarzania. Zanim interfejs stanie się widoczny,
+   * przechodzimy raz przez prolog i kolejne chwile doby (każdą przez pełną klatkę), potem wracamy do chwili startowej.
+   */
+  async function warmUp(start: number, tEntry: number): Promise<void> {
+    // dwie klatki: w pierwszej rysunek trafia na GPU; limit czasu — gdy karta jest w tle, rAF stoi
+    const frame = () => new Promise<void>((r) => { requestAnimationFrame(() => requestAnimationFrame(() => r())); setTimeout(r, 100); });
+    progress = L('Przygotowanie widoku…', 'Preparing the view…');
+    await frame();
+    ui.t = -tEntry / 2;
+    await frame();
+    for (let t = T_MIN; t < T_MAX; t *= 4) { ui.t = t; await frame(); }
+    ui.t = start;
+    await frame();
+    warming = false;
+  }
 
   onMount(() => {
     const fromUrl = location.hash.length > 1;
     restoreFromUrl();
     setLang(decodeState(location.hash).lang ?? browserLang());
     loadAppData((m) => (progress = m))
-      .then((d) => { data = d; if (!fromUrl) ui.t = -d.reg.num('impactor.entry_duration'); })
+      .then((d) => {
+        const tEntry = d.reg.num('impactor.entry_duration');
+        data = d;
+        return warmUp(fromUrl ? ui.t : -tEntry, tEntry);
+      })
       .catch((e: unknown) => (error = e instanceof Error ? e.message : String(e)));
     let last = performance.now(), raf = 0;
     const loop = (now: number) => {
       const dt = Math.min(0.1, (now - last) / 1000);
       last = now;
-      if (data && ui.playing) {
+      if (data && !warming && ui.playing) {
         const cfg = { tEntry: data.reg.num('impactor.entry_duration'), tMin: T_MIN, tMax: T_MAX, prologScreenS: 3 };
         ui.t = advance(ui.t, dt, ui.mode, ui.dps, cfg);
         if (ui.t >= T_MAX) ui.playing = false;
       }
-      if (data) writeUrl();
+      if (data && !warming) writeUrl();
       raf = requestAnimationFrame(loop);
     };
     raf = requestAnimationFrame(loop);
@@ -53,6 +77,9 @@
 {:else if !data}
   <div class="boot"><h1>{L('Chicxulub — pierwsze 24 godziny', 'Chicxulub — the first 24 hours')}</h1><p class="muted">{progress}</p></div>
 {:else}
+  {#if warming}
+    <div class="boot cover"><h1>{L('Chicxulub — pierwsze 24 godziny', 'Chicxulub — the first 24 hours')}</h1><p class="muted">{progress}</p></div>
+  {/if}
   {#key ui.lang}
   <div class="app">
     <TopBar {data} />
@@ -75,6 +102,7 @@
 
 <style>
   .boot { padding: 3rem; max-width: 720px; }
+  .cover { position: fixed; inset: 0; z-index: 100; max-width: none; background: var(--bg); }
   .app { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; height: 100vh; }
   .main { display: grid; grid-template-columns: 250px minmax(0, 1fr) 360px; min-height: 0; }
   .center { position: relative; min-width: 0; min-height: 0; }
