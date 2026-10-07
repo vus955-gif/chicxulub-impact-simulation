@@ -1,5 +1,7 @@
 # Chicxulub — the first 24 hours
 
+[![CI](https://github.com/vus955-gif/chicxulub-impact-simulation/actions/workflows/ci.yml/badge.svg)](https://github.com/vus955-gif/chicxulub-impact-simulation/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 **[Polski → README.pl.md](README.pl.md)**
 
 An interactive, source-referenced simulation of the first day after the Chicxulub asteroid impact, 66 million years ago — from the asteroid's flight through the atmosphere to T+24 h, on the palaeogeography of the end of the Cretaceous.
