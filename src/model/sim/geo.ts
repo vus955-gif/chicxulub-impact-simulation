@@ -1,4 +1,7 @@
-/** Geometria na kuli (R = 6371 km). Współrzędne w stopniach; układ paleo (PALEOMAP). */
+/**
+ * Geometria na kuli (średni promień R = 6371 km). Współrzędne w stopniach; układ paleo (PALEOMAP).
+ * Równania EIEP i orbity wyrzutów używają R_EARTH = 6370 km z kalkulatora EIEP (eiep/constants.ts) — różnica 0,02 %.
+ */
 export const R_KM = 6371;
 export const CIRCUMFERENCE_KM = 2 * Math.PI * R_KM;
 export const ANTIPODE_KM = Math.PI * R_KM;
