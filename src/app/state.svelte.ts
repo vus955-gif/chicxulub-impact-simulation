@@ -1,5 +1,8 @@
 /** Wspólny stan aplikacji (Svelte 5 runes). Jeden zegar T dla wszystkich widoków; stan odtwarzany z adresu URL. */
-import { decodeState, encodeState, PHENOMENA, type FiresKey, type LangKey, type ModeKey, type PhenomenonKey, type ThermalKey, type ViewKey } from './url-state';
+import { decodeState, encodeState, PHENOMENA, type LangKey, type PhenomenonKey, type ViewKey } from './url-state';
+import type { ThermalScenario } from '../model/sim/intensities';
+import type { FireScenario } from '../model/predictive/darkness';
+import type { PlayMode } from '../time/playback';
 
 export interface Drawer { title: string; paramId?: string; sourceIds?: string[]; method?: string; note?: string }
 
@@ -8,14 +11,14 @@ const defaultLayers = Object.fromEntries(PHENOMENA.map((k) => [k, k !== 'atmo'])
 export const ui = $state({
   t: -5.8,
   playing: false,
-  mode: 'adaptive' as ModeKey,
+  mode: 'adaptive' as PlayMode,
   dps: 0.5,
   view: 'map2d' as ViewKey,
   layers: { ...defaultLayers },
   probe: null as { lat: number; lon: number } | null,
   site: 'tanis' as string | null,
-  thermal: 'morgan' as ThermalKey,
-  fires: 'regional' as FiresKey,
+  thermal: 'morgan' as ThermalScenario,
+  fires: 'regional' as FireScenario,
   envelope: false,
   /** dzisiejsze linie brzegowe obrócone do 65 mln lat — tylko orientacja */
   coast: true,

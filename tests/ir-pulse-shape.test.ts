@@ -13,7 +13,7 @@ describe.runIf(ready)('IR pulse shape (Goldin & Melosh 2009: strong for minutes,
 
   it('holds the peak for the strong phase, then decays to the solar level at the end of the pulse', () => {
     const p = irPulse(ctx, 7500, 90, 'goldin');
-    const strong = reg.num('thermal.ir_goldin_strong_phase_pred') * 60;
+    const strong = reg.seconds('thermal.ir_goldin_strong_phase_pred');
     expect(p.shape!.strongS).toBe(strong);
     expect(irFluxAt(p, p.peakHigh, strong * 0.5)).toBe(p.peakHigh);
     expect(irFluxAt(p, p.peakHigh, p.durationS)).toBeCloseTo(reg.num('thermal.solar_constant'), 6);

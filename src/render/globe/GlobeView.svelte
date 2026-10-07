@@ -166,7 +166,7 @@
   }
 
   function updateImpactFx(t: number): void {
-    const times = { tEntry: data.reg.num('impactor.entry_duration'), tMaxRad: data.reg.num('fireball.t_max_radiation_eiep'), radDurS: data.reg.num('fireball.radiation_duration_eiep') * 60 };
+    const times = { tEntry: data.reg.num('impactor.entry_duration'), tMaxRad: data.reg.num('fireball.t_max_radiation_eiep'), radDurS: data.reg.seconds('fireball.radiation_duration_eiep') };
     const I = flashIntensity(t, times);
     flash.visible = I > 0;
     if (I > 0) { const s = 0.06 + 0.3 * I; flash.scale.set(s, s, 1); (flash.material as THREE.SpriteMaterial).opacity = Math.min(1, 0.4 + 0.6 * I); }

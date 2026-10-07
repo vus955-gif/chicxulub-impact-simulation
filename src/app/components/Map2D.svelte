@@ -106,7 +106,7 @@
   const fxTimes = $derived<FlashTimes>({
     tEntry: data.reg.num('impactor.entry_duration'),
     tMaxRad: data.reg.num('fireball.t_max_radiation_eiep'),
-    radDurS: data.reg.num('fireball.radiation_duration_eiep') * 60,
+    radDurS: data.reg.seconds('fireball.radiation_duration_eiep'),
   });
   const fxPhase = $derived(bolideProgress(ui.t, fxTimes.tEntry) !== null ? 'bolide' : flashIntensity(ui.t, fxTimes) > 0 ? 'flash' : null);
 

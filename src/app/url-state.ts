@@ -1,17 +1,19 @@
 /** Stan widoku w adresie (#t=…&v=…): link do konkretnego momentu, warstw i sondy. Wejście z URL zawsze walidowane. */
+import { THERMAL_SCENARIOS, type ThermalScenario } from '../model/sim/intensities';
+import { FIRE_SCENARIOS, type FireScenario } from '../model/predictive/darkness';
+import { PLAY_MODES, type PlayMode } from '../time/playback';
+
 export const PHENOMENA = ['crater', 'thermal', 'ejecta', 'seismic', 'air', 'tsunami', 'fires', 'atmo', 'bio'] as const;
 export type PhenomenonKey = (typeof PHENOMENA)[number];
 export const VIEWS = ['map2d', 'globe', 'closeup', 'section'] as const;
 export type ViewKey = (typeof VIEWS)[number];
-export type ThermalKey = 'morgan' | 'goldin' | 'melosh';
-export type FiresKey = 'regional' | 'global';
-export type ModeKey = 'adaptive' | 'realtime';
-export type LangKey = 'pl' | 'en';
+export const LANGS = ['pl', 'en'] as const;
+export type LangKey = (typeof LANGS)[number];
 
 export interface UrlState {
   t: number; view: ViewKey; layers: Record<PhenomenonKey, boolean>;
   probe: { lat: number; lon: number } | null; site: string | null;
-  thermal: ThermalKey; fires: FiresKey; envelope: boolean; mode: ModeKey; dps: number; coast: boolean; lang: LangKey;
+  thermal: ThermalScenario; fires: FireScenario; envelope: boolean; mode: PlayMode; dps: number; coast: boolean; lang: LangKey;
 }
 
 const sig = (x: number) => Number(x.toPrecision(4));
@@ -57,13 +59,13 @@ export function decodeState(hash: string): Partial<UrlState> {
       if (Number.isFinite(a) && Number.isFinite(b) && Math.abs(a!) <= 90 && Math.abs(b!) <= 180) out.probe = { lat: a!, lon: b! };
     }
     const s = q.get('s'); if (s && /^[a-z0-9_]{1,40}$/.test(s)) out.site = s;
-    const th = oneOf(q.get('th'), ['morgan', 'goldin', 'melosh'] as const); if (th) out.thermal = th;
-    const f = oneOf(q.get('f'), ['regional', 'global'] as const); if (f) out.fires = f;
+    const th = oneOf(q.get('th'), THERMAL_SCENARIOS); if (th) out.thermal = th;
+    const f = oneOf(q.get('f'), FIRE_SCENARIOS); if (f) out.fires = f;
     const e = q.get('e'); if (e === '0' || e === '1') out.envelope = e === '1';
-    const m = oneOf(q.get('m'), ['adaptive', 'realtime'] as const); if (m) out.mode = m;
+    const m = oneOf(q.get('m'), PLAY_MODES); if (m) out.mode = m;
     const d = finite(q.get('d'), 0.01, 5); if (d !== undefined) out.dps = d;
     const c = q.get('c'); if (c === '0' || c === '1') out.coast = c === '1';
-    const lg = oneOf(q.get('lang'), ['pl', 'en'] as const); if (lg) out.lang = lg;
+    const lg = oneOf(q.get('lang'), LANGS); if (lg) out.lang = lg;
     return out;
   } catch {
     return {};

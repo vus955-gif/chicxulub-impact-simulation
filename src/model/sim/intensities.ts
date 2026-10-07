@@ -39,7 +39,8 @@ export function ejectaThicknessAt(ctx: SimContext, dKm: number): Valued {
   return { value: eiepM, unit: 'm', certainty: 'extrapolation', sourceIds: ctx.reg.param('ejecta.thickness_eiep_1000km').sources, method: 'eiep:eq47' };
 }
 
-export type ThermalScenario = 'morgan' | 'goldin' | 'melosh';
+export const THERMAL_SCENARIOS = ['morgan', 'goldin', 'melosh'] as const;
+export type ThermalScenario = (typeof THERMAL_SCENARIOS)[number];
 export interface IrPulse {
   peakLow: number; peakHigh: number; durationS: number; startS: number; scenario: ThermalScenario; certainty: Certainty; sourceIds: string[];
   /** kształt impulsu: szczyt przez strongS, potem wykładniczy spadek do floorKW w chwili durationS (brak = impuls prostokątny) */
@@ -74,8 +75,8 @@ export function irPulse(ctx: SimContext, dKm: number, azRelDeg: number, scenario
   if (scenario === 'goldin') {
     const [lo, hi] = r.param('thermal.ir_flux_peak_goldin').range!;
     // „> 5 kW/m² przez kilka minut, powyżej słonecznego ~30 min” — kształt: model predykcyjny projektu (△)
-    return { peakLow: lo, peakHigh: hi, durationS: r.num('thermal.ir_duration') * 60, startS, scenario, certainty: 'contested', sourceIds: r.param('thermal.ir_flux_peak_goldin').sources,
-      shape: { strongS: r.num('thermal.ir_goldin_strong_phase_pred') * 60, floorKW: r.num('thermal.solar_constant') } };
+    return { peakLow: lo, peakHigh: hi, durationS: r.seconds('thermal.ir_duration'), startS, scenario, certainty: 'contested', sourceIds: r.param('thermal.ir_flux_peak_goldin').sources,
+      shape: { strongS: r.seconds('thermal.ir_goldin_strong_phase_pred'), floorKW: r.num('thermal.solar_constant') } };
   }
   // Morgan i in. 2013: klasy odległości 2000–2500 / 4000–5000 / 7000–8000 km × sektory azymutu 0–30 / 30–60 / 60–90°; ≥ 120° pomijalne.
   const D = [2250, 4500, 7500];

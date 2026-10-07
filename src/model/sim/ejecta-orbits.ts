@@ -17,6 +17,7 @@ import { G_EARTH, R_EARTH } from '../eiep/constants';
 import type { SimContext } from './context';
 import { ejectaArrival } from './arrivals';
 import { angleDiffDeg } from './geo';
+import type { PlayMode } from '../../time/playback';
 
 type V3 = [number, number, number];
 const R = R_EARTH / 1e3; // km
@@ -137,7 +138,7 @@ export function reentryWindow(ps: EjectaParticle[], order: Int32Array, tFrom: nu
 }
 
 /** Okno chwil wejścia, dla których rozbłysk w chwili t ma wiek w [0, life) sekund ekranu. */
-export function flashWindow(t: number, life: number, mode: 'adaptive' | 'realtime', dps: number): [number, number] {
+export function flashWindow(t: number, life: number, mode: PlayMode, dps: number): [number, number] {
   if (t <= 0) return [Infinity, -Infinity];
   return mode === 'realtime' ? [t - life, t] : [t / 10 ** (life * Math.max(1e-6, dps)), t];
 }
@@ -298,7 +299,7 @@ export function sampleEjecta(ctx: SimContext, count: number, seed = 66052): Ejec
 }
 
 /** Wiek rozbłysku w „sekundach ekranu” (deterministycznie z t i trybu odtwarzania): ujemny przed wejściem. */
-export function flashScreenAge(t: number, tRe: number, mode: 'adaptive' | 'realtime', dps: number): number {
+export function flashScreenAge(t: number, tRe: number, mode: PlayMode, dps: number): number {
   if (!Number.isFinite(tRe)) return -1;
   if (mode === 'realtime') return t - tRe;
   return t <= 0 ? -1 : Math.log10(t / tRe) / Math.max(1e-6, dps);

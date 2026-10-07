@@ -1,5 +1,7 @@
 import type { Parameter, Registry, Source } from '../registry/types';
 
+const SECONDS_PER: Record<string, number> = { s: 1, min: 60, h: 3600, d: 86400 };
+
 /** Szybki dostęp do rejestru po identyfikatorach. Brak wymaganej wartości = błąd programisty (rzuca). */
 export class RegistryIndex {
   private readonly params: Map<string, Parameter>;
@@ -26,13 +28,16 @@ export class RegistryIndex {
     return v;
   }
 
+  /** Czas w sekundach, niezależnie od jednostki zapisanej w rejestrze (s, min, h, d). */
+  seconds(id: string): number {
+    const unit = this.param(id).unit, k = SECONDS_PER[unit];
+    if (k === undefined) throw new Error(`Rejestr: parametr ${id} nie jest czasem (jednostka „${unit}”)`);
+    return this.num(id) * k;
+  }
+
   source(id: string): Source {
     const s = this.sources.get(id);
     if (!s) throw new Error(`Rejestr: brak źródła ${id}`);
     return s;
-  }
-
-  all(): Parameter[] {
-    return this.registry.parameters;
   }
 }

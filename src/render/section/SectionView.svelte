@@ -109,7 +109,7 @@
     const a = t < 60 ? 0.8 : 0.8 * Math.max(0, 1 - (t - 60) / 840);
     return { rad, color: `rgb(${r},${g},${b})`, a };
   });
-  const flash = $derived(flashIntensity(t, { tEntry: reg.num('impactor.entry_duration'), tMaxRad, radDurS: reg.num('fireball.radiation_duration_eiep') * 60 }));
+  const flash = $derived(flashIntensity(t, { tEntry: reg.num('impactor.entry_duration'), tMaxRad, radDurS: reg.seconds('fireball.radiation_duration_eiep') }));
 
   // kurtyna ejecta: stożek ~45° od krawędzi rosnącej jamy (symbol), wygasa po maksimum wypiętrzenia
   const curtain = $derived.by(() => {

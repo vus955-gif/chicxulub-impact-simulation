@@ -69,7 +69,7 @@ export function frontsAt(ctx: SimContext, t: number): Front[] {
   const rE = invert((d) => ejectaArrival(ctx, d).t, t);
   if (rE !== undefined) out.push({ kind: 'ejecta', radiusKm: rE, order: 1, certainty: 'extrapolation', sourceIds: [...new Set([...src('ejecta.t_arrival_2000km'), ...src('ejecta.t_arrival_antipode')])] });
 
-  const tMax = reg.num('fireball.t_max_radiation_eiep'), dur = reg.num('fireball.radiation_duration_eiep') * 60;
+  const tMax = reg.num('fireball.t_max_radiation_eiep'), dur = reg.seconds('fireball.radiation_duration_eiep');
   if (t <= dur) out.push({ kind: 'fireball', radiusKm: reg.num('fireball.radius_eiep') * Math.min(1, t / tMax), order: 1, certainty: 'extrapolation', sourceIds: src('fireball.radius_eiep') });
   return out;
 }

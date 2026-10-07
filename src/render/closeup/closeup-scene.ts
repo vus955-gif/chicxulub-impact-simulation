@@ -53,7 +53,7 @@ export class CloseupScene {
     this.data = data;
     const reg = data.reg;
     this.k = craterKeyframes(reg);
-    this.fx = { tEntry: reg.num('impactor.entry_duration'), tMaxRad: reg.num('fireball.t_max_radiation_eiep'), radDurS: reg.num('fireball.radiation_duration_eiep') * 60 };
+    this.fx = { tEntry: reg.num('impactor.entry_duration'), tMaxRad: reg.num('fireball.t_max_radiation_eiep'), radDurS: reg.seconds('fireball.radiation_duration_eiep') };
     this.L = reg.num('impactor.diameter'); this.v = reg.num('impactor.velocity');
     this.angle = (reg.num('impactor.angle') * Math.PI) / 180;
     this.approach = dirFromAz(reg.num('impactor.approach_azimuth'));

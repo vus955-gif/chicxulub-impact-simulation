@@ -10,7 +10,7 @@
   // kropka aktywności: czy zjawisko „trwa” w bieżącym t
   const active = $derived.by(() => {
     const t = ui.t, f = frontsAt(data.ctx, t), has = (k: string) => f.some((x) => x.kind === k);
-    const fireballEnd = data.reg.num('fireball.radiation_duration_eiep') * 60;
+    const fireballEnd = data.reg.seconds('fireball.radiation_duration_eiep');
     return {
       crater: t >= 0 && t <= data.reg.num('crater.t_final'),
       thermal: (t > 0 && t <= fireballEnd) || has('ejecta'),

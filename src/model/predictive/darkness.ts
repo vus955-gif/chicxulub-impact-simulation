@@ -7,7 +7,8 @@
  */
 import type { SimContext } from '../sim/context';
 
-export type FireScenario = 'regional' | 'global';
+export const FIRE_SCENARIOS = ['regional', 'global'] as const;
+export type FireScenario = (typeof FIRE_SCENARIOS)[number];
 
 export function dustArrivalS(ctx: SimContext, dKm: number): number {
   return ctx.reg.num('ejecta.t_curtain_breakup') + dKm / ctx.reg.num('ejecta.dust_cloud_speed');
@@ -36,7 +37,7 @@ export function darknessAt(ctx: SimContext, t: number, dKm: number, fires: FireS
   const tauDust = t < dustArrivalS(ctx, dKm) ? 0 : ctx.reg.num('atmosphere.dust_tau_scale_pred') * reaccretedFraction(ctx, t);
   let tauSoot = 0;
   if (fires === 'global') {
-    const t0 = ctx.reg.num('atmosphere.soot_injection_start') * 3600, t1 = 36 * 3600;
+    const t0 = ctx.reg.seconds('atmosphere.soot_injection_start'), t1 = 36 * 3600;
     tauSoot = ctx.reg.num('atmosphere.soot_optical_depth_initial') * Math.min(1, Math.max(0, (t - t0) / (t1 - t0)));
   }
   return { tauDust, tauSoot, lightFraction: Math.exp(-(tauDust + tauSoot)) };

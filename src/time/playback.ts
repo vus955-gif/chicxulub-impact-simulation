@@ -1,5 +1,6 @@
 /** Odtwarzanie: tryb adaptacyjny (stała liczba dekad czasu na sekundę ekranu) albo czas rzeczywisty. */
-export type PlayMode = 'adaptive' | 'realtime';
+export const PLAY_MODES = ['adaptive', 'realtime'] as const;
+export type PlayMode = (typeof PLAY_MODES)[number];
 export interface PlaybackConfig { tEntry: number; tMin: number; tMax: number; prologScreenS: number }
 
 export function advance(t: number, dtScreen: number, mode: PlayMode, decadesPerSecond: number, cfg: PlaybackConfig): number {

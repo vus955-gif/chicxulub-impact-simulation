@@ -44,7 +44,7 @@ export function probe(ctx: SimContext, grids: ProbeGrids, point: LatLon, scenari
     note: { pl: 'Najsilniejsze, powolne falowanie gruntu; kolejne przejścia co okrążenie Ziemi.', en: 'The strongest, slow rolling of the ground; further passes with each circuit of the Earth.' } });
 
   const fb = fireballExposureAt(ctx, d);
-  if (fb.value > 0) ev.push({ kind: 'fireball', label: { pl: 'Promieniowanie kuli ognia', en: 'Fireball radiation' }, t: reg.num('fireball.t_max_radiation_eiep'), tEnd: reg.num('fireball.radiation_duration_eiep') * 60,
+  if (fb.value > 0) ev.push({ kind: 'fireball', label: { pl: 'Promieniowanie kuli ognia', en: 'Fireball radiation' }, t: reg.num('fireball.t_max_radiation_eiep'), tEnd: reg.seconds('fireball.radiation_duration_eiep'),
     values: [{ label: { pl: 'ekspozycja cieplna', en: 'thermal exposure' }, value: fb.value, unit: 'MJ/m²' }], certainty: 'extrapolation', sourceIds: fb.sourceIds, method: fb.method,
     note: { pl: 'Ekstrapolacja daleko poza kalibrację z prób jądrowych.', en: 'Extrapolated far beyond the calibration from nuclear tests.' } });
 
