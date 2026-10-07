@@ -6,7 +6,7 @@
   import { activeItems, hasRing, placeLabels, type Box, type LegendItem, type LineStyle } from '../legend';
   import { tsunamiReachKm } from '../data';
   import MapLegend from './MapLegend.svelte';
-  import { L, tx } from '../i18n';
+  import { L, tx, siteName } from '../i18n';
   import { formatNumber, CERTAINTY_MARK } from '../../model/registry/format';
   import { flashScreenAge, flashWindow, reentryWindow, sortByReentry } from '../../model/sim/ejecta-orbits';
   import { darknessAt } from '../../model/predictive/darkness';
@@ -305,7 +305,7 @@
       octx.beginPath(); octx.arc(p[0], p[1], sel ? 4.5 : 3, 0, Math.PI * 2);
       octx.fillStyle = sel ? '#ffffff' : '#0b0e14'; octx.fill(); octx.strokeStyle = '#ffffff'; octx.lineWidth = 1.2; octx.stroke();
       if (sel || w > 900) {
-        const text = s.name.split(' (')[0]!;
+        const text = siteName(s).split(' (')[0]!;
         siteLabels.push({ text, x: p[0] + 6, y: p[1] - 5, sel });
         taken.push({ x: p[0] + 5, y: p[1] - 15, w: octx.measureText(text).width + 2, h: 13 });
       }
