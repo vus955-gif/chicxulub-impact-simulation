@@ -19,4 +19,11 @@ describe('timeline slider is announced with its range and a readable time', () =
     expect(svg).toContain('aria-valuenow="3725.5"');
     expect(svg).toContain(`aria-valuetext="${formatClock(3725.5)}"`);
   });
+  it('keeps aria-valuenow inside the range when the clock starts before the entry (default T−5.8 s)', () => {
+    ui.t = -5.8; // domyślny start jest zaokrąglony, a przelot trwa ~5,77 s
+    const { body } = render(Timeline, { props: { data } });
+    const svg = body.match(/<svg[^>]*role="slider"[^>]*>/)?.[0] ?? '';
+    expect(svg).toContain(`aria-valuenow="${-reg.num('impactor.entry_duration')}"`);
+    expect(svg).toContain(`aria-valuetext="${formatClock(-5.8)}"`);
+  });
 });
