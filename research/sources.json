@@ -2473,8 +2473,8 @@
       "container": "PyPI / gplates.org",
       "url": "https://www.gplates.org/docs/pygplates/index.html",
       "peerReviewed": false,
-      "verified": false,
-      "notes": "Wersja 1.0.0 (PyPI, 2025-03-26), licencja GPL v2. Użyta do rekonstrukcji paleowspółrzędnych w modelu PALEOMAP."
+      "notes": "Wersja 1.0.0 (PyPI, 2025-03-26), licencja GPL v2. Użyta do rekonstrukcji paleowspółrzędnych w modelu PALEOMAP.",
+      "verified": false
     },
     {
       "id": "dewinter2020",
@@ -2488,8 +2488,8 @@
       "doi": "10.1029/2019PA003723",
       "url": "https://doi.org/10.1029/2019PA003723",
       "peerReviewed": true,
-      "verified": true,
-      "notes": "Metadane i abstrakt sprawdzone w Crossref (2026-10-04)."
+      "notes": "Metadane i abstrakt sprawdzone w Crossref (2026-10-04).",
+      "verified": true
     },
     {
       "id": "kopp2011",
@@ -2503,8 +2503,8 @@
       "doi": "10.1029/2010GL045777",
       "url": "https://doi.org/10.1029/2010GL045777",
       "peerReviewed": true,
-      "verified": true,
-      "notes": "Metadane sprawdzone w Crossref (2026-10-04); Crossref nie udostępnia abstraktu."
+      "notes": "Metadane sprawdzone w Crossref (2026-10-04); Crossref nie udostępnia abstraktu.",
+      "verified": true
     }
   ]
 }

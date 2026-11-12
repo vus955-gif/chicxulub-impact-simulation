@@ -821,7 +821,6 @@
       "container": "PyPI / gplates.org",
       "url": "https://www.gplates.org/docs/pygplates/index.html",
       "peerReviewed": false,
-      "verified": false,
       "notes": "Wersja 1.0.0 (PyPI, 2025-03-26), licencja GPL v2. Użyta do rekonstrukcji paleowspółrzędnych w modelu PALEOMAP.",
       "reason": "Oprogramowanie użyte w projekcie do rekonstrukcji punktów (GPlates Web Service niedostępny)."
     },
@@ -837,7 +836,6 @@
       "doi": "10.1029/2019PA003723",
       "url": "https://doi.org/10.1029/2019PA003723",
       "peerReviewed": true,
-      "verified": true,
       "notes": "Metadane i abstrakt sprawdzone w Crossref (2026-10-04).",
       "reason": "Długość doby w późnej kredzie — potrzebna do ruchu obrotowego Ziemi w trajektoriach ejecta."
     },
@@ -853,7 +851,6 @@
       "doi": "10.1029/2010GL045777",
       "url": "https://doi.org/10.1029/2010GL045777",
       "peerReviewed": true,
-      "verified": true,
       "notes": "Metadane sprawdzone w Crossref (2026-10-04); Crossref nie udostępnia abstraktu.",
       "reason": "Poziom odniesienia „strumień słoneczny” dla kształtu impulsu IR wg Goldina & Melosha (2009)."
     }

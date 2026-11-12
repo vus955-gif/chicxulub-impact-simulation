@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-04T15:03:25.116Z",
+  "checkedAt": "2026-11-12T21:41:08.929Z",
   "report": [
     {
       "id": "renne2013",
@@ -1075,6 +1075,20 @@
     {
       "id": "collins2017",
       "doi": "10.1111/maps.12873",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "dewinter2020",
+      "doi": "10.1029/2019PA003723",
+      "ok": true,
+      "registrar": "crossref",
+      "reasons": []
+    },
+    {
+      "id": "kopp2011",
+      "doi": "10.1029/2010GL045777",
       "ok": true,
       "registrar": "crossref",
       "reasons": []
