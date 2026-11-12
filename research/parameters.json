@@ -1018,6 +1018,19 @@
       }
     },
     {
+      "id": "crater.central_uplift_width_pred",
+      "group": "crater",
+      "label": "Szerokość wypiętrzenia centralnego jako ułamek promienia jamy przejściowej (założenie)",
+      "value": 0.3,
+      "unit": "",
+      "range": null,
+      "certainty": "predictive",
+      "method": "predictive:crater-kinematics",
+      "sources": [],
+      "notes": "Założenie modelu, brak źródła. Wypiętrzenie centralne ma profil gaussowski, który spada do 1/e wysokości w odległości równej temu ułamkowi promienia krateru przejściowego (ok. 15 km). Wysokość i czas maksimum (crater.central_uplift_max_height, crater.t_uplift_max) pochodzą z rejestru. Synteza: Stała dotąd wpisana w kod modelu kinematyki krateru (src/model/predictive/crater-kinematics.ts) — przeniesiona do rejestru, żeby była widoczna jak inne założenia.",
+      "time": null
+    },
+    {
       "id": "crater.day1_bedded_suevite_thickness",
       "group": "crater",
       "label": "Suewit warstwowany (sejsze)",
@@ -1267,6 +1280,19 @@
       "time": null
     },
     {
+      "id": "crater.growth_exponent_pred",
+      "group": "crater",
+      "label": "Wykładnik wzrostu jamy krateru przejściowego (założenie)",
+      "value": 0.4,
+      "unit": "",
+      "range": null,
+      "certainty": "predictive",
+      "method": "predictive:crater-kinematics",
+      "sources": [],
+      "notes": "Założenie modelu, brak źródła. Promień jamy rośnie jak R_t·(t/t_tr)^n, a głębokość jak D_t·(t/t_D)^n; kotwice (średnica i głębokość krateru przejściowego oraz ich czasy) pochodzą z rejestru. Wykładnik zmienia tylko kształt krzywej wzrostu między uderzeniem a tymi klatkami kluczowymi. Synteza: Stała dotąd wpisana w kod modelu kinematyki krateru (src/model/predictive/crater-kinematics.ts) — przeniesiona do rejestru, żeby była widoczna jak inne założenia.",
+      "time": null
+    },
+    {
       "id": "crater.inner_rim_radius",
       "group": "crater",
       "label": "Promień wewnętrznej krawędzi (inner rim)",
@@ -1502,6 +1528,19 @@
       ],
       "locator": "Gulick2019 Results ('peak ring ... elevated ~400 m above the crater floor'); Gulick2019 Methods dam-break ('depth of the peak ring (500 m above the crater floor)'); Schulte2021 Discussion ('some 400 m above the impact-melt and suevite-covered crater floor')",
       "notes": "Present-day relief after burial/compaction; original day-1 relief not independently constrained. Relief varies along strike (see crater.peak_ring_top_depth_present).",
+      "time": null
+    },
+    {
+      "id": "crater.peak_ring_relief_factor_pred",
+      "group": "crater",
+      "label": "Relief krateru w chwili uformowania pierścienia szczytowego względem krateru końcowego (założenie)",
+      "value": 2.5,
+      "unit": "",
+      "range": null,
+      "certainty": "predictive",
+      "method": "predictive:crater-kinematics",
+      "sources": [],
+      "notes": "Założenie modelu, brak źródła. W chwili crater.t_peak_ring profil krateru końcowego (dno, pierścień szczytowy, strefa tarasów) jest tyle razy głębszy i wyższy; w fazie modyfikacji płynnie osiada do wymiarów końcowych z rejestru (crater.floor_depth, crater.peak_ring_height), osiąganych w chwili crater.t_final. Synteza: Stała dotąd wpisana w kod modelu kinematyki krateru (src/model/predictive/crater-kinematics.ts) — przeniesiona do rejestru, żeby była widoczna jak inne założenia.",
       "time": null
     },
     {
@@ -1974,6 +2013,19 @@
       ],
       "locator": "Morgan1997 abstract ('about 100 km'); Gulick2013 abstract ('50 km radius transient cavity'); Gulick2019 Introduction ('~40- to 50-km-radius'), Fig. 2B caption ('100-km-wide transient crater'); Kring1995 abstract (~100 km central region = transient cavity limits); Collins2020 Suppl. Table 1 (72-91 km, 12 km/s and 20 km/s cases)",
       "notes": "Not directly observable; geophysical estimates ~100 km, 3D iSALE values 72-91 km depending on impact angle and speed.",
+      "time": null
+    },
+    {
+      "id": "crater.transient_rim_fraction_pred",
+      "group": "crater",
+      "label": "Wysokość wału jamy przejściowej jako ułamek jej średnicy (założenie)",
+      "value": 0.04,
+      "unit": "",
+      "range": null,
+      "certainty": "predictive",
+      "method": "predictive:crater-kinematics",
+      "sources": [],
+      "notes": "Założenie modelu, brak źródła. Wał w parabolicznym profilu jamy ma wysokość równą temu ułamkowi chwilowej średnicy jamy (ok. 4 km przy średnicy krateru przejściowego z rejestru, crater.transient_diameter). Profil obowiązuje w fazach wykopu i wypiętrzenia, potem przechodzi w profil krateru końcowego. Synteza: Stała dotąd wpisana w kod modelu kinematyki krateru (src/model/predictive/crater-kinematics.ts) — przeniesiona do rejestru, żeby była widoczna jak inne założenia.",
       "time": null
     },
     {
@@ -5380,6 +5432,19 @@
       ],
       "locator": "Discussion (rim-wave tsunami paragraph)",
       "notes": "Upper bound '<50 m' south of the impact site (citing gulick2008 and Snedden & Galloway 2019).",
+      "time": null
+    },
+    {
+      "id": "target.water_ramp_extent_pred",
+      "group": "target",
+      "label": "Zasięg rampy głębokości wody wokół krateru (założenie)",
+      "value": 300,
+      "unit": "km",
+      "range": null,
+      "certainty": "predictive",
+      "method": "predictive:water-depth",
+      "sources": [],
+      "notes": "Założenie modelu, brak źródła. Do tej odległości od środka krateru głębokość wody daje model rampy (węzły z rejestru: tsunami.depth_impact_point, tsunami.depth_50km_north, tsunami.depth_150km, target.water_depth_south), dalej — mapa PaleoDEM, która w okolicy krateru pokazuje ląd. Za ostatnim węzłem rampy głębokość pozostaje stała. Synteza: Stała dotąd wpisana w kod modelu rampy głębokości wody (src/model/predictive/water-depth.ts) — przeniesiona do rejestru, żeby była widoczna jak inne założenia.",
       "time": null
     },
     {

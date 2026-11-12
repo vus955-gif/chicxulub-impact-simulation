@@ -65,4 +65,11 @@ describe.runIf(ready)('predictive models with registry', () => {
     expect(waterDepthM(ctx, 0, 0)).toBeCloseTo(reg.num('tsunami.depth_impact_point'), 6);
     expect(waterDepthM(ctx, 400, 0)).toBeUndefined();
   });
+
+  it('water-depth ramp ends at the registry extent (target.water_ramp_extent_pred)', () => {
+    const ext = reg.num('target.water_ramp_extent_pred');
+    expect(reg.param('target.water_ramp_extent_pred').certainty).toBe('predictive');
+    expect(waterDepthM(ctx, ext, 0)).toBeDefined();
+    expect(waterDepthM(ctx, ext + 1, 0)).toBeUndefined();
+  });
 });
