@@ -34,7 +34,7 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "export-registry": "tsx scripts/export-registry.ts",
-    "registry": "tsx scripts/assemble-registry.ts && tsx scripts/derive-parameters.ts && tsx scripts/export-registry.ts",
+    "registry": "tsx scripts/assemble-registry.ts && tsx scripts/derive-parameters.ts && tsx scripts/mark-source-usage.ts && tsx scripts/export-registry.ts",
     "validate-registry": "tsx scripts/check-registry.ts",
     "report:figures": "tsx scripts/render-figures-png.ts"
   },

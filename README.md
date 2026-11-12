@@ -70,7 +70,7 @@ Open <http://127.0.0.1:5173>. All data the app needs is already in `public/data/
 ```
 research/          parameter registry (JSON), research notes, research report (Polish, HTML)
   parameters.json  values compiled from the literature, each with certainty, method, locator and sources
-  sources.json     168 sources; DOIs verified against Crossref / DataCite
+  sources.json     168 sources, 156 with a DOI verified against Crossref / DataCite; "citedIn" per source
   synthesis.json   documented decisions: what was dropped, chosen, patched or added, and why
   i18n-en.json     English texts for the registry and the sites
 src/model/         pure physics, no UI — tested in Node (EIEP, arrivals, fronts, ejecta orbits,
@@ -81,6 +81,8 @@ scripts/           registry pipeline (TypeScript) and data preprocessing (Python
 public/data/       derived data used by the app (registry, palaeo-DEM texture, tsunami grids, …)
 tests/             Vitest test suites
 ```
+
+Of the 168 sources in `sources.json`, 114 are cited by registry parameters, 24 only by site observations (the probe) and 14 only in the text of the research report; the remaining 16 were collected in the research threads but are not cited anywhere (`"citedIn": []`). `npm run registry` recomputes the `citedIn` field.
 
 Key methods:
 

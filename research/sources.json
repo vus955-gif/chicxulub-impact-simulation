@@ -13,7 +13,12 @@
       "url": "https://doi.org/10.1126/science.1230492",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 23393261): K-Pg boundary and Chicxulub impact synchronous within 32 kyr. Full text NOT accessible (science.org 403); numerical ages not read in the primary text."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 23393261): K-Pg boundary and Chicxulub impact synchronous within 32 kyr. Full text NOT accessible (science.org 403); numerical ages not read in the primary text.",
+      "citedIn": [
+        "parameters",
+        "sites",
+        "report"
+      ]
     },
     {
       "id": "sprain2015",
@@ -28,7 +33,10 @@
       "url": "https://doi.org/10.1130/B31076.1",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Published online 2014-09-16 (vol. 127, 2015). Abstract read via OpenAlex: KPB impact layer 66.043 +/- 0.010 Ma (+/- 0.043 Ma incl. systematic uncertainties)."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Published online 2014-09-16 (vol. 127, 2015). Abstract read via OpenAlex: KPB impact layer 66.043 +/- 0.010 Ma (+/- 0.043 Ma incl. systematic uncertainties).",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "sprain2018",
@@ -43,7 +51,11 @@
       "url": "https://doi.org/10.1130/B31890.1",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: K-Pg boundary 66.052 +/- 0.008/0.043 Ma ('most precise date yet'); C29r duration 587 +/- 53 ka."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: K-Pg boundary 66.052 +/- 0.008/0.043 Ma ('most precise date yet'); C29r duration 587 +/- 53 ka.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "renne2018",
@@ -58,7 +70,11 @@
       "url": "https://doi.org/10.1130/G40224.1",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: weighted mean 40Ar/39Ar age 66.051 +/- 0.031 Ma for 25 fresh glassy Chicxulub spherules."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: weighted mean 40Ar/39Ar age 66.051 +/- 0.031 Ma for 25 fresh glassy Chicxulub spherules.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "swisher1992",
@@ -73,7 +89,10 @@
       "url": "https://doi.org/10.1126/science.257.5072.954",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 17789640): melt rock 64.98 +/- 0.05 Ma; Beloc tektites 65.01 +/- 0.08 Ma (older standard calibration; superseded)."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 17789640): melt rock 64.98 +/- 0.05 Ma; Beloc tektites 65.01 +/- 0.08 Ma (older standard calibration; superseded).",
+      "citedIn": [
+        "report"
+      ]
     },
     {
       "id": "kuiper2008",
@@ -88,7 +107,8 @@
       "url": "https://doi.org/10.1126/science.1154339",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 18436783): Fish Canyon sanidine 28.201 +/- 0.046 Ma; K/T ~65.95 Ma."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 18436783): Fish Canyon sanidine 28.201 +/- 0.046 Ma; K/T ~65.95 Ma.",
+      "citedIn": []
     },
     {
       "id": "during2022",
@@ -103,7 +123,12 @@
       "url": "https://doi.org/10.1038/s41586-022-04446-1",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Full text read via Europe PMC (PMC8891016): impact in boreal spring (osteohistology + stable isotopes of fishes killed at Tanis, ~50 deg N)."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Full text read via Europe PMC (PMC8891016): impact in boreal spring (osteohistology + stable isotopes of fishes killed at Tanis, ~50 deg N).",
+      "citedIn": [
+        "parameters",
+        "sites",
+        "report"
+      ]
     },
     {
       "id": "depalma2021",
@@ -118,7 +143,11 @@
       "url": "https://doi.org/10.1038/s41598-021-03232-9",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex/Europe PMC (PMC8655067): boreal spring/summer. No comment/correction listed in Europe PMC commentCorrectionList (checked 2026-10-04)."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex/Europe PMC (PMC8655067): boreal spring/summer. No comment/correction listed in Europe PMC commentCorrectionList (checked 2026-10-04).",
+      "citedIn": [
+        "sites",
+        "report"
+      ]
     },
     {
       "id": "alvarez1980",
@@ -133,7 +162,12 @@
       "url": "https://doi.org/10.1126/science.208.4448.1095",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 17783054): four independent estimates give asteroid diameter 10 +/- 4 km."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 17783054): four independent estimates give asteroid diameter 10 +/- 4 km.",
+      "citedIn": [
+        "parameters",
+        "sites",
+        "report"
+      ]
     },
     {
       "id": "paquay2008",
@@ -148,7 +182,10 @@
       "url": "https://doi.org/10.1126/science.1152860",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read (Crossref/Europe PMC): Os-based K/Pg projectile diameter within 50% of Ir-based estimates, assuming total vaporization and dissolution of Os. Numerical K/Pg diameter NOT read (full text inaccessible)."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read (Crossref/Europe PMC): Os-based K/Pg projectile diameter within 50% of Ir-based estimates, assuming total vaporization and dissolution of Os. Numerical K/Pg diameter NOT read (full text inaccessible).",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "artemieva2009",
@@ -163,7 +200,11 @@
       "url": "https://spiral.imperial.ac.uk/bitstreams/696ed47f-8774-4f5f-aecc-b8278f0c0f81/download",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Accepted manuscript (52 pp.) read from Imperial College Spiral repository (hdl 10044/1/4210). Sections 2-3 used: global Ir 2.0-2.8e8 kg; Ir-based projectile mass 0.8-2.5e15 kg (8-12 km); model 3 km sediments + 30 km basement; 18 km/s; D = 12 km (90 deg), 14.4 km (45 deg), 16 km (30 deg); density 2600 kg/m3; >2 km water in N/NE quadrant (citing Gulick 2008). Manuscript line numbers, not journal pages."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Accepted manuscript (52 pp.) read from Imperial College Spiral repository (hdl 10044/1/4210). Sections 2-3 used: global Ir 2.0-2.8e8 kg; Ir-based projectile mass 0.8-2.5e15 kg (8-12 km); model 3 km sediments + 30 km basement; 18 km/s; D = 12 km (90 deg), 14.4 km (45 deg), 16 km (30 deg); density 2600 kg/m3; >2 km water in N/NE quadrant (citing Gulick 2008). Manuscript line numbers, not journal pages.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "artemieva2017",
@@ -178,7 +219,11 @@
       "url": "http://eprints.gla.ac.uk/153469/1/153469.pdf",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Published version (9 pp.) read from University of Glasgow eprints (153469). Section 4: 60 deg, 18 km/s, D = 12.2 km, mass 2,500 Gt, density 2.6 g/cm3; sediments 3.3-3.5 km (SW), 3.8 +/- 0.2 km (W); anhydrite fractions; water up to 1.5 km to the NE."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Published version (9 pp.) read from University of Glasgow eprints (153469). Section 4: 60 deg, 18 km/s, D = 12.2 km, mass 2,500 Gt, density 2.6 g/cm3; sediments 3.3-3.5 km (SW), 3.8 +/- 0.2 km (W); anhydrite fractions; water up to 1.5 km to the NE.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "collins2020",
@@ -193,7 +238,11 @@
       "url": "https://doi.org/10.1038/s41467-020-15269-x",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Open-access full text read via Europe PMC (PMC7251121) plus Supplementary Information PDF (static-content.springer.com, MOESM1). Internal inconsistency: impactor density 2630 kg/m3 (Fig. 2-3 captions, SI Table 1) vs 2650 kg/m3 (Methods, SI figure captions)."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Open-access full text read via Europe PMC (PMC7251121) plus Supplementary Information PDF (static-content.springer.com, MOESM1). Internal inconsistency: impactor density 2630 kg/m3 (Fig. 2-3 captions, SI Table 1) vs 2650 kg/m3 (Methods, SI figure captions).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "christeson2009",
@@ -208,7 +257,11 @@
       "url": "https://spiral.imperial.ac.uk/bitstreams/ae29f898-c951-4426-8004-bffea3850973/download",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Accepted manuscript read from Imperial College Spiral (hdl 10044/1/4214): Moho upwarp 1.5-2 km; 180-200 km structure; model 3 km sediment + 30 km crust; impactor 10/14/20 km at 12 km/s, 2680 kg/m3 (Table 1)."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Accepted manuscript read from Imperial College Spiral (hdl 10044/1/4214): Moho upwarp 1.5-2 km; 180-200 km structure; model 3 km sediment + 30 km crust; impactor 10/14/20 km at 12 km/s, 2680 kg/m3 (Table 1).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "gulick2008",
@@ -223,7 +276,11 @@
       "url": "https://doi.org/10.1038/ngeo103",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on nature.com article page. Full text NOT accessible (repository copies behind bot challenges / server down). Its water-depth values are used here only as quoted by artemieva2009, artemieva2017, gulick2019 and kaskes2023."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on nature.com article page. Full text NOT accessible (repository copies behind bot challenges / server down). Its water-depth values are used here only as quoted by artemieva2009, artemieva2017, gulick2019 and kaskes2023.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "gulick2013",
@@ -238,7 +295,11 @@
       "url": "https://doi.org/10.1002/rog.20007",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: 50 km radius transient cavity within 10 s; inner rim 70-85 km radius; outer ring faults 70-130 km radius; central uplift >10 km; Moho displaced 1-2 km. Full text not accessed."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: 50 km radius transient cavity within 10 s; inner rim 70-85 km radius; outer ring faults 70-130 km radius; central uplift >10 km; Moho displaced 1-2 km. Full text not accessed.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "gulick2019",
@@ -253,7 +314,11 @@
       "url": "https://doi.org/10.1073/pnas.1909479116",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Open-access full text read on pmc.ncbi.nlm.nih.gov (PMC6765282)."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Open-access full text read on pmc.ncbi.nlm.nih.gov (PMC6765282).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "desch2022",
@@ -268,7 +333,11 @@
       "url": "https://doi.org/10.1038/s41598-022-12873-3",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Matters Arising; open-access full text read via Europe PMC (PMC9213478). Summarises Kyte 1998, Trinquier 2006 and Goderis 2013 constraints on chondrite subtype."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Matters Arising; open-access full text read via Europe PMC (PMC9213478). Summarises Kyte 1998, Trinquier 2006 and Goderis 2013 constraints on chondrite subtype.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "siraj2021",
@@ -283,7 +352,10 @@
       "url": "https://doi.org/10.1038/s41598-021-82320-2",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Open-access full text read via Europe PMC (PMC7884440). Rebutted by desch2022; authors' reply (Sci. Rep. 12:10427, 2022, doi:10.1038/s41598-022-14445-x) abstract read."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Open-access full text read via Europe PMC (PMC7884440). Rebutted by desch2022; authors' reply (Sci. Rep. 12:10427, 2022, doi:10.1038/s41598-022-14445-x) abstract read.",
+      "citedIn": [
+        "report"
+      ]
     },
     {
       "id": "fischergodde2024",
@@ -298,7 +370,11 @@
       "url": "https://doi.org/10.1126/science.adk4868",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Crossref/Europe PMC (PMID 39146402). Full text not accessible (publisher 403; repository copy behind a Cloudflare challenge, not bypassed)."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Crossref/Europe PMC (PMID 39146402). Full text not accessible (publisher 403; repository copy behind a Cloudflare challenge, not bypassed).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "kyte1998",
@@ -313,7 +389,11 @@
       "url": "https://doi.org/10.1038/24322",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on nature.com article page: 2.5-mm fossil meteorite from K/T boundary sediments in the North Pacific; carbonaceous-chondrite-like; argues for an asteroidal (low-velocity) origin."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on nature.com article page: 2.5-mm fossil meteorite from K/T boundary sediments in the North Pacific; carbonaceous-chondrite-like; argues for an asteroidal (low-velocity) origin.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "shukolyukov1998",
@@ -328,7 +408,11 @@
       "url": "https://doi.org/10.1126/science.282.5390.927",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Crossref/Europe PMC (PMID 9794759): Cr isotopes (Stevns Klint, Caravaca) consistent with a carbonaceous-chondrite-type impactor."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Crossref/Europe PMC (PMID 9794759): Cr isotopes (Stevns Klint, Caravaca) consistent with a carbonaceous-chondrite-type impactor.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "bottke2007",
@@ -343,7 +427,10 @@
       "url": "https://doi.org/10.1038/nature06070",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 17805288): Baptistina family proposed as source (>90% probability)."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via Europe PMC (PMID 17805288): Baptistina family proposed as source (>90% probability).",
+      "citedIn": [
+        "report"
+      ]
     },
     {
       "id": "reddy2009",
@@ -358,7 +445,10 @@
       "url": "https://doi.org/10.1111/j.1945-5100.2009.tb02001.x",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: 298 Baptistina S-type-like (olivine/pyroxene, albedo ~20%), weakening the CM2/K-T link."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: 298 Baptistina S-type-like (olivine/pyroxene, albedo ~20%), weakening the CM2/K-T link.",
+      "citedIn": [
+        "report"
+      ]
     },
     {
       "id": "goderis2021",
@@ -373,7 +463,10 @@
       "url": "https://doi.org/10.1126/sciadv.abe3647",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Open-access full text read via Europe PMC (PMC7904271): 'asteroid approximately 12 km in diameter' (citing collins2020); mean global Ir fluence 55 +/- 3 ng/cm2."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Open-access full text read via Europe PMC (PMC7904271): 'asteroid approximately 12 km in diameter' (citing collins2020); mean global Ir fluence 55 +/- 3 ng/cm2.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "macke2011",
@@ -388,7 +481,11 @@
       "url": "https://doi.org/10.1111/j.1945-5100.2011.01298.x",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: type-2 (CM, CR) carbonaceous chondrites average ~23% porosity; grain densities 2.42-5.66 g/cm3 across classes. Per-group bulk densities not read (full text blocked)."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: type-2 (CM, CR) carbonaceous chondrites average ~23% porosity; grain densities 2.42-5.66 g/cm3 across classes. Per-group bulk densities not read (full text blocked).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "pope1997",
@@ -403,7 +500,11 @@
       "url": "https://doi.org/10.1029/97JE01743",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read (Crossref/OpenAlex): impact released 0.7-3.4e31 erg (= 0.7-3.4e24 J); short-period comet or asteroid."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read (Crossref/OpenAlex): impact released 0.7-3.4e31 erg (= 0.7-3.4e24 J); short-period comet or asteroid.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "pierazzo1998",
@@ -418,7 +519,11 @@
       "url": "https://doi.org/10.1029/98JE02496",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read (Crossref): projectiles 10-30 km, porosity 0-50%, asteroid 20 km/s, comet 50 km/s."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read (Crossref): projectiles 10-30 km, porosity 0-50%, asteroid 20 km/s, comet 50 km/s.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "shuvalov2002",
@@ -433,7 +538,8 @@
       "url": "https://doi.org/10.1130/0-8137-2356-6.695",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract/first page read via OpenAlex: numerical modelling of all stages including the flight through the atmosphere; no entry-duration number in the part read."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract/first page read via OpenAlex: numerical modelling of all stages including the flight through the atmosphere; no entry-duration number in the part read.",
+      "citedIn": []
     },
     {
       "id": "schultz1996",
@@ -448,7 +554,11 @@
       "url": "https://digitalcommons.uri.edu/gsofacpubs/1183",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on University of Rhode Island DigitalCommons record (gsofacpubs/1183): trajectory from SE to NW at 20-30 deg from horizontal."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on University of Rhode Island DigitalCommons record (gsofacpubs/1183): trajectory from SE to NW at 20-30 deg from horizontal.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "morgan2006",
@@ -463,7 +573,11 @@
       "url": "https://spiral.imperial.ac.uk/bitstreams/fb2c1063-ec0f-4d57-9569-cacb3b2af6c2/download",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Accepted manuscript (R2) read from Imperial College Spiral (hdl 10044/1/1208): near-symmetric shocked-quartz distribution; possible uprange SE +/- 45 deg; impact angle >45 deg."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Accepted manuscript (R2) read from Imperial College Spiral (hdl 10044/1/1208): near-symmetric shocked-quartz distribution; possible uprange SE +/- 45 deg; impact angle >45 deg.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "hildebrand1991",
@@ -478,7 +592,10 @@
       "url": "https://doi.org/10.1130/0091-7613(1991)019<0867:CCAPCT>2.3.CO;2",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex (GSW page text): buried 180-km-diameter circular structure within a thick carbonate sequence."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex (GSW page text): buried 180-km-diameter circular structure within a thick carbonate sequence.",
+      "citedIn": [
+        "report"
+      ]
     },
     {
       "id": "hildebrand1995",
@@ -493,7 +610,11 @@
       "url": "https://doi.org/10.1038/376415a0",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on nature.com article page: crater diameter ~180 km from the horizontal gradient of the Bouguer gravity anomaly; cenote ring."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on nature.com article page: crater diameter ~180 km from the horizontal gradient of the Bouguer gravity anomaly; cenote ring.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "morgan1997",
@@ -508,7 +629,10 @@
       "url": "https://doi.org/10.1038/37291",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on nature.com article page: transient cavity ~100 km; multi-ring basin morphology."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read on nature.com article page: transient cavity ~100 km; multi-ring basin morphology.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "kring2004",
@@ -523,7 +647,10 @@
       "url": "https://doi.org/10.1111/j.1945-5100.2004.tb00936.x",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: melt derived from silicate basement beneath a 3 km-thick carbonate platform."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: melt derived from silicate basement beneath a 3 km-thick carbonate platform.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "kaskes2023",
@@ -538,7 +665,11 @@
       "url": "https://doi.org/10.1093/pnasnexus/pgad414",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Published online 2023-12-21 (vol. 3, issue 1, 2024). Open-access full text read via Europe PMC (PMC10783646): at ~66 Ma Yucatan was a shallow shelf, water <50 m south of the impact site and 100-2,000 m within the impacted area (carbonate ramp), citing gulick2008 and Snedden & Galloway 2019."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Published online 2023-12-21 (vol. 3, issue 1, 2024). Open-access full text read via Europe PMC (PMC10783646): at ~66 Ma Yucatan was a shallow shelf, water <50 m south of the impact site and 100-2,000 m within the impacted area (carbonate ramp), citing gulick2008 and Snedden & Galloway 2019.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "range2022",
@@ -553,7 +684,11 @@
       "url": "https://doi.org/10.1029/2021AV000627",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: 'This asteroid struck in shallow water'. Full text (model parameters) not accessed (bot challenges)."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: 'This asteroid struck in shallow water'. Full text (model parameters) not accessed (bot challenges).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "ormo2021",
@@ -568,7 +703,8 @@
       "url": "https://doi.org/10.1016/j.epsl.2021.116915",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: 200-km wide crater; relation between projectile diameter / target water depth (d/H) and resurge deposits. Chicxulub-specific H value NOT read (full text inaccessible)."
+      "notes": "Metadata checked via Crossref API (api.crossref.org/works/<DOI>) on 2026-10-04. Abstract read via OpenAlex: 200-km wide crater; relation between projectile diameter / target water depth (d/H) and resurge deposits. Chicxulub-specific H value NOT read (full text inaccessible).",
+      "citedIn": []
     },
     {
       "id": "morgan2016",
@@ -583,7 +719,11 @@
       "url": "https://eprints.gla.ac.uk/131793/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened: PubMed record PMID 27856906 (abstract, authors, volume/pages) and the author's accepted manuscript at Univ. Glasgow Enlighten (eprints.gla.ac.uk/131793, full text incl. Fig. 1 rendered and inspected). Publisher site (science.org) returned 403. Supplementary Materials (model parameter table) not accessible."
+      "notes": "Opened: PubMed record PMID 27856906 (abstract, authors, volume/pages) and the author's accepted manuscript at Univ. Glasgow Enlighten (eprints.gla.ac.uk/131793, full text incl. Fig. 1 rendered and inspected). Publisher site (science.org) returned 403. Supplementary Materials (model parameter table) not accessible.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "riller2018",
@@ -598,7 +738,11 @@
       "url": "https://eprints.gla.ac.uk/173925/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened: PubMed PMID 30356184 (abstract) and author's accepted manuscript (eprints.gla.ac.uk/173925) incl. Methods and rendered Fig. 2 (iSALE snapshots T=0, 20, 184, 340, 600 s). An Author Correction exists (doi 10.1038/s41586-018-0748-0, seen in search results only; its content not checked)."
+      "notes": "Opened: PubMed PMID 30356184 (abstract) and author's accepted manuscript (eprints.gla.ac.uk/173925) incl. Methods and rendered Fig. 2 (iSALE snapshots T=0, 20, 184, 340, 600 s). An Author Correction exists (doi 10.1038/s41586-018-0748-0, seen in search results only; its content not checked).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "kring2020",
@@ -613,7 +757,10 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7259942/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened: full-text XML via Europe PMC (PMC7259942); metadata cross-checked with Crossref."
+      "notes": "Opened: full-text XML via Europe PMC (PMC7259942); metadata cross-checked with Crossref.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "kaskes2022",
@@ -628,7 +775,11 @@
       "url": "https://par.nsf.gov/biblio/10291849",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened: full-text PDF via NSF Public Access Repository (par.nsf.gov/servlets/purl/10291849); published online 2021, issue 2022. Metadata cross-checked with Crossref."
+      "notes": "Opened: full-text PDF via NSF Public Access Repository (par.nsf.gov/servlets/purl/10291849); published online 2021, issue 2022. Metadata cross-checked with Crossref.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "schulte2021",
@@ -643,7 +794,10 @@
       "url": "https://eprints.gla.ac.uk/280070/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened: published open-access PDF from Univ. Glasgow Enlighten (eprints.gla.ac.uk/280070). Melt volume/thickness values in this paper are secondary citations of Grieve & Cintala 1992 and Barton et al. 2010 (not opened)."
+      "notes": "Opened: published open-access PDF from Univ. Glasgow Enlighten (eprints.gla.ac.uk/280070). Melt volume/thickness values in this paper are secondary citations of Grieve & Cintala 1992 and Barton et al. 2010 (not opened).",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "christeson2021",
@@ -658,7 +812,11 @@
       "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021JE006938",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened ABSTRACT ONLY: publisher-deposited abstract and metadata via Crossref REST API; Wiley/AGU site blocked by a bot-check (403). Numbers used come only from the abstract."
+      "notes": "Opened ABSTRACT ONLY: publisher-deposited abstract and metadata via Crossref REST API; Wiley/AGU site blocked by a bot-check (403). Numbers used come only from the abstract.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "kring1995",
@@ -673,7 +831,10 @@
       "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/95JE01768",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened ABSTRACT ONLY via Crossref REST API (publisher-deposited)."
+      "notes": "Opened ABSTRACT ONLY via Crossref REST API (publisher-deposited).",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "sharpton1993",
@@ -688,7 +849,10 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/17798115/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened ABSTRACT via PubMed (PMID 17798115, efetch)."
+      "notes": "Opened ABSTRACT via PubMed (PMID 17798115, efetch).",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "pope1996",
@@ -703,7 +867,11 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/11539331/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened ABSTRACT via PubMed (PMID 11539331, efetch). Radii refer to present-day surface (karst/topographic) expression, not buried structure."
+      "notes": "Opened ABSTRACT via PubMed (PMID 11539331, efetch). Radii refer to present-day surface (karst/topographic) expression, not buried structure.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "schmieder2020",
@@ -718,7 +886,10 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6987741/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened: full-text XML via Europe PMC (PMC6987741); Chicxulub entry in Table 1 (row 72)."
+      "notes": "Opened: full-text XML via Europe PMC (PMC6987741); Chicxulub entry in Table 1 (row 72).",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "morgan2022",
@@ -733,7 +904,11 @@
       "url": "https://www.nature.com/articles/s43017-022-00283-y",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened ABSTRACT and 'Key points' on nature.com landing page; full review paywalled."
+      "notes": "Opened ABSTRACT and 'Key points' on nature.com landing page; full review paywalled.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "feignon2020",
@@ -748,7 +923,11 @@
       "url": "https://hal.science/hal-03134693",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened ABSTRACT via HAL API record hal-03134693 (abstract_s, journal, volume, pages, DOI); DOI and journal cross-checked with Unpaywall and Crossref. Full text behind bot-check, not read."
+      "notes": "Opened ABSTRACT via HAL API record hal-03134693 (abstract_s, journal, volume, pages, DOI); DOI and journal cross-checked with Unpaywall and Crossref. Full text behind bot-check, not read.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "degraaff2022",
@@ -763,7 +942,10 @@
       "url": "https://research.vu.nl/en/publications/e92c261f-b2e7-45c7-a12a-340e59ac33f2",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened ABSTRACT on Vrije Universiteit Amsterdam repository page; PDF download blocked (403). Published online 2021."
+      "notes": "Opened ABSTRACT on Vrije Universiteit Amsterdam repository page; PDF download blocked (403). Published online 2021.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "lowery2018",
@@ -778,7 +960,10 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6058194/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened: full-text XML via Europe PMC (PMC6058194, author manuscript)."
+      "notes": "Opened: full-text XML via Europe PMC (PMC6058194, author manuscript).",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "kring2016",
@@ -793,7 +978,8 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5080443/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened ABSTRACT via PubMed (PMID 27762265). Used only for the peak-ring-model debate."
+      "notes": "Opened ABSTRACT via PubMed (PMID 27762265). Used only for the peak-ring-model debate.",
+      "citedIn": []
     },
     {
       "id": "rae2019",
@@ -808,7 +994,10 @@
       "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2018JE005821",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Opened ABSTRACT ONLY via Crossref REST API (Wiley 403). No numbers taken from the paper itself; model setup taken from the authors' public input files (rae2019data)."
+      "notes": "Opened ABSTRACT ONLY via Crossref REST API (Wiley 403). No numbers taken from the paper itself; model setup taken from the authors' public input files (rae2019data).",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "rae2019data",
@@ -822,7 +1011,10 @@
       "url": "https://github.com/ImperialCollegeLondon/Chicxulub_StressStrain",
       "peerReviewed": false,
       "verified": false,
-      "notes": "Opened README and iSALE_inputs/Rae_18_prime/2s_res/asteroid.inp via GitHub API/raw: 100 m cells, CPPR 60 (impactor diameter 12 km), OBJVEL 15 km/s, 3 layers (dunite mantle, granite crust 30 km, calcite 3 km), TEND 600 s, save every 2 s. Not peer reviewed."
+      "notes": "Opened README and iSALE_inputs/Rae_18_prime/2s_res/asteroid.inp via GitHub API/raw: 100 m cells, CPPR 60 (impactor diameter 12 km), OBJVEL 15 km/s, 3 layers (dunite mantle, granite crust 30 km, calcite 3 km), TEND 600 s, save every 2 s. Not peer reviewed.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "bohor1984",
@@ -837,7 +1029,10 @@
       "url": "https://doi.org/10.1126/science.224.4651.867",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata + abstract read (shocked quartz with planar features, Montana boundary claystone). Full text not opened."
+      "notes": "Crossref metadata + abstract read (shocked quartz with planar features, Montana boundary claystone). Full text not opened.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "wolbach1985",
@@ -852,7 +1047,11 @@
       "url": "https://doi.org/10.1126/science.230.4722.167",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata + abstract read (0.36–0.58% graphitic C; 0.021±0.006 g/cm2). Full text not opened."
+      "notes": "Crossref metadata + abstract read (0.36–0.58% graphitic C; 0.021±0.006 g/cm2). Full text not opened.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "wolbach1988",
@@ -867,7 +1066,11 @@
       "url": "https://doi.org/10.1038/334665a0",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Publisher page (nature.com) opened in browser; abstract read (10^2–10^4-fold elemental C enrichment, coincides with Ir layer). Global carbon (7±4)x10^16 g quoted via robertson2004 p. 763."
+      "notes": "Publisher page (nature.com) opened in browser; abstract read (10^2–10^4-fold elemental C enrichment, coincides with Ir layer). Global carbon (7±4)x10^16 g quoted via robertson2004 p. 763.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "melosh1990",
@@ -882,7 +1085,11 @@
       "url": "https://doi.org/10.1038/343251a0",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Publisher page (nature.com) opened; abstract read (50–150x solar input for 1 to several hours). Full text paywalled; further numbers (1.3–5x10^8 J/m2, ~10 kW/m2, 800–1100 K at 70 km, +10 K ground air) taken from verbatim quotes in robertson2004 pp. 762–763."
+      "notes": "Publisher page (nature.com) opened; abstract read (50–150x solar input for 1 to several hours). Full text paywalled; further numbers (1.3–5x10^8 J/m2, ~10 kW/m2, 800–1100 K at 70 km, +10 K ground air) taken from verbatim quotes in robertson2004 pp. 762–763.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "hildebrand1990",
@@ -897,7 +1104,10 @@
       "url": "https://doi.org/10.1126/science.248.4957.843",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata + abstract read (Haiti ejecta layer ~50 cm, ~25x thicker than other sites). Full text not opened."
+      "notes": "Crossref metadata + abstract read (Haiti ejecta layer ~50 cm, ~25x thicker than other sites). Full text not opened.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "alvarez1995",
@@ -912,7 +1122,8 @@
       "url": "https://doi.org/10.1126/science.269.5226.930",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata + abstract read (\"warm, accelerating fireball\" of CO2/H2O after hot silicate fireball). Full text not opened."
+      "notes": "Crossref metadata + abstract read (\"warm, accelerating fireball\" of CO2/H2O after hot silicate fireball). Full text not opened.",
+      "citedIn": []
     },
     {
       "id": "smit1999",
@@ -927,7 +1138,10 @@
       "url": "https://doi.org/10.1146/annurev.earth.27.1.75",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata + deposited abstract read (regional ejecta classes: <300 km breccias, <2500 km up to 9 m, 2500–4000 km cm-thick, global mm-thin). Full text not opened; 2–3 mm and 850 km3 values taken via artemieva2009/artemieva2020/robertson2004."
+      "notes": "Crossref metadata + deposited abstract read (regional ejecta classes: <300 km breccias, <2500 km up to 9 m, 2500–4000 km cm-thick, global mm-thin). Full text not opened; 2–3 mm and 850 km3 values taken via artemieva2009/artemieva2020/robertson2004.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "pope1999",
@@ -942,7 +1156,11 @@
       "url": "https://doi.org/10.1016/s0012-821x(99)00123-5",
       "peerReviewed": true,
       "verified": true,
-      "notes": "ScienceDirect page opened in browser: abstract and section snippets read (Albion Island 360 km NW; spheroid bed ~1 m, 0.10–1.72 m; diamictite ~15 m, eroded top; blocks to ~8 m). Full text paywalled."
+      "notes": "ScienceDirect page opened in browser: abstract and section snippets read (Albion Island 360 km NW; spheroid bed ~1 m, 0.10–1.72 m; diamictite ~15 m, eroded top; blocks to ~8 m). Full text paywalled.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "kring2002",
@@ -957,7 +1175,11 @@
       "url": "https://doi.org/10.1029/2001je001532",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read on AGU/Wiley (Free Access) via browser. Note: page range as shown on publisher site (pp. 6-1–6-22)."
+      "notes": "Full text read on AGU/Wiley (Free Access) via browser. Note: page range as shown on publisher site (pp. 6-1–6-22).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "croskell2002",
@@ -972,7 +1194,8 @@
       "url": "https://doi.org/10.1029/2001gl014382",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata + abstract read (re-entry annealing of shocked quartz). Full text not opened."
+      "notes": "Crossref metadata + abstract read (re-entry annealing of shocked quartz). Full text not opened.",
+      "citedIn": []
     },
     {
       "id": "belcher2003",
@@ -987,7 +1210,12 @@
       "url": "https://doi.org/10.1130/g19989.1",
       "peerReviewed": true,
       "verified": true,
-      "notes": "GeoScienceWorld abstract page opened (<19 kW/m2 at ground, <95 kW/m2 to atmosphere). Full text paywalled."
+      "notes": "GeoScienceWorld abstract page opened (<19 kW/m2 at ground, <95 kW/m2 to atmosphere). Full text paywalled.",
+      "citedIn": [
+        "parameters",
+        "sites",
+        "report"
+      ]
     },
     {
       "id": "durda2004",
@@ -1002,7 +1230,10 @@
       "url": "https://doi.org/10.1029/2004je002279",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata + abstract read (ignition thresholds 51/20/28 kW/m2; plume-mass thresholds). Article number E08004 per later citing papers (gulick2019 ref list)."
+      "notes": "Crossref metadata + abstract read (ignition thresholds 51/20/28 kW/m2; plume-mass thresholds). Article number E08004 per later citing papers (gulick2019 ref list).",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "robertson2004",
@@ -1017,7 +1248,11 @@
       "url": "https://doi.org/10.1130/b25402.1",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read from AMNH-hosted PDF (research.amnh.org/users/debel/extinction/RobertsonEtal-GSAB04-andComment.pdf), which reproduces the published GSA Bulletin pages 760–768."
+      "notes": "Full text read from AMNH-hosted PDF (research.amnh.org/users/debel/extinction/RobertsonEtal-GSAB04-andComment.pdf), which reproduces the published GSA Bulletin pages 760–768.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "belcher2005",
@@ -1032,7 +1267,11 @@
       "url": "https://doi.org/10.1144/0016-764904-104",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata + full abstract read (charcoal 4–8x below background; ground T ≤545 °C, not >325 °C for long; <19 kW/m2; ≤6 kW/m2 for >few hours)."
+      "notes": "Crossref metadata + full abstract read (charcoal 4–8x below background; ground T ≤545 °C, not >325 °C for long; <19 kW/m2; ≤6 kW/m2 for >few hours).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "collins2005",
@@ -1047,7 +1286,11 @@
       "url": "https://doi.org/10.1111/j.1945-5100.2005.tb00157.x",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text PDF read from Imperial College Spiral repository (published MAPS version). Equations 32–39 (fireball radius, timing, duration, ignition scaling) used for scaling estimates."
+      "notes": "Full text PDF read from Imperial College Spiral repository (published MAPS version). Equations 32–39 (fireball radius, timing, duration, ignition scaling) used for scaling estimates.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "harvey2008",
@@ -1062,7 +1305,8 @@
       "url": "https://doi.org/10.1130/g24646a.1",
       "peerReviewed": true,
       "verified": true,
-      "notes": "GeoScienceWorld abstract page read (carbon cenospheres; target fossil organic matter; Geology 36(5):355–358)."
+      "notes": "GeoScienceWorld abstract page read (carbon cenospheres; target fossil organic matter; Geology 36(5):355–358).",
+      "citedIn": []
     },
     {
       "id": "goldin2009",
@@ -1077,7 +1321,11 @@
       "url": "https://doi.org/10.1130/g30433a.1",
       "peerReviewed": true,
       "verified": true,
-      "notes": "GeoScienceWorld abstract page read (peak 5–15 kW/m2; > solar ~30 min; >5 kW/m2 few minutes). Full text paywalled — no figure-level values used."
+      "notes": "GeoScienceWorld abstract page read (peak 5–15 kW/m2; > solar ~30 min; >5 kW/m2 few minutes). Full text paywalled — no figure-level values used.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "belcher2009",
@@ -1092,7 +1340,10 @@
       "url": "https://doi.org/10.1073/pnas.0813117106",
       "peerReviewed": true,
       "verified": true,
-      "notes": "PMC (PMC2657452) page opened; abstract read (pPAH signature consistent with hydrocarbon combustion)."
+      "notes": "PMC (PMC2657452) page opened; abstract read (pPAH signature consistent with hydrocarbon combustion).",
+      "citedIn": [
+        "report"
+      ]
     },
     {
       "id": "schulte2010",
@@ -1107,7 +1358,11 @@
       "url": "https://doi.org/10.1126/science.1177265",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Main article metadata via Crossref; Supporting Online Material (SOM) PDF read in full from KU Leuven Lirias repository; Table S1 (event-deposit thickness classes, paleodistances, max Ir) used. Main text not read."
+      "notes": "Main article metadata via Crossref; Supporting Online Material (SOM) PDF read in full from KU Leuven Lirias repository; Table S1 (event-deposit thickness classes, paleodistances, max Ir) used. Main text not read.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "johnson2012",
@@ -1122,7 +1377,11 @@
       "url": "https://doi.org/10.1016/j.icarus.2011.11.020",
       "peerReviewed": true,
       "verified": true,
-      "notes": "ScienceDirect abstract read (10 km impactor at ~21 km/s yields ~250 µm spherules; smaller spherules in faster outer plume)."
+      "notes": "ScienceDirect abstract read (10 km impactor at ~21 km/s yields ~250 µm spherules; smaller spherules in faster outer plume).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "robertson2013",
@@ -1137,7 +1396,11 @@
       "url": "https://doi.org/10.1002/jgrg.20018",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read on AGU/Wiley (Open Access) via browser."
+      "notes": "Full text read on AGU/Wiley (Open Access) via browser.",
+      "citedIn": [
+        "parameters",
+        "sites"
+      ]
     },
     {
       "id": "morgan2013",
@@ -1152,7 +1415,11 @@
       "url": "https://doi.org/10.1002/2013jg002428",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read on AGU/Wiley (Free Access) via browser, incl. figure captions; Fig. 4 image inspected and peak fluxes digitized by eye (±~10%)."
+      "notes": "Full text read on AGU/Wiley (Free Access) via browser, incl. figure captions; Fig. 4 image inspected and peak fluxes digitized by eye (±~10%).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "belcher2015",
@@ -1167,7 +1434,11 @@
       "url": "https://doi.org/10.1144/jgs2014-082",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata + full abstract read (dry litter ignites, live fuels typically not). Full text not opened."
+      "notes": "Crossref metadata + full abstract read (dry litter ignites, live fuels typically not). Full text not opened.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "kaiho2016",
@@ -1182,7 +1453,11 @@
       "url": "https://doi.org/10.1038/srep28427",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text (Europe PMC, PMC4944614, open access) read."
+      "notes": "Full text (Europe PMC, PMC4944614, open access) read.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "toon2016",
@@ -1197,7 +1472,11 @@
       "url": "https://doi.org/10.5194/acp-16-13185-2016",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text PDF read from publisher (ACP, open access)."
+      "notes": "Full text PDF read from publisher (ACP, open access).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "bardeen2017",
@@ -1212,7 +1491,11 @@
       "url": "https://doi.org/10.1073/pnas.1708980114",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text incl. SI read on PMC (PMC5594694) via browser; SI Fig. S8 used for first-week surface temperature."
+      "notes": "Full text incl. SI read on PMC (PMC5594694) via browser; SI Fig. S8 used for first-week surface temperature.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "depalma2019",
@@ -1227,7 +1510,12 @@
       "url": "https://doi.org/10.1073/pnas.1817407116",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text (Europe PMC, PMC6486721) read. Interpretation of Tanis timing rests on assumed launch angles (author recalculation)."
+      "notes": "Full text (Europe PMC, PMC6486721) read. Interpretation of Tanis timing rests on assumed launch angles (author recalculation).",
+      "citedIn": [
+        "parameters",
+        "sites",
+        "report"
+      ]
     },
     {
       "id": "artemieva2020",
@@ -1242,7 +1530,11 @@
       "url": "https://doi.org/10.1029/2019gl086562",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read on AGU/Wiley (Free Access) via browser, incl. Table 1."
+      "notes": "Full text read on AGU/Wiley (Free Access) via browser, incl. Table 1.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "lyons2020",
@@ -1257,7 +1549,11 @@
       "url": "https://doi.org/10.1073/pnas.2004596117",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read on PMC (PMC7568312) via browser (abstract, introduction)."
+      "notes": "Full text read on PMC (PMC7568312) via browser (abstract, introduction).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "santacatharina2022",
@@ -1272,7 +1568,11 @@
       "url": "https://doi.org/10.1038/s41598-022-17292-y",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text (Europe PMC, PMC9338043, open access) read."
+      "notes": "Full text (Europe PMC, PMC9338043, open access) read.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "senel2023",
@@ -1287,7 +1587,12 @@
       "url": "https://doi.org/10.1038/s41561-023-01290-4",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Publisher page (nature.com) opened; abstract and Extended Data captions read. Full text paywalled. Beyond-24 h context only."
+      "notes": "Publisher page (nature.com) opened; abstract and Extended Data captions read. Full text paywalled. Beyond-24 h context only.",
+      "citedIn": [
+        "parameters",
+        "sites",
+        "report"
+      ]
     },
     {
       "id": "johnson2022",
@@ -1302,7 +1607,11 @@
       "url": "https://doi.org/10.7910/DVN/GWOFIO",
       "peerReviewed": false,
       "verified": true,
-      "notes": "Dataset record and README_MOM6_RESULTS read via Dataverse API; iSALE input file asteroid.inp read. CC0. Contains pre-impact paleobathymetry 1/10 and 1/5 deg (tarball_pre_impact_bathymetry.tar, ~62 MB; includes Scotese 070Ma_PaleoDEM.txt), MOM6 initial conditions, MOST max-amplitude/velocity netCDF (~74 MB), SSH snapshots every 10 min (MOM6, ~7 GB). Not downloaded."
+      "notes": "Dataset record and README_MOM6_RESULTS read via Dataverse API; iSALE input file asteroid.inp read. CC0. Contains pre-impact paleobathymetry 1/10 and 1/5 deg (tarball_pre_impact_bathymetry.tar, ~62 MB; includes Scotese 070Ma_PaleoDEM.txt), MOM6 initial conditions, MOST max-amplitude/velocity netCDF (~74 MB), SSH snapshots every 10 min (MOM6, ~7 GB). Not downloaded.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "matsui2002",
@@ -1317,7 +1626,11 @@
       "url": "https://doi.org/10.1130/0-8137-2356-6.69",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read (PDF on co-author Tajika's University of Tokyo page park.itc.u-tokyo.ac.jp/tajika). Metadata confirmed by Crossref. Publisher page (GeoScienceWorld) blocked by bot check, not bypassed."
+      "notes": "Full text read (PDF on co-author Tajika's University of Tokyo page park.itc.u-tokyo.ac.jp/tajika). Metadata confirmed by Crossref. Publisher page (GeoScienceWorld) blocked by bot check, not bypassed.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "sanford2016",
@@ -1332,7 +1645,11 @@
       "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2015JB012615",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text (free access) read on Wiley publisher page via browser (sections 1-4.3, Tables 1-3, figure captions)."
+      "notes": "Full text (free access) read on Wiley publisher page via browser (sections 1-4.3, Tables 1-3, figure captions).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "kinsland2021",
@@ -1347,7 +1664,11 @@
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0012821X21003186",
       "peerReviewed": true,
       "verified": true,
-      "notes": "ScienceDirect publisher page opened (abstract, highlights, introduction, section snippets incl. Conclusions). Full text paywalled."
+      "notes": "ScienceDirect publisher page opened (abstract, highlights, introduction, section snippets incl. Conclusions). Full text paywalled.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "kinsland2025",
@@ -1362,7 +1683,11 @@
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0025322724002500",
       "peerReviewed": true,
       "verified": true,
-      "notes": "ScienceDirect publisher page opened (abstract, highlights, introduction, section snippets). Full text paywalled; numbers taken only from visible text. Metadata confirmed by Crossref."
+      "notes": "ScienceDirect publisher page opened (abstract, highlights, introduction, section snippets). Full text paywalled; numbers taken only from visible text. Metadata confirmed by Crossref.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "bralower1998",
@@ -1377,7 +1702,10 @@
       "url": "https://doi.org/10.1130/0091-7613(1998)026<0331:TCTBCC>2.3.CO;2",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Publisher page (GeoScienceWorld) blocked by bot check (not bypassed). Abstract read via OpenAlex record that mirrors the publisher landing page; bibliographic data confirmed by Crossref. Abstract contains no numbers; cited qualitatively only."
+      "notes": "Publisher page (GeoScienceWorld) blocked by bot check (not bypassed). Abstract read via OpenAlex record that mirrors the publisher landing page; bibliographic data confirmed by Crossref. Abstract contains no numbers; cited qualitatively only.",
+      "citedIn": [
+        "report"
+      ]
     },
     {
       "id": "denne2013",
@@ -1392,7 +1720,11 @@
       "url": "https://doi.org/10.1130/G34503.1",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Publisher page blocked by bot check (not bypassed). Abstract read via OpenAlex mirror of the GeoScienceWorld landing page; metadata confirmed by Crossref. Numbers from abstract only."
+      "notes": "Publisher page blocked by bot check (not bypassed). Abstract read via OpenAlex mirror of the GeoScienceWorld landing page; metadata confirmed by Crossref. Numbers from abstract only.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "bourgeois1988",
@@ -1407,7 +1739,12 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/17774578/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "PubMed record PMID 17774578 (abstract) opened; Crossref metadata confirmed."
+      "notes": "PubMed record PMID 17774578 (abstract) opened; Crossref metadata confirmed.",
+      "citedIn": [
+        "parameters",
+        "sites",
+        "report"
+      ]
     },
     {
       "id": "maurrasse1991",
@@ -1422,7 +1759,10 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/17751972/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "PubMed record PMID 17751972 (abstract) opened; Crossref metadata confirmed."
+      "notes": "PubMed record PMID 17751972 (abstract) opened; Crossref metadata confirmed.",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "smit1992",
@@ -1437,7 +1777,12 @@
       "url": "https://doi.org/10.1130/0091-7613(1992)020<0099:TBDWCU>2.3.CO;2",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Publisher page blocked by bot check (not bypassed). Full abstract read via OpenAlex (mirrors publisher abstract); metadata confirmed by Crossref; page range as given in Range et al. 2022 reference list."
+      "notes": "Publisher page blocked by bot check (not bypassed). Full abstract read via OpenAlex (mirrors publisher abstract); metadata confirmed by Crossref; page range as given in Range et al. 2022 reference list.",
+      "citedIn": [
+        "parameters",
+        "sites",
+        "report"
+      ]
     },
     {
       "id": "schulte2006",
@@ -1452,7 +1797,11 @@
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0037073805003301",
       "peerReviewed": true,
       "verified": true,
-      "notes": "ScienceDirect publisher page opened (full abstract)."
+      "notes": "ScienceDirect publisher page opened (full abstract).",
+      "citedIn": [
+        "parameters",
+        "sites"
+      ]
     },
     {
       "id": "keller2007",
@@ -1467,7 +1816,10 @@
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0012821X06009162",
       "peerReviewed": true,
       "verified": true,
-      "notes": "ScienceDirect publisher page opened (full abstract). Minority/contested position; included for the disagreement record."
+      "notes": "ScienceDirect publisher page opened (full abstract). Minority/contested position; included for the disagreement record.",
+      "citedIn": [
+        "report"
+      ]
     },
     {
       "id": "schulte2012",
@@ -1482,7 +1834,10 @@
       "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1365-3091.2011.01274.x",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full abstract read via OpenAlex (open-access record, Wiley pdfdirect); metadata confirmed by Crossref (published online 2011, issue 2012)."
+      "notes": "Full abstract read via OpenAlex (open-access record, Wiley pdfdirect); metadata confirmed by Crossref (published online 2011, issue 2012).",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "takayama2000",
@@ -1497,7 +1852,11 @@
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0037073800000798",
       "peerReviewed": true,
       "verified": true,
-      "notes": "ScienceDirect publisher page opened (full abstract); metadata confirmed by Crossref."
+      "notes": "ScienceDirect publisher page opened (full abstract); metadata confirmed by Crossref.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "bahlburg2010",
@@ -1512,7 +1871,11 @@
       "url": "https://doi.org/10.1016/j.epsl.2010.03.037",
       "peerReviewed": true,
       "verified": true,
-      "notes": "ScienceDirect publisher page opened via doi.org (abstract, introduction, section snippets)."
+      "notes": "ScienceDirect publisher page opened via doi.org (abstract, introduction, section snippets).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "wunnemann2015",
@@ -1527,7 +1890,8 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/26392614/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "PubMed record PMID 26392614 (abstract) opened. Publisher full text behind Cloudflare challenge (not bypassed). Its conclusion that the rim wave dominates energy is quoted second-hand from Range et al. 2022 Sec. 5.1."
+      "notes": "PubMed record PMID 26392614 (abstract) opened. Publisher full text behind Cloudflare challenge (not bypassed). Its conclusion that the rim wave dominates energy is quoted second-hand from Range et al. 2022 Sec. 5.1.",
+      "citedIn": []
     },
     {
       "id": "muller2008",
@@ -1542,7 +1906,11 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/18323446/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "PubMed record PMID 18323446 (abstract) opened. One of the two paleobathymetry sources of range2022 (age-depth grid age_depth_bath_65 on EarthByte server; URL responds HTTP 200)."
+      "notes": "PubMed record PMID 18323446 (abstract) opened. One of the two paleobathymetry sources of range2022 (age-depth grid age_depth_bath_65 on EarthByte server; URL responds HTTP 200).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "scasso2005",
@@ -1557,7 +1925,10 @@
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0195667105000224",
       "peerReviewed": true,
       "verified": true,
-      "notes": "ScienceDirect publisher page opened (abstract, author list); volume/pages from Crossref."
+      "notes": "ScienceDirect publisher page opened (abstract, author list); volume/pages from Crossref.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "leveque2024",
@@ -1572,7 +1943,11 @@
       "url": "https://repository.library.noaa.gov/view/noaa/68617",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text PDF read from NOAA Institutional Repository (noaa_68617_DS1.pdf); metadata confirmed by Crossref."
+      "notes": "Full text PDF read from NOAA Institutional Repository (noaa_68617_DS1.pdf); metadata confirmed by Crossref.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "goto2005",
@@ -1587,7 +1962,8 @@
       "url": "https://www.jstage.jst.go.jp/article/geosoc/111/4/111_4_193/_article/-char/en",
       "peerReviewed": true,
       "verified": true,
-      "notes": "J-STAGE publisher page opened (English abstract; paper in Japanese); Crossref metadata confirmed. Review of the tsunami-deposit/timing debate."
+      "notes": "J-STAGE publisher page opened (English abstract; paper in Japanese); Crossref metadata confirmed. Review of the tsunami-deposit/timing debate.",
+      "citedIn": []
     },
     {
       "id": "meschede2011",
@@ -1602,7 +1978,11 @@
       "url": "https://academic.oup.com/gji/article/187/1/529/616934",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Journal page (OUP) full text read via fetch; abstract cross-checked via OpenAlex; Crossref metadata matched. Some energy values in the text are rendered as equation graphics and could not be read (noted where relevant). The paper does not state a moment magnitude."
+      "notes": "Journal page (OUP) full text read via fetch; abstract cross-checked via OpenAlex; Crossref metadata matched. Some energy values in the text are rendered as equation graphics and could not be read (noted where relevant). The paper does not state a moment magnitude.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "richards2015",
@@ -1617,7 +1997,11 @@
       "url": "https://www.osti.gov/servlets/purl/1512141",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Accepted manuscript (DOE/OSTI 1512141) read in full; Crossref metadata matched. Section 'Scaling the Effects of the Chicxulub Impact' used."
+      "notes": "Accepted manuscript (DOE/OSTI 1512141) read in full; Crossref metadata matched. Section 'Scaling the Effects of the Chicxulub Impact' used.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "day2005",
@@ -1632,7 +2016,10 @@
       "url": "https://doi.org/10.1130/0-8137-2384-1.239",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (book-chapter) matched; abstract read via OpenAlex (GSA page returns 403). Page range 239-258 taken from the reference list of depalma2019. Full text NOT read. The OpenAlex abstract renders the magnitude as 'moment magnitude <11'; leveque2024 cite the paper for 'Mw 11' and richards2015 for 'Mw > 10' - the exact symbol could not be checked against the original."
+      "notes": "Crossref metadata (book-chapter) matched; abstract read via OpenAlex (GSA page returns 403). Page range 239-258 taken from the reference list of depalma2019. Full text NOT read. The OpenAlex abstract renders the magnitude as 'moment magnitude <11'; leveque2024 cite the paper for 'Mw 11' and richards2015 for 'Mw > 10' - the exact symbol could not be checked against the original.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "bondevik2013",
@@ -1647,7 +2034,11 @@
       "url": "https://doi.org/10.1002/grl.50639",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata matched; abstract read via OpenAlex (Wiley page blocks automated fetch); details also as summarised in leveque2024 Sect. 2. Full text not read."
+      "notes": "Crossref metadata matched; abstract read via OpenAlex (Wiley page blocks automated fetch); details also as summarised in leveque2024 Sect. 2. Full text not read.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "klaus2000",
@@ -1662,7 +2053,11 @@
       "url": "https://doi.org/10.1130/0091-7613(2000)28<319:IMWATK>2.0.CO;2",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata matched; abstract read (GeoScienceWorld abstract text as indexed by OpenAlex). Full text not read."
+      "notes": "Crossref metadata matched; abstract read (GeoScienceWorld abstract text as indexed by OpenAlex). Full text not read.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "byrnes2018",
@@ -1677,7 +2072,8 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5810608/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read (PMC5810608 via Europe PMC); Crossref metadata matched. Context only (effects beyond 24 h)."
+      "notes": "Full text read (PMC5810608 via Europe PMC); Crossref metadata matched. Context only (effects beyond 24 h).",
+      "citedIn": []
     },
     {
       "id": "khazins2018",
@@ -1692,7 +2088,10 @@
       "url": "https://doi.org/10.1134/S0038094618060023",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata matched; abstract read via OpenAlex (Springer page requires login). Full text not read."
+      "notes": "Crossref metadata matched; abstract read via OpenAlex (Springer page requires login). Full text not read.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "wojcicka2020",
@@ -1707,7 +2106,10 @@
       "url": "https://doi.org/10.1029/2020JE006540",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata matched; abstract read via Semantic Scholar API (open access, CC-BY). Full text not read. Context for scale/target dependence of seismic efficiency only."
+      "notes": "Crossref metadata matched; abstract read via Semantic Scholar API (open access, CC-BY). Full text not read. Context for scale/target dependence of seismic efficiency only.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "froment2024",
@@ -1722,7 +2124,8 @@
       "url": "https://doi.org/10.1093/gji/ggae144",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata matched; summary/abstract read via OpenAlex. Full text not read. Context: impact sources are not purely isotropic."
+      "notes": "Crossref metadata matched; summary/abstract read via OpenAlex. Full text not read. Context: impact sources are not purely isotropic.",
+      "citedIn": []
     },
     {
       "id": "dziewonski1981",
@@ -1737,7 +2140,11 @@
       "url": "https://lweb.cfa.harvard.edu/~lzeng/papers/PREM.pdf",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full scanned PDF read (copy hosted on a Harvard CfA staff page); Table V (pp. 317-328: normal-mode periods, Q and group velocity) read from rendered page images; 'Note added in proof' (group velocities correct for 0S11 and higher) read. Crossref metadata matched."
+      "notes": "Full scanned PDF read (copy hosted on a Harvard CfA staff page); Table V (pp. 317-328: normal-mode periods, Q and group velocity) read from rendered page images; 'Note added in proof' (group velocities correct for 0S11 and higher) read. Crossref metadata matched.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "kennett1995",
@@ -1752,7 +2159,11 @@
       "url": "https://academic.oup.com/gji/article/122/1/108/577392",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Citation verified on the OUP journal page and Crossref: introduces the ak135 velocity model ('A preferred model, ak135, is proposed...'). Use as the body-wave travel-time model in ObsPy TauP."
+      "notes": "Citation verified on the OUP journal page and Crossref: introduces the ak135 velocity model ('A preferred model, ak135, is proposed...'). Use as the body-wave travel-time model in ObsPy TauP.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "crotwell1999",
@@ -1767,7 +2178,11 @@
       "url": "https://doi.org/10.1785/gssrl.70.2.154",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata and GeoScienceWorld landing data (via OpenAlex) matched. Method paper for the TauP algorithm implemented in obspy.taup."
+      "notes": "Crossref metadata and GeoScienceWorld landing data (via OpenAlex) matched. Method paper for the TauP algorithm implemented in obspy.taup.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "beyreuther2010",
@@ -1782,7 +2197,10 @@
       "url": "https://doi.org/10.1785/gssrl.81.3.530",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata and GeoScienceWorld landing data (via OpenAlex) matched. Software citation for ObsPy (obspy.taup used for the cross-check in the notes, version 1.5.1)."
+      "notes": "Crossref metadata and GeoScienceWorld landing data (via OpenAlex) matched. Software citation for ObsPy (obspy.taup used for the cross-check in the notes, version 1.5.1).",
+      "citedIn": [
+        "report"
+      ]
     },
     {
       "id": "ekstrom2011",
@@ -1797,7 +2215,8 @@
       "url": "https://academic.oup.com/gji/article/187/3/1668/646770",
       "peerReviewed": true,
       "verified": true,
-      "notes": "OUP journal page read (via fetch) and abstract via OpenAlex; Crossref metadata matched. Provides the 3-D dispersion model GDM52 (phase and group velocity maps 25-250 s); no global-average group-velocity table, so not used for numbers."
+      "notes": "OUP journal page read (via fetch) and abstract via OpenAlex; Crossref metadata matched. Provides the 3-D dispersion model GDM52 (phase and group velocity maps 25-250 s); no global-average group-velocity table, so not used for numbers.",
+      "citedIn": []
     },
     {
       "id": "matoza2022",
@@ -1812,7 +2231,11 @@
       "url": "https://centaur.reading.ac.uk/105147/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Author manuscript (University of Reading CentAUR, 'accepted version', without figures) read in full; Crossref metadata matched. Numbers quoted from the manuscript text; figures not seen."
+      "notes": "Author manuscript (University of Reading CentAUR, 'accepted version', without figures) read in full; Crossref metadata matched. Numbers quoted from the manuscript text; figures not seen.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "wright2022",
@@ -1827,7 +2250,11 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9492537/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read (PMC9492537, CC-BY, via Europe PMC); PMID 35772670; Crossref metadata matched."
+      "notes": "Full text read (PMC9492537, CC-BY, via Europe PMC); PMID 35772670; Crossref metadata matched.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "kubota2022",
@@ -1842,7 +2269,11 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/35549307/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "PubMed record (PMID 35549307) and abstract read; Crossref metadata matched. Full text not read (paywalled)."
+      "notes": "PubMed record (PMID 35549307) and abstract read; Crossref metadata matched. Full text not read (paywalled).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "vergoz2022",
@@ -1857,7 +2288,11 @@
       "url": "https://www.osti.gov/servlets/purl/1877608",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read (open-access PDF via OSTI 1877608, typeset EPSL version); Crossref/OpenAlex metadata matched."
+      "notes": "Full text read (open-access PDF via OSTI 1877608, typeset EPSL version); Crossref/OpenAlex metadata matched.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "amores2022",
@@ -1872,7 +2307,8 @@
       "url": "https://doi.org/10.1029/2022GL098240",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata matched; abstract read via OpenAlex. Full text not read. Cited only for the method idea (2DH long-wave model reproduces Lamb-wave arrival times)."
+      "notes": "Crossref metadata matched; abstract read via OpenAlex. Full text not read. Cited only for the method idea (2DH long-wave model reproduces Lamb-wave arrival times).",
+      "citedIn": []
     },
     {
       "id": "pierazzo2003",
@@ -1887,7 +2323,11 @@
       "url": "https://doi.org/10.1089/153110703321632453",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex (forcing ~100x Pinatubo >=2 yr; saturation 30-300 Gt S)."
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex (forcing ~100x Pinatubo >=2 yr; saturation 30-300 Gt S).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "ohno2014",
@@ -1902,7 +2342,10 @@
       "url": "https://doi.org/10.1038/ngeo2095",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com article page (dc.description). Full text paywalled."
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com article page (dc.description). Full text paywalled.",
+      "citedIn": [
+        "report"
+      ]
     },
     {
       "id": "tabor2020",
@@ -1917,7 +2360,10 @@
       "url": "https://doi.org/10.1029/2019GL085572",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract (Crossref lists article-number 'e60121'; AGU eLocator e2019GL085572). Full text closed/blocked - emission inputs not verified."
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract (Crossref lists article-number 'e60121'; AGU eLocator e2019GL085572). Full text closed/blocked - emission inputs not verified.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "toon1997",
@@ -1932,7 +2378,10 @@
       "url": "https://doi.org/10.1029/96RG03038",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked incl. full abstract. Full text blocked."
+      "notes": "Crossref metadata (api.crossref.org) checked incl. full abstract. Full text blocked.",
+      "citedIn": [
+        "report"
+      ]
     },
     {
       "id": "brugger2017",
@@ -1947,7 +2396,8 @@
       "url": "https://doi.org/10.1002/2016GL072241",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract.",
+      "citedIn": []
     },
     {
       "id": "rodiouchkina2025",
@@ -1962,7 +2412,12 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11739411/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read on PubMed Central (PMC11739411). Supersedes/challenges artemieva2017 sulfur mass. Author name Bottcher = Böttcher."
+      "notes": "Full text read on PubMed Central (PMC11739411). Supersedes/challenges artemieva2017 sulfur mass. Author name Bottcher = Böttcher.",
+      "citedIn": [
+        "parameters",
+        "sites",
+        "report"
+      ]
     },
     {
       "id": "junium2022",
@@ -1977,7 +2432,11 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9168947/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read on PubMed Central (PMC9168947)."
+      "notes": "Full text read on PubMed Central (PMC9168947).",
+      "citedIn": [
+        "sites",
+        "report"
+      ]
     },
     {
       "id": "during2024",
@@ -1992,7 +2451,11 @@
       "url": "https://doi.org/10.7717/peerj.18519",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract.",
+      "citedIn": [
+        "sites",
+        "report"
+      ]
     },
     {
       "id": "vajda2001",
@@ -2007,7 +2470,10 @@
       "url": "https://doi.org/10.1126/science.1064706",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract.",
+      "citedIn": [
+        "report"
+      ]
     },
     {
       "id": "vellekoop2014",
@@ -2022,7 +2488,12 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4040585/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read on PubMed Central (PMC4040585); gives Brazos-1 coordinates."
+      "notes": "Full text read on PubMed Central (PMC4040585); gives Brazos-1 coordinates.",
+      "citedIn": [
+        "parameters",
+        "sites",
+        "report"
+      ]
     },
     {
       "id": "alvarez1990",
@@ -2037,7 +2508,10 @@
       "url": "https://doi.org/10.1126/science.11538083",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract (1-cm clay, Ir 3000 ppt)."
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract (1-cm clay, Ir 3000 ppt).",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "brooks1984",
@@ -2052,7 +2526,10 @@
       "url": "https://doi.org/10.1126/science.226.4674.539",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract.",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "keller1994",
@@ -2066,7 +2543,10 @@
       "url": "https://ntrs.nasa.gov/api/citations/19940023913/downloads/19940023913.pdf",
       "peerReviewed": false,
       "verified": false,
-      "notes": "PDF opened (NASA NTRS). Field guide, not peer-reviewed; used for El Mimbral coordinates (23 deg 13'N, 98 deg 40'W, 'Arroyo El Mimbral' chapter) and to document the opposing (non-tsunami / pre-K-T) interpretation."
+      "notes": "PDF opened (NASA NTRS). Field guide, not peer-reviewed; used for El Mimbral coordinates (23 deg 13'N, 98 deg 40'W, 'Arroyo El Mimbral' chapter) and to document the opposing (non-tsunami / pre-K-T) interpretation.",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "sigurdsson1991",
@@ -2081,7 +2561,10 @@
       "url": "https://doi.org/10.1038/349482a0",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com page."
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com page.",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "maurrasse1996",
@@ -2095,7 +2578,10 @@
       "url": "https://coloradogeologicalsurvey.org/wp-content/uploads/woocommerce_uploads/OF-96-04-22.pdf",
       "peerReviewed": false,
       "verified": false,
-      "notes": "PDF opened. Field-trip guide, not peer-reviewed; used for marker-bed thickness (40-72.5 cm, up to 115 cm with imbrication) and outcrop description (no coordinates given)."
+      "notes": "PDF opened. Field-trip guide, not peer-reviewed; used for marker-bed thickness (40-72.5 cm, up to 115 cm with imbrication) and outcrop description (no coordinates given).",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "izett1991",
@@ -2110,7 +2596,10 @@
       "url": "https://doi.org/10.1126/science.252.5012.1539",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Metadata and abstract read via OpenAlex. Ages use 1991 calibrations (64.5 Ma) - superseded by renne2013 calibration."
+      "notes": "Metadata and abstract read via OpenAlex. Ages use 1991 calibrations (64.5 Ma) - superseded by renne2013 calibration.",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "witts2021",
@@ -2125,7 +2614,10 @@
       "url": "https://digitallibrary.amnh.org/server/api/core/bitstreams/d4cbd0b4-bddc-47fc-9f97-cc1f2ad21aad/content",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full-text PDF read (AMNH Digital Library); DOI via Crossref search. Cross-check of Brazos locality coordinates (Cottonmouth Creek AMNH loc. 3621: 31 deg 06'56.58\"N, 96 deg 49'57.71\"W)."
+      "notes": "Full-text PDF read (AMNH Digital Library); DOI via Crossref search. Cross-check of Brazos locality coordinates (Cottonmouth Creek AMNH loc. 3621: 31 deg 06'56.58\"N, 96 deg 49'57.71\"W).",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "keller2004",
@@ -2140,7 +2632,10 @@
       "url": "https://doi.org/10.1073/pnas.0400396101",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract. Minority position (see disagreements)."
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract. Minority position (see disagreements).",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "smit1980",
@@ -2155,7 +2650,10 @@
       "url": "https://doi.org/10.1038/285198a0",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com page (Caravaca)."
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com page (Caravaca).",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "sosamontesdeoca2013",
@@ -2170,7 +2668,10 @@
       "url": "https://doi.org/10.1371/journal.pone.0082242",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read on journals.plos.org; Crossref metadata (api.crossref.org) checked. Gives Caravaca coordinates (Geologic Setting)."
+      "notes": "Full text read on journals.plos.org; Crossref metadata (api.crossref.org) checked. Gives Caravaca coordinates (Geologic Setting).",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "molina2006",
@@ -2185,7 +2686,10 @@
       "url": "https://doi.org/10.18814/epiiugs/2006/v29i4/004",
       "peerReviewed": true,
       "verified": true,
-      "notes": "DOI resolved to episodes.org; open-access PDF read (pdf.medrang.co.kr mirror linked from the journal page). GPS coordinates of the GSSP marker given in text."
+      "notes": "DOI resolved to episodes.org; open-access PDF read (pdf.medrang.co.kr mirror linked from the journal page). GPS coordinates of the GSSP marker given in text.",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "olsson1997",
@@ -2200,7 +2704,10 @@
       "url": "https://doi.org/10.1130/0091-7613(1997)025<0759:ELATCT>2.3.CO;2",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex (GSW page)."
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex (GSW page).",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "miller1998",
@@ -2215,7 +2722,10 @@
       "url": "https://www-odp.tamu.edu/publications/174AX_IR/CHAP_01.PDF",
       "peerReviewed": false,
       "verified": true,
-      "notes": "Chapter PDF read (ODP/TAMU). Initial Reports are shipboard/site reports, not formally peer-reviewed. Gives site coordinates and ~6-cm spherule layer."
+      "notes": "Chapter PDF read (ODP/TAMU). Initial Reports are shipboard/site reports, not formally peer-reviewed. Gives site coordinates and ~6-cm spherule layer.",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "macleod2007",
@@ -2230,7 +2740,10 @@
       "url": "https://doi.org/10.1130/B25955.1",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex (GSW page)."
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex (GSW page).",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "shipboard2004",
@@ -2245,7 +2758,10 @@
       "url": "https://www-odp.tamu.edu/publications/207_IR/VOLUME/CHAPTERS/IR207_06.PDF",
       "peerReviewed": false,
       "verified": true,
-      "notes": "DOI resolved to ODP/TAMU; chapter HTML and PDF read (hole coordinates in hole summary, K/T spherule layer in Lithostratigraphy/Biostratigraphy). Not formally peer-reviewed."
+      "notes": "DOI resolved to ODP/TAMU; chapter HTML and PDF read (hole coordinates in hole summary, K/T spherule layer in Lithostratigraphy/Biostratigraphy). Not formally peer-reviewed.",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "smit1984",
@@ -2260,7 +2776,10 @@
       "url": "https://doi.org/10.1126/science.223.4641.1177",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract."
+      "notes": "Crossref metadata (api.crossref.org) checked incl. abstract.",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "scotese2018",
@@ -2275,7 +2794,11 @@
       "url": "https://zenodo.org/records/5460860",
       "peerReviewed": false,
       "verified": true,
-      "notes": "Zenodo API record read (CC-BY-4.0, published 2018-08-01). Explanatory PDF (Scotese_Wright2018_PALEOMAP_PaleoDEMs.pdf) downloaded and read: Table 1 (p.14) Map16 'KT Boundary (latest Maastrichtian, 66 Ma)', Plate Tectonic Model Age 65; methods pp. 4-7. 1-deg netCDF zip and CSV zip downloaded; Map16_065Ma.csv analysed."
+      "notes": "Zenodo API record read (CC-BY-4.0, published 2018-08-01). Explanatory PDF (Scotese_Wright2018_PALEOMAP_PaleoDEMs.pdf) downloaded and read: Table 1 (p.14) Map16 'KT Boundary (latest Maastrichtian, 66 Ma)', Plate Tectonic Model Age 65; methods pp. 4-7. 1-deg netCDF zip and CSV zip downloaded; Map16_065Ma.csv analysed.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "scotese2016",
@@ -2289,7 +2812,11 @@
       "url": "http://www.earthbyte.org/paleomap-paleoatlas-for-gplates/",
       "peerReviewed": false,
       "verified": false,
-      "notes": "Cited by scotese2018 as 'Scotese 2016b' (plate model v2d3). EarthByte page opened: 91 paleogeographic maps loadable in GPlates with reconstruction files. Not peer-reviewed."
+      "notes": "Cited by scotese2018 as 'Scotese 2016b' (plate model v2d3). EarthByte page opened: 91 paleogeographic maps loadable in GPlates with reconstruction files. Not peer-reviewed.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "stein1992",
@@ -2304,7 +2831,11 @@
       "url": "https://doi.org/10.1038/359123a0",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com. Depth-age relation used by scotese2018 to 'unsubside' ocean floor."
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read on nature.com. Depth-age relation used by scotese2018 to 'unsubside' ocean floor.",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "miller2005",
@@ -2319,7 +2850,10 @@
       "url": "https://doi.org/10.1126/science.1116412",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Abstract read via OpenAlex; DOI via Crossref."
+      "notes": "Abstract read via OpenAlex; DOI via Crossref.",
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "miller2020",
@@ -2334,7 +2868,11 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7228749/",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Full text read on PubMed Central (PMC7228749)."
+      "notes": "Full text read on PubMed Central (PMC7228749).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "boyd2011",
@@ -2349,7 +2887,11 @@
       "url": "https://doi.org/10.2113/gsrocky.46.1.43",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex (GSW page)."
+      "notes": "Crossref metadata (api.crossref.org) checked; abstract read via OpenAlex (GSW page).",
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "iugs_gubbio",
@@ -2363,7 +2905,10 @@
       "url": "https://iugs-geoheritage.org/geoheritage_sites/cretaceous-to-paleogene-stratigraphic-section-of-bottaccione-gorge-gubbio/",
       "peerReviewed": false,
       "verified": false,
-      "notes": "Web entry opened (coordinates 43 deg 21'55.0\"N, 12 deg 34'57.0\"E). Authoritative (IUGS), not peer-reviewed. Year = IUGS First-100 designation (2022) - not stated on the page itself."
+      "notes": "Web entry opened (coordinates 43 deg 21'55.0\"N, 12 deg 34'57.0\"E). Authoritative (IUGS), not peer-reviewed. Year = IUGS First-100 designation (2022) - not stated on the page itself.",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "unesco_stevns",
@@ -2377,7 +2922,10 @@
       "url": "https://whc.unesco.org/en/list/1416/",
       "peerReviewed": false,
       "verified": false,
-      "notes": "Page fetched with curl: 'Date of Inscription: 2014 ... N55 16 2 E12 25 24'; 15-km-long coastal cliff. Authoritative, not peer-reviewed."
+      "notes": "Page fetched with curl: 'Date of Inscription: 2014 ... N55 16 2 E12 25 24'; 15-km-long coastal cliff. Authoritative, not peer-reviewed.",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "pbdb",
@@ -2391,7 +2939,10 @@
       "url": "https://paleobiodb.org/data1.2/colls/single.json?id=95884&show=loc,ref",
       "peerReviewed": false,
       "verified": false,
-      "notes": "Queried 2026-10-04. Woodside Creek: 41 deg 55'S, 174 deg 04'E (latlng_basis 'based on nearby landmark', minutes precision; primary ref. Hollis et al. 2003, GNS Science Report). Brownie Butte collections 47.6, -107.0 (political-unit basis) and SMVP quarry 24 47.5362, -107.0189 (stated in text). Database, not peer-reviewed."
+      "notes": "Queried 2026-10-04. Woodside Creek: 41 deg 55'S, 174 deg 04'E (latlng_basis 'based on nearby landmark', minutes precision; primary ref. Hollis et al. 2003, GNS Science Report). Brownie Butte collections 47.6, -107.0 (political-unit basis) and SMVP quarry 24 47.5362, -107.0189 (stated in text). Database, not peer-reviewed.",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "osm_nominatim",
@@ -2405,7 +2956,10 @@
       "url": "https://nominatim.openstreetmap.org/",
       "peerReviewed": false,
       "verified": false,
-      "notes": "Queried 2026-10-04: Beloc village node 18.3777852, -72.5875491; Brownie Butte peak node 47.5305600, -107.0172974; Bowman County relation centroid 46.1010498, -103.5086625. Crowd-sourced gazetteer - used only where no peer-reviewed coordinates could be found; precision limited (see site notes)."
+      "notes": "Queried 2026-10-04: Beloc village node 18.3777852, -72.5875491; Brownie Butte peak node 47.5305600, -107.0172974; Bowman County relation centroid 46.1010498, -103.5086625. Crowd-sourced gazetteer - used only where no peer-reviewed coordinates could be found; precision limited (see site notes).",
+      "citedIn": [
+        "sites"
+      ]
     },
     {
       "id": "collins2017",
@@ -2420,7 +2974,8 @@
       "url": "https://spiral.imperial.ac.uk/server/api/core/bitstreams/277e9ba5-8c0e-4b20-8040-6c4f87bef907/content",
       "peerReviewed": true,
       "verified": true,
-      "notes": "Issue 8; CC-BY 4.0. Metadata confirmed via Crossref REST API; full text (Early View pagination 1-19) read from Imperial College Spiral repository. The section 'The Earth Impact Effects Program' (EV p. 15 = journal p. 1556) documents three changes to the web calculator; Eq. 7 transcribed from rendered page image. Linked from the official calculator page as 'Recent improvements in the airblast calculation'."
+      "notes": "Issue 8; CC-BY 4.0. Metadata confirmed via Crossref REST API; full text (Early View pagination 1-19) read from Imperial College Spiral repository. The section 'The Earth Impact Effects Program' (EV p. 15 = journal p. 1556) documents three changes to the web calculator; Eq. 7 transcribed from rendered page image. Linked from the official calculator page as 'Recent improvements in the airblast calculation'.",
+      "citedIn": []
     },
     {
       "id": "collins2013errata",
@@ -2434,7 +2989,10 @@
       "url": "https://impact.ese.ic.ac.uk/static/effects.pdf",
       "peerReviewed": false,
       "verified": false,
-      "notes": "NOT peer-reviewed: author note documenting software changes (Eq. 4 and Eq. 20 typo corrections, length-of-day, complex-crater depth d_fr = 0.294 D_fr^0.301, tsunami rim/collapse waves). Read in full from rendered page images. Cites Wunnemann, Collins & Weiss 2010 (Rev. Geophys. 48, RG4006, doi 10.1029/2009RG000308; bibliographic data confirmed via Crossref only, full text not opened, no values taken from it)."
+      "notes": "NOT peer-reviewed: author note documenting software changes (Eq. 4 and Eq. 20 typo corrections, length-of-day, complex-crater depth d_fr = 0.294 D_fr^0.301, tsunami rim/collapse waves). Read in full from rendered page images. Cites Wunnemann, Collins & Weiss 2010 (Rev. Geophys. 48, RG4006, doi 10.1029/2009RG000308; bibliographic data confirmed via Crossref only, full text not opened, no values taken from it).",
+      "citedIn": [
+        "report"
+      ]
     },
     {
       "id": "purdueImpactEarth2026",
@@ -2448,7 +3006,10 @@
       "url": "https://www.purdue.edu/impactearth/",
       "peerReviewed": false,
       "verified": false,
-      "notes": "Year = access date (2026-10-04); build date unknown. The physics is computed in the browser; the bundle was downloaded and its calculation functions executed verbatim in Node.js; the live page was also driven in a browser for cases A, B, C and displayed identical (rounded) values. Used as the primary oracle."
+      "notes": "Year = access date (2026-10-04); build date unknown. The physics is computed in the browser; the bundle was downloaded and its calculation functions executed verbatim in Node.js; the live page was also driven in a browser for cases A, B, C and displayed identical (rounded) values. Used as the primary oracle.",
+      "citedIn": [
+        "report"
+      ]
     },
     {
       "id": "imperialEIEP2026",
@@ -2462,7 +3023,8 @@
       "url": "https://impact.ese.ic.ac.uk/ImpactEffects",
       "peerReviewed": false,
       "verified": false,
-      "notes": "Year = access date (2026-10-04). Form posts by GET to https://impact.ese.ic.ac.uk/map (fields documented in 07-eiep.md sec. 7.1). In 'distance only' mode the page prints energy, entry, airblast and crater sections only (no thermal, seismic or ejecta text); thermal/seismic/ejecta enter only as map-circle radii (radians) in inline JavaScript. Old URLs (ImpactEarth/cgi-bin/*.cgi, lpl.arizona.edu/impacteffects) now 404 or redirect."
+      "notes": "Year = access date (2026-10-04). Form posts by GET to https://impact.ese.ic.ac.uk/map (fields documented in 07-eiep.md sec. 7.1). In 'distance only' mode the page prints energy, entry, airblast and crater sections only (no thermal, seismic or ejecta text); thermal/seismic/ejecta enter only as map-circle radii (radians) in inline JavaScript. Old URLs (ImpactEarth/cgi-bin/*.cgi, lpl.arizona.edu/impacteffects) now 404 or redirect.",
+      "citedIn": []
     },
     {
       "id": "pygplates2025",
@@ -2474,7 +3036,11 @@
       "url": "https://www.gplates.org/docs/pygplates/index.html",
       "peerReviewed": false,
       "notes": "Wersja 1.0.0 (PyPI, 2025-03-26), licencja GPL v2. Użyta do rekonstrukcji paleowspółrzędnych w modelu PALEOMAP.",
-      "verified": false
+      "verified": false,
+      "citedIn": [
+        "parameters",
+        "report"
+      ]
     },
     {
       "id": "dewinter2020",
@@ -2489,7 +3055,10 @@
       "url": "https://doi.org/10.1029/2019PA003723",
       "peerReviewed": true,
       "notes": "Metadane i abstrakt sprawdzone w Crossref (2026-10-04).",
-      "verified": true
+      "verified": true,
+      "citedIn": [
+        "parameters"
+      ]
     },
     {
       "id": "kopp2011",
@@ -2504,7 +3073,10 @@
       "url": "https://doi.org/10.1029/2010GL045777",
       "peerReviewed": true,
       "notes": "Metadane sprawdzone w Crossref (2026-10-04); Crossref nie udostępnia abstraktu.",
-      "verified": true
+      "verified": true,
+      "citedIn": [
+        "parameters"
+      ]
     }
   ]
 }

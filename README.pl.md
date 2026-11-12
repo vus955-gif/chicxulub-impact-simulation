@@ -72,7 +72,7 @@ Otwórz <http://127.0.0.1:5173>. Wszystkie dane potrzebne aplikacji są już w `
 ```
 research/          rejestr parametrów (JSON), notatki badawcze, raport badawczy (HTML)
   parameters.json  wartości zebrane z literatury, każda z pewnością, metodą, lokalizatorem i źródłami
-  sources.json     168 źródeł; DOI sprawdzone w Crossref / DataCite
+  sources.json     168 źródeł, 156 z DOI sprawdzonym w Crossref / DataCite; pole „citedIn” przy każdym
   synthesis.json   udokumentowane decyzje: co odrzucono, wybrano, poprawiono lub dodano i dlaczego
   i18n-en.json     angielskie teksty rejestru i stanowisk
 src/model/         czysta fizyka bez UI, testowana w Node (EIEP, czasy dotarcia, fronty, orbity ejekty,
@@ -83,6 +83,8 @@ scripts/           potok rejestru (TypeScript) i przetwarzanie danych (Python)
 public/data/       dane pochodne używane przez aplikację (rejestr, tekstura paleo-DEM, siatki tsunami, …)
 tests/             testy Vitest
 ```
+
+Ze 168 źródeł w `sources.json` parametry rejestru cytują 114, kolejne 24 cytują tylko obserwacje stanowisk (sonda), a 14 — tylko tekst raportu badawczego. Pozostałe 16 zebrano w wątkach researchu, ale nigdzie nie są cytowane (`"citedIn": []`). `npm run registry` przelicza pole `citedIn`.
 
 Najważniejsze metody:
 
