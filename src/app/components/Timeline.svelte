@@ -70,7 +70,8 @@
     <span class="hint small muted">{L('spacja · ←/→ zdarzenia · Shift+←/→ dekada', 'space · ←/→ events · Shift+←/→ decade')}</span>
   </div>
   <div class="svgwrap" bind:clientWidth={width}>
-    <svg {width} height={H} role="slider" aria-label={L('Oś czasu', 'Timeline')} aria-valuenow={ui.t} tabindex="0"
+    <svg {width} height={H} role="slider" aria-label={L('Oś czasu', 'Timeline')} tabindex="0"
+      aria-valuemin={-tEntry} aria-valuemax={T_MAX} aria-valuenow={ui.t} aria-valuetext={formatClock(ui.t)}
       onpointerdown={down} onpointermove={move} onpointerup={up} onpointercancel={up}>
       {#each axis.ticks() as k}
         <line x1={x(k.t)} x2={x(k.t)} y1={top} y2={top + LANES.length * laneH} class="grid" />
