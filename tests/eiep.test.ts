@@ -1,6 +1,8 @@
 import { describe, it, expect } from 'vitest';
 import { existsSync, readFileSync } from 'node:fs';
 import * as eiep from '../src/model/eiep';
+import { loadRegistry } from '../src/model/registry/load';
+import { RegistryIndex } from '../src/model/sim/registry-client';
 
 interface OracleCase {
   name: string;
@@ -85,5 +87,24 @@ describe('EIEP sanity', () => {
         expect(Number.isFinite(v)).toBe(true);
       }
     }
+  });
+});
+
+// EIEP ma własne stałe (odtwarza kalkulator), a rejestr — te same wielkości jako parametry z rozrzutem z literatury.
+// Zmiana jednej strony bez drugiej rozjechałaby wielkości liczone (derived.json) z tym, co pokazuje rejestr.
+describe('EIEP constants agree with the research registry', () => {
+  const reg = new RegistryIndex(loadRegistry('research'));
+  it('luminous efficiency η = fireball.luminous_efficiency', () => {
+    expect(eiep.LUMINOUS_EFFICIENCY).toBe(reg.num('fireball.luminous_efficiency'));
+  });
+  it('fireball temperature T* = fireball.transparency_temperature', () => {
+    expect(eiep.FIREBALL_T_STAR).toBe(reg.num('fireball.transparency_temperature'));
+  });
+  it('radiation duration and thermal exposure use the registry values', () => {
+    const E = 1e23, eta = reg.num('fireball.luminous_efficiency'), T = reg.num('fireball.transparency_temperature');
+    const Rf = eiep.fireballRadius(E);
+    expect(rel(eiep.radiationDuration(E), (eta * E) / (2 * Math.PI * Rf ** 2 * eiep.SIGMA_SB * T ** 4))).toBeLessThan(1e-12);
+    const r = 1e3; // tuż przy źródle kula ognia jest prawie w całości nad horyzontem (1 − f ≈ 10⁻⁶)
+    expect(rel(eiep.thermalExposure(E, r, 20000), (eta * E) / (2 * Math.PI * r * r))).toBeLessThan(1e-5);
   });
 });
