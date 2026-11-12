@@ -6,7 +6,7 @@
 
 An interactive, source-referenced simulation of the first day after the Chicxulub asteroid impact, 66 million years ago — from the asteroid's flight through the atmosphere to T+24 h, on the palaeogeography of the end of the Cretaceous.
 
-It is meant as an educational tool that does not hide uncertainty: every number on screen comes from a registry of published values or from a model computed from them, and you can click it to see the method, the literature range and the references (with DOIs).
+It is meant as an educational tool that does not hide uncertainty: every number on screen comes from a registry of published values, from a model computed from them, or — where the literature has a gap — from an explicit assumption of the project's own model (marked △; some of them have no literature source at all). Click any value to see the method, the literature range and the references (with DOIs).
 
 | 2D palaeomap | 3D globe |
 |---|---|

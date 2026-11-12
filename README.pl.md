@@ -4,9 +4,9 @@
 
 **▶ [Uruchom w przeglądarce](https://vus955-gif.github.io/chicxulub-impact-simulation/)** — bez instalacji; zalecana przeglądarka na komputerze z WebGL. · **[English → README.md](README.md)**
 
-Interaktywna symulacja pierwszej doby po uderzeniu planetoidy Chicxulub sprzed 66 mln lat — od lotu przez atmosferę do T+24 h, na paleogeografii schyłku kredy — w której każda liczba ma źródło.
+Interaktywna symulacja pierwszej doby po uderzeniu planetoidy Chicxulub sprzed 66 mln lat, z odnośnikami do źródeł — od lotu przez atmosferę do T+24 h, na paleogeografii schyłku kredy.
 
-Ma być narzędziem edukacyjnym, które nie ukrywa niepewności: każda wartość na ekranie pochodzi z rejestru opublikowanych danych albo z modelu na nich policzonego. Po kliknięciu widać metodę, rozrzut w literaturze i źródła (z DOI).
+Ma być narzędziem edukacyjnym, które nie ukrywa niepewności: każda wartość na ekranie pochodzi z rejestru opublikowanych danych, z modelu na nich policzonego albo — tam, gdzie literatura ma lukę — z jawnego założenia modelu predykcyjnego projektu (znak △; część z nich nie ma żadnego źródła literaturowego). Po kliknięciu widać metodę, rozrzut w literaturze i źródła (z DOI).
 
 | Paleomapa 2D | Globus 3D |
 |---|---|
