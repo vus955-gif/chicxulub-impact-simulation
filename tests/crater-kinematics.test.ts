@@ -15,6 +15,14 @@ describe('crater kinematics (predictive, anchored to registry keyframes)', () =>
     expect(k.Rf).toBe(100);
   });
 
+  it('reads the model assumptions from the registry (crater.*_pred), not from constants in the code', () => {
+    const ids = ['crater.growth_exponent_pred', 'crater.transient_rim_fraction_pred', 'crater.central_uplift_width_pred', 'crater.peak_ring_relief_factor_pred'];
+    expect([k.nGrow, k.rimFrac, k.upliftW, k.ringRelief]).toEqual(ids.map((id) => reg.num(id)));
+    for (const id of ids) expect(reg.param(id).certainty, id).toBe('predictive');
+    // transient rim ≈ 4 km at the registry transient diameter (the notes promise this); the uplift tail adds ~10⁻⁵ km
+    expect(craterAt(k, k.tTr).surface(k.Rt)).toBeCloseTo(k.rimFrac * 2 * k.Rt, 3);
+  });
+
   it('transient cavity: depth at the depth-maximum time and radius at the transient-maximum time', () => {
     expect(craterAt(k, k.tD).surface(0)).toBeCloseTo(-k.Dt, 1);
     expect(craterAt(k, k.tTr).cavityRadius).toBeCloseTo(k.Rt, 6);

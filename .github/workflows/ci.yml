@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   pull_request:
+  # wywoływany też przez pages.yml — wdrożenie rusza dopiero po zielonych testach
+  workflow_call:
 
 permissions:
   contents: read

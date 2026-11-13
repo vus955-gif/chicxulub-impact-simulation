@@ -423,7 +423,12 @@
     "seismic.t_p_antipode": "P wave (PKIKP) at the antipode",
     "seismic.t_s_antipode": "S-type wave (SKIKS) at the antipode",
     "site.paleo_lat": "Palaeolatitude of the crater (PALEOMAP)",
-    "site.paleo_lon": "Palaeolongitude of the crater (PALEOMAP)"
+    "site.paleo_lon": "Palaeolongitude of the crater (PALEOMAP)",
+    "crater.growth_exponent_pred": "Growth exponent of the transient cavity (assumption)",
+    "crater.transient_rim_fraction_pred": "Rim height of the transient cavity as a fraction of its diameter (assumption)",
+    "crater.central_uplift_width_pred": "Width of the central uplift as a fraction of the transient-cavity radius (assumption)",
+    "crater.peak_ring_relief_factor_pred": "Crater relief when the peak ring forms, relative to the final crater (assumption)",
+    "target.water_ramp_extent_pred": "Extent of the water-depth ramp around the crater (assumption)"
   },
   "notes": {
     "atmosphere.dust_tau_scale_pred": "Assumption: dust optical depth grows in proportion to the cumulative fraction of ejecta re-entering the atmosphere (25/55/85% after 2/8/72 h); the scale is chosen so that at 85% light drops to the 1% photosynthesis threshold (τ = ln 100 / 0.85). The dust cloud reaches a site at ejecta.dust_cloud_speed after curtain breakup. Synthesis: assumption of the project's predictive model (gap in the literature; approved by the user on 2026-10-04).",
@@ -472,7 +477,12 @@
     "seismic.t_p_antipode": "First P-type arrival for a surface source (ObsPy TauP, ak135 model).",
     "site.paleo_lat": "PALEOMAP plate model (plate 205), reconstruction to 65 Ma — the same age as PaleoDEM map 16; consistent with the palaeomagnetic latitude (site.paleolatitude).",
     "site.paleo_lon": "PALEOMAP plate model (plate 205), reconstruction to 65 Ma — the same age as PaleoDEM map 16; consistent with the palaeomagnetic latitude (site.paleolatitude).",
-    "ejecta.arrival_eiep_10000km": "Limit of EIEP applicability (r ≲ 10,000 km); beyond it — distal ejecta models."
+    "ejecta.arrival_eiep_10000km": "Limit of EIEP applicability (r ≲ 10,000 km); beyond it — distal ejecta models.",
+    "crater.growth_exponent_pred": "Model assumption, no source. The cavity radius grows as R_t·(t/t_tr)^n and its depth as D_t·(t/t_D)^n; the anchors (transient-crater diameter and depth and their times) come from the registry. The exponent only changes the shape of the growth curve between the impact and these keyframes. Synthesis: A constant previously hard-coded in the crater-kinematics model (src/model/predictive/crater-kinematics.ts) — moved to the registry so that it is visible like the other assumptions.",
+    "crater.transient_rim_fraction_pred": "Model assumption, no source. The rim of the parabolic cavity profile is this fraction of the current cavity diameter high (about 4 km at the registry transient-crater diameter, crater.transient_diameter). The profile applies during excavation and uplift, then blends into the final-crater profile. Synthesis: A constant previously hard-coded in the crater-kinematics model (src/model/predictive/crater-kinematics.ts) — moved to the registry so that it is visible like the other assumptions.",
+    "crater.central_uplift_width_pred": "Model assumption, no source. The central uplift has a Gaussian profile that drops to 1/e of its height at this fraction of the transient-crater radius (about 15 km). Its height and the time of the maximum (crater.central_uplift_max_height, crater.t_uplift_max) come from the registry. Synthesis: A constant previously hard-coded in the crater-kinematics model (src/model/predictive/crater-kinematics.ts) — moved to the registry so that it is visible like the other assumptions.",
+    "crater.peak_ring_relief_factor_pred": "Model assumption, no source. At crater.t_peak_ring the final-crater profile (floor, peak ring, terrace zone) is this many times deeper and higher; during modification it settles smoothly to the final registry dimensions (crater.floor_depth, crater.peak_ring_height), reached at crater.t_final. Synthesis: A constant previously hard-coded in the crater-kinematics model (src/model/predictive/crater-kinematics.ts) — moved to the registry so that it is visible like the other assumptions.",
+    "target.water_ramp_extent_pred": "Model assumption, no source. Up to this distance from the crater centre the water depth comes from the ramp model (registry knots: tsunami.depth_impact_point, tsunami.depth_50km_north, tsunami.depth_150km, target.water_depth_south); beyond it from the PaleoDEM map, which shows land around the crater. Past the last ramp knot the depth stays constant. Synthesis: A constant previously hard-coded in the water-depth ramp model (src/model/predictive/water-depth.ts) — moved to the registry so that it is visible like the other assumptions."
   },
   "sourceNotes": {
     "pygplates2025": "Version 1.0.0 (PyPI, 2025-03-26), GPL v2 licence. Used to reconstruct palaeo-coordinates in the PALEOMAP model.",

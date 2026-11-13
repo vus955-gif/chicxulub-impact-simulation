@@ -8,14 +8,16 @@ import { AK135_FIRST_ARRIVALS } from './paths';
 const reg = loadRegistry('research');
 const regIssues = validateRegistry(reg);
 const syn = JSON.parse(readFileSync('research/synthesis.json', 'utf8')) as { drop: unknown[]; patch: Record<string, unknown> };
-const litCount = reg.parameters.filter((p) => !p.method.startsWith('derived:')).length;
+const litCount = reg.parameters.filter((p) => !p.method.startsWith('derived:') && p.certainty !== 'predictive').length;
+const predCount = reg.parameters.filter((p) => !p.method.startsWith('derived:') && p.certainty === 'predictive').length;
 const meta: Record<string, string> = {
   date: new Date().toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric' }),
   sources: String(reg.sources.length),
   dois: String(reg.sources.filter((s) => s.doi).length),
   verified: String(reg.sources.filter((s) => s.doi && s.verified).length),
   lit: String(litCount),
-  derived: String(reg.parameters.length - litCount),
+  pred: String(predCount),
+  derived: String(reg.parameters.length - litCount - predCount),
   drops: String(syn.drop.length),
   patches: String(Object.keys(syn.patch).length),
 };

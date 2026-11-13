@@ -8,8 +8,8 @@
  */
 import * as THREE from 'three';
 import type { AppData } from '../../app/data';
-import { craterAt, craterKeyframes, craterWaterAt, GROWTH_EXP, type CraterKeyframes } from '../../model/predictive/crater-kinematics';
-import { waterDepthM, RAMP_MAX_KM } from '../../model/predictive/water-depth';
+import { craterAt, craterKeyframes, craterWaterAt, type CraterKeyframes } from '../../model/predictive/crater-kinematics';
+import { rampExtentKm, waterDepthM } from '../../model/predictive/water-depth';
 import { G_EARTH } from '../../model/eiep/constants';
 import { mulberry32 } from '../../model/sim/rng';
 import { T_MAX, T_MIN } from '../../time/axis';
@@ -79,6 +79,7 @@ export class CloseupScene {
     const nV = (NR + 1) * NS;
     const pos = new Float32Array(nV * 3), nor = new Float32Array(nV * 3), col = new Float32Array(nV * 3), glow = new Float32Array(nV);
     this.groundBase = new Float32Array(nV);
+    const rampKm = rampExtentKm(this.data.ctx.reg);
     for (let i = 0; i <= NR; i++) {
       const r = ringRadius(i);
       for (let j = 0; j < NS; j++) {
@@ -86,7 +87,7 @@ export class CloseupScene {
         const x = r * Math.sin(th), z = -r * Math.cos(th); // th = azymut od N
         pos[idx * 3] = x; pos[idx * 3 + 2] = z;
         const az = (th * 180) / Math.PI;
-        this.groundBase[idx] = -((waterDepthM(this.data.ctx, Math.min(r, RAMP_MAX_KM), az) ?? 0) / 1000);
+        this.groundBase[idx] = -((waterDepthM(this.data.ctx, Math.min(r, rampKm), az) ?? 0) / 1000);
         nor[idx * 3 + 1] = 1;
       }
     }
@@ -391,7 +392,7 @@ export class CloseupScene {
       const r = k.Rt * Math.sqrt(0.04 + 0.96 * rand());
       const a = rand() * Math.PI * 2;
       r0[i] = r; az[i * 2] = Math.sin(a); az[i * 2 + 1] = -Math.cos(a);
-      tl[i] = k.tTr * (r / k.Rt) ** (1 / GROWTH_EXP); // chwila, gdy krawędź jamy mija promień r (odwrotność R ∝ t^0,4)
+      tl[i] = k.tTr * (r / k.Rt) ** (1 / k.nGrow); // chwila, gdy krawędź jamy mija promień r (odwrotność R ∝ t^n)
       vv[i] = Math.min(4, 0.6 * Math.sqrt(G * k.Rt) * (r / k.Rt) ** -1.8) * (0.85 + 0.3 * rand());
     }
     const g = new THREE.BufferGeometry();

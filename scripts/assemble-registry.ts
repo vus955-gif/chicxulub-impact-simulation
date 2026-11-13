@@ -1,10 +1,12 @@
 /**
  * Składa rejestr z wyników wątków researchu + decyzji syntezy (research/synthesis.json).
- * Wyjście: research/parameters.json, research/sources.json (flagi verified zachowane, jeśli już ustawione).
+ * Wyjście: research/parameters.json, research/sources.json. Flagi verified pochodzą z raportu scripts/verify-dois.ts
+ * (research/doi-report.json); DOI jeszcze niesprawdzone dostają false — także te dopisane w addSources.
  * Każda zmiana względem wątków ma uzasadnienie w synthesis.json — rejestr jest odtwarzalny.
  */
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import type { Parameter, Source } from '../src/model/registry/types';
+import { appendAddedSources, applySourcePatches, verifiedDois, verifiedFromRun, type AddedSource, type DoiReport, type SourcePatch } from './registry-sources';
 
 const THREADS = ['01-impaktor', '02-krater', '03-ejecta-termika', '04-tsunami', '05-sejsmika-cisnienie', '06-atmosfera-biosfera-paleo', '07-eiep'];
 const PARAM_THREADS = new Set(THREADS.filter((t) => t !== '07-eiep')); // z 07 bierzemy tylko źródła
@@ -16,16 +18,13 @@ interface Synthesis {
   choose: Record<string, { thread: string; reason: string }>;
   patch: Record<string, Partial<Parameter> & { reason: string }>;
   add: Array<Parameter & { reason: string }>;
-  sourcePatch?: Record<string, Partial<Source> & { reason: string }>;
-  addSources?: Array<Source & { reason: string }>;
+  sourcePatch?: Record<string, SourcePatch>;
+  addSources?: AddedSource[];
 }
 
 const read = <T>(f: string): T => JSON.parse(readFileSync(f, 'utf8')) as T;
 const syn = read<Synthesis>('research/synthesis.json');
-const prevVerified = new Map<string, boolean>();
-if (existsSync('research/sources.json')) {
-  for (const s of read<{ sources: Source[] }>('research/sources.json').sources) if (s.doi) prevVerified.set(s.doi.toLowerCase(), s.verified);
-}
+const checked = verifiedDois(existsSync('research/doi-report.json') ? read<DoiReport>('research/doi-report.json') : undefined);
 
 // ── źródła: deduplikacja po DOI, mapowanie identyfikatorów per wątek ──
 const byKey = new Map<string, Source>();
@@ -46,23 +45,14 @@ for (const t of THREADS) {
     for (let k = 1; usedIds.has(id); k++) id = `${s.id}_${k}`;
     usedIds.add(id);
     const doi = s.doi;
-    const src: Source = { ...s, id, doi, verified: doi ? prevVerified.get(doi.toLowerCase()) ?? false : s.verified };
+    const src: Source = { ...s, id, doi, verified: doi ? verifiedFromRun(doi, checked) : s.verified };
     byKey.set(key, src);
     map.set(s.id, id);
   }
 }
 const sources = [...byKey.values()];
-for (const add of syn.addSources ?? []) {
-  if (sources.some((x) => x.id === add.id)) throw new Error(`addSources: duplicate ${add.id}`);
-  const { reason: _r, ...src } = add;
-  sources.push(src);
-}
-for (const [id, p] of Object.entries(syn.sourcePatch ?? {})) {
-  const s = sources.find((x) => x.id === id);
-  if (!s) throw new Error(`sourcePatch: unknown source ${id}`);
-  const { reason: _r, ...fields } = p;
-  Object.assign(s, fields);
-}
+appendAddedSources(sources, syn.addSources ?? [], checked);
+applySourcePatches(sources, syn.sourcePatch ?? {}, checked);
 
 // ── parametry: unia wątków z mapowaniem źródeł; konflikty rozstrzyga synthesis.choose ──
 const candidates = new Map<string, Array<{ thread: string; p: Parameter }>>();

@@ -4,9 +4,9 @@
 
 **▶ [Uruchom w przeglądarce](https://vus955-gif.github.io/chicxulub-impact-simulation/)** — bez instalacji; zalecana przeglądarka na komputerze z WebGL. · **[English → README.md](README.md)**
 
-Interaktywna symulacja pierwszej doby po uderzeniu planetoidy Chicxulub sprzed 66 mln lat — od lotu przez atmosferę do T+24 h, na paleogeografii schyłku kredy — w której każda liczba ma źródło.
+Interaktywna symulacja pierwszej doby po uderzeniu planetoidy Chicxulub sprzed 66 mln lat, z odnośnikami do źródeł — od lotu przez atmosferę do T+24 h, na paleogeografii schyłku kredy.
 
-Ma być narzędziem edukacyjnym, które nie ukrywa niepewności: każda wartość na ekranie pochodzi z rejestru opublikowanych danych albo z modelu na nich policzonego. Po kliknięciu widać metodę, rozrzut w literaturze i źródła (z DOI).
+Ma być narzędziem edukacyjnym, które nie ukrywa niepewności: każda wartość na ekranie pochodzi z rejestru opublikowanych danych, z modelu na nich policzonego albo — tam, gdzie literatura ma lukę — z jawnego założenia modelu predykcyjnego projektu (znak △; część z nich nie ma żadnego źródła literaturowego). Po kliknięciu widać metodę, rozrzut w literaturze i źródła (z DOI).
 
 | Paleomapa 2D | Globus 3D |
 |---|---|
@@ -72,7 +72,7 @@ Otwórz <http://127.0.0.1:5173>. Wszystkie dane potrzebne aplikacji są już w `
 ```
 research/          rejestr parametrów (JSON), notatki badawcze, raport badawczy (HTML)
   parameters.json  wartości zebrane z literatury, każda z pewnością, metodą, lokalizatorem i źródłami
-  sources.json     168 źródeł; DOI sprawdzone w Crossref / DataCite
+  sources.json     168 źródeł, 156 z DOI sprawdzonym w Crossref / DataCite; pole „citedIn” przy każdym
   synthesis.json   udokumentowane decyzje: co odrzucono, wybrano, poprawiono lub dodano i dlaczego
   i18n-en.json     angielskie teksty rejestru i stanowisk
 src/model/         czysta fizyka bez UI, testowana w Node (EIEP, czasy dotarcia, fronty, orbity ejekty,
@@ -83,6 +83,8 @@ scripts/           potok rejestru (TypeScript) i przetwarzanie danych (Python)
 public/data/       dane pochodne używane przez aplikację (rejestr, tekstura paleo-DEM, siatki tsunami, …)
 tests/             testy Vitest
 ```
+
+Ze 168 źródeł w `sources.json` parametry rejestru cytują 114, kolejne 24 cytują tylko obserwacje stanowisk (sonda), a 14 — tylko tekst raportu badawczego. Pozostałe 16 zebrano w wątkach researchu, ale nigdzie nie są cytowane (`"citedIn": []`). `npm run registry` przelicza pole `citedIn`.
 
 Najważniejsze metody:
 

@@ -7,3 +7,7 @@ export const J_PER_KT = 4.184e12;   // J na kilotonę TNT (definicja; EIEP zaokr
 export const J_PER_MT = 4.184e15;   // J na megatonę TNT
 export const DEG = Math.PI / 180;
 export const SIGMA_SB = 5.670374419e-8; // W/(m²·K⁴) — stała Stefana–Boltzmanna (CODATA 2018)
+// Termika kuli ognia (s. 826, eq. 35). Te same wartości są w rejestrze jako fireball.luminous_efficiency
+// i fireball.transparency_temperature — zgodność pilnuje tests/eiep.test.ts.
+export const LUMINOUS_EFFICIENCY = 3e-3; // η — sprawność świetlna (niepewna o ~2 rzędy wielkości)
+export const FIREBALL_T_STAR = 3000;     // K — T*, temperatura kuli ognia, przy której staje się przezroczysta

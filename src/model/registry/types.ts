@@ -3,6 +3,8 @@ export interface Txt { pl: string; en: string }
 
 export type Certainty = 'fact' | 'extrapolation' | 'speculation' | 'contested' | 'predictive';
 export type SourceType = 'article' | 'book' | 'chapter' | 'dataset' | 'software';
+/** Gdzie projekt cytuje źródło (scripts/source-usage.ts); pusta lista = lektura tła, nigdzie niecytowana. */
+export type CitedIn = 'parameters' | 'sites' | 'report';
 
 export interface Source {
   id: string;              // firstauthorYEAR[a-z]? , np. "collins2005"
@@ -19,6 +21,7 @@ export interface Source {
   verified: boolean;       // ustawiane przez scripts/verify-dois.ts
   notes?: string;
   notesEn?: string;         // tłumaczenie notatki pisanej po polsku (scripts/i18n-en.ts)
+  citedIn?: CitedIn[];     // ustawiane przez scripts/mark-source-usage.ts
 }
 
 export interface TimeSpec {

@@ -5,8 +5,8 @@
  * Klatki kluczowe (◐/●, z rejestru): krater przejściowy (średnica, głębokość, czas maksimum), początek kolapsu,
  * wypiętrzenie centralne (wysokość, czas maksimum), pierścień szczytowy (średnica, wysokość, czas), krater końcowy
  * (średnica, krawędź wewnętrzna, głębokość dna, czas), końcowe wypiętrzenie strukturalne i wypiętrzenie Moho.
- * Kształt MIĘDZY klatkami (△) to interpolacja kinematyczna:
- *  – wykop: promień jamy ∝ (t/t_tr)^0,4 (wzrost w reżimie grawitacyjnym), profil paraboliczny z wałem;
+ * Kształt MIĘDZY klatkami (△) to interpolacja kinematyczna; jej założenia (bez źródła) są w rejestrze jako crater.*_pred:
+ *  – wykop: promień jamy ∝ (t/t_tr)^n, profil paraboliczny z wałem;
  *  – wypiętrzenie: dno jamy podnosi się gładko do maksimum wypiętrzenia centralnego;
  *  – zapadanie i modyfikacja: płynne przejście profilu do stanu z uformowanym pierścieniem i do krateru końcowego;
  *  – horyzonty skał: przemieszczenie zanika wykładniczo z głębokością; końcowe wypiętrzenie strukturalne dopasowane
@@ -24,6 +24,9 @@ export interface CraterKeyframes {
   SU: number; MU: number; Hs: number; Hc: number;
   Rm: number; Tm: number;
   tSea: number; tSettle: number;
+  /** założenia modelu (△, rejestr crater.*_pred): wykładnik wzrostu jamy, wał jako ułamek średnicy jamy,
+   *  szerokość wypiętrzenia jako ułamek promienia jamy, relief przy uformowaniu pierścienia względem stanu końcowego */
+  nGrow: number; rimFrac: number; upliftW: number; ringRelief: number;
 }
 
 export function craterKeyframes(reg: RegistryIndex): CraterKeyframes {
@@ -40,6 +43,8 @@ export function craterKeyframes(reg: RegistryIndex): CraterKeyframes {
     Hs: n('target.sediment_thickness'), Hc: n('target.crust_thickness'),
     Rm: n('crater.melt_sheet_diameter') / 2, Tm: n('crater.melt_sheet_thickness'),
     tSea: n('crater.t_first_seawater_peak_ring'), tSettle: n('crater.t_resurge_settling'),
+    nGrow: n('crater.growth_exponent_pred'), rimFrac: n('crater.transient_rim_fraction_pred'),
+    upliftW: n('crater.central_uplift_width_pred'), ringRelief: n('crater.peak_ring_relief_factor_pred'),
   };
 }
 
@@ -62,19 +67,9 @@ export interface CraterState {
   structural: number;
 }
 
-/** Wykładnik wzrostu jamy w reżimie grawitacyjnym: R ∝ t^0,4 (także głębokość wykopu) — △. */
-export const GROWTH_EXP = 0.4;
-
 const clamp01 = (x: number) => Math.min(1, Math.max(0, x));
 const smooth = (x: number) => { const u = clamp01(x); return u * u * (3 - 2 * u); };
 const lerp = (a: number, b: number, s: number) => a + (b - a) * s;
-
-/** Wysokość wału jamy przejściowej: ~4% średnicy (typowa proporcja dla kraterów przejściowych) — △. */
-const RIM_FRACTION = 0.04;
-/** Szerokość wypiętrzenia centralnego jako ułamek promienia jamy przejściowej — △. */
-const UPLIFT_WIDTH = 0.3;
-/** Relief w chwili uformowania pierścienia względem stanu końcowego (dalsze osiadanie w fazie modyfikacji) — △. */
-const PEAK_RING_RELIEF = 2.5;
 
 /** Profil paraboliczny jamy z wałem (ciągły na krawędzi) + wypiętrzenie centralne. */
 function bowl(r: number, R: number, D: number, hr: number, U: number, wU: number): number {
@@ -91,15 +86,15 @@ function finalProfile(k: CraterKeyframes, r: number): number {
 }
 
 export function craterAt(k: CraterKeyframes, t: number): CraterState {
-  const hrT = RIM_FRACTION * 2 * k.Rt;
-  const wU = UPLIFT_WIDTH * k.Rt;
-  const radius = (tt: number) => k.Rt * Math.min(1, Math.max(0, tt) / k.tTr) ** GROWTH_EXP;
+  const hrT = k.rimFrac * 2 * k.Rt;
+  const wU = k.upliftW * k.Rt;
+  const radius = (tt: number) => k.Rt * Math.min(1, Math.max(0, tt) / k.tTr) ** k.nGrow;
 
   // parametry jamy i wypiętrzenia do chwili maksimum wypiętrzenia
   const sU = smooth((t - k.tCo) / (k.tU - k.tCo));
-  const D = t <= k.tD ? k.Dt * Math.min(1, Math.max(0, t) / k.tD) ** GROWTH_EXP : k.Dt * (1 - 0.5 * sU);
+  const D = t <= k.tD ? k.Dt * Math.min(1, Math.max(0, t) / k.tD) ** k.nGrow : k.Dt * (1 - 0.5 * sU);
   const R = radius(t);
-  const hr = RIM_FRACTION * 2 * R;
+  const hr = k.rimFrac * 2 * R;
   const zc = t <= k.tCo ? -D : lerp(-k.Dt, k.Hu, sU); // wysokość środka
   const U = t <= k.tCo ? 0 : zc + D;
 
@@ -107,7 +102,7 @@ export function craterAt(k: CraterKeyframes, t: number): CraterState {
     const Dm = k.Dt * 0.5;
     return bowl(r, k.Rt, Dm, hrT, k.Hu + Dm, wU);
   };
-  const pRing = (r: number) => PEAK_RING_RELIEF * finalProfile(k, r);
+  const pRing = (r: number) => k.ringRelief * finalProfile(k, r); // dalej osiada w fazie modyfikacji
 
   let phase: CraterPhase;
   let surface: (r: number) => number;

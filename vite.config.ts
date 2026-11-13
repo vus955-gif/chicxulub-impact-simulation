@@ -6,5 +6,7 @@ export default defineConfig({
   base: process.env.BASE_PATH ?? '/',
   plugins: [svelte()],
   server: { port: 5173, host: '127.0.0.1', strictPort: true },
-  build: { target: 'es2022', chunkSizeWarningLimit: 1500 },
+  // Widoki 3D ładują się leniwie (App.svelte); największy kawałek to three.js ze wspólnym kodem widoków 3D (~570 kB).
+  // Limit tuż nad nim — ostrzeże, gdy któryś kawałek urośnie albo three.js wróci do pakietu startowego.
+  build: { target: 'es2022', chunkSizeWarningLimit: 600 },
 });

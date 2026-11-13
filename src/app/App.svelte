@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onMount, type Component } from 'svelte';
   import { loadAppData, type AppData } from './data';
   import { ui, restoreFromUrl, writeUrl } from './state.svelte';
   import { advance } from '../time/playback';
@@ -11,11 +11,9 @@
   import SourceDrawer from './components/SourceDrawer.svelte';
   import Map2D from './components/Map2D.svelte';
   import SectionView from '../render/section/SectionView.svelte';
-  import GlobeView from '../render/globe/GlobeView.svelte';
-  import CloseupView from '../render/closeup/CloseupView.svelte';
   import Guide from './components/Guide.svelte';
   import { L, setLang, browserLang } from './i18n';
-  import { decodeState } from './url-state';
+  import { decodeState, type ViewKey } from './url-state';
   import { T_MAX, T_MIN } from '../time/axis';
 
   // $state.raw: dane modelu są niezmienne — głęboki proxy $state opakowałby tablice ak135, zdarzenia i rejestr
@@ -24,6 +22,19 @@
   let error = $state<string | null>(null);
   let progress = $state('…');
   let warming = $state(true);
+
+  // Widoki 3D (globus, zbliżenie) ciągną three.js — połowę kodu aplikacji. Domyślny widok to mapa 2D, więc ładują się
+  // osobno: od razu, gdy są potrzebne (adres, przewodnik, przycisk), a pozostałe w tle po zniknięciu ekranu ładowania.
+  type View3D = Component<{ data: AppData }>;
+  let GlobeView = $state.raw<View3D | null>(null);
+  let CloseupView = $state.raw<View3D | null>(null);
+  function ensureView(v: ViewKey): Promise<unknown> {
+    if (v === 'globe' && !GlobeView) return import('../render/globe/GlobeView.svelte').then((m) => (GlobeView = m.default));
+    if (v === 'closeup' && !CloseupView) return import('../render/closeup/CloseupView.svelte').then((m) => (CloseupView = m.default));
+    return Promise.resolve();
+  }
+  const fail = (e: unknown) => (error = e instanceof Error ? e.message : String(e));
+  $effect(() => { ensureView(ui.view).catch(fail); });
 
   /**
    * Rozgrzewka pod ekranem ładowania. Pierwsze pokazanie bolidu, błysku, frontów i legendy jest droższe niż kolejne:
@@ -49,12 +60,15 @@
     restoreFromUrl();
     setLang(decodeState(location.hash).lang ?? browserLang());
     loadAppData((m) => (progress = m))
-      .then((d) => {
+      .then(async (d) => {
         const tEntry = d.reg.num('impactor.entry_duration');
+        await ensureView(ui.view); // widok 3D z adresu — przed rozgrzewką, żeby i on się rozgrzał
         data = d;
-        return warmUp(fromUrl ? ui.t : -tEntry, tEntry);
+        await warmUp(fromUrl ? ui.t : -tEntry, tEntry);
+        // pozostałe widoki 3D w tle: przełączenie później jest natychmiastowe, a pierwszy ekran nie czeka na three.js
+        setTimeout(() => { Promise.all([ensureView('globe'), ensureView('closeup')]).catch(fail); }, 1000);
       })
-      .catch((e: unknown) => (error = e instanceof Error ? e.message : String(e)));
+      .catch(fail);
     let last = performance.now(), raf = 0;
     const loop = (now: number) => {
       const dt = Math.min(0.1, (now - last) / 1000);
@@ -87,8 +101,8 @@
       <LayersPanel {data} />
       <div class="center">
         {#if ui.view === 'section'}<SectionView {data} />
-        {:else if ui.view === 'globe'}<GlobeView {data} />
-        {:else if ui.view === 'closeup'}<CloseupView {data} />
+        {:else if ui.view === 'globe'}{#if GlobeView}<GlobeView {data} />{:else}<p class="loading muted">{L('Ładowanie widoku 3D…', 'Loading the 3D view…')}</p>{/if}
+        {:else if ui.view === 'closeup'}{#if CloseupView}<CloseupView {data} />{:else}<p class="loading muted">{L('Ładowanie widoku 3D…', 'Loading the 3D view…')}</p>{/if}
         {:else}<Map2D {data} />{/if}
         <Guide {data} />
         <SourceDrawer {data} />
@@ -106,6 +120,7 @@
   .app { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; height: 100vh; }
   .main { display: grid; grid-template-columns: 250px minmax(0, 1fr) 360px; min-height: 0; }
   .center { position: relative; min-width: 0; min-height: 0; }
+  .loading { padding: 2rem; }
   .right { display: grid; grid-template-rows: minmax(0, 45%) minmax(0, 1fr); min-height: 0; }
   @media (max-width: 1100px) { .main { grid-template-columns: 210px minmax(0, 1fr) 300px; } }
 </style>
